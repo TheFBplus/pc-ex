@@ -1,13 +1,6 @@
+pc-ex
+
 # pc-ex
-### Install
-
-```bash
-npm i pc-ex
-```
-
-### API Docs
-
-API docs can be found [here](https://thefbplus.github.io/pc-ex/)
 
 ## Table of contents
 
@@ -30,12 +23,12 @@ API docs can be found [here](https://thefbplus.github.io/pc-ex/)
 
 ### Type aliases
 
-- [AttributeParams](https://thefbplus.github.io/pc-ex/modules.html#attributeparams)
+- [AttributeParams](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/README.md#attributeparams)
 
 ### Functions
 
-- [attr](https://thefbplus.github.io/pc-ex/modules.html#attr)
-- [createScript](https://thefbplus.github.io/pc-ex/modules.html#createscript)
+- [attr](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/README.md#attr)
+- [createScript](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/README.md#createscript)
 
 ## Type aliases
 
@@ -69,7 +62,7 @@ Defined in: src/classes/utils/create-script-decorator.ts:58
 
 ### attr
 
-▸ **attr**<T\>(`params`: [*AttributeParams*](https://thefbplus.github.io/pc-ex/modules.html#attributeparams)): *any*
+▸ **attr**<T\>(`params`: [*AttributeParams*](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/README.md#attributeparams)): *any*
 
 #### Type parameters
 
@@ -81,7 +74,7 @@ Defined in: src/classes/utils/create-script-decorator.ts:58
 
 | Name | Type |
 | :------ | :------ |
-| `params` | [*AttributeParams*](https://thefbplus.github.io/pc-ex/modules.html#attributeparams) |
+| `params` | [*AttributeParams*](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/README.md#attributeparams) |
 
 **Returns:** *any*
 

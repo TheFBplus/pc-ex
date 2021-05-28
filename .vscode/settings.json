@@ -1,0 +1,18 @@
+{
+    "editor.suggestSelection": "first",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true,
+        "source.fixAll": true
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "node_modules": true,
+        "package-lock.json": true,
+        ".gitignore": true
+    },
+    "explorerExclude.backup": null
+}

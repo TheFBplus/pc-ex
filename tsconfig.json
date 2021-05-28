@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ES2020",
+      "DOM"
+    ],
+    "moduleResolution": "node",
+    "target": "ES5",
+    "module": "CommonJS",
+    "outDir": "dist",
+    "rootDir": "./src",
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": false,
+    "declarationDir": "bin/dts",
+    "declaration": true
+  },
+  "include": [
+    "src/index.ts"
+  ]
+}

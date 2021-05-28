@@ -1,0 +1,54 @@
+{
+	"name": "pc-ex",
+	"version": "0.0.1",
+	"description": "Extensions for Playcanvas engine.",
+	"main": "bin/cjs/index.js",
+	"module": "bin/es/index.js",
+	"types": "bin/dts/index.d.ts",
+	"scripts": {
+		"init": "start init",
+		"build": "npx --no-install rimraf bin && npm run build-es && npm run build-cjs && npm run build-iife && node ./build-scripts/post-build.js",
+		"docs": "npx --no-install rimraf docs && npm run docs-html && npm run docs-md && npm run docs-readme",
+		"version": "npm i && npm run build && npm run docs && git add . -A",
+		"build-es": "tsc --outDir bin/es --target es5 --module es2015",
+		"build-cjs": "tsc --outDir bin/cjs  --target es6 --module commonjs",
+		"build-iife": "npx rollup --config rollup.config.js",
+		"docs-md": "npx --no-install rimraf docs/md && npx typedoc --options build-scripts/typedoc.md.js --plugin typedoc-plugin-markdown",
+		"docs-html": "npx --no-install rimraf docs && npx typedoc --options build-scripts/typedoc.html.js --plugin none",
+		"docs-readme": "node ./build-scripts/build-readme.js"
+	},
+	"dependencies": {
+		"playcanvas": "^1.41.2",
+		"tslib": "^2.2.0"
+	},
+	"devDependencies": {
+		"@rollup/plugin-typescript": "^8.2.1",
+		"release-it": "^14.7.0",
+		"rimraf": "^3.0.2",
+		"rollup": "^2.50.1",
+		"rollup-plugin-string": "^3.0.0",
+		"rollup-plugin-terser": "^7.0.2",
+		"typedoc": "^0.20.36",
+		"typedoc-plugin-markdown": "^3.8.2",
+		"typescript": "^4.2.4"
+	},
+	"files": [
+		"bin/*"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/TheFBplus/pc-ex.git"
+	},
+	"keywords": [
+		"utils",
+		"typescript",
+		"extensions",
+		"playcanvas"
+	],
+	"author": "fbplus",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/TheFBplus/pc-ex/issues"
+	},
+	"homepage": "https://github.com/TheFBplus/pc-ex#readme"
+}

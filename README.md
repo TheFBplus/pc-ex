@@ -24,7 +24,7 @@ DebugLine.drawLine(start, end, color);
 ### Node usage:
 
 ```js
-// Import to use extend functions
+// Import all to use extend functions
 const pc = require("playcanvas");
 require("pc-ex");
 

@@ -1,0 +1,6215 @@
+{
+	"id": 0,
+	"name": "pc-ex",
+	"kind": 0,
+	"kindString": "Project",
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 356,
+			"name": "DebugLine",
+			"kind": 2,
+			"kindString": "Namespace",
+			"flags": {},
+			"children": [
+				{
+					"id": 362,
+					"name": "clearLines",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/extensions/newUtils/debugLine.ts",
+							"line": 27,
+							"character": 30
+						}
+					],
+					"signatures": [
+						{
+							"id": 363,
+							"name": "clearLines",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 357,
+					"name": "drawLine",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/extensions/newUtils/debugLine.ts",
+							"line": 16,
+							"character": 28
+						}
+					],
+					"signatures": [
+						{
+							"id": 358,
+							"name": "drawLine",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 359,
+									"name": "start",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "pc.Vec3"
+									}
+								},
+								{
+									"id": 360,
+									"name": "end",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "pc.Vec3"
+									}
+								},
+								{
+									"id": 361,
+									"name": "color",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "pc.Color"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						362,
+						357
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/extensions/newUtils/debugLine.ts",
+					"line": 11,
+					"character": 26
+				}
+			]
+		},
+		{
+			"id": 191,
+			"name": "Filter",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {},
+			"children": [
+				{
+					"id": 195,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 196,
+							"name": "new Filter",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 197,
+									"name": "option",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 198,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"indexSignature": {
+												"id": 199,
+												"name": "__index",
+												"kind": 8192,
+												"kindString": "Index signature",
+												"flags": {},
+												"parameters": [
+													{
+														"id": 200,
+														"name": "paraName",
+														"kind": 32768,
+														"flags": {},
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													}
+												],
+												"type": {
+													"type": "intrinsic",
+													"name": "any"
+												}
+											}
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 191,
+								"name": "Filter"
+							},
+							"overwrites": {
+								"type": "reference",
+								"name": "pc.PostEffect.constructor"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"name": "pc.PostEffect.constructor"
+					}
+				},
+				{
+					"id": 201,
+					"name": "args",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 32,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 202,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"indexSignature": {
+								"id": 203,
+								"name": "__index",
+								"kind": 8192,
+								"kindString": "Index signature",
+								"flags": {},
+								"parameters": [
+									{
+										"id": 204,
+										"name": "paraName",
+										"kind": 32768,
+										"flags": {},
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									}
+								],
+								"type": {
+									"type": "intrinsic",
+									"name": "any"
+								}
+							}
+						}
+					}
+				},
+				{
+					"id": 205,
+					"name": "binbMap",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 33,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						],
+						"name": "Map"
+					}
+				},
+				{
+					"id": 248,
+					"name": "device",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "The graphics device of the application. [read only]."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 7152,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "GraphicsDevice"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.PostEffect.device"
+					}
+				},
+				{
+					"id": 251,
+					"name": "needsDepthBuffer",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "The property that should to be set to `true` (by the custom post effect) if a depth map is necessary (default is false)."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 7164,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.PostEffect.needsDepthBuffer"
+					}
+				},
+				{
+					"id": 207,
+					"name": "passes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 36,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "IfilterPass"
+						}
+					},
+					"defaultValue": "[]"
+				},
+				{
+					"id": 206,
+					"name": "rtCache",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 34,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "RenderTarget"
+						}
+					},
+					"defaultValue": "[]"
+				},
+				{
+					"id": 250,
+					"name": "shader",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "The shader definition for the fullscreen quad. Needs to be set by the custom post effect (default is null). Used when calling {@link drawFullscreenQuad}."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 7160,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Shader"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.PostEffect.shader"
+					}
+				},
+				{
+					"id": 208,
+					"name": "shaders",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 37,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Shader"
+						}
+					},
+					"defaultValue": "[]"
+				},
+				{
+					"id": 249,
+					"name": "vertexBuffer",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "The vertex buffer for the fullscreen quad. Used when calling {@link drawFullscreenQuad}. [read only]."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 7156,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "VertexBuffer"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.PostEffect.vertexBuffer"
+					}
+				},
+				{
+					"id": 238,
+					"name": "addBinder",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 190,
+							"character": 21
+						}
+					],
+					"signatures": [
+						{
+							"id": 239,
+							"name": "addBinder",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 240,
+									"name": "arg",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 241,
+									"name": "binder",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "IattributesBinder"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 209,
+					"name": "addPasses",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isProtected": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 75,
+							"character": 23
+						}
+					],
+					"signatures": [
+						{
+							"id": 210,
+							"name": "addPasses",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 211,
+									"name": "params",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isRest": true
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"name": "IfilterPass"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 220,
+					"name": "cache",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isProtected": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 130,
+							"character": 19
+						}
+					],
+					"signatures": [
+						{
+							"id": 221,
+							"name": "cache",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 222,
+									"name": "index",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 223,
+									"name": "option",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 224,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 225,
+													"name": "scale",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/classes/utils/filter.ts",
+															"line": 130,
+															"character": 51
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"kind": 1024,
+													"children": [
+														225
+													]
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "ICacheOption"
+							}
+						}
+					]
+				},
+				{
+					"id": 226,
+					"name": "createTargetCache",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isProtected": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 138,
+							"character": 31
+						}
+					],
+					"signatures": [
+						{
+							"id": 227,
+							"name": "createTargetCache",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 228,
+									"name": "index",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 229,
+									"name": "scale",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "1"
+								},
+								{
+									"id": 230,
+									"name": "width",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 231,
+									"name": "height",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "RenderTarget"
+							}
+						}
+					]
+				},
+				{
+					"id": 232,
+					"name": "getTargetCache",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 169,
+							"character": 26
+						}
+					],
+					"signatures": [
+						{
+							"id": 233,
+							"name": "getTargetCache",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 234,
+									"name": "index",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 235,
+									"name": "scale",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "1"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "RenderTarget"
+							}
+						}
+					]
+				},
+				{
+					"id": 242,
+					"name": "instanceOfBinder",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 196,
+							"character": 28
+						}
+					],
+					"signatures": [
+						{
+							"id": 243,
+							"name": "instanceOfBinder",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 244,
+									"name": "object",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "predicate",
+								"name": "object",
+								"asserts": false,
+								"targetType": {
+									"type": "reference",
+									"name": "IattributesBinder"
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 245,
+					"name": "instanceOfCache",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 201,
+							"character": 27
+						}
+					],
+					"signatures": [
+						{
+							"id": 246,
+							"name": "instanceOfCache",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 247,
+									"name": "object",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "predicate",
+								"name": "object",
+								"asserts": false,
+								"targetType": {
+									"type": "reference",
+									"name": "ICacheOption"
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 236,
+					"name": "refreshTargets",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 174,
+							"character": 26
+						}
+					],
+					"signatures": [
+						{
+							"id": 237,
+							"name": "refreshTargets",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 215,
+					"name": "render",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 90,
+							"character": 17
+						}
+					],
+					"signatures": [
+						{
+							"id": 216,
+							"name": "render",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 217,
+									"name": "inputTarget",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "RenderTarget"
+									}
+								},
+								{
+									"id": 218,
+									"name": "outputTarget",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "RenderTarget"
+									}
+								},
+								{
+									"id": 219,
+									"name": "rect",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "Vec4"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"overwrites": {
+								"type": "reference",
+								"name": "pc.PostEffect.render"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"name": "pc.PostEffect.render"
+					}
+				},
+				{
+					"id": 212,
+					"name": "value",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isProtected": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 85,
+							"character": 19
+						}
+					],
+					"signatures": [
+						{
+							"id": 213,
+							"name": "value",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 214,
+									"name": "para",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							}
+						}
+					]
+				},
+				{
+					"id": 192,
+					"name": "parseValueToShader",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isStatic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 39,
+							"character": 29
+						}
+					],
+					"signatures": [
+						{
+							"id": 193,
+							"name": "parseValueToShader",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 194,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						195
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						201,
+						205,
+						248,
+						251,
+						207,
+						206,
+						250,
+						208,
+						249
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						238,
+						209,
+						220,
+						226,
+						232,
+						242,
+						245,
+						236,
+						215,
+						212,
+						192
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/classes/utils/filter.ts",
+					"line": 30,
+					"character": 19
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"name": "PostEffect"
+				}
+			],
+			"extendedBy": [
+				{
+					"type": "reference",
+					"id": 1,
+					"name": "Filter_Bloom"
+				},
+				{
+					"type": "reference",
+					"id": 57,
+					"name": "Filter_Empty"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "Filter_Bloom",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {},
+			"children": [
+				{
+					"id": 5,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 6,
+							"name": "new Filter_Bloom",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 7,
+									"name": "option",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "Ioption_Filter_Bloom"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 1,
+								"name": "Filter_Bloom"
+							},
+							"overwrites": {
+								"type": "reference",
+								"id": 196,
+								"name": "Filter.constructor"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"id": 195,
+						"name": "Filter.constructor"
+					}
+				},
+				{
+					"id": 24,
+					"name": "args",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 32,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 25,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"indexSignature": {
+								"id": 26,
+								"name": "__index",
+								"kind": 8192,
+								"kindString": "Index signature",
+								"flags": {},
+								"parameters": [
+									{
+										"id": 27,
+										"name": "paraName",
+										"kind": 32768,
+										"flags": {},
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									}
+								],
+								"type": {
+									"type": "intrinsic",
+									"name": "any"
+								}
+							}
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 201,
+						"name": "Filter.args"
+					}
+				},
+				{
+					"id": 28,
+					"name": "binbMap",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 33,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						],
+						"name": "Map"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 205,
+						"name": "Filter.binbMap"
+					}
+				},
+				{
+					"id": 53,
+					"name": "device",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "The graphics device of the application. [read only]."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 7152,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "GraphicsDevice"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 248,
+						"name": "Filter.device"
+					}
+				},
+				{
+					"id": 56,
+					"name": "needsDepthBuffer",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "The property that should to be set to `true` (by the custom post effect) if a depth map is necessary (default is false)."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 7164,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 251,
+						"name": "Filter.needsDepthBuffer"
+					}
+				},
+				{
+					"id": 29,
+					"name": "rtCache",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 34,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "RenderTarget"
+						}
+					},
+					"defaultValue": "[]",
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 206,
+						"name": "Filter.rtCache"
+					}
+				},
+				{
+					"id": 8,
+					"name": "sampleCount",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/filters/filter_bloom.ts",
+							"line": 12,
+							"character": 23
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"defaultValue": "15"
+				},
+				{
+					"id": 10,
+					"name": "sampleOffsets",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/filters/filter_bloom.ts",
+							"line": 14,
+							"character": 25
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Float32Array"
+					},
+					"defaultValue": "..."
+				},
+				{
+					"id": 9,
+					"name": "sampleWeights",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/filters/filter_bloom.ts",
+							"line": 13,
+							"character": 25
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Float32Array"
+					},
+					"defaultValue": "..."
+				},
+				{
+					"id": 55,
+					"name": "shader",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "The shader definition for the fullscreen quad. Needs to be set by the custom post effect (default is null). Used when calling {@link drawFullscreenQuad}."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 7160,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Shader"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 250,
+						"name": "Filter.shader"
+					}
+				},
+				{
+					"id": 54,
+					"name": "vertexBuffer",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "The vertex buffer for the fullscreen quad. Used when calling {@link drawFullscreenQuad}. [read only]."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 7156,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "VertexBuffer"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 249,
+						"name": "Filter.vertexBuffer"
+					}
+				},
+				{
+					"id": 30,
+					"name": "addPasses",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isProtected": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 75,
+							"character": 23
+						}
+					],
+					"signatures": [
+						{
+							"id": 31,
+							"name": "addPasses",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 32,
+									"name": "params",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isRest": true
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"name": "IfilterPass"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 210,
+								"name": "Filter.addPasses"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 209,
+						"name": "Filter.addPasses"
+					}
+				},
+				{
+					"id": 41,
+					"name": "cache",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isProtected": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 130,
+							"character": 19
+						}
+					],
+					"signatures": [
+						{
+							"id": 42,
+							"name": "cache",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 43,
+									"name": "index",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 44,
+									"name": "option",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 45,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 46,
+													"name": "scale",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/classes/utils/filter.ts",
+															"line": 130,
+															"character": 51
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"kind": 1024,
+													"children": [
+														46
+													]
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "ICacheOption"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 221,
+								"name": "Filter.cache"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 220,
+						"name": "Filter.cache"
+					}
+				},
+				{
+					"id": 17,
+					"name": "calculateBlurValues",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/filters/filter_bloom.ts",
+							"line": 142,
+							"character": 31
+						}
+					],
+					"signatures": [
+						{
+							"id": 18,
+							"name": "calculateBlurValues",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 19,
+									"name": "sampleWeights",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "Float32Array"
+									}
+								},
+								{
+									"id": 20,
+									"name": "sampleOffsets",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "Float32Array"
+									}
+								},
+								{
+									"id": 21,
+									"name": "dx",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 22,
+									"name": "dy",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 23,
+									"name": "blurAmount",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 13,
+					"name": "computeGaussian",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/filters/filter_bloom.ts",
+							"line": 137,
+							"character": 27
+						}
+					],
+					"signatures": [
+						{
+							"id": 14,
+							"name": "computeGaussian",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 15,
+									"name": "n",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 16,
+									"name": "theta",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					]
+				},
+				{
+					"id": 47,
+					"name": "createTargetCache",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isProtected": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 138,
+							"character": 31
+						}
+					],
+					"signatures": [
+						{
+							"id": 48,
+							"name": "createTargetCache",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 49,
+									"name": "index",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 50,
+									"name": "scale",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "1"
+								},
+								{
+									"id": 51,
+									"name": "width",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 52,
+									"name": "height",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "RenderTarget"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 227,
+								"name": "Filter.createTargetCache"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 226,
+						"name": "Filter.createTargetCache"
+					}
+				},
+				{
+					"id": 11,
+					"name": "initPasses",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/filters/filter_bloom.ts",
+							"line": 31,
+							"character": 22
+						}
+					],
+					"signatures": [
+						{
+							"id": 12,
+							"name": "initPasses",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "IfilterPass"
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 36,
+					"name": "render",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 90,
+							"character": 17
+						}
+					],
+					"signatures": [
+						{
+							"id": 37,
+							"name": "render",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 38,
+									"name": "inputTarget",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "RenderTarget"
+									}
+								},
+								{
+									"id": 39,
+									"name": "outputTarget",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "RenderTarget"
+									}
+								},
+								{
+									"id": 40,
+									"name": "rect",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "Vec4"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 216,
+								"name": "Filter.render"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 215,
+						"name": "Filter.render"
+					}
+				},
+				{
+					"id": 33,
+					"name": "value",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isProtected": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 85,
+							"character": 19
+						}
+					],
+					"signatures": [
+						{
+							"id": 34,
+							"name": "value",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 35,
+									"name": "para",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 213,
+								"name": "Filter.value"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 212,
+						"name": "Filter.value"
+					}
+				},
+				{
+					"id": 2,
+					"name": "parseValueToShader",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isStatic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 39,
+							"character": 29
+						}
+					],
+					"signatures": [
+						{
+							"id": 3,
+							"name": "parseValueToShader",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 4,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 193,
+								"name": "Filter.parseValueToShader"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 192,
+						"name": "Filter.parseValueToShader"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						5
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						24,
+						28,
+						53,
+						56,
+						29,
+						8,
+						10,
+						9,
+						55,
+						54
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						30,
+						41,
+						17,
+						13,
+						47,
+						11,
+						36,
+						33,
+						2
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/classes/filters/filter_bloom.ts",
+					"line": 10,
+					"character": 25
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"id": 191,
+					"name": "Filter"
+				}
+			]
+		},
+		{
+			"id": 57,
+			"name": "Filter_Empty",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {},
+			"children": [
+				{
+					"id": 61,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 62,
+							"name": "new Filter_Empty",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 63,
+									"name": "option",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "Ioption_Filter_Empty"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 57,
+								"name": "Filter_Empty"
+							},
+							"overwrites": {
+								"type": "reference",
+								"id": 196,
+								"name": "Filter.constructor"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"id": 195,
+						"name": "Filter.constructor"
+					}
+				},
+				{
+					"id": 64,
+					"name": "args",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 32,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 65,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"indexSignature": {
+								"id": 66,
+								"name": "__index",
+								"kind": 8192,
+								"kindString": "Index signature",
+								"flags": {},
+								"parameters": [
+									{
+										"id": 67,
+										"name": "paraName",
+										"kind": 32768,
+										"flags": {},
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									}
+								],
+								"type": {
+									"type": "intrinsic",
+									"name": "any"
+								}
+							}
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 201,
+						"name": "Filter.args"
+					}
+				},
+				{
+					"id": 68,
+					"name": "binbMap",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 33,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						],
+						"name": "Map"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 205,
+						"name": "Filter.binbMap"
+					}
+				},
+				{
+					"id": 93,
+					"name": "device",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "The graphics device of the application. [read only]."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 7152,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "GraphicsDevice"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 248,
+						"name": "Filter.device"
+					}
+				},
+				{
+					"id": 96,
+					"name": "needsDepthBuffer",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "The property that should to be set to `true` (by the custom post effect) if a depth map is necessary (default is false)."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 7164,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 251,
+						"name": "Filter.needsDepthBuffer"
+					}
+				},
+				{
+					"id": 69,
+					"name": "rtCache",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 34,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "RenderTarget"
+						}
+					},
+					"defaultValue": "[]",
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 206,
+						"name": "Filter.rtCache"
+					}
+				},
+				{
+					"id": 95,
+					"name": "shader",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "The shader definition for the fullscreen quad. Needs to be set by the custom post effect (default is null). Used when calling {@link drawFullscreenQuad}."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 7160,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Shader"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 250,
+						"name": "Filter.shader"
+					}
+				},
+				{
+					"id": 94,
+					"name": "vertexBuffer",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "The vertex buffer for the fullscreen quad. Used when calling {@link drawFullscreenQuad}. [read only]."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 7156,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "VertexBuffer"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 249,
+						"name": "Filter.vertexBuffer"
+					}
+				},
+				{
+					"id": 70,
+					"name": "addPasses",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isProtected": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 75,
+							"character": 23
+						}
+					],
+					"signatures": [
+						{
+							"id": 71,
+							"name": "addPasses",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 72,
+									"name": "params",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isRest": true
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"name": "IfilterPass"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 210,
+								"name": "Filter.addPasses"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 209,
+						"name": "Filter.addPasses"
+					}
+				},
+				{
+					"id": 81,
+					"name": "cache",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isProtected": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 130,
+							"character": 19
+						}
+					],
+					"signatures": [
+						{
+							"id": 82,
+							"name": "cache",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 83,
+									"name": "index",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 84,
+									"name": "option",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 85,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 86,
+													"name": "scale",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/classes/utils/filter.ts",
+															"line": 130,
+															"character": 51
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"kind": 1024,
+													"children": [
+														86
+													]
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "ICacheOption"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 221,
+								"name": "Filter.cache"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 220,
+						"name": "Filter.cache"
+					}
+				},
+				{
+					"id": 87,
+					"name": "createTargetCache",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isProtected": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 138,
+							"character": 31
+						}
+					],
+					"signatures": [
+						{
+							"id": 88,
+							"name": "createTargetCache",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 89,
+									"name": "index",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 90,
+									"name": "scale",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "1"
+								},
+								{
+									"id": 91,
+									"name": "width",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 92,
+									"name": "height",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "RenderTarget"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 227,
+								"name": "Filter.createTargetCache"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 226,
+						"name": "Filter.createTargetCache"
+					}
+				},
+				{
+					"id": 76,
+					"name": "render",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 90,
+							"character": 17
+						}
+					],
+					"signatures": [
+						{
+							"id": 77,
+							"name": "render",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 78,
+									"name": "inputTarget",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "RenderTarget"
+									}
+								},
+								{
+									"id": 79,
+									"name": "outputTarget",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "RenderTarget"
+									}
+								},
+								{
+									"id": 80,
+									"name": "rect",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "Vec4"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 216,
+								"name": "Filter.render"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 215,
+						"name": "Filter.render"
+					}
+				},
+				{
+					"id": 73,
+					"name": "value",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isProtected": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 85,
+							"character": 19
+						}
+					],
+					"signatures": [
+						{
+							"id": 74,
+							"name": "value",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 75,
+									"name": "para",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 213,
+								"name": "Filter.value"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 212,
+						"name": "Filter.value"
+					}
+				},
+				{
+					"id": 58,
+					"name": "parseValueToShader",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isStatic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 39,
+							"character": 29
+						}
+					],
+					"signatures": [
+						{
+							"id": 59,
+							"name": "parseValueToShader",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 60,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 193,
+								"name": "Filter.parseValueToShader"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 192,
+						"name": "Filter.parseValueToShader"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						61
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						64,
+						68,
+						93,
+						96,
+						69,
+						95,
+						94
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						70,
+						81,
+						87,
+						76,
+						73,
+						58
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/classes/filters/filter_empty.ts",
+					"line": 8,
+					"character": 25
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"id": 191,
+					"name": "Filter"
+				}
+			]
+		},
+		{
+			"id": 252,
+			"name": "MeshesRaycaster",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {},
+			"children": [
+				{
+					"id": 256,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 257,
+							"name": "new MeshesRaycaster",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"id": 252,
+								"name": "MeshesRaycaster"
+							}
+						}
+					]
+				},
+				{
+					"id": 259,
+					"name": "app",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 8,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Application"
+					}
+				},
+				{
+					"id": 263,
+					"name": "defaultCamera",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 12,
+							"character": 25
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "CameraComponent"
+					}
+				},
+				{
+					"id": 261,
+					"name": "hasListener",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 10,
+							"character": 23
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"defaultValue": "false"
+				},
+				{
+					"id": 260,
+					"name": "hasMove",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 9,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"defaultValue": "false"
+				},
+				{
+					"id": 262,
+					"name": "modelToRaycast",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 11,
+							"character": 26
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"name": "ModelComponent"
+							}
+						],
+						"name": "Set"
+					}
+				},
+				{
+					"id": 258,
+					"name": "ray",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 7,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Ray"
+					}
+				},
+				{
+					"id": 253,
+					"name": "instance",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true,
+						"isStatic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 5,
+							"character": 27
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 252,
+						"name": "MeshesRaycaster"
+					}
+				},
+				{
+					"id": 288,
+					"name": "addListener",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 153,
+							"character": 23
+						}
+					],
+					"signatures": [
+						{
+							"id": 289,
+							"name": "addListener",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 264,
+					"name": "addModel",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 43,
+							"character": 19
+						}
+					],
+					"signatures": [
+						{
+							"id": 265,
+							"name": "addModel",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Check if a string s is relative path.\n```ts\nfunction getAverage(x, y) {\n  return (x + y) / 2.0;\n}\n```"
+							},
+							"parameters": [
+								{
+									"id": 266,
+									"name": "model",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "The path to process.\n"
+									},
+									"type": {
+										"type": "reference",
+										"name": "ModelComponent"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 270,
+					"name": "onMouseDown",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 61,
+							"character": 23
+						}
+					],
+					"signatures": [
+						{
+							"id": 271,
+							"name": "onMouseDown",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 272,
+									"name": "e",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 273,
+					"name": "onMouseMove",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 80,
+							"character": 23
+						}
+					],
+					"signatures": [
+						{
+							"id": 274,
+							"name": "onMouseMove",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 275,
+									"name": "e",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 276,
+					"name": "onMouseUp",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 85,
+							"character": 21
+						}
+					],
+					"signatures": [
+						{
+							"id": 277,
+							"name": "onMouseUp",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 278,
+									"name": "e",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 285,
+					"name": "onTouchEnd",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 131,
+							"character": 22
+						}
+					],
+					"signatures": [
+						{
+							"id": 286,
+							"name": "onTouchEnd",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 287,
+									"name": "e",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 282,
+					"name": "onTouchMove",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 126,
+							"character": 23
+						}
+					],
+					"signatures": [
+						{
+							"id": 283,
+							"name": "onTouchMove",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 284,
+									"name": "e",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 279,
+					"name": "onTouchStart",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 106,
+							"character": 24
+						}
+					],
+					"signatures": [
+						{
+							"id": 280,
+							"name": "onTouchStart",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 281,
+									"name": "e",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 290,
+					"name": "removeListener",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 168,
+							"character": 26
+						}
+					],
+					"signatures": [
+						{
+							"id": 291,
+							"name": "removeListener",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 267,
+					"name": "removeModel",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 52,
+							"character": 22
+						}
+					],
+					"signatures": [
+						{
+							"id": 268,
+							"name": "removeModel",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 269,
+									"name": "model",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "ModelComponent"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 254,
+					"name": "getInstance",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isStatic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 26,
+							"character": 29
+						}
+					],
+					"signatures": [
+						{
+							"id": 255,
+							"name": "getInstance",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"id": 252,
+								"name": "MeshesRaycaster"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						256
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						259,
+						263,
+						261,
+						260,
+						262,
+						258,
+						253
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						288,
+						264,
+						270,
+						273,
+						276,
+						285,
+						282,
+						279,
+						290,
+						267,
+						254
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/classes/utils/meshesRaycaster.ts",
+					"line": 3,
+					"character": 28
+				}
+			]
+		},
+		{
+			"id": 308,
+			"name": "PathCurve",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {},
+			"children": [
+				{
+					"id": 309,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 310,
+							"name": "new PathCurve",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 311,
+									"name": "parent",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "Entity"
+									}
+								},
+								{
+									"id": 312,
+									"name": "curveMode",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 308,
+								"name": "PathCurve"
+							}
+						}
+					]
+				},
+				{
+					"id": 315,
+					"name": "curveMode",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 30,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 328,
+					"name": "distanceBetween",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 46,
+							"character": 27
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Vec3"
+					}
+				},
+				{
+					"id": 326,
+					"name": "forward",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 44,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Vec3"
+					}
+				},
+				{
+					"id": 322,
+					"name": "lx",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 39,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Curve"
+					}
+				},
+				{
+					"id": 323,
+					"name": "ly",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 40,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Curve"
+					}
+				},
+				{
+					"id": 324,
+					"name": "lz",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 41,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Curve"
+					}
+				},
+				{
+					"id": 316,
+					"name": "nodePercent",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 32,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "number"
+						}
+					}
+				},
+				{
+					"id": 314,
+					"name": "nodes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 29,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Entity"
+						}
+					}
+				},
+				{
+					"id": 313,
+					"name": "parent",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 28,
+							"character": 17
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Entity"
+					}
+				},
+				{
+					"id": 317,
+					"name": "pathLength",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 33,
+							"character": 21
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 318,
+					"name": "percentPreUnit",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 34,
+							"character": 25
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 325,
+					"name": "position",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 43,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Vec3"
+					}
+				},
+				{
+					"id": 330,
+					"name": "precision",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 49,
+							"character": 21
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 319,
+					"name": "px",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 36,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Curve"
+					}
+				},
+				{
+					"id": 320,
+					"name": "py",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 37,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Curve"
+					}
+				},
+				{
+					"id": 321,
+					"name": "pz",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 38,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Curve"
+					}
+				},
+				{
+					"id": 329,
+					"name": "rotation",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 47,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Quat"
+					}
+				},
+				{
+					"id": 331,
+					"name": "step",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 50,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 327,
+					"name": "up",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 45,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Vec3"
+					}
+				},
+				{
+					"id": 340,
+					"name": "cancelDraw",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 180,
+							"character": 21
+						}
+					],
+					"signatures": [
+						{
+							"id": 341,
+							"name": "cancelDraw",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 334,
+					"name": "draw",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 133,
+							"character": 15
+						}
+					],
+					"signatures": [
+						{
+							"id": 335,
+							"name": "draw",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 336,
+									"name": "data",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 337,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"indexSignature": {
+												"id": 338,
+												"name": "__index",
+												"kind": 8192,
+												"kindString": "Index signature",
+												"flags": {},
+												"parameters": [
+													{
+														"id": 339,
+														"name": "paraName",
+														"kind": 32768,
+														"flags": {},
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													}
+												],
+												"type": {
+													"type": "intrinsic",
+													"name": "any"
+												}
+											}
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 350,
+					"name": "getCurrentPath",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 215,
+							"character": 25
+						}
+					],
+					"signatures": [
+						{
+							"id": 351,
+							"name": "getCurrentPath",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 352,
+									"name": "percent",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					]
+				},
+				{
+					"id": 342,
+					"name": "getPosition",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 186,
+							"character": 22
+						}
+					],
+					"signatures": [
+						{
+							"id": 343,
+							"name": "getPosition",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 344,
+									"name": "percent",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Vec3"
+							}
+						}
+					]
+				},
+				{
+					"id": 345,
+					"name": "getRotation",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 193,
+							"character": 22
+						}
+					],
+					"signatures": [
+						{
+							"id": 346,
+							"name": "getRotation",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 347,
+									"name": "percent",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 348,
+									"name": "nodeRotation",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								},
+								{
+									"id": 349,
+									"name": "inverse",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Quat"
+							}
+						}
+					]
+				},
+				{
+					"id": 353,
+					"name": "getTangent",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 225,
+							"character": 21
+						}
+					],
+					"signatures": [
+						{
+							"id": 354,
+							"name": "getTangent",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 355,
+									"name": "percent",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Vec3"
+							}
+						}
+					]
+				},
+				{
+					"id": 332,
+					"name": "updateNodes",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 92,
+							"character": 22
+						}
+					],
+					"signatures": [
+						{
+							"id": 333,
+							"name": "updateNodes",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						309
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						315,
+						328,
+						326,
+						322,
+						323,
+						324,
+						316,
+						314,
+						313,
+						317,
+						318,
+						325,
+						330,
+						319,
+						320,
+						321,
+						329,
+						331,
+						327
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						340,
+						334,
+						350,
+						342,
+						345,
+						353,
+						332
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/extensions/newClasses/pathCurve.ts",
+					"line": 26,
+					"character": 22
+				}
+			]
+		},
+		{
+			"id": 124,
+			"name": "ScriptTypeBase",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {},
+			"comment": {
+				"shortText": "Base dummy duplicated pc.ScriptType class to be extended when defining.\nAll parameters and useful event-based methods made optional to avoid inadvertedly extending them or having to define them.\nCaveat is: tsconfig.json needs to be set to: \"strictNullChecks\": false",
+				"tags": [
+					{
+						"tag": "export",
+						"text": ""
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 125,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 126,
+							"name": "new ScriptTypeBase",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"id": 124,
+								"name": "ScriptTypeBase"
+							}
+						}
+					]
+				},
+				{
+					"id": 173,
+					"name": "app",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"shortText": "The {@link pc.Application} that the instance of this type\nbelongs to."
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/create-script-decorator.ts",
+							"line": 241,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Application"
+					}
+				},
+				{
+					"id": 143,
+					"name": "attributes",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isReadonly": true
+					},
+					"comment": {
+						"tags": [
+							{
+								"tag": "function",
+								"text": ""
+							},
+							{
+								"tag": "name",
+								"text": "pc.EventHandler#on"
+							},
+							{
+								"tag": "description",
+								"text": "Attach an event handler to an event."
+							},
+							{
+								"tag": "param",
+								"text": "Name of the event to bind the callback to.",
+								"param": "name"
+							},
+							{
+								"tag": "param",
+								"text": "Function that is called when event is fired. Note the callback is limited to 8 arguments.",
+								"param": "callback"
+							},
+							{
+								"tag": "param",
+								"text": "Object to use as 'this' when the event is fired, defaults to current this.",
+								"param": "[scope]"
+							},
+							{
+								"tag": "returns",
+								"text": "Self for chaining."
+							},
+							{
+								"tag": "example",
+								"text": "\nobj.on('test', function (a, b) {\n    console.log(a + b);\n});\nobj.fire('test', 1, 2); // prints 3 to the console\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/create-script-decorator.ts",
+							"line": 142,
+							"character": 23
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "ScriptAttributes"
+					}
+				},
+				{
+					"id": 127,
+					"name": "attributesData",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/create-script-decorator.ts",
+							"line": 87,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 128,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"indexSignature": {
+								"id": 129,
+								"name": "__index",
+								"kind": 8192,
+								"kindString": "Index signature",
+								"flags": {},
+								"parameters": [
+									{
+										"id": 130,
+										"name": "key",
+										"kind": 32768,
+										"flags": {},
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									}
+								],
+								"type": {
+									"type": "reference",
+									"id": 107,
+									"name": "AttributeParams"
+								}
+							}
+						}
+					}
+				},
+				{
+					"id": 175,
+					"name": "enabled",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"shortText": "True if the instance of this type is in running state. False\nwhen script is not running, because the Entity or any of its parents are disabled or the\nScript Component is disabled or the Script Instance is disabled. When disabled no update\nmethods will be called on each tick. initialize and postInitialize methods will run once\nwhen the script instance is in `enabled` state during app tick."
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/create-script-decorator.ts",
+							"line": 253,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 174,
+					"name": "entity",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"shortText": "The {@link pc.Entity} that the instance of this type belongs to."
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/create-script-decorator.ts",
+							"line": 245,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Entity"
+					}
+				},
+				{
+					"id": 176,
+					"name": "addFilters",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/create-script-decorator.ts",
+							"line": 259,
+							"character": 14
+						}
+					],
+					"signatures": [
+						{
+							"id": 177,
+							"name": "addFilters",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"tags": [
+									{
+										"tag": "description:",
+										"text": "给这个脚本挂载的相机添加滤镜"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 178,
+									"name": "filter",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "滤镜\n"
+									},
+									"type": {
+										"type": "reference",
+										"id": 191,
+										"name": "Filter"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 179,
+					"name": "bindAttribute",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/create-script-decorator.ts",
+							"line": 295,
+							"character": 17
+						}
+					],
+					"signatures": [
+						{
+							"id": 180,
+							"name": "bindAttribute",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"tags": [
+									{
+										"tag": "description:",
+										"text": "绑定此脚本属性到滤镜并根据属性实时更新"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 181,
+									"name": "attrName",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "要绑定的属性名\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "IattributesBinder"
+							}
+						}
+					]
+				},
+				{
+					"id": 154,
+					"name": "fire",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/create-script-decorator.ts",
+							"line": 207,
+							"character": 8
+						}
+					],
+					"signatures": [
+						{
+							"id": 155,
+							"name": "fire",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"returns": "Self for chaining.",
+								"tags": [
+									{
+										"tag": "function",
+										"text": ""
+									},
+									{
+										"tag": "name",
+										"text": "pc.EventHandler#fire"
+									},
+									{
+										"tag": "description",
+										"text": "Fire an event, all additional arguments are passed on to the event listener."
+									},
+									{
+										"tag": "example",
+										"text": "\nobj.fire('test', 'This is the message');\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 156,
+									"name": "name",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "Name of event to fire."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								},
+								{
+									"id": 157,
+									"name": "arg1",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								},
+								{
+									"id": 158,
+									"name": "arg2",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								},
+								{
+									"id": 159,
+									"name": "arg3",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								},
+								{
+									"id": 160,
+									"name": "arg4",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								},
+								{
+									"id": 161,
+									"name": "arg5",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								},
+								{
+									"id": 162,
+									"name": "arg6",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								},
+								{
+									"id": 163,
+									"name": "arg7",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								},
+								{
+									"id": 164,
+									"name": "arg8",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "EventHandler"
+							}
+						}
+					]
+				},
+				{
+					"id": 170,
+					"name": "hasEvent",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/create-script-decorator.ts",
+							"line": 235,
+							"character": 12
+						}
+					],
+					"signatures": [
+						{
+							"id": 171,
+							"name": "hasEvent",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"returns": "True if the object has handlers bound to the specified event name.",
+								"tags": [
+									{
+										"tag": "function",
+										"text": ""
+									},
+									{
+										"tag": "name",
+										"text": "pc.EventHandler#hasEvent"
+									},
+									{
+										"tag": "description",
+										"text": "Test if there are any handlers bound to an event name."
+									},
+									{
+										"tag": "example",
+										"text": "\nobj.on('test', function () { }); // bind an event to 'test'\nobj.hasEvent('test'); // returns true\nobj.hasEvent('hello'); // returns false\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 172,
+									"name": "name",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "The name of the event to test."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					]
+				},
+				{
+					"id": 131,
+					"name": "initialize",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/create-script-decorator.ts",
+							"line": 97,
+							"character": 14
+						}
+					],
+					"signatures": [
+						{
+							"id": 132,
+							"name": "initialize",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"tags": [
+									{
+										"tag": "function",
+										"text": ""
+									},
+									{
+										"tag": "name",
+										"text": "pc.ScriptType#[initialize]"
+									},
+									{
+										"tag": "description",
+										"text": "Called when script is about to run for the first time.\n"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 149,
+					"name": "off",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/create-script-decorator.ts",
+							"line": 189,
+							"character": 7
+						}
+					],
+					"signatures": [
+						{
+							"id": 150,
+							"name": "off",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"returns": "Self for chaining.",
+								"tags": [
+									{
+										"tag": "function",
+										"text": ""
+									},
+									{
+										"tag": "name",
+										"text": "pc.EventHandler#off"
+									},
+									{
+										"tag": "description",
+										"text": "Detach an event handler from an event. If callback is not provided then all callbacks are unbound from the event,\nif scope is not provided then all events with the callback will be unbound."
+									},
+									{
+										"tag": "example",
+										"text": "\nvar handler = function () {\n};\nobj.on('test', handler);\n\nobj.off(); // Removes all events\nobj.off('test'); // Removes all events called 'test'\nobj.off('test', handler); // Removes all handler functions, called 'test'\nobj.off('test', handler, this); // Removes all hander functions, called 'test' with scope this\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 151,
+									"name": "name",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 152,
+									"name": "callback",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "HandleEvent"
+									}
+								},
+								{
+									"id": 153,
+									"name": "scope",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "EventHandler"
+							}
+						}
+					]
+				},
+				{
+					"id": 144,
+					"name": "on",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/create-script-decorator.ts",
+							"line": 169,
+							"character": 6
+						}
+					],
+					"signatures": [
+						{
+							"id": 145,
+							"name": "on",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"tags": [
+									{
+										"tag": "function",
+										"text": ""
+									},
+									{
+										"tag": "name",
+										"text": "pc.ScriptType#[initialize]"
+									},
+									{
+										"tag": "description",
+										"text": "Called when script is about to run for the first time.\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 146,
+									"name": "name",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 147,
+									"name": "callback",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "HandleEvent"
+									}
+								},
+								{
+									"id": 148,
+									"name": "scope",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "EventHandler"
+							}
+						}
+					]
+				},
+				{
+					"id": 165,
+					"name": "once",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/create-script-decorator.ts",
+							"line": 223,
+							"character": 8
+						}
+					],
+					"signatures": [
+						{
+							"id": 166,
+							"name": "once",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"returns": "Self for chaining.",
+								"tags": [
+									{
+										"tag": "function",
+										"text": ""
+									},
+									{
+										"tag": "name",
+										"text": "pc.EventHandler#once"
+									},
+									{
+										"tag": "description",
+										"text": "Attach an event handler to an event. This handler will be removed after being fired once."
+									},
+									{
+										"tag": "example",
+										"text": "\nobj.once('test', function (a, b) {\n    console.log(a + b);\n});\nobj.fire('test', 1, 2); // prints 3 to the console\nobj.fire('test', 1, 2); // not going to get handled\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 167,
+									"name": "name",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "Name of the event to bind the callback to."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 168,
+									"name": "callback",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "Function that is called when event is fired. Note the callback is limited to 8 arguments."
+									},
+									"type": {
+										"type": "reference",
+										"name": "HandleEvent"
+									}
+								},
+								{
+									"id": 169,
+									"name": "scope",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "EventHandler"
+							}
+						}
+					]
+				},
+				{
+					"id": 133,
+					"name": "postInitialize",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/create-script-decorator.ts",
+							"line": 103,
+							"character": 18
+						}
+					],
+					"signatures": [
+						{
+							"id": 134,
+							"name": "postInitialize",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"tags": [
+									{
+										"tag": "function",
+										"text": ""
+									},
+									{
+										"tag": "name",
+										"text": "pc.ScriptType#[postInitialize]"
+									},
+									{
+										"tag": "description",
+										"text": "Called after all initialize methods are executed in the same tick or enabling chain of actions.\n"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 138,
+					"name": "postUpdate",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/create-script-decorator.ts",
+							"line": 117,
+							"character": 14
+						}
+					],
+					"signatures": [
+						{
+							"id": 139,
+							"name": "postUpdate",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"tags": [
+									{
+										"tag": "function",
+										"text": ""
+									},
+									{
+										"tag": "name",
+										"text": "pc.ScriptType#[postUpdate]"
+									},
+									{
+										"tag": "description",
+										"text": "Called for enabled (running state) scripts on each tick, after update."
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 140,
+									"name": "dt",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "The delta time in seconds since the last frame.\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 141,
+					"name": "swap",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/create-script-decorator.ts",
+							"line": 125,
+							"character": 8
+						}
+					],
+					"signatures": [
+						{
+							"id": 142,
+							"name": "swap",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"tags": [
+									{
+										"tag": "function",
+										"text": ""
+									},
+									{
+										"tag": "name",
+										"text": "pc.ScriptType#[swap]"
+									},
+									{
+										"tag": "description",
+										"text": "Called when a ScriptType that already exists in the registry\ngets redefined. If the new ScriptType has a `swap` method in its prototype,\nthen it will be executed to perform hot-reload at runtime.\n"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 135,
+					"name": "update",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/create-script-decorator.ts",
+							"line": 110,
+							"character": 10
+						}
+					],
+					"signatures": [
+						{
+							"id": 136,
+							"name": "update",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"tags": [
+									{
+										"tag": "function",
+										"text": ""
+									},
+									{
+										"tag": "name",
+										"text": "pc.ScriptType#[update]"
+									},
+									{
+										"tag": "description",
+										"text": "Called for enabled (running state) scripts on each tick."
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 137,
+									"name": "dt",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "The delta time in seconds since the last frame.\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						125
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						173,
+						143,
+						127,
+						175,
+						174
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						176,
+						179,
+						154,
+						170,
+						131,
+						149,
+						144,
+						165,
+						133,
+						138,
+						141,
+						135
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/classes/utils/create-script-decorator.ts",
+					"line": 83,
+					"character": 27
+				}
+			]
+		},
+		{
+			"id": 292,
+			"name": "ICameraComponent",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 296,
+					"name": "raycastMeshInstances",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 297,
+							"name": "raycastMeshInstances",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "从此相机发射射线，检测一系列mesh的交点 {@link playcanvas#Vec3 | the Vec3 class}",
+								"returns": "交点集合\n"
+							},
+							"parameters": [
+								{
+									"id": 298,
+									"name": "ray",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "要检测的射线"
+									},
+									"type": {
+										"type": "reference",
+										"name": "Ray"
+									}
+								},
+								{
+									"id": 299,
+									"name": "meshInstances",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "要检测的meshInstance集合"
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"name": "MeshInstance"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "intersect"
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 293,
+					"name": "syncCamera",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 294,
+							"name": "syncCamera",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "让两个相机同步"
+							},
+							"parameters": [
+								{
+									"id": 295,
+									"name": "camera",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "要同步的相机\n"
+									},
+									"type": {
+										"type": "reference",
+										"name": "CameraComponent"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						296,
+						293
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/extensions/extendClasses/cameraComponent.ts",
+					"line": 5,
+					"character": 33
+				}
+			]
+		},
+		{
+			"id": 107,
+			"name": "AttributeParams",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/classes/utils/create-script-decorator.ts",
+					"line": 58,
+					"character": 27
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 108,
+					"name": "__type",
+					"kind": 65536,
+					"kindString": "Type literal",
+					"flags": {},
+					"children": [
+						{
+							"id": 114,
+							"name": "array",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/classes/utils/create-script-decorator.ts",
+									"line": 64,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						},
+						{
+							"id": 120,
+							"name": "assetType",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/classes/utils/create-script-decorator.ts",
+									"line": 70,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 122,
+							"name": "color",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/classes/utils/create-script-decorator.ts",
+									"line": 72,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 121,
+							"name": "curves",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/classes/utils/create-script-decorator.ts",
+									"line": 71,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "string"
+								}
+							}
+						},
+						{
+							"id": 110,
+							"name": "default",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/classes/utils/create-script-decorator.ts",
+									"line": 60,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							}
+						},
+						{
+							"id": 112,
+							"name": "description",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/classes/utils/create-script-decorator.ts",
+									"line": 62,
+									"character": 15
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 123,
+							"name": "enum",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/classes/utils/create-script-decorator.ts",
+									"line": 73,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "object"
+								}
+							}
+						},
+						{
+							"id": 117,
+							"name": "max",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/classes/utils/create-script-decorator.ts",
+									"line": 67,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 116,
+							"name": "min",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/classes/utils/create-script-decorator.ts",
+									"line": 66,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 113,
+							"name": "placeholder",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/classes/utils/create-script-decorator.ts",
+									"line": 63,
+									"character": 15
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									}
+								]
+							}
+						},
+						{
+							"id": 118,
+							"name": "precision",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/classes/utils/create-script-decorator.ts",
+									"line": 68,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 115,
+							"name": "size",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/classes/utils/create-script-decorator.ts",
+									"line": 65,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 119,
+							"name": "step",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/classes/utils/create-script-decorator.ts",
+									"line": 69,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 111,
+							"name": "title",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/classes/utils/create-script-decorator.ts",
+									"line": 61,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 109,
+							"name": "type",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/classes/utils/create-script-decorator.ts",
+									"line": 59,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": "boolean"
+									},
+									{
+										"type": "literal",
+										"value": "number"
+									},
+									{
+										"type": "literal",
+										"value": "string"
+									},
+									{
+										"type": "literal",
+										"value": "json"
+									},
+									{
+										"type": "literal",
+										"value": "asset"
+									},
+									{
+										"type": "literal",
+										"value": "entity"
+									},
+									{
+										"type": "literal",
+										"value": "rgb"
+									},
+									{
+										"type": "literal",
+										"value": "rgba"
+									},
+									{
+										"type": "literal",
+										"value": "vec2"
+									},
+									{
+										"type": "literal",
+										"value": "vec3"
+									},
+									{
+										"type": "literal",
+										"value": "vec4"
+									},
+									{
+										"type": "literal",
+										"value": "curve"
+									}
+								]
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								114,
+								120,
+								122,
+								121,
+								110,
+								112,
+								123,
+								117,
+								116,
+								113,
+								118,
+								115,
+								119,
+								111,
+								109
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/classes/utils/create-script-decorator.ts",
+							"line": 58,
+							"character": 29
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 103,
+			"name": "attr",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/classes/utils/create-script-decorator.ts",
+					"line": 46,
+					"character": 20
+				}
+			],
+			"signatures": [
+				{
+					"id": 104,
+					"name": "attr",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"typeParameter": [
+						{
+							"id": 105,
+							"name": "T",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {}
+						}
+					],
+					"parameters": [
+						{
+							"id": 106,
+							"name": "params",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"id": 107,
+								"name": "AttributeParams"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				}
+			]
+		},
+		{
+			"id": 97,
+			"name": "createScript",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/classes/utils/create-script-decorator.ts",
+					"line": 13,
+					"character": 28
+				}
+			],
+			"signatures": [
+				{
+					"id": 98,
+					"name": "createScript",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"shortText": "Class decorator allowing the use of ES6 classes\nto define and create PlayCanvas script types.\nCaveat is: There is a slight iterative runtime overhead to this. (unlike Haxe which can utilize precompiled-macros)\nThe cool thing is that your script (if it uses properties) has an additional property called `attributesData` that can facilitate offboard property reflection/runtime-component\nproperty GUI creation."
+					},
+					"parameters": [
+						{
+							"id": 99,
+							"name": "name",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 100,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 101,
+									"name": "__type",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 102,
+											"name": "obj",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Namespaces",
+			"kind": 2,
+			"children": [
+				356
+			]
+		},
+		{
+			"title": "Classes",
+			"kind": 128,
+			"children": [
+				191,
+				1,
+				57,
+				252,
+				308,
+				124
+			]
+		},
+		{
+			"title": "Interfaces",
+			"kind": 256,
+			"children": [
+				292
+			]
+		},
+		{
+			"title": "Type aliases",
+			"kind": 4194304,
+			"children": [
+				107
+			]
+		},
+		{
+			"title": "Functions",
+			"kind": 64,
+			"children": [
+				103,
+				97
+			]
+		}
+	],
+	"sources": [
+		{
+			"fileName": "src/index.ts",
+			"line": 1,
+			"character": 0
+		}
+	]
+}

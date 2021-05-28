@@ -48,29 +48,3 @@ Old school method
 ```
 
 For static usage, ambient type definitions can optionally be referenced here `node_modules/pc-ex/bin/pcEX.d.ts`.
-
-### For Developer:
-
-clone repository
-
-```bash
-git clone https://github.com/TheFBplus/pc-ex.git
-```
-
-init development environment
-
-```bash
-npm run init
-```
-
-build project
-
-```bash
-npm run build
-```
-
-build api docs
-
-```bash
-npm run docs
-```

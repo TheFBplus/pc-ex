@@ -1,4 +1,4 @@
-[pc-ex](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/README.md) / Filter
+[pc-ex](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md) / Filter
 
 # Class: Filter
 
@@ -8,40 +8,40 @@
 
   ↳ **Filter**
 
-  ↳↳ [*Filter\_Bloom*](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter_bloom.md)
+  ↳↳ [*Filter\_Bloom*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md)
 
-  ↳↳ [*Filter\_Empty*](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter_empty.md)
+  ↳↳ [*Filter\_Empty*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_empty.md)
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter.md#constructor)
+- [constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#constructor)
 
 ### Properties
 
-- [args](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter.md#args)
-- [binbMap](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter.md#binbmap)
-- [device](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter.md#device)
-- [needsDepthBuffer](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter.md#needsdepthbuffer)
-- [rtCache](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter.md#rtcache)
-- [shader](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter.md#shader)
-- [vertexBuffer](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter.md#vertexbuffer)
+- [args](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#args)
+- [binbMap](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#binbmap)
+- [device](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#device)
+- [needsDepthBuffer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#needsdepthbuffer)
+- [rtCache](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#rtcache)
+- [shader](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#shader)
+- [vertexBuffer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#vertexbuffer)
 
 ### Methods
 
-- [addPasses](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter.md#addpasses)
-- [cache](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter.md#cache)
-- [createTargetCache](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter.md#createtargetcache)
-- [render](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter.md#render)
-- [value](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter.md#value)
-- [parseValueToShader](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter.md#parsevaluetoshader)
+- [addPasses](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#addpasses)
+- [cache](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#cache)
+- [createTargetCache](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#createtargetcache)
+- [render](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#render)
+- [value](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#value)
+- [parseValueToShader](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#parsevaluetoshader)
 
 ## Constructors
 
 ### constructor
 
-\+ **new Filter**(`option?`: { [paraName: string]: *any*;  }): [*Filter*](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter.md)
+\+ **new Filter**(`option?`: { [paraName: string]: *any*;  }): [*Filter*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md)
 
 #### Parameters
 
@@ -49,7 +49,7 @@
 | :------ | :------ |
 | `option?` | *object* |
 
-**Returns:** [*Filter*](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter.md)
+**Returns:** [*Filter*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md)
 
 Overrides: pc.PostEffect.constructor
 

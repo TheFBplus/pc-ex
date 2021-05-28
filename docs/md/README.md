@@ -6,29 +6,29 @@ pc-ex
 
 ### Namespaces
 
-- [DebugLine](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/modules/debugline.md)
+- [DebugLine](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/modules/debugline.md)
 
 ### Classes
 
-- [Filter](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter.md)
-- [Filter\_Bloom](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter_bloom.md)
-- [Filter\_Empty](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter_empty.md)
-- [MeshesRaycaster](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/meshesraycaster.md)
-- [PathCurve](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/pathcurve.md)
-- [ScriptTypeBase](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md)
+- [Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md)
+- [Filter\_Bloom](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md)
+- [Filter\_Empty](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_empty.md)
+- [MeshesRaycaster](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/meshesraycaster.md)
+- [PathCurve](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md)
+- [ScriptTypeBase](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md)
 
 ### Interfaces
 
-- [ICameraComponent](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/interfaces/icameracomponent.md)
+- [ICameraComponent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/icameracomponent.md)
 
 ### Type aliases
 
-- [AttributeParams](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/README.md#attributeparams)
+- [AttributeParams](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attributeparams)
 
 ### Functions
 
-- [attr](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/README.md#attr)
-- [createScript](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/README.md#createscript)
+- [attr](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attr)
+- [createScript](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#createscript)
 
 ## Type aliases
 
@@ -62,7 +62,7 @@ Defined in: src/classes/utils/create-script-decorator.ts:58
 
 ### attr
 
-▸ **attr**<T\>(`params`: [*AttributeParams*](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/README.md#attributeparams)): *any*
+▸ **attr**<T\>(`params`: [*AttributeParams*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attributeparams)): *any*
 
 #### Type parameters
 
@@ -74,7 +74,7 @@ Defined in: src/classes/utils/create-script-decorator.ts:58
 
 | Name | Type |
 | :------ | :------ |
-| `params` | [*AttributeParams*](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/README.md#attributeparams) |
+| `params` | [*AttributeParams*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attributeparams) |
 
 **Returns:** *any*
 

@@ -1,4 +1,4 @@
-[pc-ex](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/README.md) / MeshesRaycaster
+[pc-ex](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md) / MeshesRaycaster
 
 # Class: MeshesRaycaster
 
@@ -6,21 +6,21 @@
 
 ### Constructors
 
-- [constructor](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/meshesraycaster.md#constructor)
+- [constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/meshesraycaster.md#constructor)
 
 ### Methods
 
-- [addModel](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/meshesraycaster.md#addmodel)
-- [removeModel](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/meshesraycaster.md#removemodel)
-- [getInstance](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/meshesraycaster.md#getinstance)
+- [addModel](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/meshesraycaster.md#addmodel)
+- [removeModel](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/meshesraycaster.md#removemodel)
+- [getInstance](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/meshesraycaster.md#getinstance)
 
 ## Constructors
 
 ### constructor
 
-\+ **new MeshesRaycaster**(): [*MeshesRaycaster*](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/meshesraycaster.md)
+\+ **new MeshesRaycaster**(): [*MeshesRaycaster*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/meshesraycaster.md)
 
-**Returns:** [*MeshesRaycaster*](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/meshesraycaster.md)
+**Returns:** [*MeshesRaycaster*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/meshesraycaster.md)
 
 Defined in: src/classes/utils/meshesRaycaster.ts:12
 
@@ -67,8 +67,8 @@ ___
 
 ### getInstance
 
-▸ `Static` **getInstance**(): [*MeshesRaycaster*](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/meshesraycaster.md)
+▸ `Static` **getInstance**(): [*MeshesRaycaster*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/meshesraycaster.md)
 
-**Returns:** [*MeshesRaycaster*](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/meshesraycaster.md)
+**Returns:** [*MeshesRaycaster*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/meshesraycaster.md)
 
 Defined in: src/classes/utils/meshesRaycaster.ts:26

@@ -19,7 +19,7 @@ const { readFile, writeFile } = require("fs").promises;
 
 		// Fudge links to HTML docs into the markdown
 		head += page //
-			.split("(https://github.com/TheFBplus/pc-ex/blob/main/docs/md/README.md")
+			.split("(https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md")
 			.join("(https://thefbplus.github.io/pc-ex/modules.html");
 
 		await writeFile("README.md", head);

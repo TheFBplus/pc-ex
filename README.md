@@ -13,20 +13,20 @@ API docs can be found [here](https://thefbplus.github.io/pc-ex/)
 
 ### Namespaces
 
-- [DebugLine](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/modules/debugline.md)
+- [DebugLine](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/modules/debugline.md)
 
 ### Classes
 
-- [Filter](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter.md)
-- [Filter\_Bloom](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter_bloom.md)
-- [Filter\_Empty](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter_empty.md)
-- [MeshesRaycaster](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/meshesraycaster.md)
-- [PathCurve](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/pathcurve.md)
-- [ScriptTypeBase](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md)
+- [Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md)
+- [Filter\_Bloom](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md)
+- [Filter\_Empty](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_empty.md)
+- [MeshesRaycaster](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/meshesraycaster.md)
+- [PathCurve](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md)
+- [ScriptTypeBase](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md)
 
 ### Interfaces
 
-- [ICameraComponent](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/interfaces/icameracomponent.md)
+- [ICameraComponent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/icameracomponent.md)
 
 ### Type aliases
 

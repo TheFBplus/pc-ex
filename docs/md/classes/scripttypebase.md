@@ -1,4 +1,4 @@
-[pc-ex](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/README.md) / ScriptTypeBase
+[pc-ex](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md) / ScriptTypeBase
 
 # Class: ScriptTypeBase
 
@@ -12,38 +12,38 @@ Caveat is: tsconfig.json needs to be set to: "strictNullChecks": false
 
 ### Constructors
 
-- [constructor](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md#constructor)
+- [constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#constructor)
 
 ### Properties
 
-- [app](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md#app)
-- [attributes](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md#attributes)
-- [attributesData](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md#attributesdata)
-- [enabled](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md#enabled)
-- [entity](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md#entity)
+- [app](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#app)
+- [attributes](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#attributes)
+- [attributesData](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#attributesdata)
+- [enabled](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#enabled)
+- [entity](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#entity)
 
 ### Methods
 
-- [addFilters](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md#addfilters)
-- [bindAttribute](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md#bindattribute)
-- [fire](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md#fire)
-- [hasEvent](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md#hasevent)
-- [initialize](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md#initialize)
-- [off](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md#off)
-- [on](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md#on)
-- [once](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md#once)
-- [postInitialize](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md#postinitialize)
-- [postUpdate](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md#postupdate)
-- [swap](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md#swap)
-- [update](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md#update)
+- [addFilters](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#addfilters)
+- [bindAttribute](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#bindattribute)
+- [fire](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#fire)
+- [hasEvent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#hasevent)
+- [initialize](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#initialize)
+- [off](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#off)
+- [on](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#on)
+- [once](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#once)
+- [postInitialize](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#postinitialize)
+- [postUpdate](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#postupdate)
+- [swap](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#swap)
+- [update](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#update)
 
 ## Constructors
 
 ### constructor
 
-\+ **new ScriptTypeBase**(): [*ScriptTypeBase*](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md)
+\+ **new ScriptTypeBase**(): [*ScriptTypeBase*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md)
 
-**Returns:** [*ScriptTypeBase*](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/scripttypebase.md)
+**Returns:** [*ScriptTypeBase*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md)
 
 ## Properties
 
@@ -122,7 +122,7 @@ Defined in: src/classes/utils/create-script-decorator.ts:245
 
 ### addFilters
 
-▸ `Optional` **addFilters**(`filter`: [*Filter*](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter.md)): *void*
+▸ `Optional` **addFilters**(`filter`: [*Filter*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md)): *void*
 
 **`description:`** 给这个脚本挂载的相机添加滤镜
 
@@ -130,7 +130,7 @@ Defined in: src/classes/utils/create-script-decorator.ts:245
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `filter` | [*Filter*](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/filter.md) | 滤镜 |
+| `filter` | [*Filter*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md) | 滤镜 |
 
 **Returns:** *void*
 

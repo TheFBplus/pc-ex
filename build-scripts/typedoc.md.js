@@ -10,7 +10,7 @@ const config = {
 	name: "",
 
 	out: "docs/md",
-	publicPath: "https://github.com/TheFBplus/pc-ex/blob/main/docs/md/",
+	publicPath: "https://github.com/TheFBplus/pc-ex/blob/master/docs/md/",
 	theme: "default",
 	excludeInternal: true,
 	pretty: true,

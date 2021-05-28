@@ -1,4 +1,4 @@
-[pc-ex](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/README.md) / DebugLine
+[pc-ex](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md) / DebugLine
 
 # Namespace: DebugLine
 
@@ -6,8 +6,8 @@
 
 ### Functions
 
-- [clearLines](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/modules/debugline.md#clearlines)
-- [drawLine](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/modules/debugline.md#drawline)
+- [clearLines](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/modules/debugline.md#clearlines)
+- [drawLine](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/modules/debugline.md#drawline)
 
 ## Functions
 

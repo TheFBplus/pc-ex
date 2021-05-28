@@ -1,4 +1,4 @@
-[pc-ex](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/README.md) / ICameraComponent
+[pc-ex](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md) / ICameraComponent
 
 # Interface: ICameraComponent
 
@@ -6,8 +6,8 @@
 
 ### Methods
 
-- [raycastMeshInstances](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/interfaces/icameracomponent.md#raycastmeshinstances)
-- [syncCamera](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/interfaces/icameracomponent.md#synccamera)
+- [raycastMeshInstances](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/icameracomponent.md#raycastmeshinstances)
+- [syncCamera](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/icameracomponent.md#synccamera)
 
 ## Methods
 

@@ -1,4 +1,4 @@
-[pc-ex](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/README.md) / PathCurve
+[pc-ex](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md) / PathCurve
 
 # Class: PathCurve
 
@@ -6,32 +6,32 @@
 
 ### Constructors
 
-- [constructor](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/pathcurve.md#constructor)
+- [constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#constructor)
 
 ### Properties
 
-- [curveMode](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/pathcurve.md#curvemode)
-- [nodePercent](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/pathcurve.md#nodepercent)
-- [nodes](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/pathcurve.md#nodes)
-- [parent](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/pathcurve.md#parent)
-- [pathLength](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/pathcurve.md#pathlength)
-- [percentPreUnit](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/pathcurve.md#percentpreunit)
+- [curveMode](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#curvemode)
+- [nodePercent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#nodepercent)
+- [nodes](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#nodes)
+- [parent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#parent)
+- [pathLength](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#pathlength)
+- [percentPreUnit](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#percentpreunit)
 
 ### Methods
 
-- [cancelDraw](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/pathcurve.md#canceldraw)
-- [draw](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/pathcurve.md#draw)
-- [getCurrentPath](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/pathcurve.md#getcurrentpath)
-- [getPosition](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/pathcurve.md#getposition)
-- [getRotation](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/pathcurve.md#getrotation)
-- [getTangent](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/pathcurve.md#gettangent)
-- [updateNodes](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/pathcurve.md#updatenodes)
+- [cancelDraw](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#canceldraw)
+- [draw](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#draw)
+- [getCurrentPath](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#getcurrentpath)
+- [getPosition](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#getposition)
+- [getRotation](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#getrotation)
+- [getTangent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#gettangent)
+- [updateNodes](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#updatenodes)
 
 ## Constructors
 
 ### constructor
 
-\+ **new PathCurve**(`parent`: *Entity*, `curveMode?`: *number*): [*PathCurve*](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/pathcurve.md)
+\+ **new PathCurve**(`parent`: *Entity*, `curveMode?`: *number*): [*PathCurve*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md)
 
 #### Parameters
 
@@ -40,7 +40,7 @@
 | `parent` | *Entity* |
 | `curveMode?` | *number* |
 
-**Returns:** [*PathCurve*](https://github.com/TheFBplus/pc-ex/blob/main/docs/md/classes/pathcurve.md)
+**Returns:** [*PathCurve*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md)
 
 Defined in: src/extensions/newClasses/pathCurve.ts:50
 

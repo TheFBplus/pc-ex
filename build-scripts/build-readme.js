@@ -16,6 +16,9 @@ const { readFile, writeFile } = require("fs").promises;
 		head += "\n";
 		head += intro;
 		head += "\n";
+		head += `### API Docs
+
+API docs can be found [here](https://thefbplus.github.io/pc-ex/)`;
 
 		// // Fudge links to HTML docs into the markdown
 		// head += page //

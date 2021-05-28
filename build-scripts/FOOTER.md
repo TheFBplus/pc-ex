@@ -1,6 +1,6 @@
 ### API Docs
 
-API docs can be found [here](https://thefbplus.github.io/pc-ex/)`
+API docs can be found [here](https://thefbplus.github.io/pc-ex/)
 
 ***
 

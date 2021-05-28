@@ -51,7 +51,7 @@ Old school method
 For static usage, ambient type definitions can optionally be referenced here `node_modules/pc-ex/bin/pcEX.d.ts`.
 ### API Docs
 
-API docs can be found [here](https://thefbplus.github.io/pc-ex/)`
+API docs can be found [here](https://thefbplus.github.io/pc-ex/)
 
 ***
 

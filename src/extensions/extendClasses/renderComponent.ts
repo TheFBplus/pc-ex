@@ -70,7 +70,7 @@ Object.defineProperty(pc.RenderComponent.prototype, "ignoreMeshes", {
             if (!modelAsset.loaded) {
                 modelAsset.on("load", () =>
                 {
-                    this.model.meshInstances.forEach((mesh: pc.MeshInstance) =>
+                    this.render.meshInstances.forEach((mesh: pc.MeshInstance) =>
                     {
                         if (ignoreMeshes.indexOf(mesh.node.name) >= 0) {
                             return;
@@ -80,7 +80,7 @@ Object.defineProperty(pc.RenderComponent.prototype, "ignoreMeshes", {
                 }, this);
             }
             else {
-                this.model.meshInstances.forEach((mesh: pc.MeshInstance) =>
+                this.render.meshInstances.forEach((mesh: pc.MeshInstance) =>
                 {
                     if (ignoreMeshes.indexOf(mesh.node.name) >= 0) {
                         return;

@@ -1,247 +1,315 @@
-[pc-ex](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md) / Filter_Bloom
+[pc-ex](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md) / Filter\_Bloom
 
 # Class: Filter\_Bloom
 
 ## Hierarchy
 
-- [*Filter*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md)
+- [`Filter`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md)
 
-  ↳ **Filter_Bloom**
+  ↳ **`Filter_Bloom`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md#constructor)
+- [constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md#constructor)
 
 ### Properties
 
-- [args](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md#args)
-- [binbMap](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md#binbmap)
-- [device](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md#device)
-- [needsDepthBuffer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md#needsdepthbuffer)
-- [rtCache](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md#rtcache)
-- [shader](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md#shader)
-- [vertexBuffer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md#vertexbuffer)
+- [args](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md#args)
+- [binbMap](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md#binbmap)
+- [device](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md#device)
+- [needsDepthBuffer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md#needsdepthbuffer)
+- [rtCache](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md#rtcache)
+- [shader](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md#shader)
+- [vertexBuffer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md#vertexbuffer)
 
 ### Methods
 
-- [addPasses](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md#addpasses)
-- [cache](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md#cache)
-- [createTargetCache](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md#createtargetcache)
-- [render](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md#render)
-- [value](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md#value)
-- [parseValueToShader](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md#parsevaluetoshader)
+- [addPasses](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md#addpasses)
+- [cache](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md#cache)
+- [createTargetCache](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md#createtargetcache)
+- [render](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md#render)
+- [value](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md#value)
+- [parseValueToShader](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md#parsevaluetoshader)
 
 ## Constructors
 
 ### constructor
 
-\+ **new Filter_Bloom**(`option?`: Ioption\_Filter\_Bloom): [*Filter\_Bloom*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md)
+• **new Filter_Bloom**(`option?`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `option?` | Ioption\_Filter\_Bloom |
+| `option?` | `Ioption_Filter_Bloom` |
 
-**Returns:** [*Filter\_Bloom*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md)
+#### Overrides
 
-Overrides: [Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md)
+[Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md).[constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#constructor)
 
-Defined in: src/classes/filters/filter_bloom.ts:14
+#### Defined in
+
+src/classes/filters/filter_bloom.ts:16
 
 ## Properties
 
 ### args
 
-• `Optional` **args**: *object*
+• `Optional` **args**: `Object`
 
-#### Type declaration
+#### Index signature
 
-Inherited from: [Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md).[args](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#args)
+▪ [paraName: `string`]: `any`
 
-Defined in: src/classes/utils/filter.ts:32
+#### Inherited from
+
+[Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md).[args](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#args)
+
+#### Defined in
+
+src/classes/utils/filter.ts:32
 
 ___
 
 ### binbMap
 
-• **binbMap**: *Map*<string, string\>
+• **binbMap**: `Map`<`string`, `string`\>
 
-Inherited from: [Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md).[binbMap](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#binbmap)
+#### Inherited from
 
-Defined in: src/classes/utils/filter.ts:33
+[Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md).[binbMap](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#binbmap)
+
+#### Defined in
+
+src/classes/utils/filter.ts:33
 
 ___
 
 ### device
 
-• **device**: *GraphicsDevice*
+• **device**: `GraphicsDevice`
 
 The graphics device of the application. [read only].
 
-Inherited from: [Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md).[device](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#device)
+#### Inherited from
 
-Defined in: node_modules/playcanvas/build/playcanvas.d.ts:7152
+[Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md).[device](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#device)
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:7270
 
 ___
 
 ### needsDepthBuffer
 
-• **needsDepthBuffer**: *boolean*
+• **needsDepthBuffer**: `boolean`
 
 The property that should to be set to `true` (by the custom post effect) if a depth map is necessary (default is false).
 
-Inherited from: [Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md).[needsDepthBuffer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#needsdepthbuffer)
+#### Inherited from
 
-Defined in: node_modules/playcanvas/build/playcanvas.d.ts:7164
+[Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md).[needsDepthBuffer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#needsdepthbuffer)
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:7282
 
 ___
 
 ### rtCache
 
-• **rtCache**: *RenderTarget*[]= []
+• **rtCache**: `RenderTarget`[] = `[]`
 
-Inherited from: [Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md).[rtCache](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#rtcache)
+#### Inherited from
 
-Defined in: src/classes/utils/filter.ts:34
+[Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md).[rtCache](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#rtcache)
+
+#### Defined in
+
+src/classes/utils/filter.ts:34
 
 ___
 
 ### shader
 
-• **shader**: *Shader*
+• **shader**: `Shader`
 
 The shader definition for the fullscreen quad. Needs to be set by the custom post effect (default is null). Used when calling {@link drawFullscreenQuad}.
 
-Inherited from: [Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md).[shader](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#shader)
+#### Inherited from
 
-Defined in: node_modules/playcanvas/build/playcanvas.d.ts:7160
+[Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md).[shader](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#shader)
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:7278
 
 ___
 
 ### vertexBuffer
 
-• **vertexBuffer**: *VertexBuffer*
+• **vertexBuffer**: `VertexBuffer`
 
 The vertex buffer for the fullscreen quad. Used when calling {@link drawFullscreenQuad}. [read only].
 
-Inherited from: [Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md).[vertexBuffer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#vertexbuffer)
+#### Inherited from
 
-Defined in: node_modules/playcanvas/build/playcanvas.d.ts:7156
+[Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md).[vertexBuffer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#vertexbuffer)
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:7274
 
 ## Methods
 
 ### addPasses
 
-▸ `Protected` **addPasses**(...`params`: IfilterPass[]): *void*
+▸ `Protected` **addPasses**(...`params`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `...params` | IfilterPass[] |
+| `...params` | `IfilterPass`[] |
 
-**Returns:** *void*
+#### Returns
 
-Inherited from: [Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md)
+`void`
 
-Defined in: src/classes/utils/filter.ts:75
+#### Inherited from
+
+[Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md).[addPasses](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#addpasses)
+
+#### Defined in
+
+src/classes/utils/filter.ts:75
 
 ___
 
 ### cache
 
-▸ `Protected` **cache**(`index`: *number*, `option?`: { `scale`: *number*  }): ICacheOption
+▸ `Protected` **cache**(`index`, `option?`): `ICacheOption`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `index` | *number* |
-| `option?` | *object* |
-| `option.scale` | *number* |
+| `index` | `number` |
+| `option?` | `Object` |
+| `option.scale` | `number` |
 
-**Returns:** ICacheOption
+#### Returns
 
-Inherited from: [Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md)
+`ICacheOption`
 
-Defined in: src/classes/utils/filter.ts:130
+#### Inherited from
+
+[Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md).[cache](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#cache)
+
+#### Defined in
+
+src/classes/utils/filter.ts:130
 
 ___
 
 ### createTargetCache
 
-▸ `Protected` **createTargetCache**(`index`: *number*, `scale?`: *number*, `width?`: *number*, `height?`: *number*): *RenderTarget*
+▸ `Protected` **createTargetCache**(`index`, `scale?`, `width?`, `height?`): `RenderTarget`
 
 #### Parameters
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `index` | *number* | - |
-| `scale` | *number* | 1 |
-| `width?` | *number* | - |
-| `height?` | *number* | - |
+| `index` | `number` | `undefined` |
+| `scale` | `number` | `1` |
+| `width?` | `number` | `undefined` |
+| `height?` | `number` | `undefined` |
 
-**Returns:** *RenderTarget*
+#### Returns
 
-Inherited from: [Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md)
+`RenderTarget`
 
-Defined in: src/classes/utils/filter.ts:138
+#### Inherited from
+
+[Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md).[createTargetCache](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#createtargetcache)
+
+#### Defined in
+
+src/classes/utils/filter.ts:138
 
 ___
 
 ### render
 
-▸ **render**(`inputTarget`: *RenderTarget*, `outputTarget`: *RenderTarget*, `rect`: *Vec4*): *void*
+▸ **render**(`inputTarget`, `outputTarget`, `rect`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `inputTarget` | *RenderTarget* |
-| `outputTarget` | *RenderTarget* |
-| `rect` | *Vec4* |
+| `inputTarget` | `RenderTarget` |
+| `outputTarget` | `RenderTarget` |
+| `rect` | `Vec4` |
 
-**Returns:** *void*
+#### Returns
 
-Inherited from: [Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md)
+`void`
 
-Defined in: src/classes/utils/filter.ts:90
+#### Inherited from
+
+[Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md).[render](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#render)
+
+#### Defined in
+
+src/classes/utils/filter.ts:90
 
 ___
 
 ### value
 
-▸ `Protected` **value**(`para`: *any*): *any*
+▸ `Protected` **value**(`para`): `any`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `para` | *any* |
+| `para` | `any` |
 
-**Returns:** *any*
+#### Returns
 
-Inherited from: [Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md)
+`any`
 
-Defined in: src/classes/utils/filter.ts:85
+#### Inherited from
+
+[Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md).[value](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#value)
+
+#### Defined in
+
+src/classes/utils/filter.ts:85
 
 ___
 
 ### parseValueToShader
 
-▸ `Static` **parseValueToShader**(`value`: *any*): *any*
+▸ `Static` **parseValueToShader**(`value`): `any`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `value` | *any* |
+| `value` | `any` |
 
-**Returns:** *any*
+#### Returns
 
-Inherited from: [Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md)
+`any`
 
-Defined in: src/classes/utils/filter.ts:39
+#### Inherited from
+
+[Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md).[parseValueToShader](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#parsevaluetoshader)
+
+#### Defined in
+
+src/classes/utils/filter.ts:39

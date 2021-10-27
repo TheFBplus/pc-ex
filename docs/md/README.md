@@ -6,20 +6,20 @@ pc-ex
 
 ### Namespaces
 
-- [DebugLine](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/modules/debugline.md)
+- [DebugLine](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/modules/DebugLine.md)
 
 ### Classes
 
-- [Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md)
-- [Filter\_Bloom](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md)
-- [Filter\_Empty](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_empty.md)
-- [MeshesRaycaster](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/meshesraycaster.md)
-- [PathCurve](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md)
-- [ScriptTypeBase](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md)
+- [Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md)
+- [Filter\_Bloom](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md)
+- [Filter\_Empty](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Empty.md)
+- [MeshesRaycaster](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MeshesRaycaster.md)
+- [PathCurve](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md)
+- [ScriptTypeBase](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md)
 
 ### Interfaces
 
-- [ICameraComponent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/icameracomponent.md)
+- [ICameraComponent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/ICameraComponent.md)
 
 ### Type aliases
 
@@ -34,35 +34,37 @@ pc-ex
 
 ### AttributeParams
 
-Ƭ **AttributeParams**: *object*
+Ƭ **AttributeParams**: `Object`
 
 #### Type declaration
 
 | Name | Type |
 | :------ | :------ |
-| `array?` | *boolean* |
-| `assetType?` | *string* |
-| `color?` | *string* |
-| `curves?` | *string*[] |
-| `default?` | *any* |
-| `description?` | *string* |
-| `enum?` | *object*[] |
-| `max?` | *number* |
-| `min?` | *number* |
-| `placeholder?` | *string* \| *string*[] |
-| `precision?` | *number* |
-| `size?` | *number* |
-| `step?` | *number* |
-| `title?` | *string* |
+| `array?` | `boolean` |
+| `assetType?` | `string` |
+| `color?` | `string` |
+| `curves?` | `string`[] |
+| `default?` | `any` |
+| `description?` | `string` |
+| `enum?` | `object`[] |
+| `max?` | `number` |
+| `min?` | `number` |
+| `placeholder?` | `string` \| `string`[] |
+| `precision?` | `number` |
+| `size?` | `number` |
+| `step?` | `number` |
+| `title?` | `string` |
 | `type` | ``"boolean"`` \| ``"number"`` \| ``"string"`` \| ``"json"`` \| ``"asset"`` \| ``"entity"`` \| ``"rgb"`` \| ``"rgba"`` \| ``"vec2"`` \| ``"vec3"`` \| ``"vec4"`` \| ``"curve"`` |
 
-Defined in: src/classes/utils/create-script-decorator.ts:58
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:58
 
 ## Functions
 
 ### attr
 
-▸ **attr**<T\>(`params`: [*AttributeParams*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attributeparams)): *any*
+▸ **attr**<`T`\>(`params`): `any`
 
 #### Type parameters
 
@@ -74,17 +76,21 @@ Defined in: src/classes/utils/create-script-decorator.ts:58
 
 | Name | Type |
 | :------ | :------ |
-| `params` | [*AttributeParams*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attributeparams) |
+| `params` | [`AttributeParams`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attributeparams) |
 
-**Returns:** *any*
+#### Returns
 
-Defined in: src/classes/utils/create-script-decorator.ts:46
+`any`
+
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:46
 
 ___
 
 ### createScript
 
-▸ **createScript**(`name`: *string*): *function*
+▸ **createScript**(`name`): (`obj`: `any`) => `void`
 
 Class decorator allowing the use of ES6 classes
 to define and create PlayCanvas script types.
@@ -96,8 +102,24 @@ property GUI creation.
 
 | Name | Type |
 | :------ | :------ |
-| `name` | *string* |
+| `name` | `string` |
 
-**Returns:** (`obj`: *any*) => *void*
+#### Returns
 
-Defined in: src/classes/utils/create-script-decorator.ts:13
+`fn`
+
+▸ (`obj`): `void`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `obj` | `any` |
+
+##### Returns
+
+`void`
+
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:13

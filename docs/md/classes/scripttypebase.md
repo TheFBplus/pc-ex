@@ -12,55 +12,55 @@ Caveat is: tsconfig.json needs to be set to: "strictNullChecks": false
 
 ### Constructors
 
-- [constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#constructor)
+- [constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#constructor)
 
 ### Properties
 
-- [app](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#app)
-- [attributes](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#attributes)
-- [attributesData](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#attributesdata)
-- [enabled](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#enabled)
-- [entity](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#entity)
+- [app](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#app)
+- [attributes](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#attributes)
+- [attributesData](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#attributesdata)
+- [enabled](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#enabled)
+- [entity](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#entity)
 
 ### Methods
 
-- [addFilters](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#addfilters)
-- [bindAttribute](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#bindattribute)
-- [fire](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#fire)
-- [hasEvent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#hasevent)
-- [initialize](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#initialize)
-- [off](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#off)
-- [on](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#on)
-- [once](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#once)
-- [postInitialize](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#postinitialize)
-- [postUpdate](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#postupdate)
-- [swap](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#swap)
-- [update](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md#update)
+- [addFilters](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#addfilters)
+- [bindAttribute](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#bindattribute)
+- [fire](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#fire)
+- [hasEvent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#hasevent)
+- [initialize](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#initialize)
+- [off](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#off)
+- [on](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#on)
+- [once](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#once)
+- [postInitialize](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#postinitialize)
+- [postUpdate](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#postupdate)
+- [swap](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#swap)
+- [update](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#update)
 
 ## Constructors
 
 ### constructor
 
-\+ **new ScriptTypeBase**(): [*ScriptTypeBase*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md)
-
-**Returns:** [*ScriptTypeBase*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/scripttypebase.md)
+• **new ScriptTypeBase**()
 
 ## Properties
 
 ### app
 
-• **app**: *Application*
+• **app**: `Application`
 
 The {@link pc.Application} that the instance of this type
 belongs to.
 
-Defined in: src/classes/utils/create-script-decorator.ts:241
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:241
 
 ___
 
 ### attributes
 
-• `Readonly` **attributes**: *ScriptAttributes*
+• `Readonly` **attributes**: `ScriptAttributes`
 
 **`function`**
 
@@ -82,23 +82,29 @@ obj.on('test', function (a, b) {
 });
 obj.fire('test', 1, 2); // prints 3 to the console
 
-Defined in: src/classes/utils/create-script-decorator.ts:142
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:142
 
 ___
 
 ### attributesData
 
-• `Optional` **attributesData**: *object*
+• `Optional` **attributesData**: `Object`
 
-#### Type declaration
+#### Index signature
 
-Defined in: src/classes/utils/create-script-decorator.ts:87
+▪ [key: `string`]: [`AttributeParams`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attributeparams)
+
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:87
 
 ___
 
 ### enabled
 
-• **enabled**: *boolean*
+• **enabled**: `boolean`
 
 True if the instance of this type is in running state. False
 when script is not running, because the Entity or any of its parents are disabled or the
@@ -106,23 +112,27 @@ Script Component is disabled or the Script Instance is disabled. When disabled n
 methods will be called on each tick. initialize and postInitialize methods will run once
 when the script instance is in `enabled` state during app tick.
 
-Defined in: src/classes/utils/create-script-decorator.ts:253
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:253
 
 ___
 
 ### entity
 
-• **entity**: *Entity*
+• **entity**: `Entity`
 
 The {@link pc.Entity} that the instance of this type belongs to.
 
-Defined in: src/classes/utils/create-script-decorator.ts:245
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:245
 
 ## Methods
 
 ### addFilters
 
-▸ `Optional` **addFilters**(`filter`: [*Filter*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md)): *void*
+▸ `Optional` **addFilters**(`filter`): `void`
 
 **`description:`** 给这个脚本挂载的相机添加滤镜
 
@@ -130,17 +140,21 @@ Defined in: src/classes/utils/create-script-decorator.ts:245
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `filter` | [*Filter*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md) | 滤镜 |
+| `filter` | [`Filter`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md) | 滤镜 |
 
-**Returns:** *void*
+#### Returns
 
-Defined in: src/classes/utils/create-script-decorator.ts:259
+`void`
+
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:259
 
 ___
 
 ### bindAttribute
 
-▸ `Optional` **bindAttribute**(`attrName`: *string*): IattributesBinder
+▸ `Optional` **bindAttribute**(`attrName`): `IattributesBinder`
 
 **`description:`** 绑定此脚本属性到滤镜并根据属性实时更新
 
@@ -148,17 +162,21 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `attrName` | *string* | 要绑定的属性名 |
+| `attrName` | `string` | 要绑定的属性名 |
 
-**Returns:** IattributesBinder
+#### Returns
 
-Defined in: src/classes/utils/create-script-decorator.ts:295
+`IattributesBinder`
+
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:295
 
 ___
 
 ### fire
 
-▸ `Optional` **fire**(`name`: *any*, `arg1?`: *any*, `arg2?`: *any*, `arg3?`: *any*, `arg4?`: *any*, `arg5?`: *any*, `arg6?`: *any*, `arg7?`: *any*, `arg8?`: *any*): *EventHandler*
+▸ `Optional` **fire**(`name`, `arg1?`, `arg2?`, `arg3?`, `arg4?`, `arg5?`, `arg6?`, `arg7?`, `arg8?`): `EventHandler`
 
 **`function`**
 
@@ -173,27 +191,31 @@ obj.fire('test', 'This is the message');
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `name` | *any* | Name of event to fire. |
-| `arg1?` | *any* | - |
-| `arg2?` | *any* | - |
-| `arg3?` | *any* | - |
-| `arg4?` | *any* | - |
-| `arg5?` | *any* | - |
-| `arg6?` | *any* | - |
-| `arg7?` | *any* | - |
-| `arg8?` | *any* | - |
+| `name` | `any` | Name of event to fire. |
+| `arg1?` | `any` | - |
+| `arg2?` | `any` | - |
+| `arg3?` | `any` | - |
+| `arg4?` | `any` | - |
+| `arg5?` | `any` | - |
+| `arg6?` | `any` | - |
+| `arg7?` | `any` | - |
+| `arg8?` | `any` | - |
 
-**Returns:** *EventHandler*
+#### Returns
+
+`EventHandler`
 
 Self for chaining.
 
-Defined in: src/classes/utils/create-script-decorator.ts:207
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:207
 
 ___
 
 ### hasEvent
 
-▸ `Optional` **hasEvent**(`name`: *string*): *boolean*
+▸ `Optional` **hasEvent**(`name`): `boolean`
 
 **`function`**
 
@@ -210,19 +232,23 @@ obj.hasEvent('hello'); // returns false
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `name` | *string* | The name of the event to test. |
+| `name` | `string` | The name of the event to test. |
 
-**Returns:** *boolean*
+#### Returns
+
+`boolean`
 
 True if the object has handlers bound to the specified event name.
 
-Defined in: src/classes/utils/create-script-decorator.ts:235
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:235
 
 ___
 
 ### initialize
 
-▸ `Optional` **initialize**(): *void*
+▸ `Optional` **initialize**(): `void`
 
 **`function`**
 
@@ -230,15 +256,19 @@ ___
 
 **`description`** Called when script is about to run for the first time.
 
-**Returns:** *void*
+#### Returns
 
-Defined in: src/classes/utils/create-script-decorator.ts:97
+`void`
+
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:97
 
 ___
 
 ### off
 
-▸ `Optional` **off**(`name?`: *string*, `callback?`: HandleEvent, `scope?`: *any*): *EventHandler*
+▸ `Optional` **off**(`name?`, `callback?`, `scope?`): `EventHandler`
 
 **`function`**
 
@@ -261,21 +291,25 @@ obj.off('test', handler, this); // Removes all hander functions, called 'test' w
 
 | Name | Type |
 | :------ | :------ |
-| `name?` | *string* |
-| `callback?` | HandleEvent |
-| `scope?` | *any* |
+| `name?` | `string` |
+| `callback?` | `HandleEvent` |
+| `scope?` | `any` |
 
-**Returns:** *EventHandler*
+#### Returns
+
+`EventHandler`
 
 Self for chaining.
 
-Defined in: src/classes/utils/create-script-decorator.ts:189
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:189
 
 ___
 
 ### on
 
-▸ `Optional` **on**(`name`: *string*, `callback`: HandleEvent, `scope?`: *any*): *EventHandler*
+▸ `Optional` **on**(`name`, `callback`, `scope?`): `EventHandler`
 
 **`function`**
 
@@ -287,19 +321,23 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `name` | *string* |
-| `callback` | HandleEvent |
-| `scope?` | *any* |
+| `name` | `string` |
+| `callback` | `HandleEvent` |
+| `scope?` | `any` |
 
-**Returns:** *EventHandler*
+#### Returns
 
-Defined in: src/classes/utils/create-script-decorator.ts:169
+`EventHandler`
+
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:169
 
 ___
 
 ### once
 
-▸ `Optional` **once**(`name`: *string*, `callback`: HandleEvent, `scope?`: *any*): *EventHandler*
+▸ `Optional` **once**(`name`, `callback`, `scope?`): `EventHandler`
 
 **`function`**
 
@@ -318,21 +356,25 @@ obj.fire('test', 1, 2); // not going to get handled
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `name` | *string* | Name of the event to bind the callback to. |
-| `callback` | HandleEvent | Function that is called when event is fired. Note the callback is limited to 8 arguments. |
-| `scope?` | *any* | - |
+| `name` | `string` | Name of the event to bind the callback to. |
+| `callback` | `HandleEvent` | Function that is called when event is fired. Note the callback is limited to 8 arguments. |
+| `scope?` | `any` | - |
 
-**Returns:** *EventHandler*
+#### Returns
+
+`EventHandler`
 
 Self for chaining.
 
-Defined in: src/classes/utils/create-script-decorator.ts:223
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:223
 
 ___
 
 ### postInitialize
 
-▸ `Optional` **postInitialize**(): *void*
+▸ `Optional` **postInitialize**(): `void`
 
 **`function`**
 
@@ -340,15 +382,19 @@ ___
 
 **`description`** Called after all initialize methods are executed in the same tick or enabling chain of actions.
 
-**Returns:** *void*
+#### Returns
 
-Defined in: src/classes/utils/create-script-decorator.ts:103
+`void`
+
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:103
 
 ___
 
 ### postUpdate
 
-▸ `Optional` **postUpdate**(`dt`: *number*): *void*
+▸ `Optional` **postUpdate**(`dt`): `void`
 
 **`function`**
 
@@ -360,17 +406,21 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `dt` | *number* | The delta time in seconds since the last frame. |
+| `dt` | `number` | The delta time in seconds since the last frame. |
 
-**Returns:** *void*
+#### Returns
 
-Defined in: src/classes/utils/create-script-decorator.ts:117
+`void`
+
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:117
 
 ___
 
 ### swap
 
-▸ `Optional` **swap**(): *void*
+▸ `Optional` **swap**(): `void`
 
 **`function`**
 
@@ -380,15 +430,19 @@ ___
 gets redefined. If the new ScriptType has a `swap` method in its prototype,
 then it will be executed to perform hot-reload at runtime.
 
-**Returns:** *void*
+#### Returns
 
-Defined in: src/classes/utils/create-script-decorator.ts:125
+`void`
+
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:125
 
 ___
 
 ### update
 
-▸ `Optional` **update**(`dt`: *number*): *void*
+▸ `Optional` **update**(`dt`): `void`
 
 **`function`**
 
@@ -400,8 +454,12 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `dt` | *number* | The delta time in seconds since the last frame. |
+| `dt` | `number` | The delta time in seconds since the last frame. |
 
-**Returns:** *void*
+#### Returns
 
-Defined in: src/classes/utils/create-script-decorator.ts:110
+`void`
+
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:110

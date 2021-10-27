@@ -7,9 +7,11 @@ export * from "./extendClasses/meshInstance";
 export * from "./extendClasses/modelComponent";
 export * from "./extendClasses/quat";
 export * from "./extendClasses/ray";
+export * from "./extendClasses/renderComponent";
 export * from "./extendClasses/texture";
 export * from "./extendClasses/vec2";
 export * from "./extendClasses/vec3";
 export * from "./extendClasses/vec4";
 export * from "./newClasses/pathCurve";
 export * from "./newUtils/debugLine";
+

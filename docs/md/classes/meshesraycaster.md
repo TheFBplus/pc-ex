@@ -6,29 +6,29 @@
 
 ### Constructors
 
-- [constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/meshesraycaster.md#constructor)
+- [constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MeshesRaycaster.md#constructor)
 
 ### Methods
 
-- [addModel](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/meshesraycaster.md#addmodel)
-- [removeModel](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/meshesraycaster.md#removemodel)
-- [getInstance](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/meshesraycaster.md#getinstance)
+- [addModel](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MeshesRaycaster.md#addmodel)
+- [removeModel](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MeshesRaycaster.md#removemodel)
+- [getInstance](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MeshesRaycaster.md#getinstance)
 
 ## Constructors
 
 ### constructor
 
-\+ **new MeshesRaycaster**(): [*MeshesRaycaster*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/meshesraycaster.md)
+• **new MeshesRaycaster**()
 
-**Returns:** [*MeshesRaycaster*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/meshesraycaster.md)
+#### Defined in
 
-Defined in: src/classes/utils/meshesRaycaster.ts:12
+src/classes/utils/meshesRaycaster.ts:14
 
 ## Methods
 
 ### addModel
 
-▸ **addModel**(`model`: *ModelComponent*): *void*
+▸ **addModel**(`model`): `void`
 
 Check if a string s is relative path.
 ```ts
@@ -41,34 +41,46 @@ function getAverage(x, y) {
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `model` | *ModelComponent* | The path to process. |
+| `model` | `ModelComponent` | The path to process. |
 
-**Returns:** *void*
+#### Returns
 
-Defined in: src/classes/utils/meshesRaycaster.ts:43
+`void`
+
+#### Defined in
+
+src/classes/utils/meshesRaycaster.ts:43
 
 ___
 
 ### removeModel
 
-▸ **removeModel**(`model`: *ModelComponent*): *void*
+▸ **removeModel**(`model`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `model` | *ModelComponent* |
+| `model` | `ModelComponent` |
 
-**Returns:** *void*
+#### Returns
 
-Defined in: src/classes/utils/meshesRaycaster.ts:52
+`void`
+
+#### Defined in
+
+src/classes/utils/meshesRaycaster.ts:52
 
 ___
 
 ### getInstance
 
-▸ `Static` **getInstance**(): [*MeshesRaycaster*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/meshesraycaster.md)
+▸ `Static` **getInstance**(): [`MeshesRaycaster`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MeshesRaycaster.md)
 
-**Returns:** [*MeshesRaycaster*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/meshesraycaster.md)
+#### Returns
 
-Defined in: src/classes/utils/meshesRaycaster.ts:26
+[`MeshesRaycaster`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MeshesRaycaster.md)
+
+#### Defined in
+
+src/classes/utils/meshesRaycaster.ts:26

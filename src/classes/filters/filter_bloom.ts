@@ -80,7 +80,6 @@ export class Filter_Bloom extends Filter
         }
     `
 
-
         const passExtract = {
             args: {
                 "uBaseTexture": this,

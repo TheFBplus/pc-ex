@@ -1,7 +1,7 @@
 {
 	"id": 0,
 	"name": "pc-ex",
-	"kind": 0,
+	"kind": 1,
 	"kindString": "Project",
 	"flags": {},
 	"originalName": "",
@@ -9,7 +9,7 @@
 		{
 			"id": 356,
 			"name": "DebugLine",
-			"kind": 2,
+			"kind": 4,
 			"kindString": "Namespace",
 			"flags": {},
 			"children": [
@@ -23,7 +23,7 @@
 						{
 							"fileName": "src/extensions/newUtils/debugLine.ts",
 							"line": 27,
-							"character": 30
+							"character": 20
 						}
 					],
 					"signatures": [
@@ -50,7 +50,7 @@
 						{
 							"fileName": "src/extensions/newUtils/debugLine.ts",
 							"line": 16,
-							"character": 28
+							"character": 20
 						}
 					],
 					"signatures": [
@@ -69,7 +69,7 @@
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"name": "pc.Vec3"
+										"name": "Vec3"
 									}
 								},
 								{
@@ -80,7 +80,7 @@
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"name": "pc.Vec3"
+										"name": "Vec3"
 									}
 								},
 								{
@@ -93,7 +93,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"name": "pc.Color"
+										"name": "Color"
 									}
 								}
 							],
@@ -119,7 +119,7 @@
 				{
 					"fileName": "src/extensions/newUtils/debugLine.ts",
 					"line": 11,
-					"character": 26
+					"character": 17
 				}
 			]
 		},
@@ -136,6 +136,13 @@
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/filter.ts",
+							"line": 49,
+							"character": 4
+						}
+					],
 					"signatures": [
 						{
 							"id": 196,
@@ -216,7 +223,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 32,
-							"character": 15
+							"character": 11
 						}
 					],
 					"type": {
@@ -265,7 +272,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 33,
-							"character": 18
+							"character": 11
 						}
 					],
 					"type": {
@@ -297,8 +304,8 @@
 					"sources": [
 						{
 							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
-							"line": 7152,
-							"character": 10
+							"line": 7270,
+							"character": 4
 						}
 					],
 					"type": {
@@ -324,8 +331,8 @@
 					"sources": [
 						{
 							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
-							"line": 7164,
-							"character": 20
+							"line": 7282,
+							"character": 4
 						}
 					],
 					"type": {
@@ -349,7 +356,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 36,
-							"character": 18
+							"character": 12
 						}
 					],
 					"type": {
@@ -373,7 +380,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 34,
-							"character": 18
+							"character": 11
 						}
 					],
 					"type": {
@@ -399,8 +406,8 @@
 					"sources": [
 						{
 							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
-							"line": 7160,
-							"character": 10
+							"line": 7278,
+							"character": 4
 						}
 					],
 					"type": {
@@ -424,7 +431,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 37,
-							"character": 19
+							"character": 12
 						}
 					],
 					"type": {
@@ -450,8 +457,8 @@
 					"sources": [
 						{
 							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
-							"line": 7156,
-							"character": 16
+							"line": 7274,
+							"character": 4
 						}
 					],
 					"type": {
@@ -475,7 +482,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 190,
-							"character": 21
+							"character": 12
 						}
 					],
 					"signatures": [
@@ -528,7 +535,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 75,
-							"character": 23
+							"character": 14
 						}
 					],
 					"signatures": [
@@ -575,7 +582,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 130,
-							"character": 19
+							"character": 14
 						}
 					],
 					"signatures": [
@@ -624,7 +631,7 @@
 														{
 															"fileName": "src/classes/utils/filter.ts",
 															"line": 130,
-															"character": 51
+															"character": 46
 														}
 													],
 													"type": {
@@ -665,7 +672,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 138,
-							"character": 31
+							"character": 14
 						}
 					],
 					"signatures": [
@@ -745,7 +752,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 169,
-							"character": 26
+							"character": 12
 						}
 					],
 					"signatures": [
@@ -799,7 +806,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 196,
-							"character": 28
+							"character": 12
 						}
 					],
 					"signatures": [
@@ -846,7 +853,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 201,
-							"character": 27
+							"character": 12
 						}
 					],
 					"signatures": [
@@ -893,7 +900,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 174,
-							"character": 26
+							"character": 12
 						}
 					],
 					"signatures": [
@@ -922,7 +929,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 90,
-							"character": 17
+							"character": 11
 						}
 					],
 					"signatures": [
@@ -994,7 +1001,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 85,
-							"character": 19
+							"character": 14
 						}
 					],
 					"signatures": [
@@ -1036,7 +1043,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 39,
-							"character": 29
+							"character": 11
 						}
 					],
 					"signatures": [
@@ -1112,7 +1119,7 @@
 				{
 					"fileName": "src/classes/utils/filter.ts",
 					"line": 30,
-					"character": 19
+					"character": 13
 				}
 			],
 			"extendedTypes": [
@@ -1147,6 +1154,13 @@
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/classes/filters/filter_bloom.ts",
+							"line": 16,
+							"character": 4
+						}
+					],
 					"signatures": [
 						{
 							"id": 6,
@@ -1200,7 +1214,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 32,
-							"character": 15
+							"character": 11
 						}
 					],
 					"type": {
@@ -1254,7 +1268,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 33,
-							"character": 18
+							"character": 11
 						}
 					],
 					"type": {
@@ -1291,8 +1305,8 @@
 					"sources": [
 						{
 							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
-							"line": 7152,
-							"character": 10
+							"line": 7270,
+							"character": 4
 						}
 					],
 					"type": {
@@ -1319,8 +1333,8 @@
 					"sources": [
 						{
 							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
-							"line": 7164,
-							"character": 20
+							"line": 7282,
+							"character": 4
 						}
 					],
 					"type": {
@@ -1345,7 +1359,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 34,
-							"character": 18
+							"character": 11
 						}
 					],
 					"type": {
@@ -1374,7 +1388,7 @@
 						{
 							"fileName": "src/classes/filters/filter_bloom.ts",
 							"line": 12,
-							"character": 23
+							"character": 12
 						}
 					],
 					"type": {
@@ -1395,7 +1409,7 @@
 						{
 							"fileName": "src/classes/filters/filter_bloom.ts",
 							"line": 14,
-							"character": 25
+							"character": 12
 						}
 					],
 					"type": {
@@ -1416,7 +1430,7 @@
 						{
 							"fileName": "src/classes/filters/filter_bloom.ts",
 							"line": 13,
-							"character": 25
+							"character": 12
 						}
 					],
 					"type": {
@@ -1439,8 +1453,8 @@
 					"sources": [
 						{
 							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
-							"line": 7160,
-							"character": 10
+							"line": 7278,
+							"character": 4
 						}
 					],
 					"type": {
@@ -1467,8 +1481,8 @@
 					"sources": [
 						{
 							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
-							"line": 7156,
-							"character": 16
+							"line": 7274,
+							"character": 4
 						}
 					],
 					"type": {
@@ -1493,7 +1507,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 75,
-							"character": 23
+							"character": 14
 						}
 					],
 					"signatures": [
@@ -1550,7 +1564,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 130,
-							"character": 19
+							"character": 14
 						}
 					],
 					"signatures": [
@@ -1599,7 +1613,7 @@
 														{
 															"fileName": "src/classes/utils/filter.ts",
 															"line": 130,
-															"character": 51
+															"character": 46
 														}
 													],
 													"type": {
@@ -1649,8 +1663,8 @@
 					"sources": [
 						{
 							"fileName": "src/classes/filters/filter_bloom.ts",
-							"line": 142,
-							"character": 31
+							"line": 141,
+							"character": 12
 						}
 					],
 					"signatures": [
@@ -1735,8 +1749,8 @@
 					"sources": [
 						{
 							"fileName": "src/classes/filters/filter_bloom.ts",
-							"line": 137,
-							"character": 27
+							"line": 136,
+							"character": 12
 						}
 					],
 					"signatures": [
@@ -1789,7 +1803,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 138,
-							"character": 31
+							"character": 14
 						}
 					],
 					"signatures": [
@@ -1879,7 +1893,7 @@
 						{
 							"fileName": "src/classes/filters/filter_bloom.ts",
 							"line": 31,
-							"character": 22
+							"character": 12
 						}
 					],
 					"signatures": [
@@ -1911,7 +1925,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 90,
-							"character": 17
+							"character": 11
 						}
 					],
 					"signatures": [
@@ -1985,7 +1999,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 85,
-							"character": 19
+							"character": 14
 						}
 					],
 					"signatures": [
@@ -2037,7 +2051,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 39,
-							"character": 29
+							"character": 11
 						}
 					],
 					"signatures": [
@@ -2122,7 +2136,7 @@
 				{
 					"fileName": "src/classes/filters/filter_bloom.ts",
 					"line": 10,
-					"character": 25
+					"character": 13
 				}
 			],
 			"extendedTypes": [
@@ -2146,6 +2160,13 @@
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/classes/filters/filter_empty.ts",
+							"line": 10,
+							"character": 4
+						}
+					],
 					"signatures": [
 						{
 							"id": 62,
@@ -2199,7 +2220,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 32,
-							"character": 15
+							"character": 11
 						}
 					],
 					"type": {
@@ -2253,7 +2274,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 33,
-							"character": 18
+							"character": 11
 						}
 					],
 					"type": {
@@ -2290,8 +2311,8 @@
 					"sources": [
 						{
 							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
-							"line": 7152,
-							"character": 10
+							"line": 7270,
+							"character": 4
 						}
 					],
 					"type": {
@@ -2318,8 +2339,8 @@
 					"sources": [
 						{
 							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
-							"line": 7164,
-							"character": 20
+							"line": 7282,
+							"character": 4
 						}
 					],
 					"type": {
@@ -2344,7 +2365,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 34,
-							"character": 18
+							"character": 11
 						}
 					],
 					"type": {
@@ -2375,8 +2396,8 @@
 					"sources": [
 						{
 							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
-							"line": 7160,
-							"character": 10
+							"line": 7278,
+							"character": 4
 						}
 					],
 					"type": {
@@ -2403,8 +2424,8 @@
 					"sources": [
 						{
 							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
-							"line": 7156,
-							"character": 16
+							"line": 7274,
+							"character": 4
 						}
 					],
 					"type": {
@@ -2429,7 +2450,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 75,
-							"character": 23
+							"character": 14
 						}
 					],
 					"signatures": [
@@ -2486,7 +2507,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 130,
-							"character": 19
+							"character": 14
 						}
 					],
 					"signatures": [
@@ -2535,7 +2556,7 @@
 														{
 															"fileName": "src/classes/utils/filter.ts",
 															"line": 130,
-															"character": 51
+															"character": 46
 														}
 													],
 													"type": {
@@ -2586,7 +2607,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 138,
-							"character": 31
+							"character": 14
 						}
 					],
 					"signatures": [
@@ -2676,7 +2697,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 90,
-							"character": 17
+							"character": 11
 						}
 					],
 					"signatures": [
@@ -2750,7 +2771,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 85,
-							"character": 19
+							"character": 14
 						}
 					],
 					"signatures": [
@@ -2802,7 +2823,7 @@
 						{
 							"fileName": "src/classes/utils/filter.ts",
 							"line": 39,
-							"character": 29
+							"character": 11
 						}
 					],
 					"signatures": [
@@ -2881,7 +2902,7 @@
 				{
 					"fileName": "src/classes/filters/filter_empty.ts",
 					"line": 8,
-					"character": 25
+					"character": 13
 				}
 			],
 			"extendedTypes": [
@@ -2905,6 +2926,13 @@
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 14,
+							"character": 4
+						}
+					],
 					"signatures": [
 						{
 							"id": 257,
@@ -2932,7 +2960,7 @@
 						{
 							"fileName": "src/classes/utils/meshesRaycaster.ts",
 							"line": 8,
-							"character": 15
+							"character": 12
 						}
 					],
 					"type": {
@@ -2952,7 +2980,7 @@
 						{
 							"fileName": "src/classes/utils/meshesRaycaster.ts",
 							"line": 12,
-							"character": 25
+							"character": 12
 						}
 					],
 					"type": {
@@ -2972,7 +3000,7 @@
 						{
 							"fileName": "src/classes/utils/meshesRaycaster.ts",
 							"line": 10,
-							"character": 23
+							"character": 12
 						}
 					],
 					"type": {
@@ -2993,7 +3021,7 @@
 						{
 							"fileName": "src/classes/utils/meshesRaycaster.ts",
 							"line": 9,
-							"character": 19
+							"character": 12
 						}
 					],
 					"type": {
@@ -3014,7 +3042,7 @@
 						{
 							"fileName": "src/classes/utils/meshesRaycaster.ts",
 							"line": 11,
-							"character": 26
+							"character": 12
 						}
 					],
 					"type": {
@@ -3040,7 +3068,7 @@
 						{
 							"fileName": "src/classes/utils/meshesRaycaster.ts",
 							"line": 7,
-							"character": 15
+							"character": 12
 						}
 					],
 					"type": {
@@ -3061,7 +3089,7 @@
 						{
 							"fileName": "src/classes/utils/meshesRaycaster.ts",
 							"line": 5,
-							"character": 27
+							"character": 19
 						}
 					],
 					"type": {
@@ -3082,7 +3110,7 @@
 						{
 							"fileName": "src/classes/utils/meshesRaycaster.ts",
 							"line": 153,
-							"character": 23
+							"character": 12
 						}
 					],
 					"signatures": [
@@ -3111,7 +3139,7 @@
 						{
 							"fileName": "src/classes/utils/meshesRaycaster.ts",
 							"line": 43,
-							"character": 19
+							"character": 11
 						}
 					],
 					"signatures": [
@@ -3132,7 +3160,7 @@
 									"kindString": "Parameter",
 									"flags": {},
 									"comment": {
-										"text": "The path to process.\n"
+										"shortText": "The path to process.\n"
 									},
 									"type": {
 										"type": "reference",
@@ -3159,7 +3187,7 @@
 						{
 							"fileName": "src/classes/utils/meshesRaycaster.ts",
 							"line": 61,
-							"character": 23
+							"character": 12
 						}
 					],
 					"signatures": [
@@ -3201,7 +3229,7 @@
 						{
 							"fileName": "src/classes/utils/meshesRaycaster.ts",
 							"line": 80,
-							"character": 23
+							"character": 12
 						}
 					],
 					"signatures": [
@@ -3243,7 +3271,7 @@
 						{
 							"fileName": "src/classes/utils/meshesRaycaster.ts",
 							"line": 85,
-							"character": 21
+							"character": 12
 						}
 					],
 					"signatures": [
@@ -3285,7 +3313,7 @@
 						{
 							"fileName": "src/classes/utils/meshesRaycaster.ts",
 							"line": 131,
-							"character": 22
+							"character": 12
 						}
 					],
 					"signatures": [
@@ -3327,7 +3355,7 @@
 						{
 							"fileName": "src/classes/utils/meshesRaycaster.ts",
 							"line": 126,
-							"character": 23
+							"character": 12
 						}
 					],
 					"signatures": [
@@ -3369,7 +3397,7 @@
 						{
 							"fileName": "src/classes/utils/meshesRaycaster.ts",
 							"line": 106,
-							"character": 24
+							"character": 12
 						}
 					],
 					"signatures": [
@@ -3411,7 +3439,7 @@
 						{
 							"fileName": "src/classes/utils/meshesRaycaster.ts",
 							"line": 168,
-							"character": 26
+							"character": 12
 						}
 					],
 					"signatures": [
@@ -3440,7 +3468,7 @@
 						{
 							"fileName": "src/classes/utils/meshesRaycaster.ts",
 							"line": 52,
-							"character": 22
+							"character": 11
 						}
 					],
 					"signatures": [
@@ -3483,7 +3511,7 @@
 						{
 							"fileName": "src/classes/utils/meshesRaycaster.ts",
 							"line": 26,
-							"character": 29
+							"character": 18
 						}
 					],
 					"signatures": [
@@ -3545,7 +3573,7 @@
 				{
 					"fileName": "src/classes/utils/meshesRaycaster.ts",
 					"line": 3,
-					"character": 28
+					"character": 13
 				}
 			]
 		},
@@ -3562,6 +3590,13 @@
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
+							"line": 52,
+							"character": 4
+						}
+					],
 					"signatures": [
 						{
 							"id": 310,
@@ -3615,7 +3650,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 30,
-							"character": 20
+							"character": 11
 						}
 					],
 					"type": {
@@ -3635,7 +3670,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 46,
-							"character": 27
+							"character": 12
 						}
 					],
 					"type": {
@@ -3655,7 +3690,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 44,
-							"character": 19
+							"character": 12
 						}
 					],
 					"type": {
@@ -3675,7 +3710,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 39,
-							"character": 14
+							"character": 12
 						}
 					],
 					"type": {
@@ -3695,7 +3730,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 40,
-							"character": 14
+							"character": 12
 						}
 					],
 					"type": {
@@ -3715,7 +3750,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 41,
-							"character": 14
+							"character": 12
 						}
 					],
 					"type": {
@@ -3735,7 +3770,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 32,
-							"character": 22
+							"character": 11
 						}
 					],
 					"type": {
@@ -3758,7 +3793,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 29,
-							"character": 16
+							"character": 11
 						}
 					],
 					"type": {
@@ -3781,7 +3816,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 28,
-							"character": 17
+							"character": 11
 						}
 					],
 					"type": {
@@ -3801,7 +3836,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 33,
-							"character": 21
+							"character": 11
 						}
 					],
 					"type": {
@@ -3821,7 +3856,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 34,
-							"character": 25
+							"character": 11
 						}
 					],
 					"type": {
@@ -3841,7 +3876,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 43,
-							"character": 20
+							"character": 12
 						}
 					],
 					"type": {
@@ -3861,7 +3896,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 49,
-							"character": 21
+							"character": 12
 						}
 					],
 					"type": {
@@ -3881,7 +3916,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 36,
-							"character": 14
+							"character": 12
 						}
 					],
 					"type": {
@@ -3901,7 +3936,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 37,
-							"character": 14
+							"character": 12
 						}
 					],
 					"type": {
@@ -3921,7 +3956,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 38,
-							"character": 14
+							"character": 12
 						}
 					],
 					"type": {
@@ -3941,7 +3976,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 47,
-							"character": 20
+							"character": 12
 						}
 					],
 					"type": {
@@ -3961,7 +3996,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 50,
-							"character": 16
+							"character": 12
 						}
 					],
 					"type": {
@@ -3981,7 +4016,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 45,
-							"character": 14
+							"character": 12
 						}
 					],
 					"type": {
@@ -4001,7 +4036,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 180,
-							"character": 21
+							"character": 11
 						}
 					],
 					"signatures": [
@@ -4030,7 +4065,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 133,
-							"character": 15
+							"character": 11
 						}
 					],
 					"signatures": [
@@ -4101,7 +4136,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 215,
-							"character": 25
+							"character": 11
 						}
 					],
 					"signatures": [
@@ -4143,7 +4178,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 186,
-							"character": 22
+							"character": 11
 						}
 					],
 					"signatures": [
@@ -4185,7 +4220,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 193,
-							"character": 22
+							"character": 11
 						}
 					],
 					"signatures": [
@@ -4253,7 +4288,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 225,
-							"character": 21
+							"character": 11
 						}
 					],
 					"signatures": [
@@ -4295,7 +4330,7 @@
 						{
 							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 92,
-							"character": 22
+							"character": 11
 						}
 					],
 					"signatures": [
@@ -4364,7 +4399,7 @@
 				{
 					"fileName": "src/extensions/newClasses/pathCurve.ts",
 					"line": 26,
-					"character": 22
+					"character": 13
 				}
 			]
 		},
@@ -4418,7 +4453,7 @@
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
 							"line": 241,
-							"character": 7
+							"character": 4
 						}
 					],
 					"type": {
@@ -4477,7 +4512,7 @@
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
 							"line": 142,
-							"character": 23
+							"character": 13
 						}
 					],
 					"type": {
@@ -4497,7 +4532,7 @@
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
 							"line": 87,
-							"character": 18
+							"character": 4
 						}
 					],
 					"type": {
@@ -4548,7 +4583,7 @@
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
 							"line": 253,
-							"character": 11
+							"character": 4
 						}
 					],
 					"type": {
@@ -4569,7 +4604,7 @@
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
 							"line": 245,
-							"character": 10
+							"character": 4
 						}
 					],
 					"type": {
@@ -4589,7 +4624,7 @@
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
 							"line": 259,
-							"character": 14
+							"character": 4
 						}
 					],
 					"signatures": [
@@ -4615,7 +4650,7 @@
 									"kindString": "Parameter",
 									"flags": {},
 									"comment": {
-										"text": "滤镜\n"
+										"shortText": "滤镜\n"
 									},
 									"type": {
 										"type": "reference",
@@ -4643,7 +4678,7 @@
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
 							"line": 295,
-							"character": 17
+							"character": 4
 						}
 					],
 					"signatures": [
@@ -4669,7 +4704,7 @@
 									"kindString": "Parameter",
 									"flags": {},
 									"comment": {
-										"text": "要绑定的属性名\n"
+										"shortText": "要绑定的属性名\n"
 									},
 									"type": {
 										"type": "intrinsic",
@@ -4696,7 +4731,7 @@
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
 							"line": 207,
-							"character": 8
+							"character": 4
 						}
 					],
 					"signatures": [
@@ -4735,7 +4770,7 @@
 									"kindString": "Parameter",
 									"flags": {},
 									"comment": {
-										"text": "Name of event to fire."
+										"shortText": "Name of event to fire."
 									},
 									"type": {
 										"type": "intrinsic",
@@ -4866,7 +4901,7 @@
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
 							"line": 235,
-							"character": 12
+							"character": 4
 						}
 					],
 					"signatures": [
@@ -4905,7 +4940,7 @@
 									"kindString": "Parameter",
 									"flags": {},
 									"comment": {
-										"text": "The name of the event to test."
+										"shortText": "The name of the event to test."
 									},
 									"type": {
 										"type": "intrinsic",
@@ -4932,7 +4967,7 @@
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
 							"line": 97,
-							"character": 14
+							"character": 4
 						}
 					],
 					"signatures": [
@@ -4977,7 +5012,7 @@
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
 							"line": 189,
-							"character": 7
+							"character": 4
 						}
 					],
 					"signatures": [
@@ -5068,7 +5103,7 @@
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
 							"line": 169,
-							"character": 6
+							"character": 4
 						}
 					],
 					"signatures": [
@@ -5150,7 +5185,7 @@
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
 							"line": 223,
-							"character": 8
+							"character": 4
 						}
 					],
 					"signatures": [
@@ -5189,7 +5224,7 @@
 									"kindString": "Parameter",
 									"flags": {},
 									"comment": {
-										"text": "Name of the event to bind the callback to."
+										"shortText": "Name of the event to bind the callback to."
 									},
 									"type": {
 										"type": "intrinsic",
@@ -5203,7 +5238,7 @@
 									"kindString": "Parameter",
 									"flags": {},
 									"comment": {
-										"text": "Function that is called when event is fired. Note the callback is limited to 8 arguments."
+										"shortText": "Function that is called when event is fired. Note the callback is limited to 8 arguments."
 									},
 									"type": {
 										"type": "reference",
@@ -5243,7 +5278,7 @@
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
 							"line": 103,
-							"character": 18
+							"character": 4
 						}
 					],
 					"signatures": [
@@ -5288,7 +5323,7 @@
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
 							"line": 117,
-							"character": 14
+							"character": 4
 						}
 					],
 					"signatures": [
@@ -5322,7 +5357,7 @@
 									"kindString": "Parameter",
 									"flags": {},
 									"comment": {
-										"text": "The delta time in seconds since the last frame.\n"
+										"shortText": "The delta time in seconds since the last frame.\n"
 									},
 									"type": {
 										"type": "intrinsic",
@@ -5349,7 +5384,7 @@
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
 							"line": 125,
-							"character": 8
+							"character": 4
 						}
 					],
 					"signatures": [
@@ -5394,7 +5429,7 @@
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
 							"line": 110,
-							"character": 10
+							"character": 4
 						}
 					],
 					"signatures": [
@@ -5428,7 +5463,7 @@
 									"kindString": "Parameter",
 									"flags": {},
 									"comment": {
-										"text": "The delta time in seconds since the last frame.\n"
+										"shortText": "The delta time in seconds since the last frame.\n"
 									},
 									"type": {
 										"type": "intrinsic",
@@ -5486,7 +5521,7 @@
 				{
 					"fileName": "src/classes/utils/create-script-decorator.ts",
 					"line": 83,
-					"character": 27
+					"character": 13
 				}
 			]
 		},
@@ -5522,7 +5557,7 @@
 									"kindString": "Parameter",
 									"flags": {},
 									"comment": {
-										"text": "要检测的射线"
+										"shortText": "要检测的射线"
 									},
 									"type": {
 										"type": "reference",
@@ -5536,7 +5571,7 @@
 									"kindString": "Parameter",
 									"flags": {},
 									"comment": {
-										"text": "要检测的meshInstance集合"
+										"shortText": "要检测的meshInstance集合"
 									},
 									"type": {
 										"type": "array",
@@ -5581,7 +5616,7 @@
 									"kindString": "Parameter",
 									"flags": {},
 									"comment": {
-										"text": "要同步的相机\n"
+										"shortText": "要同步的相机\n"
 									},
 									"type": {
 										"type": "reference",
@@ -5611,7 +5646,7 @@
 				{
 					"fileName": "src/extensions/extendClasses/cameraComponent.ts",
 					"line": 5,
-					"character": 33
+					"character": 17
 				}
 			]
 		},
@@ -5625,7 +5660,7 @@
 				{
 					"fileName": "src/classes/utils/create-script-decorator.ts",
 					"line": 58,
-					"character": 27
+					"character": 12
 				}
 			],
 			"type": {
@@ -5649,7 +5684,7 @@
 								{
 									"fileName": "src/classes/utils/create-script-decorator.ts",
 									"line": 64,
-									"character": 9
+									"character": 4
 								}
 							],
 							"type": {
@@ -5669,7 +5704,7 @@
 								{
 									"fileName": "src/classes/utils/create-script-decorator.ts",
 									"line": 70,
-									"character": 13
+									"character": 4
 								}
 							],
 							"type": {
@@ -5689,7 +5724,7 @@
 								{
 									"fileName": "src/classes/utils/create-script-decorator.ts",
 									"line": 72,
-									"character": 9
+									"character": 4
 								}
 							],
 							"type": {
@@ -5709,7 +5744,7 @@
 								{
 									"fileName": "src/classes/utils/create-script-decorator.ts",
 									"line": 71,
-									"character": 10
+									"character": 4
 								}
 							],
 							"type": {
@@ -5732,7 +5767,7 @@
 								{
 									"fileName": "src/classes/utils/create-script-decorator.ts",
 									"line": 60,
-									"character": 11
+									"character": 4
 								}
 							],
 							"type": {
@@ -5752,7 +5787,7 @@
 								{
 									"fileName": "src/classes/utils/create-script-decorator.ts",
 									"line": 62,
-									"character": 15
+									"character": 4
 								}
 							],
 							"type": {
@@ -5772,7 +5807,7 @@
 								{
 									"fileName": "src/classes/utils/create-script-decorator.ts",
 									"line": 73,
-									"character": 8
+									"character": 4
 								}
 							],
 							"type": {
@@ -5795,7 +5830,7 @@
 								{
 									"fileName": "src/classes/utils/create-script-decorator.ts",
 									"line": 67,
-									"character": 7
+									"character": 4
 								}
 							],
 							"type": {
@@ -5815,7 +5850,7 @@
 								{
 									"fileName": "src/classes/utils/create-script-decorator.ts",
 									"line": 66,
-									"character": 7
+									"character": 4
 								}
 							],
 							"type": {
@@ -5835,7 +5870,7 @@
 								{
 									"fileName": "src/classes/utils/create-script-decorator.ts",
 									"line": 63,
-									"character": 15
+									"character": 4
 								}
 							],
 							"type": {
@@ -5867,7 +5902,7 @@
 								{
 									"fileName": "src/classes/utils/create-script-decorator.ts",
 									"line": 68,
-									"character": 13
+									"character": 4
 								}
 							],
 							"type": {
@@ -5887,7 +5922,7 @@
 								{
 									"fileName": "src/classes/utils/create-script-decorator.ts",
 									"line": 65,
-									"character": 8
+									"character": 4
 								}
 							],
 							"type": {
@@ -5907,7 +5942,7 @@
 								{
 									"fileName": "src/classes/utils/create-script-decorator.ts",
 									"line": 69,
-									"character": 8
+									"character": 4
 								}
 							],
 							"type": {
@@ -5927,7 +5962,7 @@
 								{
 									"fileName": "src/classes/utils/create-script-decorator.ts",
 									"line": 61,
-									"character": 9
+									"character": 4
 								}
 							],
 							"type": {
@@ -5945,7 +5980,7 @@
 								{
 									"fileName": "src/classes/utils/create-script-decorator.ts",
 									"line": 59,
-									"character": 8
+									"character": 4
 								}
 							],
 							"type": {
@@ -6030,7 +6065,7 @@
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
 							"line": 58,
-							"character": 29
+							"character": 30
 						}
 					]
 				}
@@ -6046,7 +6081,7 @@
 				{
 					"fileName": "src/classes/utils/create-script-decorator.ts",
 					"line": 46,
-					"character": 20
+					"character": 16
 				}
 			],
 			"signatures": [
@@ -6096,7 +6131,7 @@
 				{
 					"fileName": "src/classes/utils/create-script-decorator.ts",
 					"line": 13,
-					"character": 28
+					"character": 16
 				}
 			],
 			"signatures": [
@@ -6165,7 +6200,7 @@
 	"groups": [
 		{
 			"title": "Namespaces",
-			"kind": 2,
+			"kind": 4,
 			"children": [
 				356
 			]

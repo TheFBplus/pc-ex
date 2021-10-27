@@ -4,232 +4,284 @@
 
 ## Hierarchy
 
-- *PostEffect*
+- `PostEffect`
 
-  ↳ **Filter**
+  ↳ **`Filter`**
 
-  ↳↳ [*Filter\_Bloom*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_bloom.md)
+  ↳↳ [`Filter_Bloom`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md)
 
-  ↳↳ [*Filter\_Empty*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter_empty.md)
+  ↳↳ [`Filter_Empty`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Empty.md)
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#constructor)
+- [constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#constructor)
 
 ### Properties
 
-- [args](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#args)
-- [binbMap](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#binbmap)
-- [device](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#device)
-- [needsDepthBuffer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#needsdepthbuffer)
-- [rtCache](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#rtcache)
-- [shader](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#shader)
-- [vertexBuffer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#vertexbuffer)
+- [args](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#args)
+- [binbMap](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#binbmap)
+- [device](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#device)
+- [needsDepthBuffer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#needsdepthbuffer)
+- [rtCache](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#rtcache)
+- [shader](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#shader)
+- [vertexBuffer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#vertexbuffer)
 
 ### Methods
 
-- [addPasses](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#addpasses)
-- [cache](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#cache)
-- [createTargetCache](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#createtargetcache)
-- [render](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#render)
-- [value](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#value)
-- [parseValueToShader](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md#parsevaluetoshader)
+- [addPasses](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#addpasses)
+- [cache](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#cache)
+- [createTargetCache](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#createtargetcache)
+- [render](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#render)
+- [value](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#value)
+- [parseValueToShader](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#parsevaluetoshader)
 
 ## Constructors
 
 ### constructor
 
-\+ **new Filter**(`option?`: { [paraName: string]: *any*;  }): [*Filter*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md)
+• **new Filter**(`option?`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `option?` | *object* |
+| `option?` | `Object` |
 
-**Returns:** [*Filter*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/filter.md)
+#### Overrides
 
-Overrides: pc.PostEffect.constructor
+pc.PostEffect.constructor
 
-Defined in: src/classes/utils/filter.ts:47
+#### Defined in
+
+src/classes/utils/filter.ts:49
 
 ## Properties
 
 ### args
 
-• `Optional` **args**: *object*
+• `Optional` **args**: `Object`
 
-#### Type declaration
+#### Index signature
 
-Defined in: src/classes/utils/filter.ts:32
+▪ [paraName: `string`]: `any`
+
+#### Defined in
+
+src/classes/utils/filter.ts:32
 
 ___
 
 ### binbMap
 
-• **binbMap**: *Map*<string, string\>
+• **binbMap**: `Map`<`string`, `string`\>
 
-Defined in: src/classes/utils/filter.ts:33
+#### Defined in
+
+src/classes/utils/filter.ts:33
 
 ___
 
 ### device
 
-• **device**: *GraphicsDevice*
+• **device**: `GraphicsDevice`
 
 The graphics device of the application. [read only].
 
-Inherited from: pc.PostEffect.device
+#### Inherited from
 
-Defined in: node_modules/playcanvas/build/playcanvas.d.ts:7152
+pc.PostEffect.device
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:7270
 
 ___
 
 ### needsDepthBuffer
 
-• **needsDepthBuffer**: *boolean*
+• **needsDepthBuffer**: `boolean`
 
 The property that should to be set to `true` (by the custom post effect) if a depth map is necessary (default is false).
 
-Inherited from: pc.PostEffect.needsDepthBuffer
+#### Inherited from
 
-Defined in: node_modules/playcanvas/build/playcanvas.d.ts:7164
+pc.PostEffect.needsDepthBuffer
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:7282
 
 ___
 
 ### rtCache
 
-• **rtCache**: *RenderTarget*[]= []
+• **rtCache**: `RenderTarget`[] = `[]`
 
-Defined in: src/classes/utils/filter.ts:34
+#### Defined in
+
+src/classes/utils/filter.ts:34
 
 ___
 
 ### shader
 
-• **shader**: *Shader*
+• **shader**: `Shader`
 
 The shader definition for the fullscreen quad. Needs to be set by the custom post effect (default is null). Used when calling {@link drawFullscreenQuad}.
 
-Inherited from: pc.PostEffect.shader
+#### Inherited from
 
-Defined in: node_modules/playcanvas/build/playcanvas.d.ts:7160
+pc.PostEffect.shader
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:7278
 
 ___
 
 ### vertexBuffer
 
-• **vertexBuffer**: *VertexBuffer*
+• **vertexBuffer**: `VertexBuffer`
 
 The vertex buffer for the fullscreen quad. Used when calling {@link drawFullscreenQuad}. [read only].
 
-Inherited from: pc.PostEffect.vertexBuffer
+#### Inherited from
 
-Defined in: node_modules/playcanvas/build/playcanvas.d.ts:7156
+pc.PostEffect.vertexBuffer
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:7274
 
 ## Methods
 
 ### addPasses
 
-▸ `Protected` **addPasses**(...`params`: IfilterPass[]): *void*
+▸ `Protected` **addPasses**(...`params`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `...params` | IfilterPass[] |
+| `...params` | `IfilterPass`[] |
 
-**Returns:** *void*
+#### Returns
 
-Defined in: src/classes/utils/filter.ts:75
+`void`
+
+#### Defined in
+
+src/classes/utils/filter.ts:75
 
 ___
 
 ### cache
 
-▸ `Protected` **cache**(`index`: *number*, `option?`: { `scale`: *number*  }): ICacheOption
+▸ `Protected` **cache**(`index`, `option?`): `ICacheOption`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `index` | *number* |
-| `option?` | *object* |
-| `option.scale` | *number* |
+| `index` | `number` |
+| `option?` | `Object` |
+| `option.scale` | `number` |
 
-**Returns:** ICacheOption
+#### Returns
 
-Defined in: src/classes/utils/filter.ts:130
+`ICacheOption`
+
+#### Defined in
+
+src/classes/utils/filter.ts:130
 
 ___
 
 ### createTargetCache
 
-▸ `Protected` **createTargetCache**(`index`: *number*, `scale?`: *number*, `width?`: *number*, `height?`: *number*): *RenderTarget*
+▸ `Protected` **createTargetCache**(`index`, `scale?`, `width?`, `height?`): `RenderTarget`
 
 #### Parameters
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `index` | *number* | - |
-| `scale` | *number* | 1 |
-| `width?` | *number* | - |
-| `height?` | *number* | - |
+| `index` | `number` | `undefined` |
+| `scale` | `number` | `1` |
+| `width?` | `number` | `undefined` |
+| `height?` | `number` | `undefined` |
 
-**Returns:** *RenderTarget*
+#### Returns
 
-Defined in: src/classes/utils/filter.ts:138
+`RenderTarget`
+
+#### Defined in
+
+src/classes/utils/filter.ts:138
 
 ___
 
 ### render
 
-▸ **render**(`inputTarget`: *RenderTarget*, `outputTarget`: *RenderTarget*, `rect`: *Vec4*): *void*
+▸ **render**(`inputTarget`, `outputTarget`, `rect`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `inputTarget` | *RenderTarget* |
-| `outputTarget` | *RenderTarget* |
-| `rect` | *Vec4* |
+| `inputTarget` | `RenderTarget` |
+| `outputTarget` | `RenderTarget` |
+| `rect` | `Vec4` |
 
-**Returns:** *void*
+#### Returns
 
-Overrides: pc.PostEffect.render
+`void`
 
-Defined in: src/classes/utils/filter.ts:90
+#### Overrides
+
+pc.PostEffect.render
+
+#### Defined in
+
+src/classes/utils/filter.ts:90
 
 ___
 
 ### value
 
-▸ `Protected` **value**(`para`: *any*): *any*
+▸ `Protected` **value**(`para`): `any`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `para` | *any* |
+| `para` | `any` |
 
-**Returns:** *any*
+#### Returns
 
-Defined in: src/classes/utils/filter.ts:85
+`any`
+
+#### Defined in
+
+src/classes/utils/filter.ts:85
 
 ___
 
 ### parseValueToShader
 
-▸ `Static` **parseValueToShader**(`value`: *any*): *any*
+▸ `Static` **parseValueToShader**(`value`): `any`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `value` | *any* |
+| `value` | `any` |
 
-**Returns:** *any*
+#### Returns
 
-Defined in: src/classes/utils/filter.ts:39
+`any`
+
+#### Defined in
+
+src/classes/utils/filter.ts:39

@@ -6,190 +6,230 @@
 
 ### Constructors
 
-- [constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#constructor)
+- [constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md#constructor)
 
 ### Properties
 
-- [curveMode](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#curvemode)
-- [nodePercent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#nodepercent)
-- [nodes](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#nodes)
-- [parent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#parent)
-- [pathLength](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#pathlength)
-- [percentPreUnit](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#percentpreunit)
+- [curveMode](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md#curvemode)
+- [nodePercent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md#nodepercent)
+- [nodes](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md#nodes)
+- [parent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md#parent)
+- [pathLength](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md#pathlength)
+- [percentPreUnit](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md#percentpreunit)
 
 ### Methods
 
-- [cancelDraw](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#canceldraw)
-- [draw](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#draw)
-- [getCurrentPath](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#getcurrentpath)
-- [getPosition](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#getposition)
-- [getRotation](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#getrotation)
-- [getTangent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#gettangent)
-- [updateNodes](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md#updatenodes)
+- [cancelDraw](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md#canceldraw)
+- [draw](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md#draw)
+- [getCurrentPath](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md#getcurrentpath)
+- [getPosition](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md#getposition)
+- [getRotation](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md#getrotation)
+- [getTangent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md#gettangent)
+- [updateNodes](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md#updatenodes)
 
 ## Constructors
 
 ### constructor
 
-\+ **new PathCurve**(`parent`: *Entity*, `curveMode?`: *number*): [*PathCurve*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md)
+• **new PathCurve**(`parent`, `curveMode?`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `parent` | *Entity* |
-| `curveMode?` | *number* |
+| `parent` | `Entity` |
+| `curveMode?` | `number` |
 
-**Returns:** [*PathCurve*](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/pathcurve.md)
+#### Defined in
 
-Defined in: src/extensions/newClasses/pathCurve.ts:50
+src/extensions/newClasses/pathCurve.ts:52
 
 ## Properties
 
 ### curveMode
 
-• **curveMode**: *number*
+• **curveMode**: `number`
 
-Defined in: src/extensions/newClasses/pathCurve.ts:30
+#### Defined in
+
+src/extensions/newClasses/pathCurve.ts:30
 
 ___
 
 ### nodePercent
 
-• **nodePercent**: *number*[]
+• **nodePercent**: `number`[]
 
-Defined in: src/extensions/newClasses/pathCurve.ts:32
+#### Defined in
+
+src/extensions/newClasses/pathCurve.ts:32
 
 ___
 
 ### nodes
 
-• **nodes**: *Entity*[]
+• **nodes**: `Entity`[]
 
-Defined in: src/extensions/newClasses/pathCurve.ts:29
+#### Defined in
+
+src/extensions/newClasses/pathCurve.ts:29
 
 ___
 
 ### parent
 
-• **parent**: *Entity*
+• **parent**: `Entity`
 
-Defined in: src/extensions/newClasses/pathCurve.ts:28
+#### Defined in
+
+src/extensions/newClasses/pathCurve.ts:28
 
 ___
 
 ### pathLength
 
-• **pathLength**: *number*
+• **pathLength**: `number`
 
-Defined in: src/extensions/newClasses/pathCurve.ts:33
+#### Defined in
+
+src/extensions/newClasses/pathCurve.ts:33
 
 ___
 
 ### percentPreUnit
 
-• **percentPreUnit**: *number*
+• **percentPreUnit**: `number`
 
-Defined in: src/extensions/newClasses/pathCurve.ts:34
+#### Defined in
+
+src/extensions/newClasses/pathCurve.ts:34
 
 ## Methods
 
 ### cancelDraw
 
-▸ **cancelDraw**(): *void*
+▸ **cancelDraw**(): `void`
 
-**Returns:** *void*
+#### Returns
 
-Defined in: src/extensions/newClasses/pathCurve.ts:180
+`void`
+
+#### Defined in
+
+src/extensions/newClasses/pathCurve.ts:180
 
 ___
 
 ### draw
 
-▸ **draw**(`data`: { [paraName: string]: *any*;  }): *void*
+▸ **draw**(`data`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data` | *object* |
+| `data` | `Object` |
 
-**Returns:** *void*
+#### Returns
 
-Defined in: src/extensions/newClasses/pathCurve.ts:133
+`void`
+
+#### Defined in
+
+src/extensions/newClasses/pathCurve.ts:133
 
 ___
 
 ### getCurrentPath
 
-▸ **getCurrentPath**(`percent`: *number*): *number*
+▸ **getCurrentPath**(`percent`): `number`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `percent` | *number* |
+| `percent` | `number` |
 
-**Returns:** *number*
+#### Returns
 
-Defined in: src/extensions/newClasses/pathCurve.ts:215
+`number`
+
+#### Defined in
+
+src/extensions/newClasses/pathCurve.ts:215
 
 ___
 
 ### getPosition
 
-▸ **getPosition**(`percent`: *number*): *Vec3*
+▸ **getPosition**(`percent`): `Vec3`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `percent` | *number* |
+| `percent` | `number` |
 
-**Returns:** *Vec3*
+#### Returns
 
-Defined in: src/extensions/newClasses/pathCurve.ts:186
+`Vec3`
+
+#### Defined in
+
+src/extensions/newClasses/pathCurve.ts:186
 
 ___
 
 ### getRotation
 
-▸ **getRotation**(`percent`: *number*, `nodeRotation?`: *boolean*, `inverse?`: *boolean*): *Quat*
+▸ **getRotation**(`percent`, `nodeRotation?`, `inverse?`): `Quat`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `percent` | *number* |
-| `nodeRotation?` | *boolean* |
-| `inverse?` | *boolean* |
+| `percent` | `number` |
+| `nodeRotation?` | `boolean` |
+| `inverse?` | `boolean` |
 
-**Returns:** *Quat*
+#### Returns
 
-Defined in: src/extensions/newClasses/pathCurve.ts:193
+`Quat`
+
+#### Defined in
+
+src/extensions/newClasses/pathCurve.ts:193
 
 ___
 
 ### getTangent
 
-▸ **getTangent**(`percent`: *number*): *Vec3*
+▸ **getTangent**(`percent`): `Vec3`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `percent` | *number* |
+| `percent` | `number` |
 
-**Returns:** *Vec3*
+#### Returns
 
-Defined in: src/extensions/newClasses/pathCurve.ts:225
+`Vec3`
+
+#### Defined in
+
+src/extensions/newClasses/pathCurve.ts:225
 
 ___
 
 ### updateNodes
 
-▸ **updateNodes**(): *void*
+▸ **updateNodes**(): `void`
 
-**Returns:** *void*
+#### Returns
 
-Defined in: src/extensions/newClasses/pathCurve.ts:92
+`void`
+
+#### Defined in
+
+src/extensions/newClasses/pathCurve.ts:92

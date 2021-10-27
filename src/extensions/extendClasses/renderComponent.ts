@@ -2,20 +2,12 @@ import * as pc from "playcanvas";
 
 import { MeshesRaycaster } from "../../classes/utils/meshesRaycaster";
 
-let _parentMat = new pc.Mat4();
-
 declare module 'playcanvas' {
-    export interface Entity
+    export interface RenderComponent
     {
         /**
-         * @description: 改变父节点并保持物体的transform
-         * @param {Entity} parent 父节点
+         * @description: 开启模型射线检测
          */
-        reparentAndKeepTransform(parent: Entity): void;
-
-        /**
-        * @description: 开启模型射线检测
-        */
         useInput: boolean;
 
         /**
@@ -31,33 +23,38 @@ declare module 'playcanvas' {
 }
 
 /**
- * @description: 改变父节点并保持物体的transform
- * @param {Entity} parent 父节点
- */
-pc.Entity.prototype.reparentAndKeepTransform = function (parent: pc.Entity): void
-{
-    // 记录transform
-    let mat = this.getWorldTransform();
-    _parentMat.copy(parent.getWorldTransform()).invert();
-    _parentMat.mul(mat);
-    // 改变父节点
-    this.reparent(parent);
-    // 重设transform
-    this.setLocalPosition(_parentMat.getTranslation());
-    this.getRotation().setFromMat4(_parentMat);
-    this.setLocalScale(_parentMat.getScale());
-}
-
-/**
  * @description: 开启模型射线检测
  */
-Object.defineProperty(pc.Entity.prototype, "useInput", {
+Object.defineProperty(pc.RenderComponent.prototype, "useInput", {
     get: function ()
     {
         return this._useInput;
     },
     set: function (use: boolean)
     {
+        // const modelAsset = (pc as any).app.assets.get(this.asset);
+        // if (modelAsset) {
+        //     if (!modelAsset.loaded) {
+        //         modelAsset.on("load", () =>
+        //         {
+        //             if (use)
+        //                 MeshesRaycaster.getInstance().addModel(this);
+        //             else
+        //                 MeshesRaycaster.getInstance().removeModel(this);
+
+        //             this._useInput = use;
+        //         }, this);
+        //     }
+        //     else {
+        //         if (use)
+        //             MeshesRaycaster.getInstance().addModel(this);
+        //         else
+        //             MeshesRaycaster.getInstance().removeModel(this);
+
+        //         this._useInput = use;
+        //     }
+        // }
+
         if (use)
             MeshesRaycaster.getInstance().addModel(this);
         else
@@ -71,7 +68,7 @@ Object.defineProperty(pc.Entity.prototype, "useInput", {
 /**
  * @description: 不加入射线检测的mesh
  */
-Object.defineProperty(pc.Entity.prototype, "ignoreMeshes", {
+Object.defineProperty(pc.RenderComponent.prototype, "ignoreMeshes", {
     set: function (ignoreMeshes: Array<string>)
     {
         this._meshesToRaycast = [];
@@ -80,7 +77,7 @@ Object.defineProperty(pc.Entity.prototype, "ignoreMeshes", {
             if (!modelAsset.loaded) {
                 modelAsset.on("load", () =>
                 {
-                    this.model.meshInstances.forEach((mesh: pc.MeshInstance) =>
+                    this.meshInstances.forEach((mesh: pc.MeshInstance) =>
                     {
                         if (ignoreMeshes.indexOf(mesh.node.name) >= 0) {
                             return;
@@ -90,7 +87,7 @@ Object.defineProperty(pc.Entity.prototype, "ignoreMeshes", {
                 }, this);
             }
             else {
-                this.model.meshInstances.forEach((mesh: pc.MeshInstance) =>
+                this.meshInstances.forEach((mesh: pc.MeshInstance) =>
                 {
                     if (ignoreMeshes.indexOf(mesh.node.name) >= 0) {
                         return;
@@ -106,38 +103,17 @@ Object.defineProperty(pc.Entity.prototype, "ignoreMeshes", {
 /**
  * @description: 模型中用于检测的meshInstance
  */
-Object.defineProperty(pc.Entity.prototype, "meshesToRaycast", {
+Object.defineProperty(pc.RenderComponent.prototype, "meshesToRaycast", {
     get: function ()
     {
         if (!this._meshesToRaycast)
             this._meshesToRaycast = [];
 
         if (this._meshesToRaycast.length <= 0) {
-            this._meshesToRaycast = getMeshInstances(this);
+            this._meshesToRaycast = this.meshInstances;
         }
 
         return this._meshesToRaycast;
     },
     configurable: true
 });
-
-// 递归获取当前物体上的MeshInstances
-function getMeshInstances(entity: pc.Entity)
-{
-    let meshInstances: any = [];
-    if (entity.children.length >= 1) {
-        entity.children.forEach(child =>
-        {
-            meshInstances = meshInstances.concat(getMeshInstances(child as pc.Entity));
-        });
-    }
-
-    if (entity.model) {
-        meshInstances = meshInstances.concat(entity.model.model.meshInstances);
-    }
-    else if (entity.render) {
-        meshInstances = meshInstances.concat(entity.render.meshInstances);
-    }
-
-    return meshInstances;
-}

@@ -17,7 +17,7 @@ export namespace DebugLine
     {
         let renderLine = function ()
         {
-            app.renderLine(start, end, color || pc.Color.WHITE);
+            (app as any).renderLine(start, end, color || pc.Color.WHITE);
         }
 
         app.on("update", renderLine);

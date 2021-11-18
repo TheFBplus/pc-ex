@@ -24,6 +24,11 @@ declare module 'playcanvas' {
         ignoreMeshes: Array<string>;
 
         /**
+        * @description: 模型改变标识
+        */
+        changeFlag: boolean;
+
+        /**
         * @description: 模型中用于检测的meshInstance
         */
         meshesToRaycast: Array<MeshInstance>;
@@ -104,6 +109,21 @@ Object.defineProperty(pc.Entity.prototype, "ignoreMeshes", {
 });
 
 /**
+ * @description: 开启模型射线检测
+ */
+Object.defineProperty(pc.Entity.prototype, "changeFlag", {
+    get: function ()
+    {
+        return this._changeFlag;
+    },
+    set: function (flag: boolean)
+    {
+        this._changeFlag = flag;
+    },
+    configurable: true
+});
+
+/**
  * @description: 模型中用于检测的meshInstance
  */
 Object.defineProperty(pc.Entity.prototype, "meshesToRaycast", {
@@ -112,8 +132,10 @@ Object.defineProperty(pc.Entity.prototype, "meshesToRaycast", {
         if (!this._meshesToRaycast)
             this._meshesToRaycast = [];
 
-        if (this._meshesToRaycast.length <= 0) {
+        // 若模型改变则尝试重新获取mesh
+        if (this._meshesToRaycast.length <= 0 || this._changeFlag) {
             this._meshesToRaycast = getMeshInstances(this);
+            this._changeFlag = false;
         }
 
         return this._meshesToRaycast;

@@ -72,7 +72,7 @@ export class MeshesRaycaster
                 return;
             result = this.defaultCamera.raycastMeshInstances(this.ray, model.meshesToRaycast);
             if (result) {
-                model.fire("mousedown", { x: e.x, y: e.y, pos: result[0].point, meshInstance: result[0].meshInstance, event: e.event });
+                model.fire("mousedown", { x: e.x, y: e.y, pos: result[0].point, model: model, meshInstance: result[0].meshInstance, event: e.event });
             }
         });
     }
@@ -98,7 +98,7 @@ export class MeshesRaycaster
                 return;
             result = this.defaultCamera.raycastMeshInstances(this.ray, model.meshesToRaycast);
             if (result) {
-                model.fire("click", { x: e.x, y: e.y, pos: result[0].point, meshInstance: result[0].meshInstance, event: e.event });
+                model.fire("click", { x: e.x, y: e.y, pos: result[0].point, model: model, meshInstance: result[0].meshInstance, event: e.event });
             }
         });
     }
@@ -118,7 +118,7 @@ export class MeshesRaycaster
                 return;
             result = this.defaultCamera.raycastMeshInstances(this.ray, model.meshesToRaycast);
             if (result) {
-                model.fire("touchstart", { x: pos.x, y: pos.y, pos: result[0].point, meshInstance: result[0].meshInstance, event: e.event });
+                model.fire("touchstart", { x: pos.x, y: pos.y, pos: result[0].point, model: model, meshInstance: result[0].meshInstance, event: e.event });
             }
         });
     }
@@ -145,7 +145,7 @@ export class MeshesRaycaster
                 return;
             result = this.defaultCamera.raycastMeshInstances(this.ray, model.meshesToRaycast);
             if (result) {
-                model.fire("click", { x: pos.x, y: pos.y, pos: result[0].point, meshInstance: result[0].meshInstance, event: e.event });
+                model.fire("click", { x: pos.x, y: pos.y, pos: result[0].point, model: model, meshInstance: result[0].meshInstance, event: e.event });
             }
         });
     }

@@ -1,5 +1,7 @@
 import * as pc from "playcanvas";
 
+import { extendClass } from "../../classes/utils/extend-decorator";
+
 declare module 'playcanvas' {
     export class PathCurve
     {
@@ -23,6 +25,7 @@ declare module 'playcanvas' {
     }
 }
 
+@extendClass()
 export class PathCurve
 {
     public parent: pc.Entity;
@@ -227,8 +230,3 @@ export class PathCurve
         return this.forward.set(this.px.getTangent(percent), this.py.getTangent(percent), this.pz.getTangent(percent)).normalize();
     }
 }
-
-(pc as any).extend(pc, function ()
-{
-    return { PathCurve: PathCurve };
-}());

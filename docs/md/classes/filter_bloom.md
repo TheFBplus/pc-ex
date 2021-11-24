@@ -99,7 +99,7 @@ The graphics device of the application. [read only].
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7313
+node_modules/playcanvas/build/playcanvas.d.ts:7325
 
 ___
 
@@ -115,7 +115,7 @@ The property that should to be set to `true` (by the custom post effect) if a de
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7325
+node_modules/playcanvas/build/playcanvas.d.ts:7337
 
 ___
 
@@ -145,7 +145,7 @@ The shader definition for the fullscreen quad. Needs to be set by the custom pos
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7321
+node_modules/playcanvas/build/playcanvas.d.ts:7333
 
 ___
 
@@ -161,7 +161,7 @@ The vertex buffer for the fullscreen quad. Used when calling {@link drawFullscre
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7317
+node_modules/playcanvas/build/playcanvas.d.ts:7329
 
 ## Methods
 

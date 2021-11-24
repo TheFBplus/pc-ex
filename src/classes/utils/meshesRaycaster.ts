@@ -2,27 +2,30 @@ import * as pc from "playcanvas";
 
 export class MeshesRaycaster
 {
+    // 单例
     private static instance: MeshesRaycaster;
 
     private ray: pc.Ray;
     private app: pc.Application;
     private hasMove: boolean = false;
     private hasListener: boolean = false;
-    private modelToRaycast: Set<pc.ModelComponent>;
+    private nodeToRaycast: Set<pc.GraphNode>;
     private defaultCamera: pc.CameraComponent;
 
     constructor()
     {
         this.ray = new pc.Ray();
         this.app = pc.Application.getApplication();
-        this.modelToRaycast = new Set<pc.ModelComponent>();
+        this.nodeToRaycast = new Set<pc.GraphNode>();
 
+        // 获得默认相机
         this.app.once("postrender", () =>
         {
             this.defaultCamera = this.app.root.findComponent("camera") as pc.CameraComponent;
         }, this);
     }
 
+    // 获得单例
     public static getInstance()
     {
         if (!this.instance)
@@ -31,29 +34,22 @@ export class MeshesRaycaster
         return this.instance;
     }
 
-    /**
-       * Check if a string s is relative path.
-       * ```ts
-       * function getAverage(x, y) {
-       *   return (x + y) / 2.0;
-       * }
-        * ```
-       * @param model - The path to process.
-    */
-    public addModel(model: pc.ModelComponent): void
+    // 添加node
+    public addNode(node: pc.GraphNode): void
     {
-        this.modelToRaycast.add(model);
+        this.nodeToRaycast.add(node);
 
-        if (!this.hasListener && this.modelToRaycast.size >= 1) {
+        if (!this.hasListener && this.nodeToRaycast.size >= 1) {
             this.addListener();
         }
     }
 
-    public removeModel(model: pc.ModelComponent): void
+    // 移除node
+    public removeNode(node: pc.GraphNode): void
     {
-        this.modelToRaycast.delete(model);
+        this.nodeToRaycast.delete(node);
 
-        if (this.hasListener && this.modelToRaycast.size <= 0) {
+        if (this.hasListener && this.nodeToRaycast.size <= 0) {
             this.removeListener();
         }
     }
@@ -66,13 +62,14 @@ export class MeshesRaycaster
         this.ray.direction.sub(this.ray.origin).normalize();
 
         let result;
-        this.modelToRaycast.forEach((model) =>
+        this.nodeToRaycast.forEach((node) =>
         {
-            if (!model.hasEvent("mousedown"))
+            if (!node.hasEvent("mousedown"))
                 return;
-            result = this.defaultCamera.raycastMeshInstances(this.ray, model.meshesToRaycast);
+            result = this.defaultCamera.raycastMeshInstances(this.ray, (node as pc.Entity).meshesToRaycast);
             if (result) {
-                model.fire("mousedown", { x: e.x, y: e.y, pos: result[0].point, model: model, meshInstance: result[0].meshInstance, event: e.event });
+                const meshInstance = result[0].meshInstance;
+                node.fire("mousedown", { x: e.x, y: e.y, pos: result[0].point, node: this.getNodeOfDepth(meshInstance.node, (node as pc.Entity).resultNodeDepth), meshInstance: meshInstance, event: e.event });
             }
         });
     }
@@ -92,13 +89,14 @@ export class MeshesRaycaster
         this.ray.direction.sub(this.ray.origin).normalize();
 
         let result;
-        this.modelToRaycast.forEach((model) =>
+        this.nodeToRaycast.forEach((node) =>
         {
-            if (!model.hasEvent("click"))
+            if (!node.hasEvent("click"))
                 return;
-            result = this.defaultCamera.raycastMeshInstances(this.ray, model.meshesToRaycast);
+            result = this.defaultCamera.raycastMeshInstances(this.ray, (node as pc.Entity).meshesToRaycast);
             if (result) {
-                model.fire("click", { x: e.x, y: e.y, pos: result[0].point, model: model, meshInstance: result[0].meshInstance, event: e.event });
+                const meshInstance = result[0].meshInstance;
+                node.fire("click", { x: e.x, y: e.y, pos: result[0].point, node: this.getNodeOfDepth(meshInstance.node, (node as pc.Entity).resultNodeDepth), meshInstance: meshInstance, event: e.event });
             }
         });
     }
@@ -112,13 +110,14 @@ export class MeshesRaycaster
         this.ray.direction.sub(this.ray.origin).normalize();
 
         let result;
-        this.modelToRaycast.forEach((model) =>
+        this.nodeToRaycast.forEach((node) =>
         {
-            if (!model.hasEvent("touchstart"))
+            if (!node.hasEvent("touchstart"))
                 return;
-            result = this.defaultCamera.raycastMeshInstances(this.ray, model.meshesToRaycast);
+            result = this.defaultCamera.raycastMeshInstances(this.ray, (node as pc.Entity).meshesToRaycast);
             if (result) {
-                model.fire("touchstart", { x: pos.x, y: pos.y, pos: result[0].point, model: model, meshInstance: result[0].meshInstance, event: e.event });
+                const meshInstance = result[0].meshInstance;
+                node.fire("touchstart", { x: pos.x, y: pos.y, pos: result[0].point, node: this.getNodeOfDepth(meshInstance.node, (node as pc.Entity).resultNodeDepth), meshInstance: meshInstance, event: e.event });
             }
         });
     }
@@ -139,13 +138,14 @@ export class MeshesRaycaster
         this.ray.direction.sub(this.ray.origin).normalize();
 
         let result;
-        this.modelToRaycast.forEach((model) =>
+        this.nodeToRaycast.forEach((node) =>
         {
-            if (!model.hasEvent("click"))
+            if (!node.hasEvent("click"))
                 return;
-            result = this.defaultCamera.raycastMeshInstances(this.ray, model.meshesToRaycast);
+            result = this.defaultCamera.raycastMeshInstances(this.ray, (node as pc.Entity).meshesToRaycast);
             if (result) {
-                model.fire("click", { x: pos.x, y: pos.y, pos: result[0].point, model: model, meshInstance: result[0].meshInstance, event: e.event });
+                const meshInstance = result[0].meshInstance;
+                node.fire("click", { x: pos.x, y: pos.y, pos: result[0].point, node: this.getNodeOfDepth(meshInstance.node, (node as pc.Entity).resultNodeDepth), meshInstance: meshInstance, event: e.event });
             }
         });
     }
@@ -178,5 +178,22 @@ export class MeshesRaycaster
             this.app.mouse.off(pc.EVENT_MOUSEUP, this.onMouseUp, this);
         }
         this.hasListener = false;
+    }
+
+    // 获得对应深度的node
+    private getNodeOfDepth(node: pc.GraphNode, depth: number = null): pc.GraphNode
+    {
+        // 若未传入深度，则直接返回节点
+        if (depth == null) {
+            return node;
+        }
+
+        // 对比当前节点深度与目标深度，若大于目标深度，则递归向上获取节点
+        if (node.graphDepth > depth && node.parent) {
+            return this.getNodeOfDepth(node.parent, depth);
+        }
+
+        // 若小于等于目标深度，则直接返回节点
+        return node;
     }
 }

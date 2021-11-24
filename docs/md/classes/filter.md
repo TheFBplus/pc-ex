@@ -95,7 +95,7 @@ pc.PostEffect.device
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7313
+node_modules/playcanvas/build/playcanvas.d.ts:7325
 
 ___
 
@@ -111,7 +111,7 @@ pc.PostEffect.needsDepthBuffer
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7325
+node_modules/playcanvas/build/playcanvas.d.ts:7337
 
 ___
 
@@ -137,7 +137,7 @@ pc.PostEffect.shader
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7321
+node_modules/playcanvas/build/playcanvas.d.ts:7333
 
 ___
 
@@ -153,7 +153,7 @@ pc.PostEffect.vertexBuffer
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7317
+node_modules/playcanvas/build/playcanvas.d.ts:7329
 
 ## Methods
 

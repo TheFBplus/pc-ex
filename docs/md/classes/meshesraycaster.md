@@ -10,8 +10,8 @@
 
 ### Methods
 
-- [addModel](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MeshesRaycaster.md#addmodel)
-- [removeModel](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MeshesRaycaster.md#removemodel)
+- [addNode](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MeshesRaycaster.md#addnode)
+- [removeNode](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MeshesRaycaster.md#removenode)
 - [getInstance](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MeshesRaycaster.md#getinstance)
 
 ## Constructors
@@ -22,46 +22,19 @@
 
 #### Defined in
 
-src/classes/utils/meshesRaycaster.ts:14
+src/classes/utils/meshesRaycaster.ts:15
 
 ## Methods
 
-### addModel
+### addNode
 
-▸ **addModel**(`model`): `void`
-
-Check if a string s is relative path.
-```ts
-function getAverage(x, y) {
-  return (x + y) / 2.0;
-}
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `model` | `ModelComponent` | The path to process. |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-src/classes/utils/meshesRaycaster.ts:43
-
-___
-
-### removeModel
-
-▸ **removeModel**(`model`): `void`
+▸ **addNode**(`node`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `model` | `ModelComponent` |
+| `node` | `GraphNode` |
 
 #### Returns
 
@@ -69,7 +42,27 @@ ___
 
 #### Defined in
 
-src/classes/utils/meshesRaycaster.ts:52
+src/classes/utils/meshesRaycaster.ts:38
+
+___
+
+### removeNode
+
+▸ **removeNode**(`node`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `node` | `GraphNode` |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+src/classes/utils/meshesRaycaster.ts:48
 
 ___
 
@@ -83,4 +76,4 @@ ___
 
 #### Defined in
 
-src/classes/utils/meshesRaycaster.ts:26
+src/classes/utils/meshesRaycaster.ts:29

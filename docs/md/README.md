@@ -4,22 +4,19 @@ pc-ex
 
 ## Table of contents
 
-### Namespaces
-
-- [DebugLine](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/modules/DebugLine.md)
-
 ### Classes
 
+- [CameraComponent\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md)
+- [Color\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Color_EX.md)
+- [Curve\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Curve_EX.md)
+- [DebugLine](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DebugLine.md)
+- [Entity\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Entity_EX.md)
 - [Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md)
 - [Filter\_Bloom](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md)
 - [Filter\_Empty](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Empty.md)
 - [MeshesRaycaster](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MeshesRaycaster.md)
 - [PathCurve](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md)
 - [ScriptTypeBase](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md)
-
-### Interfaces
-
-- [ICameraComponent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/ICameraComponent.md)
 
 ### Type aliases
 

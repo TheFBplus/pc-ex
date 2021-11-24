@@ -13,7 +13,8 @@
     "strict": true,
     "strictNullChecks": false,
     "declarationDir": "bin/dts",
-    "declaration": true
+    "declaration": true,
+    "experimentalDecorators": true
   },
   "include": [
     "src/index.ts"

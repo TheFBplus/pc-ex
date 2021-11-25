@@ -641,7 +641,7 @@ pc.Entity.changeFlag
 
 #### Defined in
 
-src/extensions/extendClasses/entity.ts:123
+src/extensions/extendClasses/entity.ts:122
 
 • `set` **changeFlag**(`flag`): `void`
 
@@ -661,7 +661,7 @@ pc.Entity.changeFlag
 
 #### Defined in
 
-src/extensions/extendClasses/entity.ts:119
+src/extensions/extendClasses/entity.ts:118
 
 ___
 
@@ -679,7 +679,7 @@ pc.Entity.ignoreMeshes
 
 #### Defined in
 
-src/extensions/extendClasses/entity.ts:101
+src/extensions/extendClasses/entity.ts:103
 
 • `set` **ignoreMeshes**(`ignoreNames`): `void`
 
@@ -699,7 +699,7 @@ pc.Entity.ignoreMeshes
 
 #### Defined in
 
-src/extensions/extendClasses/entity.ts:89
+src/extensions/extendClasses/entity.ts:91
 
 ___
 
@@ -717,7 +717,7 @@ pc.Entity.meshesToRaycast
 
 #### Defined in
 
-src/extensions/extendClasses/entity.ts:74
+src/extensions/extendClasses/entity.ts:79
 
 ___
 
@@ -735,7 +735,7 @@ pc.Entity.resultNodeDepth
 
 #### Defined in
 
-src/extensions/extendClasses/entity.ts:113
+src/extensions/extendClasses/entity.ts:112
 
 • `set` **resultNodeDepth**(`depth`): `void`
 
@@ -755,7 +755,7 @@ pc.Entity.resultNodeDepth
 
 #### Defined in
 
-src/extensions/extendClasses/entity.ts:109
+src/extensions/extendClasses/entity.ts:108
 
 ___
 
@@ -773,7 +773,7 @@ pc.Entity.useInput
 
 #### Defined in
 
-src/extensions/extendClasses/entity.ts:59
+src/extensions/extendClasses/entity.ts:64
 
 • `set` **useInput**(`use`): `void`
 
@@ -793,7 +793,7 @@ pc.Entity.useInput
 
 #### Defined in
 
-src/extensions/extendClasses/entity.ts:63
+src/extensions/extendClasses/entity.ts:68
 
 ## Methods
 
@@ -1933,7 +1933,7 @@ pc.Entity.reparentAndKeepTransform
 
 #### Defined in
 
-src/extensions/extendClasses/entity.ts:132
+src/extensions/extendClasses/entity.ts:131
 
 ___
 

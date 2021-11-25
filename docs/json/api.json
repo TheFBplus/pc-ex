@@ -4169,10 +4169,22 @@
 					"flags": {
 						"isPrivate": true
 					},
+					"decorators": [
+						{
+							"name": "instancePrpt",
+							"type": {
+								"type": "reference",
+								"name": "instancePrpt"
+							},
+							"arguments": {
+								"data": "{ extendClassName: \"Entity\", defaultValue: false }"
+							}
+						}
+					],
 					"sources": [
 						{
 							"fileName": "src/extensions/extendClasses/entity.ts",
-							"line": 56,
+							"line": 61,
 							"character": 12
 						}
 					],
@@ -4190,10 +4202,22 @@
 					"flags": {
 						"isPrivate": true
 					},
+					"decorators": [
+						{
+							"name": "instancePrpt",
+							"type": {
+								"type": "reference",
+								"name": "instancePrpt"
+							},
+							"arguments": {
+								"data": "{ extendClassName: \"Entity\", defaultValue: [] }"
+							}
+						}
+					],
 					"sources": [
 						{
 							"fileName": "src/extensions/extendClasses/entity.ts",
-							"line": 52,
+							"line": 55,
 							"character": 12
 						}
 					],
@@ -4214,10 +4238,22 @@
 					"flags": {
 						"isPrivate": true
 					},
+					"decorators": [
+						{
+							"name": "instancePrpt",
+							"type": {
+								"type": "reference",
+								"name": "instancePrpt"
+							},
+							"arguments": {
+								"data": "{ extendClassName: \"Entity\", defaultValue: [] }"
+							}
+						}
+					],
 					"sources": [
 						{
 							"fileName": "src/extensions/extendClasses/entity.ts",
-							"line": 50,
+							"line": 52,
 							"character": 12
 						}
 					],
@@ -4238,10 +4274,22 @@
 					"flags": {
 						"isPrivate": true
 					},
+					"decorators": [
+						{
+							"name": "instancePrpt",
+							"type": {
+								"type": "reference",
+								"name": "instancePrpt"
+							},
+							"arguments": {
+								"data": "{ extendClassName: \"Entity\" }"
+							}
+						}
+					],
 					"sources": [
 						{
 							"fileName": "src/extensions/extendClasses/entity.ts",
-							"line": 54,
+							"line": 58,
 							"character": 12
 						}
 					],
@@ -4258,10 +4306,22 @@
 					"flags": {
 						"isPrivate": true
 					},
+					"decorators": [
+						{
+							"name": "instancePrpt",
+							"type": {
+								"type": "reference",
+								"name": "instancePrpt"
+							},
+							"arguments": {
+								"data": "{ extendClassName: \"Entity\", defaultValue: false }"
+							}
+						}
+					],
 					"sources": [
 						{
 							"fileName": "src/extensions/extendClasses/entity.ts",
-							"line": 48,
+							"line": 49,
 							"character": 12
 						}
 					],
@@ -5148,7 +5208,7 @@
 					"sources": [
 						{
 							"fileName": "src/extensions/extendClasses/entity.ts",
-							"line": 119,
+							"line": 118,
 							"character": 8
 						}
 					],
@@ -5213,7 +5273,7 @@
 					"sources": [
 						{
 							"fileName": "src/extensions/extendClasses/entity.ts",
-							"line": 89,
+							"line": 91,
 							"character": 8
 						}
 					],
@@ -5284,7 +5344,7 @@
 					"sources": [
 						{
 							"fileName": "src/extensions/extendClasses/entity.ts",
-							"line": 74,
+							"line": 79,
 							"character": 8
 						}
 					],
@@ -5322,7 +5382,7 @@
 					"sources": [
 						{
 							"fileName": "src/extensions/extendClasses/entity.ts",
-							"line": 109,
+							"line": 108,
 							"character": 8
 						}
 					],
@@ -5387,7 +5447,7 @@
 					"sources": [
 						{
 							"fileName": "src/extensions/extendClasses/entity.ts",
-							"line": 59,
+							"line": 64,
 							"character": 8
 						}
 					],
@@ -7961,7 +8021,7 @@
 					"sources": [
 						{
 							"fileName": "src/extensions/extendClasses/entity.ts",
-							"line": 132,
+							"line": 131,
 							"character": 4
 						}
 					],

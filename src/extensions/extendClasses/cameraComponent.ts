@@ -25,7 +25,7 @@ declare module 'playcanvas' {
 
 // CameraComponent类实现
 @extendClass("CameraComponent")
-export class CameraComponent_EX extends pc.CameraComponent 
+export class CameraComponent_EX extends pc.CameraComponent
 {
     /**
     * 让两个相机同步

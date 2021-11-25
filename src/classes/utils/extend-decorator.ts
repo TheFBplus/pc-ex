@@ -25,15 +25,17 @@ export function extendClass(extendClassName: string = null)
         }
     }
 
-    // 扩展已有类型
+    // 扩展已有类
     return function (target: any)
     {
+        // 添加实例函数成员
         const functions = cls(target);
         functions.forEach(fnName =>
         {
             // 不添加构造函数
-            if (fnName == "constructor")
+            if (fnName == "constructor") {
                 return;
+            }
 
             const descriptor = Object.getOwnPropertyDescriptor(target.prototype, fnName);
             if (descriptor.value) {
@@ -45,6 +47,20 @@ export function extendClass(extendClassName: string = null)
                 }
             }
         });
+
+        // 添加静态成员
+        for (let prop in target) {
+            (pc as any)[extendClassName][prop] = target[prop];
+        }
+    }
+}
+
+// 扩展实例属性
+export function instancePrpt(data: { extendClassName: string, defaultValue?: any })
+{
+    return function (target: any, propertyKey: string)
+    {
+        (pc as any)[data.extendClassName].prototype[propertyKey] = data.defaultValue;
     }
 }
 

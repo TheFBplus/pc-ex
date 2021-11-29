@@ -104,6 +104,7 @@ export class ScriptTypeBase
     {
         if (!ScriptTypeBase._instance) {
             ScriptTypeBase._instance = this;
+            console.log("设置实例！");
         }
         else {
             console.error("要使用单例模式应该确保只有一条脚本实例！！！");

@@ -58,7 +58,7 @@ belongs to.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:255
+src/classes/utils/create-script-decorator.ts:256
 
 ___
 
@@ -88,7 +88,7 @@ obj.fire('test', 1, 2); // prints 3 to the console
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:156
+src/classes/utils/create-script-decorator.ts:157
 
 ___
 
@@ -118,7 +118,7 @@ when the script instance is in `enabled` state during app tick.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:267
+src/classes/utils/create-script-decorator.ts:268
 
 ___
 
@@ -130,7 +130,7 @@ The {@link pc.Entity} that the instance of this type belongs to.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:259
+src/classes/utils/create-script-decorator.ts:260
 
 ## Accessors
 
@@ -166,7 +166,7 @@ src/classes/utils/create-script-decorator.ts:87
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:273
+src/classes/utils/create-script-decorator.ts:274
 
 ___
 
@@ -188,7 +188,7 @@ ___
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:309
+src/classes/utils/create-script-decorator.ts:310
 
 ___
 
@@ -227,7 +227,7 @@ Self for chaining.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:221
+src/classes/utils/create-script-decorator.ts:222
 
 ___
 
@@ -260,7 +260,7 @@ True if the object has handlers bound to the specified event name.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:249
+src/classes/utils/create-script-decorator.ts:250
 
 ___
 
@@ -321,7 +321,7 @@ Self for chaining.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:203
+src/classes/utils/create-script-decorator.ts:204
 
 ___
 
@@ -349,7 +349,7 @@ ___
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:183
+src/classes/utils/create-script-decorator.ts:184
 
 ___
 
@@ -386,7 +386,7 @@ Self for chaining.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:237
+src/classes/utils/create-script-decorator.ts:238
 
 ___
 
@@ -406,7 +406,7 @@ ___
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:117
+src/classes/utils/create-script-decorator.ts:118
 
 ___
 
@@ -432,7 +432,7 @@ ___
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:131
+src/classes/utils/create-script-decorator.ts:132
 
 ___
 
@@ -454,7 +454,7 @@ then it will be executed to perform hot-reload at runtime.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:139
+src/classes/utils/create-script-decorator.ts:140
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:124
+src/classes/utils/create-script-decorator.ts:125

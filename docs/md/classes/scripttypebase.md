@@ -22,6 +22,10 @@ Caveat is: tsconfig.json needs to be set to: "strictNullChecks": false
 - [enabled](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#enabled)
 - [entity](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#entity)
 
+### Accessors
+
+- [instance](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#instance)
+
 ### Methods
 
 - [addFilters](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#addfilters)
@@ -54,7 +58,7 @@ belongs to.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:241
+src/classes/utils/create-script-decorator.ts:255
 
 ___
 
@@ -84,7 +88,7 @@ obj.fire('test', 1, 2); // prints 3 to the console
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:142
+src/classes/utils/create-script-decorator.ts:156
 
 ___
 
@@ -98,7 +102,7 @@ ___
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:87
+src/classes/utils/create-script-decorator.ts:93
 
 ___
 
@@ -114,7 +118,7 @@ when the script instance is in `enabled` state during app tick.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:253
+src/classes/utils/create-script-decorator.ts:267
 
 ___
 
@@ -126,7 +130,21 @@ The {@link pc.Entity} that the instance of this type belongs to.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:245
+src/classes/utils/create-script-decorator.ts:259
+
+## Accessors
+
+### instance
+
+• `Static` `get` **instance**(): [`ScriptTypeBase`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md)
+
+#### Returns
+
+[`ScriptTypeBase`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md)
+
+#### Defined in
+
+src/classes/utils/create-script-decorator.ts:87
 
 ## Methods
 
@@ -148,7 +166,7 @@ src/classes/utils/create-script-decorator.ts:245
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:259
+src/classes/utils/create-script-decorator.ts:273
 
 ___
 
@@ -170,7 +188,7 @@ ___
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:295
+src/classes/utils/create-script-decorator.ts:309
 
 ___
 
@@ -209,7 +227,7 @@ Self for chaining.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:207
+src/classes/utils/create-script-decorator.ts:221
 
 ___
 
@@ -242,7 +260,7 @@ True if the object has handlers bound to the specified event name.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:235
+src/classes/utils/create-script-decorator.ts:249
 
 ___
 
@@ -262,7 +280,7 @@ ___
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:97
+src/classes/utils/create-script-decorator.ts:103
 
 ___
 
@@ -303,7 +321,7 @@ Self for chaining.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:189
+src/classes/utils/create-script-decorator.ts:203
 
 ___
 
@@ -331,7 +349,7 @@ ___
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:169
+src/classes/utils/create-script-decorator.ts:183
 
 ___
 
@@ -368,7 +386,7 @@ Self for chaining.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:223
+src/classes/utils/create-script-decorator.ts:237
 
 ___
 
@@ -388,7 +406,7 @@ ___
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:103
+src/classes/utils/create-script-decorator.ts:117
 
 ___
 
@@ -414,7 +432,7 @@ ___
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:117
+src/classes/utils/create-script-decorator.ts:131
 
 ___
 
@@ -436,7 +454,7 @@ then it will be executed to perform hot-reload at runtime.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:125
+src/classes/utils/create-script-decorator.ts:139
 
 ___
 
@@ -462,4 +480,4 @@ ___
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:110
+src/classes/utils/create-script-decorator.ts:124

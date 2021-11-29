@@ -17,6 +17,7 @@ pc-ex
 - [MeshesRaycaster](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MeshesRaycaster.md)
 - [PathCurve](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md)
 - [ScriptTypeBase](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md)
+- [Vec2\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Vec2_EX.md)
 
 ### Type aliases
 

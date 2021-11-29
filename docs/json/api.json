@@ -7,7 +7,7 @@
 	"originalName": "",
 	"children": [
 		{
-			"id": 296,
+			"id": 299,
 			"name": "CameraComponent_EX",
 			"kind": 128,
 			"kindString": "Class",
@@ -26,21 +26,21 @@
 			],
 			"children": [
 				{
-					"id": 297,
+					"id": 300,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 298,
+							"id": 301,
 							"name": "new CameraComponent_EX",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 299,
+									"id": 302,
 									"name": "system",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -51,7 +51,7 @@
 									}
 								},
 								{
-									"id": 300,
+									"id": 303,
 									"name": "entity",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -64,7 +64,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 296,
+								"id": 299,
 								"name": "CameraComponent_EX"
 							},
 							"inheritedFrom": {
@@ -79,7 +79,7 @@
 					}
 				},
 				{
-					"id": 342,
+					"id": 345,
 					"name": "aspectRatio",
 					"kind": 1024,
 					"kindString": "Property",
@@ -106,7 +106,7 @@
 					}
 				},
 				{
-					"id": 343,
+					"id": 346,
 					"name": "aspectRatioMode",
 					"kind": 1024,
 					"kindString": "Property",
@@ -133,7 +133,7 @@
 					}
 				},
 				{
-					"id": 360,
+					"id": 363,
 					"name": "calculateProjection",
 					"kind": 1024,
 					"kindString": "Property",
@@ -160,7 +160,7 @@
 					}
 				},
 				{
-					"id": 359,
+					"id": 362,
 					"name": "calculateTransform",
 					"kind": 1024,
 					"kindString": "Property",
@@ -187,7 +187,7 @@
 					}
 				},
 				{
-					"id": 344,
+					"id": 347,
 					"name": "clearColor",
 					"kind": 1024,
 					"kindString": "Property",
@@ -214,7 +214,7 @@
 					}
 				},
 				{
-					"id": 345,
+					"id": 348,
 					"name": "clearColorBuffer",
 					"kind": 1024,
 					"kindString": "Property",
@@ -241,7 +241,7 @@
 					}
 				},
 				{
-					"id": 346,
+					"id": 349,
 					"name": "clearDepthBuffer",
 					"kind": 1024,
 					"kindString": "Property",
@@ -268,7 +268,7 @@
 					}
 				},
 				{
-					"id": 347,
+					"id": 350,
 					"name": "clearStencilBuffer",
 					"kind": 1024,
 					"kindString": "Property",
@@ -295,7 +295,7 @@
 					}
 				},
 				{
-					"id": 361,
+					"id": 364,
 					"name": "cullFaces",
 					"kind": 1024,
 					"kindString": "Property",
@@ -322,7 +322,7 @@
 					}
 				},
 				{
-					"id": 364,
+					"id": 367,
 					"name": "disablePostEffectsLayer",
 					"kind": 1024,
 					"kindString": "Property",
@@ -349,7 +349,7 @@
 					}
 				},
 				{
-					"id": 367,
+					"id": 370,
 					"name": "enabled",
 					"kind": 1024,
 					"kindString": "Property",
@@ -376,7 +376,7 @@
 					}
 				},
 				{
-					"id": 366,
+					"id": 369,
 					"name": "entity",
 					"kind": 1024,
 					"kindString": "Property",
@@ -403,7 +403,7 @@
 					}
 				},
 				{
-					"id": 348,
+					"id": 351,
 					"name": "farClip",
 					"kind": 1024,
 					"kindString": "Property",
@@ -430,7 +430,7 @@
 					}
 				},
 				{
-					"id": 362,
+					"id": 365,
 					"name": "flipFaces",
 					"kind": 1024,
 					"kindString": "Property",
@@ -457,7 +457,7 @@
 					}
 				},
 				{
-					"id": 349,
+					"id": 352,
 					"name": "fov",
 					"kind": 1024,
 					"kindString": "Property",
@@ -484,7 +484,7 @@
 					}
 				},
 				{
-					"id": 308,
+					"id": 311,
 					"name": "frustum",
 					"kind": 1024,
 					"kindString": "Property",
@@ -512,7 +512,7 @@
 					}
 				},
 				{
-					"id": 358,
+					"id": 361,
 					"name": "frustumCulling",
 					"kind": 1024,
 					"kindString": "Property",
@@ -539,7 +539,7 @@
 					}
 				},
 				{
-					"id": 350,
+					"id": 353,
 					"name": "horizontalFov",
 					"kind": 1024,
 					"kindString": "Property",
@@ -566,7 +566,7 @@
 					}
 				},
 				{
-					"id": 363,
+					"id": 366,
 					"name": "layers",
 					"kind": 1024,
 					"kindString": "Property",
@@ -596,7 +596,7 @@
 					}
 				},
 				{
-					"id": 351,
+					"id": 354,
 					"name": "nearClip",
 					"kind": 1024,
 					"kindString": "Property",
@@ -623,7 +623,7 @@
 					}
 				},
 				{
-					"id": 352,
+					"id": 355,
 					"name": "orthoHeight",
 					"kind": 1024,
 					"kindString": "Property",
@@ -650,7 +650,7 @@
 					}
 				},
 				{
-					"id": 357,
+					"id": 360,
 					"name": "postEffects",
 					"kind": 1024,
 					"kindString": "Property",
@@ -677,7 +677,7 @@
 					}
 				},
 				{
-					"id": 353,
+					"id": 356,
 					"name": "priority",
 					"kind": 1024,
 					"kindString": "Property",
@@ -704,7 +704,7 @@
 					}
 				},
 				{
-					"id": 341,
+					"id": 344,
 					"name": "projection",
 					"kind": 1024,
 					"kindString": "Property",
@@ -731,7 +731,7 @@
 					}
 				},
 				{
-					"id": 309,
+					"id": 312,
 					"name": "projectionMatrix",
 					"kind": 1024,
 					"kindString": "Property",
@@ -759,7 +759,7 @@
 					}
 				},
 				{
-					"id": 355,
+					"id": 358,
 					"name": "rect",
 					"kind": 1024,
 					"kindString": "Property",
@@ -786,7 +786,7 @@
 					}
 				},
 				{
-					"id": 354,
+					"id": 357,
 					"name": "renderTarget",
 					"kind": 1024,
 					"kindString": "Property",
@@ -813,7 +813,7 @@
 					}
 				},
 				{
-					"id": 356,
+					"id": 359,
 					"name": "scissorRect",
 					"kind": 1024,
 					"kindString": "Property",
@@ -840,7 +840,7 @@
 					}
 				},
 				{
-					"id": 365,
+					"id": 368,
 					"name": "system",
 					"kind": 1024,
 					"kindString": "Property",
@@ -867,7 +867,7 @@
 					}
 				},
 				{
-					"id": 310,
+					"id": 313,
 					"name": "viewMatrix",
 					"kind": 1024,
 					"kindString": "Property",
@@ -895,7 +895,7 @@
 					}
 				},
 				{
-					"id": 321,
+					"id": 324,
 					"name": "calculateAspectRatio",
 					"kind": 2048,
 					"kindString": "Method",
@@ -911,7 +911,7 @@
 					],
 					"signatures": [
 						{
-							"id": 322,
+							"id": 325,
 							"name": "calculateAspectRatio",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -924,7 +924,7 @@
 							},
 							"parameters": [
 								{
-									"id": 323,
+									"id": 326,
 									"name": "rt",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -954,7 +954,7 @@
 					}
 				},
 				{
-					"id": 338,
+					"id": 341,
 					"name": "endXr",
 					"kind": 2048,
 					"kindString": "Method",
@@ -970,7 +970,7 @@
 					],
 					"signatures": [
 						{
-							"id": 339,
+							"id": 342,
 							"name": "endXr",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -988,7 +988,7 @@
 							},
 							"parameters": [
 								{
-									"id": 340,
+									"id": 343,
 									"name": "callback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1018,7 +1018,7 @@
 					}
 				},
 				{
-					"id": 378,
+					"id": 381,
 					"name": "fire",
 					"kind": 2048,
 					"kindString": "Method",
@@ -1034,7 +1034,7 @@
 					],
 					"signatures": [
 						{
-							"id": 379,
+							"id": 382,
 							"name": "fire",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1053,7 +1053,7 @@
 							},
 							"parameters": [
 								{
-									"id": 380,
+									"id": 383,
 									"name": "name",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1069,7 +1069,7 @@
 									}
 								},
 								{
-									"id": 381,
+									"id": 384,
 									"name": "arg1",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1083,7 +1083,7 @@
 									}
 								},
 								{
-									"id": 382,
+									"id": 385,
 									"name": "arg2",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1097,7 +1097,7 @@
 									}
 								},
 								{
-									"id": 383,
+									"id": 386,
 									"name": "arg3",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1111,7 +1111,7 @@
 									}
 								},
 								{
-									"id": 384,
+									"id": 387,
 									"name": "arg4",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1125,7 +1125,7 @@
 									}
 								},
 								{
-									"id": 385,
+									"id": 388,
 									"name": "arg5",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1139,7 +1139,7 @@
 									}
 								},
 								{
-									"id": 386,
+									"id": 389,
 									"name": "arg6",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1153,7 +1153,7 @@
 									}
 								},
 								{
-									"id": 387,
+									"id": 390,
 									"name": "arg7",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1167,7 +1167,7 @@
 									}
 								},
 								{
-									"id": 388,
+									"id": 391,
 									"name": "arg8",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1197,7 +1197,7 @@
 					}
 				},
 				{
-					"id": 394,
+					"id": 397,
 					"name": "hasEvent",
 					"kind": 2048,
 					"kindString": "Method",
@@ -1213,7 +1213,7 @@
 					],
 					"signatures": [
 						{
-							"id": 395,
+							"id": 398,
 							"name": "hasEvent",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1232,7 +1232,7 @@
 							},
 							"parameters": [
 								{
-									"id": 396,
+									"id": 399,
 									"name": "name",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1264,7 +1264,7 @@
 					}
 				},
 				{
-					"id": 373,
+					"id": 376,
 					"name": "off",
 					"kind": 2048,
 					"kindString": "Method",
@@ -1280,7 +1280,7 @@
 					],
 					"signatures": [
 						{
-							"id": 374,
+							"id": 377,
 							"name": "off",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1299,7 +1299,7 @@
 							},
 							"parameters": [
 								{
-									"id": 375,
+									"id": 378,
 									"name": "name",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1313,7 +1313,7 @@
 									}
 								},
 								{
-									"id": 376,
+									"id": 379,
 									"name": "callback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1327,7 +1327,7 @@
 									}
 								},
 								{
-									"id": 377,
+									"id": 380,
 									"name": "scope",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1357,7 +1357,7 @@
 					}
 				},
 				{
-					"id": 368,
+					"id": 371,
 					"name": "on",
 					"kind": 2048,
 					"kindString": "Method",
@@ -1373,7 +1373,7 @@
 					],
 					"signatures": [
 						{
-							"id": 369,
+							"id": 372,
 							"name": "on",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1392,7 +1392,7 @@
 							},
 							"parameters": [
 								{
-									"id": 370,
+									"id": 373,
 									"name": "name",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1408,7 +1408,7 @@
 									}
 								},
 								{
-									"id": 371,
+									"id": 374,
 									"name": "callback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1424,7 +1424,7 @@
 									}
 								},
 								{
-									"id": 372,
+									"id": 375,
 									"name": "scope",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1454,7 +1454,7 @@
 					}
 				},
 				{
-					"id": 389,
+					"id": 392,
 					"name": "once",
 					"kind": 2048,
 					"kindString": "Method",
@@ -1470,7 +1470,7 @@
 					],
 					"signatures": [
 						{
-							"id": 390,
+							"id": 393,
 							"name": "once",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1489,7 +1489,7 @@
 							},
 							"parameters": [
 								{
-									"id": 391,
+									"id": 394,
 									"name": "name",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1505,7 +1505,7 @@
 									}
 								},
 								{
-									"id": 392,
+									"id": 395,
 									"name": "callback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1521,7 +1521,7 @@
 									}
 								},
 								{
-									"id": 393,
+									"id": 396,
 									"name": "scope",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1551,7 +1551,7 @@
 					}
 				},
 				{
-					"id": 304,
+					"id": 307,
 					"name": "raycastMeshInstances",
 					"kind": 2048,
 					"kindString": "Method",
@@ -1565,7 +1565,7 @@
 					],
 					"signatures": [
 						{
-							"id": 305,
+							"id": 308,
 							"name": "raycastMeshInstances",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1576,7 +1576,7 @@
 							},
 							"parameters": [
 								{
-									"id": 306,
+									"id": 309,
 									"name": "ray",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1590,7 +1590,7 @@
 									}
 								},
 								{
-									"id": 307,
+									"id": 310,
 									"name": "meshInstances",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1626,7 +1626,7 @@
 					}
 				},
 				{
-					"id": 311,
+					"id": 314,
 					"name": "screenToWorld",
 					"kind": 2048,
 					"kindString": "Method",
@@ -1642,7 +1642,7 @@
 					],
 					"signatures": [
 						{
-							"id": 312,
+							"id": 315,
 							"name": "screenToWorld",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1661,7 +1661,7 @@
 							},
 							"parameters": [
 								{
-									"id": 313,
+									"id": 316,
 									"name": "screenx",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1677,7 +1677,7 @@
 									}
 								},
 								{
-									"id": 314,
+									"id": 317,
 									"name": "screeny",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1693,7 +1693,7 @@
 									}
 								},
 								{
-									"id": 315,
+									"id": 318,
 									"name": "cameraz",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1709,7 +1709,7 @@
 									}
 								},
 								{
-									"id": 316,
+									"id": 319,
 									"name": "worldCoord",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1739,7 +1739,7 @@
 					}
 				},
 				{
-					"id": 324,
+					"id": 327,
 					"name": "startXr",
 					"kind": 2048,
 					"kindString": "Method",
@@ -1755,7 +1755,7 @@
 					],
 					"signatures": [
 						{
-							"id": 325,
+							"id": 328,
 							"name": "startXr",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1773,7 +1773,7 @@
 							},
 							"parameters": [
 								{
-									"id": 326,
+									"id": 329,
 									"name": "type",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1789,7 +1789,7 @@
 									}
 								},
 								{
-									"id": 327,
+									"id": 330,
 									"name": "spaceType",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1805,7 +1805,7 @@
 									}
 								},
 								{
-									"id": 328,
+									"id": 331,
 									"name": "options",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1816,7 +1816,7 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 329,
+											"id": 332,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
@@ -1825,7 +1825,7 @@
 											},
 											"children": [
 												{
-													"id": 333,
+													"id": 336,
 													"name": "callback",
 													"kind": 1024,
 													"kindString": "Property",
@@ -1846,7 +1846,7 @@
 													}
 												},
 												{
-													"id": 334,
+													"id": 337,
 													"name": "depthSensing",
 													"kind": 1024,
 													"kindString": "Property",
@@ -1864,7 +1864,7 @@
 													"type": {
 														"type": "reflection",
 														"declaration": {
-															"id": 335,
+															"id": 338,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
@@ -1873,7 +1873,7 @@
 															},
 															"children": [
 																{
-																	"id": 337,
+																	"id": 340,
 																	"name": "dataFormatPreference",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -1894,7 +1894,7 @@
 																	}
 																},
 																{
-																	"id": 336,
+																	"id": 339,
 																	"name": "usagePreference",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -1920,8 +1920,8 @@
 																	"title": "Properties",
 																	"kind": 1024,
 																	"children": [
-																		337,
-																		336
+																		340,
+																		339
 																	]
 																}
 															]
@@ -1929,7 +1929,7 @@
 													}
 												},
 												{
-													"id": 331,
+													"id": 334,
 													"name": "imageTracking",
 													"kind": 1024,
 													"kindString": "Property",
@@ -1950,7 +1950,7 @@
 													}
 												},
 												{
-													"id": 330,
+													"id": 333,
 													"name": "optionalFeatures",
 													"kind": 1024,
 													"kindString": "Property",
@@ -1974,7 +1974,7 @@
 													}
 												},
 												{
-													"id": 332,
+													"id": 335,
 													"name": "planeDetection",
 													"kind": 1024,
 													"kindString": "Property",
@@ -2000,11 +2000,11 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														333,
+														336,
+														337,
 														334,
-														331,
-														330,
-														332
+														333,
+														335
 													]
 												}
 											]
@@ -2028,7 +2028,7 @@
 					}
 				},
 				{
-					"id": 301,
+					"id": 304,
 					"name": "syncCamera",
 					"kind": 2048,
 					"kindString": "Method",
@@ -2042,7 +2042,7 @@
 					],
 					"signatures": [
 						{
-							"id": 302,
+							"id": 305,
 							"name": "syncCamera",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -2052,7 +2052,7 @@
 							},
 							"parameters": [
 								{
-									"id": 303,
+									"id": 306,
 									"name": "camera",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -2082,7 +2082,7 @@
 					}
 				},
 				{
-					"id": 317,
+					"id": 320,
 					"name": "worldToScreen",
 					"kind": 2048,
 					"kindString": "Method",
@@ -2098,7 +2098,7 @@
 					],
 					"signatures": [
 						{
-							"id": 318,
+							"id": 321,
 							"name": "worldToScreen",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -2111,7 +2111,7 @@
 							},
 							"parameters": [
 								{
-									"id": 319,
+									"id": 322,
 									"name": "worldCoord",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -2127,7 +2127,7 @@
 									}
 								},
 								{
-									"id": 320,
+									"id": 323,
 									"name": "screenCoord",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -2162,61 +2162,61 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						297
+						300
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						342,
-						343,
-						360,
-						359,
-						344,
 						345,
 						346,
+						363,
+						362,
 						347,
-						361,
+						348,
+						349,
+						350,
 						364,
 						367,
-						366,
-						348,
-						362,
-						349,
-						308,
-						358,
-						350,
-						363,
+						370,
+						369,
 						351,
-						352,
-						357,
-						353,
-						341,
-						309,
-						355,
-						354,
-						356,
 						365,
-						310
+						352,
+						311,
+						361,
+						353,
+						366,
+						354,
+						355,
+						360,
+						356,
+						344,
+						312,
+						358,
+						357,
+						359,
+						368,
+						313
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						321,
-						338,
-						378,
-						394,
-						373,
-						368,
-						389,
-						304,
-						311,
 						324,
-						301,
-						317
+						341,
+						381,
+						397,
+						376,
+						371,
+						392,
+						307,
+						314,
+						327,
+						304,
+						320
 					]
 				}
 			],
@@ -2235,7 +2235,7 @@
 			]
 		},
 		{
-			"id": 397,
+			"id": 400,
 			"name": "Color_EX",
 			"kind": 128,
 			"kindString": "Class",
@@ -2254,21 +2254,21 @@
 			],
 			"children": [
 				{
-					"id": 407,
+					"id": 410,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 408,
+							"id": 411,
 							"name": "new Color_EX",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 409,
+									"id": 412,
 									"name": "r",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -2293,7 +2293,7 @@
 									}
 								},
 								{
-									"id": 410,
+									"id": 413,
 									"name": "g",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -2306,7 +2306,7 @@
 									}
 								},
 								{
-									"id": 411,
+									"id": 414,
 									"name": "b",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -2319,7 +2319,7 @@
 									}
 								},
 								{
-									"id": 412,
+									"id": 415,
 									"name": "a",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -2334,7 +2334,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 397,
+								"id": 400,
 								"name": "Color_EX"
 							},
 							"inheritedFrom": {
@@ -2349,7 +2349,7 @@
 					}
 				},
 				{
-					"id": 413,
+					"id": 416,
 					"name": "_shaderData",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2369,7 +2369,7 @@
 					}
 				},
 				{
-					"id": 444,
+					"id": 447,
 					"name": "a",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2396,7 +2396,7 @@
 					}
 				},
 				{
-					"id": 443,
+					"id": 446,
 					"name": "b",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2423,7 +2423,7 @@
 					}
 				},
 				{
-					"id": 442,
+					"id": 445,
 					"name": "g",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2450,7 +2450,7 @@
 					}
 				},
 				{
-					"id": 441,
+					"id": 444,
 					"name": "r",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2477,7 +2477,7 @@
 					}
 				},
 				{
-					"id": 398,
+					"id": 401,
 					"name": "BLACK",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2506,7 +2506,7 @@
 					}
 				},
 				{
-					"id": 399,
+					"id": 402,
 					"name": "BLUE",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2535,7 +2535,7 @@
 					}
 				},
 				{
-					"id": 400,
+					"id": 403,
 					"name": "CYAN",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2564,7 +2564,7 @@
 					}
 				},
 				{
-					"id": 401,
+					"id": 404,
 					"name": "GRAY",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2593,7 +2593,7 @@
 					}
 				},
 				{
-					"id": 402,
+					"id": 405,
 					"name": "GREEN",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2622,7 +2622,7 @@
 					}
 				},
 				{
-					"id": 403,
+					"id": 406,
 					"name": "MAGENTA",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2651,7 +2651,7 @@
 					}
 				},
 				{
-					"id": 404,
+					"id": 407,
 					"name": "RED",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2680,7 +2680,7 @@
 					}
 				},
 				{
-					"id": 405,
+					"id": 408,
 					"name": "WHITE",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2709,7 +2709,7 @@
 					}
 				},
 				{
-					"id": 406,
+					"id": 409,
 					"name": "YELLOW",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2738,7 +2738,7 @@
 					}
 				},
 				{
-					"id": 414,
+					"id": 417,
 					"name": "shaderData",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -2752,7 +2752,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 415,
+							"id": 418,
 							"name": "shaderData",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -2773,7 +2773,7 @@
 					}
 				},
 				{
-					"id": 416,
+					"id": 419,
 					"name": "clone",
 					"kind": 2048,
 					"kindString": "Method",
@@ -2789,7 +2789,7 @@
 					],
 					"signatures": [
 						{
-							"id": 417,
+							"id": 420,
 							"name": "clone",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -2816,7 +2816,7 @@
 					}
 				},
 				{
-					"id": 418,
+					"id": 421,
 					"name": "copy",
 					"kind": 2048,
 					"kindString": "Method",
@@ -2832,7 +2832,7 @@
 					],
 					"signatures": [
 						{
-							"id": 419,
+							"id": 422,
 							"name": "copy",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -2851,7 +2851,7 @@
 							},
 							"parameters": [
 								{
-									"id": 420,
+									"id": 423,
 									"name": "rhs",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -2883,7 +2883,7 @@
 					}
 				},
 				{
-					"id": 421,
+					"id": 424,
 					"name": "equals",
 					"kind": 2048,
 					"kindString": "Method",
@@ -2899,7 +2899,7 @@
 					],
 					"signatures": [
 						{
-							"id": 422,
+							"id": 425,
 							"name": "equals",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -2918,7 +2918,7 @@
 							},
 							"parameters": [
 								{
-									"id": 423,
+									"id": 426,
 									"name": "rhs",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -2950,7 +2950,7 @@
 					}
 				},
 				{
-					"id": 435,
+					"id": 438,
 					"name": "fromString",
 					"kind": 2048,
 					"kindString": "Method",
@@ -2966,7 +2966,7 @@
 					],
 					"signatures": [
 						{
-							"id": 436,
+							"id": 439,
 							"name": "fromString",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -2979,7 +2979,7 @@
 							},
 							"parameters": [
 								{
-									"id": 437,
+									"id": 440,
 									"name": "hex",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3011,7 +3011,7 @@
 					}
 				},
 				{
-					"id": 430,
+					"id": 433,
 					"name": "lerp",
 					"kind": 2048,
 					"kindString": "Method",
@@ -3027,7 +3027,7 @@
 					],
 					"signatures": [
 						{
-							"id": 431,
+							"id": 434,
 							"name": "lerp",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -3046,7 +3046,7 @@
 							},
 							"parameters": [
 								{
-									"id": 432,
+									"id": 435,
 									"name": "lhs",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3062,7 +3062,7 @@
 									}
 								},
 								{
-									"id": 433,
+									"id": 436,
 									"name": "rhs",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3078,7 +3078,7 @@
 									}
 								},
 								{
-									"id": 434,
+									"id": 437,
 									"name": "alpha",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3110,7 +3110,7 @@
 					}
 				},
 				{
-					"id": 424,
+					"id": 427,
 					"name": "set",
 					"kind": 2048,
 					"kindString": "Method",
@@ -3126,7 +3126,7 @@
 					],
 					"signatures": [
 						{
-							"id": 425,
+							"id": 428,
 							"name": "set",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -3139,7 +3139,7 @@
 							},
 							"parameters": [
 								{
-									"id": 426,
+									"id": 429,
 									"name": "r",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3155,7 +3155,7 @@
 									}
 								},
 								{
-									"id": 427,
+									"id": 430,
 									"name": "g",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3171,7 +3171,7 @@
 									}
 								},
 								{
-									"id": 428,
+									"id": 431,
 									"name": "b",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3187,7 +3187,7 @@
 									}
 								},
 								{
-									"id": 429,
+									"id": 432,
 									"name": "a",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3217,7 +3217,7 @@
 					}
 				},
 				{
-					"id": 438,
+					"id": 441,
 					"name": "toString",
 					"kind": 2048,
 					"kindString": "Method",
@@ -3233,7 +3233,7 @@
 					],
 					"signatures": [
 						{
-							"id": 439,
+							"id": 442,
 							"name": "toString",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -3252,7 +3252,7 @@
 							},
 							"parameters": [
 								{
-									"id": 440,
+									"id": 443,
 									"name": "alpha",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3289,47 +3289,47 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						407
+						410
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						413,
+						416,
+						447,
+						446,
+						445,
 						444,
-						443,
-						442,
-						441,
-						398,
-						399,
-						400,
 						401,
 						402,
 						403,
 						404,
 						405,
-						406
+						406,
+						407,
+						408,
+						409
 					]
 				},
 				{
 					"title": "Accessors",
 					"kind": 262144,
 					"children": [
-						414
+						417
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						416,
-						418,
+						419,
 						421,
-						435,
-						430,
 						424,
-						438
+						438,
+						433,
+						427,
+						441
 					]
 				}
 			],
@@ -3348,7 +3348,7 @@
 			]
 		},
 		{
-			"id": 445,
+			"id": 448,
 			"name": "Curve_EX",
 			"kind": 128,
 			"kindString": "Class",
@@ -3367,21 +3367,21 @@
 			],
 			"children": [
 				{
-					"id": 446,
+					"id": 449,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 447,
+							"id": 450,
 							"name": "new Curve_EX",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 448,
+									"id": 451,
 									"name": "data",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3399,7 +3399,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 445,
+								"id": 448,
 								"name": "Curve_EX"
 							},
 							"inheritedFrom": {
@@ -3414,7 +3414,7 @@
 					}
 				},
 				{
-					"id": 469,
+					"id": 472,
 					"name": "length",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3441,7 +3441,7 @@
 					}
 				},
 				{
-					"id": 471,
+					"id": 474,
 					"name": "tension",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3468,7 +3468,7 @@
 					}
 				},
 				{
-					"id": 470,
+					"id": 473,
 					"name": "type",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3496,7 +3496,7 @@
 					}
 				},
 				{
-					"id": 455,
+					"id": 458,
 					"name": "add",
 					"kind": 2048,
 					"kindString": "Method",
@@ -3512,7 +3512,7 @@
 					],
 					"signatures": [
 						{
-							"id": 456,
+							"id": 459,
 							"name": "add",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -3525,7 +3525,7 @@
 							},
 							"parameters": [
 								{
-									"id": 457,
+									"id": 460,
 									"name": "time",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3541,7 +3541,7 @@
 									}
 								},
 								{
-									"id": 458,
+									"id": 461,
 									"name": "value",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3576,7 +3576,7 @@
 					}
 				},
 				{
-					"id": 467,
+					"id": 470,
 					"name": "clone",
 					"kind": 2048,
 					"kindString": "Method",
@@ -3592,7 +3592,7 @@
 					],
 					"signatures": [
 						{
-							"id": 468,
+							"id": 471,
 							"name": "clone",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -3619,7 +3619,7 @@
 					}
 				},
 				{
-					"id": 459,
+					"id": 462,
 					"name": "get",
 					"kind": 2048,
 					"kindString": "Method",
@@ -3635,7 +3635,7 @@
 					],
 					"signatures": [
 						{
-							"id": 460,
+							"id": 463,
 							"name": "get",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -3648,7 +3648,7 @@
 							},
 							"parameters": [
 								{
-									"id": 461,
+									"id": 464,
 									"name": "index",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3683,7 +3683,7 @@
 					}
 				},
 				{
-					"id": 452,
+					"id": 455,
 					"name": "getNormal",
 					"kind": 2048,
 					"kindString": "Method",
@@ -3697,14 +3697,14 @@
 					],
 					"signatures": [
 						{
-							"id": 453,
+							"id": 456,
 							"name": "getNormal",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 454,
+									"id": 457,
 									"name": "percent",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3731,7 +3731,7 @@
 					}
 				},
 				{
-					"id": 449,
+					"id": 452,
 					"name": "getTangent",
 					"kind": 2048,
 					"kindString": "Method",
@@ -3745,14 +3745,14 @@
 					],
 					"signatures": [
 						{
-							"id": 450,
+							"id": 453,
 							"name": "getTangent",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 451,
+									"id": 454,
 									"name": "percent",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3779,7 +3779,7 @@
 					}
 				},
 				{
-					"id": 462,
+					"id": 465,
 					"name": "sort",
 					"kind": 2048,
 					"kindString": "Method",
@@ -3795,7 +3795,7 @@
 					],
 					"signatures": [
 						{
-							"id": 463,
+							"id": 466,
 							"name": "sort",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -3821,7 +3821,7 @@
 					}
 				},
 				{
-					"id": 464,
+					"id": 467,
 					"name": "value",
 					"kind": 2048,
 					"kindString": "Method",
@@ -3837,7 +3837,7 @@
 					],
 					"signatures": [
 						{
-							"id": 465,
+							"id": 468,
 							"name": "value",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -3850,7 +3850,7 @@
 							},
 							"parameters": [
 								{
-									"id": 466,
+									"id": 469,
 									"name": "time",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3887,29 +3887,29 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						446
+						449
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						469,
-						471,
-						470
+						472,
+						474,
+						473
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						455,
-						467,
-						459,
-						452,
-						449,
+						458,
+						470,
 						462,
-						464
+						455,
+						452,
+						465,
+						467
 					]
 				}
 			],
@@ -3928,7 +3928,7 @@
 			]
 		},
 		{
-			"id": 763,
+			"id": 868,
 			"name": "DebugLine",
 			"kind": 128,
 			"kindString": "Class",
@@ -3944,28 +3944,28 @@
 			],
 			"children": [
 				{
-					"id": 771,
+					"id": 876,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 772,
+							"id": 877,
 							"name": "new DebugLine",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 763,
+								"id": 868,
 								"name": "DebugLine"
 							}
 						}
 					]
 				},
 				{
-					"id": 769,
+					"id": 874,
 					"name": "clearLines",
 					"kind": 2048,
 					"kindString": "Method",
@@ -3981,7 +3981,7 @@
 					],
 					"signatures": [
 						{
-							"id": 770,
+							"id": 875,
 							"name": "clearLines",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -3994,7 +3994,7 @@
 					]
 				},
 				{
-					"id": 764,
+					"id": 869,
 					"name": "drawLine",
 					"kind": 2048,
 					"kindString": "Method",
@@ -4010,14 +4010,14 @@
 					],
 					"signatures": [
 						{
-							"id": 765,
+							"id": 870,
 							"name": "drawLine",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 766,
+									"id": 871,
 									"name": "start",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -4028,7 +4028,7 @@
 									}
 								},
 								{
-									"id": 767,
+									"id": 872,
 									"name": "end",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -4039,7 +4039,7 @@
 									}
 								},
 								{
-									"id": 768,
+									"id": 873,
 									"name": "color",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -4065,15 +4065,15 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						771
+						876
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						769,
-						764
+						874,
+						869
 					]
 				}
 			],
@@ -4086,7 +4086,7 @@
 			]
 		},
 		{
-			"id": 472,
+			"id": 475,
 			"name": "Entity_EX",
 			"kind": 128,
 			"kindString": "Class",
@@ -4105,21 +4105,21 @@
 			],
 			"children": [
 				{
-					"id": 473,
+					"id": 476,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 474,
+							"id": 477,
 							"name": "new Entity_EX",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 475,
+									"id": 478,
 									"name": "name",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -4132,7 +4132,7 @@
 									}
 								},
 								{
-									"id": 476,
+									"id": 479,
 									"name": "app",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -4147,7 +4147,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 472,
+								"id": 475,
 								"name": "Entity_EX"
 							},
 							"inheritedFrom": {
@@ -4162,7 +4162,7 @@
 					}
 				},
 				{
-					"id": 481,
+					"id": 484,
 					"name": "_changeFlag",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4171,13 +4171,13 @@
 					},
 					"decorators": [
 						{
-							"name": "instancePrpt",
+							"name": "prpt",
 							"type": {
 								"type": "reference",
-								"name": "instancePrpt"
+								"name": "prpt"
 							},
 							"arguments": {
-								"data": "{ extendClassName: \"Entity\", defaultValue: false }"
+								"data": "{ default: false }"
 							}
 						}
 					],
@@ -4195,7 +4195,7 @@
 					"defaultValue": "false"
 				},
 				{
-					"id": 479,
+					"id": 482,
 					"name": "_ignoreMeshes",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4204,13 +4204,13 @@
 					},
 					"decorators": [
 						{
-							"name": "instancePrpt",
+							"name": "prpt",
 							"type": {
 								"type": "reference",
-								"name": "instancePrpt"
+								"name": "prpt"
 							},
 							"arguments": {
-								"data": "{ extendClassName: \"Entity\", defaultValue: [] }"
+								"data": "{ default: [] }"
 							}
 						}
 					],
@@ -4231,7 +4231,7 @@
 					"defaultValue": "[]"
 				},
 				{
-					"id": 478,
+					"id": 481,
 					"name": "_meshesToRaycast",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4240,13 +4240,13 @@
 					},
 					"decorators": [
 						{
-							"name": "instancePrpt",
+							"name": "prpt",
 							"type": {
 								"type": "reference",
-								"name": "instancePrpt"
+								"name": "prpt"
 							},
 							"arguments": {
-								"data": "{ extendClassName: \"Entity\", defaultValue: [] }"
+								"data": "{ default: [] }"
 							}
 						}
 					],
@@ -4267,7 +4267,7 @@
 					"defaultValue": "[]"
 				},
 				{
-					"id": 480,
+					"id": 483,
 					"name": "_resultNodeDepth",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4276,14 +4276,12 @@
 					},
 					"decorators": [
 						{
-							"name": "instancePrpt",
+							"name": "prpt",
 							"type": {
 								"type": "reference",
-								"name": "instancePrpt"
+								"name": "prpt"
 							},
-							"arguments": {
-								"data": "{ extendClassName: \"Entity\" }"
-							}
+							"arguments": {}
 						}
 					],
 					"sources": [
@@ -4299,7 +4297,7 @@
 					}
 				},
 				{
-					"id": 477,
+					"id": 480,
 					"name": "_useInput",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4308,13 +4306,13 @@
 					},
 					"decorators": [
 						{
-							"name": "instancePrpt",
+							"name": "prpt",
 							"type": {
 								"type": "reference",
-								"name": "instancePrpt"
+								"name": "prpt"
 							},
 							"arguments": {
-								"data": "{ extendClassName: \"Entity\", defaultValue: false }"
+								"data": "{ default: false }"
 							}
 						}
 					],
@@ -4332,7 +4330,7 @@
 					"defaultValue": "false"
 				},
 				{
-					"id": 523,
+					"id": 526,
 					"name": "anim",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4360,7 +4358,7 @@
 					}
 				},
 				{
-					"id": 524,
+					"id": 527,
 					"name": "animation",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4388,7 +4386,7 @@
 					}
 				},
 				{
-					"id": 525,
+					"id": 528,
 					"name": "audiolistener",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4416,7 +4414,7 @@
 					}
 				},
 				{
-					"id": 526,
+					"id": 529,
 					"name": "button",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4444,7 +4442,7 @@
 					}
 				},
 				{
-					"id": 527,
+					"id": 530,
 					"name": "camera",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4472,7 +4470,7 @@
 					}
 				},
 				{
-					"id": 550,
+					"id": 553,
 					"name": "children",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4503,7 +4501,7 @@
 					}
 				},
 				{
-					"id": 528,
+					"id": 531,
 					"name": "collision",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4531,7 +4529,7 @@
 					}
 				},
 				{
-					"id": 529,
+					"id": 532,
 					"name": "element",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4559,7 +4557,7 @@
 					}
 				},
 				{
-					"id": 546,
+					"id": 549,
 					"name": "enabled",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4586,7 +4584,7 @@
 					}
 				},
 				{
-					"id": 545,
+					"id": 548,
 					"name": "forward",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4614,7 +4612,7 @@
 					}
 				},
 				{
-					"id": 551,
+					"id": 554,
 					"name": "graphDepth",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4642,7 +4640,7 @@
 					}
 				},
 				{
-					"id": 530,
+					"id": 533,
 					"name": "layoutchild",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4670,7 +4668,7 @@
 					}
 				},
 				{
-					"id": 531,
+					"id": 534,
 					"name": "layoutgroup",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4698,7 +4696,7 @@
 					}
 				},
 				{
-					"id": 532,
+					"id": 535,
 					"name": "light",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4726,7 +4724,7 @@
 					}
 				},
 				{
-					"id": 533,
+					"id": 536,
 					"name": "model",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4754,7 +4752,7 @@
 					}
 				},
 				{
-					"id": 676,
+					"id": 679,
 					"name": "name",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4781,7 +4779,7 @@
 					}
 				},
 				{
-					"id": 547,
+					"id": 550,
 					"name": "parent",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4809,7 +4807,7 @@
 					}
 				},
 				{
-					"id": 534,
+					"id": 537,
 					"name": "particlesystem",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4837,7 +4835,7 @@
 					}
 				},
 				{
-					"id": 548,
+					"id": 551,
 					"name": "path",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4865,7 +4863,7 @@
 					}
 				},
 				{
-					"id": 535,
+					"id": 538,
 					"name": "render",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4893,7 +4891,7 @@
 					}
 				},
 				{
-					"id": 543,
+					"id": 546,
 					"name": "right",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4921,7 +4919,7 @@
 					}
 				},
 				{
-					"id": 536,
+					"id": 539,
 					"name": "rigidbody",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4949,7 +4947,7 @@
 					}
 				},
 				{
-					"id": 549,
+					"id": 552,
 					"name": "root",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4977,7 +4975,7 @@
 					}
 				},
 				{
-					"id": 537,
+					"id": 540,
 					"name": "screen",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5005,7 +5003,7 @@
 					}
 				},
 				{
-					"id": 538,
+					"id": 541,
 					"name": "script",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5033,7 +5031,7 @@
 					}
 				},
 				{
-					"id": 539,
+					"id": 542,
 					"name": "scrollbar",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5061,7 +5059,7 @@
 					}
 				},
 				{
-					"id": 540,
+					"id": 543,
 					"name": "scrollview",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5089,7 +5087,7 @@
 					}
 				},
 				{
-					"id": 541,
+					"id": 544,
 					"name": "sound",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5117,7 +5115,7 @@
 					}
 				},
 				{
-					"id": 542,
+					"id": 545,
 					"name": "sprite",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5145,7 +5143,7 @@
 					}
 				},
 				{
-					"id": 677,
+					"id": 680,
 					"name": "tags",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5172,7 +5170,7 @@
 					}
 				},
 				{
-					"id": 544,
+					"id": 547,
 					"name": "up",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5200,7 +5198,7 @@
 					}
 				},
 				{
-					"id": 496,
+					"id": 499,
 					"name": "changeFlag",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -5214,7 +5212,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 497,
+							"id": 500,
 							"name": "changeFlag",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -5231,14 +5229,14 @@
 					],
 					"setSignature": [
 						{
-							"id": 498,
+							"id": 501,
 							"name": "changeFlag",
 							"kind": 1048576,
 							"kindString": "Set signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 499,
+									"id": 502,
 									"name": "flag",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -5265,7 +5263,7 @@
 					}
 				},
 				{
-					"id": 488,
+					"id": 491,
 					"name": "ignoreMeshes",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -5279,7 +5277,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 489,
+							"id": 492,
 							"name": "ignoreMeshes",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -5299,14 +5297,14 @@
 					],
 					"setSignature": [
 						{
-							"id": 490,
+							"id": 493,
 							"name": "ignoreMeshes",
 							"kind": 1048576,
 							"kindString": "Set signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 491,
+									"id": 494,
 									"name": "ignoreNames",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -5336,7 +5334,7 @@
 					}
 				},
 				{
-					"id": 486,
+					"id": 489,
 					"name": "meshesToRaycast",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -5350,7 +5348,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 487,
+							"id": 490,
 							"name": "meshesToRaycast",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -5374,7 +5372,7 @@
 					}
 				},
 				{
-					"id": 492,
+					"id": 495,
 					"name": "resultNodeDepth",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -5388,7 +5386,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 493,
+							"id": 496,
 							"name": "resultNodeDepth",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -5405,14 +5403,14 @@
 					],
 					"setSignature": [
 						{
-							"id": 494,
+							"id": 497,
 							"name": "resultNodeDepth",
 							"kind": 1048576,
 							"kindString": "Set signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 495,
+									"id": 498,
 									"name": "depth",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -5439,7 +5437,7 @@
 					}
 				},
 				{
-					"id": 482,
+					"id": 485,
 					"name": "useInput",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -5453,7 +5451,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 483,
+							"id": 486,
 							"name": "useInput",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -5470,14 +5468,14 @@
 					],
 					"setSignature": [
 						{
-							"id": 484,
+							"id": 487,
 							"name": "useInput",
 							"kind": 1048576,
 							"kindString": "Set signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 485,
+									"id": 488,
 									"name": "use",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -5504,7 +5502,7 @@
 					}
 				},
 				{
-					"id": 638,
+					"id": 641,
 					"name": "addChild",
 					"kind": 2048,
 					"kindString": "Method",
@@ -5520,7 +5518,7 @@
 					],
 					"signatures": [
 						{
-							"id": 639,
+							"id": 642,
 							"name": "addChild",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -5538,7 +5536,7 @@
 							},
 							"parameters": [
 								{
-									"id": 640,
+									"id": 643,
 									"name": "node",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -5570,7 +5568,7 @@
 					}
 				},
 				{
-					"id": 503,
+					"id": 506,
 					"name": "addComponent",
 					"kind": 2048,
 					"kindString": "Method",
@@ -5586,7 +5584,7 @@
 					],
 					"signatures": [
 						{
-							"id": 504,
+							"id": 507,
 							"name": "addComponent",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -5605,7 +5603,7 @@
 							},
 							"parameters": [
 								{
-									"id": 505,
+									"id": 508,
 									"name": "type",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -5621,7 +5619,7 @@
 									}
 								},
 								{
-									"id": 506,
+									"id": 509,
 									"name": "data",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -5651,7 +5649,7 @@
 					}
 				},
 				{
-					"id": 521,
+					"id": 524,
 					"name": "clone",
 					"kind": 2048,
 					"kindString": "Method",
@@ -5667,7 +5665,7 @@
 					],
 					"signatures": [
 						{
-							"id": 522,
+							"id": 525,
 							"name": "clone",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -5700,7 +5698,7 @@
 					}
 				},
 				{
-					"id": 519,
+					"id": 522,
 					"name": "destroy",
 					"kind": 2048,
 					"kindString": "Method",
@@ -5716,7 +5714,7 @@
 					],
 					"signatures": [
 						{
-							"id": 520,
+							"id": 523,
 							"name": "destroy",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -5748,7 +5746,7 @@
 					}
 				},
 				{
-					"id": 552,
+					"id": 555,
 					"name": "find",
 					"kind": 2048,
 					"kindString": "Method",
@@ -5764,7 +5762,7 @@
 					],
 					"signatures": [
 						{
-							"id": 553,
+							"id": 556,
 							"name": "find",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -5787,7 +5785,7 @@
 							},
 							"parameters": [
 								{
-									"id": 554,
+									"id": 557,
 									"name": "attr",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -5812,7 +5810,7 @@
 									}
 								},
 								{
-									"id": 555,
+									"id": 558,
 									"name": "value",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -5845,7 +5843,7 @@
 					}
 				},
 				{
-					"id": 516,
+					"id": 519,
 					"name": "findByGuid",
 					"kind": 2048,
 					"kindString": "Method",
@@ -5861,7 +5859,7 @@
 					],
 					"signatures": [
 						{
-							"id": 517,
+							"id": 520,
 							"name": "findByGuid",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -5874,7 +5872,7 @@
 							},
 							"parameters": [
 								{
-									"id": 518,
+									"id": 521,
 									"name": "guid",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -5906,7 +5904,7 @@
 					}
 				},
 				{
-					"id": 563,
+					"id": 566,
 					"name": "findByName",
 					"kind": 2048,
 					"kindString": "Method",
@@ -5922,7 +5920,7 @@
 					],
 					"signatures": [
 						{
-							"id": 564,
+							"id": 567,
 							"name": "findByName",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -5935,7 +5933,7 @@
 							},
 							"parameters": [
 								{
-									"id": 565,
+									"id": 568,
 									"name": "name",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -5967,7 +5965,7 @@
 					}
 				},
 				{
-					"id": 566,
+					"id": 569,
 					"name": "findByPath",
 					"kind": 2048,
 					"kindString": "Method",
@@ -5983,7 +5981,7 @@
 					],
 					"signatures": [
 						{
-							"id": 567,
+							"id": 570,
 							"name": "findByPath",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6002,7 +6000,7 @@
 							},
 							"parameters": [
 								{
-									"id": 568,
+									"id": 571,
 									"name": "path",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6046,7 +6044,7 @@
 					}
 				},
 				{
-					"id": 560,
+					"id": 563,
 					"name": "findByTag",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6062,7 +6060,7 @@
 					],
 					"signatures": [
 						{
-							"id": 561,
+							"id": 564,
 							"name": "findByTag",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6093,7 +6091,7 @@
 							},
 							"parameters": [
 								{
-									"id": 562,
+									"id": 565,
 									"name": "query",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6140,7 +6138,7 @@
 					}
 				},
 				{
-					"id": 510,
+					"id": 513,
 					"name": "findComponent",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6156,7 +6154,7 @@
 					],
 					"signatures": [
 						{
-							"id": 511,
+							"id": 514,
 							"name": "findComponent",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6175,7 +6173,7 @@
 							},
 							"parameters": [
 								{
-									"id": 512,
+									"id": 515,
 									"name": "type",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6207,7 +6205,7 @@
 					}
 				},
 				{
-					"id": 513,
+					"id": 516,
 					"name": "findComponents",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6223,7 +6221,7 @@
 					],
 					"signatures": [
 						{
-							"id": 514,
+							"id": 517,
 							"name": "findComponents",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6242,7 +6240,7 @@
 							},
 							"parameters": [
 								{
-									"id": 515,
+									"id": 518,
 									"name": "type",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6277,7 +6275,7 @@
 					}
 				},
 				{
-					"id": 556,
+					"id": 559,
 					"name": "findOne",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6293,7 +6291,7 @@
 					],
 					"signatures": [
 						{
-							"id": 557,
+							"id": 560,
 							"name": "findOne",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6316,7 +6314,7 @@
 							},
 							"parameters": [
 								{
-									"id": 558,
+									"id": 561,
 									"name": "attr",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6341,7 +6339,7 @@
 									}
 								},
 								{
-									"id": 559,
+									"id": 562,
 									"name": "value",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6371,7 +6369,7 @@
 					}
 				},
 				{
-					"id": 688,
+					"id": 691,
 					"name": "fire",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6387,7 +6385,7 @@
 					],
 					"signatures": [
 						{
-							"id": 689,
+							"id": 692,
 							"name": "fire",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6406,7 +6404,7 @@
 							},
 							"parameters": [
 								{
-									"id": 690,
+									"id": 693,
 									"name": "name",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6422,7 +6420,7 @@
 									}
 								},
 								{
-									"id": 691,
+									"id": 694,
 									"name": "arg1",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6436,7 +6434,7 @@
 									}
 								},
 								{
-									"id": 692,
+									"id": 695,
 									"name": "arg2",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6450,7 +6448,7 @@
 									}
 								},
 								{
-									"id": 693,
+									"id": 696,
 									"name": "arg3",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6464,7 +6462,7 @@
 									}
 								},
 								{
-									"id": 694,
+									"id": 697,
 									"name": "arg4",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6478,7 +6476,7 @@
 									}
 								},
 								{
-									"id": 695,
+									"id": 698,
 									"name": "arg5",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6492,7 +6490,7 @@
 									}
 								},
 								{
-									"id": 696,
+									"id": 699,
 									"name": "arg6",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6506,7 +6504,7 @@
 									}
 								},
 								{
-									"id": 697,
+									"id": 700,
 									"name": "arg7",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6520,7 +6518,7 @@
 									}
 								},
 								{
-									"id": 698,
+									"id": 701,
 									"name": "arg8",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6550,7 +6548,7 @@
 					}
 				},
 				{
-					"id": 569,
+					"id": 572,
 					"name": "forEach",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6566,7 +6564,7 @@
 					],
 					"signatures": [
 						{
-							"id": 570,
+							"id": 573,
 							"name": "forEach",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6584,7 +6582,7 @@
 							},
 							"parameters": [
 								{
-									"id": 571,
+									"id": 574,
 									"name": "callback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6600,7 +6598,7 @@
 									}
 								},
 								{
-									"id": 572,
+									"id": 575,
 									"name": "thisArg",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6630,7 +6628,7 @@
 					}
 				},
 				{
-					"id": 579,
+					"id": 582,
 					"name": "getEulerAngles",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6646,7 +6644,7 @@
 					],
 					"signatures": [
 						{
-							"id": 580,
+							"id": 583,
 							"name": "getEulerAngles",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6679,7 +6677,7 @@
 					}
 				},
 				{
-					"id": 581,
+					"id": 584,
 					"name": "getLocalEulerAngles",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6695,7 +6693,7 @@
 					],
 					"signatures": [
 						{
-							"id": 582,
+							"id": 585,
 							"name": "getLocalEulerAngles",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6728,7 +6726,7 @@
 					}
 				},
 				{
-					"id": 583,
+					"id": 586,
 					"name": "getLocalPosition",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6744,7 +6742,7 @@
 					],
 					"signatures": [
 						{
-							"id": 584,
+							"id": 587,
 							"name": "getLocalPosition",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6777,7 +6775,7 @@
 					}
 				},
 				{
-					"id": 585,
+					"id": 588,
 					"name": "getLocalRotation",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6793,7 +6791,7 @@
 					],
 					"signatures": [
 						{
-							"id": 586,
+							"id": 589,
 							"name": "getLocalRotation",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6826,7 +6824,7 @@
 					}
 				},
 				{
-					"id": 587,
+					"id": 590,
 					"name": "getLocalScale",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6842,7 +6840,7 @@
 					],
 					"signatures": [
 						{
-							"id": 588,
+							"id": 591,
 							"name": "getLocalScale",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6875,7 +6873,7 @@
 					}
 				},
 				{
-					"id": 589,
+					"id": 592,
 					"name": "getLocalTransform",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6891,7 +6889,7 @@
 					],
 					"signatures": [
 						{
-							"id": 590,
+							"id": 593,
 							"name": "getLocalTransform",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6924,7 +6922,7 @@
 					}
 				},
 				{
-					"id": 591,
+					"id": 594,
 					"name": "getPosition",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6940,7 +6938,7 @@
 					],
 					"signatures": [
 						{
-							"id": 592,
+							"id": 595,
 							"name": "getPosition",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6973,7 +6971,7 @@
 					}
 				},
 				{
-					"id": 593,
+					"id": 596,
 					"name": "getRotation",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6989,7 +6987,7 @@
 					],
 					"signatures": [
 						{
-							"id": 594,
+							"id": 597,
 							"name": "getRotation",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -7022,7 +7020,7 @@
 					}
 				},
 				{
-					"id": 595,
+					"id": 598,
 					"name": "getWorldTransform",
 					"kind": 2048,
 					"kindString": "Method",
@@ -7038,7 +7036,7 @@
 					],
 					"signatures": [
 						{
-							"id": 596,
+							"id": 599,
 							"name": "getWorldTransform",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -7071,7 +7069,7 @@
 					}
 				},
 				{
-					"id": 704,
+					"id": 707,
 					"name": "hasEvent",
 					"kind": 2048,
 					"kindString": "Method",
@@ -7087,7 +7085,7 @@
 					],
 					"signatures": [
 						{
-							"id": 705,
+							"id": 708,
 							"name": "hasEvent",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -7106,7 +7104,7 @@
 							},
 							"parameters": [
 								{
-									"id": 706,
+									"id": 709,
 									"name": "name",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7138,7 +7136,7 @@
 					}
 				},
 				{
-					"id": 641,
+					"id": 644,
 					"name": "insertChild",
 					"kind": 2048,
 					"kindString": "Method",
@@ -7154,7 +7152,7 @@
 					],
 					"signatures": [
 						{
-							"id": 642,
+							"id": 645,
 							"name": "insertChild",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -7172,7 +7170,7 @@
 							},
 							"parameters": [
 								{
-									"id": 643,
+									"id": 646,
 									"name": "node",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7188,7 +7186,7 @@
 									}
 								},
 								{
-									"id": 644,
+									"id": 647,
 									"name": "index",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7220,7 +7218,7 @@
 					}
 				},
 				{
-					"id": 576,
+					"id": 579,
 					"name": "isAncestorOf",
 					"kind": 2048,
 					"kindString": "Method",
@@ -7236,7 +7234,7 @@
 					],
 					"signatures": [
 						{
-							"id": 577,
+							"id": 580,
 							"name": "isAncestorOf",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -7255,7 +7253,7 @@
 							},
 							"parameters": [
 								{
-									"id": 578,
+									"id": 581,
 									"name": "node",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7287,7 +7285,7 @@
 					}
 				},
 				{
-					"id": 573,
+					"id": 576,
 					"name": "isDescendantOf",
 					"kind": 2048,
 					"kindString": "Method",
@@ -7303,7 +7301,7 @@
 					],
 					"signatures": [
 						{
-							"id": 574,
+							"id": 577,
 							"name": "isDescendantOf",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -7322,7 +7320,7 @@
 							},
 							"parameters": [
 								{
-									"id": 575,
+									"id": 578,
 									"name": "node",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7354,7 +7352,7 @@
 					}
 				},
 				{
-					"id": 648,
+					"id": 651,
 					"name": "lookAt",
 					"kind": 2048,
 					"kindString": "Method",
@@ -7370,7 +7368,7 @@
 					],
 					"signatures": [
 						{
-							"id": 649,
+							"id": 652,
 							"name": "lookAt",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -7400,7 +7398,7 @@
 							},
 							"parameters": [
 								{
-									"id": 650,
+									"id": 653,
 									"name": "x",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7425,7 +7423,7 @@
 									}
 								},
 								{
-									"id": 651,
+									"id": 654,
 									"name": "y",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7448,7 +7446,7 @@
 									}
 								},
 								{
-									"id": 652,
+									"id": 655,
 									"name": "z",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7462,7 +7460,7 @@
 									}
 								},
 								{
-									"id": 653,
+									"id": 656,
 									"name": "ux",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7476,7 +7474,7 @@
 									}
 								},
 								{
-									"id": 654,
+									"id": 657,
 									"name": "uy",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7490,7 +7488,7 @@
 									}
 								},
 								{
-									"id": 655,
+									"id": 658,
 									"name": "uz",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7520,7 +7518,7 @@
 					}
 				},
 				{
-					"id": 683,
+					"id": 686,
 					"name": "off",
 					"kind": 2048,
 					"kindString": "Method",
@@ -7536,7 +7534,7 @@
 					],
 					"signatures": [
 						{
-							"id": 684,
+							"id": 687,
 							"name": "off",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -7555,7 +7553,7 @@
 							},
 							"parameters": [
 								{
-									"id": 685,
+									"id": 688,
 									"name": "name",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7569,7 +7567,7 @@
 									}
 								},
 								{
-									"id": 686,
+									"id": 689,
 									"name": "callback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7583,7 +7581,7 @@
 									}
 								},
 								{
-									"id": 687,
+									"id": 690,
 									"name": "scope",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7613,7 +7611,7 @@
 					}
 				},
 				{
-					"id": 678,
+					"id": 681,
 					"name": "on",
 					"kind": 2048,
 					"kindString": "Method",
@@ -7629,7 +7627,7 @@
 					],
 					"signatures": [
 						{
-							"id": 679,
+							"id": 682,
 							"name": "on",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -7648,7 +7646,7 @@
 							},
 							"parameters": [
 								{
-									"id": 680,
+									"id": 683,
 									"name": "name",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7664,7 +7662,7 @@
 									}
 								},
 								{
-									"id": 681,
+									"id": 684,
 									"name": "callback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7680,7 +7678,7 @@
 									}
 								},
 								{
-									"id": 682,
+									"id": 685,
 									"name": "scope",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7710,7 +7708,7 @@
 					}
 				},
 				{
-					"id": 699,
+					"id": 702,
 					"name": "once",
 					"kind": 2048,
 					"kindString": "Method",
@@ -7726,7 +7724,7 @@
 					],
 					"signatures": [
 						{
-							"id": 700,
+							"id": 703,
 							"name": "once",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -7745,7 +7743,7 @@
 							},
 							"parameters": [
 								{
-									"id": 701,
+									"id": 704,
 									"name": "name",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7761,7 +7759,7 @@
 									}
 								},
 								{
-									"id": 702,
+									"id": 705,
 									"name": "callback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7777,7 +7775,7 @@
 									}
 								},
 								{
-									"id": 703,
+									"id": 706,
 									"name": "scope",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7807,7 +7805,7 @@
 					}
 				},
 				{
-					"id": 645,
+					"id": 648,
 					"name": "removeChild",
 					"kind": 2048,
 					"kindString": "Method",
@@ -7823,7 +7821,7 @@
 					],
 					"signatures": [
 						{
-							"id": 646,
+							"id": 649,
 							"name": "removeChild",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -7841,7 +7839,7 @@
 							},
 							"parameters": [
 								{
-									"id": 647,
+									"id": 650,
 									"name": "child",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7873,7 +7871,7 @@
 					}
 				},
 				{
-					"id": 507,
+					"id": 510,
 					"name": "removeComponent",
 					"kind": 2048,
 					"kindString": "Method",
@@ -7889,7 +7887,7 @@
 					],
 					"signatures": [
 						{
-							"id": 508,
+							"id": 511,
 							"name": "removeComponent",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -7907,7 +7905,7 @@
 							},
 							"parameters": [
 								{
-									"id": 509,
+									"id": 512,
 									"name": "type",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7939,7 +7937,7 @@
 					}
 				},
 				{
-					"id": 597,
+					"id": 600,
 					"name": "reparent",
 					"kind": 2048,
 					"kindString": "Method",
@@ -7955,7 +7953,7 @@
 					],
 					"signatures": [
 						{
-							"id": 598,
+							"id": 601,
 							"name": "reparent",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -7967,7 +7965,7 @@
 							},
 							"parameters": [
 								{
-									"id": 599,
+									"id": 602,
 									"name": "parent",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -7983,7 +7981,7 @@
 									}
 								},
 								{
-									"id": 600,
+									"id": 603,
 									"name": "index",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8013,7 +8011,7 @@
 					}
 				},
 				{
-					"id": 500,
+					"id": 503,
 					"name": "reparentAndKeepTransform",
 					"kind": 2048,
 					"kindString": "Method",
@@ -8027,7 +8025,7 @@
 					],
 					"signatures": [
 						{
-							"id": 501,
+							"id": 504,
 							"name": "reparentAndKeepTransform",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -8042,7 +8040,7 @@
 							},
 							"parameters": [
 								{
-									"id": 502,
+									"id": 505,
 									"name": "parent",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8072,7 +8070,7 @@
 					}
 				},
 				{
-					"id": 666,
+					"id": 669,
 					"name": "rotate",
 					"kind": 2048,
 					"kindString": "Method",
@@ -8088,7 +8086,7 @@
 					],
 					"signatures": [
 						{
-							"id": 667,
+							"id": 670,
 							"name": "rotate",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -8110,7 +8108,7 @@
 							},
 							"parameters": [
 								{
-									"id": 668,
+									"id": 671,
 									"name": "x",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8135,7 +8133,7 @@
 									}
 								},
 								{
-									"id": 669,
+									"id": 672,
 									"name": "y",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8149,7 +8147,7 @@
 									}
 								},
 								{
-									"id": 670,
+									"id": 673,
 									"name": "z",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8179,7 +8177,7 @@
 					}
 				},
 				{
-					"id": 671,
+					"id": 674,
 					"name": "rotateLocal",
 					"kind": 2048,
 					"kindString": "Method",
@@ -8195,7 +8193,7 @@
 					],
 					"signatures": [
 						{
-							"id": 672,
+							"id": 675,
 							"name": "rotateLocal",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -8217,7 +8215,7 @@
 							},
 							"parameters": [
 								{
-									"id": 673,
+									"id": 676,
 									"name": "x",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8242,7 +8240,7 @@
 									}
 								},
 								{
-									"id": 674,
+									"id": 677,
 									"name": "y",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8256,7 +8254,7 @@
 									}
 								},
 								{
-									"id": 675,
+									"id": 678,
 									"name": "z",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8286,7 +8284,7 @@
 					}
 				},
 				{
-					"id": 633,
+					"id": 636,
 					"name": "setEulerAngles",
 					"kind": 2048,
 					"kindString": "Method",
@@ -8302,7 +8300,7 @@
 					],
 					"signatures": [
 						{
-							"id": 634,
+							"id": 637,
 							"name": "setEulerAngles",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -8324,7 +8322,7 @@
 							},
 							"parameters": [
 								{
-									"id": 635,
+									"id": 638,
 									"name": "x",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8349,7 +8347,7 @@
 									}
 								},
 								{
-									"id": 636,
+									"id": 639,
 									"name": "y",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8363,7 +8361,7 @@
 									}
 								},
 								{
-									"id": 637,
+									"id": 640,
 									"name": "z",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8393,7 +8391,7 @@
 					}
 				},
 				{
-					"id": 601,
+					"id": 604,
 					"name": "setLocalEulerAngles",
 					"kind": 2048,
 					"kindString": "Method",
@@ -8409,7 +8407,7 @@
 					],
 					"signatures": [
 						{
-							"id": 602,
+							"id": 605,
 							"name": "setLocalEulerAngles",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -8431,7 +8429,7 @@
 							},
 							"parameters": [
 								{
-									"id": 603,
+									"id": 606,
 									"name": "x",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8456,7 +8454,7 @@
 									}
 								},
 								{
-									"id": 604,
+									"id": 607,
 									"name": "y",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8470,7 +8468,7 @@
 									}
 								},
 								{
-									"id": 605,
+									"id": 608,
 									"name": "z",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8500,7 +8498,7 @@
 					}
 				},
 				{
-					"id": 606,
+					"id": 609,
 					"name": "setLocalPosition",
 					"kind": 2048,
 					"kindString": "Method",
@@ -8516,7 +8514,7 @@
 					],
 					"signatures": [
 						{
-							"id": 607,
+							"id": 610,
 							"name": "setLocalPosition",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -8538,7 +8536,7 @@
 							},
 							"parameters": [
 								{
-									"id": 608,
+									"id": 611,
 									"name": "x",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8563,7 +8561,7 @@
 									}
 								},
 								{
-									"id": 609,
+									"id": 612,
 									"name": "y",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8577,7 +8575,7 @@
 									}
 								},
 								{
-									"id": 610,
+									"id": 613,
 									"name": "z",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8607,7 +8605,7 @@
 					}
 				},
 				{
-					"id": 611,
+					"id": 614,
 					"name": "setLocalRotation",
 					"kind": 2048,
 					"kindString": "Method",
@@ -8623,7 +8621,7 @@
 					],
 					"signatures": [
 						{
-							"id": 612,
+							"id": 615,
 							"name": "setLocalRotation",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -8645,7 +8643,7 @@
 							},
 							"parameters": [
 								{
-									"id": 613,
+									"id": 616,
 									"name": "x",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8670,7 +8668,7 @@
 									}
 								},
 								{
-									"id": 614,
+									"id": 617,
 									"name": "y",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8684,7 +8682,7 @@
 									}
 								},
 								{
-									"id": 615,
+									"id": 618,
 									"name": "z",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8698,7 +8696,7 @@
 									}
 								},
 								{
-									"id": 616,
+									"id": 619,
 									"name": "w",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8728,7 +8726,7 @@
 					}
 				},
 				{
-					"id": 617,
+					"id": 620,
 					"name": "setLocalScale",
 					"kind": 2048,
 					"kindString": "Method",
@@ -8744,7 +8742,7 @@
 					],
 					"signatures": [
 						{
-							"id": 618,
+							"id": 621,
 							"name": "setLocalScale",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -8766,7 +8764,7 @@
 							},
 							"parameters": [
 								{
-									"id": 619,
+									"id": 622,
 									"name": "x",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8791,7 +8789,7 @@
 									}
 								},
 								{
-									"id": 620,
+									"id": 623,
 									"name": "y",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8805,7 +8803,7 @@
 									}
 								},
 								{
-									"id": 621,
+									"id": 624,
 									"name": "z",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8835,7 +8833,7 @@
 					}
 				},
 				{
-					"id": 622,
+					"id": 625,
 					"name": "setPosition",
 					"kind": 2048,
 					"kindString": "Method",
@@ -8851,7 +8849,7 @@
 					],
 					"signatures": [
 						{
-							"id": 623,
+							"id": 626,
 							"name": "setPosition",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -8873,7 +8871,7 @@
 							},
 							"parameters": [
 								{
-									"id": 624,
+									"id": 627,
 									"name": "x",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8898,7 +8896,7 @@
 									}
 								},
 								{
-									"id": 625,
+									"id": 628,
 									"name": "y",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8912,7 +8910,7 @@
 									}
 								},
 								{
-									"id": 626,
+									"id": 629,
 									"name": "z",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -8942,7 +8940,7 @@
 					}
 				},
 				{
-					"id": 627,
+					"id": 630,
 					"name": "setRotation",
 					"kind": 2048,
 					"kindString": "Method",
@@ -8958,7 +8956,7 @@
 					],
 					"signatures": [
 						{
-							"id": 628,
+							"id": 631,
 							"name": "setRotation",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -8980,7 +8978,7 @@
 							},
 							"parameters": [
 								{
-									"id": 629,
+									"id": 632,
 									"name": "x",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -9005,7 +9003,7 @@
 									}
 								},
 								{
-									"id": 630,
+									"id": 633,
 									"name": "y",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -9019,7 +9017,7 @@
 									}
 								},
 								{
-									"id": 631,
+									"id": 634,
 									"name": "z",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -9033,7 +9031,7 @@
 									}
 								},
 								{
-									"id": 632,
+									"id": 635,
 									"name": "w",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -9063,7 +9061,7 @@
 					}
 				},
 				{
-					"id": 656,
+					"id": 659,
 					"name": "translate",
 					"kind": 2048,
 					"kindString": "Method",
@@ -9079,7 +9077,7 @@
 					],
 					"signatures": [
 						{
-							"id": 657,
+							"id": 660,
 							"name": "translate",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -9101,7 +9099,7 @@
 							},
 							"parameters": [
 								{
-									"id": 658,
+									"id": 661,
 									"name": "x",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -9126,7 +9124,7 @@
 									}
 								},
 								{
-									"id": 659,
+									"id": 662,
 									"name": "y",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -9140,7 +9138,7 @@
 									}
 								},
 								{
-									"id": 660,
+									"id": 663,
 									"name": "z",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -9170,7 +9168,7 @@
 					}
 				},
 				{
-					"id": 661,
+					"id": 664,
 					"name": "translateLocal",
 					"kind": 2048,
 					"kindString": "Method",
@@ -9186,7 +9184,7 @@
 					],
 					"signatures": [
 						{
-							"id": 662,
+							"id": 665,
 							"name": "translateLocal",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -9208,7 +9206,7 @@
 							},
 							"parameters": [
 								{
-									"id": 663,
+									"id": 666,
 									"name": "x",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -9233,7 +9231,7 @@
 									}
 								},
 								{
-									"id": 664,
+									"id": 667,
 									"name": "y",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -9247,7 +9245,7 @@
 									}
 								},
 								{
-									"id": 665,
+									"id": 668,
 									"name": "z",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -9282,112 +9280,112 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						473
+						476
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
+						484,
+						482,
 						481,
-						479,
-						478,
+						483,
 						480,
-						477,
-						523,
-						524,
-						525,
 						526,
 						527,
-						550,
 						528,
 						529,
-						546,
-						545,
-						551,
 						530,
+						553,
 						531,
 						532,
-						533,
-						676,
-						547,
-						534,
-						548,
-						535,
-						543,
-						536,
 						549,
+						548,
+						554,
+						533,
+						534,
+						535,
+						536,
+						679,
+						550,
 						537,
+						551,
 						538,
+						546,
 						539,
+						552,
 						540,
 						541,
 						542,
-						677,
-						544
+						543,
+						544,
+						545,
+						680,
+						547
 					]
 				},
 				{
 					"title": "Accessors",
 					"kind": 262144,
 					"children": [
-						496,
-						488,
-						486,
-						492,
-						482
+						499,
+						491,
+						489,
+						495,
+						485
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						638,
-						503,
-						521,
-						519,
-						552,
-						516,
-						563,
-						566,
-						560,
-						510,
-						513,
-						556,
-						688,
-						569,
-						579,
-						581,
-						583,
-						585,
-						587,
-						589,
-						591,
-						593,
-						595,
-						704,
 						641,
+						506,
+						524,
+						522,
+						555,
+						519,
+						566,
+						569,
+						563,
+						513,
+						516,
+						559,
+						691,
+						572,
+						582,
+						584,
+						586,
+						588,
+						590,
+						592,
+						594,
+						596,
+						598,
+						707,
+						644,
+						579,
 						576,
-						573,
+						651,
+						686,
+						681,
+						702,
 						648,
-						683,
-						678,
-						699,
-						645,
-						507,
-						597,
-						500,
-						666,
-						671,
-						633,
-						601,
-						606,
-						611,
-						617,
-						622,
-						627,
-						656,
-						661
+						510,
+						600,
+						503,
+						669,
+						674,
+						636,
+						604,
+						609,
+						614,
+						620,
+						625,
+						630,
+						659,
+						664
 					]
 				}
 			],
@@ -9406,14 +9404,14 @@
 			]
 		},
 		{
-			"id": 191,
+			"id": 194,
 			"name": "Filter",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 195,
+					"id": 198,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -9427,14 +9425,14 @@
 					],
 					"signatures": [
 						{
-							"id": 196,
+							"id": 199,
 							"name": "new Filter",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 197,
+									"id": 200,
 									"name": "option",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -9444,20 +9442,20 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 198,
+											"id": 201,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"indexSignature": {
-												"id": 199,
+												"id": 202,
 												"name": "__index",
 												"kind": 8192,
 												"kindString": "Index signature",
 												"flags": {},
 												"parameters": [
 													{
-														"id": 200,
+														"id": 203,
 														"name": "paraName",
 														"kind": 32768,
 														"flags": {},
@@ -9478,7 +9476,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 191,
+								"id": 194,
 								"name": "Filter"
 							},
 							"overwrites": {
@@ -9493,7 +9491,7 @@
 					}
 				},
 				{
-					"id": 201,
+					"id": 204,
 					"name": "args",
 					"kind": 1024,
 					"kindString": "Property",
@@ -9511,20 +9509,20 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 202,
+							"id": 205,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"indexSignature": {
-								"id": 203,
+								"id": 206,
 								"name": "__index",
 								"kind": 8192,
 								"kindString": "Index signature",
 								"flags": {},
 								"parameters": [
 									{
-										"id": 204,
+										"id": 207,
 										"name": "paraName",
 										"kind": 32768,
 										"flags": {},
@@ -9543,7 +9541,7 @@
 					}
 				},
 				{
-					"id": 205,
+					"id": 208,
 					"name": "binbMap",
 					"kind": 1024,
 					"kindString": "Property",
@@ -9573,7 +9571,7 @@
 					}
 				},
 				{
-					"id": 248,
+					"id": 251,
 					"name": "device",
 					"kind": 1024,
 					"kindString": "Property",
@@ -9600,7 +9598,7 @@
 					}
 				},
 				{
-					"id": 251,
+					"id": 254,
 					"name": "needsDepthBuffer",
 					"kind": 1024,
 					"kindString": "Property",
@@ -9627,7 +9625,7 @@
 					}
 				},
 				{
-					"id": 207,
+					"id": 210,
 					"name": "passes",
 					"kind": 1024,
 					"kindString": "Property",
@@ -9651,7 +9649,7 @@
 					"defaultValue": "[]"
 				},
 				{
-					"id": 206,
+					"id": 209,
 					"name": "rtCache",
 					"kind": 1024,
 					"kindString": "Property",
@@ -9675,7 +9673,7 @@
 					"defaultValue": "[]"
 				},
 				{
-					"id": 250,
+					"id": 253,
 					"name": "shader",
 					"kind": 1024,
 					"kindString": "Property",
@@ -9702,7 +9700,7 @@
 					}
 				},
 				{
-					"id": 208,
+					"id": 211,
 					"name": "shaders",
 					"kind": 1024,
 					"kindString": "Property",
@@ -9726,7 +9724,7 @@
 					"defaultValue": "[]"
 				},
 				{
-					"id": 249,
+					"id": 252,
 					"name": "vertexBuffer",
 					"kind": 1024,
 					"kindString": "Property",
@@ -9753,7 +9751,7 @@
 					}
 				},
 				{
-					"id": 238,
+					"id": 241,
 					"name": "addBinder",
 					"kind": 2048,
 					"kindString": "Method",
@@ -9769,14 +9767,14 @@
 					],
 					"signatures": [
 						{
-							"id": 239,
+							"id": 242,
 							"name": "addBinder",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 240,
+									"id": 243,
 									"name": "arg",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -9787,7 +9785,7 @@
 									}
 								},
 								{
-									"id": 241,
+									"id": 244,
 									"name": "binder",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -9806,7 +9804,7 @@
 					]
 				},
 				{
-					"id": 209,
+					"id": 212,
 					"name": "addPasses",
 					"kind": 2048,
 					"kindString": "Method",
@@ -9822,14 +9820,14 @@
 					],
 					"signatures": [
 						{
-							"id": 210,
+							"id": 213,
 							"name": "addPasses",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 211,
+									"id": 214,
 									"name": "params",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -9853,7 +9851,7 @@
 					]
 				},
 				{
-					"id": 220,
+					"id": 223,
 					"name": "cache",
 					"kind": 2048,
 					"kindString": "Method",
@@ -9869,14 +9867,14 @@
 					],
 					"signatures": [
 						{
-							"id": 221,
+							"id": 224,
 							"name": "cache",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 222,
+									"id": 225,
 									"name": "index",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -9887,7 +9885,7 @@
 									}
 								},
 								{
-									"id": 223,
+									"id": 226,
 									"name": "option",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -9897,14 +9895,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 224,
+											"id": 227,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 225,
+													"id": 228,
 													"name": "scale",
 													"kind": 1024,
 													"kindString": "Property",
@@ -9927,7 +9925,7 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														225
+														228
 													]
 												}
 											]
@@ -9943,7 +9941,7 @@
 					]
 				},
 				{
-					"id": 226,
+					"id": 229,
 					"name": "createTargetCache",
 					"kind": 2048,
 					"kindString": "Method",
@@ -9959,14 +9957,14 @@
 					],
 					"signatures": [
 						{
-							"id": 227,
+							"id": 230,
 							"name": "createTargetCache",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 228,
+									"id": 231,
 									"name": "index",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -9977,7 +9975,7 @@
 									}
 								},
 								{
-									"id": 229,
+									"id": 232,
 									"name": "scale",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -9989,7 +9987,7 @@
 									"defaultValue": "1"
 								},
 								{
-									"id": 230,
+									"id": 233,
 									"name": "width",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -10002,7 +10000,7 @@
 									}
 								},
 								{
-									"id": 231,
+									"id": 234,
 									"name": "height",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -10023,7 +10021,7 @@
 					]
 				},
 				{
-					"id": 232,
+					"id": 235,
 					"name": "getTargetCache",
 					"kind": 2048,
 					"kindString": "Method",
@@ -10039,14 +10037,14 @@
 					],
 					"signatures": [
 						{
-							"id": 233,
+							"id": 236,
 							"name": "getTargetCache",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 234,
+									"id": 237,
 									"name": "index",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -10057,7 +10055,7 @@
 									}
 								},
 								{
-									"id": 235,
+									"id": 238,
 									"name": "scale",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -10077,7 +10075,7 @@
 					]
 				},
 				{
-					"id": 242,
+					"id": 245,
 					"name": "instanceOfBinder",
 					"kind": 2048,
 					"kindString": "Method",
@@ -10093,14 +10091,14 @@
 					],
 					"signatures": [
 						{
-							"id": 243,
+							"id": 246,
 							"name": "instanceOfBinder",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 244,
+									"id": 247,
 									"name": "object",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -10124,7 +10122,7 @@
 					]
 				},
 				{
-					"id": 245,
+					"id": 248,
 					"name": "instanceOfCache",
 					"kind": 2048,
 					"kindString": "Method",
@@ -10140,14 +10138,14 @@
 					],
 					"signatures": [
 						{
-							"id": 246,
+							"id": 249,
 							"name": "instanceOfCache",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 247,
+									"id": 250,
 									"name": "object",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -10171,7 +10169,7 @@
 					]
 				},
 				{
-					"id": 236,
+					"id": 239,
 					"name": "refreshTargets",
 					"kind": 2048,
 					"kindString": "Method",
@@ -10187,7 +10185,7 @@
 					],
 					"signatures": [
 						{
-							"id": 237,
+							"id": 240,
 							"name": "refreshTargets",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -10200,7 +10198,7 @@
 					]
 				},
 				{
-					"id": 215,
+					"id": 218,
 					"name": "render",
 					"kind": 2048,
 					"kindString": "Method",
@@ -10216,14 +10214,14 @@
 					],
 					"signatures": [
 						{
-							"id": 216,
+							"id": 219,
 							"name": "render",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 217,
+									"id": 220,
 									"name": "inputTarget",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -10234,7 +10232,7 @@
 									}
 								},
 								{
-									"id": 218,
+									"id": 221,
 									"name": "outputTarget",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -10245,7 +10243,7 @@
 									}
 								},
 								{
-									"id": 219,
+									"id": 222,
 									"name": "rect",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -10272,7 +10270,7 @@
 					}
 				},
 				{
-					"id": 212,
+					"id": 215,
 					"name": "value",
 					"kind": 2048,
 					"kindString": "Method",
@@ -10288,14 +10286,14 @@
 					],
 					"signatures": [
 						{
-							"id": 213,
+							"id": 216,
 							"name": "value",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 214,
+									"id": 217,
 									"name": "para",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -10314,7 +10312,7 @@
 					]
 				},
 				{
-					"id": 192,
+					"id": 195,
 					"name": "parseValueToShader",
 					"kind": 2048,
 					"kindString": "Method",
@@ -10330,14 +10328,14 @@
 					],
 					"signatures": [
 						{
-							"id": 193,
+							"id": 196,
 							"name": "parseValueToShader",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 194,
+									"id": 197,
 									"name": "value",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -10361,39 +10359,39 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						195
+						198
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						201,
-						205,
-						248,
-						251,
-						207,
-						206,
-						250,
+						204,
 						208,
-						249
+						251,
+						254,
+						210,
+						209,
+						253,
+						211,
+						252
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						238,
-						209,
-						220,
-						226,
-						232,
-						242,
-						245,
-						236,
-						215,
+						241,
 						212,
-						192
+						223,
+						229,
+						235,
+						245,
+						248,
+						239,
+						218,
+						215,
+						195
 					]
 				}
 			],
@@ -10472,14 +10470,14 @@
 							},
 							"overwrites": {
 								"type": "reference",
-								"id": 196,
+								"id": 199,
 								"name": "Filter.constructor"
 							}
 						}
 					],
 					"overwrites": {
 						"type": "reference",
-						"id": 195,
+						"id": 198,
 						"name": "Filter.constructor"
 					}
 				},
@@ -10534,7 +10532,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 201,
+						"id": 204,
 						"name": "Filter.args"
 					}
 				},
@@ -10569,7 +10567,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 205,
+						"id": 208,
 						"name": "Filter.binbMap"
 					}
 				},
@@ -10597,7 +10595,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 248,
+						"id": 251,
 						"name": "Filter.device"
 					}
 				},
@@ -10625,7 +10623,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 251,
+						"id": 254,
 						"name": "Filter.needsDepthBuffer"
 					}
 				},
@@ -10654,7 +10652,7 @@
 					"defaultValue": "[]",
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 206,
+						"id": 209,
 						"name": "Filter.rtCache"
 					}
 				},
@@ -10745,7 +10743,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 250,
+						"id": 253,
 						"name": "Filter.shader"
 					}
 				},
@@ -10773,7 +10771,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 249,
+						"id": 252,
 						"name": "Filter.vertexBuffer"
 					}
 				},
@@ -10823,14 +10821,14 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 210,
+								"id": 213,
 								"name": "Filter.addPasses"
 							}
 						}
 					],
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 209,
+						"id": 212,
 						"name": "Filter.addPasses"
 					}
 				},
@@ -10923,14 +10921,14 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 221,
+								"id": 224,
 								"name": "Filter.cache"
 							}
 						}
 					],
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 220,
+						"id": 223,
 						"name": "Filter.cache"
 					}
 				},
@@ -11152,14 +11150,14 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 227,
+								"id": 230,
 								"name": "Filter.createTargetCache"
 							}
 						}
 					],
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 226,
+						"id": 229,
 						"name": "Filter.createTargetCache"
 					}
 				},
@@ -11258,14 +11256,14 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 216,
+								"id": 219,
 								"name": "Filter.render"
 							}
 						}
 					],
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 215,
+						"id": 218,
 						"name": "Filter.render"
 					}
 				},
@@ -11310,14 +11308,14 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 213,
+								"id": 216,
 								"name": "Filter.value"
 							}
 						}
 					],
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 212,
+						"id": 215,
 						"name": "Filter.value"
 					}
 				},
@@ -11362,14 +11360,14 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 193,
+								"id": 196,
 								"name": "Filter.parseValueToShader"
 							}
 						}
 					],
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 192,
+						"id": 195,
 						"name": "Filter.parseValueToShader"
 					}
 				}
@@ -11424,7 +11422,7 @@
 			"extendedTypes": [
 				{
 					"type": "reference",
-					"id": 191,
+					"id": 194,
 					"name": "Filter"
 				}
 			]
@@ -11478,14 +11476,14 @@
 							},
 							"overwrites": {
 								"type": "reference",
-								"id": 196,
+								"id": 199,
 								"name": "Filter.constructor"
 							}
 						}
 					],
 					"overwrites": {
 						"type": "reference",
-						"id": 195,
+						"id": 198,
 						"name": "Filter.constructor"
 					}
 				},
@@ -11540,7 +11538,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 201,
+						"id": 204,
 						"name": "Filter.args"
 					}
 				},
@@ -11575,7 +11573,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 205,
+						"id": 208,
 						"name": "Filter.binbMap"
 					}
 				},
@@ -11603,7 +11601,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 248,
+						"id": 251,
 						"name": "Filter.device"
 					}
 				},
@@ -11631,7 +11629,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 251,
+						"id": 254,
 						"name": "Filter.needsDepthBuffer"
 					}
 				},
@@ -11660,7 +11658,7 @@
 					"defaultValue": "[]",
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 206,
+						"id": 209,
 						"name": "Filter.rtCache"
 					}
 				},
@@ -11688,7 +11686,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 250,
+						"id": 253,
 						"name": "Filter.shader"
 					}
 				},
@@ -11716,7 +11714,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 249,
+						"id": 252,
 						"name": "Filter.vertexBuffer"
 					}
 				},
@@ -11766,14 +11764,14 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 210,
+								"id": 213,
 								"name": "Filter.addPasses"
 							}
 						}
 					],
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 209,
+						"id": 212,
 						"name": "Filter.addPasses"
 					}
 				},
@@ -11866,14 +11864,14 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 221,
+								"id": 224,
 								"name": "Filter.cache"
 							}
 						}
 					],
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 220,
+						"id": 223,
 						"name": "Filter.cache"
 					}
 				},
@@ -11956,14 +11954,14 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 227,
+								"id": 230,
 								"name": "Filter.createTargetCache"
 							}
 						}
 					],
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 226,
+						"id": 229,
 						"name": "Filter.createTargetCache"
 					}
 				},
@@ -12030,14 +12028,14 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 216,
+								"id": 219,
 								"name": "Filter.render"
 							}
 						}
 					],
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 215,
+						"id": 218,
 						"name": "Filter.render"
 					}
 				},
@@ -12082,14 +12080,14 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 213,
+								"id": 216,
 								"name": "Filter.value"
 							}
 						}
 					],
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 212,
+						"id": 215,
 						"name": "Filter.value"
 					}
 				},
@@ -12134,14 +12132,14 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 193,
+								"id": 196,
 								"name": "Filter.parseValueToShader"
 							}
 						}
 					],
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 192,
+						"id": 195,
 						"name": "Filter.parseValueToShader"
 					}
 				}
@@ -12190,20 +12188,20 @@
 			"extendedTypes": [
 				{
 					"type": "reference",
-					"id": 191,
+					"id": 194,
 					"name": "Filter"
 				}
 			]
 		},
 		{
-			"id": 252,
+			"id": 255,
 			"name": "MeshesRaycaster",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 256,
+					"id": 259,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -12217,21 +12215,21 @@
 					],
 					"signatures": [
 						{
-							"id": 257,
+							"id": 260,
 							"name": "new MeshesRaycaster",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 252,
+								"id": 255,
 								"name": "MeshesRaycaster"
 							}
 						}
 					]
 				},
 				{
-					"id": 259,
+					"id": 262,
 					"name": "app",
 					"kind": 1024,
 					"kindString": "Property",
@@ -12251,7 +12249,7 @@
 					}
 				},
 				{
-					"id": 263,
+					"id": 266,
 					"name": "defaultCamera",
 					"kind": 1024,
 					"kindString": "Property",
@@ -12271,7 +12269,7 @@
 					}
 				},
 				{
-					"id": 261,
+					"id": 264,
 					"name": "hasListener",
 					"kind": 1024,
 					"kindString": "Property",
@@ -12292,7 +12290,7 @@
 					"defaultValue": "false"
 				},
 				{
-					"id": 260,
+					"id": 263,
 					"name": "hasMove",
 					"kind": 1024,
 					"kindString": "Property",
@@ -12313,7 +12311,7 @@
 					"defaultValue": "false"
 				},
 				{
-					"id": 262,
+					"id": 265,
 					"name": "nodeToRaycast",
 					"kind": 1024,
 					"kindString": "Property",
@@ -12339,7 +12337,7 @@
 					}
 				},
 				{
-					"id": 258,
+					"id": 261,
 					"name": "ray",
 					"kind": 1024,
 					"kindString": "Property",
@@ -12359,7 +12357,7 @@
 					}
 				},
 				{
-					"id": 253,
+					"id": 256,
 					"name": "instance",
 					"kind": 1024,
 					"kindString": "Property",
@@ -12376,12 +12374,12 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 252,
+						"id": 255,
 						"name": "MeshesRaycaster"
 					}
 				},
 				{
-					"id": 288,
+					"id": 291,
 					"name": "addListener",
 					"kind": 2048,
 					"kindString": "Method",
@@ -12397,7 +12395,7 @@
 					],
 					"signatures": [
 						{
-							"id": 289,
+							"id": 292,
 							"name": "addListener",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -12410,7 +12408,7 @@
 					]
 				},
 				{
-					"id": 264,
+					"id": 267,
 					"name": "addNode",
 					"kind": 2048,
 					"kindString": "Method",
@@ -12426,14 +12424,14 @@
 					],
 					"signatures": [
 						{
-							"id": 265,
+							"id": 268,
 							"name": "addNode",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 266,
+									"id": 269,
 									"name": "node",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -12452,7 +12450,7 @@
 					]
 				},
 				{
-					"id": 292,
+					"id": 295,
 					"name": "getNodeOfDepth",
 					"kind": 2048,
 					"kindString": "Method",
@@ -12468,14 +12466,14 @@
 					],
 					"signatures": [
 						{
-							"id": 293,
+							"id": 296,
 							"name": "getNodeOfDepth",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 294,
+									"id": 297,
 									"name": "node",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -12486,7 +12484,7 @@
 									}
 								},
 								{
-									"id": 295,
+									"id": 298,
 									"name": "depth",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -12506,7 +12504,7 @@
 					]
 				},
 				{
-					"id": 270,
+					"id": 273,
 					"name": "onMouseDown",
 					"kind": 2048,
 					"kindString": "Method",
@@ -12522,50 +12520,8 @@
 					],
 					"signatures": [
 						{
-							"id": 271,
-							"name": "onMouseDown",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 272,
-									"name": "e",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 273,
-					"name": "onMouseMove",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/classes/utils/meshesRaycaster.ts",
-							"line": 77,
-							"character": 12
-						}
-					],
-					"signatures": [
-						{
 							"id": 274,
-							"name": "onMouseMove",
+							"name": "onMouseDown",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
@@ -12591,7 +12547,7 @@
 				},
 				{
 					"id": 276,
-					"name": "onMouseUp",
+					"name": "onMouseMove",
 					"kind": 2048,
 					"kindString": "Method",
 					"flags": {
@@ -12600,14 +12556,14 @@
 					"sources": [
 						{
 							"fileName": "src/classes/utils/meshesRaycaster.ts",
-							"line": 82,
+							"line": 77,
 							"character": 12
 						}
 					],
 					"signatures": [
 						{
 							"id": 277,
-							"name": "onMouseUp",
+							"name": "onMouseMove",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
@@ -12632,7 +12588,49 @@
 					]
 				},
 				{
-					"id": 285,
+					"id": 279,
+					"name": "onMouseUp",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 82,
+							"character": 12
+						}
+					],
+					"signatures": [
+						{
+							"id": 280,
+							"name": "onMouseUp",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 281,
+									"name": "e",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 288,
 					"name": "onTouchEnd",
 					"kind": 2048,
 					"kindString": "Method",
@@ -12648,8 +12646,50 @@
 					],
 					"signatures": [
 						{
-							"id": 286,
+							"id": 289,
 							"name": "onTouchEnd",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 290,
+									"name": "e",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 285,
+					"name": "onTouchMove",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/meshesRaycaster.ts",
+							"line": 125,
+							"character": 12
+						}
+					],
+					"signatures": [
+						{
+							"id": 286,
+							"name": "onTouchMove",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
@@ -12675,7 +12715,7 @@
 				},
 				{
 					"id": 282,
-					"name": "onTouchMove",
+					"name": "onTouchStart",
 					"kind": 2048,
 					"kindString": "Method",
 					"flags": {
@@ -12684,14 +12724,14 @@
 					"sources": [
 						{
 							"fileName": "src/classes/utils/meshesRaycaster.ts",
-							"line": 125,
+							"line": 104,
 							"character": 12
 						}
 					],
 					"signatures": [
 						{
 							"id": 283,
-							"name": "onTouchMove",
+							"name": "onTouchStart",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
@@ -12716,49 +12756,7 @@
 					]
 				},
 				{
-					"id": 279,
-					"name": "onTouchStart",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/classes/utils/meshesRaycaster.ts",
-							"line": 104,
-							"character": 12
-						}
-					],
-					"signatures": [
-						{
-							"id": 280,
-							"name": "onTouchStart",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 281,
-									"name": "e",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 290,
+					"id": 293,
 					"name": "removeListener",
 					"kind": 2048,
 					"kindString": "Method",
@@ -12774,7 +12772,7 @@
 					],
 					"signatures": [
 						{
-							"id": 291,
+							"id": 294,
 							"name": "removeListener",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -12787,7 +12785,7 @@
 					]
 				},
 				{
-					"id": 267,
+					"id": 270,
 					"name": "removeNode",
 					"kind": 2048,
 					"kindString": "Method",
@@ -12803,14 +12801,14 @@
 					],
 					"signatures": [
 						{
-							"id": 268,
+							"id": 271,
 							"name": "removeNode",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 269,
+									"id": 272,
 									"name": "node",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -12829,7 +12827,7 @@
 					]
 				},
 				{
-					"id": 254,
+					"id": 257,
 					"name": "getInstance",
 					"kind": 2048,
 					"kindString": "Method",
@@ -12846,14 +12844,14 @@
 					],
 					"signatures": [
 						{
-							"id": 255,
+							"id": 258,
 							"name": "getInstance",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 252,
+								"id": 255,
 								"name": "MeshesRaycaster"
 							}
 						}
@@ -12865,38 +12863,38 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						256
+						259
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						259,
-						263,
-						261,
-						260,
 						262,
-						258,
-						253
+						266,
+						264,
+						263,
+						265,
+						261,
+						256
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						288,
-						264,
-						292,
-						270,
+						291,
+						267,
+						295,
 						273,
 						276,
+						279,
+						288,
 						285,
 						282,
-						279,
-						290,
-						267,
-						254
+						293,
+						270,
+						257
 					]
 				}
 			],
@@ -12909,7 +12907,7 @@
 			]
 		},
 		{
-			"id": 715,
+			"id": 820,
 			"name": "PathCurve",
 			"kind": 128,
 			"kindString": "Class",
@@ -12926,7 +12924,7 @@
 			],
 			"children": [
 				{
-					"id": 716,
+					"id": 821,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -12940,14 +12938,14 @@
 					],
 					"signatures": [
 						{
-							"id": 717,
+							"id": 822,
 							"name": "new PathCurve",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 718,
+									"id": 823,
 									"name": "parent",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -12958,7 +12956,7 @@
 									}
 								},
 								{
-									"id": 719,
+									"id": 824,
 									"name": "curveMode",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -12973,14 +12971,14 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 715,
+								"id": 820,
 								"name": "PathCurve"
 							}
 						}
 					]
 				},
 				{
-					"id": 722,
+					"id": 827,
 					"name": "curveMode",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13000,7 +12998,7 @@
 					}
 				},
 				{
-					"id": 735,
+					"id": 840,
 					"name": "distanceBetween",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13020,7 +13018,7 @@
 					}
 				},
 				{
-					"id": 733,
+					"id": 838,
 					"name": "forward",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13040,7 +13038,7 @@
 					}
 				},
 				{
-					"id": 729,
+					"id": 834,
 					"name": "lx",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13060,7 +13058,7 @@
 					}
 				},
 				{
-					"id": 730,
+					"id": 835,
 					"name": "ly",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13080,7 +13078,7 @@
 					}
 				},
 				{
-					"id": 731,
+					"id": 836,
 					"name": "lz",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13100,7 +13098,7 @@
 					}
 				},
 				{
-					"id": 723,
+					"id": 828,
 					"name": "nodePercent",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13123,7 +13121,7 @@
 					}
 				},
 				{
-					"id": 721,
+					"id": 826,
 					"name": "nodes",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13146,7 +13144,7 @@
 					}
 				},
 				{
-					"id": 720,
+					"id": 825,
 					"name": "parent",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13166,7 +13164,7 @@
 					}
 				},
 				{
-					"id": 724,
+					"id": 829,
 					"name": "pathLength",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13186,7 +13184,7 @@
 					}
 				},
 				{
-					"id": 725,
+					"id": 830,
 					"name": "percentPreUnit",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13206,7 +13204,7 @@
 					}
 				},
 				{
-					"id": 732,
+					"id": 837,
 					"name": "position",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13226,7 +13224,7 @@
 					}
 				},
 				{
-					"id": 737,
+					"id": 842,
 					"name": "precision",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13246,7 +13244,7 @@
 					}
 				},
 				{
-					"id": 726,
+					"id": 831,
 					"name": "px",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13266,7 +13264,7 @@
 					}
 				},
 				{
-					"id": 727,
+					"id": 832,
 					"name": "py",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13286,7 +13284,7 @@
 					}
 				},
 				{
-					"id": 728,
+					"id": 833,
 					"name": "pz",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13306,7 +13304,7 @@
 					}
 				},
 				{
-					"id": 736,
+					"id": 841,
 					"name": "rotation",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13326,7 +13324,7 @@
 					}
 				},
 				{
-					"id": 738,
+					"id": 843,
 					"name": "step",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13346,7 +13344,7 @@
 					}
 				},
 				{
-					"id": 734,
+					"id": 839,
 					"name": "up",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13366,7 +13364,7 @@
 					}
 				},
 				{
-					"id": 747,
+					"id": 852,
 					"name": "cancelDraw",
 					"kind": 2048,
 					"kindString": "Method",
@@ -13382,7 +13380,7 @@
 					],
 					"signatures": [
 						{
-							"id": 748,
+							"id": 853,
 							"name": "cancelDraw",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -13395,7 +13393,7 @@
 					]
 				},
 				{
-					"id": 741,
+					"id": 846,
 					"name": "draw",
 					"kind": 2048,
 					"kindString": "Method",
@@ -13411,14 +13409,14 @@
 					],
 					"signatures": [
 						{
-							"id": 742,
+							"id": 847,
 							"name": "draw",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 743,
+									"id": 848,
 									"name": "data",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -13426,20 +13424,20 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 744,
+											"id": 849,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"indexSignature": {
-												"id": 745,
+												"id": 850,
 												"name": "__index",
 												"kind": 8192,
 												"kindString": "Index signature",
 												"flags": {},
 												"parameters": [
 													{
-														"id": 746,
+														"id": 851,
 														"name": "paraName",
 														"kind": 32768,
 														"flags": {},
@@ -13466,7 +13464,7 @@
 					]
 				},
 				{
-					"id": 757,
+					"id": 862,
 					"name": "getCurrentPath",
 					"kind": 2048,
 					"kindString": "Method",
@@ -13482,14 +13480,14 @@
 					],
 					"signatures": [
 						{
-							"id": 758,
+							"id": 863,
 							"name": "getCurrentPath",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 759,
+									"id": 864,
 									"name": "percent",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -13508,7 +13506,7 @@
 					]
 				},
 				{
-					"id": 749,
+					"id": 854,
 					"name": "getPosition",
 					"kind": 2048,
 					"kindString": "Method",
@@ -13524,14 +13522,14 @@
 					],
 					"signatures": [
 						{
-							"id": 750,
+							"id": 855,
 							"name": "getPosition",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 751,
+									"id": 856,
 									"name": "percent",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -13550,7 +13548,7 @@
 					]
 				},
 				{
-					"id": 752,
+					"id": 857,
 					"name": "getRotation",
 					"kind": 2048,
 					"kindString": "Method",
@@ -13566,14 +13564,14 @@
 					],
 					"signatures": [
 						{
-							"id": 753,
+							"id": 858,
 							"name": "getRotation",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 754,
+									"id": 859,
 									"name": "percent",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -13584,7 +13582,7 @@
 									}
 								},
 								{
-									"id": 755,
+									"id": 860,
 									"name": "nodeRotation",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -13597,7 +13595,7 @@
 									}
 								},
 								{
-									"id": 756,
+									"id": 861,
 									"name": "inverse",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -13618,7 +13616,7 @@
 					]
 				},
 				{
-					"id": 760,
+					"id": 865,
 					"name": "getTangent",
 					"kind": 2048,
 					"kindString": "Method",
@@ -13634,14 +13632,14 @@
 					],
 					"signatures": [
 						{
-							"id": 761,
+							"id": 866,
 							"name": "getTangent",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 762,
+									"id": 867,
 									"name": "percent",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -13660,7 +13658,7 @@
 					]
 				},
 				{
-					"id": 739,
+					"id": 844,
 					"name": "updateNodes",
 					"kind": 2048,
 					"kindString": "Method",
@@ -13676,7 +13674,7 @@
 					],
 					"signatures": [
 						{
-							"id": 740,
+							"id": 845,
 							"name": "updateNodes",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -13694,45 +13692,45 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						716
+						821
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						722,
-						735,
-						733,
-						729,
-						730,
-						731,
-						723,
-						721,
-						720,
-						724,
-						725,
-						732,
-						737,
-						726,
-						727,
-						728,
-						736,
-						738,
-						734
+						827,
+						840,
+						838,
+						834,
+						835,
+						836,
+						828,
+						826,
+						825,
+						829,
+						830,
+						837,
+						842,
+						831,
+						832,
+						833,
+						841,
+						843,
+						839
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						747,
-						741,
-						757,
-						749,
-						752,
-						760,
-						739
+						852,
+						846,
+						862,
+						854,
+						857,
+						865,
+						844
 					]
 				}
 			],
@@ -13761,14 +13759,14 @@
 			},
 			"children": [
 				{
-					"id": 125,
+					"id": 128,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 126,
+							"id": 129,
 							"name": "new ScriptTypeBase",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -13782,7 +13780,7 @@
 					]
 				},
 				{
-					"id": 173,
+					"id": 176,
 					"name": "app",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13793,7 +13791,7 @@
 					"sources": [
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
-							"line": 241,
+							"line": 255,
 							"character": 4
 						}
 					],
@@ -13803,7 +13801,7 @@
 					}
 				},
 				{
-					"id": 143,
+					"id": 146,
 					"name": "attributes",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13852,7 +13850,7 @@
 					"sources": [
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
-							"line": 142,
+							"line": 156,
 							"character": 13
 						}
 					],
@@ -13862,7 +13860,7 @@
 					}
 				},
 				{
-					"id": 127,
+					"id": 130,
 					"name": "attributesData",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13872,27 +13870,27 @@
 					"sources": [
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
-							"line": 87,
+							"line": 93,
 							"character": 4
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 128,
+							"id": 131,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"indexSignature": {
-								"id": 129,
+								"id": 132,
 								"name": "__index",
 								"kind": 8192,
 								"kindString": "Index signature",
 								"flags": {},
 								"parameters": [
 									{
-										"id": 130,
+										"id": 133,
 										"name": "key",
 										"kind": 32768,
 										"flags": {},
@@ -13912,7 +13910,7 @@
 					}
 				},
 				{
-					"id": 175,
+					"id": 178,
 					"name": "enabled",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13923,7 +13921,7 @@
 					"sources": [
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
-							"line": 253,
+							"line": 267,
 							"character": 4
 						}
 					],
@@ -13933,7 +13931,7 @@
 					}
 				},
 				{
-					"id": 174,
+					"id": 177,
 					"name": "entity",
 					"kind": 1024,
 					"kindString": "Property",
@@ -13944,7 +13942,7 @@
 					"sources": [
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
-							"line": 245,
+							"line": 259,
 							"character": 4
 						}
 					],
@@ -13954,7 +13952,60 @@
 					}
 				},
 				{
-					"id": 176,
+					"id": 125,
+					"name": "_instance",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true,
+						"isStatic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/create-script-decorator.ts",
+							"line": 85,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 124,
+						"name": "ScriptTypeBase"
+					}
+				},
+				{
+					"id": 126,
+					"name": "instance",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isPublic": true,
+						"isStatic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/classes/utils/create-script-decorator.ts",
+							"line": 87,
+							"character": 22
+						}
+					],
+					"getSignature": [
+						{
+							"id": 127,
+							"name": "instance",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"id": 124,
+								"name": "ScriptTypeBase"
+							}
+						}
+					]
+				},
+				{
+					"id": 179,
 					"name": "addFilters",
 					"kind": 2048,
 					"kindString": "Method",
@@ -13964,13 +14015,13 @@
 					"sources": [
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
-							"line": 259,
+							"line": 273,
 							"character": 4
 						}
 					],
 					"signatures": [
 						{
-							"id": 177,
+							"id": 180,
 							"name": "addFilters",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -13985,7 +14036,7 @@
 							},
 							"parameters": [
 								{
-									"id": 178,
+									"id": 181,
 									"name": "filter",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -13995,7 +14046,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"id": 191,
+										"id": 194,
 										"name": "Filter"
 									}
 								}
@@ -14008,7 +14059,7 @@
 					]
 				},
 				{
-					"id": 179,
+					"id": 182,
 					"name": "bindAttribute",
 					"kind": 2048,
 					"kindString": "Method",
@@ -14018,13 +14069,13 @@
 					"sources": [
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
-							"line": 295,
+							"line": 309,
 							"character": 4
 						}
 					],
 					"signatures": [
 						{
-							"id": 180,
+							"id": 183,
 							"name": "bindAttribute",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -14039,7 +14090,7 @@
 							},
 							"parameters": [
 								{
-									"id": 181,
+									"id": 184,
 									"name": "attrName",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14061,7 +14112,7 @@
 					]
 				},
 				{
-					"id": 154,
+					"id": 157,
 					"name": "fire",
 					"kind": 2048,
 					"kindString": "Method",
@@ -14071,13 +14122,13 @@
 					"sources": [
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
-							"line": 207,
+							"line": 221,
 							"character": 4
 						}
 					],
 					"signatures": [
 						{
-							"id": 155,
+							"id": 158,
 							"name": "fire",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -14105,7 +14156,7 @@
 							},
 							"parameters": [
 								{
-									"id": 156,
+									"id": 159,
 									"name": "name",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14119,7 +14170,7 @@
 									}
 								},
 								{
-									"id": 157,
+									"id": 160,
 									"name": "arg1",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14132,7 +14183,7 @@
 									}
 								},
 								{
-									"id": 158,
+									"id": 161,
 									"name": "arg2",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14145,7 +14196,7 @@
 									}
 								},
 								{
-									"id": 159,
+									"id": 162,
 									"name": "arg3",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14158,7 +14209,7 @@
 									}
 								},
 								{
-									"id": 160,
+									"id": 163,
 									"name": "arg4",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14171,7 +14222,7 @@
 									}
 								},
 								{
-									"id": 161,
+									"id": 164,
 									"name": "arg5",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14184,7 +14235,7 @@
 									}
 								},
 								{
-									"id": 162,
+									"id": 165,
 									"name": "arg6",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14197,7 +14248,7 @@
 									}
 								},
 								{
-									"id": 163,
+									"id": 166,
 									"name": "arg7",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14210,7 +14261,7 @@
 									}
 								},
 								{
-									"id": 164,
+									"id": 167,
 									"name": "arg8",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14231,7 +14282,7 @@
 					]
 				},
 				{
-					"id": 170,
+					"id": 173,
 					"name": "hasEvent",
 					"kind": 2048,
 					"kindString": "Method",
@@ -14241,13 +14292,13 @@
 					"sources": [
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
-							"line": 235,
+							"line": 249,
 							"character": 4
 						}
 					],
 					"signatures": [
 						{
-							"id": 171,
+							"id": 174,
 							"name": "hasEvent",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -14275,7 +14326,7 @@
 							},
 							"parameters": [
 								{
-									"id": 172,
+									"id": 175,
 									"name": "name",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14297,7 +14348,7 @@
 					]
 				},
 				{
-					"id": 131,
+					"id": 134,
 					"name": "initialize",
 					"kind": 2048,
 					"kindString": "Method",
@@ -14307,13 +14358,13 @@
 					"sources": [
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
-							"line": 97,
+							"line": 103,
 							"character": 4
 						}
 					],
 					"signatures": [
 						{
-							"id": 132,
+							"id": 135,
 							"name": "initialize",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -14342,7 +14393,7 @@
 					]
 				},
 				{
-					"id": 149,
+					"id": 152,
 					"name": "off",
 					"kind": 2048,
 					"kindString": "Method",
@@ -14352,13 +14403,13 @@
 					"sources": [
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
-							"line": 189,
+							"line": 203,
 							"character": 4
 						}
 					],
 					"signatures": [
 						{
-							"id": 150,
+							"id": 153,
 							"name": "off",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -14386,7 +14437,7 @@
 							},
 							"parameters": [
 								{
-									"id": 151,
+									"id": 154,
 									"name": "name",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14399,7 +14450,7 @@
 									}
 								},
 								{
-									"id": 152,
+									"id": 155,
 									"name": "callback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14412,7 +14463,7 @@
 									}
 								},
 								{
-									"id": 153,
+									"id": 156,
 									"name": "scope",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14433,7 +14484,7 @@
 					]
 				},
 				{
-					"id": 144,
+					"id": 147,
 					"name": "on",
 					"kind": 2048,
 					"kindString": "Method",
@@ -14443,13 +14494,13 @@
 					"sources": [
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
-							"line": 169,
+							"line": 183,
 							"character": 4
 						}
 					],
 					"signatures": [
 						{
-							"id": 145,
+							"id": 148,
 							"name": "on",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -14472,7 +14523,7 @@
 							},
 							"parameters": [
 								{
-									"id": 146,
+									"id": 149,
 									"name": "name",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14483,7 +14534,7 @@
 									}
 								},
 								{
-									"id": 147,
+									"id": 150,
 									"name": "callback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14494,7 +14545,7 @@
 									}
 								},
 								{
-									"id": 148,
+									"id": 151,
 									"name": "scope",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14515,7 +14566,7 @@
 					]
 				},
 				{
-					"id": 165,
+					"id": 168,
 					"name": "once",
 					"kind": 2048,
 					"kindString": "Method",
@@ -14525,13 +14576,13 @@
 					"sources": [
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
-							"line": 223,
+							"line": 237,
 							"character": 4
 						}
 					],
 					"signatures": [
 						{
-							"id": 166,
+							"id": 169,
 							"name": "once",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -14559,7 +14610,7 @@
 							},
 							"parameters": [
 								{
-									"id": 167,
+									"id": 170,
 									"name": "name",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14573,7 +14624,7 @@
 									}
 								},
 								{
-									"id": 168,
+									"id": 171,
 									"name": "callback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14587,7 +14638,7 @@
 									}
 								},
 								{
-									"id": 169,
+									"id": 172,
 									"name": "scope",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14608,7 +14659,7 @@
 					]
 				},
 				{
-					"id": 133,
+					"id": 136,
 					"name": "postInitialize",
 					"kind": 2048,
 					"kindString": "Method",
@@ -14618,13 +14669,13 @@
 					"sources": [
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
-							"line": 103,
+							"line": 117,
 							"character": 4
 						}
 					],
 					"signatures": [
 						{
-							"id": 134,
+							"id": 137,
 							"name": "postInitialize",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -14653,7 +14704,7 @@
 					]
 				},
 				{
-					"id": 138,
+					"id": 141,
 					"name": "postUpdate",
 					"kind": 2048,
 					"kindString": "Method",
@@ -14663,13 +14714,13 @@
 					"sources": [
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
-							"line": 117,
+							"line": 131,
 							"character": 4
 						}
 					],
 					"signatures": [
 						{
-							"id": 139,
+							"id": 142,
 							"name": "postUpdate",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -14692,7 +14743,7 @@
 							},
 							"parameters": [
 								{
-									"id": 140,
+									"id": 143,
 									"name": "dt",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14714,7 +14765,7 @@
 					]
 				},
 				{
-					"id": 141,
+					"id": 144,
 					"name": "swap",
 					"kind": 2048,
 					"kindString": "Method",
@@ -14724,13 +14775,13 @@
 					"sources": [
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
-							"line": 125,
+							"line": 139,
 							"character": 4
 						}
 					],
 					"signatures": [
 						{
-							"id": 142,
+							"id": 145,
 							"name": "swap",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -14759,7 +14810,7 @@
 					]
 				},
 				{
-					"id": 135,
+					"id": 138,
 					"name": "update",
 					"kind": 2048,
 					"kindString": "Method",
@@ -14769,13 +14820,13 @@
 					"sources": [
 						{
 							"fileName": "src/classes/utils/create-script-decorator.ts",
-							"line": 110,
+							"line": 124,
 							"character": 4
 						}
 					],
 					"signatures": [
 						{
-							"id": 136,
+							"id": 139,
 							"name": "update",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -14798,7 +14849,7 @@
 							},
 							"parameters": [
 								{
-									"id": 137,
+									"id": 140,
 									"name": "dt",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14825,36 +14876,44 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						125
+						128
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						173,
-						143,
-						127,
-						175,
-						174
+						176,
+						146,
+						130,
+						178,
+						177,
+						125
+					]
+				},
+				{
+					"title": "Accessors",
+					"kind": 262144,
+					"children": [
+						126
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						176,
 						179,
-						154,
-						170,
-						131,
-						149,
-						144,
-						165,
-						133,
-						138,
+						182,
+						157,
+						173,
+						134,
+						152,
+						147,
+						168,
+						136,
 						141,
-						135
+						144,
+						138
 					]
 				}
 			],
@@ -14863,6 +14922,2359 @@
 					"fileName": "src/classes/utils/create-script-decorator.ts",
 					"line": 83,
 					"character": 13
+				}
+			]
+		},
+		{
+			"id": 718,
+			"name": "Vec2_EX",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {},
+			"children": [
+				{
+					"id": 725,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 726,
+							"name": "new Vec2_EX",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 727,
+									"name": "x",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "number"
+											},
+											{
+												"type": "array",
+												"elementType": {
+													"type": "intrinsic",
+													"name": "number"
+												}
+											}
+										]
+									}
+								},
+								{
+									"id": 728,
+									"name": "y",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 718,
+								"name": "Vec2_EX"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.constructor"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.constructor"
+					}
+				},
+				{
+					"id": 729,
+					"name": "_shaderData",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"decorators": [
+						{
+							"name": "prpt",
+							"type": {
+								"type": "reference",
+								"name": "prpt"
+							},
+							"arguments": {
+								"data": "{ default: new Float32Array(2) }"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/extensions/extendClasses/vec2.ts",
+							"line": 18,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Float32Array"
+					}
+				},
+				{
+					"id": 732,
+					"name": "x",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "The first element of the vector.",
+						"tags": [
+							{
+								"tag": "example",
+								"text": "\nvar vec = new pc.Vec2(10, 20);\n\n// Get x\nvar x = vec.x;\n\n// Set x\nvec.x = 0;\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10682,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.x"
+					}
+				},
+				{
+					"id": 733,
+					"name": "y",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"shortText": "The second element of the vector.",
+						"tags": [
+							{
+								"tag": "example",
+								"text": "\nvar vec = new pc.Vec2(10, 20);\n\n// Get y\nvar y = vec.y;\n\n// Set y\nvec.y = 0;\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10694,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.y"
+					}
+				},
+				{
+					"id": 722,
+					"name": "DOWN",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isStatic": true,
+						"isExternal": true,
+						"isReadonly": true
+					},
+					"comment": {
+						"shortText": "A constant vector set to [0, -1]."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 11050,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Vec2"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.DOWN"
+					}
+				},
+				{
+					"id": 724,
+					"name": "LEFT",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isStatic": true,
+						"isExternal": true,
+						"isReadonly": true
+					},
+					"comment": {
+						"shortText": "A constant vector set to [-1, 0]."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 11058,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Vec2"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.LEFT"
+					}
+				},
+				{
+					"id": 720,
+					"name": "ONE",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isStatic": true,
+						"isExternal": true,
+						"isReadonly": true
+					},
+					"comment": {
+						"shortText": "A constant vector set to [1, 1]."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 11042,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Vec2"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.ONE"
+					}
+				},
+				{
+					"id": 723,
+					"name": "RIGHT",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isStatic": true,
+						"isExternal": true,
+						"isReadonly": true
+					},
+					"comment": {
+						"shortText": "A constant vector set to [1, 0]."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 11054,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Vec2"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.RIGHT"
+					}
+				},
+				{
+					"id": 721,
+					"name": "UP",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isStatic": true,
+						"isExternal": true,
+						"isReadonly": true
+					},
+					"comment": {
+						"shortText": "A constant vector set to [0, 1]."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 11046,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Vec2"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.UP"
+					}
+				},
+				{
+					"id": 719,
+					"name": "ZERO",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isStatic": true,
+						"isExternal": true,
+						"isReadonly": true
+					},
+					"comment": {
+						"shortText": "A constant vector set to [0, 0]."
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 11038,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Vec2"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.ZERO"
+					}
+				},
+				{
+					"id": 730,
+					"name": "shaderData",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/extensions/extendClasses/vec2.ts",
+							"line": 23,
+							"character": 8
+						}
+					],
+					"getSignature": [
+						{
+							"id": 731,
+							"name": "shaderData",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {},
+							"comment": {
+								"tags": [
+									{
+										"tag": "description:",
+										"text": "此二维向量对应的可传入shader的数据\n"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"name": "Float32Array"
+							},
+							"overwrites": {
+								"type": "reference",
+								"name": "pc.Vec2.shaderData"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"name": "pc.Vec2.shaderData"
+					}
+				},
+				{
+					"id": 734,
+					"name": "add",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10708,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 735,
+							"name": "add",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Adds a 2-dimensional vector to another in place.",
+								"returns": "Self for chaining.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar a = new pc.Vec2(10, 10);\nvar b = new pc.Vec2(20, 20);\n\na.add(b);\n\n// Outputs [30, 30]\nconsole.log(\"The result of the addition is: \" + a.toString());"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 736,
+									"name": "rhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The vector to add to the specified vector."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.add"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.add"
+					}
+				},
+				{
+					"id": 737,
+					"name": "add2",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10724,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 738,
+							"name": "add2",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Adds two 2-dimensional vectors together and returns the result.",
+								"returns": "Self for chaining.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar a = new pc.Vec2(10, 10);\nvar b = new pc.Vec2(20, 20);\nvar r = new pc.Vec2();\n\nr.add2(a, b);\n// Outputs [30, 30]\n\nconsole.log(\"The result of the addition is: \" + r.toString());"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 739,
+									"name": "lhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The first vector operand for the addition."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								},
+								{
+									"id": 740,
+									"name": "rhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The second vector operand for the addition."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.add2"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.add2"
+					}
+				},
+				{
+					"id": 741,
+					"name": "addScalar",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10737,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 742,
+							"name": "addScalar",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Adds a number to each element of a vector.",
+								"returns": "Self for chaining.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar vec = new pc.Vec2(3, 4);\n\nvec.addScalar(2);\n\n// Outputs [5, 6]\nconsole.log(\"The result of the addition is: \" + vec.toString());"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 743,
+									"name": "scalar",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The number to add."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.addScalar"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.addScalar"
+					}
+				},
+				{
+					"id": 794,
+					"name": "ceil",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10952,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 795,
+							"name": "ceil",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Each element is rounded up to the next largest integer.",
+								"returns": "Self for chaining.\n"
+							},
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.ceil"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.ceil"
+					}
+				},
+				{
+					"id": 744,
+					"name": "clone",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10746,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 745,
+							"name": "clone",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Returns an identical copy of the specified 2-dimensional vector.",
+								"returns": "A 2-dimensional vector containing the result of the cloning.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar v = new pc.Vec2(10, 20);\nvar vclone = v.clone();\nconsole.log(\"The result of the cloning is: \" + vclone.toString());"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.clone"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.clone"
+					}
+				},
+				{
+					"id": 746,
+					"name": "copy",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10759,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 747,
+							"name": "copy",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Copies the contents of a source 2-dimensional vector to a destination 2-dimensional vector.",
+								"returns": "Self for chaining.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar src = new pc.Vec2(10, 20);\nvar dst = new pc.Vec2();\n\ndst.copy(src);\n\nconsole.log(\"The two vectors are \" + (dst.equals(src) ? \"equal\" : \"different\"));"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 748,
+									"name": "rhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "A vector to copy to the specified vector."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.copy"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.copy"
+					}
+				},
+				{
+					"id": 749,
+					"name": "cross",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10772,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 750,
+							"name": "cross",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Returns the result of a cross product operation performed on the two specified 2-dimensional vectors.",
+								"returns": "The cross product of the two vectors.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar right = new pc.Vec2(1, 0);\nvar up = new pc.Vec2(0, 1);\nvar crossProduct = right.cross(up);\n\n// Prints 1\nconsole.log(\"The result of the cross product is: \" + crossProduct);"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 751,
+									"name": "rhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The second 2-dimensional vector operand of the cross product."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.cross"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.cross"
+					}
+				},
+				{
+					"id": 752,
+					"name": "distance",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10783,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 753,
+							"name": "distance",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Returns the distance between the two specified 2-dimensional vectors.",
+								"returns": "The distance between the two vectors.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar v1 = new pc.Vec2(5, 10);\nvar v2 = new pc.Vec2(10, 20);\nvar d = v1.distance(v2);\nconsole.log(\"The between v1 and v2 is: \" + d);"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 754,
+									"name": "rhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The second 2-dimensional vector to test."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.distance"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.distance"
+					}
+				},
+				{
+					"id": 755,
+					"name": "div",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10797,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 756,
+							"name": "div",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Divides a 2-dimensional vector by another in place.",
+								"returns": "Self for chaining.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar a = new pc.Vec2(4, 9);\nvar b = new pc.Vec2(2, 3);\n\na.div(b);\n\n// Outputs [2, 3]\nconsole.log(\"The result of the division is: \" + a.toString());"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 757,
+									"name": "rhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The vector to divide the specified vector by."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.div"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.div"
+					}
+				},
+				{
+					"id": 758,
+					"name": "div2",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10814,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 759,
+							"name": "div2",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Divides one 2-dimensional vector by another and writes the result to\nthe specified vector.",
+								"returns": "Self for chaining.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar a = new pc.Vec2(4, 9);\nvar b = new pc.Vec2(2, 3);\nvar r = new pc.Vec2();\n\nr.div2(a, b);\n// Outputs [2, 3]\n\nconsole.log(\"The result of the division is: \" + r.toString());"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 760,
+									"name": "lhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The dividend vector (the vector being divided)."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								},
+								{
+									"id": 761,
+									"name": "rhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The divisor vector (the vector dividing the dividend)."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.div2"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.div2"
+					}
+				},
+				{
+					"id": 762,
+					"name": "divScalar",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10827,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 763,
+							"name": "divScalar",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Divides each element of a vector by a number.",
+								"returns": "Self for chaining.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar vec = new pc.Vec2(3, 6);\n\nvec.divScalar(3);\n\n// Outputs [1, 2]\nconsole.log(\"The result of the division is: \" + vec.toString());"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 764,
+									"name": "scalar",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The number to divide by."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.divScalar"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.divScalar"
+					}
+				},
+				{
+					"id": 765,
+					"name": "dot",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10838,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 766,
+							"name": "dot",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Returns the result of a dot product operation performed on the two specified 2-dimensional vectors.",
+								"returns": "The result of the dot product operation.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar v1 = new pc.Vec2(5, 10);\nvar v2 = new pc.Vec2(10, 20);\nvar v1dotv2 = v1.dot(v2);\nconsole.log(\"The result of the dot product is: \" + v1dotv2);"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 767,
+									"name": "rhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The second 2-dimensional vector operand of the dot product."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.dot"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.dot"
+					}
+				},
+				{
+					"id": 768,
+					"name": "equals",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10848,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 769,
+							"name": "equals",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Reports whether two vectors are equal.",
+								"returns": "True if the vectors are equal and false otherwise.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar a = new pc.Vec2(1, 2);\nvar b = new pc.Vec2(4, 5);\nconsole.log(\"The two vectors are \" + (a.equals(b) ? \"equal\" : \"different\"));"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 770,
+									"name": "rhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The vector to compare to the specified vector."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.equals"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.equals"
+					}
+				},
+				{
+					"id": 792,
+					"name": "floor",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10947,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 793,
+							"name": "floor",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Each element is set to the largest integer less than or equal to its value.",
+								"returns": "Self for chaining.\n"
+							},
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.floor"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.floor"
+					}
+				},
+				{
+					"id": 771,
+					"name": "length",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10858,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 772,
+							"name": "length",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Returns the magnitude of the specified 2-dimensional vector.",
+								"returns": "The magnitude of the specified 2-dimensional vector.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar vec = new pc.Vec2(3, 4);\nvar len = vec.length();\n// Outputs 5\nconsole.log(\"The length of the vector is: \" + len);"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.length"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.length"
+					}
+				},
+				{
+					"id": 773,
+					"name": "lengthSq",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10868,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 774,
+							"name": "lengthSq",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Returns the magnitude squared of the specified 2-dimensional vector.",
+								"returns": "The magnitude of the specified 2-dimensional vector.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar vec = new pc.Vec2(3, 4);\nvar len = vec.lengthSq();\n// Outputs 25\nconsole.log(\"The length squared of the vector is: \" + len);"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.lengthSq"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.lengthSq"
+					}
+				},
+				{
+					"id": 775,
+					"name": "lerp",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10886,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 776,
+							"name": "lerp",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Returns the result of a linear interpolation between two specified 2-dimensional vectors.",
+								"returns": "Self for chaining.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar a = new pc.Vec2(0, 0);\nvar b = new pc.Vec2(10, 10);\nvar r = new pc.Vec2();\n\nr.lerp(a, b, 0);   // r is equal to a\nr.lerp(a, b, 0.5); // r is 5, 5\nr.lerp(a, b, 1);   // r is equal to b"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 777,
+									"name": "lhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The 2-dimensional to interpolate from."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								},
+								{
+									"id": 778,
+									"name": "rhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The 2-dimensional to interpolate to."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								},
+								{
+									"id": 779,
+									"name": "alpha",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The value controlling the point of interpolation. Between 0 and 1, the linear interpolant\nwill occur on a straight line between lhs and rhs. Outside of this range, the linear interpolant will occur on\na ray extrapolated from this line."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.lerp"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.lerp"
+					}
+				},
+				{
+					"id": 801,
+					"name": "max",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10969,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 802,
+							"name": "max",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Each element is assigned a value from rhs parameter if it is larger.",
+								"returns": "Self for chaining.\n"
+							},
+							"parameters": [
+								{
+									"id": 803,
+									"name": "rhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The 2-dimensional vector used as the source of elements to compare to."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.max"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.max"
+					}
+				},
+				{
+					"id": 798,
+					"name": "min",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10963,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 799,
+							"name": "min",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Each element is assigned a value from rhs parameter if it is smaller.",
+								"returns": "Self for chaining.\n"
+							},
+							"parameters": [
+								{
+									"id": 800,
+									"name": "rhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The 2-dimensional vector used as the source of elements to compare to."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.min"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.min"
+					}
+				},
+				{
+					"id": 780,
+					"name": "mul",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10900,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 781,
+							"name": "mul",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Multiplies a 2-dimensional vector to another in place.",
+								"returns": "Self for chaining.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar a = new pc.Vec2(2, 3);\nvar b = new pc.Vec2(4, 5);\n\na.mul(b);\n\n// Outputs 8, 15\nconsole.log(\"The result of the multiplication is: \" + a.toString());"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 782,
+									"name": "rhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The 2-dimensional vector used as the second multiplicand of the operation."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.mul"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.mul"
+					}
+				},
+				{
+					"id": 783,
+					"name": "mul2",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10916,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 784,
+							"name": "mul2",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Returns the result of multiplying the specified 2-dimensional vectors together.",
+								"returns": "Self for chaining.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar a = new pc.Vec2(2, 3);\nvar b = new pc.Vec2(4, 5);\nvar r = new pc.Vec2();\n\nr.mul2(a, b);\n\n// Outputs 8, 15\nconsole.log(\"The result of the multiplication is: \" + r.toString());"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 785,
+									"name": "lhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The 2-dimensional vector used as the first multiplicand of the operation."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								},
+								{
+									"id": 786,
+									"name": "rhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The 2-dimensional vector used as the second multiplicand of the operation."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.mul2"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.mul2"
+					}
+				},
+				{
+					"id": 787,
+					"name": "mulScalar",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10929,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 788,
+							"name": "mulScalar",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Multiplies each element of a vector by a number.",
+								"returns": "Self for chaining.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar vec = new pc.Vec2(3, 6);\n\nvec.mulScalar(3);\n\n// Outputs [9, 18]\nconsole.log(\"The result of the multiplication is: \" + vec.toString());"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 789,
+									"name": "scalar",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The number to multiply by."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.mulScalar"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.mulScalar"
+					}
+				},
+				{
+					"id": 790,
+					"name": "normalize",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10942,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 791,
+							"name": "normalize",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Returns this 2-dimensional vector converted to a unit vector in place.\nIf the vector has a length of zero, the vector's elements will be set to zero.",
+								"returns": "Self for chaining.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar v = new pc.Vec2(25, 0);\n\nv.normalize();\n\n// Outputs 1, 0\nconsole.log(\"The result of the vector normalization is: \" + v.toString());"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.normalize"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.normalize"
+					}
+				},
+				{
+					"id": 796,
+					"name": "round",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10957,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 797,
+							"name": "round",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Each element is rounded up or down to the nearest integer.",
+								"returns": "Self for chaining.\n"
+							},
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.round"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.round"
+					}
+				},
+				{
+					"id": 804,
+					"name": "set",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10982,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 805,
+							"name": "set",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Sets the specified 2-dimensional vector to the supplied numerical values.",
+								"returns": "Self for chaining.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar v = new pc.Vec2();\nv.set(5, 10);\n\n// Outputs 5, 10\nconsole.log(\"The result of the vector set is: \" + v.toString());"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 806,
+									"name": "x",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The value to set on the first component of the vector."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 807,
+									"name": "y",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The value to set on the second component of the vector."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.set"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.set"
+					}
+				},
+				{
+					"id": 808,
+					"name": "sub",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 10996,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 809,
+							"name": "sub",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Subtracts a 2-dimensional vector from another in place.",
+								"returns": "Self for chaining.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar a = new pc.Vec2(10, 10);\nvar b = new pc.Vec2(20, 20);\n\na.sub(b);\n\n// Outputs [-10, -10]\nconsole.log(\"The result of the subtraction is: \" + a.toString());"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 810,
+									"name": "rhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The vector to add to the specified vector."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.sub"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.sub"
+					}
+				},
+				{
+					"id": 811,
+					"name": "sub2",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 11012,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 812,
+							"name": "sub2",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Subtracts two 2-dimensional vectors from one another and returns the result.",
+								"returns": "Self for chaining.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar a = new pc.Vec2(10, 10);\nvar b = new pc.Vec2(20, 20);\nvar r = new pc.Vec2();\n\nr.sub2(a, b);\n\n// Outputs [-10, -10]\nconsole.log(\"The result of the subtraction is: \" + r.toString());"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 813,
+									"name": "lhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The first vector operand for the addition."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								},
+								{
+									"id": 814,
+									"name": "rhs",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The second vector operand for the addition."
+									},
+									"type": {
+										"type": "reference",
+										"name": "Vec2"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.sub2"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.sub2"
+					}
+				},
+				{
+					"id": 815,
+					"name": "subScalar",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 11025,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 816,
+							"name": "subScalar",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Subtracts a number from each element of a vector.",
+								"returns": "Self for chaining.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar vec = new pc.Vec2(3, 4);\n\nvec.subScalar(2);\n\n// Outputs [1, 2]\nconsole.log(\"The result of the subtraction is: \" + vec.toString());"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 817,
+									"name": "scalar",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExternal": true
+									},
+									"comment": {
+										"shortText": "The number to subtract."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Vec2"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.subScalar"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.subScalar"
+					}
+				},
+				{
+					"id": 818,
+					"name": "toString",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/playcanvas/build/playcanvas.d.ts",
+							"line": 11034,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 819,
+							"name": "toString",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"shortText": "Converts the vector to string form.",
+								"returns": "The vector in string form.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\nvar v = new pc.Vec2(20, 10);\n// Outputs [20, 10]\nconsole.log(v.toString());"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "pc.Vec2.toString"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "pc.Vec2.toString"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						725
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						729,
+						732,
+						733,
+						722,
+						724,
+						720,
+						723,
+						721,
+						719
+					]
+				},
+				{
+					"title": "Accessors",
+					"kind": 262144,
+					"children": [
+						730
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						734,
+						737,
+						741,
+						794,
+						744,
+						746,
+						749,
+						752,
+						755,
+						758,
+						762,
+						765,
+						768,
+						792,
+						771,
+						773,
+						775,
+						801,
+						798,
+						780,
+						783,
+						787,
+						790,
+						796,
+						804,
+						808,
+						811,
+						815,
+						818
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/extensions/extendClasses/vec2.ts",
+					"line": 15,
+					"character": 13
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"name": "Vec2"
 				}
 			]
 		},
@@ -15418,17 +17830,18 @@
 			"title": "Classes",
 			"kind": 128,
 			"children": [
-				296,
-				397,
-				445,
-				763,
-				472,
-				191,
+				299,
+				400,
+				448,
+				868,
+				475,
+				194,
 				1,
 				57,
-				252,
-				715,
-				124
+				255,
+				820,
+				124,
+				718
 			]
 		},
 		{

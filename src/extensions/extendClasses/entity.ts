@@ -1,6 +1,6 @@
 import * as pc from "playcanvas";
 
-import { extendClass, instancePrpt } from "../../classes/utils/extend-decorator";
+import { extendClass, prpt } from "../../classes/utils/extend-decorator";
 import { MeshesRaycaster } from "../../classes/utils/meshesRaycaster";
 
 let _parentMat = new pc.Mat4();
@@ -45,19 +45,19 @@ declare module 'playcanvas' {
 export class Entity_EX extends pc.Entity
 {
     // 开关射线检测
-    @instancePrpt({ extendClassName: "Entity", defaultValue: false })
+    @prpt({ default: false })
     private _useInput: boolean = false;
     // 用于射线检测的meshInstance
-    @instancePrpt({ extendClassName: "Entity", defaultValue: [] })
+    @prpt({ default: [] })
     private _meshesToRaycast: Array<pc.MeshInstance> = [];
     // 忽略射线检测的meshInstance
-    @instancePrpt({ extendClassName: "Entity", defaultValue: [] })
+    @prpt({ default: [] })
     private _ignoreMeshes: Array<string> = [];
     // 返回节点的深度
-    @instancePrpt({ extendClassName: "Entity" })
+    @prpt()
     private _resultNodeDepth: number;
     // 模型改变标志
-    @instancePrpt({ extendClassName: "Entity", defaultValue: false })
+    @prpt({ default: false })
     private _changeFlag: boolean = false;
 
     // 开关射线检测

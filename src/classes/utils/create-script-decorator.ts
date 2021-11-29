@@ -82,6 +82,12 @@ export type AttributeParams = {
  */
 export class ScriptTypeBase
 {
+    private static _instance: ScriptTypeBase;
+
+    public static get instance(): ScriptTypeBase
+    {
+        return this._instance;
+    }
 
     // custom holder to contain attributesData used for initialization of attributes
     attributesData?: { [key: string]: AttributeParams }
@@ -94,7 +100,15 @@ export class ScriptTypeBase
      * @name pc.ScriptType#[initialize]
      * @description Called when script is about to run for the first time.
      */
-    initialize?(): void;
+    initialize?()
+    {
+        if (!ScriptTypeBase._instance) {
+            ScriptTypeBase._instance = this;
+        }
+        else {
+            console.error("要使用单例模式应该确保只有一条脚本实例！！！");
+        }
+    };
     /**
      * @function
      * @name pc.ScriptType#[postInitialize]

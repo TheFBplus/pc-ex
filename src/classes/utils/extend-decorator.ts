@@ -28,6 +28,13 @@ export function extendClass(extendClassName: string = null)
     // 扩展已有类
     return function (target: any)
     {
+        // 添加实例属性成员
+        if (target.instancePrpts) {
+            for (let prpt in target.instancePrpts) {
+                (pc as any)[extendClassName].prototype[prpt] = target.instancePrpts[prpt];
+            }
+        }
+
         // 添加实例函数成员
         const functions = cls(target);
         functions.forEach(fnName =>
@@ -56,11 +63,12 @@ export function extendClass(extendClassName: string = null)
 }
 
 // 扩展实例属性
-export function instancePrpt(data: { extendClassName: string, defaultValue?: any })
+export function prpt(data: { default: any } = null)
 {
     return function (target: any, propertyKey: string)
     {
-        (pc as any)[data.extendClassName].prototype[propertyKey] = data.defaultValue;
+        target.constructor.instancePrpts = target.constructor.instancePrpts || {};
+        target.constructor.instancePrpts[propertyKey] = data ? data.default : null;
     }
 }
 

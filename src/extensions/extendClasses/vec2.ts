@@ -1,5 +1,7 @@
 import * as pc from "playcanvas";
 
+import { prpt } from "../../classes/utils/extend-decorator";
+
 declare module 'playcanvas' {
     export interface Vec2
     {
@@ -10,17 +12,19 @@ declare module 'playcanvas' {
     }
 }
 
-Object.defineProperty(pc.Vec2.prototype, "shaderData", {
-    get: function ()
+export class Vec2_EX extends pc.Vec2
+{
+    @prpt({ default: new Float32Array(2) })
+    private _shaderData: Float32Array;
+
+    /**
+    * @description: 此二维向量对应的可传入shader的数据
+    */
+    get shaderData()
     {
-        if (!this._shaderData)
-        {
-            this._shaderData = new Float32Array(2);
-        }
         this._shaderData[0] = this.x;
         this._shaderData[1] = this.y;
 
         return this._shaderData;
-    },
-    configurable: true
-});
+    }
+}

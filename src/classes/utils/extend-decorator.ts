@@ -45,9 +45,11 @@ export function extendClass(extendClassName: string = null)
             }
 
             const descriptor = Object.getOwnPropertyDescriptor(target.prototype, fnName);
+            // 添加方法成员
             if (descriptor.value) {
                 (pc as any)[extendClassName].prototype[fnName] = descriptor.value;
             }
+            // 添加访问器
             else {
                 if (descriptor.get || descriptor.set) {
                     Object.defineProperty((pc as any)[extendClassName].prototype, fnName, { get: descriptor.get, set: descriptor.set });

@@ -67,6 +67,11 @@
 
 • **new Vec2_EX**(`x?`, `y?`)
 
+Create a new Vec2 instance.
+
+**`example`**
+var v = new pc.Vec2(1, 2);
+
 #### Parameters
 
 | Name | Type |
@@ -80,7 +85,7 @@ pc.Vec2.constructor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10670
+node_modules/playcanvas/build/playcanvas.d.ts:10793
 
 ## Properties
 
@@ -88,16 +93,7 @@ node_modules/playcanvas/build/playcanvas.d.ts:10670
 
 • **x**: `number`
 
-The first element of the vector.
-
-**`example`**
-var vec = new pc.Vec2(10, 20);
-
-// Get x
-var x = vec.x;
-
-// Set x
-vec.x = 0;
+The first component of the vector.
 
 #### Inherited from
 
@@ -105,7 +101,7 @@ pc.Vec2.x
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10682
+node_modules/playcanvas/build/playcanvas.d.ts:10799
 
 ___
 
@@ -113,16 +109,7 @@ ___
 
 • **y**: `number`
 
-The second element of the vector.
-
-**`example`**
-var vec = new pc.Vec2(10, 20);
-
-// Get y
-var y = vec.y;
-
-// Set y
-vec.y = 0;
+The second component of the vector.
 
 #### Inherited from
 
@@ -130,7 +117,7 @@ pc.Vec2.y
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10694
+node_modules/playcanvas/build/playcanvas.d.ts:10805
 
 ___
 
@@ -140,13 +127,15 @@ ___
 
 A constant vector set to [0, -1].
 
+**`readonly`**
+
 #### Inherited from
 
 pc.Vec2.DOWN
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11050
+node_modules/playcanvas/build/playcanvas.d.ts:10769
 
 ___
 
@@ -156,13 +145,15 @@ ___
 
 A constant vector set to [-1, 0].
 
+**`readonly`**
+
 #### Inherited from
 
 pc.Vec2.LEFT
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11058
+node_modules/playcanvas/build/playcanvas.d.ts:10783
 
 ___
 
@@ -172,13 +163,15 @@ ___
 
 A constant vector set to [1, 1].
 
+**`readonly`**
+
 #### Inherited from
 
 pc.Vec2.ONE
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11042
+node_modules/playcanvas/build/playcanvas.d.ts:10755
 
 ___
 
@@ -188,13 +181,15 @@ ___
 
 A constant vector set to [1, 0].
 
+**`readonly`**
+
 #### Inherited from
 
 pc.Vec2.RIGHT
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11054
+node_modules/playcanvas/build/playcanvas.d.ts:10776
 
 ___
 
@@ -204,13 +199,15 @@ ___
 
 A constant vector set to [0, 1].
 
+**`readonly`**
+
 #### Inherited from
 
 pc.Vec2.UP
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11046
+node_modules/playcanvas/build/playcanvas.d.ts:10762
 
 ___
 
@@ -220,13 +217,15 @@ ___
 
 A constant vector set to [0, 0].
 
+**`readonly`**
+
 #### Inherited from
 
 pc.Vec2.ZERO
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11038
+node_modules/playcanvas/build/playcanvas.d.ts:10748
 
 ## Accessors
 
@@ -283,7 +282,7 @@ pc.Vec2.add
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10708
+node_modules/playcanvas/build/playcanvas.d.ts:10820
 
 ___
 
@@ -322,7 +321,7 @@ pc.Vec2.add2
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10724
+node_modules/playcanvas/build/playcanvas.d.ts:10837
 
 ___
 
@@ -358,7 +357,7 @@ pc.Vec2.addScalar
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10737
+node_modules/playcanvas/build/playcanvas.d.ts:10851
 
 ___
 
@@ -380,7 +379,7 @@ pc.Vec2.ceil
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10952
+node_modules/playcanvas/build/playcanvas.d.ts:11085
 
 ___
 
@@ -407,7 +406,7 @@ pc.Vec2.clone
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10746
+node_modules/playcanvas/build/playcanvas.d.ts:10861
 
 ___
 
@@ -443,7 +442,7 @@ pc.Vec2.copy
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10759
+node_modules/playcanvas/build/playcanvas.d.ts:10875
 
 ___
 
@@ -451,7 +450,8 @@ ___
 
 ▸ **cross**(`rhs`): `number`
 
-Returns the result of a cross product operation performed on the two specified 2-dimensional vectors.
+Returns the result of a cross product operation performed on the two specified 2-dimensional
+vectors.
 
 **`example`**
 var right = new pc.Vec2(1, 0);
@@ -479,7 +479,7 @@ pc.Vec2.cross
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10772
+node_modules/playcanvas/build/playcanvas.d.ts:10890
 
 ___
 
@@ -493,7 +493,7 @@ Returns the distance between the two specified 2-dimensional vectors.
 var v1 = new pc.Vec2(5, 10);
 var v2 = new pc.Vec2(10, 20);
 var d = v1.distance(v2);
-console.log("The between v1 and v2 is: " + d);
+console.log("The distance between v1 and v2 is: " + d);
 
 #### Parameters
 
@@ -513,7 +513,7 @@ pc.Vec2.distance
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10783
+node_modules/playcanvas/build/playcanvas.d.ts:10902
 
 ___
 
@@ -550,7 +550,7 @@ pc.Vec2.div
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10797
+node_modules/playcanvas/build/playcanvas.d.ts:10917
 
 ___
 
@@ -558,8 +558,7 @@ ___
 
 ▸ **div2**(`lhs`, `rhs`): `Vec2`
 
-Divides one 2-dimensional vector by another and writes the result to
-the specified vector.
+Divides one 2-dimensional vector by another and writes the result to the specified vector.
 
 **`example`**
 var a = new pc.Vec2(4, 9);
@@ -590,7 +589,7 @@ pc.Vec2.div2
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10814
+node_modules/playcanvas/build/playcanvas.d.ts:10934
 
 ___
 
@@ -626,7 +625,7 @@ pc.Vec2.divScalar
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10827
+node_modules/playcanvas/build/playcanvas.d.ts:10948
 
 ___
 
@@ -634,7 +633,8 @@ ___
 
 ▸ **dot**(`rhs`): `number`
 
-Returns the result of a dot product operation performed on the two specified 2-dimensional vectors.
+Returns the result of a dot product operation performed on the two specified 2-dimensional
+vectors.
 
 **`example`**
 var v1 = new pc.Vec2(5, 10);
@@ -660,7 +660,7 @@ pc.Vec2.dot
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10838
+node_modules/playcanvas/build/playcanvas.d.ts:10961
 
 ___
 
@@ -693,7 +693,7 @@ pc.Vec2.equals
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10848
+node_modules/playcanvas/build/playcanvas.d.ts:10972
 
 ___
 
@@ -715,7 +715,7 @@ pc.Vec2.floor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10947
+node_modules/playcanvas/build/playcanvas.d.ts:11079
 
 ___
 
@@ -743,7 +743,7 @@ pc.Vec2.length
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10858
+node_modules/playcanvas/build/playcanvas.d.ts:10983
 
 ___
 
@@ -771,7 +771,7 @@ pc.Vec2.lengthSq
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10868
+node_modules/playcanvas/build/playcanvas.d.ts:10994
 
 ___
 
@@ -810,7 +810,7 @@ pc.Vec2.lerp
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10886
+node_modules/playcanvas/build/playcanvas.d.ts:11013
 
 ___
 
@@ -838,7 +838,7 @@ pc.Vec2.max
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10969
+node_modules/playcanvas/build/playcanvas.d.ts:11105
 
 ___
 
@@ -866,7 +866,7 @@ pc.Vec2.min
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10963
+node_modules/playcanvas/build/playcanvas.d.ts:11098
 
 ___
 
@@ -903,7 +903,7 @@ pc.Vec2.mul
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10900
+node_modules/playcanvas/build/playcanvas.d.ts:11028
 
 ___
 
@@ -942,7 +942,7 @@ pc.Vec2.mul2
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10916
+node_modules/playcanvas/build/playcanvas.d.ts:11045
 
 ___
 
@@ -978,7 +978,7 @@ pc.Vec2.mulScalar
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10929
+node_modules/playcanvas/build/playcanvas.d.ts:11059
 
 ___
 
@@ -986,8 +986,8 @@ ___
 
 ▸ **normalize**(): `Vec2`
 
-Returns this 2-dimensional vector converted to a unit vector in place.
-If the vector has a length of zero, the vector's elements will be set to zero.
+Returns this 2-dimensional vector converted to a unit vector in place. If the vector has a
+length of zero, the vector's elements will be set to zero.
 
 **`example`**
 var v = new pc.Vec2(25, 0);
@@ -1009,7 +1009,7 @@ pc.Vec2.normalize
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10942
+node_modules/playcanvas/build/playcanvas.d.ts:11073
 
 ___
 
@@ -1031,7 +1031,7 @@ pc.Vec2.round
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10957
+node_modules/playcanvas/build/playcanvas.d.ts:11091
 
 ___
 
@@ -1067,7 +1067,7 @@ pc.Vec2.set
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10982
+node_modules/playcanvas/build/playcanvas.d.ts:11119
 
 ___
 
@@ -1104,7 +1104,7 @@ pc.Vec2.sub
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10996
+node_modules/playcanvas/build/playcanvas.d.ts:11134
 
 ___
 
@@ -1143,7 +1143,7 @@ pc.Vec2.sub2
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11012
+node_modules/playcanvas/build/playcanvas.d.ts:11151
 
 ___
 
@@ -1179,7 +1179,7 @@ pc.Vec2.subScalar
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11025
+node_modules/playcanvas/build/playcanvas.d.ts:11165
 
 ___
 
@@ -1206,4 +1206,4 @@ pc.Vec2.toString
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11034
+node_modules/playcanvas/build/playcanvas.d.ts:11175

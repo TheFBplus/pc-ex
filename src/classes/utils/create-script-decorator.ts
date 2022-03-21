@@ -82,13 +82,6 @@ export type AttributeParams = {
  */
 export class ScriptTypeBase
 {
-    private static _instance: ScriptTypeBase;
-
-    public static get instance(): ScriptTypeBase
-    {
-        return this._instance;
-    }
-
     // custom holder to contain attributesData used for initialization of attributes
     attributesData?: { [key: string]: AttributeParams }
 
@@ -100,16 +93,7 @@ export class ScriptTypeBase
      * @name pc.ScriptType#[initialize]
      * @description Called when script is about to run for the first time.
      */
-    initialize?()
-    {
-        if (!ScriptTypeBase._instance) {
-            ScriptTypeBase._instance = this;
-            console.log("设置实例！");
-        }
-        else {
-            console.error("要使用单例模式应该确保只有一条脚本实例！！！");
-        }
-    };
+    initialize?(): void;
     /**
      * @function
      * @name pc.ScriptType#[postInitialize]
@@ -143,7 +127,7 @@ export class ScriptTypeBase
      * @name pc.EventHandler#on
      * @description Attach an event handler to an event.
      * @param {string} name - Name of the event to bind the callback to.
-     * @param {pc.callbacks.HandleEvent} callback - Function that is called when event is fired. Note the callback is limited to 8 arguments.
+     * @param {pc.HandleEventCallback} callback - Function that is called when event is fired. Note the callback is limited to 8 arguments.
      * @param {object} [scope] - Object to use as 'this' when the event is fired, defaults to current this.
      * @returns {pc.EventHandler} Self for chaining.
      * @example
@@ -181,14 +165,14 @@ export class ScriptTypeBase
      * @name pc.ScriptType#[initialize]
      * @description Called when script is about to run for the first time.
      */
-    on?(name: string, callback: pc.callbacks.HandleEvent, scope?: any): pc.EventHandler;
+    on?(name: string, callback: pc.HandleEventCallback, scope?: any): pc.EventHandler;
     /**
      * @function
      * @name pc.EventHandler#off
      * @description Detach an event handler from an event. If callback is not provided then all callbacks are unbound from the event,
      * if scope is not provided then all events with the callback will be unbound.
      * @param {string} [name] - Name of the event to unbind.
-     * @param {pc.callbacks.HandleEvent} [callback] - Function to be unbound.
+     * @param {pc.HandleEventCallback} [callback] - Function to be unbound.
      * @param {object} [scope] - Scope that was used as the this when the event is fired.
      * @returns {pc.EventHandler} Self for chaining.
      * @example
@@ -201,7 +185,7 @@ export class ScriptTypeBase
      * obj.off('test', handler); // Removes all handler functions, called 'test'
      * obj.off('test', handler, this); // Removes all hander functions, called 'test' with scope this
      */
-    off?(name?: string, callback?: pc.callbacks.HandleEvent, scope?: any): pc.EventHandler;
+    off?(name?: string, callback?: pc.HandleEventCallback, scope?: any): pc.EventHandler;
     /**
      * @function
      * @name pc.EventHandler#fire
@@ -225,7 +209,7 @@ export class ScriptTypeBase
      * @name pc.EventHandler#once
      * @description Attach an event handler to an event. This handler will be removed after being fired once.
      * @param {string} name - Name of the event to bind the callback to.
-     * @param {pc.callbacks.HandleEvent} callback - Function that is called when event is fired. Note the callback is limited to 8 arguments.
+     * @param {pc.HandleEventCallback} callback - Function that is called when event is fired. Note the callback is limited to 8 arguments.
      * @param {object} [scope] - Object to use as 'this' when the event is fired, defaults to current this.
      * @returns {pc.EventHandler} Self for chaining.
      * @example
@@ -235,7 +219,7 @@ export class ScriptTypeBase
      * obj.fire('test', 1, 2); // prints 3 to the console
      * obj.fire('test', 1, 2); // not going to get handled
      */
-    once?(name: string, callback: pc.callbacks.HandleEvent, scope?: any): pc.EventHandler;
+    once?(name: string, callback: pc.HandleEventCallback, scope?: any): pc.EventHandler;
     /**
      * @function
      * @name pc.EventHandler#hasEvent
@@ -280,7 +264,7 @@ export class ScriptTypeBase
         }
 
         const queue = camera.postEffects;
-        queue.addEffect(filter);
+        queue.addEffect(filter as any);
 
         this.on("attr", (name, value) =>
         {
@@ -292,14 +276,14 @@ export class ScriptTypeBase
         this.on("state", (enabled) =>
         {
             if (enabled) {
-                queue.addEffect(filter);
+                queue.addEffect(filter as any);
             } else {
-                queue.removeEffect(filter);
+                queue.removeEffect(filter as any);
             }
         });
         this.on("destroy", () =>
         {
-            queue.removeEffect(filter);
+            queue.removeEffect(filter as any);
         });
     }
 

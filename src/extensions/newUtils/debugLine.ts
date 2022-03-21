@@ -11,7 +11,7 @@ declare module 'playcanvas' {
 }
 
 let app = pc.Application.getApplication();
-let lines = new Array<pc.callbacks.HandleEvent>();
+let lines = new Array<pc.HandleEventCallback>();
 
 @newUtil
 export class DebugLine

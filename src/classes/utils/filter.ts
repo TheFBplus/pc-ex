@@ -74,7 +74,7 @@ export class Filter extends pc.PostEffect
 
     protected addPasses(...params: Array<IfilterPass>): void
     {
-        const chunks = pc.shaderChunks;
+        const chunks = pc.shaderChunks as any;
         params.forEach((pass) =>
         {
             this.passes.push(pass);

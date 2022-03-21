@@ -50,6 +50,8 @@
 
 • **new Color_EX**(`r?`, `g?`, `b?`, `a?`)
 
+Create a new Color object.
+
 #### Parameters
 
 | Name | Type |
@@ -65,7 +67,7 @@ pc.Color.constructor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9438
+node_modules/playcanvas/build/playcanvas.d.ts:10620
 
 ## Properties
 
@@ -81,7 +83,7 @@ pc.Color.a
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9564
+node_modules/playcanvas/build/playcanvas.d.ts:10644
 
 ___
 
@@ -97,7 +99,7 @@ pc.Color.b
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9560
+node_modules/playcanvas/build/playcanvas.d.ts:10638
 
 ___
 
@@ -113,7 +115,7 @@ pc.Color.g
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9556
+node_modules/playcanvas/build/playcanvas.d.ts:10632
 
 ___
 
@@ -129,7 +131,7 @@ pc.Color.r
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9552
+node_modules/playcanvas/build/playcanvas.d.ts:10626
 
 ___
 
@@ -139,13 +141,15 @@ ___
 
 A constant color set to black [0, 0, 0, 1].
 
+**`readonly`**
+
 #### Inherited from
 
 pc.Color.BLACK
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9516
+node_modules/playcanvas/build/playcanvas.d.ts:10554
 
 ___
 
@@ -155,13 +159,15 @@ ___
 
 A constant color set to blue [0, 0, 1, 1].
 
+**`readonly`**
+
 #### Inherited from
 
 pc.Color.BLUE
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9520
+node_modules/playcanvas/build/playcanvas.d.ts:10561
 
 ___
 
@@ -171,13 +177,15 @@ ___
 
 A constant color set to cyan [0, 1, 1, 1].
 
+**`readonly`**
+
 #### Inherited from
 
 pc.Color.CYAN
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9524
+node_modules/playcanvas/build/playcanvas.d.ts:10568
 
 ___
 
@@ -187,13 +195,15 @@ ___
 
 A constant color set to gray [0.5, 0.5, 0.5, 1].
 
+**`readonly`**
+
 #### Inherited from
 
 pc.Color.GRAY
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9528
+node_modules/playcanvas/build/playcanvas.d.ts:10575
 
 ___
 
@@ -203,13 +213,15 @@ ___
 
 A constant color set to green [0, 1, 0, 1].
 
+**`readonly`**
+
 #### Inherited from
 
 pc.Color.GREEN
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9532
+node_modules/playcanvas/build/playcanvas.d.ts:10582
 
 ___
 
@@ -219,13 +231,15 @@ ___
 
 A constant color set to magenta [1, 0, 1, 1].
 
+**`readonly`**
+
 #### Inherited from
 
 pc.Color.MAGENTA
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9536
+node_modules/playcanvas/build/playcanvas.d.ts:10589
 
 ___
 
@@ -235,13 +249,15 @@ ___
 
 A constant color set to red [1, 0, 0, 1].
 
+**`readonly`**
+
 #### Inherited from
 
 pc.Color.RED
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9540
+node_modules/playcanvas/build/playcanvas.d.ts:10596
 
 ___
 
@@ -251,13 +267,15 @@ ___
 
 A constant color set to white [1, 1, 1, 1].
 
+**`readonly`**
+
 #### Inherited from
 
 pc.Color.WHITE
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9544
+node_modules/playcanvas/build/playcanvas.d.ts:10603
 
 ___
 
@@ -267,13 +285,15 @@ ___
 
 A constant color set to yellow [1, 1, 0, 1].
 
+**`readonly`**
+
 #### Inherited from
 
 pc.Color.YELLOW
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9548
+node_modules/playcanvas/build/playcanvas.d.ts:10610
 
 ## Accessors
 
@@ -313,7 +333,7 @@ pc.Color.clone
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9443
+node_modules/playcanvas/build/playcanvas.d.ts:10650
 
 ___
 
@@ -349,7 +369,7 @@ pc.Color.copy
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9456
+node_modules/playcanvas/build/playcanvas.d.ts:10664
 
 ___
 
@@ -382,7 +402,7 @@ pc.Color.equals
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9466
+node_modules/playcanvas/build/playcanvas.d.ts:10675
 
 ___
 
@@ -410,7 +430,7 @@ pc.Color.fromString
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9500
+node_modules/playcanvas/build/playcanvas.d.ts:10713
 
 ___
 
@@ -449,7 +469,7 @@ pc.Color.lerp
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9493
+node_modules/playcanvas/build/playcanvas.d.ts:10704
 
 ___
 
@@ -480,7 +500,7 @@ pc.Color.set
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9475
+node_modules/playcanvas/build/playcanvas.d.ts:10685
 
 ___
 
@@ -488,9 +508,9 @@ ___
 
 ▸ **toString**(`alpha`): `string`
 
-Converts the color to string form. The format is '#RRGGBBAA', where
-RR, GG, BB, AA are the red, green, blue and alpha values. When the alpha value is not
-included (the default), this is the same format as used in HTML/CSS.
+Converts the color to string form. The format is '#RRGGBBAA', where RR, GG, BB, AA are the
+red, green, blue and alpha values. When the alpha value is not included (the default), this
+is the same format as used in HTML/CSS.
 
 **`example`**
 var c = new pc.Color(1, 1, 1);
@@ -515,4 +535,4 @@ pc.Color.toString
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9512
+node_modules/playcanvas/build/playcanvas.d.ts:10726

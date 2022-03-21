@@ -18,6 +18,7 @@
 
 - [args](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md#args)
 - [binbMap](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md#binbmap)
+- [depthMap](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md#depthmap)
 - [device](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md#device)
 - [needsDepthBuffer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md#needsdepthbuffer)
 - [rtCache](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md#rtcache)
@@ -87,11 +88,25 @@ src/classes/utils/filter.ts:33
 
 ___
 
+### depthMap
+
+• **depthMap**: `any`
+
+#### Inherited from
+
+[Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md).[depthMap](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md#depthmap)
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:7165
+
+___
+
 ### device
 
 • **device**: `GraphicsDevice`
 
-The graphics device of the application. [read only].
+The graphics device of the application.
 
 #### Inherited from
 
@@ -99,7 +114,7 @@ The graphics device of the application. [read only].
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7325
+node_modules/playcanvas/build/playcanvas.d.ts:7144
 
 ___
 
@@ -107,7 +122,8 @@ ___
 
 • **needsDepthBuffer**: `boolean`
 
-The property that should to be set to `true` (by the custom post effect) if a depth map is necessary (default is false).
+The property that should to be set to `true` (by the custom post effect) if a depth map
+is necessary (default is false).
 
 #### Inherited from
 
@@ -115,7 +131,7 @@ The property that should to be set to `true` (by the custom post effect) if a de
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7337
+node_modules/playcanvas/build/playcanvas.d.ts:7164
 
 ___
 
@@ -137,7 +153,8 @@ ___
 
 • **shader**: `Shader`
 
-The shader definition for the fullscreen quad. Needs to be set by the custom post effect (default is null). Used when calling {@link drawFullscreenQuad}.
+The shader definition for the fullscreen quad. Needs to be set by the custom post effect
+(default is null). Used when calling {@link drawFullscreenQuad}.
 
 #### Inherited from
 
@@ -145,7 +162,7 @@ The shader definition for the fullscreen quad. Needs to be set by the custom pos
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7333
+node_modules/playcanvas/build/playcanvas.d.ts:7151
 
 ___
 
@@ -153,7 +170,7 @@ ___
 
 • **vertexBuffer**: `VertexBuffer`
 
-The vertex buffer for the fullscreen quad. Used when calling {@link drawFullscreenQuad}. [read only].
+The vertex buffer for the fullscreen quad. Used when calling {@link drawFullscreenQuad}.
 
 #### Inherited from
 
@@ -161,7 +178,7 @@ The vertex buffer for the fullscreen quad. Used when calling {@link drawFullscre
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7329
+node_modules/playcanvas/build/playcanvas.d.ts:7157
 
 ## Methods
 

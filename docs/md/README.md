@@ -27,6 +27,9 @@ pc-ex
 
 - [attr](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attr)
 - [createScript](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#createscript)
+- [extendClass](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#extendclass)
+- [newUtil](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#newutil)
+- [prpt](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#prpt)
 
 ## Type aliases
 
@@ -121,3 +124,89 @@ property GUI creation.
 #### Defined in
 
 src/classes/utils/create-script-decorator.ts:13
+
+___
+
+### extendClass
+
+▸ **extendClass**(`extendClassName?`): (`target`: `any`) => `void`
+
+#### Parameters
+
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `extendClassName` | `string` | `null` |
+
+#### Returns
+
+`fn`
+
+▸ (`target`): `void`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `target` | `any` |
+
+##### Returns
+
+`void`
+
+#### Defined in
+
+src/classes/utils/extend-decorator.ts:15
+
+___
+
+### newUtil
+
+▸ **newUtil**(`target`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `target` | `any` |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+src/classes/utils/extend-decorator.ts:78
+
+___
+
+### prpt
+
+▸ **prpt**(`data?`): (`target`: `any`, `propertyKey`: `string`) => `void`
+
+#### Parameters
+
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `data` | `Object` | `null` |
+| `data.default` | `any` | `undefined` |
+
+#### Returns
+
+`fn`
+
+▸ (`target`, `propertyKey`): `void`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `target` | `any` |
+| `propertyKey` | `string` |
+
+##### Returns
+
+`void`
+
+#### Defined in
+
+src/classes/utils/extend-decorator.ts:68

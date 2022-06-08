@@ -24,8 +24,6 @@ Caveat is: tsconfig.json needs to be set to: "strictNullChecks": false
 
 ### Methods
 
-- [addFilters](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#addfilters)
-- [bindAttribute](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#bindattribute)
 - [fire](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#fire)
 - [hasEvent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#hasevent)
 - [initialize](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md#initialize)
@@ -54,7 +52,7 @@ belongs to.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:240
+src/lib/create-script-decorator.ts:238
 
 ___
 
@@ -84,7 +82,7 @@ obj.fire('test', 1, 2); // prints 3 to the console
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:141
+src/lib/create-script-decorator.ts:139
 
 ___
 
@@ -98,7 +96,7 @@ ___
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:86
+src/lib/create-script-decorator.ts:84
 
 ___
 
@@ -114,7 +112,7 @@ when the script instance is in `enabled` state during app tick.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:252
+src/lib/create-script-decorator.ts:250
 
 ___
 
@@ -126,53 +124,9 @@ The {@link pc.Entity} that the instance of this type belongs to.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:244
+src/lib/create-script-decorator.ts:242
 
 ## Methods
-
-### addFilters
-
-▸ `Optional` **addFilters**(`filter`): `void`
-
-**`description:`** 给这个脚本挂载的相机添加滤镜
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `filter` | [`Filter`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md) | 滤镜 |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-src/classes/utils/create-script-decorator.ts:258
-
-___
-
-### bindAttribute
-
-▸ `Optional` **bindAttribute**(`attrName`): `IattributesBinder`
-
-**`description:`** 绑定此脚本属性到滤镜并根据属性实时更新
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `attrName` | `string` | 要绑定的属性名 |
-
-#### Returns
-
-`IattributesBinder`
-
-#### Defined in
-
-src/classes/utils/create-script-decorator.ts:294
-
-___
 
 ### fire
 
@@ -209,7 +163,7 @@ Self for chaining.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:206
+src/lib/create-script-decorator.ts:204
 
 ___
 
@@ -242,7 +196,7 @@ True if the object has handlers bound to the specified event name.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:234
+src/lib/create-script-decorator.ts:232
 
 ___
 
@@ -262,7 +216,7 @@ ___
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:96
+src/lib/create-script-decorator.ts:94
 
 ___
 
@@ -303,7 +257,7 @@ Self for chaining.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:188
+src/lib/create-script-decorator.ts:186
 
 ___
 
@@ -331,7 +285,7 @@ ___
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:168
+src/lib/create-script-decorator.ts:166
 
 ___
 
@@ -368,7 +322,7 @@ Self for chaining.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:222
+src/lib/create-script-decorator.ts:220
 
 ___
 
@@ -388,7 +342,7 @@ ___
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:102
+src/lib/create-script-decorator.ts:100
 
 ___
 
@@ -414,7 +368,7 @@ ___
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:116
+src/lib/create-script-decorator.ts:114
 
 ___
 
@@ -436,7 +390,7 @@ then it will be executed to perform hot-reload at runtime.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:124
+src/lib/create-script-decorator.ts:122
 
 ___
 
@@ -462,4 +416,4 @@ ___
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:109
+src/lib/create-script-decorator.ts:107

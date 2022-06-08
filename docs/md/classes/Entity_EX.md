@@ -41,20 +41,15 @@
 
 ### Accessors
 
-- [changeFlag](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Entity_EX.md#changeflag)
 - [children](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Entity_EX.md#children)
 - [enabled](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Entity_EX.md#enabled)
 - [forward](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Entity_EX.md#forward)
 - [graphDepth](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Entity_EX.md#graphdepth)
-- [ignoreMeshes](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Entity_EX.md#ignoremeshes)
-- [meshesToRaycast](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Entity_EX.md#meshestoraycast)
 - [parent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Entity_EX.md#parent)
 - [path](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Entity_EX.md#path)
-- [resultNodeDepth](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Entity_EX.md#resultnodedepth)
 - [right](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Entity_EX.md#right)
 - [root](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Entity_EX.md#root)
 - [up](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Entity_EX.md#up)
-- [useInput](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Entity_EX.md#useinput)
 
 ### Methods
 
@@ -154,7 +149,7 @@ pc.Entity.constructor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21086
+node_modules/playcanvas/build/playcanvas.d.ts:21163
 
 ## Properties
 
@@ -172,7 +167,7 @@ pc.Entity.anim
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21093
+node_modules/playcanvas/build/playcanvas.d.ts:21170
 
 ___
 
@@ -190,7 +185,7 @@ pc.Entity.animation
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21100
+node_modules/playcanvas/build/playcanvas.d.ts:21177
 
 ___
 
@@ -208,7 +203,7 @@ pc.Entity.audiolistener
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21107
+node_modules/playcanvas/build/playcanvas.d.ts:21184
 
 ___
 
@@ -226,7 +221,7 @@ pc.Entity.button
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21114
+node_modules/playcanvas/build/playcanvas.d.ts:21191
 
 ___
 
@@ -244,7 +239,7 @@ pc.Entity.camera
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21121
+node_modules/playcanvas/build/playcanvas.d.ts:21198
 
 ___
 
@@ -262,7 +257,7 @@ pc.Entity.collision
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21128
+node_modules/playcanvas/build/playcanvas.d.ts:21205
 
 ___
 
@@ -280,7 +275,7 @@ pc.Entity.element
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21135
+node_modules/playcanvas/build/playcanvas.d.ts:21212
 
 ___
 
@@ -298,7 +293,7 @@ pc.Entity.layoutchild
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21142
+node_modules/playcanvas/build/playcanvas.d.ts:21219
 
 ___
 
@@ -316,7 +311,7 @@ pc.Entity.layoutgroup
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21149
+node_modules/playcanvas/build/playcanvas.d.ts:21226
 
 ___
 
@@ -334,7 +329,7 @@ pc.Entity.light
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21156
+node_modules/playcanvas/build/playcanvas.d.ts:21233
 
 ___
 
@@ -352,7 +347,7 @@ pc.Entity.model
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21163
+node_modules/playcanvas/build/playcanvas.d.ts:21240
 
 ___
 
@@ -368,7 +363,7 @@ pc.Entity.name
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7244
+node_modules/playcanvas/build/playcanvas.d.ts:7274
 
 ___
 
@@ -386,7 +381,7 @@ pc.Entity.particlesystem
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21170
+node_modules/playcanvas/build/playcanvas.d.ts:21247
 
 ___
 
@@ -404,7 +399,7 @@ pc.Entity.render
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21177
+node_modules/playcanvas/build/playcanvas.d.ts:21254
 
 ___
 
@@ -422,7 +417,7 @@ pc.Entity.rigidbody
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21184
+node_modules/playcanvas/build/playcanvas.d.ts:21261
 
 ___
 
@@ -440,7 +435,7 @@ pc.Entity.screen
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21191
+node_modules/playcanvas/build/playcanvas.d.ts:21268
 
 ___
 
@@ -458,7 +453,7 @@ pc.Entity.script
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21198
+node_modules/playcanvas/build/playcanvas.d.ts:21275
 
 ___
 
@@ -476,7 +471,7 @@ pc.Entity.scrollbar
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21205
+node_modules/playcanvas/build/playcanvas.d.ts:21282
 
 ___
 
@@ -494,7 +489,7 @@ pc.Entity.scrollview
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21212
+node_modules/playcanvas/build/playcanvas.d.ts:21289
 
 ___
 
@@ -512,7 +507,7 @@ pc.Entity.sound
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21219
+node_modules/playcanvas/build/playcanvas.d.ts:21296
 
 ___
 
@@ -530,7 +525,7 @@ pc.Entity.sprite
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21226
+node_modules/playcanvas/build/playcanvas.d.ts:21303
 
 ___
 
@@ -547,47 +542,9 @@ pc.Entity.tags
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7251
+node_modules/playcanvas/build/playcanvas.d.ts:7281
 
 ## Accessors
-
-### changeFlag
-
-• `get` **changeFlag**(): `boolean`
-
-#### Returns
-
-`boolean`
-
-#### Overrides
-
-pc.Entity.changeFlag
-
-#### Defined in
-
-src/extensions/extendClasses/entity.ts:122
-
-• `set` **changeFlag**(`flag`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `flag` | `boolean` |
-
-#### Returns
-
-`void`
-
-#### Overrides
-
-pc.Entity.changeFlag
-
-#### Defined in
-
-src/extensions/extendClasses/entity.ts:118
-
-___
 
 ### children
 
@@ -605,7 +562,7 @@ pc.Entity.children
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7439
+node_modules/playcanvas/build/playcanvas.d.ts:7469
 
 ___
 
@@ -627,7 +584,7 @@ pc.Entity.enabled
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7415
+node_modules/playcanvas/build/playcanvas.d.ts:7445
 
 • `set` **enabled**(`arg`): `void`
 
@@ -651,7 +608,7 @@ pc.Entity.enabled
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7414
+node_modules/playcanvas/build/playcanvas.d.ts:7444
 
 ___
 
@@ -671,7 +628,7 @@ pc.Entity.forward
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7406
+node_modules/playcanvas/build/playcanvas.d.ts:7436
 
 ___
 
@@ -693,63 +650,7 @@ pc.Entity.graphDepth
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7447
-
-___
-
-### ignoreMeshes
-
-• `get` **ignoreMeshes**(): `string`[]
-
-#### Returns
-
-`string`[]
-
-#### Overrides
-
-pc.Entity.ignoreMeshes
-
-#### Defined in
-
-src/extensions/extendClasses/entity.ts:103
-
-• `set` **ignoreMeshes**(`ignoreNames`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `ignoreNames` | `string`[] |
-
-#### Returns
-
-`void`
-
-#### Overrides
-
-pc.Entity.ignoreMeshes
-
-#### Defined in
-
-src/extensions/extendClasses/entity.ts:91
-
-___
-
-### meshesToRaycast
-
-• `get` **meshesToRaycast**(): `MeshInstance`[]
-
-#### Returns
-
-`MeshInstance`[]
-
-#### Overrides
-
-pc.Entity.meshesToRaycast
-
-#### Defined in
-
-src/extensions/extendClasses/entity.ts:79
+node_modules/playcanvas/build/playcanvas.d.ts:7477
 
 ___
 
@@ -769,7 +670,7 @@ pc.Entity.parent
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7421
+node_modules/playcanvas/build/playcanvas.d.ts:7451
 
 ___
 
@@ -789,45 +690,7 @@ pc.Entity.path
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7427
-
-___
-
-### resultNodeDepth
-
-• `get` **resultNodeDepth**(): `number`
-
-#### Returns
-
-`number`
-
-#### Overrides
-
-pc.Entity.resultNodeDepth
-
-#### Defined in
-
-src/extensions/extendClasses/entity.ts:112
-
-• `set` **resultNodeDepth**(`depth`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `depth` | `number` |
-
-#### Returns
-
-`void`
-
-#### Overrides
-
-pc.Entity.resultNodeDepth
-
-#### Defined in
-
-src/extensions/extendClasses/entity.ts:108
+node_modules/playcanvas/build/playcanvas.d.ts:7457
 
 ___
 
@@ -847,7 +710,7 @@ pc.Entity.right
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7394
+node_modules/playcanvas/build/playcanvas.d.ts:7424
 
 ___
 
@@ -867,7 +730,7 @@ pc.Entity.root
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7433
+node_modules/playcanvas/build/playcanvas.d.ts:7463
 
 ___
 
@@ -887,45 +750,7 @@ pc.Entity.up
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7400
-
-___
-
-### useInput
-
-• `get` **useInput**(): `boolean`
-
-#### Returns
-
-`boolean`
-
-#### Overrides
-
-pc.Entity.useInput
-
-#### Defined in
-
-src/extensions/extendClasses/entity.ts:64
-
-• `set` **useInput**(`use`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `use` | `boolean` |
-
-#### Returns
-
-`void`
-
-#### Overrides
-
-pc.Entity.useInput
-
-#### Defined in
-
-src/extensions/extendClasses/entity.ts:68
+node_modules/playcanvas/build/playcanvas.d.ts:7430
 
 ## Methods
 
@@ -943,7 +768,7 @@ pc.Entity.\_sync
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7934
+node_modules/playcanvas/build/playcanvas.d.ts:7964
 
 ___
 
@@ -973,7 +798,7 @@ pc.Entity.addChild
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7874
+node_modules/playcanvas/build/playcanvas.d.ts:7904
 
 ___
 
@@ -1016,7 +841,7 @@ pc.Entity.addComponent
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21304
+node_modules/playcanvas/build/playcanvas.d.ts:21381
 
 ___
 
@@ -1038,7 +863,7 @@ pc.Entity.clone
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7471
+node_modules/playcanvas/build/playcanvas.d.ts:7501
 
 ___
 
@@ -1063,7 +888,7 @@ pc.Entity.destroy
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21370
+node_modules/playcanvas/build/playcanvas.d.ts:21447
 
 ___
 
@@ -1103,7 +928,7 @@ pc.Entity.find
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7503
+node_modules/playcanvas/build/playcanvas.d.ts:7533
 
 ___
 
@@ -1131,7 +956,7 @@ pc.Entity.findByGuid
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21361
+node_modules/playcanvas/build/playcanvas.d.ts:21438
 
 ___
 
@@ -1160,7 +985,7 @@ pc.Entity.findByName
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7558
+node_modules/playcanvas/build/playcanvas.d.ts:7588
 
 ___
 
@@ -1198,7 +1023,7 @@ pc.Entity.findByPath
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7574
+node_modules/playcanvas/build/playcanvas.d.ts:7604
 
 ___
 
@@ -1245,7 +1070,7 @@ pc.Entity.findByTag
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7550
+node_modules/playcanvas/build/playcanvas.d.ts:7580
 
 ___
 
@@ -1278,7 +1103,7 @@ pc.Entity.findComponent
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21326
+node_modules/playcanvas/build/playcanvas.d.ts:21403
 
 ___
 
@@ -1311,7 +1136,7 @@ pc.Entity.findComponents
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21337
+node_modules/playcanvas/build/playcanvas.d.ts:21414
 
 ___
 
@@ -1352,7 +1177,7 @@ pc.Entity.findOne
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7528
+node_modules/playcanvas/build/playcanvas.d.ts:7558
 
 ___
 
@@ -1424,7 +1249,7 @@ pc.Entity.forEach
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7587
+node_modules/playcanvas/build/playcanvas.d.ts:7617
 
 ___
 
@@ -1454,7 +1279,7 @@ pc.Entity.getEulerAngles
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7622
+node_modules/playcanvas/build/playcanvas.d.ts:7652
 
 ___
 
@@ -1483,7 +1308,7 @@ pc.Entity.getLocalEulerAngles
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7634
+node_modules/playcanvas/build/playcanvas.d.ts:7664
 
 ___
 
@@ -1512,7 +1337,7 @@ pc.Entity.getLocalPosition
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7646
+node_modules/playcanvas/build/playcanvas.d.ts:7676
 
 ___
 
@@ -1539,7 +1364,7 @@ pc.Entity.getLocalRotation
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7656
+node_modules/playcanvas/build/playcanvas.d.ts:7686
 
 ___
 
@@ -1568,7 +1393,7 @@ pc.Entity.getLocalScale
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7668
+node_modules/playcanvas/build/playcanvas.d.ts:7698
 
 ___
 
@@ -1594,7 +1419,7 @@ pc.Entity.getLocalTransform
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7677
+node_modules/playcanvas/build/playcanvas.d.ts:7707
 
 ___
 
@@ -1623,7 +1448,7 @@ pc.Entity.getPosition
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7689
+node_modules/playcanvas/build/playcanvas.d.ts:7719
 
 ___
 
@@ -1650,7 +1475,7 @@ pc.Entity.getRotation
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7699
+node_modules/playcanvas/build/playcanvas.d.ts:7729
 
 ___
 
@@ -1675,7 +1500,7 @@ pc.Entity.getWorldTransform
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7721
+node_modules/playcanvas/build/playcanvas.d.ts:7751
 
 ___
 
@@ -1740,7 +1565,7 @@ pc.Entity.insertChild
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7896
+node_modules/playcanvas/build/playcanvas.d.ts:7926
 
 ___
 
@@ -1773,7 +1598,7 @@ pc.Entity.isAncestorOf
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7609
+node_modules/playcanvas/build/playcanvas.d.ts:7639
 
 ___
 
@@ -1806,7 +1631,7 @@ pc.Entity.isDescendantOf
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7598
+node_modules/playcanvas/build/playcanvas.d.ts:7628
 
 ___
 
@@ -1857,7 +1682,7 @@ pc.Entity.lookAt
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7969
+node_modules/playcanvas/build/playcanvas.d.ts:7999
 
 ___
 
@@ -2002,7 +1827,7 @@ pc.Entity.removeChild
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7933
+node_modules/playcanvas/build/playcanvas.d.ts:7963
 
 ___
 
@@ -2034,7 +1859,7 @@ pc.Entity.removeComponent
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:21315
+node_modules/playcanvas/build/playcanvas.d.ts:21392
 
 ___
 
@@ -2061,7 +1886,7 @@ pc.Entity.reparent
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7728
+node_modules/playcanvas/build/playcanvas.d.ts:7758
 
 ___
 
@@ -2069,7 +1894,7 @@ ___
 
 ▸ **reparentAndKeepTransform**(`parent`): `void`
 
-**`description:`** 改变父节点并保持物体的transform
+改变父节点并保持物体的transform
 
 #### Parameters
 
@@ -2081,13 +1906,9 @@ ___
 
 `void`
 
-#### Overrides
-
-pc.Entity.reparentAndKeepTransform
-
 #### Defined in
 
-src/extensions/extendClasses/entity.ts:131
+src/extension/extendClasses/entity.ts:22
 
 ___
 
@@ -2126,7 +1947,7 @@ pc.Entity.rotate
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8023
+node_modules/playcanvas/build/playcanvas.d.ts:8053
 
 ___
 
@@ -2165,7 +1986,7 @@ pc.Entity.rotateLocal
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8041
+node_modules/playcanvas/build/playcanvas.d.ts:8071
 
 ___
 
@@ -2205,7 +2026,7 @@ pc.Entity.setEulerAngles
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7865
+node_modules/playcanvas/build/playcanvas.d.ts:7895
 
 ___
 
@@ -2245,7 +2066,7 @@ pc.Entity.setLocalEulerAngles
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7747
+node_modules/playcanvas/build/playcanvas.d.ts:7777
 
 ___
 
@@ -2284,7 +2105,7 @@ pc.Entity.setLocalPosition
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7765
+node_modules/playcanvas/build/playcanvas.d.ts:7795
 
 ___
 
@@ -2324,7 +2145,7 @@ pc.Entity.setLocalRotation
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7784
+node_modules/playcanvas/build/playcanvas.d.ts:7814
 
 ___
 
@@ -2362,7 +2183,7 @@ pc.Entity.setLocalScale
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7801
+node_modules/playcanvas/build/playcanvas.d.ts:7831
 
 ___
 
@@ -2401,7 +2222,7 @@ pc.Entity.setPosition
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7827
+node_modules/playcanvas/build/playcanvas.d.ts:7857
 
 ___
 
@@ -2441,7 +2262,7 @@ pc.Entity.setRotation
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7846
+node_modules/playcanvas/build/playcanvas.d.ts:7876
 
 ___
 
@@ -2480,7 +2301,7 @@ pc.Entity.translate
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7987
+node_modules/playcanvas/build/playcanvas.d.ts:8017
 
 ___
 
@@ -2519,4 +2340,4 @@ pc.Entity.translateLocal
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8005
+node_modules/playcanvas/build/playcanvas.d.ts:8035

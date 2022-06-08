@@ -33,16 +33,18 @@
 
 • **new PathCurve**(`parent`, `curveMode?`)
 
+新建路径曲线（设置一个父节点，用其下的子节点坐标和旋转来构造曲线）
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `parent` | `Entity` |
-| `curveMode?` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `parent` | `Entity` | 父节点 |
+| `curveMode?` | `number` | 曲线类型（可以是曲线或直线，详情参考playcanvas官方文档） |
 
 #### Defined in
 
-src/extensions/newClasses/pathCurve.ts:55
+src/extension/newClasses/pathCurve.ts:48
 
 ## Properties
 
@@ -52,7 +54,7 @@ src/extensions/newClasses/pathCurve.ts:55
 
 #### Defined in
 
-src/extensions/newClasses/pathCurve.ts:33
+src/extension/newClasses/pathCurve.ts:21
 
 ___
 
@@ -62,7 +64,7 @@ ___
 
 #### Defined in
 
-src/extensions/newClasses/pathCurve.ts:35
+src/extension/newClasses/pathCurve.ts:23
 
 ___
 
@@ -72,7 +74,7 @@ ___
 
 #### Defined in
 
-src/extensions/newClasses/pathCurve.ts:32
+src/extension/newClasses/pathCurve.ts:20
 
 ___
 
@@ -82,7 +84,7 @@ ___
 
 #### Defined in
 
-src/extensions/newClasses/pathCurve.ts:31
+src/extension/newClasses/pathCurve.ts:19
 
 ___
 
@@ -92,7 +94,7 @@ ___
 
 #### Defined in
 
-src/extensions/newClasses/pathCurve.ts:36
+src/extension/newClasses/pathCurve.ts:24
 
 ___
 
@@ -102,7 +104,7 @@ ___
 
 #### Defined in
 
-src/extensions/newClasses/pathCurve.ts:37
+src/extension/newClasses/pathCurve.ts:25
 
 ## Methods
 
@@ -110,25 +112,32 @@ src/extensions/newClasses/pathCurve.ts:37
 
 ▸ **cancelDraw**(): `void`
 
+取消曲线绘制
+
 #### Returns
 
 `void`
 
 #### Defined in
 
-src/extensions/newClasses/pathCurve.ts:183
+src/extension/newClasses/pathCurve.ts:184
 
 ___
 
 ### draw
 
-▸ **draw**(`data`): `void`
+▸ **draw**(`option`): `void`
+
+绘制曲线，并随节点更新
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data` | `Object` |
+| `option` | `Object` |
+| `option.color?` | `Color` |
+| `option.drawNormal?` | `boolean` |
+| `option.drawTangent` | `boolean` |
 
 #### Returns
 
@@ -136,7 +145,7 @@ ___
 
 #### Defined in
 
-src/extensions/newClasses/pathCurve.ts:136
+src/extension/newClasses/pathCurve.ts:136
 
 ___
 
@@ -144,19 +153,23 @@ ___
 
 ▸ **getCurrentPath**(`percent`): `number`
 
+获得当前所处的节点
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `percent` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `percent` | `number` | 此位置在曲线上的百分比 |
 
 #### Returns
 
 `number`
 
+当前所处节点
+
 #### Defined in
 
-src/extensions/newClasses/pathCurve.ts:218
+src/extension/newClasses/pathCurve.ts:243
 
 ___
 
@@ -164,19 +177,23 @@ ___
 
 ▸ **getPosition**(`percent`): `Vec3`
 
+获得某处坐标
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `percent` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `percent` | `number` | 此位置在曲线上的百分比 |
 
 #### Returns
 
 `Vec3`
 
+此处的坐标
+
 #### Defined in
 
-src/extensions/newClasses/pathCurve.ts:189
+src/extension/newClasses/pathCurve.ts:194
 
 ___
 
@@ -184,21 +201,25 @@ ___
 
 ▸ **getRotation**(`percent`, `nodeRotation?`, `inverse?`): `Quat`
 
+获得某处rotation,可以是沿切线方向，也可以是路径点朝向的插值
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `percent` | `number` |
-| `nodeRotation?` | `boolean` |
-| `inverse?` | `boolean` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `percent` | `number` | 此位置在曲线上的百分比 |
+| `nodeRotation?` | `boolean` | 是否使用节点的旋转的插值作为曲线的旋转 |
+| `inverse?` | `boolean` | 是否反向 |
 
 #### Returns
 
 `Quat`
 
+此处的旋转
+
 #### Defined in
 
-src/extensions/newClasses/pathCurve.ts:196
+src/extension/newClasses/pathCurve.ts:207
 
 ___
 
@@ -206,19 +227,23 @@ ___
 
 ▸ **getTangent**(`percent`): `Vec3`
 
+获得某处坐标
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `percent` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `percent` | `number` | 此位置在曲线上的百分比 |
 
 #### Returns
 
 `Vec3`
 
+此处的切线方向
+
 #### Defined in
 
-src/extensions/newClasses/pathCurve.ts:228
+src/extension/newClasses/pathCurve.ts:233
 
 ___
 
@@ -226,10 +251,12 @@ ___
 
 ▸ **updateNodes**(): `void`
 
+更新节点
+
 #### Returns
 
 `void`
 
 #### Defined in
 
-src/extensions/newClasses/pathCurve.ts:95
+src/extension/newClasses/pathCurve.ts:92

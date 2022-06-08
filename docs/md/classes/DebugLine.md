@@ -25,13 +25,15 @@
 
 ▸ `Static` **clearLines**(): `void`
 
+清除所有直线
+
 #### Returns
 
 `void`
 
 #### Defined in
 
-src/extensions/newUtils/debugLine.ts:30
+src/extension/newUtils/debugLine.ts:38
 
 ___
 
@@ -39,13 +41,15 @@ ___
 
 ▸ `Static` **drawLine**(`start`, `end`, `color?`): `void`
 
+绘制直线
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `start` | `Vec3` |
-| `end` | `Vec3` |
-| `color?` | `Color` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `start` | `Vec3` | 起点 |
+| `end` | `Vec3` | 终点 |
+| `color?` | `Color` | 颜色 |
 
 #### Returns
 
@@ -53,4 +57,4 @@ ___
 
 #### Defined in
 
-src/extensions/newUtils/debugLine.ts:19
+src/extension/newUtils/debugLine.ts:24

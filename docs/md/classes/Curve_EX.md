@@ -63,7 +63,7 @@ pc.Curve.constructor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17195
+node_modules/playcanvas/build/playcanvas.d.ts:17253
 
 ## Properties
 
@@ -77,7 +77,7 @@ pc.Curve.keys
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17196
+node_modules/playcanvas/build/playcanvas.d.ts:17254
 
 ___
 
@@ -95,7 +95,7 @@ pc.Curve.tension
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17217
+node_modules/playcanvas/build/playcanvas.d.ts:17275
 
 ___
 
@@ -118,7 +118,7 @@ pc.Curve.type
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17209
+node_modules/playcanvas/build/playcanvas.d.ts:17267
 
 ## Accessors
 
@@ -138,7 +138,7 @@ pc.Curve.length
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17228
+node_modules/playcanvas/build/playcanvas.d.ts:17286
 
 ## Methods
 
@@ -167,7 +167,7 @@ pc.Curve.add
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17236
+node_modules/playcanvas/build/playcanvas.d.ts:17294
 
 ___
 
@@ -189,7 +189,7 @@ pc.Curve.clone
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17261
+node_modules/playcanvas/build/playcanvas.d.ts:17319
 
 ___
 
@@ -213,7 +213,7 @@ pc.Curve.closest
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17255
+node_modules/playcanvas/build/playcanvas.d.ts:17313
 
 ___
 
@@ -241,7 +241,7 @@ pc.Curve.get
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17243
+node_modules/playcanvas/build/playcanvas.d.ts:17301
 
 ___
 
@@ -249,23 +249,23 @@ ___
 
 ▸ **getNormal**(`percent`): `number`
 
+获得曲线在此处的法线斜率
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `percent` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `percent` | `number` | 在曲线上的百分比位置 |
 
 #### Returns
 
 `number`
 
-#### Overrides
-
-pc.Curve.getNormal
+法线斜率
 
 #### Defined in
 
-src/extensions/extendClasses/curve.ts:31
+src/extension/extendClasses/curve.ts:36
 
 ___
 
@@ -273,23 +273,23 @@ ___
 
 ▸ **getTangent**(`percent`): `number`
 
+获得曲线在此处的切线斜率
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `percent` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `percent` | `number` | 在曲线上的百分比位置 |
 
 #### Returns
 
 `number`
 
-#### Overrides
-
-pc.Curve.getTangent
+切线斜率
 
 #### Defined in
 
-src/extensions/extendClasses/curve.ts:22
+src/extension/extendClasses/curve.ts:23
 
 ___
 
@@ -309,7 +309,7 @@ pc.Curve.sort
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17247
+node_modules/playcanvas/build/playcanvas.d.ts:17305
 
 ___
 
@@ -337,4 +337,4 @@ pc.Curve.value
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17254
+node_modules/playcanvas/build/playcanvas.d.ts:17312

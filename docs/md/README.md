@@ -10,28 +10,38 @@ pc-ex
 - [Color\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Color_EX.md)
 - [Curve\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Curve_EX.md)
 - [DebugLine](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DebugLine.md)
+- [ElementComponent\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md)
 - [Entity\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Entity_EX.md)
-- [Filter](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter.md)
-- [Filter\_Bloom](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Bloom.md)
-- [Filter\_Empty](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Filter_Empty.md)
-- [MeshesRaycaster](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MeshesRaycaster.md)
+- [MeshInstance\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MeshInstance_EX.md)
 - [PathCurve](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md)
+- [Quat\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Quat_EX.md)
+- [Ray\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Ray_EX.md)
 - [ScriptTypeBase](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md)
+- [Texture\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Texture_EX.md)
+- [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md)
 - [Vec2\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Vec2_EX.md)
+- [Vec3\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Vec3_EX.md)
+- [Vec4\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Vec4_EX.md)
 
-### Type aliases
+### Interfaces
+
+- [intersect](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/intersect.md)
+
+### Type Aliases
 
 - [AttributeParams](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attributeparams)
 
 ### Functions
 
 - [attr](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attr)
+- [cast](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#cast)
 - [createScript](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#createscript)
-- [extendClass](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#extendclass)
+- [extend](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#extend)
 - [newUtil](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#newutil)
-- [prpt](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#prpt)
+- [use](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#use)
+- [useGlobal](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#useglobal)
 
-## Type aliases
+## Type Aliases
 
 ### AttributeParams
 
@@ -59,7 +69,7 @@ pc-ex
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:58
+src/lib/create-script-decorator.ts:56
 
 ## Functions
 
@@ -85,7 +95,37 @@ src/classes/utils/create-script-decorator.ts:58
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:46
+src/lib/create-script-decorator.ts:44
+
+___
+
+### cast
+
+▸ **cast**<`T`\>(`obj`): `T`
+
+转换类型
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `obj` | `any` | 待转换对象 |
+
+#### Returns
+
+`T`
+
+转换类型后的对象
+
+#### Defined in
+
+src/lib/cast.ts:14
 
 ___
 
@@ -123,19 +163,19 @@ property GUI creation.
 
 #### Defined in
 
-src/classes/utils/create-script-decorator.ts:13
+src/lib/create-script-decorator.ts:11
 
 ___
 
-### extendClass
+### extend
 
-▸ **extendClass**(`extendClassName?`): (`target`: `any`) => `void`
+▸ **extend**(`extendClass?`): (`target`: `any`) => `void`
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `extendClassName` | `string` | `null` |
+| Name | Type |
+| :------ | :------ |
+| `extendClass?` | `any` |
 
 #### Returns
 
@@ -155,7 +195,7 @@ ___
 
 #### Defined in
 
-src/classes/utils/extend-decorator.ts:15
+src/lib/extend-decorator.ts:23
 
 ___
 
@@ -175,38 +215,68 @@ ___
 
 #### Defined in
 
-src/classes/utils/extend-decorator.ts:78
+src/lib/extend-decorator.ts:91
 
 ___
 
-### prpt
+### use
 
-▸ **prpt**(`data?`): (`target`: `any`, `propertyKey`: `string`) => `void`
+▸ **use**<`ToolType`, `Options`\>(`tool`, `options?`): `ToolType`
 
-#### Parameters
+使用工具（创建一个工具实例）
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `data` | `Object` | `null` |
-| `data.default` | `any` | `undefined` |
-
-#### Returns
-
-`fn`
-
-▸ (`target`, `propertyKey`): `void`
-
-##### Parameters
+#### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `target` | `any` |
-| `propertyKey` | `string` |
+| `ToolType` | extends [`Tool`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md)<`Options`, `unknown`, `ToolType`\> |
+| `Options` | `Options` |
 
-##### Returns
+#### Parameters
 
-`void`
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `tool` | (`options?`: `Options`) => `ToolType` | 工具类 |
+| `options?` | `Options` | 工具选项 |
+
+#### Returns
+
+`ToolType`
+
+工具实例
 
 #### Defined in
 
-src/classes/utils/extend-decorator.ts:68
+src/lib/toolHelper.ts:29
+
+___
+
+### useGlobal
+
+▸ **useGlobal**<`ToolType`, `Options`\>(`tool`, `options?`): `ToolType`
+
+使用全局工具（使用全局工具实例）
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `ToolType` | extends [`Tool`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md)<`Options`, `unknown`, `ToolType`\> |
+| `Options` | `Options` |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `tool` | (`options?`: `Options`) => `ToolType` | 工具类 |
+| `options?` | `Options` | 工具选项 |
+
+#### Returns
+
+`ToolType`
+
+全局工具实例
+
+#### Defined in
+
+src/lib/toolHelper.ts:42

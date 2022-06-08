@@ -67,7 +67,7 @@ pc.Color.constructor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10620
+node_modules/playcanvas/build/playcanvas.d.ts:10670
 
 ## Properties
 
@@ -83,7 +83,7 @@ pc.Color.a
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10644
+node_modules/playcanvas/build/playcanvas.d.ts:10694
 
 ___
 
@@ -99,7 +99,7 @@ pc.Color.b
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10638
+node_modules/playcanvas/build/playcanvas.d.ts:10688
 
 ___
 
@@ -115,7 +115,7 @@ pc.Color.g
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10632
+node_modules/playcanvas/build/playcanvas.d.ts:10682
 
 ___
 
@@ -131,7 +131,7 @@ pc.Color.r
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10626
+node_modules/playcanvas/build/playcanvas.d.ts:10676
 
 ___
 
@@ -149,7 +149,7 @@ pc.Color.BLACK
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10554
+node_modules/playcanvas/build/playcanvas.d.ts:10604
 
 ___
 
@@ -167,7 +167,7 @@ pc.Color.BLUE
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10561
+node_modules/playcanvas/build/playcanvas.d.ts:10611
 
 ___
 
@@ -185,7 +185,7 @@ pc.Color.CYAN
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10568
+node_modules/playcanvas/build/playcanvas.d.ts:10618
 
 ___
 
@@ -203,7 +203,7 @@ pc.Color.GRAY
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10575
+node_modules/playcanvas/build/playcanvas.d.ts:10625
 
 ___
 
@@ -221,7 +221,7 @@ pc.Color.GREEN
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10582
+node_modules/playcanvas/build/playcanvas.d.ts:10632
 
 ___
 
@@ -239,7 +239,7 @@ pc.Color.MAGENTA
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10589
+node_modules/playcanvas/build/playcanvas.d.ts:10639
 
 ___
 
@@ -257,7 +257,7 @@ pc.Color.RED
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10596
+node_modules/playcanvas/build/playcanvas.d.ts:10646
 
 ___
 
@@ -275,7 +275,7 @@ pc.Color.WHITE
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10603
+node_modules/playcanvas/build/playcanvas.d.ts:10653
 
 ___
 
@@ -293,7 +293,7 @@ pc.Color.YELLOW
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10610
+node_modules/playcanvas/build/playcanvas.d.ts:10660
 
 ## Accessors
 
@@ -301,17 +301,15 @@ node_modules/playcanvas/build/playcanvas.d.ts:10610
 
 • `get` **shaderData**(): `Float32Array`
 
+用于传入shader的数据
+
 #### Returns
 
 `Float32Array`
 
-#### Overrides
-
-pc.Color.shaderData
-
 #### Defined in
 
-src/extensions/extendClasses/color.ts:20
+src/extension/extendClasses/color.ts:21
 
 ## Methods
 
@@ -333,7 +331,7 @@ pc.Color.clone
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10650
+node_modules/playcanvas/build/playcanvas.d.ts:10700
 
 ___
 
@@ -369,7 +367,7 @@ pc.Color.copy
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10664
+node_modules/playcanvas/build/playcanvas.d.ts:10714
 
 ___
 
@@ -402,7 +400,7 @@ pc.Color.equals
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10675
+node_modules/playcanvas/build/playcanvas.d.ts:10725
 
 ___
 
@@ -430,7 +428,7 @@ pc.Color.fromString
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10713
+node_modules/playcanvas/build/playcanvas.d.ts:10763
 
 ___
 
@@ -469,7 +467,7 @@ pc.Color.lerp
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10704
+node_modules/playcanvas/build/playcanvas.d.ts:10754
 
 ___
 
@@ -500,7 +498,7 @@ pc.Color.set
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10685
+node_modules/playcanvas/build/playcanvas.d.ts:10735
 
 ___
 
@@ -535,4 +533,4 @@ pc.Color.toString
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10726
+node_modules/playcanvas/build/playcanvas.d.ts:10776

@@ -1,2 +1,4 @@
-export * from "./classes/classes";
-export * from "./extensions/extensions";
+export * from "./extension/extensions";
+export * from "./lib/lib";
+
+

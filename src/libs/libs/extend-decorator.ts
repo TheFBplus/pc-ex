@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-04-21 16:10:55
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-14 15:51:32
+ * @ 修改时间: 2022-06-14 15:58:47
  * @ 详情: 用于扩展pc类的装饰器
  */
 
@@ -10,7 +10,7 @@ import * as pc from "playcanvas";
 
 type extendClass = "CameraComponent" | "Color" | "Curve" | "ElementComponent" |
     "Entity" | "MeshInstance" | "Quat" | "Ray" |
-    "Texture" | "Vec2" | "Vec3" | "Vec4";
+    "Texture" | "Vec2" | "Vec3" | "Vec4" | string;
 
 interface Type<T> extends Function
 {

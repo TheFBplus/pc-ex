@@ -313,7 +313,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `extendClassName?` | `extendClass` |
+| `extendClassName?` | `string` |
 
 #### Returns
 

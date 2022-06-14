@@ -47738,8 +47738,8 @@
 								"isOptional": true
 							},
 							"type": {
-								"type": "reference",
-								"name": "extendClass"
+								"type": "intrinsic",
+								"name": "string"
 							}
 						}
 					],

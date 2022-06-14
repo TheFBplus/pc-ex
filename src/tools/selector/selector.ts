@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-08 15:04:27
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-08 15:23:25
+ * @ 修改时间: 2022-06-14 10:08:20
  * @ 详情: 点选模型
  */
 
@@ -20,7 +20,7 @@ type SelectorOptions = {
     excludeLayers?: pc.Layer[];
 };
 
-export default class Selector extends Tool<SelectorOptions, SelectorEventType>
+export class Selector extends Tool<SelectorOptions, SelectorEventType>
 {
     private picker: pc.Picker;
 
@@ -29,6 +29,8 @@ export default class Selector extends Tool<SelectorOptions, SelectorEventType>
     private pickAreaScale: number;
     private pickTag: string;
     private pickLayers: pc.Layer[];
+
+    private preSelectedNode: pc.GraphNode;
 
     /**
      * 创建模型点选器
@@ -73,14 +75,20 @@ export default class Selector extends Tool<SelectorOptions, SelectorEventType>
 
         if (selected.length > 0 && selected[0]?.node) {
             if (!this.pickTag || this.pickTag.length <= 0) {
-                this.eventHandler.fire("select", selected[0].node);
+                if (this.preSelectedNode == selected[0].node) { return; }
+                this.eventHandler.fire("select", selected[0].node, this.preSelectedNode);
+                this.preSelectedNode = selected[0].node;
             }
             else {
-                this.eventHandler.fire("select", this.getModelHasTag(selected[0].node, this.pickTag));
+                const selectedNode = this.getModelHasTag(selected[0].node, this.pickTag);
+                if (this.preSelectedNode == selectedNode) { return; }
+                this.eventHandler.fire("select", selectedNode, this.preSelectedNode);
+                this.preSelectedNode = selectedNode;
             }
         }
         else {
-            this.eventHandler.fire("select", null);
+            this.eventHandler.fire("select", null, this.preSelectedNode);
+            this.preSelectedNode = null;
         }
     }
 

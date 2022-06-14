@@ -63,7 +63,7 @@ pc.Curve.constructor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17253
+node_modules/playcanvas/build/playcanvas.d.ts:17003
 
 ## Properties
 
@@ -77,7 +77,7 @@ pc.Curve.keys
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17254
+node_modules/playcanvas/build/playcanvas.d.ts:17004
 
 ___
 
@@ -95,7 +95,7 @@ pc.Curve.tension
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17275
+node_modules/playcanvas/build/playcanvas.d.ts:17025
 
 ___
 
@@ -118,7 +118,7 @@ pc.Curve.type
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17267
+node_modules/playcanvas/build/playcanvas.d.ts:17017
 
 ## Accessors
 
@@ -138,7 +138,7 @@ pc.Curve.length
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17286
+node_modules/playcanvas/build/playcanvas.d.ts:17036
 
 ## Methods
 
@@ -167,7 +167,7 @@ pc.Curve.add
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17294
+node_modules/playcanvas/build/playcanvas.d.ts:17044
 
 ___
 
@@ -189,7 +189,7 @@ pc.Curve.clone
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17319
+node_modules/playcanvas/build/playcanvas.d.ts:17069
 
 ___
 
@@ -213,7 +213,7 @@ pc.Curve.closest
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17313
+node_modules/playcanvas/build/playcanvas.d.ts:17063
 
 ___
 
@@ -241,7 +241,7 @@ pc.Curve.get
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17301
+node_modules/playcanvas/build/playcanvas.d.ts:17051
 
 ___
 
@@ -309,7 +309,7 @@ pc.Curve.sort
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17305
+node_modules/playcanvas/build/playcanvas.d.ts:17055
 
 ___
 
@@ -337,4 +337,4 @@ pc.Curve.value
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17312
+node_modules/playcanvas/build/playcanvas.d.ts:17062

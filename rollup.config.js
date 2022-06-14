@@ -1,4 +1,6 @@
 import typescript from "@rollup/plugin-typescript";
+import copy from 'rollup-plugin-copy';
+import { string } from "rollup-plugin-string";
 import { terser } from "rollup-plugin-terser";
 
 export default {
@@ -13,6 +15,14 @@ export default {
 			target: "ES5",
 		}),
 		terser(),
+		string({
+			include: ["**/*.vert", "**/*.frag"]
+		}),
+		copy({
+			targets: [
+				{ src: "src/resources/shaders/*", dest: ["bin/cjs/resources/shaders", "bin/dts/resources/shaders", "bin/es/resources/shaders"] },
+			]
+		})
 	],
 
 	output: {
@@ -21,6 +31,8 @@ export default {
 		format: "iife",
 		name: "pcEX",
 		extend: false,
-		globals: { "playcanvas": "pc" },
+		globals: { "playcanvas": "pc" }
 	},
+
+	external: ["playcanvas"]
 };

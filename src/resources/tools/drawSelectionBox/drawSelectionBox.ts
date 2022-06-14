@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-08 18:37:08
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-08 19:02:47
+ * @ 修改时间: 2022-06-14 10:17:11
  * @ 详情: 根据鼠标位置在屏幕上绘制多选框
  */
 
@@ -22,7 +22,7 @@ let quadColor = new pc.Color(1, 1, 1, 0.15);
  * @param endPoint 移动点
  * @returns 框选矩形范围
  */
-export function drawSelectionBox(startPoint: { x: number, y: number }, endPoint: { x: number, y: number }): pc.Vec4
+export function drawSelectionBox(startPoint: { x: number, y: number }, endPoint: { x: number, y: number }, boxLayer: pc.Layer): pc.Vec4
 {
     const canvas = pc.app.graphicsDevice.canvas;
     const canvasWidth = parseInt(canvas.clientWidth, 10);
@@ -52,8 +52,8 @@ export function drawSelectionBox(startPoint: { x: number, y: number }, endPoint:
 
     drawRect.div(divRect);
 
-    drawScreenRect(drawRect, rectColor);
-    drawScreenQuad(drawRect, quadColor);
+    drawScreenRect(drawRect, rectColor, boxLayer);
+    drawScreenQuad(drawRect, quadColor, boxLayer);
 
     return drawRect.mul(divRect);
 }

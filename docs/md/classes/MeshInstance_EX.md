@@ -119,7 +119,7 @@ pc.MeshInstance.constructor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8960
+node_modules/playcanvas/build/playcanvas.d.ts:10918
 
 ## Properties
 
@@ -133,7 +133,7 @@ pc.MeshInstance.\_aabb
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9085
+node_modules/playcanvas/build/playcanvas.d.ts:11043
 
 ___
 
@@ -147,7 +147,7 @@ pc.MeshInstance.\_aabbVer
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9043
+node_modules/playcanvas/build/playcanvas.d.ts:11001
 
 ___
 
@@ -161,7 +161,7 @@ pc.MeshInstance.\_calculateSortDistance
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9019
+node_modules/playcanvas/build/playcanvas.d.ts:10977
 
 ___
 
@@ -175,7 +175,7 @@ pc.MeshInstance.\_key
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8966
+node_modules/playcanvas/build/playcanvas.d.ts:10924
 
 ___
 
@@ -189,7 +189,7 @@ pc.MeshInstance.\_layer
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9086
+node_modules/playcanvas/build/playcanvas.d.ts:11044
 
 ___
 
@@ -203,7 +203,7 @@ pc.MeshInstance.\_lightHash
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8986
+node_modules/playcanvas/build/playcanvas.d.ts:10944
 
 ___
 
@@ -217,7 +217,7 @@ pc.MeshInstance.\_mesh
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8977
+node_modules/playcanvas/build/playcanvas.d.ts:10935
 
 ___
 
@@ -231,7 +231,7 @@ pc.MeshInstance.\_noDepthDrawGl1
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9002
+node_modules/playcanvas/build/playcanvas.d.ts:10960
 
 ___
 
@@ -245,7 +245,7 @@ pc.MeshInstance.\_receiveShadow
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9000
+node_modules/playcanvas/build/playcanvas.d.ts:10958
 
 ___
 
@@ -259,7 +259,7 @@ pc.MeshInstance.\_screenSpace
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9001
+node_modules/playcanvas/build/playcanvas.d.ts:10959
 
 ___
 
@@ -273,7 +273,7 @@ pc.MeshInstance.\_shader
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8967
+node_modules/playcanvas/build/playcanvas.d.ts:10925
 
 ___
 
@@ -287,7 +287,7 @@ pc.MeshInstance.\_shaderDefs
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8985
+node_modules/playcanvas/build/playcanvas.d.ts:10943
 
 ___
 
@@ -301,7 +301,7 @@ pc.MeshInstance.\_staticLightList
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8969
+node_modules/playcanvas/build/playcanvas.d.ts:10927
 
 ___
 
@@ -315,7 +315,7 @@ pc.MeshInstance.\_staticSource
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8970
+node_modules/playcanvas/build/playcanvas.d.ts:10928
 
 ___
 
@@ -329,7 +329,7 @@ pc.MeshInstance.\_updateAabb
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9017
+node_modules/playcanvas/build/playcanvas.d.ts:10975
 
 ___
 
@@ -343,7 +343,7 @@ pc.MeshInstance.\_updateAabbFunc
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9018
+node_modules/playcanvas/build/playcanvas.d.ts:10976
 
 ___
 
@@ -357,7 +357,7 @@ pc.MeshInstance.castShadow
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8999
+node_modules/playcanvas/build/playcanvas.d.ts:10957
 
 ___
 
@@ -374,7 +374,7 @@ pc.MeshInstance.cull
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9009
+node_modules/playcanvas/build/playcanvas.d.ts:10967
 
 ___
 
@@ -393,7 +393,7 @@ pc.MeshInstance.drawOrder
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9052
+node_modules/playcanvas/build/playcanvas.d.ts:11010
 
 ___
 
@@ -407,7 +407,7 @@ pc.MeshInstance.flipFaces
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9064
+node_modules/playcanvas/build/playcanvas.d.ts:11022
 
 ___
 
@@ -421,7 +421,7 @@ pc.MeshInstance.instancingData
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9030
+node_modules/playcanvas/build/playcanvas.d.ts:10988
 
 ___
 
@@ -435,7 +435,7 @@ pc.MeshInstance.isStatic
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8968
+node_modules/playcanvas/build/playcanvas.d.ts:10926
 
 ___
 
@@ -449,7 +449,7 @@ pc.MeshInstance.isVisibleFunc
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9060
+node_modules/playcanvas/build/playcanvas.d.ts:11018
 
 ___
 
@@ -465,7 +465,7 @@ pc.MeshInstance.node
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8976
+node_modules/playcanvas/build/playcanvas.d.ts:10934
 
 ___
 
@@ -479,7 +479,7 @@ pc.MeshInstance.parameters
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9061
+node_modules/playcanvas/build/playcanvas.d.ts:11019
 
 ___
 
@@ -493,7 +493,7 @@ pc.MeshInstance.stencilBack
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9063
+node_modules/playcanvas/build/playcanvas.d.ts:11021
 
 ___
 
@@ -507,7 +507,7 @@ pc.MeshInstance.stencilFront
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9062
+node_modules/playcanvas/build/playcanvas.d.ts:11020
 
 ___
 
@@ -525,7 +525,7 @@ pc.MeshInstance.visible
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8994
+node_modules/playcanvas/build/playcanvas.d.ts:10952
 
 ___
 
@@ -542,7 +542,7 @@ pc.MeshInstance.visibleThisFrame
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9059
+node_modules/playcanvas/build/playcanvas.d.ts:11017
 
 ___
 
@@ -556,7 +556,7 @@ pc.MeshInstance.lightmapParamNames
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8935
+node_modules/playcanvas/build/playcanvas.d.ts:10893
 
 ## Accessors
 
@@ -576,7 +576,7 @@ pc.MeshInstance.aabb
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9042
+node_modules/playcanvas/build/playcanvas.d.ts:11000
 
 • `set` **aabb**(`arg`): `void`
 
@@ -598,7 +598,7 @@ pc.MeshInstance.aabb
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9041
+node_modules/playcanvas/build/playcanvas.d.ts:10999
 
 ___
 
@@ -622,7 +622,7 @@ pc.MeshInstance.calculateSortDistance
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9097
+node_modules/playcanvas/build/playcanvas.d.ts:11055
 
 • `set` **calculateSortDistance**(`arg`): `void`
 
@@ -648,7 +648,7 @@ pc.MeshInstance.calculateSortDistance
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9096
+node_modules/playcanvas/build/playcanvas.d.ts:11054
 
 ___
 
@@ -668,7 +668,7 @@ pc.MeshInstance.instancingCount
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9132
+node_modules/playcanvas/build/playcanvas.d.ts:11090
 
 • `set` **instancingCount**(`arg`): `void`
 
@@ -690,7 +690,7 @@ pc.MeshInstance.instancingCount
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9131
+node_modules/playcanvas/build/playcanvas.d.ts:11089
 
 ___
 
@@ -708,7 +708,7 @@ pc.MeshInstance.key
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9117
+node_modules/playcanvas/build/playcanvas.d.ts:11075
 
 • `set` **key**(`arg`): `void`
 
@@ -728,7 +728,7 @@ pc.MeshInstance.key
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9116
+node_modules/playcanvas/build/playcanvas.d.ts:11074
 
 ___
 
@@ -746,7 +746,7 @@ pc.MeshInstance.layer
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8996
+node_modules/playcanvas/build/playcanvas.d.ts:10954
 
 • `set` **layer**(`arg`): `void`
 
@@ -766,7 +766,7 @@ pc.MeshInstance.layer
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8995
+node_modules/playcanvas/build/playcanvas.d.ts:10953
 
 ___
 
@@ -787,7 +787,7 @@ pc.MeshInstance.mask
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9125
+node_modules/playcanvas/build/playcanvas.d.ts:11083
 
 • `set` **mask**(`arg`): `void`
 
@@ -810,7 +810,7 @@ pc.MeshInstance.mask
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9124
+node_modules/playcanvas/build/playcanvas.d.ts:11082
 
 ___
 
@@ -830,7 +830,7 @@ pc.MeshInstance.material
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8984
+node_modules/playcanvas/build/playcanvas.d.ts:10942
 
 • `set` **material**(`arg`): `void`
 
@@ -852,7 +852,7 @@ pc.MeshInstance.material
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8983
+node_modules/playcanvas/build/playcanvas.d.ts:10941
 
 ___
 
@@ -872,7 +872,7 @@ pc.MeshInstance.mesh
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9084
+node_modules/playcanvas/build/playcanvas.d.ts:11042
 
 • `set` **mesh**(`arg`): `void`
 
@@ -894,7 +894,7 @@ pc.MeshInstance.mesh
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9083
+node_modules/playcanvas/build/playcanvas.d.ts:11041
 
 ___
 
@@ -914,7 +914,7 @@ pc.MeshInstance.morphInstance
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9113
+node_modules/playcanvas/build/playcanvas.d.ts:11071
 
 • `set` **morphInstance**(`arg`): `void`
 
@@ -936,7 +936,7 @@ pc.MeshInstance.morphInstance
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9112
+node_modules/playcanvas/build/playcanvas.d.ts:11070
 
 ___
 
@@ -954,7 +954,7 @@ pc.MeshInstance.receiveShadow
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9099
+node_modules/playcanvas/build/playcanvas.d.ts:11057
 
 • `set` **receiveShadow**(`arg`): `void`
 
@@ -974,7 +974,7 @@ pc.MeshInstance.receiveShadow
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9098
+node_modules/playcanvas/build/playcanvas.d.ts:11056
 
 ___
 
@@ -1000,7 +1000,7 @@ pc.MeshInstance.renderStyle
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9077
+node_modules/playcanvas/build/playcanvas.d.ts:11035
 
 • `set` **renderStyle**(`arg`): `void`
 
@@ -1028,7 +1028,7 @@ pc.MeshInstance.renderStyle
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9076
+node_modules/playcanvas/build/playcanvas.d.ts:11034
 
 ___
 
@@ -1046,7 +1046,7 @@ pc.MeshInstance.screenSpace
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9115
+node_modules/playcanvas/build/playcanvas.d.ts:11073
 
 • `set` **screenSpace**(`arg`): `void`
 
@@ -1066,7 +1066,7 @@ pc.MeshInstance.screenSpace
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9114
+node_modules/playcanvas/build/playcanvas.d.ts:11072
 
 ___
 
@@ -1086,7 +1086,7 @@ pc.MeshInstance.skinInstance
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9106
+node_modules/playcanvas/build/playcanvas.d.ts:11064
 
 • `set` **skinInstance**(`arg`): `void`
 
@@ -1108,7 +1108,7 @@ pc.MeshInstance.skinInstance
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9105
+node_modules/playcanvas/build/playcanvas.d.ts:11063
 
 ## Methods
 
@@ -1132,7 +1132,7 @@ pc.MeshInstance.\_isVisible
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9134
+node_modules/playcanvas/build/playcanvas.d.ts:11092
 
 ___
 
@@ -1150,7 +1150,7 @@ pc.MeshInstance.\_setupSkinUpdate
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9172
+node_modules/playcanvas/build/playcanvas.d.ts:11130
 
 ___
 
@@ -1168,7 +1168,7 @@ pc.MeshInstance.clearParameters
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9143
+node_modules/playcanvas/build/playcanvas.d.ts:11101
 
 ___
 
@@ -1194,7 +1194,7 @@ pc.MeshInstance.deleteParameter
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9168
+node_modules/playcanvas/build/playcanvas.d.ts:11126
 
 ___
 
@@ -1212,7 +1212,7 @@ pc.MeshInstance.destroy
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9133
+node_modules/playcanvas/build/playcanvas.d.ts:11091
 
 ___
 
@@ -1240,7 +1240,7 @@ pc.MeshInstance.getParameter
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9151
+node_modules/playcanvas/build/playcanvas.d.ts:11109
 
 ___
 
@@ -1258,7 +1258,7 @@ pc.MeshInstance.getParameters
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9144
+node_modules/playcanvas/build/playcanvas.d.ts:11102
 
 ___
 
@@ -1307,7 +1307,7 @@ pc.MeshInstance.setCustomAabb
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9171
+node_modules/playcanvas/build/playcanvas.d.ts:11129
 
 ___
 
@@ -1333,7 +1333,7 @@ pc.MeshInstance.setInstancing
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9142
+node_modules/playcanvas/build/playcanvas.d.ts:11100
 
 ___
 
@@ -1357,7 +1357,7 @@ pc.MeshInstance.setLightmapped
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9170
+node_modules/playcanvas/build/playcanvas.d.ts:11128
 
 ___
 
@@ -1386,7 +1386,7 @@ pc.MeshInstance.setParameter
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9161
+node_modules/playcanvas/build/playcanvas.d.ts:11119
 
 ___
 
@@ -1411,7 +1411,7 @@ pc.MeshInstance.setParameters
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9169
+node_modules/playcanvas/build/playcanvas.d.ts:11127
 
 ___
 
@@ -1436,7 +1436,7 @@ pc.MeshInstance.setRealtimeLightmap
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9162
+node_modules/playcanvas/build/playcanvas.d.ts:11120
 
 ___
 
@@ -1454,7 +1454,7 @@ pc.MeshInstance.updateKey
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9135
+node_modules/playcanvas/build/playcanvas.d.ts:11093
 
 ___
 
@@ -1479,4 +1479,4 @@ pc.MeshInstance.\_prepareRenderStyleForArray
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:8936
+node_modules/playcanvas/build/playcanvas.d.ts:10894

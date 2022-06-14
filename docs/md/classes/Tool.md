@@ -9,6 +9,20 @@
 | `Options` |
 | `EventsType` |
 
+## Hierarchy
+
+- **`Tool`**
+
+  ↳ [`OrbitCamera`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md)
+
+  ↳ [`OutlineCamera`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OutlineCamera.md)
+
+  ↳ [`MouseInputer`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md)
+
+  ↳ [`MultiSelector`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MultiSelector.md)
+
+  ↳ [`Selector`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Selector.md)
+
 ## Table of contents
 
 ### Constructors

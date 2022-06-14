@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 17:01:01
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-08 18:58:39
+ * @ 修改时间: 2022-06-09 15:01:40
  * @ 详情: 鼠标操作
  */
 
@@ -13,7 +13,7 @@ import { Tool } from "../../lib/toolHelper";
 type InputEvents = "down" | "move" | "click" | "up" | "pinch" | "dragging" | "dragEnd";
 type MouseInputOptions = { clickError: number };
 
-export default class MouseInputer extends Tool<MouseInputOptions, InputEvents>
+export class MouseInputer extends Tool<MouseInputOptions, InputEvents>
 {
     private mouseDownVec: pc.Vec2;
     private mouseMoveVec: pc.Vec2;

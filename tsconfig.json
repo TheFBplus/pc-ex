@@ -4,7 +4,7 @@
       "ES2020",
       "DOM"
     ],
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
     "target": "ES5",
     "module": "CommonJS",
     "outDir": "dist",
@@ -17,6 +17,7 @@
     "experimentalDecorators": true
   },
   "include": [
-    "src/index.ts"
+    "src/index.ts",
+    "src/typings.d.ts"
   ]
 }

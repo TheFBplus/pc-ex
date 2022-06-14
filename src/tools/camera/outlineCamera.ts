@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-05-18 15:35:26
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-08 18:58:59
+ * @ 修改时间: 2022-06-10 09:57:55
  * @ 详情: 描边相机
  */
 
@@ -25,7 +25,7 @@ type outlineCameraOptions = {
     outlineThickness?: number;
 }
 
-export default class OutlineCamera extends Tool<outlineCameraOptions, unknown>
+export class OutlineCamera extends Tool<outlineCameraOptions, unknown>
 {
     private mainCamera: pc.CameraComponent;
     private outlineLayerName: string;
@@ -67,7 +67,7 @@ export default class OutlineCamera extends Tool<outlineCameraOptions, unknown>
         {
             const render = model as pc.RenderComponent;
             if (render.layers) {
-                !layerMap.get(render) && layerMap.set(render, render.layers);
+                !layerMap.get(render) && layerMap.set(render, [...render.layers]);
                 const preLayers = layerMap.get(render);
                 render.layers = isOn ? [...preLayers, outLineLayerId] : preLayers;
             }

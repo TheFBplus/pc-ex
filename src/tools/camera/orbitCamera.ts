@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 17:03:58
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-08 19:00:24
+ * @ 修改时间: 2022-06-14 10:28:06
  * @ 详情: 观测相机
  */
 
@@ -21,13 +21,14 @@ type OrbitCameraOptions = {
     inertiaFactor?: number;
     pitchMin?: number;
     pitchMax?: number;
-    distanceMin: number;
+    distanceMin?: number;
     distanceMax?: number;
 };
 
-export default class OrbitCamera extends Tool<OrbitCameraOptions, unknown>
+export class OrbitCamera extends Tool<OrbitCameraOptions, unknown>
 {
     public mainCamra: pc.CameraComponent;
+    public isLooking: boolean;
 
     private _device: AvailableDevices;
     private orbitSensitivity: number;
@@ -46,7 +47,6 @@ export default class OrbitCamera extends Tool<OrbitCameraOptions, unknown>
     private targetDistance: number;
 
     private inputHandler: AvailableInputHandler;
-    private isLooking: boolean;
 
     private _pivotPoint: pc.Vec3;
     private cameraForward: pc.Vec3;
@@ -64,7 +64,7 @@ export default class OrbitCamera extends Tool<OrbitCameraOptions, unknown>
 
         this.setOption(option);
 
-        this.pivotPoint = new pc.Vec3();
+        this._pivotPoint = new pc.Vec3();
         this.yawOffset = new pc.Quat();
         this.quatWithoutYaw = new pc.Quat();
         this.modelsAABB = new pc.BoundingBox();
@@ -89,7 +89,7 @@ export default class OrbitCamera extends Tool<OrbitCameraOptions, unknown>
     public override setOption(option: OrbitCameraOptions): void
     {
         this.mainCamra = option?.mainCamra ?? pc.app.context.systems.camera.cameras[0];
-        this.device = option?.device ?? "mouse";
+        this.device = option?.device ?? (pc.app.touch ? "touchScreen" : "mouse");
         this.orbitSensitivity = option?.orbitSensitivity ?? 0.25;
         this.distanceSensitivity = option?.distanceSensitivity ?? 1.5;
         this.inertiaFactor = option?.inertiaFactor ?? 0;
@@ -174,12 +174,14 @@ export default class OrbitCamera extends Tool<OrbitCameraOptions, unknown>
             this.inputHandler.enabled = false;
         }
 
-        if (this._device === "mouse") {
+        if (value === "mouse") {
             this.inputHandler = useGlobal(OrbitCameraInput_Mouse, { orbitCamera: this, orbitSensitivity: this.orbitSensitivity, distanceSensitivity: this.distanceSensitivity });
         }
-        else if (this._device === "touchScreen") {
+        else if (value === "touchScreen") {
             this.inputHandler = useGlobal(OrbitCameraInput_TouchScreen, { orbitCamera: this, orbitSensitivity: this.orbitSensitivity, distanceSensitivity: this.distanceSensitivity });
         }
+
+        this._device = value;
     }
 
     /**
@@ -434,7 +436,7 @@ class OrbitCameraInput_Mouse extends Tool<OrbitCameraInputOption, unknown>
      * 鼠标按下事件监听
      * @param event 鼠标按下事件
      */
-    private onMouseDown(event: { button: number })
+    private onMouseDown(event: any)
     {
         switch (event.button) {
             case pc.MOUSEBUTTON_LEFT:
@@ -445,6 +447,7 @@ class OrbitCameraInput_Mouse extends Tool<OrbitCameraInputOption, unknown>
                 break;
             case pc.MOUSEBUTTON_RIGHT:
                 this.isLookButtonDown = true;
+                this.orbitCamera.isLooking = true;
                 break;
         }
     }
@@ -453,11 +456,13 @@ class OrbitCameraInput_Mouse extends Tool<OrbitCameraInputOption, unknown>
      * 鼠标移动事件监听
      * @param event 鼠标移动事件
      */
-    private onMouseMove(event: { x: number, y: number, dx: number, dy: number }): void
+    private onMouseMove(event: any): void
     {
+        const dx = event.x - this.lastPoint.x;
+        const dy = event.y - this.lastPoint.y;
         if (this.isRotateButtonDown || this.isLookButtonDown) {
-            this.orbitCamera.pitch -= event.dy * this.orbitSensitivity;
-            this.orbitCamera.yaw -= event.dx * this.orbitSensitivity;
+            this.orbitCamera.pitch -= dy * this.orbitSensitivity;
+            this.orbitCamera.yaw -= dx * this.orbitSensitivity;
 
         } else if (this.isPanButtonDown) {
             this.pan(event);
@@ -470,7 +475,7 @@ class OrbitCameraInput_Mouse extends Tool<OrbitCameraInputOption, unknown>
      * 鼠标抬起事件监听
      * @param event 鼠标抬起事件
      */
-    private onMouseUp(event: { button: number })
+    private onMouseUp(event: any)
     {
         switch (event.button) {
             case pc.MOUSEBUTTON_LEFT:
@@ -481,6 +486,7 @@ class OrbitCameraInput_Mouse extends Tool<OrbitCameraInputOption, unknown>
                 break;
             case pc.MOUSEBUTTON_RIGHT:
                 this.isLookButtonDown = false;
+                this.orbitCamera.isLooking = false;
                 break;
         }
     }
@@ -489,10 +495,9 @@ class OrbitCameraInput_Mouse extends Tool<OrbitCameraInputOption, unknown>
      * 鼠标滚轮事件监听
      * @param event 鼠标滚轮事件
      */
-    private onMouseWheel(event: { wheel: number, preventDefault: Function }): void
+    private onMouseWheel(event: any): void
     {
         this.orbitCamera.distance -= event.wheel * this.distanceSensitivity * (this.orbitCamera.distance * 0.1);
-        event.preventDefault();
     }
 
     /**
@@ -577,7 +582,7 @@ class OrbitCameraInput_TouchScreen extends Tool<OrbitCameraInputOption, unknown>
      * 触屏操作开始，结束，取消事件回调
      * @param event 触屏开始，结束，取消事件
      */
-    private onTouchStartEndCancel(event: { touches: point[] }): void
+    private onTouchStartEndCancel(event: any): void
     {
         var touches = event.touches;
         if (touches.length == 1) {
@@ -593,7 +598,7 @@ class OrbitCameraInput_TouchScreen extends Tool<OrbitCameraInputOption, unknown>
      * 触屏移动事件回调
      * @param event 触屏移动事件
      */
-    private onTouchMove(event): void
+    private onTouchMove(event: any): void
     {
         var touches = event.touches;
         if (touches.length == 1) {

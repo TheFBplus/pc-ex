@@ -85,7 +85,7 @@ pc.Vec2.constructor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10843
+node_modules/playcanvas/build/playcanvas.d.ts:8781
 
 ## Properties
 
@@ -101,7 +101,7 @@ pc.Vec2.x
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10849
+node_modules/playcanvas/build/playcanvas.d.ts:8787
 
 ___
 
@@ -117,7 +117,7 @@ pc.Vec2.y
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10855
+node_modules/playcanvas/build/playcanvas.d.ts:8793
 
 ___
 
@@ -135,7 +135,7 @@ pc.Vec2.DOWN
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10819
+node_modules/playcanvas/build/playcanvas.d.ts:8757
 
 ___
 
@@ -153,7 +153,7 @@ pc.Vec2.LEFT
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10833
+node_modules/playcanvas/build/playcanvas.d.ts:8771
 
 ___
 
@@ -171,7 +171,7 @@ pc.Vec2.ONE
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10805
+node_modules/playcanvas/build/playcanvas.d.ts:8743
 
 ___
 
@@ -189,7 +189,7 @@ pc.Vec2.RIGHT
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10826
+node_modules/playcanvas/build/playcanvas.d.ts:8764
 
 ___
 
@@ -207,7 +207,7 @@ pc.Vec2.UP
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10812
+node_modules/playcanvas/build/playcanvas.d.ts:8750
 
 ___
 
@@ -225,7 +225,7 @@ pc.Vec2.ZERO
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10798
+node_modules/playcanvas/build/playcanvas.d.ts:8736
 
 ## Accessors
 
@@ -278,7 +278,7 @@ pc.Vec2.add
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10870
+node_modules/playcanvas/build/playcanvas.d.ts:8808
 
 ___
 
@@ -317,7 +317,7 @@ pc.Vec2.add2
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10887
+node_modules/playcanvas/build/playcanvas.d.ts:8825
 
 ___
 
@@ -353,7 +353,7 @@ pc.Vec2.addScalar
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10901
+node_modules/playcanvas/build/playcanvas.d.ts:8839
 
 ___
 
@@ -375,7 +375,7 @@ pc.Vec2.ceil
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11135
+node_modules/playcanvas/build/playcanvas.d.ts:9073
 
 ___
 
@@ -402,7 +402,7 @@ pc.Vec2.clone
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10911
+node_modules/playcanvas/build/playcanvas.d.ts:8849
 
 ___
 
@@ -438,7 +438,7 @@ pc.Vec2.copy
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10925
+node_modules/playcanvas/build/playcanvas.d.ts:8863
 
 ___
 
@@ -475,7 +475,7 @@ pc.Vec2.cross
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10940
+node_modules/playcanvas/build/playcanvas.d.ts:8878
 
 ___
 
@@ -509,7 +509,7 @@ pc.Vec2.distance
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10952
+node_modules/playcanvas/build/playcanvas.d.ts:8890
 
 ___
 
@@ -546,7 +546,7 @@ pc.Vec2.div
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10967
+node_modules/playcanvas/build/playcanvas.d.ts:8905
 
 ___
 
@@ -585,7 +585,7 @@ pc.Vec2.div2
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10984
+node_modules/playcanvas/build/playcanvas.d.ts:8922
 
 ___
 
@@ -621,7 +621,7 @@ pc.Vec2.divScalar
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10998
+node_modules/playcanvas/build/playcanvas.d.ts:8936
 
 ___
 
@@ -656,7 +656,7 @@ pc.Vec2.dot
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11011
+node_modules/playcanvas/build/playcanvas.d.ts:8949
 
 ___
 
@@ -689,7 +689,7 @@ pc.Vec2.equals
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11022
+node_modules/playcanvas/build/playcanvas.d.ts:8960
 
 ___
 
@@ -711,7 +711,7 @@ pc.Vec2.floor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11129
+node_modules/playcanvas/build/playcanvas.d.ts:9067
 
 ___
 
@@ -739,7 +739,7 @@ pc.Vec2.length
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11033
+node_modules/playcanvas/build/playcanvas.d.ts:8971
 
 ___
 
@@ -767,7 +767,7 @@ pc.Vec2.lengthSq
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11044
+node_modules/playcanvas/build/playcanvas.d.ts:8982
 
 ___
 
@@ -806,7 +806,7 @@ pc.Vec2.lerp
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11063
+node_modules/playcanvas/build/playcanvas.d.ts:9001
 
 ___
 
@@ -834,7 +834,7 @@ pc.Vec2.max
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11155
+node_modules/playcanvas/build/playcanvas.d.ts:9093
 
 ___
 
@@ -862,7 +862,7 @@ pc.Vec2.min
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11148
+node_modules/playcanvas/build/playcanvas.d.ts:9086
 
 ___
 
@@ -899,7 +899,7 @@ pc.Vec2.mul
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11078
+node_modules/playcanvas/build/playcanvas.d.ts:9016
 
 ___
 
@@ -938,7 +938,7 @@ pc.Vec2.mul2
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11095
+node_modules/playcanvas/build/playcanvas.d.ts:9033
 
 ___
 
@@ -974,7 +974,7 @@ pc.Vec2.mulScalar
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11109
+node_modules/playcanvas/build/playcanvas.d.ts:9047
 
 ___
 
@@ -1005,7 +1005,7 @@ pc.Vec2.normalize
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11123
+node_modules/playcanvas/build/playcanvas.d.ts:9061
 
 ___
 
@@ -1027,7 +1027,7 @@ pc.Vec2.round
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11141
+node_modules/playcanvas/build/playcanvas.d.ts:9079
 
 ___
 
@@ -1063,7 +1063,7 @@ pc.Vec2.set
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11169
+node_modules/playcanvas/build/playcanvas.d.ts:9107
 
 ___
 
@@ -1100,7 +1100,7 @@ pc.Vec2.sub
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11184
+node_modules/playcanvas/build/playcanvas.d.ts:9122
 
 ___
 
@@ -1139,7 +1139,7 @@ pc.Vec2.sub2
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11201
+node_modules/playcanvas/build/playcanvas.d.ts:9139
 
 ___
 
@@ -1175,7 +1175,7 @@ pc.Vec2.subScalar
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11215
+node_modules/playcanvas/build/playcanvas.d.ts:9153
 
 ___
 
@@ -1202,4 +1202,4 @@ pc.Vec2.toString
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:11225
+node_modules/playcanvas/build/playcanvas.d.ts:9163

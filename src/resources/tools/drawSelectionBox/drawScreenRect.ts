@@ -2,16 +2,16 @@
  * @ 创建者: 陈伟
  * @ 创建时间: 2022-05-16 13:41:42
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-08 19:08:14
+ * @ 修改时间: 2022-06-13 17:01:36
  * @ 详情: 在屏幕空间绘制矩形
  */
 
 import * as pc from "playcanvas";
-import fs from "raw-loader!../../shaders/ScreenQuadPS.frag";
-import vs from "raw-loader!../../shaders/ScreenQuadVS.vert";
 
 import { Color_EX } from "../../../extension/extendClasses/color";
 import { cast } from "../../../lib/cast";
+import fs from "../../shaders/ScreenQuadPS.frag";
+import vs from "../../shaders/ScreenQuadVS.vert";
 
 const defaultRect = new pc.Vec4(0, 0, 1, 1);
 const defaultColor = pc.Color.WHITE.clone();

@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-05-16 14:30:00
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-08 18:49:21
+ * @ 修改时间: 2022-06-14 10:21:27
  * @ 详情: 多选模型
  */
 
@@ -20,14 +20,16 @@ type SelectorOptions = {
     inputHandler: Tool<unknown, InputEvents>;
     pickCamera?: pc.CameraComponent;
     pickAreaScale?: number;
+    boxLayer?: pc.Layer;
     excludeLayers?: pc.Layer[];
     expectCondition?: () => boolean
 };
 
-export default class MultiSelector extends Tool<SelectorOptions, MultiSelectorEventType>
+export class MultiSelector extends Tool<SelectorOptions, MultiSelectorEventType>
 {
     private picker: pc.Picker;
     private pickAreaScale: number;
+    private boxLayer: pc.Layer;
     private pickLayers: pc.Layer[];
     private expectCondition: () => boolean;
     private pickCamera: pc.CameraComponent;
@@ -57,6 +59,7 @@ export default class MultiSelector extends Tool<SelectorOptions, MultiSelectorEv
         this.inputHander = option.inputHandler;
         this.pickCamera = option?.pickCamera ?? pc.app.context.systems.camera.cameras[0];
         this.pickAreaScale = option?.pickAreaScale ?? 0.25;
+        this.boxLayer = option?.boxLayer ?? pc.app.scene.layers.getLayerByName("UI");
         this.pickLayers = option?.excludeLayers ? pc.app.scene.layers.layerList.filter((layer: pc.Layer) => !option.excludeLayers.includes(layer)) : pc.app.scene.layers.layerList;
         this.expectCondition = option?.expectCondition;
     }
@@ -85,12 +88,13 @@ export default class MultiSelector extends Tool<SelectorOptions, MultiSelectorEv
                 }
             });
             if (!this.isNodesEqual(this.pickNodes, pickNodes)) {
-                this.eventHandler.fire("selecting", this.updatePickNodes(pickNodes));
+                const prePickNodes = [...this.pickNodes];
+                this.eventHandler.fire("selecting", this.updatePickNodes(pickNodes), prePickNodes);
             }
         }
         else {
+            this.eventHandler.fire("selecting", [], this.pickNodes);
             this.pickNodes = [];
-            this.eventHandler.fire("selecting", null);
         }
     }
 
@@ -119,7 +123,7 @@ export default class MultiSelector extends Tool<SelectorOptions, MultiSelectorEv
                 }
             }
         }
-        return [].concat(this.pickNodes);
+        return [...this.pickNodes];
     }
 
     /**
@@ -151,7 +155,7 @@ export default class MultiSelector extends Tool<SelectorOptions, MultiSelectorEv
      */
     private onControlDown(event: { x: number, y: number }): void
     {
-        if (!this.expectCondition()) {
+        if (!this.expectCondition || !this.expectCondition()) {
             this.isSelecting = true;
             this.eventHandler.fire("selectStart");
         }
@@ -166,7 +170,7 @@ export default class MultiSelector extends Tool<SelectorOptions, MultiSelectorEv
     {
         if (!this.isSelecting || this.expectCondition && this.expectCondition()) { return; }
 
-        this.pickRect.copy(drawSelectionBox({ x: event.ox, y: event.oy }, { x: event.x, y: event.y }));
+        this.pickRect.copy(drawSelectionBox({ x: event.ox, y: event.oy }, { x: event.x, y: event.y }, this.boxLayer));
         this.pick(this.pickRect);
     }
 

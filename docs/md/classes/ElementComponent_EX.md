@@ -31,6 +31,7 @@
 - [\_dirtyLocal](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#_dirtylocal)
 - [\_dirtyWorld](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#_dirtyworld)
 - [\_drawOrder](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#_draworder)
+- [\_fitMode](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#_fitmode)
 - [\_group](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#_group)
 - [\_height](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#_height)
 - [\_image](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#_image)
@@ -80,6 +81,7 @@
 - [drawOrder](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#draworder)
 - [enableMarkup](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#enablemarkup)
 - [enabled](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#enabled)
+- [fitMode](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#fitmode)
 - [font](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#font)
 - [fontAsset](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#fontasset)
 - [fontSize](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#fontsize)
@@ -131,6 +133,7 @@
 - [\_calculateLocalAnchors](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#_calculatelocalanchors)
 - [\_calculateSize](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#_calculatesize)
 - [\_dirtifyMask](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#_dirtifymask)
+- [\_dirtyBatch](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#_dirtybatch)
 - [\_flagChildrenAsDirty](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#_flagchildrenasdirty)
 - [\_isScreenCulled](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#_isscreenculled)
 - [\_isScreenSpace](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#_isscreenspace)
@@ -198,7 +201,7 @@ pc.ElementComponent.constructor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14753
+node_modules/playcanvas/build/playcanvas.d.ts:14490
 
 ## Properties
 
@@ -212,7 +215,7 @@ pc.ElementComponent.\_addedModels
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14901
+node_modules/playcanvas/build/playcanvas.d.ts:14639
 
 ___
 
@@ -226,7 +229,7 @@ pc.ElementComponent.\_anchor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14867
+node_modules/playcanvas/build/playcanvas.d.ts:14604
 
 ___
 
@@ -240,7 +243,7 @@ pc.ElementComponent.\_anchorDirty
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14878
+node_modules/playcanvas/build/playcanvas.d.ts:14615
 
 ___
 
@@ -254,7 +257,7 @@ pc.ElementComponent.\_anchorTransform
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14877
+node_modules/playcanvas/build/playcanvas.d.ts:14614
 
 ___
 
@@ -268,7 +271,7 @@ pc.ElementComponent.\_batchGroup
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14903
+node_modules/playcanvas/build/playcanvas.d.ts:14641
 
 ___
 
@@ -282,7 +285,7 @@ pc.ElementComponent.\_batchGroupId
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14902
+node_modules/playcanvas/build/playcanvas.d.ts:14640
 
 ___
 
@@ -296,7 +299,7 @@ pc.ElementComponent.\_beingInitialized
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14866
+node_modules/playcanvas/build/playcanvas.d.ts:14603
 
 ___
 
@@ -310,7 +313,7 @@ pc.ElementComponent.\_calculatedHeight
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14873
+node_modules/playcanvas/build/playcanvas.d.ts:14610
 
 ___
 
@@ -324,7 +327,7 @@ pc.ElementComponent.\_calculatedWidth
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14871
+node_modules/playcanvas/build/playcanvas.d.ts:14608
 
 ___
 
@@ -338,7 +341,7 @@ pc.ElementComponent.\_canvasCorners
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14882
+node_modules/playcanvas/build/playcanvas.d.ts:14619
 
 ___
 
@@ -352,7 +355,7 @@ pc.ElementComponent.\_canvasCornersDirty
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14885
+node_modules/playcanvas/build/playcanvas.d.ts:14622
 
 ___
 
@@ -366,7 +369,7 @@ pc.ElementComponent.\_cornersDirty
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14884
+node_modules/playcanvas/build/playcanvas.d.ts:14621
 
 ___
 
@@ -380,7 +383,7 @@ pc.ElementComponent.\_dirtyLocal
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15105
+node_modules/playcanvas/build/playcanvas.d.ts:14855
 
 ___
 
@@ -394,7 +397,7 @@ pc.ElementComponent.\_dirtyWorld
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15106
+node_modules/playcanvas/build/playcanvas.d.ts:14856
 
 ___
 
@@ -408,7 +411,21 @@ pc.ElementComponent.\_drawOrder
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14898
+node_modules/playcanvas/build/playcanvas.d.ts:14635
+
+___
+
+### \_fitMode
+
+• **\_fitMode**: `string`
+
+#### Inherited from
+
+pc.ElementComponent.\_fitMode
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:14636
 
 ___
 
@@ -422,7 +439,7 @@ pc.ElementComponent.\_group
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14897
+node_modules/playcanvas/build/playcanvas.d.ts:14634
 
 ___
 
@@ -436,7 +453,7 @@ pc.ElementComponent.\_height
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14872
+node_modules/playcanvas/build/playcanvas.d.ts:14609
 
 ___
 
@@ -450,7 +467,7 @@ pc.ElementComponent.\_image
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14895
+node_modules/playcanvas/build/playcanvas.d.ts:14632
 
 ___
 
@@ -464,7 +481,7 @@ pc.ElementComponent.\_layers
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14900
+node_modules/playcanvas/build/playcanvas.d.ts:14638
 
 ___
 
@@ -478,7 +495,7 @@ pc.ElementComponent.\_localAnchor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14868
+node_modules/playcanvas/build/playcanvas.d.ts:14605
 
 ___
 
@@ -492,7 +509,7 @@ pc.ElementComponent.\_margin
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14874
+node_modules/playcanvas/build/playcanvas.d.ts:14611
 
 ___
 
@@ -506,7 +523,7 @@ pc.ElementComponent.\_maskOffset
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14905
+node_modules/playcanvas/build/playcanvas.d.ts:14643
 
 ___
 
@@ -520,7 +537,7 @@ pc.ElementComponent.\_maskedBy
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14906
+node_modules/playcanvas/build/playcanvas.d.ts:14644
 
 ___
 
@@ -534,7 +551,7 @@ pc.ElementComponent.\_modelTransform
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14875
+node_modules/playcanvas/build/playcanvas.d.ts:14612
 
 ___
 
@@ -548,7 +565,7 @@ pc.ElementComponent.\_offsetReadAt
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14904
+node_modules/playcanvas/build/playcanvas.d.ts:14642
 
 ___
 
@@ -562,7 +579,7 @@ pc.ElementComponent.\_parentWorldTransform
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14879
+node_modules/playcanvas/build/playcanvas.d.ts:14616
 
 ___
 
@@ -576,7 +593,7 @@ pc.ElementComponent.\_pivot
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14869
+node_modules/playcanvas/build/playcanvas.d.ts:14606
 
 ___
 
@@ -590,7 +607,7 @@ pc.ElementComponent.\_screenCorners
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14881
+node_modules/playcanvas/build/playcanvas.d.ts:14618
 
 ___
 
@@ -604,7 +621,7 @@ pc.ElementComponent.\_screenToWorld
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14876
+node_modules/playcanvas/build/playcanvas.d.ts:14613
 
 ___
 
@@ -618,7 +635,7 @@ pc.ElementComponent.\_screenTransform
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14880
+node_modules/playcanvas/build/playcanvas.d.ts:14617
 
 ___
 
@@ -632,7 +649,7 @@ pc.ElementComponent.\_sizeDirty
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15130
+node_modules/playcanvas/build/playcanvas.d.ts:14880
 
 ___
 
@@ -646,7 +663,7 @@ pc.ElementComponent.\_text
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14896
+node_modules/playcanvas/build/playcanvas.d.ts:14633
 
 ___
 
@@ -660,7 +677,7 @@ pc.ElementComponent.\_type
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14894
+node_modules/playcanvas/build/playcanvas.d.ts:14631
 
 ___
 
@@ -674,7 +691,7 @@ pc.ElementComponent.\_useInput
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14899
+node_modules/playcanvas/build/playcanvas.d.ts:14637
 
 ___
 
@@ -688,7 +705,7 @@ pc.ElementComponent.\_width
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14870
+node_modules/playcanvas/build/playcanvas.d.ts:14607
 
 ___
 
@@ -702,7 +719,7 @@ pc.ElementComponent.\_worldCorners
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14883
+node_modules/playcanvas/build/playcanvas.d.ts:14620
 
 ___
 
@@ -716,7 +733,7 @@ pc.ElementComponent.\_worldCornersDirty
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14886
+node_modules/playcanvas/build/playcanvas.d.ts:14623
 
 ___
 
@@ -733,7 +750,7 @@ pc.ElementComponent.screen
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14893
+node_modules/playcanvas/build/playcanvas.d.ts:14630
 
 ## Accessors
 
@@ -751,7 +768,7 @@ pc.ElementComponent.\_absBottom
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14910
+node_modules/playcanvas/build/playcanvas.d.ts:14648
 
 ___
 
@@ -769,7 +786,7 @@ pc.ElementComponent.\_absLeft
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14907
+node_modules/playcanvas/build/playcanvas.d.ts:14645
 
 ___
 
@@ -787,7 +804,7 @@ pc.ElementComponent.\_absRight
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14908
+node_modules/playcanvas/build/playcanvas.d.ts:14646
 
 ___
 
@@ -805,7 +822,7 @@ pc.ElementComponent.\_absTop
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14909
+node_modules/playcanvas/build/playcanvas.d.ts:14647
 
 ___
 
@@ -823,7 +840,7 @@ pc.ElementComponent.\_hasSplitAnchorsX
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14911
+node_modules/playcanvas/build/playcanvas.d.ts:14649
 
 ___
 
@@ -841,7 +858,7 @@ pc.ElementComponent.\_hasSplitAnchorsY
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14912
+node_modules/playcanvas/build/playcanvas.d.ts:14650
 
 ___
 
@@ -859,7 +876,7 @@ pc.ElementComponent.aabb
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14913
+node_modules/playcanvas/build/playcanvas.d.ts:14651
 
 ___
 
@@ -877,7 +894,7 @@ pc.ElementComponent.alignment
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14756
+node_modules/playcanvas/build/playcanvas.d.ts:14493
 
 • `set` **alignment**(`arg`): `void`
 
@@ -897,7 +914,7 @@ pc.ElementComponent.alignment
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14755
+node_modules/playcanvas/build/playcanvas.d.ts:14492
 
 ___
 
@@ -922,7 +939,7 @@ pc.ElementComponent.anchor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14925
+node_modules/playcanvas/build/playcanvas.d.ts:14663
 
 • `set` **anchor**(`arg`): `void`
 
@@ -949,7 +966,7 @@ pc.ElementComponent.anchor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14924
+node_modules/playcanvas/build/playcanvas.d.ts:14662
 
 ___
 
@@ -967,7 +984,7 @@ pc.ElementComponent.autoFitHeight
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14759
+node_modules/playcanvas/build/playcanvas.d.ts:14496
 
 • `set` **autoFitHeight**(`arg`): `void`
 
@@ -987,7 +1004,7 @@ pc.ElementComponent.autoFitHeight
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14758
+node_modules/playcanvas/build/playcanvas.d.ts:14495
 
 ___
 
@@ -1005,7 +1022,7 @@ pc.ElementComponent.autoFitWidth
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14762
+node_modules/playcanvas/build/playcanvas.d.ts:14499
 
 • `set` **autoFitWidth**(`arg`): `void`
 
@@ -1025,7 +1042,7 @@ pc.ElementComponent.autoFitWidth
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14761
+node_modules/playcanvas/build/playcanvas.d.ts:14498
 
 ___
 
@@ -1043,7 +1060,7 @@ pc.ElementComponent.autoHeight
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14765
+node_modules/playcanvas/build/playcanvas.d.ts:14502
 
 • `set` **autoHeight**(`arg`): `void`
 
@@ -1063,7 +1080,7 @@ pc.ElementComponent.autoHeight
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14764
+node_modules/playcanvas/build/playcanvas.d.ts:14501
 
 ___
 
@@ -1081,7 +1098,7 @@ pc.ElementComponent.autoWidth
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14768
+node_modules/playcanvas/build/playcanvas.d.ts:14505
 
 • `set` **autoWidth**(`arg`): `void`
 
@@ -1101,7 +1118,7 @@ pc.ElementComponent.autoWidth
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14767
+node_modules/playcanvas/build/playcanvas.d.ts:14504
 
 ___
 
@@ -1121,7 +1138,7 @@ pc.ElementComponent.batchGroupId
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14932
+node_modules/playcanvas/build/playcanvas.d.ts:14670
 
 • `set` **batchGroupId**(`arg`): `void`
 
@@ -1143,7 +1160,7 @@ pc.ElementComponent.batchGroupId
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14931
+node_modules/playcanvas/build/playcanvas.d.ts:14669
 
 ___
 
@@ -1164,7 +1181,7 @@ pc.ElementComponent.bottom
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14940
+node_modules/playcanvas/build/playcanvas.d.ts:14678
 
 • `set` **bottom**(`arg`): `void`
 
@@ -1187,7 +1204,7 @@ pc.ElementComponent.bottom
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14939
+node_modules/playcanvas/build/playcanvas.d.ts:14677
 
 ___
 
@@ -1227,7 +1244,7 @@ pc.ElementComponent.calculatedHeight
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14962
+node_modules/playcanvas/build/playcanvas.d.ts:14700
 
 • `set` **calculatedHeight**(`arg`): `void`
 
@@ -1253,7 +1270,7 @@ pc.ElementComponent.calculatedHeight
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14961
+node_modules/playcanvas/build/playcanvas.d.ts:14699
 
 ___
 
@@ -1277,7 +1294,7 @@ pc.ElementComponent.calculatedWidth
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14951
+node_modules/playcanvas/build/playcanvas.d.ts:14689
 
 • `set` **calculatedWidth**(`arg`): `void`
 
@@ -1303,7 +1320,7 @@ pc.ElementComponent.calculatedWidth
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14950
+node_modules/playcanvas/build/playcanvas.d.ts:14688
 
 ___
 
@@ -1325,7 +1342,7 @@ pc.ElementComponent.canvasCorners
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14970
+node_modules/playcanvas/build/playcanvas.d.ts:14708
 
 ___
 
@@ -1343,7 +1360,7 @@ pc.ElementComponent.color
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14771
+node_modules/playcanvas/build/playcanvas.d.ts:14508
 
 • `set` **color**(`arg`): `void`
 
@@ -1363,7 +1380,7 @@ pc.ElementComponent.color
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14770
+node_modules/playcanvas/build/playcanvas.d.ts:14507
 
 ___
 
@@ -1384,7 +1401,7 @@ pc.ElementComponent.drawOrder
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14978
+node_modules/playcanvas/build/playcanvas.d.ts:14716
 
 • `set` **drawOrder**(`arg`): `void`
 
@@ -1407,7 +1424,7 @@ pc.ElementComponent.drawOrder
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14977
+node_modules/playcanvas/build/playcanvas.d.ts:14715
 
 ___
 
@@ -1425,7 +1442,7 @@ pc.ElementComponent.enableMarkup
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14774
+node_modules/playcanvas/build/playcanvas.d.ts:14511
 
 • `set` **enableMarkup**(`arg`): `void`
 
@@ -1445,7 +1462,7 @@ pc.ElementComponent.enableMarkup
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14773
+node_modules/playcanvas/build/playcanvas.d.ts:14510
 
 ___
 
@@ -1463,7 +1480,7 @@ pc.ElementComponent.enabled
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9611
+node_modules/playcanvas/build/playcanvas.d.ts:7545
 
 • `set` **enabled**(`arg`): `void`
 
@@ -1483,7 +1500,59 @@ pc.ElementComponent.enabled
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9610
+node_modules/playcanvas/build/playcanvas.d.ts:7544
+
+___
+
+### fitMode
+
+• `get` **fitMode**(): `string`
+
+Set how the content should be fitted and preserve the aspect ratio of the source texture or sprite.
+Only works for {@link ELEMENTTYPE_IMAGE} types. Can be:
+
+- {@link FITMODE_STRETCH}: Fit the content exactly to Element's bounding box.
+- {@link FITMODE_CONTAIN}: Fit the content within the Element's bounding box while preserving its Aspect Ratio.
+- {@link FITMODE_COVER}: Fit the content to cover the entire Element's bounding box while preserving its Aspect Ratio.
+
+#### Returns
+
+`string`
+
+#### Inherited from
+
+pc.ElementComponent.fitMode
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:14832
+
+• `set` **fitMode**(`arg`): `void`
+
+Set how the content should be fitted and preserve the aspect ratio of the source texture or sprite.
+Only works for {@link ELEMENTTYPE_IMAGE} types. Can be:
+
+- {@link FITMODE_STRETCH}: Fit the content exactly to Element's bounding box.
+- {@link FITMODE_CONTAIN}: Fit the content within the Element's bounding box while preserving its Aspect Ratio.
+- {@link FITMODE_COVER}: Fit the content to cover the entire Element's bounding box while preserving its Aspect Ratio.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `arg` | `string` |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+pc.ElementComponent.fitMode
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:14831
 
 ___
 
@@ -1501,7 +1570,7 @@ pc.ElementComponent.font
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14777
+node_modules/playcanvas/build/playcanvas.d.ts:14514
 
 • `set` **font**(`arg`): `void`
 
@@ -1521,7 +1590,7 @@ pc.ElementComponent.font
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14776
+node_modules/playcanvas/build/playcanvas.d.ts:14513
 
 ___
 
@@ -1539,7 +1608,7 @@ pc.ElementComponent.fontAsset
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14780
+node_modules/playcanvas/build/playcanvas.d.ts:14517
 
 • `set` **fontAsset**(`arg`): `void`
 
@@ -1559,7 +1628,7 @@ pc.ElementComponent.fontAsset
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14779
+node_modules/playcanvas/build/playcanvas.d.ts:14516
 
 ___
 
@@ -1577,7 +1646,7 @@ pc.ElementComponent.fontSize
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14783
+node_modules/playcanvas/build/playcanvas.d.ts:14520
 
 • `set` **fontSize**(`arg`): `void`
 
@@ -1597,7 +1666,7 @@ pc.ElementComponent.fontSize
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14782
+node_modules/playcanvas/build/playcanvas.d.ts:14519
 
 ___
 
@@ -1620,7 +1689,7 @@ pc.ElementComponent.height
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14988
+node_modules/playcanvas/build/playcanvas.d.ts:14726
 
 • `set` **height**(`arg`): `void`
 
@@ -1645,7 +1714,7 @@ pc.ElementComponent.height
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14987
+node_modules/playcanvas/build/playcanvas.d.ts:14725
 
 ___
 
@@ -1663,7 +1732,7 @@ pc.ElementComponent.key
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14786
+node_modules/playcanvas/build/playcanvas.d.ts:14523
 
 • `set` **key**(`arg`): `void`
 
@@ -1683,7 +1752,7 @@ pc.ElementComponent.key
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14785
+node_modules/playcanvas/build/playcanvas.d.ts:14522
 
 ___
 
@@ -1704,7 +1773,7 @@ pc.ElementComponent.layers
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14996
+node_modules/playcanvas/build/playcanvas.d.ts:14734
 
 • `set` **layers**(`arg`): `void`
 
@@ -1727,7 +1796,7 @@ pc.ElementComponent.layers
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14995
+node_modules/playcanvas/build/playcanvas.d.ts:14733
 
 ___
 
@@ -1748,7 +1817,7 @@ pc.ElementComponent.left
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15004
+node_modules/playcanvas/build/playcanvas.d.ts:14742
 
 • `set` **left**(`arg`): `void`
 
@@ -1771,7 +1840,7 @@ pc.ElementComponent.left
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15003
+node_modules/playcanvas/build/playcanvas.d.ts:14741
 
 ___
 
@@ -1789,7 +1858,7 @@ pc.ElementComponent.lineHeight
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14789
+node_modules/playcanvas/build/playcanvas.d.ts:14526
 
 • `set` **lineHeight**(`arg`): `void`
 
@@ -1809,7 +1878,7 @@ pc.ElementComponent.lineHeight
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14788
+node_modules/playcanvas/build/playcanvas.d.ts:14525
 
 ___
 
@@ -1831,7 +1900,7 @@ pc.ElementComponent.margin
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15013
+node_modules/playcanvas/build/playcanvas.d.ts:14751
 
 • `set` **margin**(`arg`): `void`
 
@@ -1855,7 +1924,7 @@ pc.ElementComponent.margin
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15012
+node_modules/playcanvas/build/playcanvas.d.ts:14750
 
 ___
 
@@ -1873,7 +1942,7 @@ pc.ElementComponent.mask
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14792
+node_modules/playcanvas/build/playcanvas.d.ts:14529
 
 • `set` **mask**(`arg`): `void`
 
@@ -1893,7 +1962,7 @@ pc.ElementComponent.mask
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14791
+node_modules/playcanvas/build/playcanvas.d.ts:14528
 
 ___
 
@@ -1911,7 +1980,7 @@ pc.ElementComponent.material
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14795
+node_modules/playcanvas/build/playcanvas.d.ts:14532
 
 • `set` **material**(`arg`): `void`
 
@@ -1931,7 +2000,7 @@ pc.ElementComponent.material
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14794
+node_modules/playcanvas/build/playcanvas.d.ts:14531
 
 ___
 
@@ -1949,7 +2018,7 @@ pc.ElementComponent.materialAsset
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14798
+node_modules/playcanvas/build/playcanvas.d.ts:14535
 
 • `set` **materialAsset**(`arg`): `void`
 
@@ -1969,7 +2038,7 @@ pc.ElementComponent.materialAsset
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14797
+node_modules/playcanvas/build/playcanvas.d.ts:14534
 
 ___
 
@@ -1987,7 +2056,7 @@ pc.ElementComponent.maxFontSize
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14801
+node_modules/playcanvas/build/playcanvas.d.ts:14538
 
 • `set` **maxFontSize**(`arg`): `void`
 
@@ -2007,7 +2076,7 @@ pc.ElementComponent.maxFontSize
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14800
+node_modules/playcanvas/build/playcanvas.d.ts:14537
 
 ___
 
@@ -2025,7 +2094,7 @@ pc.ElementComponent.maxLines
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14804
+node_modules/playcanvas/build/playcanvas.d.ts:14541
 
 • `set` **maxLines**(`arg`): `void`
 
@@ -2045,7 +2114,7 @@ pc.ElementComponent.maxLines
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14803
+node_modules/playcanvas/build/playcanvas.d.ts:14540
 
 ___
 
@@ -2063,7 +2132,7 @@ pc.ElementComponent.minFontSize
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14807
+node_modules/playcanvas/build/playcanvas.d.ts:14544
 
 • `set` **minFontSize**(`arg`): `void`
 
@@ -2083,7 +2152,7 @@ pc.ElementComponent.minFontSize
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14806
+node_modules/playcanvas/build/playcanvas.d.ts:14543
 
 ___
 
@@ -2101,7 +2170,7 @@ pc.ElementComponent.opacity
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14810
+node_modules/playcanvas/build/playcanvas.d.ts:14547
 
 • `set` **opacity**(`arg`): `void`
 
@@ -2121,7 +2190,7 @@ pc.ElementComponent.opacity
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14809
+node_modules/playcanvas/build/playcanvas.d.ts:14546
 
 ___
 
@@ -2139,7 +2208,7 @@ pc.ElementComponent.outlineColor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14813
+node_modules/playcanvas/build/playcanvas.d.ts:14550
 
 • `set` **outlineColor**(`arg`): `void`
 
@@ -2159,7 +2228,7 @@ pc.ElementComponent.outlineColor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14812
+node_modules/playcanvas/build/playcanvas.d.ts:14549
 
 ___
 
@@ -2177,7 +2246,7 @@ pc.ElementComponent.outlineThickness
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14816
+node_modules/playcanvas/build/playcanvas.d.ts:14553
 
 • `set` **outlineThickness**(`arg`): `void`
 
@@ -2197,7 +2266,7 @@ pc.ElementComponent.outlineThickness
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14815
+node_modules/playcanvas/build/playcanvas.d.ts:14552
 
 ___
 
@@ -2218,7 +2287,7 @@ pc.ElementComponent.pivot
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15028
+node_modules/playcanvas/build/playcanvas.d.ts:14766
 
 • `set` **pivot**(`arg`): `void`
 
@@ -2241,7 +2310,7 @@ pc.ElementComponent.pivot
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15027
+node_modules/playcanvas/build/playcanvas.d.ts:14765
 
 ___
 
@@ -2259,7 +2328,7 @@ pc.ElementComponent.pixelsPerUnit
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14819
+node_modules/playcanvas/build/playcanvas.d.ts:14556
 
 • `set` **pixelsPerUnit**(`arg`): `void`
 
@@ -2279,7 +2348,7 @@ pc.ElementComponent.pixelsPerUnit
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14818
+node_modules/playcanvas/build/playcanvas.d.ts:14555
 
 ___
 
@@ -2297,7 +2366,7 @@ pc.ElementComponent.rangeEnd
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14822
+node_modules/playcanvas/build/playcanvas.d.ts:14559
 
 • `set` **rangeEnd**(`arg`): `void`
 
@@ -2317,7 +2386,7 @@ pc.ElementComponent.rangeEnd
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14821
+node_modules/playcanvas/build/playcanvas.d.ts:14558
 
 ___
 
@@ -2335,7 +2404,7 @@ pc.ElementComponent.rangeStart
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14825
+node_modules/playcanvas/build/playcanvas.d.ts:14562
 
 • `set` **rangeStart**(`arg`): `void`
 
@@ -2355,7 +2424,7 @@ pc.ElementComponent.rangeStart
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14824
+node_modules/playcanvas/build/playcanvas.d.ts:14561
 
 ___
 
@@ -2373,7 +2442,7 @@ pc.ElementComponent.rect
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14828
+node_modules/playcanvas/build/playcanvas.d.ts:14565
 
 • `set` **rect**(`arg`): `void`
 
@@ -2393,7 +2462,7 @@ pc.ElementComponent.rect
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14827
+node_modules/playcanvas/build/playcanvas.d.ts:14564
 
 ___
 
@@ -2414,7 +2483,7 @@ pc.ElementComponent.right
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15036
+node_modules/playcanvas/build/playcanvas.d.ts:14774
 
 • `set` **right**(`arg`): `void`
 
@@ -2437,7 +2506,7 @@ pc.ElementComponent.right
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15035
+node_modules/playcanvas/build/playcanvas.d.ts:14773
 
 ___
 
@@ -2455,7 +2524,7 @@ pc.ElementComponent.rtlReorder
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14831
+node_modules/playcanvas/build/playcanvas.d.ts:14568
 
 • `set` **rtlReorder**(`arg`): `void`
 
@@ -2475,7 +2544,7 @@ pc.ElementComponent.rtlReorder
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14830
+node_modules/playcanvas/build/playcanvas.d.ts:14567
 
 ___
 
@@ -2496,7 +2565,7 @@ pc.ElementComponent.screenCorners
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15043
+node_modules/playcanvas/build/playcanvas.d.ts:14781
 
 ___
 
@@ -2514,7 +2583,7 @@ pc.ElementComponent.shadowColor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14834
+node_modules/playcanvas/build/playcanvas.d.ts:14571
 
 • `set` **shadowColor**(`arg`): `void`
 
@@ -2534,7 +2603,7 @@ pc.ElementComponent.shadowColor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14833
+node_modules/playcanvas/build/playcanvas.d.ts:14570
 
 ___
 
@@ -2552,7 +2621,7 @@ pc.ElementComponent.shadowOffset
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14837
+node_modules/playcanvas/build/playcanvas.d.ts:14574
 
 • `set` **shadowOffset**(`arg`): `void`
 
@@ -2572,7 +2641,7 @@ pc.ElementComponent.shadowOffset
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14836
+node_modules/playcanvas/build/playcanvas.d.ts:14573
 
 ___
 
@@ -2590,7 +2659,7 @@ pc.ElementComponent.spacing
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14840
+node_modules/playcanvas/build/playcanvas.d.ts:14577
 
 • `set` **spacing**(`arg`): `void`
 
@@ -2610,7 +2679,7 @@ pc.ElementComponent.spacing
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14839
+node_modules/playcanvas/build/playcanvas.d.ts:14576
 
 ___
 
@@ -2628,7 +2697,7 @@ pc.ElementComponent.sprite
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14843
+node_modules/playcanvas/build/playcanvas.d.ts:14580
 
 • `set` **sprite**(`arg`): `void`
 
@@ -2648,7 +2717,7 @@ pc.ElementComponent.sprite
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14842
+node_modules/playcanvas/build/playcanvas.d.ts:14579
 
 ___
 
@@ -2666,7 +2735,7 @@ pc.ElementComponent.spriteAsset
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14846
+node_modules/playcanvas/build/playcanvas.d.ts:14583
 
 • `set` **spriteAsset**(`arg`): `void`
 
@@ -2686,7 +2755,7 @@ pc.ElementComponent.spriteAsset
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14845
+node_modules/playcanvas/build/playcanvas.d.ts:14582
 
 ___
 
@@ -2704,7 +2773,7 @@ pc.ElementComponent.spriteFrame
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14849
+node_modules/playcanvas/build/playcanvas.d.ts:14586
 
 • `set` **spriteFrame**(`arg`): `void`
 
@@ -2724,7 +2793,7 @@ pc.ElementComponent.spriteFrame
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14848
+node_modules/playcanvas/build/playcanvas.d.ts:14585
 
 ___
 
@@ -2742,7 +2811,7 @@ pc.ElementComponent.text
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14852
+node_modules/playcanvas/build/playcanvas.d.ts:14589
 
 • `set` **text**(`arg`): `void`
 
@@ -2762,7 +2831,7 @@ pc.ElementComponent.text
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14851
+node_modules/playcanvas/build/playcanvas.d.ts:14588
 
 ___
 
@@ -2782,7 +2851,7 @@ pc.ElementComponent.textHeight
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15055
+node_modules/playcanvas/build/playcanvas.d.ts:14793
 
 ___
 
@@ -2802,7 +2871,7 @@ pc.ElementComponent.textWidth
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15049
+node_modules/playcanvas/build/playcanvas.d.ts:14787
 
 ___
 
@@ -2820,7 +2889,7 @@ pc.ElementComponent.texture
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14855
+node_modules/playcanvas/build/playcanvas.d.ts:14592
 
 • `set` **texture**(`arg`): `void`
 
@@ -2840,7 +2909,7 @@ pc.ElementComponent.texture
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14854
+node_modules/playcanvas/build/playcanvas.d.ts:14591
 
 ___
 
@@ -2858,7 +2927,7 @@ pc.ElementComponent.textureAsset
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14858
+node_modules/playcanvas/build/playcanvas.d.ts:14595
 
 • `set` **textureAsset**(`arg`): `void`
 
@@ -2878,7 +2947,7 @@ pc.ElementComponent.textureAsset
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14857
+node_modules/playcanvas/build/playcanvas.d.ts:14594
 
 ___
 
@@ -2899,7 +2968,7 @@ pc.ElementComponent.top
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15063
+node_modules/playcanvas/build/playcanvas.d.ts:14801
 
 • `set` **top**(`arg`): `void`
 
@@ -2922,7 +2991,7 @@ pc.ElementComponent.top
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15062
+node_modules/playcanvas/build/playcanvas.d.ts:14800
 
 ___
 
@@ -2947,7 +3016,7 @@ pc.ElementComponent.type
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15075
+node_modules/playcanvas/build/playcanvas.d.ts:14813
 
 • `set` **type**(`arg`): `void`
 
@@ -2974,7 +3043,7 @@ pc.ElementComponent.type
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15074
+node_modules/playcanvas/build/playcanvas.d.ts:14812
 
 ___
 
@@ -2992,7 +3061,7 @@ pc.ElementComponent.unicodeConverter
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14861
+node_modules/playcanvas/build/playcanvas.d.ts:14598
 
 • `set` **unicodeConverter**(`arg`): `void`
 
@@ -3012,7 +3081,7 @@ pc.ElementComponent.unicodeConverter
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14860
+node_modules/playcanvas/build/playcanvas.d.ts:14597
 
 ___
 
@@ -3032,7 +3101,7 @@ pc.ElementComponent.useInput
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15082
+node_modules/playcanvas/build/playcanvas.d.ts:14820
 
 • `set` **useInput**(`arg`): `void`
 
@@ -3054,7 +3123,7 @@ pc.ElementComponent.useInput
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15081
+node_modules/playcanvas/build/playcanvas.d.ts:14819
 
 ___
 
@@ -3077,7 +3146,7 @@ pc.ElementComponent.width
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15092
+node_modules/playcanvas/build/playcanvas.d.ts:14842
 
 • `set` **width**(`arg`): `void`
 
@@ -3102,7 +3171,7 @@ pc.ElementComponent.width
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15091
+node_modules/playcanvas/build/playcanvas.d.ts:14841
 
 ___
 
@@ -3123,7 +3192,7 @@ pc.ElementComponent.worldCorners
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15099
+node_modules/playcanvas/build/playcanvas.d.ts:14849
 
 ___
 
@@ -3141,7 +3210,7 @@ pc.ElementComponent.wrapLines
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14864
+node_modules/playcanvas/build/playcanvas.d.ts:14601
 
 • `set` **wrapLines**(`arg`): `void`
 
@@ -3161,7 +3230,7 @@ pc.ElementComponent.wrapLines
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14863
+node_modules/playcanvas/build/playcanvas.d.ts:14600
 
 ## Methods
 
@@ -3185,7 +3254,7 @@ pc.ElementComponent.\_bindScreen
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15110
+node_modules/playcanvas/build/playcanvas.d.ts:14860
 
 ___
 
@@ -3203,7 +3272,7 @@ pc.ElementComponent.\_calculateLocalAnchors
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15123
+node_modules/playcanvas/build/playcanvas.d.ts:14873
 
 ___
 
@@ -3228,7 +3297,7 @@ pc.ElementComponent.\_calculateSize
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15129
+node_modules/playcanvas/build/playcanvas.d.ts:14879
 
 ___
 
@@ -3246,7 +3315,25 @@ pc.ElementComponent.\_dirtifyMask
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15108
+node_modules/playcanvas/build/playcanvas.d.ts:14858
+
+___
+
+### \_dirtyBatch
+
+▸ **_dirtyBatch**(): `void`
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+pc.ElementComponent.\_dirtyBatch
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:14892
 
 ___
 
@@ -3264,7 +3351,7 @@ pc.ElementComponent.\_flagChildrenAsDirty
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15135
+node_modules/playcanvas/build/playcanvas.d.ts:14885
 
 ___
 
@@ -3282,7 +3369,7 @@ pc.ElementComponent.\_isScreenCulled
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15141
+node_modules/playcanvas/build/playcanvas.d.ts:14891
 
 ___
 
@@ -3300,7 +3387,7 @@ pc.ElementComponent.\_isScreenSpace
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15140
+node_modules/playcanvas/build/playcanvas.d.ts:14890
 
 ___
 
@@ -3324,7 +3411,7 @@ pc.ElementComponent.\_onInsert
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15107
+node_modules/playcanvas/build/playcanvas.d.ts:14857
 
 ___
 
@@ -3342,7 +3429,7 @@ pc.ElementComponent.\_onPrerender
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15109
+node_modules/playcanvas/build/playcanvas.d.ts:14859
 
 ___
 
@@ -3360,7 +3447,7 @@ pc.ElementComponent.\_onScreenRemove
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15122
+node_modules/playcanvas/build/playcanvas.d.ts:14872
 
 ___
 
@@ -3384,7 +3471,7 @@ pc.ElementComponent.\_onScreenResize
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15120
+node_modules/playcanvas/build/playcanvas.d.ts:14870
 
 ___
 
@@ -3402,7 +3489,7 @@ pc.ElementComponent.\_onScreenSpaceChange
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15121
+node_modules/playcanvas/build/playcanvas.d.ts:14871
 
 ___
 
@@ -3425,7 +3512,7 @@ pc.ElementComponent.\_parseUpToScreen
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15116
+node_modules/playcanvas/build/playcanvas.d.ts:14866
 
 ___
 
@@ -3443,7 +3530,7 @@ pc.ElementComponent.\_patch
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15100
+node_modules/playcanvas/build/playcanvas.d.ts:14850
 
 ___
 
@@ -3468,7 +3555,7 @@ pc.ElementComponent.\_setCalculatedHeight
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15134
+node_modules/playcanvas/build/playcanvas.d.ts:14884
 
 ___
 
@@ -3493,7 +3580,7 @@ pc.ElementComponent.\_setCalculatedWidth
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15133
+node_modules/playcanvas/build/playcanvas.d.ts:14883
 
 ___
 
@@ -3517,7 +3604,7 @@ pc.ElementComponent.\_setHeight
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15132
+node_modules/playcanvas/build/playcanvas.d.ts:14882
 
 ___
 
@@ -3543,7 +3630,7 @@ pc.ElementComponent.\_setLocalPosition
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15103
+node_modules/playcanvas/build/playcanvas.d.ts:14853
 
 ___
 
@@ -3567,7 +3654,7 @@ pc.ElementComponent.\_setMaskedBy
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15114
+node_modules/playcanvas/build/playcanvas.d.ts:14864
 
 ___
 
@@ -3593,7 +3680,7 @@ pc.ElementComponent.\_setPosition
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15102
+node_modules/playcanvas/build/playcanvas.d.ts:14852
 
 ___
 
@@ -3617,7 +3704,7 @@ pc.ElementComponent.\_setWidth
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15131
+node_modules/playcanvas/build/playcanvas.d.ts:14881
 
 ___
 
@@ -3635,7 +3722,7 @@ pc.ElementComponent.\_sync
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15104
+node_modules/playcanvas/build/playcanvas.d.ts:14854
 
 ___
 
@@ -3659,7 +3746,7 @@ pc.ElementComponent.\_unbindScreen
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15111
+node_modules/playcanvas/build/playcanvas.d.ts:14861
 
 ___
 
@@ -3677,7 +3764,7 @@ pc.ElementComponent.\_unpatch
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15101
+node_modules/playcanvas/build/playcanvas.d.ts:14851
 
 ___
 
@@ -3702,7 +3789,7 @@ pc.ElementComponent.\_updateMask
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15115
+node_modules/playcanvas/build/playcanvas.d.ts:14865
 
 ___
 
@@ -3726,7 +3813,7 @@ pc.ElementComponent.\_updateScreen
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15112
+node_modules/playcanvas/build/playcanvas.d.ts:14862
 
 ___
 
@@ -3750,7 +3837,7 @@ pc.ElementComponent.addModelToLayers
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15136
+node_modules/playcanvas/build/playcanvas.d.ts:14886
 
 ___
 
@@ -3774,7 +3861,7 @@ pc.ElementComponent.buildAccessors
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9627
+node_modules/playcanvas/build/playcanvas.d.ts:7561
 
 ___
 
@@ -3831,7 +3918,7 @@ pc.ElementComponent.getMaskOffset
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15138
+node_modules/playcanvas/build/playcanvas.d.ts:14888
 
 ___
 
@@ -3856,7 +3943,7 @@ pc.ElementComponent.getOffsetPosition
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15124
+node_modules/playcanvas/build/playcanvas.d.ts:14874
 
 ___
 
@@ -3941,7 +4028,7 @@ pc.ElementComponent.isVisibleForCamera
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15139
+node_modules/playcanvas/build/playcanvas.d.ts:14889
 
 ___
 
@@ -4037,7 +4124,7 @@ pc.ElementComponent.onDisable
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9630
+node_modules/playcanvas/build/playcanvas.d.ts:7564
 
 ___
 
@@ -4055,7 +4142,7 @@ pc.ElementComponent.onEnable
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9629
+node_modules/playcanvas/build/playcanvas.d.ts:7563
 
 ___
 
@@ -4079,7 +4166,7 @@ pc.ElementComponent.onLayerAdded
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15126
+node_modules/playcanvas/build/playcanvas.d.ts:14876
 
 ___
 
@@ -4103,7 +4190,7 @@ pc.ElementComponent.onLayerRemoved
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15127
+node_modules/playcanvas/build/playcanvas.d.ts:14877
 
 ___
 
@@ -4128,7 +4215,7 @@ pc.ElementComponent.onLayersChanged
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15125
+node_modules/playcanvas/build/playcanvas.d.ts:14875
 
 ___
 
@@ -4146,7 +4233,7 @@ pc.ElementComponent.onPostStateChange
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9631
+node_modules/playcanvas/build/playcanvas.d.ts:7565
 
 ___
 
@@ -4164,7 +4251,7 @@ pc.ElementComponent.onRemove
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15128
+node_modules/playcanvas/build/playcanvas.d.ts:14878
 
 ___
 
@@ -4190,7 +4277,7 @@ pc.ElementComponent.onSetEnabled
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9628
+node_modules/playcanvas/build/playcanvas.d.ts:7562
 
 ___
 
@@ -4251,7 +4338,7 @@ pc.ElementComponent.removeModelFromLayers
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15137
+node_modules/playcanvas/build/playcanvas.d.ts:14887
 
 ___
 
@@ -4298,7 +4385,7 @@ pc.ElementComponent.syncMask
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:15113
+node_modules/playcanvas/build/playcanvas.d.ts:14863
 
 ___
 
@@ -4323,4 +4410,4 @@ pc.ElementComponent.\_buildAccessors
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9601
+node_modules/playcanvas/build/playcanvas.d.ts:7535

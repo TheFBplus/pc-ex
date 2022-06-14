@@ -51,7 +51,7 @@ pc.Ray.constructor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:3965
+node_modules/playcanvas/build/playcanvas.d.ts:4090
 
 ## Properties
 
@@ -67,7 +67,7 @@ pc.Ray.direction
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:3977
+node_modules/playcanvas/build/playcanvas.d.ts:4102
 
 ___
 
@@ -83,7 +83,7 @@ pc.Ray.origin
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:3971
+node_modules/playcanvas/build/playcanvas.d.ts:4096
 
 ## Methods
 
@@ -140,4 +140,4 @@ pc.Ray.set
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:3985
+node_modules/playcanvas/build/playcanvas.d.ts:4110

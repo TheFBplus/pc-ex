@@ -111,7 +111,7 @@ node_modules/playcanvas/build/playcanvas.d.ts:4096
 
 #### Defined in
 
-src/extension/extendClasses/ray.ts:30
+src/extensions/extendClasses/ray.ts:30
 
 ___
 

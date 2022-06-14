@@ -1908,7 +1908,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/entity.ts:22
+src/extensions/extendClasses/entity.ts:22
 
 ___
 

@@ -2,17 +2,17 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-05-16 14:30:00
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-14 10:21:27
+ * @ 修改时间: 2022-06-14 15:09:20
  * @ 详情: 多选模型
  */
 
 import * as pc from "playcanvas";
 
-import { Tool } from "../../lib/toolHelper";
+import { Tool } from "../../libs/libs/toolHelper";
+import { PCNode } from "../../resources/types/common";
 import {
     clearSelectionBox, drawSelectionBox
-} from "../../resources/tools/drawSelectionBox/drawSelectionBox";
-import { PCNode } from "../../resources/types/common";
+} from "../../utils/utils/drawSelectionBox/drawSelectionBox";
 
 type InputEvents = "down" | "move" | "click" | "up" | "pinch" | "dragging" | "dragEnd";
 type MultiSelectorEventType = "selectStart" | "selecting" | "selectEnd";

@@ -309,7 +309,7 @@ node_modules/playcanvas/build/playcanvas.d.ts:8598
 
 #### Defined in
 
-src/extension/extendClasses/color.ts:21
+src/extensions/extendClasses/color.ts:21
 
 ## Methods
 

@@ -2,15 +2,15 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-04-22 09:33:08
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-08 18:54:34
+ * @ 修改时间: 2022-06-14 15:52:42
  * @ 详情: 扩展Vec2类
  */
 
 import * as pc from "playcanvas";
 
-import { extend } from "../../lib/extend-decorator";
+import { extend } from "../../libs/libs/extend-decorator";
 
-@extend(pc.Vec2)
+@extend("Vec2")
 export class Vec2_EX extends pc.Vec2
 {
     private _shaderData: Float32Array;

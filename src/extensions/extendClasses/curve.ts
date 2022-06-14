@@ -2,17 +2,17 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 10:31:59
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-07 15:41:57
+ * @ 修改时间: 2022-06-14 15:51:49
  * @ 详情: 扩展Curve类
  */
 
 import * as pc from "playcanvas";
 
-import { extend } from "../../lib/extend-decorator";
+import { extend } from "../../libs/libs/extend-decorator";
 
 const epsilon = 1e-10;
 
-@extend(pc.Curve)
+@extend("Curve")
 export class Curve_EX extends pc.Curve
 {
     /**

@@ -1220,7 +1220,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/elementComponent.ts:76
+src/extensions/extendClasses/elementComponent.ts:76
 
 ___
 
@@ -3971,7 +3971,7 @@ element在此屏幕坐标的像素值
 
 #### Defined in
 
-src/extension/extendClasses/elementComponent.ts:126
+src/extensions/extendClasses/elementComponent.ts:126
 
 ___
 
@@ -4361,7 +4361,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/elementComponent.ts:145
+src/extensions/extendClasses/elementComponent.ts:145
 
 ___
 

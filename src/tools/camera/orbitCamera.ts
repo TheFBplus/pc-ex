@@ -2,13 +2,13 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 17:03:58
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-14 10:28:06
+ * @ 修改时间: 2022-06-14 15:08:52
  * @ 详情: 观测相机
  */
 
 import * as pc from "playcanvas";
 
-import { Tool, useGlobal } from "../../lib/toolHelper";
+import { Tool, useGlobal } from "../../libs/libs/toolHelper";
 import { PCNode } from "../../resources/types/common";
 
 type AvailableDevices = "mouse" | "touchScreen";
@@ -212,9 +212,9 @@ export class OrbitCamera extends Tool<OrbitCameraOptions, unknown>
     private update(dt: number): void
     {
         const t = this.inertiaFactor === 0 ? 1 : Math.min(dt / this.inertiaFactor, 1);
-        this._distance = pc.math.lerp(this._distance, this.targetDistance, t);
-        this._yaw = pc.math.lerp(this._yaw, this.targetYaw, t);
-        this._pitch = pc.math.lerp(this._pitch, this.targetPitch, t);
+        this._distance = pc.math.lerp(this._distance, this.targetDistance, 0.1);
+        this._yaw = pc.math.lerp(this._yaw, this.targetYaw, 0.1);
+        this._pitch = pc.math.lerp(this._pitch, this.targetPitch, 0.1);
 
         this.updatePosition();
     }

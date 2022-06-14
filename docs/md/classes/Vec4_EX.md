@@ -199,7 +199,7 @@ node_modules/playcanvas/build/playcanvas.d.ts:4474
 
 #### Defined in
 
-src/extension/extendClasses/vec4.ts:21
+src/extensions/extendClasses/vec4.ts:21
 
 ## Methods
 

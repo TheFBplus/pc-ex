@@ -2,13 +2,13 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 17:01:01
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-09 15:01:40
+ * @ 修改时间: 2022-06-14 15:08:55
  * @ 详情: 鼠标操作
  */
 
 import * as pc from "playcanvas";
 
-import { Tool } from "../../lib/toolHelper";
+import { Tool } from "../../libs/libs/toolHelper";
 
 type InputEvents = "down" | "move" | "click" | "up" | "pinch" | "dragging" | "dragEnd";
 type MouseInputOptions = { clickError: number };

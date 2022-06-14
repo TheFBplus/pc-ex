@@ -717,7 +717,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/quat.ts:25
+src/extensions/extendClasses/quat.ts:25
 
 ___
 

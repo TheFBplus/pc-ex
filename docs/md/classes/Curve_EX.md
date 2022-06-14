@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/curve.ts:36
+src/extensions/extendClasses/curve.ts:36
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/curve.ts:23
+src/extensions/extendClasses/curve.ts:23
 
 ___
 

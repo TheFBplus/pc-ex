@@ -1838,7 +1838,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/cameraComponent.ts:46
+src/extensions/extendClasses/cameraComponent.ts:46
 
 ___
 
@@ -2020,7 +2020,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/cameraComponent.ts:22
+src/extensions/extendClasses/cameraComponent.ts:22
 
 ___
 

@@ -2,18 +2,18 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-05-18 15:35:26
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-10 09:57:55
+ * @ 修改时间: 2022-06-14 15:13:05
  * @ 详情: 描边相机
  */
 
 import * as pc from "playcanvas";
 
-import { CameraComponent_EX } from "../../extension/extendClasses/cameraComponent";
-import { cast } from "../../lib/cast";
-import { Tool } from "../../lib/toolHelper";
+import { CameraComponent_EX } from "../../extensions/extendClasses/cameraComponent";
+import { cast } from "../../libs/libs/cast";
+import { Tool } from "../../libs/libs/toolHelper";
 import { PostEffectOutline } from "../../resources/postEffects/posteffectOutline";
-import MaterialController from "../../resources/tools/materialController";
 import { PCNode } from "../../resources/types/common";
+import { MaterialController } from "../../utils/utils/materialController";
 
 type LayerId = number;
 const layerMap: Map<pc.RenderComponent, LayerId[]> = new Map<pc.RenderComponent, LayerId[]>();

@@ -304,7 +304,7 @@ node_modules/playcanvas/build/playcanvas.d.ts:3607
 
 #### Defined in
 
-src/extension/extendClasses/vec3.ts:32
+src/extensions/extendClasses/vec3.ts:32
 
 ___
 
@@ -320,7 +320,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/vec3.ts:41
+src/extensions/extendClasses/vec3.ts:41
 
 ## Methods
 
@@ -814,7 +814,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/vec3.ts:57
+src/extensions/extendClasses/vec3.ts:57
 
 ___
 
@@ -1172,7 +1172,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/vec3.ts:123
+src/extensions/extendClasses/vec3.ts:123
 
 ___
 
@@ -1198,7 +1198,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/vec3.ts:77
+src/extensions/extendClasses/vec3.ts:77
 
 ___
 
@@ -1224,7 +1224,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/vec3.ts:92
+src/extensions/extendClasses/vec3.ts:92
 
 ___
 
@@ -1250,7 +1250,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/vec3.ts:107
+src/extensions/extendClasses/vec3.ts:107
 
 ___
 

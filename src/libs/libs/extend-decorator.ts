@@ -2,11 +2,15 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-04-21 16:10:55
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-07 10:59:59
+ * @ 修改时间: 2022-06-14 15:51:32
  * @ 详情: 用于扩展pc类的装饰器
  */
 
 import * as pc from "playcanvas";
+
+type extendClass = "CameraComponent" | "Color" | "Curve" | "ElementComponent" |
+    "Entity" | "MeshInstance" | "Quat" | "Ray" |
+    "Texture" | "Vec2" | "Vec3" | "Vec4";
 
 interface Type<T> extends Function
 {
@@ -20,16 +24,10 @@ function cls<T>(value: Type<T>)
 }
 
 // 扩展pc类，若类名为空，则在pc命名空间下创建新类
-export function extend(extendClass?: any)
+export function extend(extendClassName?: extendClass)
 {
-    // 在编辑器环境不进行扩展
-    // TODO: 用更好的方式判断是否处于编辑器页面
-    if (!pc.app) {
-        return;
-    }
-
     // 创建新类，在pc命名空间下
-    if (!extendClass) {
+    if (!extendClassName) {
         return function (target: any)
         {
             if ((pc as any)[target.name]) {
@@ -47,9 +45,6 @@ export function extend(extendClass?: any)
     // 扩展已有类
     return function (target: any)
     {
-        // 获得要扩展的类名
-        const extendClassName = extendClass.name;
-
         // 添加实例函数成员
         const functions = cls(target);
         functions.forEach(fnName =>

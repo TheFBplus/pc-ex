@@ -2,13 +2,13 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-08 15:04:27
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-14 10:08:20
+ * @ 修改时间: 2022-06-14 15:09:23
  * @ 详情: 点选模型
  */
 
 import * as pc from "playcanvas";
 
-import { Tool } from "../../lib/toolHelper";
+import { Tool } from "../../libs/libs/toolHelper";
 
 type InputEvents = "down" | "move" | "click" | "up" | "pinch" | "dragging" | "dragEnd";
 type SelectorEventType = "select";

@@ -2,17 +2,17 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 10:19:52
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-07 15:41:32
+ * @ 修改时间: 2022-06-14 15:51:36
  * @ 详情: 扩展CameraComponent类
  */
 
 import * as pc from "playcanvas";
 
-import { cast } from "../../lib/cast";
-import { extend } from "../../lib/extend-decorator";
+import { cast } from "../../libs/libs/cast";
+import { extend } from "../../libs/libs/extend-decorator";
 import { intersect, MeshInstance_EX } from "./meshInstance";
 
-@extend(pc.CameraComponent)
+@extend("CameraComponent")
 export class CameraComponent_EX extends pc.CameraComponent
 {
     /**

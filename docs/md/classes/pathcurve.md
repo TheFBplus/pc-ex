@@ -44,7 +44,7 @@
 
 #### Defined in
 
-src/extension/newClasses/pathCurve.ts:48
+src/extensions/newClasses/pathCurve.ts:48
 
 ## Properties
 
@@ -54,7 +54,7 @@ src/extension/newClasses/pathCurve.ts:48
 
 #### Defined in
 
-src/extension/newClasses/pathCurve.ts:21
+src/extensions/newClasses/pathCurve.ts:21
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-src/extension/newClasses/pathCurve.ts:23
+src/extensions/newClasses/pathCurve.ts:23
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-src/extension/newClasses/pathCurve.ts:20
+src/extensions/newClasses/pathCurve.ts:20
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-src/extension/newClasses/pathCurve.ts:19
+src/extensions/newClasses/pathCurve.ts:19
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-src/extension/newClasses/pathCurve.ts:24
+src/extensions/newClasses/pathCurve.ts:24
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-src/extension/newClasses/pathCurve.ts:25
+src/extensions/newClasses/pathCurve.ts:25
 
 ## Methods
 
@@ -120,7 +120,7 @@ src/extension/newClasses/pathCurve.ts:25
 
 #### Defined in
 
-src/extension/newClasses/pathCurve.ts:184
+src/extensions/newClasses/pathCurve.ts:184
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-src/extension/newClasses/pathCurve.ts:136
+src/extensions/newClasses/pathCurve.ts:136
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-src/extension/newClasses/pathCurve.ts:243
+src/extensions/newClasses/pathCurve.ts:243
 
 ___
 
@@ -193,7 +193,7 @@ ___
 
 #### Defined in
 
-src/extension/newClasses/pathCurve.ts:194
+src/extensions/newClasses/pathCurve.ts:194
 
 ___
 
@@ -219,7 +219,7 @@ ___
 
 #### Defined in
 
-src/extension/newClasses/pathCurve.ts:207
+src/extensions/newClasses/pathCurve.ts:207
 
 ___
 
@@ -243,7 +243,7 @@ ___
 
 #### Defined in
 
-src/extension/newClasses/pathCurve.ts:233
+src/extensions/newClasses/pathCurve.ts:233
 
 ___
 
@@ -259,4 +259,4 @@ ___
 
 #### Defined in
 
-src/extension/newClasses/pathCurve.ts:92
+src/extensions/newClasses/pathCurve.ts:92

@@ -2,13 +2,15 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-03-18 15:41:45
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-08 18:57:10
+ * @ 修改时间: 2022-06-14 15:09:53
  * @ 详情: 批量控制材质
  */
 
 import * as pc from "playcanvas";
 
-import { MeshInstanceCallback, ModelCallback, NodeCallback, PCNode } from "../types/common";
+import {
+    MeshInstanceCallback, ModelCallback, NodeCallback, PCNode
+} from "../../resources/types/common";
 
 // 存储材质表，用于模型批量恢复
 let meshMatMap: any = {};
@@ -37,7 +39,7 @@ function processDeep(entity: PCNode, childEntityCallback?: NodeCallback): void
     }
 }
 
-export default class MaterialController
+export class MaterialController
 {
     /**
      * 递归处理实例上的所有模型和meshInstance

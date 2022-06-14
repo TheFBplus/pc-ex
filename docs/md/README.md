@@ -12,6 +12,7 @@ pc-ex
 - [DebugLine](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DebugLine.md)
 - [ElementComponent\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md)
 - [Entity\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Entity_EX.md)
+- [MaterialController](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MaterialController.md)
 - [MeshInstance\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MeshInstance_EX.md)
 - [MouseInputer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md)
 - [MultiSelector](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MultiSelector.md)
@@ -40,7 +41,13 @@ pc-ex
 
 - [attr](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attr)
 - [cast](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#cast)
+- [clearScreenQuad](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#clearscreenquad)
+- [clearScreenRect](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#clearscreenrect)
+- [clearSelectionBox](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#clearselectionbox)
 - [createScript](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#createscript)
+- [drawScreenQuad](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#drawscreenquad)
+- [drawScreenRect](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#drawscreenrect)
+- [drawSelectionBox](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#drawselectionbox)
 - [extend](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#extend)
 - [newUtil](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#newutil)
 - [use](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#use)
@@ -74,7 +81,7 @@ pc-ex
 
 #### Defined in
 
-src/lib/create-script-decorator.ts:56
+src/libs/libs/create-script-decorator.ts:56
 
 ## Functions
 
@@ -100,7 +107,7 @@ src/lib/create-script-decorator.ts:56
 
 #### Defined in
 
-src/lib/create-script-decorator.ts:44
+src/libs/libs/create-script-decorator.ts:44
 
 ___
 
@@ -130,7 +137,55 @@ ___
 
 #### Defined in
 
-src/lib/cast.ts:14
+src/libs/libs/cast.ts:14
+
+___
+
+### clearScreenQuad
+
+▸ **clearScreenQuad**(): `void`
+
+清除框选矩形内部
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+src/utils/utils/drawSelectionBox/drawScreenQuad.ts:58
+
+___
+
+### clearScreenRect
+
+▸ **clearScreenRect**(): `void`
+
+清除框选矩形边框
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+src/utils/utils/drawSelectionBox/drawScreenRect.ts:58
+
+___
+
+### clearSelectionBox
+
+▸ **clearSelectionBox**(): `void`
+
+清除框选矩形
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+src/utils/utils/drawSelectionBox/drawSelectionBox.ts:64
 
 ___
 
@@ -168,19 +223,97 @@ property GUI creation.
 
 #### Defined in
 
-src/lib/create-script-decorator.ts:11
+src/libs/libs/create-script-decorator.ts:11
+
+___
+
+### drawScreenQuad
+
+▸ **drawScreenQuad**(`rect?`, `color?`, `layer?`): `void`
+
+绘制框选矩形内部
+
+#### Parameters
+
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `rect` | `Vec4` | `defaultRect` | 矩形范围 |
+| `color` | `Color` | `defaultColor` | 颜色 |
+| `layer?` | `Layer` | `undefined` | layer |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+src/utils/utils/drawSelectionBox/drawScreenQuad.ts:33
+
+___
+
+### drawScreenRect
+
+▸ **drawScreenRect**(`rect?`, `color?`, `layer?`): `void`
+
+绘制框选矩形边框
+
+#### Parameters
+
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `rect` | `Vec4` | `defaultRect` | 矩形范围 |
+| `color` | `Color` | `defaultColor` | 颜色 |
+| `layer?` | `Layer` | `undefined` | layer |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+src/utils/utils/drawSelectionBox/drawScreenRect.ts:33
+
+___
+
+### drawSelectionBox
+
+▸ **drawSelectionBox**(`startPoint`, `endPoint`, `boxLayer`): `pc.Vec4`
+
+绘制框选矩形
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `startPoint` | `Object` | 开始点 |
+| `startPoint.x` | `number` | - |
+| `startPoint.y` | `number` | - |
+| `endPoint` | `Object` | 移动点 |
+| `endPoint.x` | `number` | - |
+| `endPoint.y` | `number` | - |
+| `boxLayer` | `Layer` | - |
+
+#### Returns
+
+`pc.Vec4`
+
+框选矩形范围
+
+#### Defined in
+
+src/utils/utils/drawSelectionBox/drawSelectionBox.ts:25
 
 ___
 
 ### extend
 
-▸ **extend**(`extendClass?`): (`target`: `any`) => `void`
+▸ **extend**(`extendClassName?`): (`target`: `any`) => `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `extendClass?` | `any` |
+| `extendClassName?` | `extendClass` |
 
 #### Returns
 
@@ -200,7 +333,7 @@ ___
 
 #### Defined in
 
-src/lib/extend-decorator.ts:23
+src/libs/libs/extend-decorator.ts:27
 
 ___
 
@@ -220,7 +353,7 @@ ___
 
 #### Defined in
 
-src/lib/extend-decorator.ts:91
+src/libs/libs/extend-decorator.ts:86
 
 ___
 
@@ -252,7 +385,7 @@ ___
 
 #### Defined in
 
-src/lib/toolHelper.ts:29
+src/libs/libs/toolHelper.ts:29
 
 ___
 
@@ -284,4 +417,4 @@ ___
 
 #### Defined in
 
-src/lib/toolHelper.ts:42
+src/libs/libs/toolHelper.ts:42

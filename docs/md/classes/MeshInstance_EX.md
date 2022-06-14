@@ -1283,7 +1283,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/meshInstance.ts:112
+src/extensions/extendClasses/meshInstance.ts:112
 
 ___
 

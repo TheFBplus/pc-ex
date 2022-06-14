@@ -1,8 +1,6 @@
-export * from "./extension/extensions";
-export * from "./lib/lib";
-export * from "./resources/shaders/ScreenQuadPS.frag";
-export * from "./resources/shaders/ScreenQuadVS.vert";
-// export * from "./resources/resources";
+export * from "./extensions/extensions";
+export * from "./libs/libs";
 export * from "./tools/tools";
+export * from "./utils/utils";
 
 

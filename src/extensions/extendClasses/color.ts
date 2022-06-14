@@ -2,15 +2,15 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-04-22 09:33:08
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-08 18:52:35
+ * @ 修改时间: 2022-06-14 15:51:43
  * @ 详情: 扩展Color类
  */
 
 import * as pc from "playcanvas";
 
-import { extend } from "../../lib/extend-decorator";
+import { extend } from "../../libs/libs/extend-decorator";
 
-@extend(pc.Color)
+@extend("Color")
 export class Color_EX extends pc.Color
 {
     private _shaderData: Float32Array;

@@ -24,7 +24,7 @@
 
 #### Defined in
 
-src/extension/extendClasses/meshInstance.ts:21
+src/extensions/extendClasses/meshInstance.ts:21
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/meshInstance.ts:20
+src/extensions/extendClasses/meshInstance.ts:20
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/meshInstance.ts:23
+src/extensions/extendClasses/meshInstance.ts:23
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/meshInstance.ts:26
+src/extensions/extendClasses/meshInstance.ts:26
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/meshInstance.ts:24
+src/extensions/extendClasses/meshInstance.ts:24
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/meshInstance.ts:22
+src/extensions/extendClasses/meshInstance.ts:22
 
 ___
 
@@ -84,4 +84,4 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/meshInstance.ts:25
+src/extensions/extendClasses/meshInstance.ts:25

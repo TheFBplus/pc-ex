@@ -2,14 +2,14 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 14:40:45
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-07 15:42:57
+ * @ 修改时间: 2022-06-14 15:52:16
  * @ 详情: 扩展MeshInstance类
  */
 
 import * as pc from "playcanvas";
 
-import { cast } from "../../lib/cast";
-import { extend } from "../../lib/extend-decorator";
+import { cast } from "../../libs/libs/cast";
+import { extend } from "../../libs/libs/extend-decorator";
 import { Ray_EX } from "./ray";
 
 /**
@@ -100,7 +100,7 @@ function checkIntersection(meshInstance: pc.MeshInstance, i: number, worldRay: p
     };
 }
 
-@extend(pc.MeshInstance)
+@extend("MeshInstance")
 export class MeshInstance_EX extends pc.MeshInstance
 {
     /**

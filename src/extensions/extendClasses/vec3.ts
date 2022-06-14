@@ -2,14 +2,14 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-06 23:25:04
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-07 15:40:45
+ * @ 修改时间: 2022-06-14 15:52:49
  * @ 详情: 扩展Vec3类
  */
 
 import * as pc from "playcanvas";
 
-import { cast } from "../../lib/cast";
-import { extend } from "../../lib/extend-decorator";
+import { cast } from "../../libs/libs/cast";
+import { extend } from "../../libs/libs/extend-decorator";
 import { Quat_EX } from "./quat";
 
 const _worldPos = new pc.Vec4();
@@ -20,7 +20,7 @@ const _vH = new pc.Vec3();
 const _vV = new pc.Vec3();
 const _vV2 = new pc.Vec3();
 
-@extend(pc.Vec3)
+@extend("Vec3")
 export class Vec3_EX extends pc.Vec3
 {
     private _rotation: pc.Quat;

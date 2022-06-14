@@ -72,7 +72,7 @@ src/tools/camera/orbitCamera.ts:61
 
 #### Defined in
 
-src/lib/toolHelper.ts:60
+src/libs/libs/toolHelper.ts:60
 
 ___
 
@@ -180,7 +180,7 @@ Tool.enabled
 
 #### Defined in
 
-src/lib/toolHelper.ts:85
+src/libs/libs/toolHelper.ts:85
 
 • `set` **enabled**(`value`): `void`
 
@@ -202,7 +202,7 @@ Tool.enabled
 
 #### Defined in
 
-src/lib/toolHelper.ts:76
+src/libs/libs/toolHelper.ts:76
 
 ___
 
@@ -332,7 +332,7 @@ src/tools/camera/orbitCamera.ts:109
 
 #### Defined in
 
-src/lib/toolHelper.ts:96
+src/libs/libs/toolHelper.ts:96
 
 ___
 
@@ -418,7 +418,7 @@ ___
 
 #### Defined in
 
-src/lib/toolHelper.ts:107
+src/libs/libs/toolHelper.ts:107
 
 ___
 

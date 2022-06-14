@@ -2,14 +2,14 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 15:07:20
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-07 15:43:49
+ * @ 修改时间: 2022-06-14 14:59:07
  * @ 详情: 路径曲线
  */
 
 import * as pc from "playcanvas";
 
-import { cast } from "../../lib/cast";
-import { extend } from "../../lib/extend-decorator";
+import { cast } from "../../libs/libs/cast";
+import { extend } from "../../libs/libs/extend-decorator";
 import { Curve_EX } from "../extendClasses/curve";
 import { Quat_EX } from "../extendClasses/quat";
 

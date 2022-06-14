@@ -2,14 +2,14 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 10:35:07
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-07 15:42:19
+ * @ 修改时间: 2022-06-14 15:51:59
  * @ 详情: 扩展ElementComponent类
  */
 
 import * as pc from "playcanvas";
 
-import { cast } from "../../lib/cast";
-import { extend } from "../../lib/extend-decorator";
+import { cast } from "../../libs/libs/cast";
+import { extend } from "../../libs/libs/extend-decorator";
 import { Ray_EX } from "./ray";
 import { Texture_EX } from "./texture";
 import { Vec3_EX } from "./vec3";
@@ -66,7 +66,7 @@ function calculateWorldUV(ray: pc.Ray, corners: pc.Vec3[]): pc.Vec2
     return _uv;
 }
 
-@extend(pc.ElementComponent)
+@extend("ElementComponent")
 export class ElementComponent_EX extends pc.ElementComponent
 {
     private _calculatedCorners: [pc.Vec3, pc.Vec3, pc.Vec3, pc.Vec3];

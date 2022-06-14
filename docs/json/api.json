@@ -21,7 +21,7 @@
 						"name": "extend"
 					},
 					"arguments": {
-						"extendClass": "pc.CameraComponent"
+						"extendClassName": "\"CameraComponent\""
 					}
 				}
 			],
@@ -3694,7 +3694,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/cameraComponent.ts",
+							"fileName": "src/extensions/extendClasses/cameraComponent.ts",
 							"line": 46,
 							"character": 4
 						}
@@ -4333,7 +4333,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/cameraComponent.ts",
+							"fileName": "src/extensions/extendClasses/cameraComponent.ts",
 							"line": 22,
 							"character": 4
 						}
@@ -4619,7 +4619,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/extension/extendClasses/cameraComponent.ts",
+					"fileName": "src/extensions/extendClasses/cameraComponent.ts",
 					"line": 16,
 					"character": 13
 				}
@@ -4648,7 +4648,7 @@
 						"name": "extend"
 					},
 					"arguments": {
-						"extendClass": "pc.Color"
+						"extendClassName": "\"Color\""
 					}
 				}
 			],
@@ -4761,7 +4761,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/color.ts",
+							"fileName": "src/extensions/extendClasses/color.ts",
 							"line": 16,
 							"character": 12
 						}
@@ -5222,7 +5222,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/color.ts",
+							"fileName": "src/extensions/extendClasses/color.ts",
 							"line": 21,
 							"character": 8
 						}
@@ -5827,7 +5827,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/extension/extendClasses/color.ts",
+					"fileName": "src/extensions/extendClasses/color.ts",
 					"line": 14,
 					"character": 13
 				}
@@ -5856,7 +5856,7 @@
 						"name": "extend"
 					},
 					"arguments": {
-						"extendClass": "pc.Curve"
+						"extendClassName": "\"Curve\""
 					}
 				}
 			],
@@ -6298,7 +6298,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/curve.ts",
+							"fileName": "src/extensions/extendClasses/curve.ts",
 							"line": 36,
 							"character": 4
 						}
@@ -6345,7 +6345,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/curve.ts",
+							"fileName": "src/extensions/extendClasses/curve.ts",
 							"line": 23,
 							"character": 4
 						}
@@ -6529,7 +6529,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/extension/extendClasses/curve.ts",
+					"fileName": "src/extensions/extendClasses/curve.ts",
 					"line": 16,
 					"character": 13
 				}
@@ -6591,7 +6591,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newUtils/debugLine.ts",
+							"fileName": "src/extensions/newUtils/debugLine.ts",
 							"line": 38,
 							"character": 11
 						}
@@ -6623,7 +6623,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newUtils/debugLine.ts",
+							"fileName": "src/extensions/newUtils/debugLine.ts",
 							"line": 24,
 							"character": 11
 						}
@@ -6717,7 +6717,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/extension/newUtils/debugLine.ts",
+					"fileName": "src/extensions/newUtils/debugLine.ts",
 					"line": 16,
 					"character": 13
 				}
@@ -6738,7 +6738,7 @@
 						"name": "extend"
 					},
 					"arguments": {
-						"extendClass": "pc.ElementComponent"
+						"extendClassName": "\"ElementComponent\""
 					}
 				}
 			],
@@ -6994,7 +6994,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/elementComponent.ts",
+							"fileName": "src/extensions/extendClasses/elementComponent.ts",
 							"line": 72,
 							"character": 12
 						}
@@ -8729,7 +8729,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/elementComponent.ts",
+							"fileName": "src/extensions/extendClasses/elementComponent.ts",
 							"line": 76,
 							"character": 8
 						}
@@ -14464,7 +14464,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/elementComponent.ts",
+							"fileName": "src/extensions/extendClasses/elementComponent.ts",
 							"line": 126,
 							"character": 4
 						}
@@ -14507,7 +14507,7 @@
 													"flags": {},
 													"sources": [
 														{
-															"fileName": "src/extension/extendClasses/elementComponent.ts",
+															"fileName": "src/extensions/extendClasses/elementComponent.ts",
 															"line": 126,
 															"character": 30
 														}
@@ -14525,7 +14525,7 @@
 													"flags": {},
 													"sources": [
 														{
-															"fileName": "src/extension/extendClasses/elementComponent.ts",
+															"fileName": "src/extensions/extendClasses/elementComponent.ts",
 															"line": 126,
 															"character": 41
 														}
@@ -15485,7 +15485,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/elementComponent.ts",
+							"fileName": "src/extensions/extendClasses/elementComponent.ts",
 							"line": 145,
 							"character": 4
 						}
@@ -15854,7 +15854,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/extension/extendClasses/elementComponent.ts",
+					"fileName": "src/extensions/extendClasses/elementComponent.ts",
 					"line": 70,
 					"character": 13
 				}
@@ -15883,7 +15883,7 @@
 						"name": "extend"
 					},
 					"arguments": {
-						"extendClass": "pc.Entity"
+						"extendClassName": "\"Entity\""
 					}
 				}
 			],
@@ -19779,7 +19779,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/entity.ts",
+							"fileName": "src/extensions/extendClasses/entity.ts",
 							"line": 22,
 							"character": 4
 						}
@@ -21154,7 +21154,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/extension/extendClasses/entity.ts",
+					"fileName": "src/extensions/extendClasses/entity.ts",
 					"line": 16,
 					"character": 13
 				}
@@ -21165,6 +21165,467 @@
 					"qualifiedName": "Entity",
 					"package": "playcanvas",
 					"name": "Entity"
+				}
+			]
+		},
+		{
+			"id": 2322,
+			"name": "MaterialController",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {},
+			"children": [
+				{
+					"id": 2349,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 2350,
+							"name": "new MaterialController",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"id": 2322,
+								"name": "MaterialController"
+							}
+						}
+					]
+				},
+				{
+					"id": 2323,
+					"name": "processNodeDeep",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isStatic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/utils/utils/materialController.ts",
+							"line": 51,
+							"character": 18
+						}
+					],
+					"signatures": [
+						{
+							"id": 2324,
+							"name": "processNodeDeep",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "递归处理实例上的所有模型和meshInstance"
+							},
+							"parameters": [
+								{
+									"id": 2325,
+									"name": "entity",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "物体实例"
+									},
+									"type": {
+										"type": "reference",
+										"name": "PCNode"
+									}
+								},
+								{
+									"id": 2326,
+									"name": "childEntityCallback",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "NodeCallback"
+									}
+								},
+								{
+									"id": 2327,
+									"name": "modelCallback",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "ModelCallback"
+									}
+								},
+								{
+									"id": 2328,
+									"name": "meshInstanceCallback",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "MeshInstanceCallback"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 2346,
+					"name": "recoverAllMats",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isStatic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/utils/utils/materialController.ts",
+							"line": 167,
+							"character": 18
+						}
+					],
+					"signatures": [
+						{
+							"id": 2347,
+							"name": "recoverAllMats",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "尝试恢复所有材质"
+							},
+							"parameters": [
+								{
+									"id": 2348,
+									"name": "entity",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "节点\n"
+									},
+									"type": {
+										"type": "reference",
+										"name": "PCNode"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 2343,
+					"name": "saveAllMats",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isStatic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/utils/utils/materialController.ts",
+							"line": 154,
+							"character": 18
+						}
+					],
+					"signatures": [
+						{
+							"id": 2344,
+							"name": "saveAllMats",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "保存所有原有材质"
+							},
+							"parameters": [
+								{
+									"id": 2345,
+									"name": "entity",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "节点\n"
+									},
+									"type": {
+										"type": "reference",
+										"name": "PCNode"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 2334,
+					"name": "setChunksDeep",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isStatic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/utils/utils/materialController.ts",
+							"line": 106,
+							"character": 18
+						}
+					],
+					"signatures": [
+						{
+							"id": 2335,
+							"name": "setChunksDeep",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "递归改变材质chunks或设置batchGroupId"
+							},
+							"parameters": [
+								{
+									"id": 2336,
+									"name": "entity",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "节点"
+									},
+									"type": {
+										"type": "reference",
+										"name": "PCNode"
+									}
+								},
+								{
+									"id": 2337,
+									"name": "chunks",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "chunk描述"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								},
+								{
+									"id": 2338,
+									"name": "batchGroupId",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 2329,
+					"name": "setMatsDeep",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isStatic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/utils/utils/materialController.ts",
+							"line": 85,
+							"character": 18
+						}
+					],
+					"signatures": [
+						{
+							"id": 2330,
+							"name": "setMatsDeep",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "递归设置所有节点的材质或添加batchGroup"
+							},
+							"parameters": [
+								{
+									"id": 2331,
+									"name": "entity",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "节点"
+									},
+									"type": {
+										"type": "reference",
+										"name": "PCNode"
+									}
+								},
+								{
+									"id": 2332,
+									"name": "mat",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "材质"
+									},
+									"type": {
+										"type": "reference",
+										"qualifiedName": "Material",
+										"package": "playcanvas",
+										"name": "Material"
+									}
+								},
+								{
+									"id": 2333,
+									"name": "batchGroupId",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 2339,
+					"name": "toggleWireFrame",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isStatic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/utils/utils/materialController.ts",
+							"line": 131,
+							"character": 18
+						}
+					],
+					"signatures": [
+						{
+							"id": 2340,
+							"name": "toggleWireFrame",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "开关模型网格显示模式"
+							},
+							"parameters": [
+								{
+									"id": 2341,
+									"name": "entity",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "节点"
+									},
+									"type": {
+										"type": "reference",
+										"name": "PCNode"
+									}
+								},
+								{
+									"id": 2342,
+									"name": "state",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "启用状态\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						2349
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						2323,
+						2346,
+						2343,
+						2334,
+						2329,
+						2339
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/utils/utils/materialController.ts",
+					"line": 42,
+					"character": 13
 				}
 			]
 		},
@@ -21183,7 +21644,7 @@
 						"name": "extend"
 					},
 					"arguments": {
-						"extendClass": "pc.MeshInstance"
+						"extendClassName": "\"MeshInstance\""
 					}
 				}
 			],
@@ -23400,7 +23861,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/meshInstance.ts",
+							"fileName": "src/extensions/extendClasses/meshInstance.ts",
 							"line": 112,
 							"character": 4
 						}
@@ -24073,7 +24534,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/extension/extendClasses/meshInstance.ts",
+					"fileName": "src/extensions/extendClasses/meshInstance.ts",
 					"line": 104,
 					"character": 13
 				}
@@ -24180,7 +24641,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 60,
 							"character": 11
 						}
@@ -24297,7 +24758,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 76,
 							"character": 15
 						}
@@ -24371,7 +24832,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 96,
 							"character": 11
 						}
@@ -24707,7 +25168,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 107,
 							"character": 11
 						}
@@ -25004,7 +25465,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 60,
 							"character": 11
 						}
@@ -25261,7 +25722,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 76,
 							"character": 15
 						}
@@ -25335,7 +25796,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 96,
 							"character": 11
 						}
@@ -25967,7 +26428,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 107,
 							"character": 11
 						}
@@ -26494,7 +26955,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 60,
 							"character": 11
 						}
@@ -26915,7 +27376,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 76,
 							"character": 15
 						}
@@ -27176,7 +27637,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 96,
 							"character": 11
 						}
@@ -27663,7 +28124,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 107,
 							"character": 11
 						}
@@ -28047,7 +28508,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 60,
 							"character": 11
 						}
@@ -28226,7 +28687,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 76,
 							"character": 15
 						}
@@ -28300,7 +28761,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 96,
 							"character": 11
 						}
@@ -28647,7 +29108,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 107,
 							"character": 11
 						}
@@ -28973,7 +29434,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 48,
 							"character": 4
 						}
@@ -29040,7 +29501,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 21,
 							"character": 11
 						}
@@ -29060,7 +29521,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 37,
 							"character": 12
 						}
@@ -29082,7 +29543,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 35,
 							"character": 12
 						}
@@ -29104,7 +29565,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 30,
 							"character": 12
 						}
@@ -29126,7 +29587,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 31,
 							"character": 12
 						}
@@ -29148,7 +29609,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 32,
 							"character": 12
 						}
@@ -29170,7 +29631,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 23,
 							"character": 11
 						}
@@ -29193,7 +29654,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 20,
 							"character": 11
 						}
@@ -29218,7 +29679,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 19,
 							"character": 11
 						}
@@ -29240,7 +29701,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 24,
 							"character": 11
 						}
@@ -29260,7 +29721,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 25,
 							"character": 11
 						}
@@ -29280,7 +29741,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 34,
 							"character": 12
 						}
@@ -29302,7 +29763,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 40,
 							"character": 12
 						}
@@ -29322,7 +29783,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 27,
 							"character": 12
 						}
@@ -29344,7 +29805,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 28,
 							"character": 12
 						}
@@ -29366,7 +29827,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 29,
 							"character": 12
 						}
@@ -29388,7 +29849,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 38,
 							"character": 12
 						}
@@ -29410,7 +29871,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 41,
 							"character": 12
 						}
@@ -29430,7 +29891,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 36,
 							"character": 12
 						}
@@ -29452,7 +29913,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 184,
 							"character": 11
 						}
@@ -29484,7 +29945,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 136,
 							"character": 11
 						}
@@ -29525,7 +29986,7 @@
 													},
 													"sources": [
 														{
-															"fileName": "src/extension/newClasses/pathCurve.ts",
+															"fileName": "src/extensions/newClasses/pathCurve.ts",
 															"line": 136,
 															"character": 26
 														}
@@ -29547,7 +30008,7 @@
 													},
 													"sources": [
 														{
-															"fileName": "src/extension/newClasses/pathCurve.ts",
+															"fileName": "src/extensions/newClasses/pathCurve.ts",
 															"line": 136,
 															"character": 44
 														}
@@ -29565,7 +30026,7 @@
 													"flags": {},
 													"sources": [
 														{
-															"fileName": "src/extension/newClasses/pathCurve.ts",
+															"fileName": "src/extensions/newClasses/pathCurve.ts",
 															"line": 136,
 															"character": 66
 														}
@@ -29608,7 +30069,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 243,
 							"character": 11
 						}
@@ -29657,7 +30118,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 194,
 							"character": 11
 						}
@@ -29708,7 +30169,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 207,
 							"character": 11
 						}
@@ -29791,7 +30252,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 233,
 							"character": 11
 						}
@@ -29842,7 +30303,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/newClasses/pathCurve.ts",
+							"fileName": "src/extensions/newClasses/pathCurve.ts",
 							"line": 92,
 							"character": 11
 						}
@@ -29914,7 +30375,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/extension/newClasses/pathCurve.ts",
+					"fileName": "src/extensions/newClasses/pathCurve.ts",
 					"line": 17,
 					"character": 13
 				}
@@ -29935,7 +30396,7 @@
 						"name": "extend"
 					},
 					"arguments": {
-						"extendClass": "pc.Quat"
+						"extendClassName": "\"Quat\""
 					}
 				}
 			],
@@ -31337,7 +31798,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/quat.ts",
+							"fileName": "src/extensions/extendClasses/quat.ts",
 							"line": 25,
 							"character": 11
 						}
@@ -31705,7 +32166,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/extension/extendClasses/quat.ts",
+					"fileName": "src/extensions/extendClasses/quat.ts",
 					"line": 16,
 					"character": 13
 				}
@@ -31734,7 +32195,7 @@
 						"name": "extend"
 					},
 					"arguments": {
-						"extendClass": "pc.Ray"
+						"extendClassName": "\"Ray\""
 					}
 				}
 			],
@@ -31877,7 +32338,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/ray.ts",
+							"fileName": "src/extensions/extendClasses/ray.ts",
 							"line": 30,
 							"character": 11
 						}
@@ -32095,7 +32556,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/extension/extendClasses/ray.ts",
+					"fileName": "src/extensions/extendClasses/ray.ts",
 					"line": 19,
 					"character": 13
 				}
@@ -32157,7 +32618,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/create-script-decorator.ts",
+							"fileName": "src/libs/libs/create-script-decorator.ts",
 							"line": 238,
 							"character": 4
 						}
@@ -32218,7 +32679,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/create-script-decorator.ts",
+							"fileName": "src/libs/libs/create-script-decorator.ts",
 							"line": 139,
 							"character": 13
 						}
@@ -32240,7 +32701,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/create-script-decorator.ts",
+							"fileName": "src/libs/libs/create-script-decorator.ts",
 							"line": 84,
 							"character": 4
 						}
@@ -32291,7 +32752,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/create-script-decorator.ts",
+							"fileName": "src/libs/libs/create-script-decorator.ts",
 							"line": 250,
 							"character": 4
 						}
@@ -32312,7 +32773,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/create-script-decorator.ts",
+							"fileName": "src/libs/libs/create-script-decorator.ts",
 							"line": 242,
 							"character": 4
 						}
@@ -32334,7 +32795,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/create-script-decorator.ts",
+							"fileName": "src/libs/libs/create-script-decorator.ts",
 							"line": 204,
 							"character": 4
 						}
@@ -32506,7 +32967,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/create-script-decorator.ts",
+							"fileName": "src/libs/libs/create-script-decorator.ts",
 							"line": 232,
 							"character": 4
 						}
@@ -32572,7 +33033,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/create-script-decorator.ts",
+							"fileName": "src/libs/libs/create-script-decorator.ts",
 							"line": 94,
 							"character": 4
 						}
@@ -32617,7 +33078,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/create-script-decorator.ts",
+							"fileName": "src/libs/libs/create-script-decorator.ts",
 							"line": 186,
 							"character": 4
 						}
@@ -32712,7 +33173,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/create-script-decorator.ts",
+							"fileName": "src/libs/libs/create-script-decorator.ts",
 							"line": 166,
 							"character": 4
 						}
@@ -32798,7 +33259,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/create-script-decorator.ts",
+							"fileName": "src/libs/libs/create-script-decorator.ts",
 							"line": 220,
 							"character": 4
 						}
@@ -32895,7 +33356,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/create-script-decorator.ts",
+							"fileName": "src/libs/libs/create-script-decorator.ts",
 							"line": 100,
 							"character": 4
 						}
@@ -32940,7 +33401,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/create-script-decorator.ts",
+							"fileName": "src/libs/libs/create-script-decorator.ts",
 							"line": 114,
 							"character": 4
 						}
@@ -33001,7 +33462,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/create-script-decorator.ts",
+							"fileName": "src/libs/libs/create-script-decorator.ts",
 							"line": 122,
 							"character": 4
 						}
@@ -33046,7 +33507,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/create-script-decorator.ts",
+							"fileName": "src/libs/libs/create-script-decorator.ts",
 							"line": 107,
 							"character": 4
 						}
@@ -33136,7 +33597,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/lib/create-script-decorator.ts",
+					"fileName": "src/libs/libs/create-script-decorator.ts",
 					"line": 81,
 					"character": 13
 				}
@@ -33216,7 +33677,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 60,
 							"character": 11
 						}
@@ -33409,7 +33870,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 76,
 							"character": 15
 						}
@@ -33483,7 +33944,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 96,
 							"character": 11
 						}
@@ -33826,7 +34287,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 107,
 							"character": 11
 						}
@@ -34048,7 +34509,7 @@
 						"name": "extend"
 					},
 					"arguments": {
-						"extendClass": "pc.Texture"
+						"extendClassName": "\"Texture\""
 					}
 				}
 			],
@@ -35228,7 +35689,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/texture.ts",
+							"fileName": "src/extensions/extendClasses/texture.ts",
 							"line": 37,
 							"character": 12
 						}
@@ -36559,7 +37020,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/texture.ts",
+							"fileName": "src/extensions/extendClasses/texture.ts",
 							"line": 41,
 							"character": 8
 						}
@@ -36871,7 +37332,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/texture.ts",
+							"fileName": "src/extensions/extendClasses/texture.ts",
 							"line": 51,
 							"character": 4
 						}
@@ -37247,7 +37708,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/texture.ts",
+							"fileName": "src/extensions/extendClasses/texture.ts",
 							"line": 75,
 							"character": 4
 						}
@@ -37290,7 +37751,7 @@
 													"flags": {},
 													"sources": [
 														{
-															"fileName": "src/extension/extendClasses/texture.ts",
+															"fileName": "src/extensions/extendClasses/texture.ts",
 															"line": 75,
 															"character": 20
 														}
@@ -37308,7 +37769,7 @@
 													"flags": {},
 													"sources": [
 														{
-															"fileName": "src/extension/extendClasses/texture.ts",
+															"fileName": "src/extensions/extendClasses/texture.ts",
 															"line": 75,
 															"character": 31
 														}
@@ -37540,7 +38001,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/extension/extendClasses/texture.ts",
+					"fileName": "src/extensions/extendClasses/texture.ts",
 					"line": 35,
 					"character": 13
 				}
@@ -37571,7 +38032,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 67,
 							"character": 4
 						}
@@ -37632,7 +38093,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 62,
 							"character": 12
 						}
@@ -37652,7 +38113,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 60,
 							"character": 11
 						}
@@ -37679,7 +38140,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 76,
 							"character": 15
 						}
@@ -37740,7 +38201,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 96,
 							"character": 11
 						}
@@ -37822,7 +38283,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 119,
 							"character": 23
 						}
@@ -37852,7 +38313,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 118,
 							"character": 23
 						}
@@ -37881,7 +38342,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 107,
 							"character": 11
 						}
@@ -37963,7 +38424,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/lib/toolHelper.ts",
+							"fileName": "src/libs/libs/toolHelper.ts",
 							"line": 116,
 							"character": 20
 						}
@@ -38040,7 +38501,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/lib/toolHelper.ts",
+					"fileName": "src/libs/libs/toolHelper.ts",
 					"line": 58,
 					"character": 22
 				}
@@ -38104,7 +38565,7 @@
 						"name": "extend"
 					},
 					"arguments": {
-						"extendClass": "pc.Vec2"
+						"extendClassName": "\"Vec2\""
 					}
 				}
 			],
@@ -38197,7 +38658,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/vec2.ts",
+							"fileName": "src/extensions/extendClasses/vec2.ts",
 							"line": 16,
 							"character": 12
 						}
@@ -38493,7 +38954,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/vec2.ts",
+							"fileName": "src/extensions/extendClasses/vec2.ts",
 							"line": 21,
 							"character": 8
 						}
@@ -40553,7 +41014,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/extension/extendClasses/vec2.ts",
+					"fileName": "src/extensions/extendClasses/vec2.ts",
 					"line": 14,
 					"character": 13
 				}
@@ -40582,7 +41043,7 @@
 						"name": "extend"
 					},
 					"arguments": {
-						"extendClass": "pc.Vec3"
+						"extendClassName": "\"Vec3\""
 					}
 				}
 			],
@@ -40688,7 +41149,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/vec3.ts",
+							"fileName": "src/extensions/extendClasses/vec3.ts",
 							"line": 26,
 							"character": 12
 						}
@@ -40710,7 +41171,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/vec3.ts",
+							"fileName": "src/extensions/extendClasses/vec3.ts",
 							"line": 27,
 							"character": 12
 						}
@@ -41107,7 +41568,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/vec3.ts",
+							"fileName": "src/extensions/extendClasses/vec3.ts",
 							"line": 32,
 							"character": 8
 						}
@@ -41139,7 +41600,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/vec3.ts",
+							"fileName": "src/extensions/extendClasses/vec3.ts",
 							"line": 41,
 							"character": 8
 						}
@@ -42139,7 +42600,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/vec3.ts",
+							"fileName": "src/extensions/extendClasses/vec3.ts",
 							"line": 57,
 							"character": 11
 						}
@@ -42896,7 +43357,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/vec3.ts",
+							"fileName": "src/extensions/extendClasses/vec3.ts",
 							"line": 123,
 							"character": 11
 						}
@@ -42969,7 +43430,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/vec3.ts",
+							"fileName": "src/extensions/extendClasses/vec3.ts",
 							"line": 77,
 							"character": 11
 						}
@@ -43026,7 +43487,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/vec3.ts",
+							"fileName": "src/extensions/extendClasses/vec3.ts",
 							"line": 92,
 							"character": 11
 						}
@@ -43083,7 +43544,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/vec3.ts",
+							"fileName": "src/extensions/extendClasses/vec3.ts",
 							"line": 107,
 							"character": 11
 						}
@@ -43634,7 +44095,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/extension/extendClasses/vec3.ts",
+					"fileName": "src/extensions/extendClasses/vec3.ts",
 					"line": 24,
 					"character": 13
 				}
@@ -43663,7 +44124,7 @@
 						"name": "extend"
 					},
 					"arguments": {
-						"extendClass": "pc.Vec4"
+						"extendClassName": "\"Vec4\""
 					}
 				}
 			],
@@ -43782,7 +44243,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/vec4.ts",
+							"fileName": "src/extensions/extendClasses/vec4.ts",
 							"line": 16,
 							"character": 12
 						}
@@ -43984,7 +44445,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/vec4.ts",
+							"fileName": "src/extensions/extendClasses/vec4.ts",
 							"line": 21,
 							"character": 8
 						}
@@ -45934,7 +46395,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/extension/extendClasses/vec4.ts",
+					"fileName": "src/extensions/extendClasses/vec4.ts",
 					"line": 14,
 					"character": 13
 				}
@@ -45966,7 +46427,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/meshInstance.ts",
+							"fileName": "src/extensions/extendClasses/meshInstance.ts",
 							"line": 21,
 							"character": 4
 						}
@@ -45984,7 +46445,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/meshInstance.ts",
+							"fileName": "src/extensions/extendClasses/meshInstance.ts",
 							"line": 20,
 							"character": 4
 						}
@@ -46002,7 +46463,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/meshInstance.ts",
+							"fileName": "src/extensions/extendClasses/meshInstance.ts",
 							"line": 23,
 							"character": 4
 						}
@@ -46022,7 +46483,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/meshInstance.ts",
+							"fileName": "src/extensions/extendClasses/meshInstance.ts",
 							"line": 26,
 							"character": 4
 						}
@@ -46042,7 +46503,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/meshInstance.ts",
+							"fileName": "src/extensions/extendClasses/meshInstance.ts",
 							"line": 24,
 							"character": 4
 						}
@@ -46062,7 +46523,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/meshInstance.ts",
+							"fileName": "src/extensions/extendClasses/meshInstance.ts",
 							"line": 22,
 							"character": 4
 						}
@@ -46082,7 +46543,7 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "src/extension/extendClasses/meshInstance.ts",
+							"fileName": "src/extensions/extendClasses/meshInstance.ts",
 							"line": 25,
 							"character": 4
 						}
@@ -46129,7 +46590,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/extension/extendClasses/meshInstance.ts",
+					"fileName": "src/extensions/extendClasses/meshInstance.ts",
 					"line": 18,
 					"character": 17
 				}
@@ -46143,7 +46604,7 @@
 			"flags": {},
 			"sources": [
 				{
-					"fileName": "src/lib/create-script-decorator.ts",
+					"fileName": "src/libs/libs/create-script-decorator.ts",
 					"line": 56,
 					"character": 12
 				}
@@ -46167,7 +46628,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/lib/create-script-decorator.ts",
+									"fileName": "src/libs/libs/create-script-decorator.ts",
 									"line": 62,
 									"character": 4
 								}
@@ -46187,7 +46648,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/lib/create-script-decorator.ts",
+									"fileName": "src/libs/libs/create-script-decorator.ts",
 									"line": 68,
 									"character": 4
 								}
@@ -46207,7 +46668,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/lib/create-script-decorator.ts",
+									"fileName": "src/libs/libs/create-script-decorator.ts",
 									"line": 70,
 									"character": 4
 								}
@@ -46227,7 +46688,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/lib/create-script-decorator.ts",
+									"fileName": "src/libs/libs/create-script-decorator.ts",
 									"line": 69,
 									"character": 4
 								}
@@ -46250,7 +46711,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/lib/create-script-decorator.ts",
+									"fileName": "src/libs/libs/create-script-decorator.ts",
 									"line": 58,
 									"character": 4
 								}
@@ -46270,7 +46731,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/lib/create-script-decorator.ts",
+									"fileName": "src/libs/libs/create-script-decorator.ts",
 									"line": 60,
 									"character": 4
 								}
@@ -46290,7 +46751,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/lib/create-script-decorator.ts",
+									"fileName": "src/libs/libs/create-script-decorator.ts",
 									"line": 71,
 									"character": 4
 								}
@@ -46313,7 +46774,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/lib/create-script-decorator.ts",
+									"fileName": "src/libs/libs/create-script-decorator.ts",
 									"line": 65,
 									"character": 4
 								}
@@ -46333,7 +46794,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/lib/create-script-decorator.ts",
+									"fileName": "src/libs/libs/create-script-decorator.ts",
 									"line": 64,
 									"character": 4
 								}
@@ -46353,7 +46814,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/lib/create-script-decorator.ts",
+									"fileName": "src/libs/libs/create-script-decorator.ts",
 									"line": 61,
 									"character": 4
 								}
@@ -46385,7 +46846,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/lib/create-script-decorator.ts",
+									"fileName": "src/libs/libs/create-script-decorator.ts",
 									"line": 66,
 									"character": 4
 								}
@@ -46405,7 +46866,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/lib/create-script-decorator.ts",
+									"fileName": "src/libs/libs/create-script-decorator.ts",
 									"line": 63,
 									"character": 4
 								}
@@ -46425,7 +46886,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/lib/create-script-decorator.ts",
+									"fileName": "src/libs/libs/create-script-decorator.ts",
 									"line": 67,
 									"character": 4
 								}
@@ -46445,7 +46906,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/lib/create-script-decorator.ts",
+									"fileName": "src/libs/libs/create-script-decorator.ts",
 									"line": 59,
 									"character": 4
 								}
@@ -46463,7 +46924,7 @@
 							"flags": {},
 							"sources": [
 								{
-									"fileName": "src/lib/create-script-decorator.ts",
+									"fileName": "src/libs/libs/create-script-decorator.ts",
 									"line": 57,
 									"character": 4
 								}
@@ -46548,7 +47009,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "src/lib/create-script-decorator.ts",
+							"fileName": "src/libs/libs/create-script-decorator.ts",
 							"line": 56,
 							"character": 30
 						}
@@ -46564,7 +47025,7 @@
 			"flags": {},
 			"sources": [
 				{
-					"fileName": "src/lib/create-script-decorator.ts",
+					"fileName": "src/libs/libs/create-script-decorator.ts",
 					"line": 44,
 					"character": 16
 				}
@@ -46614,7 +47075,7 @@
 			"flags": {},
 			"sources": [
 				{
-					"fileName": "src/lib/cast.ts",
+					"fileName": "src/libs/libs/cast.ts",
 					"line": 14,
 					"character": 16
 				}
@@ -46664,6 +47125,96 @@
 			]
 		},
 		{
+			"id": 2300,
+			"name": "clearScreenQuad",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/utils/utils/drawSelectionBox/drawScreenQuad.ts",
+					"line": 58,
+					"character": 16
+				}
+			],
+			"signatures": [
+				{
+					"id": 2301,
+					"name": "clearScreenQuad",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"shortText": "清除框选矩形内部"
+					},
+					"type": {
+						"type": "intrinsic",
+						"name": "void"
+					}
+				}
+			]
+		},
+		{
+			"id": 2307,
+			"name": "clearScreenRect",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/utils/utils/drawSelectionBox/drawScreenRect.ts",
+					"line": 58,
+					"character": 16
+				}
+			],
+			"signatures": [
+				{
+					"id": 2308,
+					"name": "clearScreenRect",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"shortText": "清除框选矩形边框"
+					},
+					"type": {
+						"type": "intrinsic",
+						"name": "void"
+					}
+				}
+			]
+		},
+		{
+			"id": 2320,
+			"name": "clearSelectionBox",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/utils/utils/drawSelectionBox/drawSelectionBox.ts",
+					"line": 64,
+					"character": 16
+				}
+			],
+			"signatures": [
+				{
+					"id": 2321,
+					"name": "clearSelectionBox",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"shortText": "清除框选矩形"
+					},
+					"type": {
+						"type": "intrinsic",
+						"name": "void"
+					}
+				}
+			]
+		},
+		{
 			"id": 1865,
 			"name": "createScript",
 			"kind": 64,
@@ -46671,7 +47222,7 @@
 			"flags": {},
 			"sources": [
 				{
-					"fileName": "src/lib/create-script-decorator.ts",
+					"fileName": "src/libs/libs/create-script-decorator.ts",
 					"line": 11,
 					"character": 16
 				}
@@ -46734,6 +47285,358 @@
 								}
 							]
 						}
+					}
+				}
+			]
+		},
+		{
+			"id": 2295,
+			"name": "drawScreenQuad",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/utils/utils/drawSelectionBox/drawScreenQuad.ts",
+					"line": 33,
+					"character": 16
+				}
+			],
+			"signatures": [
+				{
+					"id": 2296,
+					"name": "drawScreenQuad",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"shortText": "绘制框选矩形内部"
+					},
+					"parameters": [
+						{
+							"id": 2297,
+							"name": "rect",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"shortText": "矩形范围"
+							},
+							"type": {
+								"type": "reference",
+								"qualifiedName": "Vec4",
+								"package": "playcanvas",
+								"name": "Vec4"
+							},
+							"defaultValue": "defaultRect"
+						},
+						{
+							"id": 2298,
+							"name": "color",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"shortText": "颜色"
+							},
+							"type": {
+								"type": "reference",
+								"qualifiedName": "Color",
+								"package": "playcanvas",
+								"name": "Color"
+							},
+							"defaultValue": "defaultColor"
+						},
+						{
+							"id": 2299,
+							"name": "layer",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"shortText": "layer\n"
+							},
+							"type": {
+								"type": "reference",
+								"qualifiedName": "Layer",
+								"package": "playcanvas",
+								"name": "Layer"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "void"
+					}
+				}
+			]
+		},
+		{
+			"id": 2302,
+			"name": "drawScreenRect",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/utils/utils/drawSelectionBox/drawScreenRect.ts",
+					"line": 33,
+					"character": 16
+				}
+			],
+			"signatures": [
+				{
+					"id": 2303,
+					"name": "drawScreenRect",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"shortText": "绘制框选矩形边框"
+					},
+					"parameters": [
+						{
+							"id": 2304,
+							"name": "rect",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"shortText": "矩形范围"
+							},
+							"type": {
+								"type": "reference",
+								"qualifiedName": "Vec4",
+								"package": "playcanvas",
+								"name": "Vec4"
+							},
+							"defaultValue": "defaultRect"
+						},
+						{
+							"id": 2305,
+							"name": "color",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"shortText": "颜色"
+							},
+							"type": {
+								"type": "reference",
+								"qualifiedName": "Color",
+								"package": "playcanvas",
+								"name": "Color"
+							},
+							"defaultValue": "defaultColor"
+						},
+						{
+							"id": 2306,
+							"name": "layer",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"shortText": "layer\n"
+							},
+							"type": {
+								"type": "reference",
+								"qualifiedName": "Layer",
+								"package": "playcanvas",
+								"name": "Layer"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "void"
+					}
+				}
+			]
+		},
+		{
+			"id": 2309,
+			"name": "drawSelectionBox",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/utils/utils/drawSelectionBox/drawSelectionBox.ts",
+					"line": 25,
+					"character": 16
+				}
+			],
+			"signatures": [
+				{
+					"id": 2310,
+					"name": "drawSelectionBox",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"shortText": "绘制框选矩形",
+						"returns": "框选矩形范围\n"
+					},
+					"parameters": [
+						{
+							"id": 2311,
+							"name": "startPoint",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"shortText": "开始点"
+							},
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 2312,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {},
+									"children": [
+										{
+											"id": 2313,
+											"name": "x",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/utils/utils/drawSelectionBox/drawSelectionBox.ts",
+													"line": 25,
+													"character": 47
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 2314,
+											"name": "y",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/utils/utils/drawSelectionBox/drawSelectionBox.ts",
+													"line": 25,
+													"character": 58
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"kind": 1024,
+											"children": [
+												2313,
+												2314
+											]
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 2315,
+							"name": "endPoint",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"shortText": "移动点"
+							},
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 2316,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {},
+									"children": [
+										{
+											"id": 2317,
+											"name": "x",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/utils/utils/drawSelectionBox/drawSelectionBox.ts",
+													"line": 25,
+													"character": 83
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 2318,
+											"name": "y",
+											"kind": 1024,
+											"kindString": "Property",
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/utils/utils/drawSelectionBox/drawSelectionBox.ts",
+													"line": 25,
+													"character": 94
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"kind": 1024,
+											"children": [
+												2317,
+												2318
+											]
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 2319,
+							"name": "boxLayer",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"qualifiedName": "Layer",
+								"package": "playcanvas",
+								"name": "Layer"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"qualifiedName": "Vec4",
+						"package": "playcanvas",
+						"name": "pc.Vec4"
 					}
 				}
 			]
@@ -46813,8 +47716,8 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/lib/extend-decorator.ts",
-					"line": 23,
+					"fileName": "src/libs/libs/extend-decorator.ts",
+					"line": 27,
 					"character": 16
 				}
 			],
@@ -46828,15 +47731,15 @@
 					"parameters": [
 						{
 							"id": 1946,
-							"name": "extendClass",
+							"name": "extendClassName",
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {
 								"isOptional": true
 							},
 							"type": {
-								"type": "intrinsic",
-								"name": "any"
+								"type": "reference",
+								"name": "extendClass"
 							}
 						}
 					],
@@ -46894,8 +47797,8 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/lib/extend-decorator.ts",
-					"line": 91,
+					"fileName": "src/libs/libs/extend-decorator.ts",
+					"line": 86,
 					"character": 16
 				}
 			],
@@ -46934,7 +47837,7 @@
 			"flags": {},
 			"sources": [
 				{
-					"fileName": "src/lib/toolHelper.ts",
+					"fileName": "src/libs/libs/toolHelper.ts",
 					"line": 29,
 					"character": 16
 				}
@@ -47072,7 +47975,7 @@
 			"flags": {},
 			"sources": [
 				{
-					"fileName": "src/lib/toolHelper.ts",
+					"fileName": "src/libs/libs/toolHelper.ts",
 					"line": 42,
 					"character": 16
 				}
@@ -47214,6 +48117,7 @@
 				1851,
 				333,
 				798,
+				2322,
 				1053,
 				2141,
 				2184,
@@ -47251,7 +48155,13 @@
 			"children": [
 				1871,
 				1861,
+				2300,
+				2307,
+				2320,
 				1865,
+				2295,
+				2302,
+				2309,
 				1944,
 				1950,
 				1953,

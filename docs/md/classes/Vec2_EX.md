@@ -241,7 +241,7 @@ node_modules/playcanvas/build/playcanvas.d.ts:8736
 
 #### Defined in
 
-src/extension/extendClasses/vec2.ts:21
+src/extensions/extendClasses/vec2.ts:21
 
 ## Methods
 

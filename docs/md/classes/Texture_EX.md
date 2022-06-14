@@ -1287,7 +1287,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/texture.ts:41
+src/extensions/extendClasses/texture.ts:41
 
 ___
 
@@ -1441,7 +1441,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/texture.ts:51
+src/extensions/extendClasses/texture.ts:51
 
 ___
 
@@ -1556,7 +1556,7 @@ ___
 
 #### Defined in
 
-src/extension/extendClasses/texture.ts:75
+src/extensions/extendClasses/texture.ts:75
 
 ___
 

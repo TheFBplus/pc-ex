@@ -1,6 +1,6 @@
 {
 	"name": "pc-ex",
-	"version": "0.0.30",
+	"version": "0.0.31",
 	"description": "Extensions for Playcanvas engine.",
 	"main": "bin/cjs/index.js",
 	"module": "bin/es/index.js",

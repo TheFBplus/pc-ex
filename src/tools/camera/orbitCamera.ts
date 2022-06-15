@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 17:03:58
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-14 15:08:52
+ * @ 修改时间: 2022-06-15 11:01:45
  * @ 详情: 观测相机
  */
 
@@ -23,12 +23,14 @@ type OrbitCameraOptions = {
     pitchMax?: number;
     distanceMin?: number;
     distanceMax?: number;
+    disablePan?: boolean;
 };
 
 export class OrbitCamera extends Tool<OrbitCameraOptions, unknown>
 {
     public mainCamra: pc.CameraComponent;
     public isLooking: boolean;
+    public disablePan: boolean;
 
     private _device: AvailableDevices;
     private orbitSensitivity: number;
@@ -97,6 +99,7 @@ export class OrbitCamera extends Tool<OrbitCameraOptions, unknown>
         this.pitchMax = option?.pitchMax ?? 90;
         this.distanceMin = option?.distanceMin ?? -Infinity;
         this.distanceMax = option?.distanceMax ?? Infinity;
+        this.disablePan = option?.disablePan ?? false;
     }
 
     /**
@@ -104,7 +107,7 @@ export class OrbitCamera extends Tool<OrbitCameraOptions, unknown>
      */
     public get yaw(): number
     {
-        return this._yaw;
+        return this.targetYaw;
     }
     public set yaw(value: number)
     {
@@ -126,7 +129,7 @@ export class OrbitCamera extends Tool<OrbitCameraOptions, unknown>
      */
     public get pitch(): number
     {
-        return this._pitch;
+        return this.targetPitch;
     }
     public set pitch(value: number)
     {
@@ -138,7 +141,7 @@ export class OrbitCamera extends Tool<OrbitCameraOptions, unknown>
      */
     public get distance(): number
     {
-        return this._distance;
+        return this.targetDistance;
     }
     public set distance(value: number)
     {
@@ -212,9 +215,9 @@ export class OrbitCamera extends Tool<OrbitCameraOptions, unknown>
     private update(dt: number): void
     {
         const t = this.inertiaFactor === 0 ? 1 : Math.min(dt / this.inertiaFactor, 1);
-        this._distance = pc.math.lerp(this._distance, this.targetDistance, 0.1);
-        this._yaw = pc.math.lerp(this._yaw, this.targetYaw, 0.1);
-        this._pitch = pc.math.lerp(this._pitch, this.targetPitch, 0.1);
+        this._distance = pc.math.lerp(this._distance, this.targetDistance, t);
+        this._yaw = pc.math.lerp(this._yaw, this.targetYaw, t);
+        this._pitch = pc.math.lerp(this._pitch, this.targetPitch, t);
 
         this.updatePosition();
     }
@@ -463,9 +466,8 @@ class OrbitCameraInput_Mouse extends Tool<OrbitCameraInputOption, unknown>
         if (this.isRotateButtonDown || this.isLookButtonDown) {
             this.orbitCamera.pitch -= dy * this.orbitSensitivity;
             this.orbitCamera.yaw -= dx * this.orbitSensitivity;
-
         } else if (this.isPanButtonDown) {
-            this.pan(event);
+            !this.orbitCamera.disablePan && this.pan(event);
         }
 
         this.lastPoint.set(event.x, event.y);
@@ -562,6 +564,10 @@ class OrbitCameraInput_TouchScreen extends Tool<OrbitCameraInputOption, unknown>
 
         this.setOption(options);
 
+        this.fromWorldPoint = new pc.Vec3();
+        this.toWorldPoint = new pc.Vec3();
+        this.worldDiff = new pc.Vec3();
+        this.pinchMidPoint = new pc.Vec2();
         this.lastTouchPoint = new pc.Vec2();
         this.lastPinchMidPoint = new pc.Vec2();
         this.lastPinchDistance = 0;
@@ -617,7 +623,7 @@ class OrbitCameraInput_TouchScreen extends Tool<OrbitCameraInputOption, unknown>
             this.orbitCamera.distance -= (diffInPinchDistance * this.distanceSensitivity * 0.1) * (this.orbitCamera.distance * 0.1);
 
             this.calcMidPoint(touches[0], touches[1], this.pinchMidPoint);
-            this.pan(this.pinchMidPoint);
+            !this.orbitCamera.disablePan && this.pan(this.pinchMidPoint);
             this.lastPinchMidPoint.copy(this.pinchMidPoint);
         }
     }

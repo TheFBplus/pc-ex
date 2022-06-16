@@ -19,6 +19,8 @@
 
   ↳ [`MouseInputer`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md)
 
+  ↳ [`RuntimeTransformHandle`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/RuntimeTransformHandle.md)
+
   ↳ [`MultiSelector`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MultiSelector.md)
 
   ↳ [`Selector`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Selector.md)

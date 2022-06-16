@@ -4,6 +4,11 @@ pc-ex
 
 ## Table of contents
 
+### Enumerations
+
+- [HandleType](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/enums/HandleType.md)
+- [PivotType](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/enums/PivotType.md)
+
 ### Classes
 
 - [CameraComponent\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md)
@@ -21,6 +26,7 @@ pc-ex
 - [PathCurve](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md)
 - [Quat\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Quat_EX.md)
 - [Ray\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Ray_EX.md)
+- [RuntimeTransformHandle](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/RuntimeTransformHandle.md)
 - [ScriptTypeBase](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md)
 - [Selector](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Selector.md)
 - [Texture\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Texture_EX.md)

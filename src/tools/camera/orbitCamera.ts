@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 17:03:58
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-15 11:01:45
+ * @ 修改时间: 2022-06-15 17:34:05
  * @ 详情: 观测相机
  */
 
@@ -24,13 +24,24 @@ type OrbitCameraOptions = {
     distanceMin?: number;
     distanceMax?: number;
     disablePan?: boolean;
+    rotateCondition?: () => boolean;
+    distanceCondition?: () => boolean;
+    panCondition?: () => boolean;
+    lookCondition?: () => boolean;
 };
 
 export class OrbitCamera extends Tool<OrbitCameraOptions, unknown>
 {
     public mainCamra: pc.CameraComponent;
+
+    public isRotating: boolean;
+    public isPaning: boolean;
     public isLooking: boolean;
-    public disablePan: boolean;
+
+    public rotateCondition: () => boolean;
+    public distanceCondition: () => boolean;
+    public panCondition: () => boolean;
+    public lookCondition: () => boolean;
 
     private _device: AvailableDevices;
     private orbitSensitivity: number;
@@ -99,7 +110,11 @@ export class OrbitCamera extends Tool<OrbitCameraOptions, unknown>
         this.pitchMax = option?.pitchMax ?? 90;
         this.distanceMin = option?.distanceMin ?? -Infinity;
         this.distanceMax = option?.distanceMax ?? Infinity;
-        this.disablePan = option?.disablePan ?? false;
+
+        this.rotateCondition = option?.rotateCondition;
+        this.distanceCondition = option?.distanceCondition;
+        this.panCondition = option?.panCondition;
+        this.lookCondition = option?.lookCondition;
     }
 
     /**
@@ -209,6 +224,16 @@ export class OrbitCamera extends Tool<OrbitCameraOptions, unknown>
     }
 
     /**
+     * 结束目标缓动
+     */
+    public stopInertia()
+    {
+        this.targetYaw = this._yaw;
+        this.targetPitch = this._pitch;
+        this.targetDistance = this._distance;
+    }
+
+    /**
      * 更新相机
      * @param dt 帧间隔
      */
@@ -234,12 +259,11 @@ export class OrbitCamera extends Tool<OrbitCameraOptions, unknown>
         if (this.isLooking) {
             this.pivotPoint.add2(position, this.cameraForward.copy(cameraEntity.forward).mulScalar(this._distance));
         }
-        else {
-            position.copy(cameraEntity.forward);
-            position.mulScalar(-this._distance);
-            position.add(this.pivotPoint);
-            cameraEntity.setPosition(position);
-        }
+
+        position.copy(cameraEntity.forward);
+        position.mulScalar(-this._distance);
+        position.add(this.pivotPoint);
+        cameraEntity.setPosition(position);
     }
 
     /**
@@ -443,14 +467,22 @@ class OrbitCameraInput_Mouse extends Tool<OrbitCameraInputOption, unknown>
     {
         switch (event.button) {
             case pc.MOUSEBUTTON_LEFT:
-                this.isRotateButtonDown = true;
+                if (!this.orbitCamera.rotateCondition || this.orbitCamera.rotateCondition()) {
+                    this.orbitCamera.isRotating = true;
+                    this.isRotateButtonDown = true;
+                }
                 break;
             case pc.MOUSEBUTTON_MIDDLE:
-                this.isPanButtonDown = true;
+                if (!this.orbitCamera.panCondition || this.orbitCamera.panCondition()) {
+                    this.orbitCamera.isPaning = true;
+                    this.isPanButtonDown = true;
+                }
                 break;
             case pc.MOUSEBUTTON_RIGHT:
-                this.isLookButtonDown = true;
-                this.orbitCamera.isLooking = true;
+                if (!this.orbitCamera.lookCondition || this.orbitCamera.lookCondition()) {
+                    this.isLookButtonDown = true;
+                    this.orbitCamera.isLooking = true;
+                }
                 break;
         }
     }
@@ -467,7 +499,7 @@ class OrbitCameraInput_Mouse extends Tool<OrbitCameraInputOption, unknown>
             this.orbitCamera.pitch -= dy * this.orbitSensitivity;
             this.orbitCamera.yaw -= dx * this.orbitSensitivity;
         } else if (this.isPanButtonDown) {
-            !this.orbitCamera.disablePan && this.pan(event);
+            this.pan(event);
         }
 
         this.lastPoint.set(event.x, event.y);
@@ -481,14 +513,17 @@ class OrbitCameraInput_Mouse extends Tool<OrbitCameraInputOption, unknown>
     {
         switch (event.button) {
             case pc.MOUSEBUTTON_LEFT:
+                this.orbitCamera.isRotating = false;
                 this.isRotateButtonDown = false;
                 break;
             case pc.MOUSEBUTTON_MIDDLE:
+                this.orbitCamera.isPaning = false;
                 this.isPanButtonDown = false;
                 break;
             case pc.MOUSEBUTTON_RIGHT:
                 this.isLookButtonDown = false;
                 this.orbitCamera.isLooking = false;
+                this.orbitCamera.stopInertia();
                 break;
         }
     }
@@ -499,7 +534,9 @@ class OrbitCameraInput_Mouse extends Tool<OrbitCameraInputOption, unknown>
      */
     private onMouseWheel(event: any): void
     {
-        this.orbitCamera.distance -= event.wheel * this.distanceSensitivity * (this.orbitCamera.distance * 0.1);
+        if (!this.orbitCamera.distanceCondition || this.orbitCamera.distanceCondition()) {
+            this.orbitCamera.distance -= event.wheel * this.distanceSensitivity * (this.orbitCamera.distance * 0.1);
+        }
     }
 
     /**
@@ -593,11 +630,12 @@ class OrbitCameraInput_TouchScreen extends Tool<OrbitCameraInputOption, unknown>
         var touches = event.touches;
         if (touches.length == 1) {
             this.lastTouchPoint.set(touches[0].x, touches[0].y);
-
         } else if (touches.length == 2) {
             this.lastPinchDistance = this.getPinchDistance(touches[0], touches[1]);
             this.calcMidPoint(touches[0], touches[1], this.lastPinchMidPoint);
         }
+        this.orbitCamera.isRotating = false;
+        this.orbitCamera.isPaning = false;
     }
 
     /**
@@ -610,8 +648,11 @@ class OrbitCameraInput_TouchScreen extends Tool<OrbitCameraInputOption, unknown>
         if (touches.length == 1) {
             const touch = touches[0];
 
-            this.orbitCamera.pitch -= (touch.y - this.lastTouchPoint.y) * this.orbitSensitivity;
-            this.orbitCamera.yaw -= (touch.x - this.lastTouchPoint.x) * this.orbitSensitivity;
+            if (!this.orbitCamera.rotateCondition || this.orbitCamera.rotateCondition()) {
+                this.orbitCamera.isRotating = true;
+                this.orbitCamera.pitch -= (touch.y - this.lastTouchPoint.y) * this.orbitSensitivity;
+                this.orbitCamera.yaw -= (touch.x - this.lastTouchPoint.x) * this.orbitSensitivity;
+            }
 
             this.lastTouchPoint.set(touch.x, touch.y);
 
@@ -620,10 +661,15 @@ class OrbitCameraInput_TouchScreen extends Tool<OrbitCameraInputOption, unknown>
             const diffInPinchDistance = currentPinchDistance - this.lastPinchDistance;
             this.lastPinchDistance = currentPinchDistance;
 
-            this.orbitCamera.distance -= (diffInPinchDistance * this.distanceSensitivity * 0.1) * (this.orbitCamera.distance * 0.1);
+            if (!this.orbitCamera.distanceCondition || this.orbitCamera.distanceCondition()) {
+                this.orbitCamera.distance -= (diffInPinchDistance * this.distanceSensitivity * 0.1) * (this.orbitCamera.distance * 0.1);
+            }
 
             this.calcMidPoint(touches[0], touches[1], this.pinchMidPoint);
-            !this.orbitCamera.disablePan && this.pan(this.pinchMidPoint);
+            if (!this.orbitCamera.panCondition || this.orbitCamera.panCondition()) {
+                this.orbitCamera.isPaning = true;
+                this.pan(this.pinchMidPoint);
+            }
             this.lastPinchMidPoint.copy(this.pinchMidPoint);
         }
     }

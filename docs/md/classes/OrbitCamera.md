@@ -16,10 +16,15 @@
 
 ### Properties
 
-- [disablePan](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#disablepan)
+- [distanceCondition](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#distancecondition)
 - [eventHandler](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#eventhandler)
 - [isLooking](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#islooking)
+- [isPaning](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#ispaning)
+- [isRotating](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#isrotating)
+- [lookCondition](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#lookcondition)
 - [mainCamra](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#maincamra)
+- [panCondition](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#pancondition)
+- [rotateCondition](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#rotatecondition)
 
 ### Accessors
 
@@ -38,6 +43,7 @@
 - [onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#onenable)
 - [removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#removelistener)
 - [setOption](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#setoption)
+- [stopInertia](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#stopinertia)
 
 ## Constructors
 
@@ -59,17 +65,25 @@
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:63
+src/tools/camera/orbitCamera.ts:74
 
 ## Properties
 
-### disablePan
+### distanceCondition
 
-• **disablePan**: `boolean`
+• **distanceCondition**: () => `boolean`
+
+#### Type declaration
+
+▸ (): `boolean`
+
+##### Returns
+
+`boolean`
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:33
+src/tools/camera/orbitCamera.ts:42
 
 ___
 
@@ -93,7 +107,45 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:32
+src/tools/camera/orbitCamera.ts:39
+
+___
+
+### isPaning
+
+• **isPaning**: `boolean`
+
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:38
+
+___
+
+### isRotating
+
+• **isRotating**: `boolean`
+
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:37
+
+___
+
+### lookCondition
+
+• **lookCondition**: () => `boolean`
+
+#### Type declaration
+
+▸ (): `boolean`
+
+##### Returns
+
+`boolean`
+
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:44
 
 ___
 
@@ -103,7 +155,43 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:31
+src/tools/camera/orbitCamera.ts:35
+
+___
+
+### panCondition
+
+• **panCondition**: () => `boolean`
+
+#### Type declaration
+
+▸ (): `boolean`
+
+##### Returns
+
+`boolean`
+
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:43
+
+___
+
+### rotateCondition
+
+• **rotateCondition**: () => `boolean`
+
+#### Type declaration
+
+▸ (): `boolean`
+
+##### Returns
+
+`boolean`
+
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:41
 
 ## Accessors
 
@@ -119,7 +207,7 @@ src/tools/camera/orbitCamera.ts:31
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:166
+src/tools/camera/orbitCamera.ts:181
 
 • `set` **device**(`value`): `void`
 
@@ -137,7 +225,7 @@ src/tools/camera/orbitCamera.ts:166
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:170
+src/tools/camera/orbitCamera.ts:185
 
 ___
 
@@ -153,7 +241,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:142
+src/tools/camera/orbitCamera.ts:157
 
 • `set` **distance**(`value`): `void`
 
@@ -171,7 +259,7 @@ src/tools/camera/orbitCamera.ts:142
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:146
+src/tools/camera/orbitCamera.ts:161
 
 ___
 
@@ -229,7 +317,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:130
+src/tools/camera/orbitCamera.ts:145
 
 • `set` **pitch**(`value`): `void`
 
@@ -247,7 +335,7 @@ src/tools/camera/orbitCamera.ts:130
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:134
+src/tools/camera/orbitCamera.ts:149
 
 ___
 
@@ -263,7 +351,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:154
+src/tools/camera/orbitCamera.ts:169
 
 • `set` **pivotPoint**(`value`): `void`
 
@@ -281,7 +369,7 @@ src/tools/camera/orbitCamera.ts:154
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:158
+src/tools/camera/orbitCamera.ts:173
 
 ___
 
@@ -297,7 +385,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:108
+src/tools/camera/orbitCamera.ts:123
 
 • `set` **yaw**(`value`): `void`
 
@@ -315,7 +403,7 @@ src/tools/camera/orbitCamera.ts:108
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:112
+src/tools/camera/orbitCamera.ts:127
 
 ## Methods
 
@@ -365,7 +453,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:194
+src/tools/camera/orbitCamera.ts:209
 
 ___
 
@@ -383,7 +471,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:369
+src/tools/camera/orbitCamera.ts:393
 
 ___
 
@@ -401,7 +489,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:355
+src/tools/camera/orbitCamera.ts:379
 
 ___
 
@@ -455,4 +543,20 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:91
+src/tools/camera/orbitCamera.ts:102
+
+___
+
+### stopInertia
+
+▸ **stopInertia**(): `void`
+
+结束目标缓动
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:229

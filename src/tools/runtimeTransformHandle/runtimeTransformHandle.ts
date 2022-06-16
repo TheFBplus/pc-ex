@@ -2,7 +2,7 @@
  * @ 创建者: 陈伟
  * @ 创建时间: 2021-12-01 10:08:17
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-16 14:54:19
+ * @ 修改时间: 2022-06-16 14:58:57
  * @ 详情: Runtime Transform Handle
  */
 
@@ -43,6 +43,7 @@ type RTHOptions = {
     mainCamera: pc.CameraComponent;
     selectTags?: string;
     selectNull?: boolean;
+    enableHotKey?: boolean;
     showHandle?: boolean;
     showGrid?: boolean;
     multiSelect?: boolean;
@@ -55,6 +56,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
     public camera: pc.CameraComponent;
     private selectTags: string;
     private selectNull: boolean;
+    private enableHotKey: boolean;
     private showHandle: boolean;
     private showGrid: boolean;
     private multiSelect: boolean;
@@ -263,7 +265,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
             console.log("暂不支持触屏输入！");
         }
         // 监听键盘
-        if (pc.app.keyboard) {
+        if (pc.app.keyboard && this.enableHotKey) {
             const keyboardInputer = use(RTH_KeyboardInputer, {
                 translateKey: pc.KEY_W,
                 rotateKey: pc.KEY_E,
@@ -298,6 +300,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
         this.camera = options?.mainCamera ?? pc.app.context.systems.camera.cameras[0];
         this.selectTags = options?.selectTags;
         this.selectNull = options?.selectNull ?? true;
+        this.enableHotKey = options?.enableHotKey ?? true;
         this.showHandle = options?.showHandle ?? true;
         this.showGrid = options?.showGrid ?? true;
         this.multiSelect = options?.multiSelect ?? true;

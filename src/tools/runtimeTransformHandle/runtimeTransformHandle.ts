@@ -2,7 +2,7 @@
  * @ 创建者: 陈伟
  * @ 创建时间: 2021-12-01 10:08:17
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-16 14:58:57
+ * @ 修改时间: 2022-06-16 15:28:26
  * @ 详情: Runtime Transform Handle
  */
 
@@ -43,6 +43,7 @@ type RTHOptions = {
     mainCamera: pc.CameraComponent;
     selectTags?: string;
     selectNull?: boolean;
+    selectCondition?: () => boolean;
     enableHotKey?: boolean;
     showHandle?: boolean;
     showGrid?: boolean;
@@ -56,6 +57,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
     public camera: pc.CameraComponent;
     private selectTags: string;
     private selectNull: boolean;
+    private selectCondition: () => boolean;
     private enableHotKey: boolean;
     private showHandle: boolean;
     private showGrid: boolean;
@@ -240,7 +242,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
             this.orbitCamera = useGlobal(OrbitCamera, { mainCamra: this.camera, device: pc.app.touch ? "touchScreen" : "mouse", rotateCondition: () => (!this.multiSelect || pc.app.keyboard.isPressed(pc.KEY_ALT)) && !this.isDragging });
 
             // 使用模型点选器，实现模型点击检测
-            const selector = use(Selector, { inputHandler: mouseInputer, pickCamera: this.camera, excludeLayers: [RTHLayer, GridLayer, UILayer], pickNull: this.selectNull, pickTag: this.selectTags });
+            const selector = use(Selector, { inputHandler: mouseInputer, pickCamera: this.camera, excludeLayers: [RTHLayer, GridLayer, UILayer], pickNull: this.selectNull, pickTag: this.selectTags, pickCondition: this.selectCondition });
             selector.addListener("select", (selectedNode: pc.Entity) => this.select(selectedNode), this);
 
             if (this.multiSelect) {
@@ -300,6 +302,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
         this.camera = options?.mainCamera ?? pc.app.context.systems.camera.cameras[0];
         this.selectTags = options?.selectTags;
         this.selectNull = options?.selectNull ?? true;
+        this.selectCondition = options?.selectCondition;
         this.enableHotKey = options?.enableHotKey ?? true;
         this.showHandle = options?.showHandle ?? true;
         this.showGrid = options?.showGrid ?? true;
@@ -411,6 +414,15 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
         if (this.isDragging) { return; }
         const nextRecord = Recorder.redo();
         this.resetTransforms(nextRecord.selections, nextRecord.transforms);
+    }
+
+    /**
+     * 相机看向目标
+     * @param target 目标物体
+     */
+    public look(target: pc.Entity | pc.Entity[]): void
+    {
+        this.orbitCamera.focus(target);
     }
 
     /**

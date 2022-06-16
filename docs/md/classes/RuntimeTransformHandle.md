@@ -27,6 +27,7 @@
 
 - [addListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/RuntimeTransformHandle.md#addlistener)
 - [focus](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/RuntimeTransformHandle.md#focus)
+- [look](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/RuntimeTransformHandle.md#look)
 - [onDisable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/RuntimeTransformHandle.md#ondisable)
 - [onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/RuntimeTransformHandle.md#onenable)
 - [redo](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/RuntimeTransformHandle.md#redo)
@@ -58,7 +59,7 @@
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:161
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:163
 
 ## Properties
 
@@ -68,7 +69,7 @@ src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:161
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:56
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:57
 
 ___
 
@@ -168,7 +169,29 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:367
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:370
+
+___
+
+### look
+
+▸ **look**(`target`): `void`
+
+相机看向目标
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `Entity` \| `Entity`[] | 目标物体 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:423
 
 ___
 
@@ -186,7 +209,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:1081
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:1093
 
 ___
 
@@ -204,7 +227,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:1079
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:1091
 
 ___
 
@@ -220,7 +243,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:409
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:412
 
 ___
 
@@ -271,7 +294,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:338
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:341
 
 ___
 
@@ -293,7 +316,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:313
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:316
 
 ___
 
@@ -319,7 +342,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:298
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:300
 
 ___
 
@@ -341,7 +364,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:327
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:330
 
 ___
 
@@ -363,7 +386,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:379
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:382
 
 ___
 
@@ -379,4 +402,4 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:399
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:402

@@ -2,7 +2,7 @@
  * @ 创建者: 陈伟
  * @ 创建时间: 2021-12-01 10:08:17
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-16 13:16:54
+ * @ 修改时间: 2022-06-16 14:54:19
  * @ 详情: Runtime Transform Handle
  */
 
@@ -38,15 +38,26 @@ export enum PivotType
     Local
 }
 
-// 回调事件
+// RTH选项
 type RTHOptions = {
     mainCamera: pc.CameraComponent;
+    selectTags?: string;
+    selectNull?: boolean;
+    showHandle?: boolean;
+    showGrid?: boolean;
+    multiSelect?: boolean;
 };
+// 回调事件
 type RTHEvents = "select" | "focus";
 
 export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
 {
     public camera: pc.CameraComponent;
+    private selectTags: string;
+    private selectNull: boolean;
+    private showHandle: boolean;
+    private showGrid: boolean;
+    private multiSelect: boolean;
 
     // 物体实例
     private transformHandle: pc.Entity;
@@ -212,7 +223,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
         this.outLineCamera = use(OutlineCamera, { mainCamra: this.camera, outlineColor: this.outLineColor });
 
         // 使用grid
-        const grid = use(RTH_RuntimeGrid, { mainCamera: this.camera });
+        this.showGrid && use(RTH_RuntimeGrid, { mainCamera: this.camera });
         // // 使用gizmo
         // const gizmo = use(RTH_RuntimeGizmo);
 
@@ -224,21 +235,23 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
             const mouseInputer = useGlobal(MouseInputer);
 
             // 使用观测相机，实现基本视角操作
-            this.orbitCamera = useGlobal(OrbitCamera, { mainCamra: this.camera, device: pc.app.touch ? "touchScreen" : "mouse", rotateCondition: () => pc.app.keyboard.isPressed(pc.KEY_ALT) && !this.isDragging });
+            this.orbitCamera = useGlobal(OrbitCamera, { mainCamra: this.camera, device: pc.app.touch ? "touchScreen" : "mouse", rotateCondition: () => (!this.multiSelect || pc.app.keyboard.isPressed(pc.KEY_ALT)) && !this.isDragging });
 
             // 使用模型点选器，实现模型点击检测
-            const selector = use(Selector, { inputHandler: mouseInputer, pickCamera: this.camera, excludeLayers: [RTHLayer, GridLayer, UILayer] });
+            const selector = use(Selector, { inputHandler: mouseInputer, pickCamera: this.camera, excludeLayers: [RTHLayer, GridLayer, UILayer], pickNull: this.selectNull, pickTag: this.selectTags });
             selector.addListener("select", (selectedNode: pc.Entity) => this.select(selectedNode), this);
 
-            // 模型多选器
-            const multiSelector = use(MultiSelector, {
-                inputHandler: mouseInputer, pickCamera: this.camera, excludeLayers: [RTHLayer, GridLayer, UILayer],
-                expectCondition: () => this.isDragging ||
-                    this.orbitCamera.isRotating ||
-                    this.orbitCamera.isPaning ||
-                    this.orbitCamera.isLooking
-            });
-            multiSelector.addListener("selecting", (selectedNodes: pc.Entity[]) => this.select(selectedNodes), this);
+            if (this.multiSelect) {
+                // 模型多选器
+                const multiSelector = use(MultiSelector, {
+                    inputHandler: mouseInputer, pickCamera: this.camera, excludeLayers: [RTHLayer, GridLayer, UILayer],
+                    expectCondition: () => this.isDragging ||
+                        this.orbitCamera.isRotating ||
+                        this.orbitCamera.isPaning ||
+                        this.orbitCamera.isLooking
+                });
+                multiSelector.addListener("selecting", (selectedNodes: pc.Entity[]) => this.select(selectedNodes), this);
+            }
 
             // 监听鼠标事件
             mouseInputer.addListener("down", this.onControlDown, this);
@@ -283,6 +296,11 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
     public override setOption(options: RTHOptions)
     {
         this.camera = options?.mainCamera ?? pc.app.context.systems.camera.cameras[0];
+        this.selectTags = options?.selectTags;
+        this.selectNull = options?.selectNull ?? true;
+        this.showHandle = options?.showHandle ?? true;
+        this.showGrid = options?.showGrid ?? true;
+        this.multiSelect = options?.multiSelect ?? true;
     }
 
     /**
@@ -331,10 +349,10 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
             this.eventHandler.fire("select", this.trackEntities);
             return;
         }
-        if (this.trackEntities.length <= 0) { pc.app.on("update", this.update, this); }
+        if (this.trackEntities.length <= 0 && this.showHandle) { pc.app.on("update", this.update, this); }
         this.trackEntities = Array.isArray(target) ? target : [target];
         this.trackEntities.forEach(entity => { this.outLineCamera.toggleOutLine(entity, true); });  // 开启选中模型的描边特效
-        this.transformHandle.enabled = true;
+        this.transformHandle.enabled = true && this.showHandle;
         this.eventHandler.fire("select", this.trackEntities);
 
         saveRecord && this.updateRecord();

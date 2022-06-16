@@ -58,7 +58,7 @@
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:148
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:159
 
 ## Properties
 
@@ -68,7 +68,7 @@ src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:148
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:49
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:55
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:346
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:364
 
 ___
 
@@ -186,7 +186,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:1060
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:1078
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:1058
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:1076
 
 ___
 
@@ -220,7 +220,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:388
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:406
 
 ___
 
@@ -271,7 +271,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:317
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:335
 
 ___
 
@@ -293,7 +293,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:292
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:310
 
 ___
 
@@ -319,7 +319,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:283
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:296
 
 ___
 
@@ -341,7 +341,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:306
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:324
 
 ___
 
@@ -363,7 +363,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:358
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:376
 
 ___
 
@@ -379,4 +379,4 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:378
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:396

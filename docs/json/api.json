@@ -21317,35 +21317,35 @@
 			]
 		},
 		{
-			"id": 2508,
+			"id": 2514,
 			"name": "MaterialController",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 2535,
+					"id": 2541,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 2536,
+							"id": 2542,
 							"name": "new MaterialController",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 2508,
+								"id": 2514,
 								"name": "MaterialController"
 							}
 						}
 					]
 				},
 				{
-					"id": 2509,
+					"id": 2515,
 					"name": "processNodeDeep",
 					"kind": 2048,
 					"kindString": "Method",
@@ -21362,7 +21362,7 @@
 					],
 					"signatures": [
 						{
-							"id": 2510,
+							"id": 2516,
 							"name": "processNodeDeep",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -21372,7 +21372,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2511,
+									"id": 2517,
 									"name": "entity",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -21386,7 +21386,7 @@
 									}
 								},
 								{
-									"id": 2512,
+									"id": 2518,
 									"name": "childEntityCallback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -21399,7 +21399,7 @@
 									}
 								},
 								{
-									"id": 2513,
+									"id": 2519,
 									"name": "modelCallback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -21412,7 +21412,7 @@
 									}
 								},
 								{
-									"id": 2514,
+									"id": 2520,
 									"name": "meshInstanceCallback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -21433,7 +21433,7 @@
 					]
 				},
 				{
-					"id": 2532,
+					"id": 2538,
 					"name": "recoverAllMats",
 					"kind": 2048,
 					"kindString": "Method",
@@ -21450,7 +21450,7 @@
 					],
 					"signatures": [
 						{
-							"id": 2533,
+							"id": 2539,
 							"name": "recoverAllMats",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -21460,7 +21460,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2534,
+									"id": 2540,
 									"name": "entity",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -21482,7 +21482,7 @@
 					]
 				},
 				{
-					"id": 2529,
+					"id": 2535,
 					"name": "saveAllMats",
 					"kind": 2048,
 					"kindString": "Method",
@@ -21499,7 +21499,7 @@
 					],
 					"signatures": [
 						{
-							"id": 2530,
+							"id": 2536,
 							"name": "saveAllMats",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -21509,7 +21509,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2531,
+									"id": 2537,
 									"name": "entity",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -21531,7 +21531,7 @@
 					]
 				},
 				{
-					"id": 2520,
+					"id": 2526,
 					"name": "setChunksDeep",
 					"kind": 2048,
 					"kindString": "Method",
@@ -21548,7 +21548,7 @@
 					],
 					"signatures": [
 						{
-							"id": 2521,
+							"id": 2527,
 							"name": "setChunksDeep",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -21558,7 +21558,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2522,
+									"id": 2528,
 									"name": "entity",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -21572,7 +21572,7 @@
 									}
 								},
 								{
-									"id": 2523,
+									"id": 2529,
 									"name": "chunks",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -21586,7 +21586,7 @@
 									}
 								},
 								{
-									"id": 2524,
+									"id": 2530,
 									"name": "batchGroupId",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -21607,7 +21607,7 @@
 					]
 				},
 				{
-					"id": 2515,
+					"id": 2521,
 					"name": "setMatsDeep",
 					"kind": 2048,
 					"kindString": "Method",
@@ -21624,7 +21624,7 @@
 					],
 					"signatures": [
 						{
-							"id": 2516,
+							"id": 2522,
 							"name": "setMatsDeep",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -21634,7 +21634,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2517,
+									"id": 2523,
 									"name": "entity",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -21648,7 +21648,7 @@
 									}
 								},
 								{
-									"id": 2518,
+									"id": 2524,
 									"name": "mat",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -21664,7 +21664,7 @@
 									}
 								},
 								{
-									"id": 2519,
+									"id": 2525,
 									"name": "batchGroupId",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -21685,7 +21685,7 @@
 					]
 				},
 				{
-					"id": 2525,
+					"id": 2531,
 					"name": "toggleWireFrame",
 					"kind": 2048,
 					"kindString": "Method",
@@ -21702,7 +21702,7 @@
 					],
 					"signatures": [
 						{
-							"id": 2526,
+							"id": 2532,
 							"name": "toggleWireFrame",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -21712,7 +21712,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2527,
+									"id": 2533,
 									"name": "entity",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -21726,7 +21726,7 @@
 									}
 								},
 								{
-									"id": 2528,
+									"id": 2534,
 									"name": "state",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -21753,19 +21753,19 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						2535
+						2541
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						2509,
-						2532,
-						2529,
-						2520,
 						2515,
-						2525
+						2538,
+						2535,
+						2526,
+						2521,
+						2531
 					]
 				}
 			],
@@ -25521,14 +25521,14 @@
 			]
 		},
 		{
-			"id": 2370,
+			"id": 2375,
 			"name": "MultiSelector",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 2371,
+					"id": 2376,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -25542,7 +25542,7 @@
 					],
 					"signatures": [
 						{
-							"id": 2372,
+							"id": 2377,
 							"name": "new MultiSelector",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -25552,7 +25552,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2373,
+									"id": 2378,
 									"name": "option",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -25565,7 +25565,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 2370,
+								"id": 2375,
 								"name": "MultiSelector"
 							},
 							"overwrites": {
@@ -25582,7 +25582,7 @@
 					}
 				},
 				{
-					"id": 2376,
+					"id": 2381,
 					"name": "boxLayer",
 					"kind": 1024,
 					"kindString": "Property",
@@ -25604,7 +25604,7 @@
 					}
 				},
 				{
-					"id": 2423,
+					"id": 2428,
 					"name": "eventHandler",
 					"kind": 1024,
 					"kindString": "Property",
@@ -25635,7 +25635,7 @@
 					}
 				},
 				{
-					"id": 2378,
+					"id": 2383,
 					"name": "expectCondition",
 					"kind": 1024,
 					"kindString": "Property",
@@ -25652,14 +25652,14 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 2379,
+							"id": 2384,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"signatures": [
 								{
-									"id": 2380,
+									"id": 2385,
 									"name": "__type",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -25674,7 +25674,7 @@
 					}
 				},
 				{
-					"id": 2383,
+					"id": 2388,
 					"name": "inputHander",
 					"kind": 1024,
 					"kindString": "Property",
@@ -25705,7 +25705,7 @@
 					}
 				},
 				{
-					"id": 2384,
+					"id": 2389,
 					"name": "isSelecting",
 					"kind": 1024,
 					"kindString": "Property",
@@ -25726,7 +25726,7 @@
 					"defaultValue": "false"
 				},
 				{
-					"id": 2375,
+					"id": 2380,
 					"name": "pickAreaScale",
 					"kind": 1024,
 					"kindString": "Property",
@@ -25746,7 +25746,7 @@
 					}
 				},
 				{
-					"id": 2381,
+					"id": 2386,
 					"name": "pickCamera",
 					"kind": 1024,
 					"kindString": "Property",
@@ -25768,7 +25768,7 @@
 					}
 				},
 				{
-					"id": 2377,
+					"id": 2382,
 					"name": "pickLayers",
 					"kind": 1024,
 					"kindString": "Property",
@@ -25793,7 +25793,7 @@
 					}
 				},
 				{
-					"id": 2385,
+					"id": 2390,
 					"name": "pickNodes",
 					"kind": 1024,
 					"kindString": "Property",
@@ -25817,7 +25817,7 @@
 					"defaultValue": "[]"
 				},
 				{
-					"id": 2382,
+					"id": 2387,
 					"name": "pickRect",
 					"kind": 1024,
 					"kindString": "Property",
@@ -25839,7 +25839,7 @@
 					}
 				},
 				{
-					"id": 2374,
+					"id": 2379,
 					"name": "picker",
 					"kind": 1024,
 					"kindString": "Property",
@@ -25861,7 +25861,7 @@
 					}
 				},
 				{
-					"id": 2424,
+					"id": 2429,
 					"name": "enabled",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -25877,7 +25877,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 2425,
+							"id": 2430,
 							"name": "enabled",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -25897,7 +25897,7 @@
 					],
 					"setSignature": [
 						{
-							"id": 2426,
+							"id": 2431,
 							"name": "enabled",
 							"kind": 1048576,
 							"kindString": "Set signature",
@@ -25907,7 +25907,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2427,
+									"id": 2432,
 									"name": "value",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -25935,7 +25935,7 @@
 					}
 				},
 				{
-					"id": 2428,
+					"id": 2433,
 					"name": "addListener",
 					"kind": 2048,
 					"kindString": "Method",
@@ -25951,645 +25951,13 @@
 					],
 					"signatures": [
 						{
-							"id": 2429,
+							"id": 2434,
 							"name": "addListener",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"comment": {
 								"shortText": "添加事件监听"
-							},
-							"parameters": [
-								{
-									"id": 2430,
-									"name": "eventName",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "监听事件名称"
-									},
-									"type": {
-										"type": "reference",
-										"name": "MultiSelectorEventType"
-									}
-								},
-								{
-									"id": 2431,
-									"name": "callback",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "回调"
-									},
-									"type": {
-										"type": "reference",
-										"qualifiedName": "Function",
-										"package": "typescript",
-										"name": "Function"
-									}
-								},
-								{
-									"id": 2432,
-									"name": "scope",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {
-										"isOptional": true
-									},
-									"comment": {
-										"shortText": "范围\n"
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							},
-							"inheritedFrom": {
-								"type": "reference",
-								"id": 1983,
-								"name": "Tool.addListener"
-							}
-						}
-					],
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 1982,
-						"name": "Tool.addListener"
-					}
-				},
-				{
-					"id": 2395,
-					"name": "isNodesEqual",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/selector/multiSelector.ts",
-							"line": 135,
-							"character": 12
-						}
-					],
-					"signatures": [
-						{
-							"id": 2396,
-							"name": "isNodesEqual",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "判断两个节点数组是否无序相等",
-								"returns": "两数组是否无序相等\n"
-							},
-							"parameters": [
-								{
-									"id": 2397,
-									"name": "arr1",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "数组1"
-									},
-									"type": {
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"name": "PCNode"
-										}
-									}
-								},
-								{
-									"id": 2398,
-									"name": "arr2",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "数组2"
-									},
-									"type": {
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"name": "PCNode"
-										}
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "boolean"
-							}
-						}
-					]
-				},
-				{
-					"id": 2399,
-					"name": "onControlDown",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/selector/multiSelector.ts",
-							"line": 156,
-							"character": 12
-						}
-					],
-					"signatures": [
-						{
-							"id": 2400,
-							"name": "onControlDown",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "按键按下事件回调"
-							},
-							"parameters": [
-								{
-									"id": 2401,
-									"name": "event",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "按键按下事件\n"
-									},
-									"type": {
-										"type": "reflection",
-										"declaration": {
-											"id": 2402,
-											"name": "__type",
-											"kind": 65536,
-											"kindString": "Type literal",
-											"flags": {},
-											"children": [
-												{
-													"id": 2403,
-													"name": "x",
-													"kind": 1024,
-													"kindString": "Property",
-													"flags": {},
-													"sources": [
-														{
-															"fileName": "src/tools/selector/multiSelector.ts",
-															"line": 156,
-															"character": 35
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												},
-												{
-													"id": 2404,
-													"name": "y",
-													"kind": 1024,
-													"kindString": "Property",
-													"flags": {},
-													"sources": [
-														{
-															"fileName": "src/tools/selector/multiSelector.ts",
-															"line": 156,
-															"character": 46
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												}
-											],
-											"groups": [
-												{
-													"title": "Properties",
-													"kind": 1024,
-													"children": [
-														2403,
-														2404
-													]
-												}
-											]
-										}
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 2421,
-					"name": "onDisable",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isProtected": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/selector/multiSelector.ts",
-							"line": 195,
-							"character": 23
-						}
-					],
-					"signatures": [
-						{
-							"id": 2422,
-							"name": "onDisable",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							},
-							"overwrites": {
-								"type": "reference",
-								"id": 1998,
-								"name": "Tool.onDisable"
-							}
-						}
-					],
-					"overwrites": {
-						"type": "reference",
-						"id": 1997,
-						"name": "Tool.onDisable"
-					}
-				},
-				{
-					"id": 2413,
-					"name": "onDragEnd",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/selector/multiSelector.ts",
-							"line": 181,
-							"character": 12
-						}
-					],
-					"signatures": [
-						{
-							"id": 2414,
-							"name": "onDragEnd",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "拖拽结束时调用"
-							},
-							"parameters": [
-								{
-									"id": 2415,
-									"name": "event",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "拖拽结束事件\n"
-									},
-									"type": {
-										"type": "reflection",
-										"declaration": {
-											"id": 2416,
-											"name": "__type",
-											"kind": 65536,
-											"kindString": "Type literal",
-											"flags": {},
-											"children": [
-												{
-													"id": 2417,
-													"name": "x",
-													"kind": 1024,
-													"kindString": "Property",
-													"flags": {},
-													"sources": [
-														{
-															"fileName": "src/tools/selector/multiSelector.ts",
-															"line": 181,
-															"character": 31
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												},
-												{
-													"id": 2418,
-													"name": "y",
-													"kind": 1024,
-													"kindString": "Property",
-													"flags": {},
-													"sources": [
-														{
-															"fileName": "src/tools/selector/multiSelector.ts",
-															"line": 181,
-															"character": 42
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												}
-											],
-											"groups": [
-												{
-													"title": "Properties",
-													"kind": 1024,
-													"children": [
-														2417,
-														2418
-													]
-												}
-											]
-										}
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 2405,
-					"name": "onDragging",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/selector/multiSelector.ts",
-							"line": 169,
-							"character": 12
-						}
-					],
-					"signatures": [
-						{
-							"id": 2406,
-							"name": "onDragging",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "拖拽中调用",
-								"returns": "\n"
-							},
-							"parameters": [
-								{
-									"id": 2407,
-									"name": "event",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "拖拽中事件"
-									},
-									"type": {
-										"type": "reflection",
-										"declaration": {
-											"id": 2408,
-											"name": "__type",
-											"kind": 65536,
-											"kindString": "Type literal",
-											"flags": {},
-											"children": [
-												{
-													"id": 2411,
-													"name": "ox",
-													"kind": 1024,
-													"kindString": "Property",
-													"flags": {},
-													"sources": [
-														{
-															"fileName": "src/tools/selector/multiSelector.ts",
-															"line": 169,
-															"character": 54
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												},
-												{
-													"id": 2412,
-													"name": "oy",
-													"kind": 1024,
-													"kindString": "Property",
-													"flags": {},
-													"sources": [
-														{
-															"fileName": "src/tools/selector/multiSelector.ts",
-															"line": 169,
-															"character": 66
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												},
-												{
-													"id": 2409,
-													"name": "x",
-													"kind": 1024,
-													"kindString": "Property",
-													"flags": {},
-													"sources": [
-														{
-															"fileName": "src/tools/selector/multiSelector.ts",
-															"line": 169,
-															"character": 32
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												},
-												{
-													"id": 2410,
-													"name": "y",
-													"kind": 1024,
-													"kindString": "Property",
-													"flags": {},
-													"sources": [
-														{
-															"fileName": "src/tools/selector/multiSelector.ts",
-															"line": 169,
-															"character": 43
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												}
-											],
-											"groups": [
-												{
-													"title": "Properties",
-													"kind": 1024,
-													"children": [
-														2411,
-														2412,
-														2409,
-														2410
-													]
-												}
-											]
-										}
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 2419,
-					"name": "onEnable",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isProtected": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/selector/multiSelector.ts",
-							"line": 188,
-							"character": 23
-						}
-					],
-					"signatures": [
-						{
-							"id": 2420,
-							"name": "onEnable",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							},
-							"overwrites": {
-								"type": "reference",
-								"id": 1996,
-								"name": "Tool.onEnable"
-							}
-						}
-					],
-					"overwrites": {
-						"type": "reference",
-						"id": 1995,
-						"name": "Tool.onEnable"
-					}
-				},
-				{
-					"id": 2389,
-					"name": "pick",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/selector/multiSelector.ts",
-							"line": 71,
-							"character": 12
-						}
-					],
-					"signatures": [
-						{
-							"id": 2390,
-							"name": "pick",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "根据框选区域选择模型"
-							},
-							"parameters": [
-								{
-									"id": 2391,
-									"name": "rect",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "框选区域\n"
-									},
-									"type": {
-										"type": "reference",
-										"qualifiedName": "Vec4",
-										"package": "playcanvas",
-										"name": "Vec4"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 2433,
-					"name": "removeListener",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPublic": true
-					},
-					"sources": [
-						{
-							"fileName": "src/libs/libs/toolHelper.ts",
-							"line": 107,
-							"character": 11
-						}
-					],
-					"signatures": [
-						{
-							"id": 2434,
-							"name": "removeListener",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "移除事件监听"
 							},
 							"parameters": [
 								{
@@ -26645,6 +26013,638 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
+								"id": 1983,
+								"name": "Tool.addListener"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 1982,
+						"name": "Tool.addListener"
+					}
+				},
+				{
+					"id": 2400,
+					"name": "isNodesEqual",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/selector/multiSelector.ts",
+							"line": 135,
+							"character": 12
+						}
+					],
+					"signatures": [
+						{
+							"id": 2401,
+							"name": "isNodesEqual",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "判断两个节点数组是否无序相等",
+								"returns": "两数组是否无序相等\n"
+							},
+							"parameters": [
+								{
+									"id": 2402,
+									"name": "arr1",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "数组1"
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"name": "PCNode"
+										}
+									}
+								},
+								{
+									"id": 2403,
+									"name": "arr2",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "数组2"
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"name": "PCNode"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					]
+				},
+				{
+					"id": 2404,
+					"name": "onControlDown",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/selector/multiSelector.ts",
+							"line": 156,
+							"character": 12
+						}
+					],
+					"signatures": [
+						{
+							"id": 2405,
+							"name": "onControlDown",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "按键按下事件回调"
+							},
+							"parameters": [
+								{
+									"id": 2406,
+									"name": "event",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "按键按下事件\n"
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 2407,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 2408,
+													"name": "x",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/tools/selector/multiSelector.ts",
+															"line": 156,
+															"character": 35
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 2409,
+													"name": "y",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/tools/selector/multiSelector.ts",
+															"line": 156,
+															"character": 46
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"kind": 1024,
+													"children": [
+														2408,
+														2409
+													]
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 2426,
+					"name": "onDisable",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isProtected": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/selector/multiSelector.ts",
+							"line": 195,
+							"character": 23
+						}
+					],
+					"signatures": [
+						{
+							"id": 2427,
+							"name": "onDisable",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"overwrites": {
+								"type": "reference",
+								"id": 1998,
+								"name": "Tool.onDisable"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"id": 1997,
+						"name": "Tool.onDisable"
+					}
+				},
+				{
+					"id": 2418,
+					"name": "onDragEnd",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/selector/multiSelector.ts",
+							"line": 181,
+							"character": 12
+						}
+					],
+					"signatures": [
+						{
+							"id": 2419,
+							"name": "onDragEnd",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "拖拽结束时调用"
+							},
+							"parameters": [
+								{
+									"id": 2420,
+									"name": "event",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "拖拽结束事件\n"
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 2421,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 2422,
+													"name": "x",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/tools/selector/multiSelector.ts",
+															"line": 181,
+															"character": 31
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 2423,
+													"name": "y",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/tools/selector/multiSelector.ts",
+															"line": 181,
+															"character": 42
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"kind": 1024,
+													"children": [
+														2422,
+														2423
+													]
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 2410,
+					"name": "onDragging",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/selector/multiSelector.ts",
+							"line": 169,
+							"character": 12
+						}
+					],
+					"signatures": [
+						{
+							"id": 2411,
+							"name": "onDragging",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "拖拽中调用",
+								"returns": "\n"
+							},
+							"parameters": [
+								{
+									"id": 2412,
+									"name": "event",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "拖拽中事件"
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 2413,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 2416,
+													"name": "ox",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/tools/selector/multiSelector.ts",
+															"line": 169,
+															"character": 54
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 2417,
+													"name": "oy",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/tools/selector/multiSelector.ts",
+															"line": 169,
+															"character": 66
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 2414,
+													"name": "x",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/tools/selector/multiSelector.ts",
+															"line": 169,
+															"character": 32
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 2415,
+													"name": "y",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/tools/selector/multiSelector.ts",
+															"line": 169,
+															"character": 43
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"kind": 1024,
+													"children": [
+														2416,
+														2417,
+														2414,
+														2415
+													]
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 2424,
+					"name": "onEnable",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isProtected": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/selector/multiSelector.ts",
+							"line": 188,
+							"character": 23
+						}
+					],
+					"signatures": [
+						{
+							"id": 2425,
+							"name": "onEnable",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"overwrites": {
+								"type": "reference",
+								"id": 1996,
+								"name": "Tool.onEnable"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"id": 1995,
+						"name": "Tool.onEnable"
+					}
+				},
+				{
+					"id": 2394,
+					"name": "pick",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/selector/multiSelector.ts",
+							"line": 71,
+							"character": 12
+						}
+					],
+					"signatures": [
+						{
+							"id": 2395,
+							"name": "pick",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "根据框选区域选择模型"
+							},
+							"parameters": [
+								{
+									"id": 2396,
+									"name": "rect",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "框选区域\n"
+									},
+									"type": {
+										"type": "reference",
+										"qualifiedName": "Vec4",
+										"package": "playcanvas",
+										"name": "Vec4"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 2438,
+					"name": "removeListener",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/libs/libs/toolHelper.ts",
+							"line": 107,
+							"character": 11
+						}
+					],
+					"signatures": [
+						{
+							"id": 2439,
+							"name": "removeListener",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "移除事件监听"
+							},
+							"parameters": [
+								{
+									"id": 2440,
+									"name": "eventName",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "监听事件名称"
+									},
+									"type": {
+										"type": "reference",
+										"name": "MultiSelectorEventType"
+									}
+								},
+								{
+									"id": 2441,
+									"name": "callback",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "回调"
+									},
+									"type": {
+										"type": "reference",
+										"qualifiedName": "Function",
+										"package": "typescript",
+										"name": "Function"
+									}
+								},
+								{
+									"id": 2442,
+									"name": "scope",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"shortText": "范围\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
 								"id": 1988,
 								"name": "Tool.removeListener"
 							}
@@ -26657,7 +26657,7 @@
 					}
 				},
 				{
-					"id": 2386,
+					"id": 2391,
 					"name": "setOption",
 					"kind": 2048,
 					"kindString": "Method",
@@ -26673,7 +26673,7 @@
 					],
 					"signatures": [
 						{
-							"id": 2387,
+							"id": 2392,
 							"name": "setOption",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -26683,7 +26683,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2388,
+									"id": 2393,
 									"name": "option",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -26715,7 +26715,7 @@
 					}
 				},
 				{
-					"id": 2392,
+					"id": 2397,
 					"name": "updatePickNodes",
 					"kind": 2048,
 					"kindString": "Method",
@@ -26731,7 +26731,7 @@
 					],
 					"signatures": [
 						{
-							"id": 2393,
+							"id": 2398,
 							"name": "updatePickNodes",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -26742,7 +26742,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2394,
+									"id": 2399,
 									"name": "nodes",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -26775,48 +26775,48 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						2371
+						2376
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						2376,
-						2423,
-						2378,
-						2383,
-						2384,
-						2375,
 						2381,
-						2377,
-						2385,
+						2428,
+						2383,
+						2388,
+						2389,
+						2380,
+						2386,
 						2382,
-						2374
+						2390,
+						2387,
+						2379
 					]
 				},
 				{
 					"title": "Accessors",
 					"kind": 262144,
 					"children": [
-						2424
+						2429
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						2428,
-						2395,
-						2399,
-						2421,
-						2413,
-						2405,
-						2419,
-						2389,
 						2433,
-						2386,
-						2392
+						2400,
+						2404,
+						2426,
+						2418,
+						2410,
+						2424,
+						2394,
+						2438,
+						2391,
+						2397
 					]
 				}
 			],
@@ -32969,7 +32969,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 148,
+							"line": 159,
 							"character": 4
 						}
 					],
@@ -33015,7 +33015,7 @@
 					}
 				},
 				{
-					"id": 2268,
+					"id": 2273,
 					"name": "_selectedType",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33025,7 +33025,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 116,
+							"line": 127,
 							"character": 12
 						}
 					],
@@ -33035,7 +33035,7 @@
 					}
 				},
 				{
-					"id": 2232,
+					"id": 2237,
 					"name": "alignedCenterToCamVec",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33045,7 +33045,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 74,
+							"line": 85,
 							"character": 12
 						}
 					],
@@ -33057,7 +33057,7 @@
 					}
 				},
 				{
-					"id": 2261,
+					"id": 2266,
 					"name": "basePlaneDistance",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33067,7 +33067,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 105,
+							"line": 116,
 							"character": 12
 						}
 					],
@@ -33088,7 +33088,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 49,
+							"line": 55,
 							"character": 11
 						}
 					],
@@ -33100,7 +33100,7 @@
 					}
 				},
 				{
-					"id": 2229,
+					"id": 2234,
 					"name": "centerPos",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33110,7 +33110,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 71,
+							"line": 82,
 							"character": 12
 						}
 					],
@@ -33122,7 +33122,7 @@
 					}
 				},
 				{
-					"id": 2230,
+					"id": 2235,
 					"name": "centerRot",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33132,7 +33132,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 72,
+							"line": 83,
 							"character": 12
 						}
 					],
@@ -33144,7 +33144,7 @@
 					}
 				},
 				{
-					"id": 2231,
+					"id": 2236,
 					"name": "centerToCamVec",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33154,7 +33154,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 73,
+							"line": 84,
 							"character": 12
 						}
 					],
@@ -33166,7 +33166,7 @@
 					}
 				},
 				{
-					"id": 2258,
+					"id": 2263,
 					"name": "deltaElr",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33176,7 +33176,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 100,
+							"line": 111,
 							"character": 12
 						}
 					],
@@ -33188,7 +33188,7 @@
 					}
 				},
 				{
-					"id": 2257,
+					"id": 2262,
 					"name": "deltaRotateMat",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33198,7 +33198,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 99,
+							"line": 110,
 							"character": 12
 						}
 					],
@@ -33210,7 +33210,7 @@
 					}
 				},
 				{
-					"id": 2236,
+					"id": 2241,
 					"name": "dragVec",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33220,7 +33220,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 78,
+							"line": 89,
 							"character": 12
 						}
 					],
@@ -33232,7 +33232,7 @@
 					}
 				},
 				{
-					"id": 2250,
+					"id": 2255,
 					"name": "entityRotationOffset",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33242,7 +33242,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 92,
+							"line": 103,
 							"character": 12
 						}
 					],
@@ -33254,7 +33254,7 @@
 					}
 				},
 				{
-					"id": 2249,
+					"id": 2254,
 					"name": "entitysRotationOffset",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33264,7 +33264,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 91,
+							"line": 102,
 							"character": 12
 						}
 					],
@@ -33279,7 +33279,7 @@
 					}
 				},
 				{
-					"id": 2355,
+					"id": 2360,
 					"name": "eventHandler",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33310,7 +33310,7 @@
 					}
 				},
 				{
-					"id": 2266,
+					"id": 2271,
 					"name": "handleType",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33320,7 +33320,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 114,
+							"line": 125,
 							"character": 12
 						}
 					],
@@ -33332,8 +33332,92 @@
 					"defaultValue": "HandleType.Translation"
 				},
 				{
-					"id": 2237,
+					"id": 2242,
 					"name": "invertTransformMat",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 90,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"qualifiedName": "Mat4",
+						"package": "playcanvas",
+						"name": "Mat4"
+					}
+				},
+				{
+					"id": 2270,
+					"name": "isDragging",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 122,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"defaultValue": "false"
+				},
+				{
+					"id": 2216,
+					"name": "multiSelect",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 60,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 2230,
+					"name": "orbitCamera",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 78,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 2001,
+						"name": "OrbitCamera"
+					}
+				},
+				{
+					"id": 2231,
+					"name": "outLineCamera",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
@@ -33348,76 +33432,12 @@
 					],
 					"type": {
 						"type": "reference",
-						"qualifiedName": "Mat4",
-						"package": "playcanvas",
-						"name": "Mat4"
-					}
-				},
-				{
-					"id": 2265,
-					"name": "isDragging",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 111,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					},
-					"defaultValue": "false"
-				},
-				{
-					"id": 2225,
-					"name": "orbitCamera",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 67,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "reference",
-						"id": 2001,
-						"name": "OrbitCamera"
-					}
-				},
-				{
-					"id": 2226,
-					"name": "outLineCamera",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 68,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "reference",
 						"id": 2108,
 						"name": "OutlineCamera"
 					}
 				},
 				{
-					"id": 2264,
+					"id": 2269,
 					"name": "outLineColor",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33427,7 +33447,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 108,
+							"line": 119,
 							"character": 12
 						}
 					],
@@ -33440,7 +33460,7 @@
 					"defaultValue": "..."
 				},
 				{
-					"id": 2267,
+					"id": 2272,
 					"name": "pivotType",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33450,7 +33470,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 115,
+							"line": 126,
 							"character": 12
 						}
 					],
@@ -33462,7 +33482,7 @@
 					"defaultValue": "PivotType.World"
 				},
 				{
-					"id": 2219,
+					"id": 2224,
 					"name": "planeEdge1XEntity",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33472,7 +33492,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 59,
+							"line": 70,
 							"character": 12
 						}
 					],
@@ -33484,7 +33504,7 @@
 					}
 				},
 				{
-					"id": 2221,
+					"id": 2226,
 					"name": "planeEdge1YEntity",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33494,7 +33514,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 61,
+							"line": 72,
 							"character": 12
 						}
 					],
@@ -33506,7 +33526,7 @@
 					}
 				},
 				{
-					"id": 2223,
+					"id": 2228,
 					"name": "planeEdge1ZEntity",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33516,7 +33536,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 63,
+							"line": 74,
 							"character": 12
 						}
 					],
@@ -33528,7 +33548,7 @@
 					}
 				},
 				{
-					"id": 2220,
+					"id": 2225,
 					"name": "planeEdge2XEntity",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33538,7 +33558,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 60,
+							"line": 71,
 							"character": 12
 						}
 					],
@@ -33550,7 +33570,7 @@
 					}
 				},
 				{
-					"id": 2222,
+					"id": 2227,
 					"name": "planeEdge2YEntity",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33560,7 +33580,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 62,
+							"line": 73,
 							"character": 12
 						}
 					],
@@ -33572,7 +33592,7 @@
 					}
 				},
 				{
-					"id": 2224,
+					"id": 2229,
 					"name": "planeEdge2ZEntity",
 					"kind": 1024,
 					"kindString": "Property",
@@ -33582,7 +33602,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 64,
+							"line": 75,
 							"character": 12
 						}
 					],
@@ -33594,8 +33614,138 @@
 					}
 				},
 				{
-					"id": 2244,
+					"id": 2249,
 					"name": "planeFollowNormal",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 97,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"qualifiedName": "Vec3",
+						"package": "playcanvas",
+						"name": "Vec3"
+					}
+				},
+				{
+					"id": 2250,
+					"name": "planeHitVec",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 98,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"qualifiedName": "Vec3",
+						"package": "playcanvas",
+						"name": "Vec3"
+					}
+				},
+				{
+					"id": 2246,
+					"name": "planeIntersectPoint",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 94,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"qualifiedName": "Vec3",
+						"package": "playcanvas",
+						"name": "Vec3"
+					}
+				},
+				{
+					"id": 2248,
+					"name": "planeMoveNormal",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 96,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"qualifiedName": "Vec3",
+						"package": "playcanvas",
+						"name": "Vec3"
+					}
+				},
+				{
+					"id": 2252,
+					"name": "planeOffset",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 100,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 2251,
+					"name": "planeOffsetVec",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 99,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"qualifiedName": "Vec3",
+						"package": "playcanvas",
+						"name": "Vec3"
+					}
+				},
+				{
+					"id": 2238,
+					"name": "planeProject",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
@@ -33617,329 +33767,7 @@
 				},
 				{
 					"id": 2245,
-					"name": "planeHitVec",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 87,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "reference",
-						"qualifiedName": "Vec3",
-						"package": "playcanvas",
-						"name": "Vec3"
-					}
-				},
-				{
-					"id": 2241,
-					"name": "planeIntersectPoint",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 83,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "reference",
-						"qualifiedName": "Vec3",
-						"package": "playcanvas",
-						"name": "Vec3"
-					}
-				},
-				{
-					"id": 2243,
-					"name": "planeMoveNormal",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 85,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "reference",
-						"qualifiedName": "Vec3",
-						"package": "playcanvas",
-						"name": "Vec3"
-					}
-				},
-				{
-					"id": 2247,
-					"name": "planeOffset",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 89,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				},
-				{
-					"id": 2246,
-					"name": "planeOffsetVec",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 88,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "reference",
-						"qualifiedName": "Vec3",
-						"package": "playcanvas",
-						"name": "Vec3"
-					}
-				},
-				{
-					"id": 2233,
-					"name": "planeProject",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 75,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "reference",
-						"qualifiedName": "Vec3",
-						"package": "playcanvas",
-						"name": "Vec3"
-					}
-				},
-				{
-					"id": 2240,
 					"name": "planeToFollow",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 82,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "reference",
-						"qualifiedName": "Plane",
-						"package": "playcanvas",
-						"name": "Plane"
-					}
-				},
-				{
-					"id": 2239,
-					"name": "planeToMove",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 81,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "reference",
-						"qualifiedName": "Plane",
-						"package": "playcanvas",
-						"name": "Plane"
-					}
-				},
-				{
-					"id": 2252,
-					"name": "planeXAngle",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 94,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				},
-				{
-					"id": 2216,
-					"name": "planeXEntity",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 56,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "reference",
-						"qualifiedName": "Entity",
-						"package": "playcanvas",
-						"name": "Entity"
-					}
-				},
-				{
-					"id": 2253,
-					"name": "planeYAngle",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 95,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				},
-				{
-					"id": 2217,
-					"name": "planeYEntity",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 57,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "reference",
-						"qualifiedName": "Entity",
-						"package": "playcanvas",
-						"name": "Entity"
-					}
-				},
-				{
-					"id": 2254,
-					"name": "planeZAngle",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 96,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				},
-				{
-					"id": 2218,
-					"name": "planeZEntity",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 58,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "reference",
-						"qualifiedName": "Entity",
-						"package": "playcanvas",
-						"name": "Entity"
-					}
-				},
-				{
-					"id": 2242,
-					"name": "planesIntersectPoint",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 84,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "reference",
-						"qualifiedName": "Vec3",
-						"package": "playcanvas",
-						"name": "Vec3"
-					}
-				},
-				{
-					"id": 2251,
-					"name": "planesOffset",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
@@ -33953,16 +33781,15 @@
 						}
 					],
 					"type": {
-						"type": "array",
-						"elementType": {
-							"type": "intrinsic",
-							"name": "number"
-						}
+						"type": "reference",
+						"qualifiedName": "Plane",
+						"package": "playcanvas",
+						"name": "Plane"
 					}
 				},
 				{
-					"id": 2248,
-					"name": "planesOffsetVec",
+					"id": 2244,
+					"name": "planeToMove",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
@@ -33971,43 +33798,20 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 90,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "array",
-						"elementType": {
-							"type": "reference",
-							"qualifiedName": "Vec3",
-							"package": "playcanvas",
-							"name": "Vec3"
-						}
-					}
-				},
-				{
-					"id": 2260,
-					"name": "record",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 102,
+							"line": 92,
 							"character": 12
 						}
 					],
 					"type": {
 						"type": "reference",
-						"name": "Record"
+						"qualifiedName": "Plane",
+						"package": "playcanvas",
+						"name": "Plane"
 					}
 				},
 				{
-					"id": 2263,
-					"name": "rotateHandleScaler",
+					"id": 2257,
+					"name": "planeXAngle",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
@@ -34016,19 +33820,18 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 107,
+							"line": 105,
 							"character": 12
 						}
 					],
 					"type": {
 						"type": "intrinsic",
 						"name": "number"
-					},
-					"defaultValue": "0.5"
+					}
 				},
 				{
-					"id": 2214,
-					"name": "rotationHandle",
+					"id": 2221,
+					"name": "planeXEntity",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
@@ -34037,7 +33840,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 54,
+							"line": 67,
 							"character": 12
 						}
 					],
@@ -34049,30 +33852,8 @@
 					}
 				},
 				{
-					"id": 2215,
-					"name": "scaleHandle",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 55,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "reference",
-						"qualifiedName": "Entity",
-						"package": "playcanvas",
-						"name": "Entity"
-					}
-				},
-				{
-					"id": 2262,
-					"name": "scaleHandleScaler",
+					"id": 2258,
+					"name": "planeYAngle",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
@@ -34088,12 +33869,11 @@
 					"type": {
 						"type": "intrinsic",
 						"name": "number"
-					},
-					"defaultValue": "0.0036"
+					}
 				},
 				{
-					"id": 2234,
-					"name": "screenVec",
+					"id": 2222,
+					"name": "planeYEntity",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
@@ -34102,20 +33882,20 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 76,
+							"line": 68,
 							"character": 12
 						}
 					],
 					"type": {
 						"type": "reference",
-						"qualifiedName": "Vec3",
+						"qualifiedName": "Entity",
 						"package": "playcanvas",
-						"name": "Vec3"
+						"name": "Entity"
 					}
 				},
 				{
-					"id": 2235,
-					"name": "screenVec2",
+					"id": 2259,
+					"name": "planeZAngle",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
@@ -34124,20 +33904,40 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 77,
+							"line": 107,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 2223,
+					"name": "planeZEntity",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 69,
 							"character": 12
 						}
 					],
 					"type": {
 						"type": "reference",
-						"qualifiedName": "Vec2",
+						"qualifiedName": "Entity",
 						"package": "playcanvas",
-						"name": "Vec2"
+						"name": "Entity"
 					}
 				},
 				{
-					"id": 2255,
-					"name": "startRotateVec",
+					"id": 2247,
+					"name": "planesIntersectPoint",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
@@ -34146,7 +33946,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 97,
+							"line": 95,
 							"character": 12
 						}
 					],
@@ -34159,7 +33959,7 @@
 				},
 				{
 					"id": 2256,
-					"name": "startRotateVerticalVec",
+					"name": "planesOffset",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
@@ -34168,20 +33968,21 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 98,
+							"line": 104,
 							"character": 12
 						}
 					],
 					"type": {
-						"type": "reference",
-						"qualifiedName": "Vec3",
-						"package": "playcanvas",
-						"name": "Vec3"
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "number"
+						}
 					}
 				},
 				{
-					"id": 2259,
-					"name": "startScales",
+					"id": 2253,
+					"name": "planesOffsetVec",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
@@ -34205,7 +34006,306 @@
 					}
 				},
 				{
-					"id": 2227,
+					"id": 2265,
+					"name": "record",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 113,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Record"
+					}
+				},
+				{
+					"id": 2268,
+					"name": "rotateHandleScaler",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 118,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"defaultValue": "0.5"
+				},
+				{
+					"id": 2219,
+					"name": "rotationHandle",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 65,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"qualifiedName": "Entity",
+						"package": "playcanvas",
+						"name": "Entity"
+					}
+				},
+				{
+					"id": 2220,
+					"name": "scaleHandle",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 66,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"qualifiedName": "Entity",
+						"package": "playcanvas",
+						"name": "Entity"
+					}
+				},
+				{
+					"id": 2267,
+					"name": "scaleHandleScaler",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 117,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"defaultValue": "0.0036"
+				},
+				{
+					"id": 2239,
+					"name": "screenVec",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 87,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"qualifiedName": "Vec3",
+						"package": "playcanvas",
+						"name": "Vec3"
+					}
+				},
+				{
+					"id": 2240,
+					"name": "screenVec2",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 88,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"qualifiedName": "Vec2",
+						"package": "playcanvas",
+						"name": "Vec2"
+					}
+				},
+				{
+					"id": 2213,
+					"name": "selectNull",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 57,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 2212,
+					"name": "selectTags",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 56,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 2215,
+					"name": "showGrid",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 59,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 2214,
+					"name": "showHandle",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 58,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 2260,
+					"name": "startRotateVec",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 108,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"qualifiedName": "Vec3",
+						"package": "playcanvas",
+						"name": "Vec3"
+					}
+				},
+				{
+					"id": 2261,
+					"name": "startRotateVerticalVec",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 109,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"qualifiedName": "Vec3",
+						"package": "playcanvas",
+						"name": "Vec3"
+					}
+				},
+				{
+					"id": 2264,
+					"name": "startScales",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 112,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"qualifiedName": "Vec3",
+							"package": "playcanvas",
+							"name": "Vec3"
+						}
+					}
+				},
+				{
+					"id": 2232,
 					"name": "trackEntities",
 					"kind": 1024,
 					"kindString": "Property",
@@ -34215,7 +34315,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 69,
+							"line": 80,
 							"character": 12
 						}
 					],
@@ -34230,7 +34330,7 @@
 					}
 				},
 				{
-					"id": 2228,
+					"id": 2233,
 					"name": "trackTransforms",
 					"kind": 1024,
 					"kindString": "Property",
@@ -34240,7 +34340,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 70,
+							"line": 81,
 							"character": 12
 						}
 					],
@@ -34255,7 +34355,7 @@
 					}
 				},
 				{
-					"id": 2212,
+					"id": 2217,
 					"name": "transformHandle",
 					"kind": 1024,
 					"kindString": "Property",
@@ -34265,7 +34365,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 52,
+							"line": 63,
 							"character": 12
 						}
 					],
@@ -34277,7 +34377,7 @@
 					}
 				},
 				{
-					"id": 2213,
+					"id": 2218,
 					"name": "translationHandle",
 					"kind": 1024,
 					"kindString": "Property",
@@ -34287,7 +34387,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 53,
+							"line": 64,
 							"character": 12
 						}
 					],
@@ -34299,7 +34399,7 @@
 					}
 				},
 				{
-					"id": 2238,
+					"id": 2243,
 					"name": "viewMat",
 					"kind": 1024,
 					"kindString": "Property",
@@ -34309,7 +34409,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 80,
+							"line": 91,
 							"character": 12
 						}
 					],
@@ -34321,7 +34421,7 @@
 					}
 				},
 				{
-					"id": 2356,
+					"id": 2361,
 					"name": "enabled",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -34337,7 +34437,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 2357,
+							"id": 2362,
 							"name": "enabled",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -34357,7 +34457,7 @@
 					],
 					"setSignature": [
 						{
-							"id": 2358,
+							"id": 2363,
 							"name": "enabled",
 							"kind": 1048576,
 							"kindString": "Set signature",
@@ -34367,7 +34467,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2359,
+									"id": 2364,
 									"name": "value",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -34395,7 +34495,7 @@
 					}
 				},
 				{
-					"id": 2269,
+					"id": 2274,
 					"name": "selectedType",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -34405,13 +34505,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 117,
+							"line": 128,
 							"character": 16
 						}
 					],
 					"getSignature": [
 						{
-							"id": 2270,
+							"id": 2275,
 							"name": "selectedType",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -34424,14 +34524,14 @@
 					],
 					"setSignature": [
 						{
-							"id": 2271,
+							"id": 2276,
 							"name": "selectedType",
 							"kind": 1048576,
 							"kindString": "Set signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 2272,
+									"id": 2277,
 									"name": "value",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -34450,7 +34550,7 @@
 					]
 				},
 				{
-					"id": 2360,
+					"id": 2365,
 					"name": "addListener",
 					"kind": 2048,
 					"kindString": "Method",
@@ -34466,823 +34566,13 @@
 					],
 					"signatures": [
 						{
-							"id": 2361,
+							"id": 2366,
 							"name": "addListener",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"comment": {
 								"shortText": "添加事件监听"
-							},
-							"parameters": [
-								{
-									"id": 2362,
-									"name": "eventName",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "监听事件名称"
-									},
-									"type": {
-										"type": "reference",
-										"name": "RTHEvents"
-									}
-								},
-								{
-									"id": 2363,
-									"name": "callback",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "回调"
-									},
-									"type": {
-										"type": "reference",
-										"qualifiedName": "Function",
-										"package": "typescript",
-										"name": "Function"
-									}
-								},
-								{
-									"id": 2364,
-									"name": "scope",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {
-										"isOptional": true
-									},
-									"comment": {
-										"shortText": "范围\n"
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							},
-							"inheritedFrom": {
-								"type": "reference",
-								"id": 1983,
-								"name": "Tool.addListener"
-							}
-						}
-					],
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 1982,
-						"name": "Tool.addListener"
-					}
-				},
-				{
-					"id": 2286,
-					"name": "focus",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPublic": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 346,
-							"character": 11
-						}
-					],
-					"signatures": [
-						{
-							"id": 2287,
-							"name": "focus",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "聚焦选中物体"
-							},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 2329,
-					"name": "onControlDown",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 891,
-							"character": 12
-						}
-					],
-					"signatures": [
-						{
-							"id": 2330,
-							"name": "onControlDown",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "鼠标或触屏按下时触发的事件"
-							},
-							"parameters": [
-								{
-									"id": 2331,
-									"name": "event",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "事件\n"
-									},
-									"type": {
-										"type": "reflection",
-										"declaration": {
-											"id": 2332,
-											"name": "__type",
-											"kind": 65536,
-											"kindString": "Type literal",
-											"flags": {},
-											"children": [
-												{
-													"id": 2333,
-													"name": "x",
-													"kind": 1024,
-													"kindString": "Property",
-													"flags": {},
-													"sources": [
-														{
-															"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-															"line": 891,
-															"character": 35
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												},
-												{
-													"id": 2334,
-													"name": "y",
-													"kind": 1024,
-													"kindString": "Property",
-													"flags": {},
-													"sources": [
-														{
-															"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-															"line": 891,
-															"character": 46
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												}
-											],
-											"groups": [
-												{
-													"title": "Properties",
-													"kind": 1024,
-													"children": [
-														2333,
-														2334
-													]
-												}
-											]
-										}
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 2335,
-					"name": "onControlMove",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 1011,
-							"character": 12
-						}
-					],
-					"signatures": [
-						{
-							"id": 2336,
-							"name": "onControlMove",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "鼠标或触屏移动时触发的事件"
-							},
-							"parameters": [
-								{
-									"id": 2337,
-									"name": "event",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "事件\n"
-									},
-									"type": {
-										"type": "reflection",
-										"declaration": {
-											"id": 2338,
-											"name": "__type",
-											"kind": 65536,
-											"kindString": "Type literal",
-											"flags": {},
-											"children": [
-												{
-													"id": 2341,
-													"name": "dx",
-													"kind": 1024,
-													"kindString": "Property",
-													"flags": {},
-													"sources": [
-														{
-															"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-															"line": 1011,
-															"character": 57
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												},
-												{
-													"id": 2342,
-													"name": "dy",
-													"kind": 1024,
-													"kindString": "Property",
-													"flags": {},
-													"sources": [
-														{
-															"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-															"line": 1011,
-															"character": 69
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												},
-												{
-													"id": 2339,
-													"name": "x",
-													"kind": 1024,
-													"kindString": "Property",
-													"flags": {},
-													"sources": [
-														{
-															"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-															"line": 1011,
-															"character": 35
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												},
-												{
-													"id": 2340,
-													"name": "y",
-													"kind": 1024,
-													"kindString": "Property",
-													"flags": {},
-													"sources": [
-														{
-															"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-															"line": 1011,
-															"character": 46
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												}
-											],
-											"groups": [
-												{
-													"title": "Properties",
-													"kind": 1024,
-													"children": [
-														2341,
-														2342,
-														2339,
-														2340
-													]
-												}
-											]
-										}
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 2343,
-					"name": "onControlUp",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 1032,
-							"character": 12
-						}
-					],
-					"signatures": [
-						{
-							"id": 2344,
-							"name": "onControlUp",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "鼠标或触屏按键抬起时触发的事件"
-							},
-							"parameters": [
-								{
-									"id": 2345,
-									"name": "event",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "事件\n"
-									},
-									"type": {
-										"type": "reflection",
-										"declaration": {
-											"id": 2346,
-											"name": "__type",
-											"kind": 65536,
-											"kindString": "Type literal",
-											"flags": {},
-											"children": [
-												{
-													"id": 2347,
-													"name": "x",
-													"kind": 1024,
-													"kindString": "Property",
-													"flags": {},
-													"sources": [
-														{
-															"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-															"line": 1032,
-															"character": 33
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												},
-												{
-													"id": 2348,
-													"name": "y",
-													"kind": 1024,
-													"kindString": "Property",
-													"flags": {},
-													"sources": [
-														{
-															"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-															"line": 1032,
-															"character": 44
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												}
-											],
-											"groups": [
-												{
-													"title": "Properties",
-													"kind": 1024,
-													"children": [
-														2347,
-														2348
-													]
-												}
-											]
-										}
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 2353,
-					"name": "onDisable",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isProtected": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 1060,
-							"character": 23
-						}
-					],
-					"signatures": [
-						{
-							"id": 2354,
-							"name": "onDisable",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							},
-							"overwrites": {
-								"type": "reference",
-								"id": 1998,
-								"name": "Tool.onDisable"
-							}
-						}
-					],
-					"overwrites": {
-						"type": "reference",
-						"id": 1997,
-						"name": "Tool.onDisable"
-					}
-				},
-				{
-					"id": 2351,
-					"name": "onEnable",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isProtected": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 1058,
-							"character": 23
-						}
-					],
-					"signatures": [
-						{
-							"id": 2352,
-							"name": "onEnable",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							},
-							"overwrites": {
-								"type": "reference",
-								"id": 1996,
-								"name": "Tool.onEnable"
-							}
-						}
-					],
-					"overwrites": {
-						"type": "reference",
-						"id": 1995,
-						"name": "Tool.onEnable"
-					}
-				},
-				{
-					"id": 2315,
-					"name": "onRotationHandleMove",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 787,
-							"character": 12
-						}
-					],
-					"signatures": [
-						{
-							"id": 2316,
-							"name": "onRotationHandleMove",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "根据鼠标移动对选中物体进行旋转"
-							},
-							"parameters": [
-								{
-									"id": 2317,
-									"name": "currentCamera",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "当前渲染相机"
-									},
-									"type": {
-										"type": "reference",
-										"qualifiedName": "CameraComponent",
-										"package": "playcanvas",
-										"name": "CameraComponent"
-									}
-								},
-								{
-									"id": 2318,
-									"name": "dx",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "鼠标x增量"
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "number"
-									}
-								},
-								{
-									"id": 2319,
-									"name": "dy",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "鼠标y增量\n"
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "number"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 2320,
-					"name": "onScaleHandleMove",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 825,
-							"character": 12
-						}
-					],
-					"signatures": [
-						{
-							"id": 2321,
-							"name": "onScaleHandleMove",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "根据鼠标移动对选中物体进行放缩"
-							},
-							"parameters": [
-								{
-									"id": 2322,
-									"name": "currentCamera",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "当前渲染相机"
-									},
-									"type": {
-										"type": "reference",
-										"qualifiedName": "CameraComponent",
-										"package": "playcanvas",
-										"name": "CameraComponent"
-									}
-								},
-								{
-									"id": 2323,
-									"name": "dx",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "鼠标x增量"
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "number"
-									}
-								},
-								{
-									"id": 2324,
-									"name": "dy",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "鼠标y增量\n"
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "number"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 2310,
-					"name": "onTranslationHandleMove",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 736,
-							"character": 12
-						}
-					],
-					"signatures": [
-						{
-							"id": 2311,
-							"name": "onTranslationHandleMove",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "根据鼠标移动对选中物体进行位移"
-							},
-							"parameters": [
-								{
-									"id": 2312,
-									"name": "currentCamera",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "当前渲染相机"
-									},
-									"type": {
-										"type": "reference",
-										"qualifiedName": "CameraComponent",
-										"package": "playcanvas",
-										"name": "CameraComponent"
-									}
-								},
-								{
-									"id": 2313,
-									"name": "x",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "鼠标x"
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "number"
-									}
-								},
-								{
-									"id": 2314,
-									"name": "y",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "鼠标y\n"
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "number"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 2293,
-					"name": "redo",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPublic": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 388,
-							"character": 11
-						}
-					],
-					"signatures": [
-						{
-							"id": 2294,
-							"name": "redo",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "重做"
-							},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 2365,
-					"name": "removeListener",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPublic": true
-					},
-					"sources": [
-						{
-							"fileName": "src/libs/libs/toolHelper.ts",
-							"line": 107,
-							"character": 11
-						}
-					],
-					"signatures": [
-						{
-							"id": 2366,
-							"name": "removeListener",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "移除事件监听"
 							},
 							"parameters": [
 								{
@@ -35338,6 +34628,816 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
+								"id": 1983,
+								"name": "Tool.addListener"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 1982,
+						"name": "Tool.addListener"
+					}
+				},
+				{
+					"id": 2291,
+					"name": "focus",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 364,
+							"character": 11
+						}
+					],
+					"signatures": [
+						{
+							"id": 2292,
+							"name": "focus",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "聚焦选中物体"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 2334,
+					"name": "onControlDown",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 909,
+							"character": 12
+						}
+					],
+					"signatures": [
+						{
+							"id": 2335,
+							"name": "onControlDown",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "鼠标或触屏按下时触发的事件"
+							},
+							"parameters": [
+								{
+									"id": 2336,
+									"name": "event",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "事件\n"
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 2337,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 2338,
+													"name": "x",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+															"line": 909,
+															"character": 35
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 2339,
+													"name": "y",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+															"line": 909,
+															"character": 46
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"kind": 1024,
+													"children": [
+														2338,
+														2339
+													]
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 2340,
+					"name": "onControlMove",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 1029,
+							"character": 12
+						}
+					],
+					"signatures": [
+						{
+							"id": 2341,
+							"name": "onControlMove",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "鼠标或触屏移动时触发的事件"
+							},
+							"parameters": [
+								{
+									"id": 2342,
+									"name": "event",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "事件\n"
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 2343,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 2346,
+													"name": "dx",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+															"line": 1029,
+															"character": 57
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 2347,
+													"name": "dy",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+															"line": 1029,
+															"character": 69
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 2344,
+													"name": "x",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+															"line": 1029,
+															"character": 35
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 2345,
+													"name": "y",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+															"line": 1029,
+															"character": 46
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"kind": 1024,
+													"children": [
+														2346,
+														2347,
+														2344,
+														2345
+													]
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 2348,
+					"name": "onControlUp",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 1050,
+							"character": 12
+						}
+					],
+					"signatures": [
+						{
+							"id": 2349,
+							"name": "onControlUp",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "鼠标或触屏按键抬起时触发的事件"
+							},
+							"parameters": [
+								{
+									"id": 2350,
+									"name": "event",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "事件\n"
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 2351,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 2352,
+													"name": "x",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+															"line": 1050,
+															"character": 33
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 2353,
+													"name": "y",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+															"line": 1050,
+															"character": 44
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"kind": 1024,
+													"children": [
+														2352,
+														2353
+													]
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 2358,
+					"name": "onDisable",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isProtected": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 1078,
+							"character": 23
+						}
+					],
+					"signatures": [
+						{
+							"id": 2359,
+							"name": "onDisable",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"overwrites": {
+								"type": "reference",
+								"id": 1998,
+								"name": "Tool.onDisable"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"id": 1997,
+						"name": "Tool.onDisable"
+					}
+				},
+				{
+					"id": 2356,
+					"name": "onEnable",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isProtected": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 1076,
+							"character": 23
+						}
+					],
+					"signatures": [
+						{
+							"id": 2357,
+							"name": "onEnable",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"overwrites": {
+								"type": "reference",
+								"id": 1996,
+								"name": "Tool.onEnable"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"id": 1995,
+						"name": "Tool.onEnable"
+					}
+				},
+				{
+					"id": 2320,
+					"name": "onRotationHandleMove",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 805,
+							"character": 12
+						}
+					],
+					"signatures": [
+						{
+							"id": 2321,
+							"name": "onRotationHandleMove",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "根据鼠标移动对选中物体进行旋转"
+							},
+							"parameters": [
+								{
+									"id": 2322,
+									"name": "currentCamera",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "当前渲染相机"
+									},
+									"type": {
+										"type": "reference",
+										"qualifiedName": "CameraComponent",
+										"package": "playcanvas",
+										"name": "CameraComponent"
+									}
+								},
+								{
+									"id": 2323,
+									"name": "dx",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "鼠标x增量"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 2324,
+									"name": "dy",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "鼠标y增量\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 2325,
+					"name": "onScaleHandleMove",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 843,
+							"character": 12
+						}
+					],
+					"signatures": [
+						{
+							"id": 2326,
+							"name": "onScaleHandleMove",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "根据鼠标移动对选中物体进行放缩"
+							},
+							"parameters": [
+								{
+									"id": 2327,
+									"name": "currentCamera",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "当前渲染相机"
+									},
+									"type": {
+										"type": "reference",
+										"qualifiedName": "CameraComponent",
+										"package": "playcanvas",
+										"name": "CameraComponent"
+									}
+								},
+								{
+									"id": 2328,
+									"name": "dx",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "鼠标x增量"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 2329,
+									"name": "dy",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "鼠标y增量\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 2315,
+					"name": "onTranslationHandleMove",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 754,
+							"character": 12
+						}
+					],
+					"signatures": [
+						{
+							"id": 2316,
+							"name": "onTranslationHandleMove",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "根据鼠标移动对选中物体进行位移"
+							},
+							"parameters": [
+								{
+									"id": 2317,
+									"name": "currentCamera",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "当前渲染相机"
+									},
+									"type": {
+										"type": "reference",
+										"qualifiedName": "CameraComponent",
+										"package": "playcanvas",
+										"name": "CameraComponent"
+									}
+								},
+								{
+									"id": 2318,
+									"name": "x",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "鼠标x"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 2319,
+									"name": "y",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "鼠标y\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 2298,
+					"name": "redo",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
+							"line": 406,
+							"character": 11
+						}
+					],
+					"signatures": [
+						{
+							"id": 2299,
+							"name": "redo",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "重做"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 2370,
+					"name": "removeListener",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/libs/libs/toolHelper.ts",
+							"line": 107,
+							"character": 11
+						}
+					],
+					"signatures": [
+						{
+							"id": 2371,
+							"name": "removeListener",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "移除事件监听"
+							},
+							"parameters": [
+								{
+									"id": 2372,
+									"name": "eventName",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "监听事件名称"
+									},
+									"type": {
+										"type": "reference",
+										"name": "RTHEvents"
+									}
+								},
+								{
+									"id": 2373,
+									"name": "callback",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "回调"
+									},
+									"type": {
+										"type": "reference",
+										"qualifiedName": "Function",
+										"package": "typescript",
+										"name": "Function"
+									}
+								},
+								{
+									"id": 2374,
+									"name": "scope",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"shortText": "范围\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
 								"id": 1988,
 								"name": "Tool.removeListener"
 							}
@@ -35350,7 +35450,7 @@
 					}
 				},
 				{
-					"id": 2325,
+					"id": 2330,
 					"name": "resetTransforms",
 					"kind": 2048,
 					"kindString": "Method",
@@ -35360,13 +35460,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 872,
+							"line": 890,
 							"character": 12
 						}
 					],
 					"signatures": [
 						{
-							"id": 2326,
+							"id": 2331,
 							"name": "resetTransforms",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -35376,7 +35476,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2327,
+									"id": 2332,
 									"name": "selections",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -35395,7 +35495,7 @@
 									}
 								},
 								{
-									"id": 2328,
+									"id": 2333,
 									"name": "transforms",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -35422,7 +35522,7 @@
 					]
 				},
 				{
-					"id": 2282,
+					"id": 2287,
 					"name": "select",
 					"kind": 2048,
 					"kindString": "Method",
@@ -35432,13 +35532,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 317,
+							"line": 335,
 							"character": 11
 						}
 					],
 					"signatures": [
 						{
-							"id": 2283,
+							"id": 2288,
 							"name": "select",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -35448,7 +35548,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2284,
+									"id": 2289,
 									"name": "target",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -35478,7 +35578,7 @@
 									}
 								},
 								{
-									"id": 2285,
+									"id": 2290,
 									"name": "saveRecord",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -35501,7 +35601,7 @@
 					]
 				},
 				{
-					"id": 2295,
+					"id": 2300,
 					"name": "selectionIsEqual",
 					"kind": 2048,
 					"kindString": "Method",
@@ -35511,13 +35611,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 399,
+							"line": 417,
 							"character": 12
 						}
 					],
 					"signatures": [
 						{
-							"id": 2296,
+							"id": 2301,
 							"name": "selectionIsEqual",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -35527,7 +35627,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2297,
+									"id": 2302,
 									"name": "target",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -35565,7 +35665,7 @@
 					]
 				},
 				{
-					"id": 2276,
+					"id": 2281,
 					"name": "setHandleType",
 					"kind": 2048,
 					"kindString": "Method",
@@ -35575,13 +35675,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 292,
+							"line": 310,
 							"character": 11
 						}
 					],
 					"signatures": [
 						{
-							"id": 2277,
+							"id": 2282,
 							"name": "setHandleType",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -35591,7 +35691,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2278,
+									"id": 2283,
 									"name": "type",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -35614,7 +35714,7 @@
 					]
 				},
 				{
-					"id": 2273,
+					"id": 2278,
 					"name": "setOption",
 					"kind": 2048,
 					"kindString": "Method",
@@ -35624,13 +35724,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 283,
+							"line": 296,
 							"character": 20
 						}
 					],
 					"signatures": [
 						{
-							"id": 2274,
+							"id": 2279,
 							"name": "setOption",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -35640,7 +35740,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2275,
+									"id": 2280,
 									"name": "options",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -35669,7 +35769,7 @@
 					}
 				},
 				{
-					"id": 2279,
+					"id": 2284,
 					"name": "setPivotType",
 					"kind": 2048,
 					"kindString": "Method",
@@ -35679,13 +35779,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 306,
+							"line": 324,
 							"character": 11
 						}
 					],
 					"signatures": [
 						{
-							"id": 2280,
+							"id": 2285,
 							"name": "setPivotType",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -35695,7 +35795,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2281,
+									"id": 2286,
 									"name": "type",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -35718,7 +35818,7 @@
 					]
 				},
 				{
-					"id": 2288,
+					"id": 2293,
 					"name": "switchPivot",
 					"kind": 2048,
 					"kindString": "Method",
@@ -35728,13 +35828,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 358,
+							"line": 376,
 							"character": 11
 						}
 					],
 					"signatures": [
 						{
-							"id": 2289,
+							"id": 2294,
 							"name": "switchPivot",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -35744,7 +35844,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2290,
+									"id": 2295,
 									"name": "pivot",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -35766,7 +35866,7 @@
 					]
 				},
 				{
-					"id": 2291,
+					"id": 2296,
 					"name": "undo",
 					"kind": 2048,
 					"kindString": "Method",
@@ -35776,13 +35876,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 378,
+							"line": 396,
 							"character": 11
 						}
 					],
 					"signatures": [
 						{
-							"id": 2292,
+							"id": 2297,
 							"name": "undo",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -35798,7 +35898,7 @@
 					]
 				},
 				{
-					"id": 2298,
+					"id": 2303,
 					"name": "update",
 					"kind": 2048,
 					"kindString": "Method",
@@ -35808,13 +35908,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 414,
+							"line": 432,
 							"character": 12
 						}
 					],
 					"signatures": [
 						{
-							"id": 2299,
+							"id": 2304,
 							"name": "update",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -35824,7 +35924,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2300,
+									"id": 2305,
 									"name": "dt",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -35846,7 +35946,7 @@
 					]
 				},
 				{
-					"id": 2304,
+					"id": 2309,
 					"name": "updateDisplay",
 					"kind": 2048,
 					"kindString": "Method",
@@ -35856,13 +35956,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 475,
+							"line": 493,
 							"character": 12
 						}
 					],
 					"signatures": [
 						{
-							"id": 2305,
+							"id": 2310,
 							"name": "updateDisplay",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -35872,7 +35972,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2306,
+									"id": 2311,
 									"name": "camera",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -35896,7 +35996,7 @@
 					]
 				},
 				{
-					"id": 2307,
+					"id": 2312,
 					"name": "updateHandle",
 					"kind": 2048,
 					"kindString": "Method",
@@ -35906,13 +36006,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 713,
+							"line": 731,
 							"character": 12
 						}
 					],
 					"signatures": [
 						{
-							"id": 2308,
+							"id": 2313,
 							"name": "updateHandle",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -35922,7 +36022,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2309,
+									"id": 2314,
 									"name": "camera",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -35946,7 +36046,7 @@
 					]
 				},
 				{
-					"id": 2349,
+					"id": 2354,
 					"name": "updateRecord",
 					"kind": 2048,
 					"kindString": "Method",
@@ -35956,13 +36056,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 1045,
+							"line": 1063,
 							"character": 12
 						}
 					],
 					"signatures": [
 						{
-							"id": 2350,
+							"id": 2355,
 							"name": "updateRecord",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -35975,7 +36075,7 @@
 					]
 				},
 				{
-					"id": 2301,
+					"id": 2306,
 					"name": "updateTransform",
 					"kind": 2048,
 					"kindString": "Method",
@@ -35985,13 +36085,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-							"line": 428,
+							"line": 446,
 							"character": 12
 						}
 					],
 					"signatures": [
 						{
-							"id": 2302,
+							"id": 2307,
 							"name": "updateTransform",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -36001,7 +36101,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2303,
+									"id": 2308,
 									"name": "camera",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -36037,111 +36137,116 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						2268,
-						2232,
-						2261,
-						2211,
-						2229,
-						2230,
-						2231,
-						2258,
-						2257,
-						2236,
-						2250,
-						2249,
-						2355,
-						2266,
+						2273,
 						2237,
-						2265,
-						2225,
-						2226,
-						2264,
-						2267,
-						2219,
-						2221,
-						2223,
-						2220,
-						2222,
-						2224,
-						2244,
-						2245,
-						2241,
-						2243,
-						2247,
-						2246,
-						2233,
-						2240,
-						2239,
-						2252,
-						2216,
-						2253,
-						2217,
-						2254,
-						2218,
-						2242,
-						2251,
-						2248,
-						2260,
-						2263,
-						2214,
-						2215,
-						2262,
+						2266,
+						2211,
 						2234,
 						2235,
+						2236,
+						2263,
+						2262,
+						2241,
 						2255,
-						2256,
-						2259,
-						2227,
+						2254,
+						2360,
+						2271,
+						2242,
+						2270,
+						2216,
+						2230,
+						2231,
+						2269,
+						2272,
+						2224,
+						2226,
 						2228,
-						2212,
+						2225,
+						2227,
+						2229,
+						2249,
+						2250,
+						2246,
+						2248,
+						2252,
+						2251,
+						2238,
+						2245,
+						2244,
+						2257,
+						2221,
+						2258,
+						2222,
+						2259,
+						2223,
+						2247,
+						2256,
+						2253,
+						2265,
+						2268,
+						2219,
+						2220,
+						2267,
+						2239,
+						2240,
 						2213,
-						2238
+						2212,
+						2215,
+						2214,
+						2260,
+						2261,
+						2264,
+						2232,
+						2233,
+						2217,
+						2218,
+						2243
 					]
 				},
 				{
 					"title": "Accessors",
 					"kind": 262144,
 					"children": [
-						2356,
-						2269
+						2361,
+						2274
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						2360,
-						2286,
-						2329,
-						2335,
-						2343,
-						2353,
-						2351,
-						2315,
-						2320,
-						2310,
-						2293,
 						2365,
-						2325,
-						2282,
-						2295,
-						2276,
-						2273,
-						2279,
-						2288,
 						2291,
+						2334,
+						2340,
+						2348,
+						2358,
+						2356,
+						2320,
+						2325,
+						2315,
 						2298,
-						2304,
-						2307,
-						2349,
-						2301
+						2370,
+						2330,
+						2287,
+						2300,
+						2281,
+						2278,
+						2284,
+						2293,
+						2296,
+						2303,
+						2309,
+						2312,
+						2354,
+						2306
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "src/tools/runtimeTransformHandle/runtimeTransformHandle.ts",
-					"line": 47,
+					"line": 53,
 					"character": 13
 				}
 			],
@@ -37197,14 +37302,14 @@
 			]
 		},
 		{
-			"id": 2438,
+			"id": 2443,
 			"name": "Selector",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 2439,
+					"id": 2444,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -37212,13 +37317,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 39,
+							"line": 41,
 							"character": 4
 						}
 					],
 					"signatures": [
 						{
-							"id": 2440,
+							"id": 2445,
 							"name": "new Selector",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -37228,7 +37333,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2441,
+									"id": 2446,
 									"name": "option",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -37244,7 +37349,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 2438,
+								"id": 2443,
 								"name": "Selector"
 							},
 							"overwrites": {
@@ -37261,7 +37366,7 @@
 					}
 				},
 				{
-					"id": 2466,
+					"id": 2472,
 					"name": "eventHandler",
 					"kind": 1024,
 					"kindString": "Property",
@@ -37292,7 +37397,7 @@
 					}
 				},
 				{
-					"id": 2443,
+					"id": 2448,
 					"name": "inputHander",
 					"kind": 1024,
 					"kindString": "Property",
@@ -37302,7 +37407,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 27,
+							"line": 28,
 							"character": 12
 						}
 					],
@@ -37323,75 +37428,8 @@
 					}
 				},
 				{
-					"id": 2445,
+					"id": 2450,
 					"name": "pickAreaScale",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/selector/selector.ts",
-							"line": 29,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				},
-				{
-					"id": 2444,
-					"name": "pickCamera",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/selector/selector.ts",
-							"line": 28,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "reference",
-						"qualifiedName": "CameraComponent",
-						"package": "playcanvas",
-						"name": "CameraComponent"
-					}
-				},
-				{
-					"id": 2447,
-					"name": "pickLayers",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true
-					},
-					"sources": [
-						{
-							"fileName": "src/tools/selector/selector.ts",
-							"line": 31,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "array",
-						"elementType": {
-							"type": "reference",
-							"qualifiedName": "Layer",
-							"package": "playcanvas",
-							"name": "Layer"
-						}
-					}
-				},
-				{
-					"id": 2446,
-					"name": "pickTag",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
@@ -37406,12 +37444,12 @@
 					],
 					"type": {
 						"type": "intrinsic",
-						"name": "string"
+						"name": "number"
 					}
 				},
 				{
-					"id": 2442,
-					"name": "picker",
+					"id": 2449,
+					"name": "pickCamera",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
@@ -37420,20 +37458,20 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 25,
+							"line": 29,
 							"character": 12
 						}
 					],
 					"type": {
 						"type": "reference",
-						"qualifiedName": "Picker",
+						"qualifiedName": "CameraComponent",
 						"package": "playcanvas",
-						"name": "Picker"
+						"name": "CameraComponent"
 					}
 				},
 				{
-					"id": 2448,
-					"name": "preSelectedNode",
+					"id": 2453,
+					"name": "pickLayers",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
@@ -37447,6 +37485,93 @@
 						}
 					],
 					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"qualifiedName": "Layer",
+							"package": "playcanvas",
+							"name": "Layer"
+						}
+					}
+				},
+				{
+					"id": 2452,
+					"name": "pickNull",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/selector/selector.ts",
+							"line": 32,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 2451,
+					"name": "pickTag",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/selector/selector.ts",
+							"line": 31,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 2447,
+					"name": "picker",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/selector/selector.ts",
+							"line": 26,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"qualifiedName": "Picker",
+						"package": "playcanvas",
+						"name": "Picker"
+					}
+				},
+				{
+					"id": 2454,
+					"name": "preSelectedNode",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/selector/selector.ts",
+							"line": 35,
+							"character": 12
+						}
+					],
+					"type": {
 						"type": "reference",
 						"qualifiedName": "GraphNode",
 						"package": "playcanvas",
@@ -37454,7 +37579,7 @@
 					}
 				},
 				{
-					"id": 2467,
+					"id": 2473,
 					"name": "enabled",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -37470,7 +37595,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 2468,
+							"id": 2474,
 							"name": "enabled",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -37490,7 +37615,7 @@
 					],
 					"setSignature": [
 						{
-							"id": 2469,
+							"id": 2475,
 							"name": "enabled",
 							"kind": 1048576,
 							"kindString": "Set signature",
@@ -37500,7 +37625,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2470,
+									"id": 2476,
 									"name": "value",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -37528,7 +37653,7 @@
 					}
 				},
 				{
-					"id": 2471,
+					"id": 2477,
 					"name": "addListener",
 					"kind": 2048,
 					"kindString": "Method",
@@ -37544,7 +37669,7 @@
 					],
 					"signatures": [
 						{
-							"id": 2472,
+							"id": 2478,
 							"name": "addListener",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -37554,7 +37679,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2473,
+									"id": 2479,
 									"name": "eventName",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -37568,7 +37693,7 @@
 									}
 								},
 								{
-									"id": 2474,
+									"id": 2480,
 									"name": "callback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -37584,7 +37709,7 @@
 									}
 								},
 								{
-									"id": 2475,
+									"id": 2481,
 									"name": "scope",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -37618,7 +37743,7 @@
 					}
 				},
 				{
-					"id": 2458,
+					"id": 2464,
 					"name": "getModelHasTag",
 					"kind": 2048,
 					"kindString": "Method",
@@ -37628,13 +37753,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 101,
+							"line": 104,
 							"character": 12
 						}
 					],
 					"signatures": [
 						{
-							"id": 2459,
+							"id": 2465,
 							"name": "getModelHasTag",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -37645,7 +37770,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2460,
+									"id": 2466,
 									"name": "model",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -37661,7 +37786,7 @@
 									}
 								},
 								{
-									"id": 2461,
+									"id": 2467,
 									"name": "tag",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -37685,7 +37810,7 @@
 					]
 				},
 				{
-					"id": 2464,
+					"id": 2470,
 					"name": "onDisable",
 					"kind": 2048,
 					"kindString": "Method",
@@ -37695,13 +37820,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 115,
+							"line": 118,
 							"character": 23
 						}
 					],
 					"signatures": [
 						{
-							"id": 2465,
+							"id": 2471,
 							"name": "onDisable",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -37724,7 +37849,7 @@
 					}
 				},
 				{
-					"id": 2462,
+					"id": 2468,
 					"name": "onEnable",
 					"kind": 2048,
 					"kindString": "Method",
@@ -37734,13 +37859,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 110,
+							"line": 113,
 							"character": 23
 						}
 					],
 					"signatures": [
 						{
-							"id": 2463,
+							"id": 2469,
 							"name": "onEnable",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -37763,7 +37888,7 @@
 					}
 				},
 				{
-					"id": 2452,
+					"id": 2458,
 					"name": "pick",
 					"kind": 2048,
 					"kindString": "Method",
@@ -37773,13 +37898,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 66,
+							"line": 69,
 							"character": 12
 						}
 					],
 					"signatures": [
 						{
-							"id": 2453,
+							"id": 2459,
 							"name": "pick",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -37789,7 +37914,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2454,
+									"id": 2460,
 									"name": "event",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -37800,14 +37925,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 2455,
+											"id": 2461,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 2456,
+													"id": 2462,
 													"name": "x",
 													"kind": 1024,
 													"kindString": "Property",
@@ -37818,7 +37943,7 @@
 													"sources": [
 														{
 															"fileName": "src/tools/selector/selector.ts",
-															"line": 66,
+															"line": 69,
 															"character": 26
 														}
 													],
@@ -37828,7 +37953,7 @@
 													}
 												},
 												{
-													"id": 2457,
+													"id": 2463,
 													"name": "y",
 													"kind": 1024,
 													"kindString": "Property",
@@ -37839,7 +37964,7 @@
 													"sources": [
 														{
 															"fileName": "src/tools/selector/selector.ts",
-															"line": 66,
+															"line": 69,
 															"character": 37
 														}
 													],
@@ -37854,8 +37979,8 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														2456,
-														2457
+														2462,
+														2463
 													]
 												}
 											]
@@ -37871,7 +37996,7 @@
 					]
 				},
 				{
-					"id": 2476,
+					"id": 2482,
 					"name": "removeListener",
 					"kind": 2048,
 					"kindString": "Method",
@@ -37887,7 +38012,7 @@
 					],
 					"signatures": [
 						{
-							"id": 2477,
+							"id": 2483,
 							"name": "removeListener",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -37897,7 +38022,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2478,
+									"id": 2484,
 									"name": "eventName",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -37911,7 +38036,7 @@
 									}
 								},
 								{
-									"id": 2479,
+									"id": 2485,
 									"name": "callback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -37927,7 +38052,7 @@
 									}
 								},
 								{
-									"id": 2480,
+									"id": 2486,
 									"name": "scope",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -37961,7 +38086,7 @@
 					}
 				},
 				{
-					"id": 2449,
+					"id": 2455,
 					"name": "setOption",
 					"kind": 2048,
 					"kindString": "Method",
@@ -37971,13 +38096,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 51,
+							"line": 53,
 							"character": 20
 						}
 					],
 					"signatures": [
 						{
-							"id": 2450,
+							"id": 2456,
 							"name": "setOption",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -37987,7 +38112,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2451,
+									"id": 2457,
 									"name": "option",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -38024,48 +38149,49 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						2439
+						2444
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						2466,
-						2443,
-						2445,
-						2444,
+						2472,
+						2448,
+						2450,
+						2449,
+						2453,
+						2452,
+						2451,
 						2447,
-						2446,
-						2442,
-						2448
+						2454
 					]
 				},
 				{
 					"title": "Accessors",
 					"kind": 262144,
 					"children": [
-						2467
+						2473
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						2471,
-						2458,
+						2477,
 						2464,
-						2462,
-						2452,
-						2476,
-						2449
+						2470,
+						2468,
+						2458,
+						2482,
+						2455
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "src/tools/selector/selector.ts",
-					"line": 23,
+					"line": 24,
 					"character": 13
 				}
 			],
@@ -42138,12 +42264,12 @@
 				},
 				{
 					"type": "reference",
-					"id": 2370,
+					"id": 2375,
 					"name": "MultiSelector"
 				},
 				{
 					"type": "reference",
-					"id": 2438,
+					"id": 2443,
 					"name": "Selector"
 				}
 			]
@@ -50723,7 +50849,7 @@
 			]
 		},
 		{
-			"id": 2486,
+			"id": 2492,
 			"name": "clearScreenQuad",
 			"kind": 64,
 			"kindString": "Function",
@@ -50737,7 +50863,7 @@
 			],
 			"signatures": [
 				{
-					"id": 2487,
+					"id": 2493,
 					"name": "clearScreenQuad",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -50753,7 +50879,7 @@
 			]
 		},
 		{
-			"id": 2493,
+			"id": 2499,
 			"name": "clearScreenRect",
 			"kind": 64,
 			"kindString": "Function",
@@ -50767,7 +50893,7 @@
 			],
 			"signatures": [
 				{
-					"id": 2494,
+					"id": 2500,
 					"name": "clearScreenRect",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -50783,7 +50909,7 @@
 			]
 		},
 		{
-			"id": 2506,
+			"id": 2512,
 			"name": "clearSelectionBox",
 			"kind": 64,
 			"kindString": "Function",
@@ -50797,7 +50923,7 @@
 			],
 			"signatures": [
 				{
-					"id": 2507,
+					"id": 2513,
 					"name": "clearSelectionBox",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -50888,7 +51014,7 @@
 			]
 		},
 		{
-			"id": 2481,
+			"id": 2487,
 			"name": "drawScreenQuad",
 			"kind": 64,
 			"kindString": "Function",
@@ -50902,7 +51028,7 @@
 			],
 			"signatures": [
 				{
-					"id": 2482,
+					"id": 2488,
 					"name": "drawScreenQuad",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -50912,7 +51038,7 @@
 					},
 					"parameters": [
 						{
-							"id": 2483,
+							"id": 2489,
 							"name": "rect",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -50929,7 +51055,7 @@
 							"defaultValue": "defaultRect"
 						},
 						{
-							"id": 2484,
+							"id": 2490,
 							"name": "color",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -50946,7 +51072,7 @@
 							"defaultValue": "defaultColor"
 						},
 						{
-							"id": 2485,
+							"id": 2491,
 							"name": "layer",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -50972,7 +51098,7 @@
 			]
 		},
 		{
-			"id": 2488,
+			"id": 2494,
 			"name": "drawScreenRect",
 			"kind": 64,
 			"kindString": "Function",
@@ -50986,7 +51112,7 @@
 			],
 			"signatures": [
 				{
-					"id": 2489,
+					"id": 2495,
 					"name": "drawScreenRect",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -50996,7 +51122,7 @@
 					},
 					"parameters": [
 						{
-							"id": 2490,
+							"id": 2496,
 							"name": "rect",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -51013,7 +51139,7 @@
 							"defaultValue": "defaultRect"
 						},
 						{
-							"id": 2491,
+							"id": 2497,
 							"name": "color",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -51030,7 +51156,7 @@
 							"defaultValue": "defaultColor"
 						},
 						{
-							"id": 2492,
+							"id": 2498,
 							"name": "layer",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -51056,7 +51182,7 @@
 			]
 		},
 		{
-			"id": 2495,
+			"id": 2501,
 			"name": "drawSelectionBox",
 			"kind": 64,
 			"kindString": "Function",
@@ -51070,7 +51196,7 @@
 			],
 			"signatures": [
 				{
-					"id": 2496,
+					"id": 2502,
 					"name": "drawSelectionBox",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -51081,7 +51207,7 @@
 					},
 					"parameters": [
 						{
-							"id": 2497,
+							"id": 2503,
 							"name": "startPoint",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -51092,14 +51218,14 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 2498,
+									"id": 2504,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
 									"flags": {},
 									"children": [
 										{
-											"id": 2499,
+											"id": 2505,
 											"name": "x",
 											"kind": 1024,
 											"kindString": "Property",
@@ -51117,7 +51243,7 @@
 											}
 										},
 										{
-											"id": 2500,
+											"id": 2506,
 											"name": "y",
 											"kind": 1024,
 											"kindString": "Property",
@@ -51140,8 +51266,8 @@
 											"title": "Properties",
 											"kind": 1024,
 											"children": [
-												2499,
-												2500
+												2505,
+												2506
 											]
 										}
 									]
@@ -51149,7 +51275,7 @@
 							}
 						},
 						{
-							"id": 2501,
+							"id": 2507,
 							"name": "endPoint",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -51160,14 +51286,14 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 2502,
+									"id": 2508,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
 									"flags": {},
 									"children": [
 										{
-											"id": 2503,
+											"id": 2509,
 											"name": "x",
 											"kind": 1024,
 											"kindString": "Property",
@@ -51185,7 +51311,7 @@
 											}
 										},
 										{
-											"id": 2504,
+											"id": 2510,
 											"name": "y",
 											"kind": 1024,
 											"kindString": "Property",
@@ -51208,8 +51334,8 @@
 											"title": "Properties",
 											"kind": 1024,
 											"children": [
-												2503,
-												2504
+												2509,
+												2510
 											]
 										}
 									]
@@ -51217,7 +51343,7 @@
 							}
 						},
 						{
-							"id": 2505,
+							"id": 2511,
 							"name": "boxLayer",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -51723,10 +51849,10 @@
 				1851,
 				333,
 				798,
-				2508,
+				2514,
 				1053,
 				2157,
-				2370,
+				2375,
 				2001,
 				2108,
 				1802,
@@ -51734,7 +51860,7 @@
 				1271,
 				2207,
 				1892,
-				2438,
+				2443,
 				1289,
 				1971,
 				1467,
@@ -51762,13 +51888,13 @@
 			"children": [
 				1871,
 				1861,
-				2486,
-				2493,
-				2506,
+				2492,
+				2499,
+				2512,
 				1865,
-				2481,
-				2488,
-				2495,
+				2487,
+				2494,
+				2501,
 				1944,
 				1950,
 				1953,

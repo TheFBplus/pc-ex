@@ -10,6 +10,6 @@ export * from "./extendClasses/texture";
 export * from "./extendClasses/vec2";
 export * from "./extendClasses/vec3";
 export * from "./extendClasses/vec4";
-export * from "./newClasses/pathCurve";
-export * from "./newUtils/debugLine";
+export * from "./newClasses/constructors/pathCurve";
+export * from "./newClasses/utils/debugLine";
 

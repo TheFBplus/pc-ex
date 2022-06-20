@@ -14,7 +14,9 @@
     "strictNullChecks": false,
     "declarationDir": "bin/dts",
     "declaration": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "checkJs": false
   },
   "include": [
     "src/index.ts",

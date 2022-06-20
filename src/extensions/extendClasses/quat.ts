@@ -2,17 +2,17 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-04-22 09:33:08
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-14 15:52:22
+ * @ 修改时间: 2022-06-20 14:03:45
  * @ 详情: 扩展Quat类
  */
 
 import * as pc from "playcanvas";
 
-import { extend } from "../../libs/libs/extend-decorator";
+import { extendClass } from "../../libs/libs/extend-decorator";
 
 const _lookMat = new pc.Mat4();
 
-@extend("Quat")
+@extendClass("Quat")
 export class Quat_EX extends pc.Quat
 {
     /**

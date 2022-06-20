@@ -2,15 +2,16 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-04-21 16:10:55
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-14 15:58:47
+ * @ 修改时间: 2022-06-20 15:26:10
  * @ 详情: 用于扩展pc类的装饰器
  */
 
 import * as pc from "playcanvas";
 
-type extendClass = "CameraComponent" | "Color" | "Curve" | "ElementComponent" |
-    "Entity" | "MeshInstance" | "Quat" | "Ray" |
-    "Texture" | "Vec2" | "Vec3" | "Vec4" | string;
+export type ExtendClassName =
+    "Application" | "CameraComponent" | "Color" | "Curve" |
+    "ElementComponent" | "Entity" | "MeshInstance" | "Quat" |
+    "Ray" | "Texture" | "Vec2" | "Vec3" | "Vec4";
 
 interface Type<T> extends Function
 {
@@ -24,24 +25,8 @@ function cls<T>(value: Type<T>)
 }
 
 // 扩展pc类，若类名为空，则在pc命名空间下创建新类
-export function extend(extendClassName?: extendClass)
+export function extendClass(extendClassName: ExtendClassName)
 {
-    // 创建新类，在pc命名空间下
-    if (!extendClassName) {
-        return function (target: any)
-        {
-            if ((pc as any)[target.name]) {
-                console.error(`${target.name} 类已存在与pc下，请更改类名，否则此扩展类不会生效！`);
-                return;
-            }
-
-            (pc as any).extend(pc, function ()
-            {
-                return { [target.name]: target };
-            }());
-        }
-    }
-
     // 扩展已有类
     return function (target: any)
     {
@@ -82,12 +67,36 @@ export function extend(extendClassName?: extendClass)
     }
 }
 
-// 创建新的工具类，放在指定命名空间下
-export function newUtil(target: any)
+// 创建新的实例类，放在pc命名空间下
+export function newClass(target: any)
 {
-    if ((pc as any)[target.name]) {
-        console.error(`${target.name} 类已存在与pc下，请更改类名，否则此扩展类不会生效！`);
+    const newClassName = target.name;
+    if ((pc as any)[newClassName]) {
+        console.error(`${newClassName} 类已存在于pc下，请更改类名，否则此扩展类不会生效！`);
         return;
     }
-    (pc as any)[target.name] = target;
+
+    pc.extend(pc, function ()
+    {
+        return { [newClassName]: target };
+    }());
+}
+
+// 创建新的工具类，放在pc.EXTools命名空间下
+export function tool(target: any)
+{
+    if (!(pc as any)["EXTools"]) {
+        pc.extend(pc, { EXTools: {} });
+    }
+
+    const newToolName = target.name;
+    if ((pc as any).EXTools[newToolName]) {
+        console.error(`${newToolName} 工具已存在，请更改工具名，否则此工具不会生效！`);
+        return;
+    }
+
+    pc.extend((pc as any).EXTools, function ()
+    {
+        return { [newToolName]: target };
+    }());
 }

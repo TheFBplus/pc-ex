@@ -2,13 +2,13 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 14:14:05
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-14 15:52:36
+ * @ 修改时间: 2022-06-20 14:03:58
  * @ 详情: 扩展texture类
  */
 
 import * as pc from "playcanvas";
 
-import { extend } from "../../libs/libs/extend-decorator";
+import { extendClass } from "../../libs/libs/extend-decorator";
 
 /**
  * 把像素数据沿y方向翻转
@@ -31,7 +31,7 @@ function flipY(data: Uint8ClampedArray, width: number, height: number): void
     }
 }
 
-@extend("Texture")
+@extendClass("Texture")
 export class Texture_EX extends pc.Texture
 {
     private _pixelData: Uint8ClampedArray;

@@ -50,7 +50,7 @@
 
 #### Defined in
 
-src/tools/input/mouseInput.ts:26
+src/tools/input/mouseInput.ts:28
 
 ## Properties
 
@@ -152,7 +152,7 @@ ___
 
 #### Defined in
 
-src/tools/input/mouseInput.ts:116
+src/tools/input/mouseInput.ts:118
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/tools/input/mouseInput.ts:108
+src/tools/input/mouseInput.ts:110
 
 ___
 
@@ -224,4 +224,4 @@ ___
 
 #### Defined in
 
-src/tools/input/mouseInput.ts:103
+src/tools/input/mouseInput.ts:105

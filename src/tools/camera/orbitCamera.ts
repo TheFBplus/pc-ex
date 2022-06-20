@@ -2,12 +2,13 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 17:03:58
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-15 17:34:05
+ * @ 修改时间: 2022-06-20 15:40:27
  * @ 详情: 观测相机
  */
 
 import * as pc from "playcanvas";
 
+import { tool } from "../../libs/libs";
 import { Tool, useGlobal } from "../../libs/libs/toolHelper";
 import { PCNode } from "../../resources/types/common";
 
@@ -30,6 +31,7 @@ type OrbitCameraOptions = {
     lookCondition?: () => boolean;
 };
 
+@tool
 export class OrbitCamera extends Tool<OrbitCameraOptions, unknown>
 {
     public mainCamra: pc.CameraComponent;

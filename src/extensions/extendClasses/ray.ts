@@ -2,20 +2,20 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 11:26:17
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-14 15:52:26
+ * @ 修改时间: 2022-06-20 14:03:51
  * @ 详情: 扩展Ray类
  */
 
 import * as pc from "playcanvas";
 
-import { extend } from "../../libs/libs/extend-decorator";
+import { extendClass } from "../../libs/libs/extend-decorator";
 
 const diff = new pc.Vec3();
 const edge1 = new pc.Vec3();
 const edge2 = new pc.Vec3();
 const normal = new pc.Vec3();
 
-@extend("Ray")
+@extendClass("Ray")
 export class Ray_EX extends pc.Ray
 {
     /**

@@ -2,17 +2,17 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 14:55:21
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-14 15:52:06
+ * @ 修改时间: 2022-06-20 14:03:30
  * @ 详情: 扩展Entity类
  */
 
 import * as pc from "playcanvas";
 
-import { extend } from "../../libs/libs/extend-decorator";
+import { extendClass } from "../../libs/libs/extend-decorator";
 
 const _parentMat = new pc.Mat4();
 
-@extend("Entity")
+@extendClass("Entity")
 export class Entity_EX extends pc.Entity
 {
     /**

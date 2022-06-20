@@ -2,17 +2,17 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 15:36:25
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-14 14:58:55
+ * @ 修改时间: 2022-06-20 10:27:26
  * @ 详情: 直线绘制
  */
 
 import * as pc from "playcanvas";
 
-import { newUtil } from "../../libs/libs/extend-decorator";
+import { newClass } from "../../../libs/libs/extend-decorator";
 
 let lines = new Array<pc.HandleEventCallback>();
 
-@newUtil
+@newClass
 export class DebugLine
 {
     /**

@@ -2,17 +2,19 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 17:01:01
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-14 15:08:55
+ * @ 修改时间: 2022-06-20 11:10:04
  * @ 详情: 鼠标操作
  */
 
 import * as pc from "playcanvas";
 
+import { tool } from "../../libs/libs";
 import { Tool } from "../../libs/libs/toolHelper";
 
 type InputEvents = "down" | "move" | "click" | "up" | "pinch" | "dragging" | "dragEnd";
 type MouseInputOptions = { clickError: number };
 
+@tool
 export class MouseInputer extends Tool<MouseInputOptions, InputEvents>
 {
     private mouseDownVec: pc.Vec2;

@@ -2,14 +2,20 @@
  * @ 创建者: 陈伟
  * @ 创建时间: 2021-12-01 10:08:17
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-16 15:28:26
+ * @ 修改时间: 2022-06-20 14:05:02
  * @ 详情: Runtime Transform Handle
  */
 
 import * as pc from "playcanvas";
 
-import { Tool, use, useGlobal } from "../../libs/libs/toolHelper";
-import { MouseInputer, MultiSelector, OrbitCamera, OutlineCamera, Selector } from "../tools";
+import { tool } from "../../libs/libs";
+import { Tool, use } from "../../libs/libs/toolHelper";
+import { OrbitCamera } from "../camera/orbitCamera";
+import { OutlineCamera } from "../camera/outlineCamera";
+import { MouseInputer } from "../input/mouseInput";
+import { MultiSelector } from "../selector/multiSelector";
+import { Selector } from "../selector/selector";
+import { HandleType, PivotType } from "./common/enum";
 import RTH_RuntimeGrid, { GridLayer } from "./features/runtimeGrid";
 import RTH_KeyboardInputer from "./input/keyboardInput";
 import {
@@ -22,21 +28,6 @@ import {
 } from "./utils/handleShader";
 import MeshRaycaster from "./utils/meshRaycaster";
 import Recorder, { Record } from "./utils/recorder";
-
-// 坐标轴类型
-export enum HandleType
-{
-    Translation,
-    Rotation,
-    Scale
-}
-
-// 中心点类型
-export enum PivotType
-{
-    World,
-    Local
-}
 
 // RTH选项
 type RTHOptions = {
@@ -52,6 +43,7 @@ type RTHOptions = {
 // 回调事件
 type RTHEvents = "select" | "focus";
 
+@tool
 export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
 {
     public camera: pc.CameraComponent;
@@ -236,10 +228,10 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
         // 监听鼠标
         if (pc.app.mouse) {
             // 使用鼠标输入监听器，监听鼠标
-            const mouseInputer = useGlobal(MouseInputer);
+            const mouseInputer = use(MouseInputer);
 
             // 使用观测相机，实现基本视角操作
-            this.orbitCamera = useGlobal(OrbitCamera, { mainCamra: this.camera, device: pc.app.touch ? "touchScreen" : "mouse", rotateCondition: () => (!this.multiSelect || pc.app.keyboard.isPressed(pc.KEY_ALT)) && !this.isDragging });
+            this.orbitCamera = use(OrbitCamera, { mainCamra: this.camera, device: pc.app.touch ? "touchScreen" : "mouse", rotateCondition: () => (!this.multiSelect || pc.app.keyboard.isPressed(pc.KEY_ALT)) && !this.isDragging });
 
             // 使用模型点选器，实现模型点击检测
             const selector = use(Selector, { inputHandler: mouseInputer, pickCamera: this.camera, excludeLayers: [RTHLayer, GridLayer, UILayer], pickNull: this.selectNull, pickTag: this.selectTags, pickCondition: this.selectCondition });

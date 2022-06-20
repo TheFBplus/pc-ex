@@ -4,17 +4,13 @@ pc-ex
 
 ## Table of contents
 
-### Enumerations
-
-- [HandleType](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/enums/HandleType.md)
-- [PivotType](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/enums/PivotType.md)
-
 ### Classes
 
 - [CameraComponent\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md)
 - [Color\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Color_EX.md)
 - [Curve\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Curve_EX.md)
 - [DebugLine](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DebugLine.md)
+- [DropGLTFLoader](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md)
 - [ElementComponent\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md)
 - [Entity\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Entity_EX.md)
 - [MaterialController](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MaterialController.md)
@@ -42,6 +38,7 @@ pc-ex
 ### Type Aliases
 
 - [AttributeParams](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attributeparams)
+- [ExtendClassName](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#extendclassname)
 
 ### Functions
 
@@ -54,8 +51,9 @@ pc-ex
 - [drawScreenQuad](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#drawscreenquad)
 - [drawScreenRect](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#drawscreenrect)
 - [drawSelectionBox](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#drawselectionbox)
-- [extend](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#extend)
-- [newUtil](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#newutil)
+- [extendClass](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#extendclass)
+- [newClass](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#newclass)
+- [tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#tool)
 - [use](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#use)
 - [useGlobal](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#useglobal)
 
@@ -88,6 +86,16 @@ pc-ex
 #### Defined in
 
 src/libs/libs/create-script-decorator.ts:56
+
+___
+
+### ExtendClassName
+
+Ƭ **ExtendClassName**: ``"Application"`` \| ``"CameraComponent"`` \| ``"Color"`` \| ``"Curve"`` \| ``"ElementComponent"`` \| ``"Entity"`` \| ``"MeshInstance"`` \| ``"Quat"`` \| ``"Ray"`` \| ``"Texture"`` \| ``"Vec2"`` \| ``"Vec3"`` \| ``"Vec4"``
+
+#### Defined in
+
+src/libs/libs/extend-decorator.ts:11
 
 ## Functions
 
@@ -311,15 +319,15 @@ src/utils/utils/drawSelectionBox/drawSelectionBox.ts:25
 
 ___
 
-### extend
+### extendClass
 
-▸ **extend**(`extendClassName?`): (`target`: `any`) => `void`
+▸ **extendClass**(`extendClassName`): (`target`: `any`) => `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `extendClassName?` | `string` |
+| `extendClassName` | [`ExtendClassName`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#extendclassname) |
 
 #### Returns
 
@@ -339,13 +347,33 @@ ___
 
 #### Defined in
 
-src/libs/libs/extend-decorator.ts:27
+src/libs/libs/extend-decorator.ts:28
 
 ___
 
-### newUtil
+### newClass
 
-▸ **newUtil**(`target`): `void`
+▸ **newClass**(`target`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `target` | `any` |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+src/libs/libs/extend-decorator.ts:71
+
+___
+
+### tool
+
+▸ **tool**(`target`): `void`
 
 #### Parameters
 

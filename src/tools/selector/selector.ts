@@ -2,12 +2,13 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-08 15:04:27
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-16 15:26:41
+ * @ 修改时间: 2022-06-20 11:13:07
  * @ 详情: 点选模型
  */
 
 import * as pc from "playcanvas";
 
+import { tool } from "../../libs/libs";
 import { Tool } from "../../libs/libs/toolHelper";
 
 type InputEvents = "down" | "move" | "click" | "up" | "pinch" | "dragging" | "dragEnd";
@@ -22,6 +23,7 @@ type SelectorOptions = {
     excludeLayers?: pc.Layer[];
 };
 
+@tool
 export class Selector extends Tool<SelectorOptions, SelectorEventType>
 {
     private picker: pc.Picker;

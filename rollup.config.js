@@ -14,10 +14,10 @@ export default {
 			module: "ES2020",
 			target: "ES5",
 		}),
-		terser(),
 		string({
 			include: ["**/*.vert", "**/*.frag"]
 		}),
+		terser({ keep_fnames: true }),
 		copy({
 			targets: [
 				{ src: "src/resources/shaders/*", dest: ["bin/cjs/resources/shaders", "bin/dts/resources/shaders", "bin/es/resources/shaders"] },

@@ -59,7 +59,7 @@
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:163
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:155
 
 ## Properties
 
@@ -69,7 +69,7 @@ src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:163
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:57
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:49
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:370
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:362
 
 ___
 
@@ -191,7 +191,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:423
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:415
 
 ___
 
@@ -209,7 +209,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:1093
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:1085
 
 ___
 
@@ -227,7 +227,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:1091
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:1083
 
 ___
 
@@ -243,7 +243,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:412
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:404
 
 ___
 
@@ -294,7 +294,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:341
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:333
 
 ___
 
@@ -308,7 +308,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `type` | [`HandleType`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/enums/HandleType.md) | 坐标轴类型 |
+| `type` | `HandleType` | 坐标轴类型 |
 
 #### Returns
 
@@ -316,7 +316,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:316
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:308
 
 ___
 
@@ -342,7 +342,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:300
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:292
 
 ___
 
@@ -356,7 +356,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `type` | [`PivotType`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/enums/PivotType.md) | 中心点类型 |
+| `type` | `PivotType` | 中心点类型 |
 
 #### Returns
 
@@ -364,7 +364,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:330
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:322
 
 ___
 
@@ -378,7 +378,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `pivot?` | [`PivotType`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/enums/PivotType.md) |
+| `pivot?` | `PivotType` |
 
 #### Returns
 
@@ -386,7 +386,7 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:382
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:374
 
 ___
 
@@ -402,4 +402,4 @@ ___
 
 #### Defined in
 
-src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:402
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:394

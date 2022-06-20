@@ -1,48 +1,42 @@
-[pc-ex](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md) / MultiSelector
+[pc-ex](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md) / DropGLTFLoader
 
-# Class: MultiSelector
+# Class: DropGLTFLoader
 
 ## Hierarchy
 
-- [`Tool`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md)<`SelectorOptions`, `MultiSelectorEventType`\>
+- [`Tool`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md)<`unknown`, `DropGLTFLoaderEvents`\>
 
-  ↳ **`MultiSelector`**
+  ↳ **`DropGLTFLoader`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MultiSelector.md#constructor)
+- [constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md#constructor)
 
 ### Properties
 
-- [eventHandler](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MultiSelector.md#eventhandler)
+- [eventHandler](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md#eventhandler)
 
 ### Accessors
 
-- [enabled](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MultiSelector.md#enabled)
+- [enabled](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md#enabled)
 
 ### Methods
 
-- [addListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MultiSelector.md#addlistener)
-- [onDisable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MultiSelector.md#ondisable)
-- [onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MultiSelector.md#onenable)
-- [removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MultiSelector.md#removelistener)
-- [setOption](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MultiSelector.md#setoption)
+- [addListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md#addlistener)
+- [onDisable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md#ondisable)
+- [onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md#onenable)
+- [removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md#removelistener)
+- [setOption](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md#setoption)
 
 ## Constructors
 
 ### constructor
 
-• **new MultiSelector**(`option`)
+• **new DropGLTFLoader**()
 
 创建新的工具实例
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `option` | `SelectorOptions` |
 
 #### Overrides
 
@@ -50,13 +44,13 @@
 
 #### Defined in
 
-src/tools/selector/multiSelector.ts:45
+src/tools/loaders/dropGLTFLoader.ts:31
 
 ## Properties
 
 ### eventHandler
 
-• **eventHandler**: `ExEventHandler`<`MultiSelectorEventType`\>
+• **eventHandler**: `ExEventHandler`<``"modelLoaded"``\>
 
 #### Inherited from
 
@@ -120,7 +114,7 @@ src/libs/libs/toolHelper.ts:76
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `eventName` | `MultiSelectorEventType` | 监听事件名称 |
+| `eventName` | ``"modelLoaded"`` | 监听事件名称 |
 | `callback` | `Function` | 回调 |
 | `scope?` | `any` | 范围 |
 
@@ -152,7 +146,7 @@ ___
 
 #### Defined in
 
-src/tools/selector/multiSelector.ts:197
+src/tools/loaders/dropGLTFLoader.ts:45
 
 ___
 
@@ -170,7 +164,7 @@ ___
 
 #### Defined in
 
-src/tools/selector/multiSelector.ts:190
+src/tools/loaders/dropGLTFLoader.ts:43
 
 ___
 
@@ -184,7 +178,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `eventName` | `MultiSelectorEventType` | 监听事件名称 |
+| `eventName` | ``"modelLoaded"`` | 监听事件名称 |
 | `callback` | `Function` | 回调 |
 | `scope?` | `any` | 范围 |
 
@@ -204,15 +198,9 @@ ___
 
 ### setOption
 
-▸ **setOption**(`option`): `void`
+▸ **setOption**(): `void`
 
-设置多选模型选项
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `option` | `SelectorOptions` | 多选模型选项 |
+设置选项
 
 #### Returns
 
@@ -224,4 +212,4 @@ ___
 
 #### Defined in
 
-src/tools/selector/multiSelector.ts:59
+src/tools/loaders/dropGLTFLoader.ts:41

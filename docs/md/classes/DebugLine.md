@@ -33,7 +33,7 @@
 
 #### Defined in
 
-src/extensions/newUtils/debugLine.ts:38
+src/extensions/newClasses/utils/debugLine.ts:38
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-src/extensions/newUtils/debugLine.ts:24
+src/extensions/newClasses/utils/debugLine.ts:24

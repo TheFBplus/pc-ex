@@ -2,14 +2,14 @@
  * @ 创建者: 陈伟
  * @ 创建时间: 2022-05-16 14:40:16
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-16 11:26:47
+ * @ 修改时间: 2022-06-20 09:56:57
  * @ 详情: 键盘快捷键
  */
 
 import * as pc from "playcanvas";
 
 import { Tool } from "../../../libs/libs/toolHelper";
-import { HandleType } from "../runtimeTransformHandle";
+import { HandleType } from "../common/enum";
 
 type KeyCode = number;
 

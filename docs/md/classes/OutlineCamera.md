@@ -51,7 +51,7 @@
 
 #### Defined in
 
-src/tools/camera/outlineCamera.ts:39
+src/tools/camera/outlineCamera.ts:41
 
 ## Properties
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/outlineCamera.ts:166
+src/tools/camera/outlineCamera.ts:168
 
 ___
 
@@ -171,7 +171,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/outlineCamera.ts:161
+src/tools/camera/outlineCamera.ts:163
 
 ___
 
@@ -225,7 +225,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/outlineCamera.ts:46
+src/tools/camera/outlineCamera.ts:48
 
 ___
 
@@ -248,4 +248,4 @@ ___
 
 #### Defined in
 
-src/tools/camera/outlineCamera.ts:62
+src/tools/camera/outlineCamera.ts:64

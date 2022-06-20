@@ -2,12 +2,13 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-05-16 14:30:00
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-14 15:09:20
+ * @ 修改时间: 2022-06-20 11:10:47
  * @ 详情: 多选模型
  */
 
 import * as pc from "playcanvas";
 
+import { tool } from "../../libs/libs";
 import { Tool } from "../../libs/libs/toolHelper";
 import { PCNode } from "../../resources/types/common";
 import {
@@ -25,6 +26,7 @@ type SelectorOptions = {
     expectCondition?: () => boolean
 };
 
+@tool
 export class MultiSelector extends Tool<SelectorOptions, MultiSelectorEventType>
 {
     private picker: pc.Picker;

@@ -65,7 +65,7 @@
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:74
+src/tools/camera/orbitCamera.ts:76
 
 ## Properties
 
@@ -83,7 +83,7 @@ src/tools/camera/orbitCamera.ts:74
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:42
+src/tools/camera/orbitCamera.ts:44
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:39
+src/tools/camera/orbitCamera.ts:41
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:38
+src/tools/camera/orbitCamera.ts:40
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:37
+src/tools/camera/orbitCamera.ts:39
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:44
+src/tools/camera/orbitCamera.ts:46
 
 ___
 
@@ -155,7 +155,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:35
+src/tools/camera/orbitCamera.ts:37
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:43
+src/tools/camera/orbitCamera.ts:45
 
 ___
 
@@ -191,7 +191,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:41
+src/tools/camera/orbitCamera.ts:43
 
 ## Accessors
 
@@ -207,7 +207,7 @@ src/tools/camera/orbitCamera.ts:41
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:181
+src/tools/camera/orbitCamera.ts:183
 
 • `set` **device**(`value`): `void`
 
@@ -225,7 +225,7 @@ src/tools/camera/orbitCamera.ts:181
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:185
+src/tools/camera/orbitCamera.ts:187
 
 ___
 
@@ -241,7 +241,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:157
+src/tools/camera/orbitCamera.ts:159
 
 • `set` **distance**(`value`): `void`
 
@@ -259,7 +259,7 @@ src/tools/camera/orbitCamera.ts:157
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:161
+src/tools/camera/orbitCamera.ts:163
 
 ___
 
@@ -317,7 +317,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:145
+src/tools/camera/orbitCamera.ts:147
 
 • `set` **pitch**(`value`): `void`
 
@@ -335,7 +335,7 @@ src/tools/camera/orbitCamera.ts:145
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:149
+src/tools/camera/orbitCamera.ts:151
 
 ___
 
@@ -351,7 +351,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:169
+src/tools/camera/orbitCamera.ts:171
 
 • `set` **pivotPoint**(`value`): `void`
 
@@ -369,7 +369,7 @@ src/tools/camera/orbitCamera.ts:169
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:173
+src/tools/camera/orbitCamera.ts:175
 
 ___
 
@@ -385,7 +385,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:123
+src/tools/camera/orbitCamera.ts:125
 
 • `set` **yaw**(`value`): `void`
 
@@ -403,7 +403,7 @@ src/tools/camera/orbitCamera.ts:123
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:127
+src/tools/camera/orbitCamera.ts:129
 
 ## Methods
 
@@ -453,7 +453,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:209
+src/tools/camera/orbitCamera.ts:211
 
 ___
 
@@ -471,7 +471,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:393
+src/tools/camera/orbitCamera.ts:395
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:379
+src/tools/camera/orbitCamera.ts:381
 
 ___
 
@@ -543,7 +543,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:102
+src/tools/camera/orbitCamera.ts:104
 
 ___
 
@@ -559,4 +559,4 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:229
+src/tools/camera/orbitCamera.ts:231

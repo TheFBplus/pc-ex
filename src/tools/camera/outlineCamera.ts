@@ -2,13 +2,14 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-05-18 15:35:26
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-14 15:13:05
+ * @ 修改时间: 2022-06-20 11:10:23
  * @ 详情: 描边相机
  */
 
 import * as pc from "playcanvas";
 
 import { CameraComponent_EX } from "../../extensions/extendClasses/cameraComponent";
+import { tool } from "../../libs/libs";
 import { cast } from "../../libs/libs/cast";
 import { Tool } from "../../libs/libs/toolHelper";
 import { PostEffectOutline } from "../../resources/postEffects/posteffectOutline";
@@ -25,6 +26,7 @@ type outlineCameraOptions = {
     outlineThickness?: number;
 }
 
+@tool
 export class OutlineCamera extends Tool<outlineCameraOptions, unknown>
 {
     private mainCamera: pc.CameraComponent;

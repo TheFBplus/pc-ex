@@ -2,13 +2,14 @@
  * @ 创建者: 陈伟
  * @ 创建时间: 2022-05-18 17:27:16
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-16 11:26:20
+ * @ 修改时间: 2022-06-20 17:02:25
  * @ 详情: 观测相机
  */
 
 import * as pc from "playcanvas";
 
 import { Tool } from "../../../libs/libs/toolHelper";
+import { noAmbientEndPS } from "../utils/handleShader";
 
 type RuntimeGridOptions = {
     mainCamera: pc.CameraComponent;
@@ -95,6 +96,7 @@ export default class RTH_RuntimeGrid extends Tool<RuntimeGridOptions, unknown>
         mesh.update(pc.PRIMITIVE_LINES);
 
         const mat = new pc.StandardMaterial();
+        mat.chunks.endPS = noAmbientEndPS;
         mat.useLighting = false;
         mat.useSkybox = false;
         mat.emissive.copy(color);

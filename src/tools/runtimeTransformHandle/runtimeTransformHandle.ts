@@ -2,7 +2,7 @@
  * @ 创建者: 陈伟
  * @ 创建时间: 2021-12-01 10:08:17
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-21 10:58:21
+ * @ 修改时间: 2022-06-21 11:20:56
  * @ 详情: Runtime Transform Handle
  */
 
@@ -302,7 +302,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
         this.enableHotKey = options?.enableHotKey ?? true;
         this.enableUndoRedo = options?.enableUndoRedo ?? true;
         this.showHandle = options?.showHandle ?? true;
-        this.showOutline = options?.showHandle ?? true;
+        this.showOutline = options?.showOutline ?? true;
         this.showGrid = options?.showGrid ?? true;
         this.multiSelect = options?.multiSelect ?? true;
     }

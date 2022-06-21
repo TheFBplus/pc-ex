@@ -21971,35 +21971,35 @@
 			]
 		},
 		{
-			"id": 2567,
+			"id": 2568,
 			"name": "MaterialController",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 2594,
+					"id": 2595,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 2595,
+							"id": 2596,
 							"name": "new MaterialController",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 2567,
+								"id": 2568,
 								"name": "MaterialController"
 							}
 						}
 					]
 				},
 				{
-					"id": 2568,
+					"id": 2569,
 					"name": "processNodeDeep",
 					"kind": 2048,
 					"kindString": "Method",
@@ -22016,7 +22016,7 @@
 					],
 					"signatures": [
 						{
-							"id": 2569,
+							"id": 2570,
 							"name": "processNodeDeep",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -22026,7 +22026,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2570,
+									"id": 2571,
 									"name": "entity",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -22040,7 +22040,7 @@
 									}
 								},
 								{
-									"id": 2571,
+									"id": 2572,
 									"name": "childEntityCallback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -22053,7 +22053,7 @@
 									}
 								},
 								{
-									"id": 2572,
+									"id": 2573,
 									"name": "modelCallback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -22066,7 +22066,7 @@
 									}
 								},
 								{
-									"id": 2573,
+									"id": 2574,
 									"name": "meshInstanceCallback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -22087,7 +22087,7 @@
 					]
 				},
 				{
-					"id": 2591,
+					"id": 2592,
 					"name": "recoverAllMats",
 					"kind": 2048,
 					"kindString": "Method",
@@ -22104,7 +22104,7 @@
 					],
 					"signatures": [
 						{
-							"id": 2592,
+							"id": 2593,
 							"name": "recoverAllMats",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -22114,7 +22114,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2593,
+									"id": 2594,
 									"name": "entity",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -22136,7 +22136,7 @@
 					]
 				},
 				{
-					"id": 2588,
+					"id": 2589,
 					"name": "saveAllMats",
 					"kind": 2048,
 					"kindString": "Method",
@@ -22153,7 +22153,7 @@
 					],
 					"signatures": [
 						{
-							"id": 2589,
+							"id": 2590,
 							"name": "saveAllMats",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -22163,7 +22163,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2590,
+									"id": 2591,
 									"name": "entity",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -22185,7 +22185,7 @@
 					]
 				},
 				{
-					"id": 2579,
+					"id": 2580,
 					"name": "setChunksDeep",
 					"kind": 2048,
 					"kindString": "Method",
@@ -22202,7 +22202,7 @@
 					],
 					"signatures": [
 						{
-							"id": 2580,
+							"id": 2581,
 							"name": "setChunksDeep",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -22212,7 +22212,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2581,
+									"id": 2582,
 									"name": "entity",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -22226,7 +22226,7 @@
 									}
 								},
 								{
-									"id": 2582,
+									"id": 2583,
 									"name": "chunks",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -22240,7 +22240,7 @@
 									}
 								},
 								{
-									"id": 2583,
+									"id": 2584,
 									"name": "batchGroupId",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -22261,7 +22261,7 @@
 					]
 				},
 				{
-					"id": 2574,
+					"id": 2575,
 					"name": "setMatsDeep",
 					"kind": 2048,
 					"kindString": "Method",
@@ -22278,7 +22278,7 @@
 					],
 					"signatures": [
 						{
-							"id": 2575,
+							"id": 2576,
 							"name": "setMatsDeep",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -22288,7 +22288,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2576,
+									"id": 2577,
 									"name": "entity",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -22302,7 +22302,7 @@
 									}
 								},
 								{
-									"id": 2577,
+									"id": 2578,
 									"name": "mat",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -22318,7 +22318,7 @@
 									}
 								},
 								{
-									"id": 2578,
+									"id": 2579,
 									"name": "batchGroupId",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -22339,7 +22339,7 @@
 					]
 				},
 				{
-					"id": 2584,
+					"id": 2585,
 					"name": "toggleWireFrame",
 					"kind": 2048,
 					"kindString": "Method",
@@ -22356,7 +22356,7 @@
 					],
 					"signatures": [
 						{
-							"id": 2585,
+							"id": 2586,
 							"name": "toggleWireFrame",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -22366,7 +22366,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2586,
+									"id": 2587,
 									"name": "entity",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -22380,7 +22380,7 @@
 									}
 								},
 								{
-									"id": 2587,
+									"id": 2588,
 									"name": "state",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -22407,19 +22407,19 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						2594
+						2595
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						2568,
-						2591,
-						2588,
-						2579,
-						2574,
-						2584
+						2569,
+						2592,
+						2589,
+						2580,
+						2575,
+						2585
 					]
 				}
 			],
@@ -38193,7 +38193,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 45,
+							"line": 47,
 							"character": 4
 						}
 					],
@@ -38242,7 +38242,7 @@
 					}
 				},
 				{
-					"id": 2525,
+					"id": 2526,
 					"name": "eventHandler",
 					"kind": 1024,
 					"kindString": "Property",
@@ -38283,7 +38283,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 31,
+							"line": 32,
 							"character": 12
 						}
 					],
@@ -38314,7 +38314,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 33,
+							"line": 34,
 							"character": 12
 						}
 					],
@@ -38334,7 +38334,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 32,
+							"line": 33,
 							"character": 12
 						}
 					],
@@ -38346,7 +38346,7 @@
 					}
 				},
 				{
-					"id": 2503,
+					"id": 2504,
 					"name": "pickCondition",
 					"kind": 1024,
 					"kindString": "Property",
@@ -38356,21 +38356,21 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 36,
+							"line": 38,
 							"character": 12
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 2504,
+							"id": 2505,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"signatures": [
 								{
-									"id": 2505,
+									"id": 2506,
 									"name": "__type",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -38385,7 +38385,7 @@
 					}
 				},
 				{
-					"id": 2506,
+					"id": 2507,
 					"name": "pickLayers",
 					"kind": 1024,
 					"kindString": "Property",
@@ -38395,7 +38395,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 37,
+							"line": 39,
 							"character": 12
 						}
 					],
@@ -38420,7 +38420,27 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 35,
+							"line": 36,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 2503,
+					"name": "pickSame",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/tools/selector/selector.ts",
+							"line": 37,
 							"character": 12
 						}
 					],
@@ -38440,7 +38460,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 34,
+							"line": 35,
 							"character": 12
 						}
 					],
@@ -38460,7 +38480,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 29,
+							"line": 30,
 							"character": 12
 						}
 					],
@@ -38472,7 +38492,7 @@
 					}
 				},
 				{
-					"id": 2507,
+					"id": 2508,
 					"name": "preSelectedNode",
 					"kind": 1024,
 					"kindString": "Property",
@@ -38482,7 +38502,7 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 39,
+							"line": 41,
 							"character": 12
 						}
 					],
@@ -38494,7 +38514,7 @@
 					}
 				},
 				{
-					"id": 2526,
+					"id": 2527,
 					"name": "enabled",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -38510,7 +38530,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 2527,
+							"id": 2528,
 							"name": "enabled",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -38530,7 +38550,7 @@
 					],
 					"setSignature": [
 						{
-							"id": 2528,
+							"id": 2529,
 							"name": "enabled",
 							"kind": 1048576,
 							"kindString": "Set signature",
@@ -38540,7 +38560,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2529,
+									"id": 2530,
 									"name": "value",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -38568,7 +38588,7 @@
 					}
 				},
 				{
-					"id": 2530,
+					"id": 2531,
 					"name": "addListener",
 					"kind": 2048,
 					"kindString": "Method",
@@ -38584,7 +38604,7 @@
 					],
 					"signatures": [
 						{
-							"id": 2531,
+							"id": 2532,
 							"name": "addListener",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -38594,7 +38614,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2532,
+									"id": 2533,
 									"name": "eventName",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -38608,7 +38628,7 @@
 									}
 								},
 								{
-									"id": 2533,
+									"id": 2534,
 									"name": "callback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -38624,7 +38644,7 @@
 									}
 								},
 								{
-									"id": 2534,
+									"id": 2535,
 									"name": "scope",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -38658,7 +38678,7 @@
 					}
 				},
 				{
-					"id": 2517,
+					"id": 2518,
 					"name": "getModelHasTag",
 					"kind": 2048,
 					"kindString": "Method",
@@ -38668,13 +38688,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 111,
+							"line": 114,
 							"character": 12
 						}
 					],
 					"signatures": [
 						{
-							"id": 2518,
+							"id": 2519,
 							"name": "getModelHasTag",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -38685,7 +38705,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2519,
+									"id": 2520,
 									"name": "model",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -38701,7 +38721,7 @@
 									}
 								},
 								{
-									"id": 2520,
+									"id": 2521,
 									"name": "tag",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -38725,7 +38745,7 @@
 					]
 				},
 				{
-					"id": 2523,
+					"id": 2524,
 					"name": "onDisable",
 					"kind": 2048,
 					"kindString": "Method",
@@ -38735,13 +38755,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 125,
+							"line": 128,
 							"character": 23
 						}
 					],
 					"signatures": [
 						{
-							"id": 2524,
+							"id": 2525,
 							"name": "onDisable",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -38764,7 +38784,7 @@
 					}
 				},
 				{
-					"id": 2521,
+					"id": 2522,
 					"name": "onEnable",
 					"kind": 2048,
 					"kindString": "Method",
@@ -38774,13 +38794,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 120,
+							"line": 123,
 							"character": 23
 						}
 					],
 					"signatures": [
 						{
-							"id": 2522,
+							"id": 2523,
 							"name": "onEnable",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -38803,7 +38823,7 @@
 					}
 				},
 				{
-					"id": 2511,
+					"id": 2512,
 					"name": "pick",
 					"kind": 2048,
 					"kindString": "Method",
@@ -38813,13 +38833,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 74,
+							"line": 77,
 							"character": 12
 						}
 					],
 					"signatures": [
 						{
-							"id": 2512,
+							"id": 2513,
 							"name": "pick",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -38829,7 +38849,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2513,
+									"id": 2514,
 									"name": "event",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -38840,14 +38860,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 2514,
+											"id": 2515,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 2515,
+													"id": 2516,
 													"name": "x",
 													"kind": 1024,
 													"kindString": "Property",
@@ -38858,7 +38878,7 @@
 													"sources": [
 														{
 															"fileName": "src/tools/selector/selector.ts",
-															"line": 74,
+															"line": 77,
 															"character": 26
 														}
 													],
@@ -38868,7 +38888,7 @@
 													}
 												},
 												{
-													"id": 2516,
+													"id": 2517,
 													"name": "y",
 													"kind": 1024,
 													"kindString": "Property",
@@ -38879,7 +38899,7 @@
 													"sources": [
 														{
 															"fileName": "src/tools/selector/selector.ts",
-															"line": 74,
+															"line": 77,
 															"character": 37
 														}
 													],
@@ -38894,8 +38914,8 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														2515,
-														2516
+														2516,
+														2517
 													]
 												}
 											]
@@ -38911,7 +38931,7 @@
 					]
 				},
 				{
-					"id": 2535,
+					"id": 2536,
 					"name": "removeListener",
 					"kind": 2048,
 					"kindString": "Method",
@@ -38927,7 +38947,7 @@
 					],
 					"signatures": [
 						{
-							"id": 2536,
+							"id": 2537,
 							"name": "removeListener",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -38937,7 +38957,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2537,
+									"id": 2538,
 									"name": "eventName",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -38951,7 +38971,7 @@
 									}
 								},
 								{
-									"id": 2538,
+									"id": 2539,
 									"name": "callback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -38967,7 +38987,7 @@
 									}
 								},
 								{
-									"id": 2539,
+									"id": 2540,
 									"name": "scope",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -39001,7 +39021,7 @@
 					}
 				},
 				{
-					"id": 2508,
+					"id": 2509,
 					"name": "setOption",
 					"kind": 2048,
 					"kindString": "Method",
@@ -39011,13 +39031,13 @@
 					"sources": [
 						{
 							"fileName": "src/tools/selector/selector.ts",
-							"line": 57,
+							"line": 59,
 							"character": 20
 						}
 					],
 					"signatures": [
 						{
-							"id": 2509,
+							"id": 2510,
 							"name": "setOption",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -39027,7 +39047,7 @@
 							},
 							"parameters": [
 								{
-									"id": 2510,
+									"id": 2511,
 									"name": "option",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -39071,43 +39091,44 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						2525,
+						2526,
 						2498,
 						2500,
 						2499,
-						2503,
-						2506,
+						2504,
+						2507,
 						2502,
+						2503,
 						2501,
 						2497,
-						2507
+						2508
 					]
 				},
 				{
 					"title": "Accessors",
 					"kind": 262144,
 					"children": [
-						2526
+						2527
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						2530,
-						2517,
-						2523,
-						2521,
-						2511,
-						2535,
-						2508
+						2531,
+						2518,
+						2524,
+						2522,
+						2512,
+						2536,
+						2509
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "src/tools/selector/selector.ts",
-					"line": 27,
+					"line": 28,
 					"character": 13
 				}
 			],
@@ -51841,7 +51862,7 @@
 			]
 		},
 		{
-			"id": 2545,
+			"id": 2546,
 			"name": "clearScreenQuad",
 			"kind": 64,
 			"kindString": "Function",
@@ -51855,7 +51876,7 @@
 			],
 			"signatures": [
 				{
-					"id": 2546,
+					"id": 2547,
 					"name": "clearScreenQuad",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -51871,7 +51892,7 @@
 			]
 		},
 		{
-			"id": 2552,
+			"id": 2553,
 			"name": "clearScreenRect",
 			"kind": 64,
 			"kindString": "Function",
@@ -51885,7 +51906,7 @@
 			],
 			"signatures": [
 				{
-					"id": 2553,
+					"id": 2554,
 					"name": "clearScreenRect",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -51901,7 +51922,7 @@
 			]
 		},
 		{
-			"id": 2565,
+			"id": 2566,
 			"name": "clearSelectionBox",
 			"kind": 64,
 			"kindString": "Function",
@@ -51915,7 +51936,7 @@
 			],
 			"signatures": [
 				{
-					"id": 2566,
+					"id": 2567,
 					"name": "clearSelectionBox",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -52006,7 +52027,7 @@
 			]
 		},
 		{
-			"id": 2540,
+			"id": 2541,
 			"name": "drawScreenQuad",
 			"kind": 64,
 			"kindString": "Function",
@@ -52020,7 +52041,7 @@
 			],
 			"signatures": [
 				{
-					"id": 2541,
+					"id": 2542,
 					"name": "drawScreenQuad",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -52030,7 +52051,7 @@
 					},
 					"parameters": [
 						{
-							"id": 2542,
+							"id": 2543,
 							"name": "rect",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -52047,7 +52068,7 @@
 							"defaultValue": "defaultRect"
 						},
 						{
-							"id": 2543,
+							"id": 2544,
 							"name": "color",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -52064,7 +52085,7 @@
 							"defaultValue": "defaultColor"
 						},
 						{
-							"id": 2544,
+							"id": 2545,
 							"name": "layer",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -52090,7 +52111,7 @@
 			]
 		},
 		{
-			"id": 2547,
+			"id": 2548,
 			"name": "drawScreenRect",
 			"kind": 64,
 			"kindString": "Function",
@@ -52104,7 +52125,7 @@
 			],
 			"signatures": [
 				{
-					"id": 2548,
+					"id": 2549,
 					"name": "drawScreenRect",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -52114,7 +52135,7 @@
 					},
 					"parameters": [
 						{
-							"id": 2549,
+							"id": 2550,
 							"name": "rect",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -52131,7 +52152,7 @@
 							"defaultValue": "defaultRect"
 						},
 						{
-							"id": 2550,
+							"id": 2551,
 							"name": "color",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -52148,7 +52169,7 @@
 							"defaultValue": "defaultColor"
 						},
 						{
-							"id": 2551,
+							"id": 2552,
 							"name": "layer",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -52174,7 +52195,7 @@
 			]
 		},
 		{
-			"id": 2554,
+			"id": 2555,
 			"name": "drawSelectionBox",
 			"kind": 64,
 			"kindString": "Function",
@@ -52188,7 +52209,7 @@
 			],
 			"signatures": [
 				{
-					"id": 2555,
+					"id": 2556,
 					"name": "drawSelectionBox",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -52199,7 +52220,7 @@
 					},
 					"parameters": [
 						{
-							"id": 2556,
+							"id": 2557,
 							"name": "startPoint",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -52210,14 +52231,14 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 2557,
+									"id": 2558,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
 									"flags": {},
 									"children": [
 										{
-											"id": 2558,
+											"id": 2559,
 											"name": "x",
 											"kind": 1024,
 											"kindString": "Property",
@@ -52235,7 +52256,7 @@
 											}
 										},
 										{
-											"id": 2559,
+											"id": 2560,
 											"name": "y",
 											"kind": 1024,
 											"kindString": "Property",
@@ -52258,8 +52279,8 @@
 											"title": "Properties",
 											"kind": 1024,
 											"children": [
-												2558,
-												2559
+												2559,
+												2560
 											]
 										}
 									]
@@ -52267,7 +52288,7 @@
 							}
 						},
 						{
-							"id": 2560,
+							"id": 2561,
 							"name": "endPoint",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -52278,14 +52299,14 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 2561,
+									"id": 2562,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
 									"flags": {},
 									"children": [
 										{
-											"id": 2562,
+											"id": 2563,
 											"name": "x",
 											"kind": 1024,
 											"kindString": "Property",
@@ -52303,7 +52324,7 @@
 											}
 										},
 										{
-											"id": 2563,
+											"id": 2564,
 											"name": "y",
 											"kind": 1024,
 											"kindString": "Property",
@@ -52326,8 +52347,8 @@
 											"title": "Properties",
 											"kind": 1024,
 											"children": [
-												2562,
-												2563
+												2563,
+												2564
 											]
 										}
 									]
@@ -52335,7 +52356,7 @@
 							}
 						},
 						{
-							"id": 2564,
+							"id": 2565,
 							"name": "boxLayer",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -52910,7 +52931,7 @@
 				2204,
 				333,
 				798,
-				2567,
+				2568,
 				1053,
 				2161,
 				2425,
@@ -52950,13 +52971,13 @@
 			"children": [
 				1871,
 				1861,
-				2545,
-				2552,
-				2565,
+				2546,
+				2553,
+				2566,
 				1865,
-				2540,
-				2547,
-				2554,
+				2541,
+				2548,
+				2555,
 				1944,
 				1950,
 				1953,

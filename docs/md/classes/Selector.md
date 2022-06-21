@@ -50,7 +50,7 @@
 
 #### Defined in
 
-src/tools/selector/selector.ts:45
+src/tools/selector/selector.ts:47
 
 ## Properties
 
@@ -152,7 +152,7 @@ ___
 
 #### Defined in
 
-src/tools/selector/selector.ts:125
+src/tools/selector/selector.ts:128
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-src/tools/selector/selector.ts:120
+src/tools/selector/selector.ts:123
 
 ___
 
@@ -224,4 +224,4 @@ ___
 
 #### Defined in
 
-src/tools/selector/selector.ts:57
+src/tools/selector/selector.ts:59

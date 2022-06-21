@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-08 15:04:27
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-20 11:13:07
+ * @ 修改时间: 2022-06-21 15:01:01
  * @ 详情: 点选模型
  */
 
@@ -19,6 +19,7 @@ type SelectorOptions = {
     pickAreaScale?: number;
     pickTag?: string;
     pickNull?: boolean;
+    pickSame?: boolean;
     pickCondition?: () => boolean;
     excludeLayers?: pc.Layer[];
 };
@@ -33,6 +34,7 @@ export class Selector extends Tool<SelectorOptions, SelectorEventType>
     private pickAreaScale: number;
     private pickTag: string;
     private pickNull: boolean;
+    private pickSame: boolean;
     private pickCondition: () => boolean;
     private pickLayers: pc.Layer[];
 
@@ -61,6 +63,7 @@ export class Selector extends Tool<SelectorOptions, SelectorEventType>
         this.pickAreaScale = option?.pickAreaScale ?? 0.25;
         this.pickTag = option?.pickTag;
         this.pickNull = option?.pickNull ?? true;
+        this.pickSame = option?.pickSame ?? false;
         this.pickCondition = option?.pickCondition;
         this.pickLayers = option?.excludeLayers ? pc.app.scene.layers.layerList.filter((layer: pc.Layer) => !option.excludeLayers.includes(layer)) : pc.app.scene.layers.layerList;
     }
@@ -85,13 +88,13 @@ export class Selector extends Tool<SelectorOptions, SelectorEventType>
 
         if (selected.length > 0 && selected[0]?.node) {
             if (!this.pickTag || this.pickTag.length <= 0) {
-                if (this.preSelectedNode == selected[0].node) { return; }
+                if (!this.pickSame && this.preSelectedNode == selected[0].node) { return; }
                 this.eventHandler.fire("select", selected[0].node, this.preSelectedNode);
                 this.preSelectedNode = selected[0].node;
             }
             else {
                 const selectedNode = this.getModelHasTag(selected[0].node, this.pickTag);
-                if (this.preSelectedNode == selectedNode) { return; }
+                if (!this.pickSame && this.preSelectedNode == selectedNode) { return; }
                 this.eventHandler.fire("select", selectedNode, this.preSelectedNode);
                 this.preSelectedNode = selectedNode;
             }

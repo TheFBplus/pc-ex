@@ -7,17 +7,28 @@ npm i pc-ex
 ### ES usage:
 
 ```ts
-// Import directly to use extend functions
+// cast object to use extend functions
 import * as pc from "playcanvas";
-import "pc-ex";
+import { cast, Quat_EX } from "pc-ex";
 
 let rotation = new pc.Quat();
-rotation.setLookRotation(position, target, up);
+cast<Quat_EX>(rotation).setLookRotation(position, target, up);
 
-// Import named
+
+// use new functions
 import { DebugLine } from "pc-ex";
 
 DebugLine.drawLine(start, end, color);
+
+
+// use ex tools
+import { use, RuntimeTransformHandle } from "pc-ex";
+
+// through use api
+let runtimeTransformHandle = use(RuntimeTransformHandle, { mainCamera: thisCamera });
+// through new instance
+let runtimeTransformHandle = new RuntimeTransformHandle({ mainCamera: thisCamera });
+// 
 ```
 
 ### Node usage:
@@ -25,15 +36,25 @@ DebugLine.drawLine(start, end, color);
 ```js
 // Import all to use extend functions
 const pc = require("playcanvas");
-require("pc-ex");
+const pcEX = require("pc-ex");
 
 let rotation = new pc.Quat();
 rotation.setLookRotation(position, target, up);
+
 
 // Import named
 const { DebugLine } = require("pc-ex");
 
 DebugLine.drawLine(start, end, color);
+
+
+// use ex tools
+const { use, RuntimeTransformHandle } = require("pc-ex");
+
+// through use api
+let runtimeTransformHandle = use(RuntimeTransformHandle, { mainCamera: thisCamera });
+// through new instance
+let runtimeTransformHandle = new RuntimeTransformHandle({ mainCamera: thisCamera });
 ```
 
 ### Static usage:
@@ -43,7 +64,17 @@ Old school method
 ```html
 <script src="./bin/pcEX.js"></script>
 <script>
-	DebugLine.drawLine(start, end, color);
+	
+	// use extend functions
+	let rotation = new pc.Quat();
+	rotation.setLookRotation(position, target, up);
+
+	// use new functions
+	pc.DebugLine.drawLine(start, end, color);
+
+	// use ex tools
+	let runtimeTransformHandle = new pc.EXTools.RuntimeTransformHandle({ mainCamera: thisCamera });
+
 </script>
 ```
 

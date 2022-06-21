@@ -2,7 +2,7 @@
  * @ 创建者: 陈伟
  * @ 创建时间: 2021-12-01 10:08:17
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-20 14:05:02
+ * @ 修改时间: 2022-06-21 10:58:21
  * @ 详情: Runtime Transform Handle
  */
 
@@ -36,7 +36,9 @@ type RTHOptions = {
     selectNull?: boolean;
     selectCondition?: () => boolean;
     enableHotKey?: boolean;
+    enableUndoRedo?: boolean;
     showHandle?: boolean;
+    showOutline?: boolean;
     showGrid?: boolean;
     multiSelect?: boolean;
 };
@@ -51,7 +53,9 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
     private selectNull: boolean;
     private selectCondition: () => boolean;
     private enableHotKey: boolean;
+    private enableUndoRedo: boolean;
     private showHandle: boolean;
+    private showOutline: boolean;
     private showGrid: boolean;
     private multiSelect: boolean;
 
@@ -296,7 +300,9 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
         this.selectNull = options?.selectNull ?? true;
         this.selectCondition = options?.selectCondition;
         this.enableHotKey = options?.enableHotKey ?? true;
+        this.enableUndoRedo = options?.enableUndoRedo ?? true;
         this.showHandle = options?.showHandle ?? true;
+        this.showOutline = options?.showHandle ?? true;
         this.showGrid = options?.showGrid ?? true;
         this.multiSelect = options?.multiSelect ?? true;
     }
@@ -338,7 +344,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
         if (this.isDragging) { return; }
 
         // 关闭先前选中模型的描边特效
-        this.trackEntities.forEach(entity => { this.outLineCamera.toggleOutLine(entity, false); });
+        this.trackEntities.forEach(entity => { this.showOutline && this.outLineCamera.toggleOutLine(entity, false); });
 
         if (target == null || (Array.isArray(target) && target.length <= 0)) {
             this.trackEntities = [];
@@ -349,7 +355,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
         }
         if (this.trackEntities.length <= 0 && this.showHandle) { pc.app.on("update", this.update, this); }
         this.trackEntities = Array.isArray(target) ? target : [target];
-        this.trackEntities.forEach(entity => { this.outLineCamera.toggleOutLine(entity, true); });  // 开启选中模型的描边特效
+        this.trackEntities.forEach(entity => { this.showOutline && this.outLineCamera.toggleOutLine(entity, true); });  // 开启选中模型的描边特效
         this.transformHandle.enabled = true && this.showHandle;
         this.eventHandler.fire("select", this.trackEntities);
 
@@ -393,7 +399,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
      */
     public undo(): void
     {
-        if (this.isDragging) { return; }
+        if (this.isDragging || !this.enableUndoRedo) { return; }
         const preRecord = Recorder.undo();
         this.resetTransforms(preRecord.selections, preRecord.transforms);
     }
@@ -403,7 +409,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
      */
     public redo(): void
     {
-        if (this.isDragging) { return; }
+        if (this.isDragging || !this.enableUndoRedo) { return; }
         const nextRecord = Recorder.redo();
         this.resetTransforms(nextRecord.selections, nextRecord.transforms);
     }
@@ -1069,6 +1075,8 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
     // 更新记录数据
     private updateRecord(): void
     {
+        if (!this.enableUndoRedo) { return; }
+
         // 保存记录
         if (this.trackEntities.length == 0) {
             this.record.set(null, null);

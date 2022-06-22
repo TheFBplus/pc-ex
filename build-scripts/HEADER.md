@@ -28,7 +28,6 @@ import { use, RuntimeTransformHandle } from "pc-ex";
 let runtimeTransformHandle = use(RuntimeTransformHandle, { mainCamera: thisCamera });
 // through new instance
 let runtimeTransformHandle = new RuntimeTransformHandle({ mainCamera: thisCamera });
-// 
 ```
 
 ### Node usage:
@@ -65,15 +64,15 @@ Old school method
 <script src="./bin/pcEX.js"></script>
 <script>
 	
-	// use extend functions
-	let rotation = new pc.Quat();
-	rotation.setLookRotation(position, target, up);
+// use extend functions
+let rotation = new pc.Quat();
+rotation.setLookRotation(position, target, up);
 
-	// use new functions
-	pc.DebugLine.drawLine(start, end, color);
+// use new functions
+pc.DebugLine.drawLine(start, end, color);
 
-	// use ex tools
-	let runtimeTransformHandle = new pc.EXTools.RuntimeTransformHandle({ mainCamera: thisCamera });
+// use ex tools
+let runtimeTransformHandle = new pc.EXTools.RuntimeTransformHandle({ mainCamera: thisCamera });
 
 </script>
 ```

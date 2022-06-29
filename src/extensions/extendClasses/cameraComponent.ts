@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 10:19:52
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-20 14:03:00
+ * @ 修改时间: 2022-06-29 09:50:24
  * @ 详情: 扩展CameraComponent类
  */
 
@@ -17,22 +17,21 @@ export class CameraComponent_EX extends pc.CameraComponent
 {
     /**
     * 让两个相机同步
-    * @param camera 要同步的相机
+    * @param camera 要跟随的相机
     */
-    syncCamera(camera: pc.CameraComponent): void
+    followCamera(camera: pc.CameraComponent): void
     {
-        const self = this;
         const viewMatrix = this.viewMatrix;
         const projectionMatrix = this.projectionMatrix;
-        camera.calculateTransform = function (transformMatrix: pc.Mat4, view: number)
+        this.calculateTransform = function (transformMatrix: pc.Mat4, view: number)
         {
-            this.horizontalFov = self.horizontalFov;
-            this.fov = self.fov;
+            this.horizontalFov = camera.horizontalFov;
+            this.fov = camera.fov;
             return viewMatrix;
         }
-        camera.calculateProjection = function (transformMatrix: pc.Mat4, view: number)
+        this.calculateProjection = function (transformMatrix: pc.Mat4, view: number)
         {
-            this.horizontalFov = self.horizontalFov;
+            this.horizontalFov = camera.horizontalFov;
             return projectionMatrix;
         }
     }

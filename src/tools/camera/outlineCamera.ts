@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-05-18 15:35:26
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-20 11:10:23
+ * @ 修改时间: 2022-06-29 09:51:21
  * @ 详情: 描边相机
  */
 
@@ -117,7 +117,7 @@ export class OutlineCamera extends Tool<outlineCameraOptions, unknown>
             this.outlineEffect.refresh();
         }
         this.mainCamera.postEffects.addEffect(this.outlineEffect as any); // 添加特效至相机
-        cast<CameraComponent_EX>(this.mainCamera).syncCamera(this.outlineCamera); // 同步相机
+        cast<CameraComponent_EX>(this.outlineCamera).followCamera(this.mainCamera); // 同步相机
     }
 
     /**

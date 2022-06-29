@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-08 15:04:27
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-21 15:01:01
+ * @ 修改时间: 2022-06-24 10:05:57
  * @ 详情: 点选模型
  */
 
@@ -63,7 +63,7 @@ export class Selector extends Tool<SelectorOptions, SelectorEventType>
         this.pickAreaScale = option?.pickAreaScale ?? 0.25;
         this.pickTag = option?.pickTag;
         this.pickNull = option?.pickNull ?? true;
-        this.pickSame = option?.pickSame ?? false;
+        this.pickSame = option?.pickSame ?? true;
         this.pickCondition = option?.pickCondition;
         this.pickLayers = option?.excludeLayers ? pc.app.scene.layers.layerList.filter((layer: pc.Layer) => !option.excludeLayers.includes(layer)) : pc.app.scene.layers.layerList;
     }

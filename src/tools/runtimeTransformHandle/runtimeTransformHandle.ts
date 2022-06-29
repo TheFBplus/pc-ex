@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2021-12-01 10:08:17
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-22 17:01:32
+ * @ 修改时间: 2022-06-29 09:44:48
  * @ 详情: Runtime Transform Handle
  */
 
@@ -238,7 +238,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
             this.orbitCamera = use(OrbitCamera, { mainCamra: this.camera, device: pc.app.touch ? "touchScreen" : "mouse", rotateCondition: () => (!this.multiSelect || pc.app.keyboard.isPressed(pc.KEY_ALT)) && !this.isDragging });
 
             // 使用模型点选器，实现模型点击检测
-            const selector = use(Selector, { inputHandler: mouseInputer, pickCamera: this.camera, excludeLayers: [RTHLayer, GridLayer, UILayer], pickNull: this.selectNull, pickTag: this.selectTags, pickCondition: this.selectCondition });
+            const selector = use(Selector, { inputHandler: mouseInputer, pickCamera: this.camera, excludeLayers: [RTHLayer, GridLayer, UILayer], pickNull: this.selectNull, pickTag: this.selectTags, pickCondition: this.selectCondition, pickSame: true });
             selector.addListener("select", (selectedNode: pc.Entity) => this.select(selectedNode), this);
 
             if (this.multiSelect) {

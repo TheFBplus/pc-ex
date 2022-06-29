@@ -67,6 +67,7 @@
 - [dirtyLayerCompositionCameras](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#dirtylayercompositioncameras)
 - [endXr](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#endxr)
 - [fire](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#fire)
+- [followCamera](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#followcamera)
 - [hasEvent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#hasevent)
 - [off](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#off)
 - [on](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#on)
@@ -86,7 +87,6 @@
 - [requestSceneDepthMap](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#requestscenedepthmap)
 - [screenToWorld](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#screentoworld)
 - [startXr](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#startxr)
-- [syncCamera](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#synccamera)
 - [worldToScreen](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#worldtoscreen)
 - [\_buildAccessors](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#_buildaccessors)
 
@@ -1480,6 +1480,28 @@ node_modules/playcanvas/build/playcanvas.d.ts:102
 
 ___
 
+### followCamera
+
+▸ **followCamera**(`camera`): `void`
+
+让两个相机同步
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `camera` | `CameraComponent` | 要跟随的相机 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+src/extensions/extendClasses/cameraComponent.ts:22
+
+___
+
 ### hasEvent
 
 ▸ **hasEvent**(`name`): `boolean`
@@ -1838,7 +1860,7 @@ ___
 
 #### Defined in
 
-src/extensions/extendClasses/cameraComponent.ts:46
+src/extensions/extendClasses/cameraComponent.ts:45
 
 ___
 
@@ -1999,28 +2021,6 @@ pc.CameraComponent.startXr
 #### Defined in
 
 node_modules/playcanvas/build/playcanvas.d.ts:29522
-
-___
-
-### syncCamera
-
-▸ **syncCamera**(`camera`): `void`
-
-让两个相机同步
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `camera` | `CameraComponent` | 要同步的相机 |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-src/extensions/extendClasses/cameraComponent.ts:22
 
 ___
 

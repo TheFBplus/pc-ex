@@ -2871,6 +2871,54 @@
 					}
 				},
 				{
+					"id": 10,
+					"name": "followCamera",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/extensions/extendClasses/cameraComponent.ts",
+							"line": 22,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 11,
+							"name": "followCamera",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "让两个相机同步"
+							},
+							"parameters": [
+								{
+									"id": 12,
+									"name": "camera",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"shortText": "要跟随的相机\n"
+									},
+									"type": {
+										"type": "reference",
+										"qualifiedName": "CameraComponent",
+										"package": "playcanvas",
+										"name": "CameraComponent"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
 					"id": 242,
 					"name": "hasEvent",
 					"kind": 2048,
@@ -3695,7 +3743,7 @@
 					"sources": [
 						{
 							"fileName": "src/extensions/extendClasses/cameraComponent.ts",
-							"line": 46,
+							"line": 45,
 							"character": 4
 						}
 					],
@@ -4326,54 +4374,6 @@
 					}
 				},
 				{
-					"id": 10,
-					"name": "syncCamera",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/extensions/extendClasses/cameraComponent.ts",
-							"line": 22,
-							"character": 4
-						}
-					],
-					"signatures": [
-						{
-							"id": 11,
-							"name": "syncCamera",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "让两个相机同步"
-							},
-							"parameters": [
-								{
-									"id": 12,
-									"name": "camera",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"shortText": "要同步的相机\n"
-									},
-									"type": {
-										"type": "reference",
-										"qualifiedName": "CameraComponent",
-										"package": "playcanvas",
-										"name": "CameraComponent"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
 					"id": 145,
 					"name": "worldToScreen",
 					"kind": 2048,
@@ -4592,6 +4592,7 @@
 						137,
 						188,
 						226,
+						10,
 						242,
 						221,
 						216,
@@ -4611,7 +4612,6 @@
 						106,
 						139,
 						174,
-						10,
 						145,
 						2
 					]

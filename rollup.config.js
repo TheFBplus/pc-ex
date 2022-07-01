@@ -1,6 +1,4 @@
 import typescript from "@rollup/plugin-typescript";
-import copy from 'rollup-plugin-copy';
-import { string } from "rollup-plugin-string";
 import { terser } from "rollup-plugin-terser";
 
 export default {
@@ -14,15 +12,7 @@ export default {
 			module: "ES2020",
 			target: "ES5",
 		}),
-		string({
-			include: ["**/*.vert", "**/*.frag"]
-		}),
-		terser({ keep_fnames: true }),
-		copy({
-			targets: [
-				{ src: "src/resources/shaders/*", dest: ["bin/cjs/resources/shaders", "bin/dts/resources/shaders", "bin/es/resources/shaders"] },
-			]
-		})
+		terser({ keep_fnames: true })
 	],
 
 	output: {

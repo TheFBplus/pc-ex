@@ -2,9 +2,11 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-04-22 13:33:49
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-08 18:56:37
+ * @ 修改时间: 2022-07-02 00:23:51
  * @ 详情: 在屏幕空间上画矩形的shander
  */
+
+const ScreenQuadPS = `
 
 precision mediump float;
 
@@ -14,3 +16,7 @@ void main(void)
 {
     gl_FragColor = uColor;
 }
+
+`;
+
+export default ScreenQuadPS;

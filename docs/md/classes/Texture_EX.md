@@ -58,6 +58,7 @@
 - [addressV](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Texture_EX.md#addressv)
 - [addressW](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Texture_EX.md#addressw)
 - [anisotropy](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Texture_EX.md#anisotropy)
+- [autoMipmap](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Texture_EX.md#automipmap)
 - [compareFunc](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Texture_EX.md#comparefunc)
 - [compareOnRead](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Texture_EX.md#compareonread)
 - [cubemap](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Texture_EX.md#cubemap)
@@ -96,7 +97,9 @@
 
 Create a new Texture instance.
 
-**`example`**
+**`Example`**
+
+```ts
 // Create a 8x8x24-bit texture
 var texture = new pc.Texture(graphicsDevice, {
     width: 8,
@@ -115,42 +118,39 @@ for (var i = 0; i < 8; i++) {
     }
 }
 texture.unlock();
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `graphicsDevice` | `GraphicsDevice` | The graphics device used to manage this texture. |
-| `options?` | `Object` | - |
-| `options.addressU?` | `number` | - |
-| `options.addressV?` | `number` | - |
-| `options.addressW?` | `number` | - |
-| `options.anisotropy?` | `number` | - |
-| `options.compareFunc?` | `number` | - |
-| `options.compareOnRead?` | `boolean` | - |
-| `options.cubemap?` | `boolean` | - |
-| `options.depth?` | `number` | - |
-| `options.fixCubemapSeams?` | `boolean` | - |
-| `options.flipY?` | `boolean` | - |
-| `options.format?` | `number` | - |
-| `options.height?` | `number` | - |
-| `options.magFilter?` | `number` | - |
-| `options.minFilter?` | `number` | - |
-| `options.mipmaps?` | `boolean` | - |
-| `options.name?` | `string` | - |
-| `options.premultiplyAlpha?` | `boolean` | - |
-| `options.projection?` | `string` | - |
-| `options.type?` | `string` | - |
-| `options.volume?` | `boolean` | - |
-| `options.width?` | `number` | - |
+| `options?` | `Object` | Object for passing optional arguments. |
+| `options.addressU?` | `number` | The repeat mode to use in the U direction. Defaults to ADDRESS_REPEAT. |
+| `options.addressV?` | `number` | The repeat mode to use in the V direction. Defaults to ADDRESS_REPEAT. |
+| `options.addressW?` | `number` | The repeat mode to use in the W direction. Defaults to ADDRESS_REPEAT. |
+| `options.anisotropy?` | `number` | The level of anisotropic filtering to use. Defaults to 1. |
+| `options.compareFunc?` | `number` | Comparison function when compareOnRead is enabled (WebGL2 only). Can be:  - FUNC_LESS - FUNC_LESSEQUAL - FUNC_GREATER - FUNC_GREATEREQUAL - FUNC_EQUAL - FUNC_NOTEQUAL  Defaults to FUNC_LESS. |
+| `options.compareOnRead?` | `boolean` | When enabled, and if texture format is PIXELFORMAT_DEPTH or PIXELFORMAT_DEPTHSTENCIL, hardware PCF is enabled for this texture, and you can get filtered results of comparison using texture() in your shader (WebGL2 only). Defaults to false. |
+| `options.cubemap?` | `boolean` | Specifies whether the texture is to be a cubemap. Defaults to false. |
+| `options.depth?` | `number` | The number of depth slices in a 3D texture (WebGL2 only). Defaults to 1 (single 2D image). |
+| `options.fixCubemapSeams?` | `boolean` | Specifies whether this cubemap texture requires special seam fixing shader code to look right. Defaults to false. |
+| `options.flipY?` | `boolean` | Specifies whether the texture should be flipped in the Y-direction. Only affects textures with a source that is an image, canvas or video element. Does not affect cubemaps, compressed textures or textures set from raw pixel data. Defaults to false. |
+| `options.format?` | `number` | The pixel format of the texture. Can be:  - PIXELFORMAT_A8 - PIXELFORMAT_L8 - PIXELFORMAT_L8_A8 - PIXELFORMAT_R5_G6_B5 - PIXELFORMAT_R5_G5_B5_A1 - PIXELFORMAT_R4_G4_B4_A4 - PIXELFORMAT_R8_G8_B8 - PIXELFORMAT_R8_G8_B8_A8 - PIXELFORMAT_DXT1 - PIXELFORMAT_DXT3 - PIXELFORMAT_DXT5 - PIXELFORMAT_RGB16F - PIXELFORMAT_RGBA16F - PIXELFORMAT_RGB32F - PIXELFORMAT_RGBA32F - PIXELFORMAT_ETC1 - PIXELFORMAT_PVRTC_2BPP_RGB_1 - PIXELFORMAT_PVRTC_2BPP_RGBA_1 - PIXELFORMAT_PVRTC_4BPP_RGB_1 - PIXELFORMAT_PVRTC_4BPP_RGBA_1 - PIXELFORMAT_111110F - PIXELFORMAT_ASTC_4x4>/li> - PIXELFORMAT_ATC_RGB - PIXELFORMAT_ATC_RGBA  Defaults to PIXELFORMAT_R8_G8_B8_A8. |
+| `options.height?` | `number` | The height of the texture in pixels. Defaults to 4. |
+| `options.magFilter?` | `number` | The magnification filter type to use. Defaults to FILTER_LINEAR. |
+| `options.minFilter?` | `number` | The minification filter type to use. Defaults to FILTER_LINEAR_MIPMAP_LINEAR. |
+| `options.mipmaps?` | `boolean` | When enabled try to generate or use mipmaps for this texture. Default is true. |
+| `options.name?` | `string` | The name of the texture. |
+| `options.premultiplyAlpha?` | `boolean` | If true, the alpha channel of the texture (if present) is multiplied into the color channels. Defaults to false. |
+| `options.projection?` | `string` | The projection type of the texture, used when the texture represents an environment. Can be:  - TEXTUREPROJECTION_NONE - TEXTUREPROJECTION_CUBE - TEXTUREPROJECTION_EQUIRECT - TEXTUREPROJECTION_OCTAHEDRAL  Defaults to TEXTUREPROJECTION_CUBE if options.cubemap is specified, otherwise TEXTUREPROJECTION_NONE. |
+| `options.type?` | `string` | Specifies the image type, see TEXTURETYPE_DEFAULT. |
+| `options.volume?` | `boolean` | Specifies whether the texture is to be a 3D volume (WebGL2 only). Defaults to false. |
+| `options.width?` | `number` | The width of the texture in pixels. Defaults to 4. |
 
 #### Inherited from
 
 pc.Texture.constructor
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6236
 
 ## Properties
 
@@ -650,12 +650,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:6270
 
 • `get` **addressU**(): `number`
 
-The addressing mode to be applied to the texture horizontally. Can be:
-
-- {@link ADDRESS_REPEAT}
-- {@link ADDRESS_CLAMP_TO_EDGE}
-- {@link ADDRESS_MIRRORED_REPEAT}
-
 #### Returns
 
 `number`
@@ -664,17 +658,13 @@ The addressing mode to be applied to the texture horizontally. Can be:
 
 pc.Texture.addressU
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6344
-
 • `set` **addressU**(`arg`): `void`
 
 The addressing mode to be applied to the texture horizontally. Can be:
 
-- {@link ADDRESS_REPEAT}
-- {@link ADDRESS_CLAMP_TO_EDGE}
-- {@link ADDRESS_MIRRORED_REPEAT}
+- ADDRESS_REPEAT
+- ADDRESS_CLAMP_TO_EDGE
+- ADDRESS_MIRRORED_REPEAT
 
 #### Parameters
 
@@ -689,10 +679,6 @@ The addressing mode to be applied to the texture horizontally. Can be:
 #### Inherited from
 
 pc.Texture.addressU
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6343
 
 ___
 
@@ -700,12 +686,6 @@ ___
 
 • `get` **addressV**(): `number`
 
-The addressing mode to be applied to the texture vertically. Can be:
-
-- {@link ADDRESS_REPEAT}
-- {@link ADDRESS_CLAMP_TO_EDGE}
-- {@link ADDRESS_MIRRORED_REPEAT}
-
 #### Returns
 
 `number`
@@ -714,17 +694,13 @@ The addressing mode to be applied to the texture vertically. Can be:
 
 pc.Texture.addressV
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6355
-
 • `set` **addressV**(`arg`): `void`
 
 The addressing mode to be applied to the texture vertically. Can be:
 
-- {@link ADDRESS_REPEAT}
-- {@link ADDRESS_CLAMP_TO_EDGE}
-- {@link ADDRESS_MIRRORED_REPEAT}
+- ADDRESS_REPEAT
+- ADDRESS_CLAMP_TO_EDGE
+- ADDRESS_MIRRORED_REPEAT
 
 #### Parameters
 
@@ -739,10 +715,6 @@ The addressing mode to be applied to the texture vertically. Can be:
 #### Inherited from
 
 pc.Texture.addressV
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6354
 
 ___
 
@@ -750,12 +722,6 @@ ___
 
 • `get` **addressW**(): `number`
 
-The addressing mode to be applied to the 3D texture depth (WebGL2 only). Can be:
-
-- {@link ADDRESS_REPEAT}
-- {@link ADDRESS_CLAMP_TO_EDGE}
-- {@link ADDRESS_MIRRORED_REPEAT}
-
 #### Returns
 
 `number`
@@ -764,17 +730,13 @@ The addressing mode to be applied to the 3D texture depth (WebGL2 only). Can be:
 
 pc.Texture.addressW
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6366
-
 • `set` **addressW**(`arg`): `void`
 
 The addressing mode to be applied to the 3D texture depth (WebGL2 only). Can be:
 
-- {@link ADDRESS_REPEAT}
-- {@link ADDRESS_CLAMP_TO_EDGE}
-- {@link ADDRESS_MIRRORED_REPEAT}
+- ADDRESS_REPEAT
+- ADDRESS_CLAMP_TO_EDGE
+- ADDRESS_MIRRORED_REPEAT
 
 #### Parameters
 
@@ -789,10 +751,6 @@ The addressing mode to be applied to the 3D texture depth (WebGL2 only). Can be:
 #### Inherited from
 
 pc.Texture.addressW
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6365
 
 ___
 
@@ -800,9 +758,6 @@ ___
 
 • `get` **anisotropy**(): `number`
 
-Integer value specifying the level of anisotropic to apply to the texture ranging from 1 (no
-anisotropic filtering) to the {@link GraphicsDevice} property maxAnisotropy.
-
 #### Returns
 
 `number`
@@ -811,14 +766,10 @@ anisotropic filtering) to the {@link GraphicsDevice} property maxAnisotropy.
 
 pc.Texture.anisotropy
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6397
-
 • `set` **anisotropy**(`arg`): `void`
 
 Integer value specifying the level of anisotropic to apply to the texture ranging from 1 (no
-anisotropic filtering) to the {@link GraphicsDevice} property maxAnisotropy.
+anisotropic filtering) to the GraphicsDevice property maxAnisotropy.
 
 #### Parameters
 
@@ -834,24 +785,25 @@ anisotropic filtering) to the {@link GraphicsDevice} property maxAnisotropy.
 
 pc.Texture.anisotropy
 
-#### Defined in
+___
 
-node_modules/playcanvas/build/playcanvas.d.ts:6396
+### autoMipmap
+
+• `get` **autoMipmap**(): `any`
+
+#### Returns
+
+`any`
+
+#### Inherited from
+
+pc.Texture.autoMipmap
 
 ___
 
 ### compareFunc
 
 • `get` **compareFunc**(): `any`
-
-Comparison function when compareOnRead is enabled (WebGL2 only). Possible values:
-
-- {@link FUNC_LESS}
-- {@link FUNC_LESSEQUAL}
-- {@link FUNC_GREATER}
-- {@link FUNC_GREATEREQUAL}
-- {@link FUNC_EQUAL}
-- {@link FUNC_NOTEQUAL}
 
 #### Returns
 
@@ -861,20 +813,16 @@ Comparison function when compareOnRead is enabled (WebGL2 only). Possible values
 
 pc.Texture.compareFunc
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6389
-
 • `set` **compareFunc**(`arg`): `void`
 
 Comparison function when compareOnRead is enabled (WebGL2 only). Possible values:
 
-- {@link FUNC_LESS}
-- {@link FUNC_LESSEQUAL}
-- {@link FUNC_GREATER}
-- {@link FUNC_GREATEREQUAL}
-- {@link FUNC_EQUAL}
-- {@link FUNC_NOTEQUAL}
+- FUNC_LESS
+- FUNC_LESSEQUAL
+- FUNC_GREATER
+- FUNC_GREATEREQUAL
+- FUNC_EQUAL
+- FUNC_NOTEQUAL
 
 #### Parameters
 
@@ -890,19 +838,11 @@ Comparison function when compareOnRead is enabled (WebGL2 only). Possible values
 
 pc.Texture.compareFunc
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6388
-
 ___
 
 ### compareOnRead
 
 • `get` **compareOnRead**(): `boolean`
-
-When enabled, and if texture format is {@link PIXELFORMAT_DEPTH} or
-{@link PIXELFORMAT_DEPTHSTENCIL}, hardware PCF is enabled for this texture, and you can get
-filtered results of comparison using texture() in your shader (WebGL2 only).
 
 #### Returns
 
@@ -912,14 +852,10 @@ filtered results of comparison using texture() in your shader (WebGL2 only).
 
 pc.Texture.compareOnRead
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6375
-
 • `set` **compareOnRead**(`arg`): `void`
 
-When enabled, and if texture format is {@link PIXELFORMAT_DEPTH} or
-{@link PIXELFORMAT_DEPTHSTENCIL}, hardware PCF is enabled for this texture, and you can get
+When enabled, and if texture format is PIXELFORMAT_DEPTH or
+PIXELFORMAT_DEPTHSTENCIL, hardware PCF is enabled for this texture, and you can get
 filtered results of comparison using texture() in your shader (WebGL2 only).
 
 #### Parameters
@@ -935,10 +871,6 @@ filtered results of comparison using texture() in your shader (WebGL2 only).
 #### Inherited from
 
 pc.Texture.compareOnRead
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6374
 
 ___
 
@@ -956,10 +888,6 @@ Returns true if this texture is a cube map and false otherwise.
 
 pc.Texture.cubemap
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6469
-
 ___
 
 ### depth
@@ -976,10 +904,6 @@ The number of depth slices in a 3D texture (WebGL2 only).
 
 pc.Texture.depth
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6432
-
 ___
 
 ### encoding
@@ -994,19 +918,11 @@ ___
 
 pc.Texture.encoding
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6495
-
 ___
 
 ### flipY
 
 • `get` **flipY**(): `boolean`
-
-Specifies whether the texture should be flipped in the Y-direction. Only affects textures
-with a source that is an image, canvas or video element. Does not affect cubemaps,
-compressed textures or textures set from raw pixel data. Defaults to true.
 
 #### Returns
 
@@ -1015,10 +931,6 @@ compressed textures or textures set from raw pixel data. Defaults to true.
 #### Inherited from
 
 pc.Texture.flipY
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6485
 
 • `set` **flipY**(`arg`): `void`
 
@@ -1040,10 +952,6 @@ compressed textures or textures set from raw pixel data. Defaults to true.
 
 pc.Texture.flipY
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6484
-
 ___
 
 ### format
@@ -1052,30 +960,30 @@ ___
 
 The pixel format of the texture. Can be:
 
-- {@link PIXELFORMAT_A8}
-- {@link PIXELFORMAT_L8}
-- {@link PIXELFORMAT_L8_A8}
-- {@link PIXELFORMAT_R5_G6_B5}
-- {@link PIXELFORMAT_R5_G5_B5_A1}
-- {@link PIXELFORMAT_R4_G4_B4_A4}
-- {@link PIXELFORMAT_R8_G8_B8}
-- {@link PIXELFORMAT_R8_G8_B8_A8}
-- {@link PIXELFORMAT_DXT1}
-- {@link PIXELFORMAT_DXT3}
-- {@link PIXELFORMAT_DXT5}
-- {@link PIXELFORMAT_RGB16F}
-- {@link PIXELFORMAT_RGBA16F}
-- {@link PIXELFORMAT_RGB32F}
-- {@link PIXELFORMAT_RGBA32F}
-- {@link PIXELFORMAT_ETC1}
-- {@link PIXELFORMAT_PVRTC_2BPP_RGB_1}
-- {@link PIXELFORMAT_PVRTC_2BPP_RGBA_1}
-- {@link PIXELFORMAT_PVRTC_4BPP_RGB_1}
-- {@link PIXELFORMAT_PVRTC_4BPP_RGBA_1}
-- {@link PIXELFORMAT_111110F}
-- {@link PIXELFORMAT_ASTC_4x4}>/li>
-- {@link PIXELFORMAT_ATC_RGB}
-- {@link PIXELFORMAT_ATC_RGBA}
+- PIXELFORMAT_A8
+- PIXELFORMAT_L8
+- PIXELFORMAT_L8_A8
+- PIXELFORMAT_R5_G6_B5
+- PIXELFORMAT_R5_G5_B5_A1
+- PIXELFORMAT_R4_G4_B4_A4
+- PIXELFORMAT_R8_G8_B8
+- PIXELFORMAT_R8_G8_B8_A8
+- PIXELFORMAT_DXT1
+- PIXELFORMAT_DXT3
+- PIXELFORMAT_DXT5
+- PIXELFORMAT_RGB16F
+- PIXELFORMAT_RGBA16F
+- PIXELFORMAT_RGB32F
+- PIXELFORMAT_RGBA32F
+- PIXELFORMAT_ETC1
+- PIXELFORMAT_PVRTC_2BPP_RGB_1
+- PIXELFORMAT_PVRTC_2BPP_RGBA_1
+- PIXELFORMAT_PVRTC_4BPP_RGB_1
+- PIXELFORMAT_PVRTC_4BPP_RGBA_1
+- PIXELFORMAT_111110F
+- PIXELFORMAT_ASTC_4x4>/li>
+- PIXELFORMAT_ATC_RGB
+- PIXELFORMAT_ATC_RGBA
 
 #### Returns
 
@@ -1084,10 +992,6 @@ The pixel format of the texture. Can be:
 #### Inherited from
 
 pc.Texture.format
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6463
 
 ___
 
@@ -1102,10 +1006,6 @@ ___
 #### Inherited from
 
 pc.Texture.gpuSize
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6470
 
 ___
 
@@ -1123,20 +1023,11 @@ The height of the texture in pixels.
 
 pc.Texture.height
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6426
-
 ___
 
 ### magFilter
 
 • `get` **magFilter**(): `number`
-
-The magnification filter to be applied to the texture. Can be:
-
-- {@link FILTER_NEAREST}
-- {@link FILTER_LINEAR}
 
 #### Returns
 
@@ -1146,16 +1037,12 @@ The magnification filter to be applied to the texture. Can be:
 
 pc.Texture.magFilter
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6333
-
 • `set` **magFilter**(`arg`): `void`
 
 The magnification filter to be applied to the texture. Can be:
 
-- {@link FILTER_NEAREST}
-- {@link FILTER_LINEAR}
+- FILTER_NEAREST
+- FILTER_LINEAR
 
 #### Parameters
 
@@ -1170,10 +1057,6 @@ The magnification filter to be applied to the texture. Can be:
 #### Inherited from
 
 pc.Texture.magFilter
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6332
 
 ___
 
@@ -1181,15 +1064,6 @@ ___
 
 • `get` **minFilter**(): `number`
 
-The minification filter to be applied to the texture. Can be:
-
-- {@link FILTER_NEAREST}
-- {@link FILTER_LINEAR}
-- {@link FILTER_NEAREST_MIPMAP_NEAREST}
-- {@link FILTER_NEAREST_MIPMAP_LINEAR}
-- {@link FILTER_LINEAR_MIPMAP_NEAREST}
-- {@link FILTER_LINEAR_MIPMAP_LINEAR}
-
 #### Returns
 
 `number`
@@ -1198,20 +1072,16 @@ The minification filter to be applied to the texture. Can be:
 
 pc.Texture.minFilter
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6323
-
 • `set` **minFilter**(`arg`): `void`
 
 The minification filter to be applied to the texture. Can be:
 
-- {@link FILTER_NEAREST}
-- {@link FILTER_LINEAR}
-- {@link FILTER_NEAREST_MIPMAP_NEAREST}
-- {@link FILTER_NEAREST_MIPMAP_LINEAR}
-- {@link FILTER_LINEAR_MIPMAP_NEAREST}
-- {@link FILTER_LINEAR_MIPMAP_LINEAR}
+- FILTER_NEAREST
+- FILTER_LINEAR
+- FILTER_NEAREST_MIPMAP_NEAREST
+- FILTER_NEAREST_MIPMAP_LINEAR
+- FILTER_LINEAR_MIPMAP_NEAREST
+- FILTER_LINEAR_MIPMAP_LINEAR
 
 #### Parameters
 
@@ -1227,17 +1097,11 @@ The minification filter to be applied to the texture. Can be:
 
 pc.Texture.minFilter
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6322
-
 ___
 
 ### mipmaps
 
 • `get` **mipmaps**(): `any`
-
-Defines if texture should generate/upload mipmaps if possible.
 
 #### Returns
 
@@ -1246,10 +1110,6 @@ Defines if texture should generate/upload mipmaps if possible.
 #### Inherited from
 
 pc.Texture.mipmaps
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6413
 
 • `set` **mipmaps**(`arg`): `void`
 
@@ -1269,10 +1129,6 @@ Defines if texture should generate/upload mipmaps if possible.
 
 pc.Texture.mipmaps
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6412
-
 ___
 
 ### pixelData
@@ -1284,10 +1140,6 @@ ___
 #### Returns
 
 `Uint8ClampedArray`
-
-#### Defined in
-
-src/extensions/extendClasses/texture.ts:41
 
 ___
 
@@ -1305,10 +1157,6 @@ Returns true if all dimensions of the texture are power of two, and false otherw
 
 pc.Texture.pot
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6494
-
 ___
 
 ### premultiplyAlpha
@@ -1322,10 +1170,6 @@ ___
 #### Inherited from
 
 pc.Texture.premultiplyAlpha
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6488
 
 • `set` **premultiplyAlpha**(`arg`): `void`
 
@@ -1343,10 +1187,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:6488
 
 pc.Texture.premultiplyAlpha
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6487
-
 ___
 
 ### volume
@@ -1362,10 +1202,6 @@ Returns true if this texture is a 3D volume and false otherwise.
 #### Inherited from
 
 pc.Texture.volume
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6476
 
 ___
 
@@ -1383,10 +1219,6 @@ The width of the texture in pixels.
 
 pc.Texture.width
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6420
-
 ## Methods
 
 ### destroy
@@ -1403,10 +1235,6 @@ Frees resources associated with this texture.
 
 pc.Texture.destroy
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6297
-
 ___
 
 ### dirtyAll
@@ -1420,10 +1248,6 @@ ___
 #### Inherited from
 
 pc.Texture.dirtyAll
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6496
 
 ___
 
@@ -1439,10 +1263,6 @@ ___
 
 贴图的像素数据
 
-#### Defined in
-
-src/extensions/extendClasses/texture.ts:51
-
 ___
 
 ### getSource
@@ -1454,9 +1274,9 @@ returned otherwise a single image.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `mipLevel?` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `mipLevel?` | `number` | A non-negative integer specifying the image level of detail. Defaults to 0, which represents the base image source. A level value of N, that is greater than 0, represents the image source for the Nth mipmap reduction level. |
 
 #### Returns
 
@@ -1469,10 +1289,6 @@ assigned for specific image level.
 
 pc.Texture.getSource
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6541
-
 ___
 
 ### lock
@@ -1483,12 +1299,12 @@ Locks a miplevel of the texture, returning a typed array to be filled with pixel
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `options?` | `Object` |
-| `options.face?` | `number` |
-| `options.level?` | `number` |
-| `options.mode?` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `options?` | `Object` | Optional options object. Valid properties are as follows: |
+| `options.face?` | `number` | If the texture is a cubemap, this is the index of the face to lock. |
+| `options.level?` | `number` | The mip level to lock with 0 being the top level. Defaults to 0. |
+| `options.mode?` | `number` | The lock mode. Can be: - TEXTURELOCK_READ - TEXTURELOCK_WRITE Defaults to TEXTURELOCK_WRITE. |
 
 #### Returns
 
@@ -1500,10 +1316,6 @@ the locked mip level.
 #### Inherited from
 
 pc.Texture.lock
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6515
 
 ___
 
@@ -1519,7 +1331,7 @@ a cubemap, the supplied source must be an array of 6 canvases, images or videos.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `source` | `HTMLCanvasElement` \| `HTMLImageElement` \| `HTMLVideoElement` \| `HTMLCanvasElement`[] \| `HTMLImageElement`[] \| `HTMLVideoElement`[] | A canvas, image or video element, or an array of 6 canvas, image or video elements. |
-| `mipLevel?` | `number` | - |
+| `mipLevel?` | `number` | A non-negative integer specifying the image level of detail. Defaults to 0, which represents the base image source. A level value of N, that is greater than 0, represents the image source for the Nth mipmap reduction level. |
 
 #### Returns
 
@@ -1528,10 +1340,6 @@ a cubemap, the supplied source must be an array of 6 canvases, images or videos.
 #### Inherited from
 
 pc.Texture.setSource
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6530
 
 ___
 
@@ -1554,10 +1362,6 @@ ___
 
 `Color`
 
-#### Defined in
-
-src/extensions/extendClasses/texture.ts:75
-
 ___
 
 ### unlock
@@ -1574,10 +1378,6 @@ Unlocks the currently locked mip level and uploads it to VRAM.
 
 pc.Texture.unlock
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6545
-
 ___
 
 ### upload
@@ -1585,7 +1385,7 @@ ___
 ▸ **upload**(): `void`
 
 Forces a reupload of the textures pixel data to graphics memory. Ordinarily, this function
-is called by internally by {@link Texture#setSource} and {@link Texture#unlock}. However, it
+is called by internally by Texture#setSource and Texture#unlock. However, it
 still needs to be called explicitly in the case where an HTMLVideoElement is set as the
 source of the texture.  Normally, this is done once every frame before video textured
 geometry is rendered.
@@ -1597,7 +1397,3 @@ geometry is rendered.
 #### Inherited from
 
 pc.Texture.upload
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:6553

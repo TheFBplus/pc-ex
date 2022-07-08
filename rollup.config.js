@@ -1,6 +1,7 @@
 import typescript from "@rollup/plugin-typescript";
 import { terser } from "rollup-plugin-terser";
 
+
 export default {
 	input: "src/index.ts",
 
@@ -12,7 +13,7 @@ export default {
 			module: "ES2020",
 			target: "ES5",
 		}),
-		terser({ keep_fnames: true })
+		terser()
 	],
 
 	output: {

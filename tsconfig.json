@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "lib": [
-      "ES2020",
+      "ESNext",
       "DOM"
     ],
     "moduleResolution": "Node",
@@ -16,7 +16,13 @@
     "declaration": true,
     "experimentalDecorators": true,
     "allowJs": true,
-    "checkJs": false
+    "checkJs": false,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
   },
   "include": [
     "src/index.ts",

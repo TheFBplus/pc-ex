@@ -79,24 +79,23 @@
 
 Creates a new Vec3 object.
 
-**`example`**
+**`Example`**
+
+```ts
 var v = new pc.Vec3(1, 2, 3);
+```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `x?` | `number` \| `number`[] |
-| `y?` | `number` |
-| `z?` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `x?` | `number` \| `number`[] | The x value. Defaults to 0. If x is an array of length 3, the array will be used to populate all components. |
+| `y?` | `number` | The y value. Defaults to 0. |
+| `z?` | `number` | The z value. Defaults to 0. |
 
 #### Inherited from
 
 pc.Vec3.constructor
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3667
 
 ## Properties
 
@@ -154,8 +153,6 @@ ___
 
 A constant vector set to [0, 0, 1].
 
-**`readonly`**
-
 #### Inherited from
 
 pc.Vec3.BACK
@@ -171,8 +168,6 @@ ___
 ▪ `Static` `Readonly` **DOWN**: `Vec3`
 
 A constant vector set to [0, -1, 0].
-
-**`readonly`**
 
 #### Inherited from
 
@@ -190,8 +185,6 @@ ___
 
 A constant vector set to [0, 0, -1].
 
-**`readonly`**
-
 #### Inherited from
 
 pc.Vec3.FORWARD
@@ -207,8 +200,6 @@ ___
 ▪ `Static` `Readonly` **LEFT**: `Vec3`
 
 A constant vector set to [-1, 0, 0].
-
-**`readonly`**
 
 #### Inherited from
 
@@ -226,8 +217,6 @@ ___
 
 A constant vector set to [1, 1, 1].
 
-**`readonly`**
-
 #### Inherited from
 
 pc.Vec3.ONE
@@ -243,8 +232,6 @@ ___
 ▪ `Static` `Readonly` **RIGHT**: `Vec3`
 
 A constant vector set to [1, 0, 0].
-
-**`readonly`**
 
 #### Inherited from
 
@@ -262,8 +249,6 @@ ___
 
 A constant vector set to [0, 1, 0].
 
-**`readonly`**
-
 #### Inherited from
 
 pc.Vec3.UP
@@ -279,8 +264,6 @@ ___
 ▪ `Static` `Readonly` **ZERO**: `Vec3`
 
 A constant vector set to [0, 0, 0].
-
-**`readonly`**
 
 #### Inherited from
 
@@ -302,10 +285,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:3607
 
 `Quat`
 
-#### Defined in
-
-src/extensions/extendClasses/vec3.ts:32
-
 ___
 
 ### shaderData
@@ -318,10 +297,6 @@ ___
 
 `Float32Array`
 
-#### Defined in
-
-src/extensions/extendClasses/vec3.ts:41
-
 ## Methods
 
 ### add
@@ -330,7 +305,9 @@ src/extensions/extendClasses/vec3.ts:41
 
 Adds a 3-dimensional vector to another in place.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec3(10, 10, 10);
 var b = new pc.Vec3(20, 20, 20);
 
@@ -338,6 +315,7 @@ a.add(b);
 
 // Outputs [30, 30, 30]
 console.log("The result of the addition is: " + a.toString());
+```
 
 #### Parameters
 
@@ -355,10 +333,6 @@ Self for chaining.
 
 pc.Vec3.add
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3700
-
 ___
 
 ### add2
@@ -367,7 +341,9 @@ ___
 
 Adds two 3-dimensional vectors together and returns the result.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec3(10, 10, 10);
 var b = new pc.Vec3(20, 20, 20);
 var r = new pc.Vec3();
@@ -376,6 +352,7 @@ r.add2(a, b);
 // Outputs [30, 30, 30]
 
 console.log("The result of the addition is: " + r.toString());
+```
 
 #### Parameters
 
@@ -394,10 +371,6 @@ Self for chaining.
 
 pc.Vec3.add2
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3717
-
 ___
 
 ### addScalar
@@ -406,13 +379,16 @@ ___
 
 Adds a number to each element of a vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var vec = new pc.Vec3(3, 4, 5);
 
 vec.addScalar(2);
 
 // Outputs [5, 6, 7]
 console.log("The result of the addition is: " + vec.toString());
+```
 
 #### Parameters
 
@@ -429,10 +405,6 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec3.addScalar
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3731
 
 ___
 
@@ -452,10 +424,6 @@ Self for chaining.
 
 pc.Vec3.ceil
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3964
-
 ___
 
 ### clone
@@ -464,10 +432,13 @@ ___
 
 Returns an identical copy of the specified 3-dimensional vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var v = new pc.Vec3(10, 20, 30);
 var vclone = v.clone();
 console.log("The result of the cloning is: " + vclone.toString());
+```
 
 #### Returns
 
@@ -479,10 +450,6 @@ A 3-dimensional vector containing the result of the cloning.
 
 pc.Vec3.clone
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3741
-
 ___
 
 ### copy
@@ -491,13 +458,16 @@ ___
 
 Copies the contents of a source 3-dimensional vector to a destination 3-dimensional vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var src = new pc.Vec3(10, 20, 30);
 var dst = new pc.Vec3();
 
 dst.copy(src);
 
 console.log("The two vectors are " + (dst.equals(src) ? "equal" : "different"));
+```
 
 #### Parameters
 
@@ -515,10 +485,6 @@ Self for chaining.
 
 pc.Vec3.copy
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3755
-
 ___
 
 ### cross
@@ -528,11 +494,14 @@ ___
 Returns the result of a cross product operation performed on the two specified 3-dimensional
 vectors.
 
-**`example`**
+**`Example`**
+
+```ts
 var back = new pc.Vec3().cross(pc.Vec3.RIGHT, pc.Vec3.UP);
 
 // Prints the Z axis (i.e. [0, 0, 1])
 console.log("The result of the cross product is: " + back.toString());
+```
 
 #### Parameters
 
@@ -551,10 +520,6 @@ Self for chaining.
 
 pc.Vec3.cross
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3769
-
 ___
 
 ### distance
@@ -563,11 +528,14 @@ ___
 
 Returns the distance between the two specified 3-dimensional vectors.
 
-**`example`**
+**`Example`**
+
+```ts
 var v1 = new pc.Vec3(5, 10, 20);
 var v2 = new pc.Vec3(10, 20, 40);
 var d = v1.distance(v2);
 console.log("The distance between v1 and v2 is: " + d);
+```
 
 #### Parameters
 
@@ -585,10 +553,6 @@ The distance between the two vectors.
 
 pc.Vec3.distance
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3781
-
 ___
 
 ### div
@@ -597,7 +561,9 @@ ___
 
 Divides a 3-dimensional vector by another in place.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec3(4, 9, 16);
 var b = new pc.Vec3(2, 3, 4);
 
@@ -605,6 +571,7 @@ a.div(b);
 
 // Outputs [2, 3, 4]
 console.log("The result of the division is: " + a.toString());
+```
 
 #### Parameters
 
@@ -622,10 +589,6 @@ Self for chaining.
 
 pc.Vec3.div
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3796
-
 ___
 
 ### div2
@@ -634,7 +597,9 @@ ___
 
 Divides one 3-dimensional vector by another and writes the result to the specified vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec3(4, 9, 16);
 var b = new pc.Vec3(2, 3, 4);
 var r = new pc.Vec3();
@@ -643,6 +608,7 @@ r.div2(a, b);
 // Outputs [2, 3, 4]
 
 console.log("The result of the division is: " + r.toString());
+```
 
 #### Parameters
 
@@ -661,10 +627,6 @@ Self for chaining.
 
 pc.Vec3.div2
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3813
-
 ___
 
 ### divScalar
@@ -673,13 +635,16 @@ ___
 
 Divides each element of a vector by a number.
 
-**`example`**
+**`Example`**
+
+```ts
 var vec = new pc.Vec3(3, 6, 9);
 
 vec.divScalar(3);
 
 // Outputs [1, 2, 3]
 console.log("The result of the division is: " + vec.toString());
+```
 
 #### Parameters
 
@@ -697,10 +662,6 @@ Self for chaining.
 
 pc.Vec3.divScalar
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3827
-
 ___
 
 ### dot
@@ -710,11 +671,14 @@ ___
 Returns the result of a dot product operation performed on the two specified 3-dimensional
 vectors.
 
-**`example`**
+**`Example`**
+
+```ts
 var v1 = new pc.Vec3(5, 10, 20);
 var v2 = new pc.Vec3(10, 20, 40);
 var v1dotv2 = v1.dot(v2);
 console.log("The result of the dot product is: " + v1dotv2);
+```
 
 #### Parameters
 
@@ -732,10 +696,6 @@ The result of the dot product operation.
 
 pc.Vec3.dot
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3840
-
 ___
 
 ### equals
@@ -744,10 +704,13 @@ ___
 
 Reports whether two vectors are equal.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec3(1, 2, 3);
 var b = new pc.Vec3(4, 5, 6);
 console.log("The two vectors are " + (a.equals(b) ? "equal" : "different"));
+```
 
 #### Parameters
 
@@ -764,10 +727,6 @@ True if the vectors are equal and false otherwise.
 #### Inherited from
 
 pc.Vec3.equals
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3851
 
 ___
 
@@ -786,10 +745,6 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec3.floor
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3958
 
 ___
 
@@ -812,10 +767,6 @@ ___
 
 标准化gl坐标（w为1）
 
-#### Defined in
-
-src/extensions/extendClasses/vec3.ts:57
-
 ___
 
 ### length
@@ -824,11 +775,14 @@ ___
 
 Returns the magnitude of the specified 3-dimensional vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var vec = new pc.Vec3(3, 4, 0);
 var len = vec.length();
 // Outputs 5
 console.log("The length of the vector is: " + len);
+```
 
 #### Returns
 
@@ -840,10 +794,6 @@ The magnitude of the specified 3-dimensional vector.
 
 pc.Vec3.length
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3862
-
 ___
 
 ### lengthSq
@@ -852,11 +802,14 @@ ___
 
 Returns the magnitude squared of the specified 3-dimensional vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var vec = new pc.Vec3(3, 4, 0);
 var len = vec.lengthSq();
 // Outputs 25
 console.log("The length squared of the vector is: " + len);
+```
 
 #### Returns
 
@@ -868,10 +821,6 @@ The magnitude of the specified 3-dimensional vector.
 
 pc.Vec3.lengthSq
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3873
-
 ___
 
 ### lerp
@@ -880,7 +829,9 @@ ___
 
 Returns the result of a linear interpolation between two specified 3-dimensional vectors.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec3(0, 0, 0);
 var b = new pc.Vec3(10, 10, 10);
 var r = new pc.Vec3();
@@ -888,6 +839,7 @@ var r = new pc.Vec3();
 r.lerp(a, b, 0);   // r is equal to a
 r.lerp(a, b, 0.5); // r is 5, 5, 5
 r.lerp(a, b, 1);   // r is equal to b
+```
 
 #### Parameters
 
@@ -906,10 +858,6 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec3.lerp
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3892
 
 ___
 
@@ -935,10 +883,6 @@ Self for chaining.
 
 pc.Vec3.max
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3984
-
 ___
 
 ### min
@@ -963,10 +907,6 @@ Self for chaining.
 
 pc.Vec3.min
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3977
-
 ___
 
 ### mul
@@ -975,7 +915,9 @@ ___
 
 Multiplies a 3-dimensional vector to another in place.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec3(2, 3, 4);
 var b = new pc.Vec3(4, 5, 6);
 
@@ -983,6 +925,7 @@ a.mul(b);
 
 // Outputs 8, 15, 24
 console.log("The result of the multiplication is: " + a.toString());
+```
 
 #### Parameters
 
@@ -1000,10 +943,6 @@ Self for chaining.
 
 pc.Vec3.mul
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3907
-
 ___
 
 ### mul2
@@ -1012,7 +951,9 @@ ___
 
 Returns the result of multiplying the specified 3-dimensional vectors together.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec3(2, 3, 4);
 var b = new pc.Vec3(4, 5, 6);
 var r = new pc.Vec3();
@@ -1021,6 +962,7 @@ r.mul2(a, b);
 
 // Outputs 8, 15, 24
 console.log("The result of the multiplication is: " + r.toString());
+```
 
 #### Parameters
 
@@ -1039,10 +981,6 @@ Self for chaining.
 
 pc.Vec3.mul2
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3924
-
 ___
 
 ### mulScalar
@@ -1051,13 +989,16 @@ ___
 
 Multiplies each element of a vector by a number.
 
-**`example`**
+**`Example`**
+
+```ts
 var vec = new pc.Vec3(3, 6, 9);
 
 vec.mulScalar(3);
 
 // Outputs [9, 18, 27]
 console.log("The result of the multiplication is: " + vec.toString());
+```
 
 #### Parameters
 
@@ -1075,10 +1016,6 @@ Self for chaining.
 
 pc.Vec3.mulScalar
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3938
-
 ___
 
 ### normalize
@@ -1088,13 +1025,16 @@ ___
 Returns this 3-dimensional vector converted to a unit vector in place. If the vector has a
 length of zero, the vector's elements will be set to zero.
 
-**`example`**
+**`Example`**
+
+```ts
 var v = new pc.Vec3(25, 0, 0);
 
 v.normalize();
 
 // Outputs 1, 0, 0
 console.log("The result of the vector normalization is: " + v.toString());
+```
 
 #### Returns
 
@@ -1106,10 +1046,6 @@ Self for chaining.
 
 pc.Vec3.normalize
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3952
-
 ___
 
 ### project
@@ -1118,7 +1054,9 @@ ___
 
 Projects this 3-dimensional vector onto the specified vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var v = new pc.Vec3(5, 5, 5);
 var normal = new pc.Vec3(1, 0, 0);
 
@@ -1126,6 +1064,7 @@ v.project(normal);
 
 // Outputs 5, 0, 0
 console.log("The result of the vector projection is: " + v.toString());
+```
 
 #### Parameters
 
@@ -1143,10 +1082,6 @@ Self for chaining.
 
 pc.Vec3.project
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3999
-
 ___
 
 ### rotateAxisAngle
@@ -1155,7 +1090,9 @@ ___
 
 绕旋转轴旋转向量
 
-**`see`** https://www.cheapface.top/index.php/archives/57/ 绕任意轴旋转3维向量（活用矢量分解与合成）
+**`See`**
+
+https://www.cheapface.top/index.php/archives/57/ 绕任意轴旋转3维向量（活用矢量分解与合成）
 
 #### Parameters
 
@@ -1170,10 +1107,6 @@ ___
 
 旋转后的向量
 
-#### Defined in
-
-src/extensions/extendClasses/vec3.ts:123
-
 ___
 
 ### rotateX
@@ -1182,7 +1115,9 @@ ___
 
 绕x轴旋转向量
 
-**`see`** https://www.cheapface.top/index.php/archives/19/ 二维向量的旋转
+**`See`**
+
+https://www.cheapface.top/index.php/archives/19/ 二维向量的旋转
 
 #### Parameters
 
@@ -1195,10 +1130,6 @@ ___
 `Vec3`
 
 旋转后的向量
-
-#### Defined in
-
-src/extensions/extendClasses/vec3.ts:77
 
 ___
 
@@ -1208,7 +1139,9 @@ ___
 
 绕y轴旋转向量
 
-**`see`** https://www.cheapface.top/index.php/archives/19/ 二维向量的旋转
+**`See`**
+
+https://www.cheapface.top/index.php/archives/19/ 二维向量的旋转
 
 #### Parameters
 
@@ -1221,10 +1154,6 @@ ___
 `Vec3`
 
 旋转后的向量
-
-#### Defined in
-
-src/extensions/extendClasses/vec3.ts:92
 
 ___
 
@@ -1234,7 +1163,9 @@ ___
 
 绕z轴旋转向量
 
-**`see`** https://www.cheapface.top/index.php/archives/19/ 二维向量的旋转
+**`See`**
+
+https://www.cheapface.top/index.php/archives/19/ 二维向量的旋转
 
 #### Parameters
 
@@ -1247,10 +1178,6 @@ ___
 `Vec3`
 
 旋转后的向量
-
-#### Defined in
-
-src/extensions/extendClasses/vec3.ts:107
 
 ___
 
@@ -1270,10 +1197,6 @@ Self for chaining.
 
 pc.Vec3.round
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:3970
-
 ___
 
 ### set
@@ -1282,12 +1205,15 @@ ___
 
 Sets the specified 3-dimensional vector to the supplied numerical values.
 
-**`example`**
+**`Example`**
+
+```ts
 var v = new pc.Vec3();
 v.set(5, 10, 20);
 
 // Outputs 5, 10, 20
 console.log("The result of the vector set is: " + v.toString());
+```
 
 #### Parameters
 
@@ -1307,10 +1233,6 @@ Self for chaining.
 
 pc.Vec3.set
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4014
-
 ___
 
 ### sub
@@ -1319,7 +1241,9 @@ ___
 
 Subtracts a 3-dimensional vector from another in place.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec3(10, 10, 10);
 var b = new pc.Vec3(20, 20, 20);
 
@@ -1327,6 +1251,7 @@ a.sub(b);
 
 // Outputs [-10, -10, -10]
 console.log("The result of the subtraction is: " + a.toString());
+```
 
 #### Parameters
 
@@ -1344,10 +1269,6 @@ Self for chaining.
 
 pc.Vec3.sub
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4029
-
 ___
 
 ### sub2
@@ -1356,7 +1277,9 @@ ___
 
 Subtracts two 3-dimensional vectors from one another and returns the result.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec3(10, 10, 10);
 var b = new pc.Vec3(20, 20, 20);
 var r = new pc.Vec3();
@@ -1365,6 +1288,7 @@ r.sub2(a, b);
 
 // Outputs [-10, -10, -10]
 console.log("The result of the subtraction is: " + r.toString());
+```
 
 #### Parameters
 
@@ -1383,10 +1307,6 @@ Self for chaining.
 
 pc.Vec3.sub2
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4046
-
 ___
 
 ### subScalar
@@ -1395,13 +1315,16 @@ ___
 
 Subtracts a number from each element of a vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var vec = new pc.Vec3(3, 4, 5);
 
 vec.subScalar(2);
 
 // Outputs [1, 2, 3]
 console.log("The result of the subtraction is: " + vec.toString());
+```
 
 #### Parameters
 
@@ -1419,10 +1342,6 @@ Self for chaining.
 
 pc.Vec3.subScalar
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4060
-
 ___
 
 ### toString
@@ -1431,10 +1350,13 @@ ___
 
 Converts the vector to string form.
 
-**`example`**
+**`Example`**
+
+```ts
 var v = new pc.Vec3(20, 10, 5);
 // Outputs [20, 10, 5]
 console.log(v.toString());
+```
 
 #### Returns
 
@@ -1445,7 +1367,3 @@ The vector in string form.
 #### Inherited from
 
 pc.Vec3.toString
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4070

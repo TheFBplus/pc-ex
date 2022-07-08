@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- [`Tool`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md)<`MouseInputOptions`, `InputEvents`\>
+- [`Tool`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md)<[`MouseInputOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/MouseInputOptions.md), [`InputEventsMap`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md)\>
 
   ↳ **`MouseInputer`**
 
@@ -16,7 +16,10 @@
 
 ### Properties
 
+- [app](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#app)
 - [eventHandler](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#eventhandler)
+- [toolOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#tooloptions)
+- [toolOptionsDefault](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#tooloptionsdefault)
 
 ### Accessors
 
@@ -28,7 +31,8 @@
 - [onDisable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#ondisable)
 - [onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#onenable)
 - [removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#removelistener)
-- [setOption](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#setoption)
+- [setOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#setoptions)
+- [updateOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#updateoptions)
 
 ## Constructors
 
@@ -36,27 +40,35 @@
 
 • **new MouseInputer**(`option?`)
 
-创建新的工具实例
-
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `option?` | `MouseInputOptions` |
+| `option?` | [`MouseInputOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/MouseInputOptions.md) |
 
 #### Overrides
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#constructor)
 
+## Properties
+
+### app
+
+• **app**: `AppBase`
+
+#### Inherited from
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[app](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#app)
+
 #### Defined in
 
-src/tools/input/mouseInput.ts:28
+src/utils/helpers/toolBase.ts:22
 
-## Properties
+___
 
 ### eventHandler
 
-• **eventHandler**: `ExEventHandler`<`InputEvents`\>
+• **eventHandler**: `ExEventHandler`<[`InputEventsMap`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md)\>
 
 #### Inherited from
 
@@ -64,7 +76,35 @@ src/tools/input/mouseInput.ts:28
 
 #### Defined in
 
-src/libs/libs/toolHelper.ts:60
+src/utils/helpers/toolBase.ts:23
+
+___
+
+### toolOptions
+
+• **toolOptions**: [`MouseInputOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/MouseInputOptions.md)
+
+#### Inherited from
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[toolOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#tooloptions)
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:26
+
+___
+
+### toolOptionsDefault
+
+• `Protected` **toolOptionsDefault**: [`MouseInputOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/MouseInputOptions.md)
+
+#### Overrides
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[toolOptionsDefault](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#tooloptionsdefault)
+
+#### Defined in
+
+src/tools/input/mouseInput.ts:35
 
 ## Accessors
 
@@ -81,10 +121,6 @@ src/libs/libs/toolHelper.ts:60
 #### Inherited from
 
 Tool.enabled
-
-#### Defined in
-
-src/libs/libs/toolHelper.ts:85
 
 • `set` **enabled**(`value`): `void`
 
@@ -104,24 +140,26 @@ src/libs/libs/toolHelper.ts:85
 
 Tool.enabled
 
-#### Defined in
-
-src/libs/libs/toolHelper.ts:76
-
 ## Methods
 
 ### addListener
 
-▸ **addListener**(`eventName`, `callback`, `scope?`): `void`
+▸ **addListener**<`K`\>(`eventName`, `callback`, `scope?`): `void`
 
 添加事件监听
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof [`InputEventsMap`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `eventName` | `InputEvents` | 监听事件名称 |
-| `callback` | `Function` | 回调 |
+| `eventName` | `K` | 监听事件名称 |
+| `callback` | [`InputEventsMap`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md)[`K`] | 回调 |
 | `scope?` | `any` | 范围 |
 
 #### Returns
@@ -131,10 +169,6 @@ src/libs/libs/toolHelper.ts:76
 #### Inherited from
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[addListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#addlistener)
-
-#### Defined in
-
-src/libs/libs/toolHelper.ts:96
 
 ___
 
@@ -150,10 +184,6 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[onDisable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#ondisable)
 
-#### Defined in
-
-src/tools/input/mouseInput.ts:118
-
 ___
 
 ### onEnable
@@ -168,24 +198,26 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#onenable)
 
-#### Defined in
-
-src/tools/input/mouseInput.ts:110
-
 ___
 
 ### removeListener
 
-▸ **removeListener**(`eventName`, `callback`, `scope?`): `void`
+▸ **removeListener**<`K`\>(`eventName`, `callback`, `scope?`): `void`
 
 移除事件监听
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | extends keyof [`InputEventsMap`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `eventName` | `InputEvents` | 监听事件名称 |
-| `callback` | `Function` | 回调 |
+| `eventName` | `K` | 监听事件名称 |
+| `callback` | [`InputEventsMap`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md)[`K`] | 回调 |
 | `scope?` | `any` | 范围 |
 
 #### Returns
@@ -196,32 +228,47 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#removelistener)
 
-#### Defined in
-
-src/libs/libs/toolHelper.ts:107
-
 ___
 
-### setOption
+### setOptions
 
-▸ **setOption**(`option`): `void`
+▸ **setOptions**(`options`): `void`
 
 设置选项
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `option` | `MouseInputOptions` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `options` | [`MouseInputOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/MouseInputOptions.md) | 选项 |
 
 #### Returns
 
 `void`
 
-#### Overrides
+#### Inherited from
 
-[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[setOption](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#setoption)
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[setOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#setoptions)
 
-#### Defined in
+___
 
-src/tools/input/mouseInput.ts:105
+### updateOptions
+
+▸ **updateOptions**(`options`): `void`
+
+更新选项
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `options` | `Object` | 选项 |
+| `options.clickError?` | `number` | - |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[updateOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#updateoptions)

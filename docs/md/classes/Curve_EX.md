@@ -43,27 +43,26 @@
 
 Creates a new Curve instance.
 
-**`example`**
+**`Example`**
+
+```ts
 var curve = new pc.Curve([
     0, 0,        // At 0 time, value of 0
     0.33, 2,     // At 0.33 time, value of 2
     0.66, 2.6,   // At 0.66 time, value of 2.6
     1, 3         // At 1 time, value of 3
 ]);
+```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data?` | `number`[] |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `data?` | `number`[] | An array of keys (pairs of numbers with the time first and value second). |
 
 #### Inherited from
 
 pc.Curve.constructor
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:17003
 
 ## Properties
 
@@ -85,7 +84,7 @@ ___
 
 • **tension**: `number`
 
-Controls how {@link CURVE_SPLINE} tangents are calculated. Valid range is between 0 and
+Controls how CURVE_SPLINE tangents are calculated. Valid range is between 0 and
 1 where 0 results in a non-smooth curve (equivalent to linear interpolation) and 1
 results in a very smooth curve. Use 0.5 for a Catmull-rom spline.
 
@@ -105,12 +104,12 @@ ___
 
 The curve interpolation scheme. Can be:
 
-- {@link CURVE_LINEAR}
-- {@link CURVE_SMOOTHSTEP}
-- {@link CURVE_SPLINE}
-- {@link CURVE_STEP}
+- CURVE_LINEAR
+- CURVE_SMOOTHSTEP
+- CURVE_SPLINE
+- CURVE_STEP
 
-Defaults to {@link CURVE_SMOOTHSTEP}.
+Defaults to CURVE_SMOOTHSTEP.
 
 #### Inherited from
 
@@ -135,10 +134,6 @@ Get the number of keys in the curve.
 #### Inherited from
 
 pc.Curve.length
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:17036
 
 ## Methods
 
@@ -165,10 +160,6 @@ Add a new key to the curve.
 
 pc.Curve.add
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:17044
-
 ___
 
 ### clone
@@ -186,10 +177,6 @@ A clone of the specified curve.
 #### Inherited from
 
 pc.Curve.clone
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:17069
 
 ___
 
@@ -210,10 +197,6 @@ ___
 #### Inherited from
 
 pc.Curve.closest
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:17063
 
 ___
 
@@ -239,10 +222,6 @@ The key at the specified index.
 
 pc.Curve.get
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:17051
-
 ___
 
 ### getNormal
@@ -262,10 +241,6 @@ ___
 `number`
 
 法线斜率
-
-#### Defined in
-
-src/extensions/extendClasses/curve.ts:36
 
 ___
 
@@ -287,10 +262,6 @@ ___
 
 切线斜率
 
-#### Defined in
-
-src/extensions/extendClasses/curve.ts:23
-
 ___
 
 ### sort
@@ -306,10 +277,6 @@ Sort keys by time.
 #### Inherited from
 
 pc.Curve.sort
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:17055
 
 ___
 
@@ -334,7 +301,3 @@ The interpolated value.
 #### Inherited from
 
 pc.Curve.value
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:17062

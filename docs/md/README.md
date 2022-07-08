@@ -16,13 +16,13 @@ pc-ex
 - [MaterialController](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MaterialController.md)
 - [MeshInstance\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MeshInstance_EX.md)
 - [MouseInputer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md)
-- [MultiSelector](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MultiSelector.md)
 - [OrbitCamera](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md)
+- [OrbitCameraInput\_Mouse](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCameraInput_Mouse.md)
+- [OrbitCameraInput\_TouchScreen](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCameraInput_TouchScreen.md)
 - [OutlineCamera](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OutlineCamera.md)
-- [PathCurve](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md)
+- [PostEffectOutline](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PostEffectOutline.md)
 - [Quat\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Quat_EX.md)
 - [Ray\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Ray_EX.md)
-- [RuntimeTransformHandle](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/RuntimeTransformHandle.md)
 - [ScriptTypeBase](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md)
 - [Selector](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Selector.md)
 - [Texture\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Texture_EX.md)
@@ -33,29 +33,33 @@ pc-ex
 
 ### Interfaces
 
-- [intersect](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/intersect.md)
+- [ExtendClassName](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/ExtendClassName.md)
+- [InputEventsMap](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md)
+- [MouseInputOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/MouseInputOptions.md)
+- [OrbitCameraInputOption](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/OrbitCameraInputOption.md)
+- [OrbitCameraOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/OrbitCameraOptions.md)
+- [SelectorOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/SelectorOptions.md)
+- [outlineCameraOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/outlineCameraOptions.md)
 
 ### Type Aliases
 
 - [AttributeParams](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attributeparams)
-- [ExtendClassName](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#extendclassname)
 
 ### Functions
 
 - [attr](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attr)
 - [cast](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#cast)
-- [clearScreenQuad](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#clearscreenquad)
-- [clearScreenRect](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#clearscreenrect)
-- [clearSelectionBox](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#clearselectionbox)
 - [createScript](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#createscript)
 - [drawScreenQuad](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#drawscreenquad)
 - [drawScreenRect](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#drawscreenrect)
 - [drawSelectionBox](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#drawselectionbox)
 - [extendClass](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#extendclass)
-- [newClass](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#newclass)
-- [tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#tool)
+- [frag](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#frag)
+- [glsl](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#glsl)
+- [glslify](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#glslify)
 - [use](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#use)
 - [useGlobal](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#useglobal)
+- [vert](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#vert)
 
 ## Type Aliases
 
@@ -85,17 +89,7 @@ pc-ex
 
 #### Defined in
 
-src/libs/libs/create-script-decorator.ts:56
-
-___
-
-### ExtendClassName
-
-Ƭ **ExtendClassName**: ``"Application"`` \| ``"CameraComponent"`` \| ``"Color"`` \| ``"Curve"`` \| ``"ElementComponent"`` \| ``"Entity"`` \| ``"MeshInstance"`` \| ``"Quat"`` \| ``"Ray"`` \| ``"Texture"`` \| ``"Vec2"`` \| ``"Vec3"`` \| ``"Vec4"``
-
-#### Defined in
-
-src/libs/libs/extend-decorator.ts:11
+src/utils/helpers/create-script-decorator.ts:56
 
 ## Functions
 
@@ -118,10 +112,6 @@ src/libs/libs/extend-decorator.ts:11
 #### Returns
 
 `any`
-
-#### Defined in
-
-src/libs/libs/create-script-decorator.ts:44
 
 ___
 
@@ -148,58 +138,6 @@ ___
 `T`
 
 转换类型后的对象
-
-#### Defined in
-
-src/libs/libs/cast.ts:14
-
-___
-
-### clearScreenQuad
-
-▸ **clearScreenQuad**(): `void`
-
-清除框选矩形内部
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-src/utils/utils/drawSelectionBox/drawScreenQuad.ts:58
-
-___
-
-### clearScreenRect
-
-▸ **clearScreenRect**(): `void`
-
-清除框选矩形边框
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-src/utils/utils/drawSelectionBox/drawScreenRect.ts:58
-
-___
-
-### clearSelectionBox
-
-▸ **clearSelectionBox**(): `void`
-
-清除框选矩形
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-src/utils/utils/drawSelectionBox/drawSelectionBox.ts:64
 
 ___
 
@@ -235,10 +173,6 @@ property GUI creation.
 
 `void`
 
-#### Defined in
-
-src/libs/libs/create-script-decorator.ts:11
-
 ___
 
 ### drawScreenQuad
@@ -259,10 +193,6 @@ ___
 
 `void`
 
-#### Defined in
-
-src/utils/utils/drawSelectionBox/drawScreenQuad.ts:33
-
 ___
 
 ### drawScreenRect
@@ -282,10 +212,6 @@ ___
 #### Returns
 
 `void`
-
-#### Defined in
-
-src/utils/utils/drawSelectionBox/drawScreenRect.ts:33
 
 ___
 
@@ -313,25 +239,25 @@ ___
 
 框选矩形范围
 
-#### Defined in
-
-src/utils/utils/drawSelectionBox/drawSelectionBox.ts:25
-
 ___
 
 ### extendClass
 
 ▸ **extendClass**(`extendClassName`): (`target`: `any`) => `void`
 
+扩展pc类
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `extendClassName` | [`ExtendClassName`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#extendclassname) |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `extendClassName` | keyof [`ExtendClassName`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/ExtendClassName.md) | 扩展类名称 |
 
 #### Returns
 
 `fn`
+
+扩展类
 
 ▸ (`target`): `void`
 
@@ -345,110 +271,126 @@ ___
 
 `void`
 
-#### Defined in
-
-src/libs/libs/extend-decorator.ts:28
-
 ___
 
-### newClass
+### frag
 
-▸ **newClass**(`target`): `void`
+▸ **frag**(`x`): `string`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `target` | `any` |
+| `x` | `TemplateStringsArray` |
 
 #### Returns
 
-`void`
-
-#### Defined in
-
-src/libs/libs/extend-decorator.ts:71
+`string`
 
 ___
 
-### tool
+### glsl
 
-▸ **tool**(`target`): `void`
+▸ **glsl**(`x`): `string`
+
+@ 创建者: FBplus
+@ 创建时间: 2022-07-08 14:21:44
+@ 修改者: FBplus
+@ 修改时间: 2022-07-08 15:07:41
+@ 详情: javascript内联glsl帮助函数
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `target` | `any` |
+| `x` | `TemplateStringsArray` |
 
 #### Returns
 
-`void`
+`string`
 
-#### Defined in
+___
 
-src/libs/libs/extend-decorator.ts:86
+### glslify
+
+▸ **glslify**(`x`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `x` | `TemplateStringsArray` |
+
+#### Returns
+
+`string`
 
 ___
 
 ### use
 
-▸ **use**<`ToolType`, `Options`\>(`tool`, `options?`): `ToolType`
+▸ **use**<`K`\>(`toolName`, `options?`): `ToolName`[`K`]
 
-使用工具（创建一个工具实例）
+使用工具
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `ToolType` | extends [`Tool`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md)<`Options`, `unknown`, `ToolType`\> |
-| `Options` | `Options` |
+| `K` | extends keyof `ToolOptions` |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `tool` | (`options?`: `Options`) => `ToolType` | 工具类 |
-| `options?` | `Options` | 工具选项 |
+| `toolName` | `K` | 工具名称 |
+| `options?` | `ToolOptions`[`K`] | 工具设置 |
 
 #### Returns
 
-`ToolType`
+`ToolName`[`K`]
 
 工具实例
-
-#### Defined in
-
-src/libs/libs/toolHelper.ts:29
 
 ___
 
 ### useGlobal
 
-▸ **useGlobal**<`ToolType`, `Options`\>(`tool`, `options?`): `ToolType`
+▸ **useGlobal**<`K`\>(`toolName`, `options?`): `ToolName`[`K`]
 
-使用全局工具（使用全局工具实例）
+全局使用工具
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `ToolType` | extends [`Tool`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md)<`Options`, `unknown`, `ToolType`\> |
-| `Options` | `Options` |
+| `K` | extends keyof `ToolOptions` |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `tool` | (`options?`: `Options`) => `ToolType` | 工具类 |
-| `options?` | `Options` | 工具选项 |
+| `toolName` | `K` | 工具名称 |
+| `options?` | `ToolOptions`[`K`] | 工具设置 |
 
 #### Returns
 
-`ToolType`
+`ToolName`[`K`]
 
-全局工具实例
+工具实例
 
-#### Defined in
+___
 
-src/libs/libs/toolHelper.ts:42
+### vert
+
+▸ **vert**(`x`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `x` | `TemplateStringsArray` |
+
+#### Returns
+
+`string`

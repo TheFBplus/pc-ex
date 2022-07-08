@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- [`Tool`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md)<`outlineCameraOptions`, `unknown`\>
+- [`Tool`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md)<[`outlineCameraOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/outlineCameraOptions.md), `unknown`\>
 
   ↳ **`OutlineCamera`**
 
@@ -16,7 +16,10 @@
 
 ### Properties
 
+- [app](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OutlineCamera.md#app)
 - [eventHandler](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OutlineCamera.md#eventhandler)
+- [toolOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OutlineCamera.md#tooloptions)
+- [toolOptionsDefault](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OutlineCamera.md#tooloptionsdefault)
 
 ### Accessors
 
@@ -28,32 +31,41 @@
 - [onDisable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OutlineCamera.md#ondisable)
 - [onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OutlineCamera.md#onenable)
 - [removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OutlineCamera.md#removelistener)
-- [setOption](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OutlineCamera.md#setoption)
+- [setOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OutlineCamera.md#setoptions)
 - [toggleOutLine](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OutlineCamera.md#toggleoutline)
+- [updateOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OutlineCamera.md#updateoptions)
 
 ## Constructors
 
 ### constructor
 
-• **new OutlineCamera**(`options`)
-
-创建新的工具实例
+• **new OutlineCamera**(`options?`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `options` | `outlineCameraOptions` |
+| `options?` | [`outlineCameraOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/outlineCameraOptions.md) |
 
 #### Overrides
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#constructor)
 
+## Properties
+
+### app
+
+• **app**: `AppBase`
+
+#### Inherited from
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[app](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#app)
+
 #### Defined in
 
-src/tools/camera/outlineCamera.ts:41
+src/utils/helpers/toolBase.ts:22
 
-## Properties
+___
 
 ### eventHandler
 
@@ -65,7 +77,35 @@ src/tools/camera/outlineCamera.ts:41
 
 #### Defined in
 
-src/libs/libs/toolHelper.ts:60
+src/utils/helpers/toolBase.ts:23
+
+___
+
+### toolOptions
+
+• **toolOptions**: [`outlineCameraOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/outlineCameraOptions.md)
+
+#### Inherited from
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[toolOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#tooloptions)
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:26
+
+___
+
+### toolOptionsDefault
+
+• `Protected` **toolOptionsDefault**: [`outlineCameraOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/outlineCameraOptions.md)
+
+#### Overrides
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[toolOptionsDefault](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#tooloptionsdefault)
+
+#### Defined in
+
+src/tools/camera/outlineCamera.ts:41
 
 ## Accessors
 
@@ -82,10 +122,6 @@ src/libs/libs/toolHelper.ts:60
 #### Inherited from
 
 Tool.enabled
-
-#### Defined in
-
-src/libs/libs/toolHelper.ts:85
 
 • `set` **enabled**(`value`): `void`
 
@@ -105,24 +141,26 @@ src/libs/libs/toolHelper.ts:85
 
 Tool.enabled
 
-#### Defined in
-
-src/libs/libs/toolHelper.ts:76
-
 ## Methods
 
 ### addListener
 
-▸ **addListener**(`eventName`, `callback`, `scope?`): `void`
+▸ **addListener**<`K`\>(`eventName`, `callback`, `scope?`): `void`
 
 添加事件监听
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | extends `never` |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `eventName` | `unknown` | 监听事件名称 |
-| `callback` | `Function` | 回调 |
+| `eventName` | `K` | 监听事件名称 |
+| `callback` | `unknown` | 回调 |
 | `scope?` | `any` | 范围 |
 
 #### Returns
@@ -132,10 +170,6 @@ src/libs/libs/toolHelper.ts:76
 #### Inherited from
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[addListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#addlistener)
-
-#### Defined in
-
-src/libs/libs/toolHelper.ts:96
 
 ___
 
@@ -151,10 +185,6 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[onDisable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#ondisable)
 
-#### Defined in
-
-src/tools/camera/outlineCamera.ts:168
-
 ___
 
 ### onEnable
@@ -169,24 +199,26 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#onenable)
 
-#### Defined in
-
-src/tools/camera/outlineCamera.ts:163
-
 ___
 
 ### removeListener
 
-▸ **removeListener**(`eventName`, `callback`, `scope?`): `void`
+▸ **removeListener**<`K`\>(`eventName`, `callback`, `scope?`): `void`
 
 移除事件监听
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | extends `never` |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `eventName` | `unknown` | 监听事件名称 |
-| `callback` | `Function` | 回调 |
+| `eventName` | `K` | 监听事件名称 |
+| `callback` | `unknown` | 回调 |
 | `scope?` | `any` | 范围 |
 
 #### Returns
@@ -197,23 +229,19 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#removelistener)
 
-#### Defined in
-
-src/libs/libs/toolHelper.ts:107
-
 ___
 
-### setOption
+### setOptions
 
-▸ **setOption**(`options?`): `void`
+▸ **setOptions**(`options`): `void`
 
-设置选项
+设置外边框相机选项
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `options?` | `outlineCameraOptions` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `options` | [`outlineCameraOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/outlineCameraOptions.md) | 外边框相机选项 |
 
 #### Returns
 
@@ -221,11 +249,7 @@ ___
 
 #### Overrides
 
-[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[setOption](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#setoption)
-
-#### Defined in
-
-src/tools/camera/outlineCamera.ts:48
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[setOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#setoptions)
 
 ___
 
@@ -239,13 +263,31 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `entity` | `PCNode` | 节点 |
+| `entity` | `Entity` | 节点 |
 | `isOn` | `boolean` | - |
 
 #### Returns
 
 `void`
 
-#### Defined in
+___
 
-src/tools/camera/outlineCamera.ts:64
+### updateOptions
+
+▸ **updateOptions**(`options`): `void`
+
+更新外边框相机选项
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `options` | [`outlineCameraOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/outlineCameraOptions.md) | 外边框相机选项 |
+
+#### Returns
+
+`void`
+
+#### Overrides
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[updateOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#updateoptions)

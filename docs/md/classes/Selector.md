@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- [`Tool`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md)<`SelectorOptions`, `SelectorEventType`\>
+- [`Tool`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md)<[`SelectorOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/SelectorOptions.md), `SelectorEventsMap`\>
 
   ↳ **`Selector`**
 
@@ -16,7 +16,10 @@
 
 ### Properties
 
+- [app](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Selector.md#app)
 - [eventHandler](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Selector.md#eventhandler)
+- [toolOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Selector.md#tooloptions)
+- [toolOptionsDefault](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Selector.md#tooloptionsdefault)
 
 ### Accessors
 
@@ -28,35 +31,46 @@
 - [onDisable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Selector.md#ondisable)
 - [onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Selector.md#onenable)
 - [removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Selector.md#removelistener)
-- [setOption](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Selector.md#setoption)
+- [setOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Selector.md#setoptions)
+- [updateOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Selector.md#updateoptions)
 
 ## Constructors
 
 ### constructor
 
-• **new Selector**(`option`)
+• **new Selector**(`options`)
 
 创建模型点选器
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `option` | `SelectorOptions` | 模型点选设置 |
+| Name | Type |
+| :------ | :------ |
+| `options` | [`SelectorOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/SelectorOptions.md) |
 
 #### Overrides
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#constructor)
 
+## Properties
+
+### app
+
+• **app**: `AppBase`
+
+#### Inherited from
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[app](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#app)
+
 #### Defined in
 
-src/tools/selector/selector.ts:47
+src/utils/helpers/toolBase.ts:22
 
-## Properties
+___
 
 ### eventHandler
 
-• **eventHandler**: `ExEventHandler`<``"select"``\>
+• **eventHandler**: `ExEventHandler`<`SelectorEventsMap`\>
 
 #### Inherited from
 
@@ -64,7 +78,35 @@ src/tools/selector/selector.ts:47
 
 #### Defined in
 
-src/libs/libs/toolHelper.ts:60
+src/utils/helpers/toolBase.ts:23
+
+___
+
+### toolOptions
+
+• **toolOptions**: [`SelectorOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/SelectorOptions.md)
+
+#### Inherited from
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[toolOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#tooloptions)
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:26
+
+___
+
+### toolOptionsDefault
+
+• `Protected` **toolOptionsDefault**: [`SelectorOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/SelectorOptions.md)
+
+#### Overrides
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[toolOptionsDefault](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#tooloptionsdefault)
+
+#### Defined in
+
+src/tools/selector/selector.ts:42
 
 ## Accessors
 
@@ -81,10 +123,6 @@ src/libs/libs/toolHelper.ts:60
 #### Inherited from
 
 Tool.enabled
-
-#### Defined in
-
-src/libs/libs/toolHelper.ts:85
 
 • `set` **enabled**(`value`): `void`
 
@@ -104,24 +142,26 @@ src/libs/libs/toolHelper.ts:85
 
 Tool.enabled
 
-#### Defined in
-
-src/libs/libs/toolHelper.ts:76
-
 ## Methods
 
 ### addListener
 
-▸ **addListener**(`eventName`, `callback`, `scope?`): `void`
+▸ **addListener**<`K`\>(`eventName`, `callback`, `scope?`): `void`
 
 添加事件监听
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | extends ``"select"`` |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `eventName` | ``"select"`` | 监听事件名称 |
-| `callback` | `Function` | 回调 |
+| `eventName` | `K` | 监听事件名称 |
+| `callback` | `SelectorEventsMap`[`K`] | 回调 |
 | `scope?` | `any` | 范围 |
 
 #### Returns
@@ -131,10 +171,6 @@ src/libs/libs/toolHelper.ts:76
 #### Inherited from
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[addListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#addlistener)
-
-#### Defined in
-
-src/libs/libs/toolHelper.ts:96
 
 ___
 
@@ -150,10 +186,6 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[onDisable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#ondisable)
 
-#### Defined in
-
-src/tools/selector/selector.ts:128
-
 ___
 
 ### onEnable
@@ -168,24 +200,26 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#onenable)
 
-#### Defined in
-
-src/tools/selector/selector.ts:123
-
 ___
 
 ### removeListener
 
-▸ **removeListener**(`eventName`, `callback`, `scope?`): `void`
+▸ **removeListener**<`K`\>(`eventName`, `callback`, `scope?`): `void`
 
 移除事件监听
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | extends ``"select"`` |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `eventName` | ``"select"`` | 监听事件名称 |
-| `callback` | `Function` | 回调 |
+| `eventName` | `K` | 监听事件名称 |
+| `callback` | `SelectorEventsMap`[`K`] | 回调 |
 | `scope?` | `any` | 范围 |
 
 #### Returns
@@ -196,23 +230,19 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#removelistener)
 
-#### Defined in
-
-src/libs/libs/toolHelper.ts:107
-
 ___
 
-### setOption
+### setOptions
 
-▸ **setOption**(`option`): `void`
+▸ **setOptions**(`options`): `void`
 
 设置模型点选器
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `option` | `SelectorOptions` | 模型点选设置 |
+| Name | Type |
+| :------ | :------ |
+| `options` | [`SelectorOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/SelectorOptions.md) |
 
 #### Returns
 
@@ -220,8 +250,34 @@ ___
 
 #### Overrides
 
-[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[setOption](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#setoption)
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[setOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#setoptions)
 
-#### Defined in
+___
 
-src/tools/selector/selector.ts:59
+### updateOptions
+
+▸ **updateOptions**(`options`): `void`
+
+更新选项
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `options` | `Object` | 选项 |
+| `options.excludeLayers?` | `Layer`[] | - |
+| `options.inputHandler?` | [`Tool`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md)<`unknown`, [`InputEventsMap`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md)\> | - |
+| `options.pickAreaScale?` | `number` | - |
+| `options.pickCamera?` | `CameraComponent` | - |
+| `options.pickCondition?` | () => `boolean` | - |
+| `options.pickNull?` | `boolean` | - |
+| `options.pickSame?` | `boolean` | - |
+| `options.pickTag?` | `string` | - |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[updateOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#updateoptions)

@@ -78,6 +78,7 @@
 - [calculatedWidth](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#calculatedwidth)
 - [canvasCorners](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#canvascorners)
 - [color](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#color)
+- [data](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#data)
 - [drawOrder](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#draworder)
 - [enableMarkup](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#enablemarkup)
 - [enabled](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md#enabled)
@@ -198,10 +199,6 @@ Create a new ElementComponent instance.
 #### Inherited from
 
 pc.ElementComponent.constructor
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14490
 
 ## Properties
 
@@ -741,7 +738,7 @@ ___
 
 • **screen**: `Entity`
 
-The Entity with a {@link ScreenComponent} that this component belongs to. This is
+The Entity with a ScreenComponent that this component belongs to. This is
 automatically set when the component is a child of a ScreenComponent.
 
 #### Inherited from
@@ -766,10 +763,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14630
 
 pc.ElementComponent.\_absBottom
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14648
-
 ___
 
 ### \_absLeft
@@ -783,10 +776,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.\_absLeft
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14645
 
 ___
 
@@ -802,10 +791,6 @@ ___
 
 pc.ElementComponent.\_absRight
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14646
-
 ___
 
 ### \_absTop
@@ -819,10 +804,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.\_absTop
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14647
 
 ___
 
@@ -838,10 +819,6 @@ ___
 
 pc.ElementComponent.\_hasSplitAnchorsX
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14649
-
 ___
 
 ### \_hasSplitAnchorsY
@@ -855,10 +832,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.\_hasSplitAnchorsY
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14650
 
 ___
 
@@ -874,10 +847,6 @@ ___
 
 pc.ElementComponent.aabb
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14651
-
 ___
 
 ### alignment
@@ -891,10 +860,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.alignment
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14493
 
 • `set` **alignment**(`arg`): `void`
 
@@ -912,22 +877,11 @@ node_modules/playcanvas/build/playcanvas.d.ts:14493
 
 pc.ElementComponent.alignment
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14492
-
 ___
 
 ### anchor
 
 • `get` **anchor**(): `Vec4`
-
-Specifies where the left, bottom, right and top edges of the component are anchored relative
-to its parent. Each value ranges from 0 to 1. e.g. a value of [0, 0, 0, 0] means that the
-element will be anchored to the bottom left of its parent. A value of [1, 1, 1, 1] means it
-will be anchored to the top right. A split anchor is when the left-right or top-bottom pairs
-of the anchor are not equal. In that case the component will be resized to cover that entire
-area. e.g. a value of [0, 0, 1, 1] will make the component resize exactly as its parent.
 
 #### Returns
 
@@ -936,10 +890,6 @@ area. e.g. a value of [0, 0, 1, 1] will make the component resize exactly as its
 #### Inherited from
 
 pc.ElementComponent.anchor
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14663
 
 • `set` **anchor**(`arg`): `void`
 
@@ -964,10 +914,6 @@ area. e.g. a value of [0, 0, 1, 1] will make the component resize exactly as its
 
 pc.ElementComponent.anchor
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14662
-
 ___
 
 ### autoFitHeight
@@ -981,10 +927,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.autoFitHeight
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14496
 
 • `set` **autoFitHeight**(`arg`): `void`
 
@@ -1002,10 +944,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14496
 
 pc.ElementComponent.autoFitHeight
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14495
-
 ___
 
 ### autoFitWidth
@@ -1019,10 +957,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.autoFitWidth
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14499
 
 • `set` **autoFitWidth**(`arg`): `void`
 
@@ -1040,10 +974,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14499
 
 pc.ElementComponent.autoFitWidth
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14498
-
 ___
 
 ### autoHeight
@@ -1057,10 +987,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.autoHeight
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14502
 
 • `set` **autoHeight**(`arg`): `void`
 
@@ -1078,10 +1004,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14502
 
 pc.ElementComponent.autoHeight
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14501
-
 ___
 
 ### autoWidth
@@ -1095,10 +1017,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.autoWidth
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14505
 
 • `set` **autoWidth**(`arg`): `void`
 
@@ -1116,17 +1034,11 @@ node_modules/playcanvas/build/playcanvas.d.ts:14505
 
 pc.ElementComponent.autoWidth
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14504
-
 ___
 
 ### batchGroupId
 
 • `get` **batchGroupId**(): `number`
-
-Assign element to a specific batch group (see {@link BatchGroup}). Default is -1 (no group).
 
 #### Returns
 
@@ -1136,13 +1048,9 @@ Assign element to a specific batch group (see {@link BatchGroup}). Default is -1
 
 pc.ElementComponent.batchGroupId
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14670
-
 • `set` **batchGroupId**(`arg`): `void`
 
-Assign element to a specific batch group (see {@link BatchGroup}). Default is -1 (no group).
+Assign element to a specific batch group (see BatchGroup). Default is -1 (no group).
 
 #### Parameters
 
@@ -1158,18 +1066,11 @@ Assign element to a specific batch group (see {@link BatchGroup}). Default is -1
 
 pc.ElementComponent.batchGroupId
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14669
-
 ___
 
 ### bottom
 
 • `get` **bottom**(): `number`
-
-The distance from the bottom edge of the anchor. Can be used in combination with a split
-anchor to make the component's top edge always be 'top' units away from the top.
 
 #### Returns
 
@@ -1178,10 +1079,6 @@ anchor to make the component's top edge always be 'top' units away from the top.
 #### Inherited from
 
 pc.ElementComponent.bottom
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14678
 
 • `set` **bottom**(`arg`): `void`
 
@@ -1202,10 +1099,6 @@ anchor to make the component's top edge always be 'top' units away from the top.
 
 pc.ElementComponent.bottom
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14677
-
 ___
 
 ### calculatedCorners
@@ -1218,21 +1111,11 @@ ___
 
 [`Vec3`, `Vec3`, `Vec3`, `Vec3`]
 
-#### Defined in
-
-src/extensions/extendClasses/elementComponent.ts:76
-
 ___
 
 ### calculatedHeight
 
 • `get` **calculatedHeight**(): `number`
-
-The height at which the element will be rendered. In most cases this will be the same as
-`height`. However, in some cases the engine may calculate a different height for the element,
-such as when the element is under the control of a {@link LayoutGroupComponent}. In these
-scenarios, `calculatedHeight` may be smaller or larger than the height that was set in the
-editor.
 
 #### Returns
 
@@ -1242,15 +1125,11 @@ editor.
 
 pc.ElementComponent.calculatedHeight
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14700
-
 • `set` **calculatedHeight**(`arg`): `void`
 
 The height at which the element will be rendered. In most cases this will be the same as
 `height`. However, in some cases the engine may calculate a different height for the element,
-such as when the element is under the control of a {@link LayoutGroupComponent}. In these
+such as when the element is under the control of a LayoutGroupComponent. In these
 scenarios, `calculatedHeight` may be smaller or larger than the height that was set in the
 editor.
 
@@ -1267,10 +1146,6 @@ editor.
 #### Inherited from
 
 pc.ElementComponent.calculatedHeight
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14699
 
 ___
 
@@ -1278,12 +1153,6 @@ ___
 
 • `get` **calculatedWidth**(): `number`
 
-The width at which the element will be rendered. In most cases this will be the same as
-`width`. However, in some cases the engine may calculate a different width for the element,
-such as when the element is under the control of a {@link LayoutGroupComponent}. In these
-scenarios, `calculatedWidth` may be smaller or larger than the width that was set in the
-editor.
-
 #### Returns
 
 `number`
@@ -1292,15 +1161,11 @@ editor.
 
 pc.ElementComponent.calculatedWidth
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14689
-
 • `set` **calculatedWidth**(`arg`): `void`
 
 The width at which the element will be rendered. In most cases this will be the same as
 `width`. However, in some cases the engine may calculate a different width for the element,
-such as when the element is under the control of a {@link LayoutGroupComponent}. In these
+such as when the element is under the control of a LayoutGroupComponent. In these
 scenarios, `calculatedWidth` may be smaller or larger than the width that was set in the
 editor.
 
@@ -1318,17 +1183,13 @@ editor.
 
 pc.ElementComponent.calculatedWidth
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14688
-
 ___
 
 ### canvasCorners
 
 • `get` **canvasCorners**(): `Vec2`[]
 
-An array of 4 {@link Vec2}s that represent the bottom left, bottom right, top right and top
+An array of 4 Vec2s that represent the bottom left, bottom right, top right and top
 left corners of the component in canvas pixels. Only works for screen space element
 components.
 
@@ -1339,10 +1200,6 @@ components.
 #### Inherited from
 
 pc.ElementComponent.canvasCorners
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14708
 
 ___
 
@@ -1357,10 +1214,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.color
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14508
 
 • `set` **color**(`arg`): `void`
 
@@ -1378,18 +1231,25 @@ node_modules/playcanvas/build/playcanvas.d.ts:14508
 
 pc.ElementComponent.color
 
+___
+
+### data
+
+• **data**: `Object`
+
+#### Inherited from
+
+pc.ElementComponent.data
+
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:14507
+node_modules/playcanvas/build/playcanvas.d.ts:7573
 
 ___
 
 ### drawOrder
 
 • `get` **drawOrder**(): `number`
-
-The draw order of the component. A higher value means that the component will be rendered on
-top of other components.
 
 #### Returns
 
@@ -1398,10 +1258,6 @@ top of other components.
 #### Inherited from
 
 pc.ElementComponent.drawOrder
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14716
 
 • `set` **drawOrder**(`arg`): `void`
 
@@ -1422,10 +1278,6 @@ top of other components.
 
 pc.ElementComponent.drawOrder
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14715
-
 ___
 
 ### enableMarkup
@@ -1439,10 +1291,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.enableMarkup
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14511
 
 • `set` **enableMarkup**(`arg`): `void`
 
@@ -1460,10 +1308,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14511
 
 pc.ElementComponent.enableMarkup
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14510
-
 ___
 
 ### enabled
@@ -1477,10 +1321,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.enabled
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:7545
 
 • `set` **enabled**(`arg`): `void`
 
@@ -1498,22 +1338,11 @@ node_modules/playcanvas/build/playcanvas.d.ts:7545
 
 pc.ElementComponent.enabled
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:7544
-
 ___
 
 ### fitMode
 
 • `get` **fitMode**(): `string`
-
-Set how the content should be fitted and preserve the aspect ratio of the source texture or sprite.
-Only works for {@link ELEMENTTYPE_IMAGE} types. Can be:
-
-- {@link FITMODE_STRETCH}: Fit the content exactly to Element's bounding box.
-- {@link FITMODE_CONTAIN}: Fit the content within the Element's bounding box while preserving its Aspect Ratio.
-- {@link FITMODE_COVER}: Fit the content to cover the entire Element's bounding box while preserving its Aspect Ratio.
 
 #### Returns
 
@@ -1523,18 +1352,14 @@ Only works for {@link ELEMENTTYPE_IMAGE} types. Can be:
 
 pc.ElementComponent.fitMode
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14832
-
 • `set` **fitMode**(`arg`): `void`
 
 Set how the content should be fitted and preserve the aspect ratio of the source texture or sprite.
-Only works for {@link ELEMENTTYPE_IMAGE} types. Can be:
+Only works for ELEMENTTYPE_IMAGE types. Can be:
 
-- {@link FITMODE_STRETCH}: Fit the content exactly to Element's bounding box.
-- {@link FITMODE_CONTAIN}: Fit the content within the Element's bounding box while preserving its Aspect Ratio.
-- {@link FITMODE_COVER}: Fit the content to cover the entire Element's bounding box while preserving its Aspect Ratio.
+- FITMODE_STRETCH: Fit the content exactly to Element's bounding box.
+- FITMODE_CONTAIN: Fit the content within the Element's bounding box while preserving its Aspect Ratio.
+- FITMODE_COVER: Fit the content to cover the entire Element's bounding box while preserving its Aspect Ratio.
 
 #### Parameters
 
@@ -1550,10 +1375,6 @@ Only works for {@link ELEMENTTYPE_IMAGE} types. Can be:
 
 pc.ElementComponent.fitMode
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14831
-
 ___
 
 ### font
@@ -1567,10 +1388,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.font
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14514
 
 • `set` **font**(`arg`): `void`
 
@@ -1588,10 +1405,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14514
 
 pc.ElementComponent.font
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14513
-
 ___
 
 ### fontAsset
@@ -1605,10 +1418,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.fontAsset
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14517
 
 • `set` **fontAsset**(`arg`): `void`
 
@@ -1626,10 +1435,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14517
 
 pc.ElementComponent.fontAsset
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14516
-
 ___
 
 ### fontSize
@@ -1643,10 +1448,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.fontSize
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14520
 
 • `set` **fontSize**(`arg`): `void`
 
@@ -1664,20 +1465,11 @@ node_modules/playcanvas/build/playcanvas.d.ts:14520
 
 pc.ElementComponent.fontSize
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14519
-
 ___
 
 ### height
 
 • `get` **height**(): `number`
-
-The height of the element as set in the editor. Note that in some cases this may not reflect
-the true height at which the element is rendered, such as when the element is under the
-control of a {@link LayoutGroupComponent}. See `calculatedHeight` in order to ensure you are
-reading the true height at which the element will be rendered.
 
 #### Returns
 
@@ -1687,15 +1479,11 @@ reading the true height at which the element will be rendered.
 
 pc.ElementComponent.height
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14726
-
 • `set` **height**(`arg`): `void`
 
 The height of the element as set in the editor. Note that in some cases this may not reflect
 the true height at which the element is rendered, such as when the element is under the
-control of a {@link LayoutGroupComponent}. See `calculatedHeight` in order to ensure you are
+control of a LayoutGroupComponent. See `calculatedHeight` in order to ensure you are
 reading the true height at which the element will be rendered.
 
 #### Parameters
@@ -1712,10 +1500,6 @@ reading the true height at which the element will be rendered.
 
 pc.ElementComponent.height
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14725
-
 ___
 
 ### key
@@ -1729,10 +1513,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.key
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14523
 
 • `set` **key**(`arg`): `void`
 
@@ -1750,18 +1530,11 @@ node_modules/playcanvas/build/playcanvas.d.ts:14523
 
 pc.ElementComponent.key
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14522
-
 ___
 
 ### layers
 
 • `get` **layers**(): `number`[]
-
-An array of layer IDs ({@link Layer#id}) to which this element should belong. Don't push,
-pop, splice or modify this array, if you want to change it - set a new one instead.
 
 #### Returns
 
@@ -1771,13 +1544,9 @@ pop, splice or modify this array, if you want to change it - set a new one inste
 
 pc.ElementComponent.layers
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14734
-
 • `set` **layers**(`arg`): `void`
 
-An array of layer IDs ({@link Layer#id}) to which this element should belong. Don't push,
+An array of layer IDs (Layer#id) to which this element should belong. Don't push,
 pop, splice or modify this array, if you want to change it - set a new one instead.
 
 #### Parameters
@@ -1794,18 +1563,11 @@ pop, splice or modify this array, if you want to change it - set a new one inste
 
 pc.ElementComponent.layers
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14733
-
 ___
 
 ### left
 
 • `get` **left**(): `number`
-
-The distance from the left edge of the anchor. Can be used in combination with a split
-anchor to make the component's left edge always be 'left' units away from the left.
 
 #### Returns
 
@@ -1814,10 +1576,6 @@ anchor to make the component's left edge always be 'left' units away from the le
 #### Inherited from
 
 pc.ElementComponent.left
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14742
 
 • `set` **left**(`arg`): `void`
 
@@ -1838,10 +1596,6 @@ anchor to make the component's left edge always be 'left' units away from the le
 
 pc.ElementComponent.left
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14741
-
 ___
 
 ### lineHeight
@@ -1855,10 +1609,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.lineHeight
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14526
 
 • `set` **lineHeight**(`arg`): `void`
 
@@ -1876,19 +1626,11 @@ node_modules/playcanvas/build/playcanvas.d.ts:14526
 
 pc.ElementComponent.lineHeight
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14525
-
 ___
 
 ### margin
 
 • `get` **margin**(): `Vec4`
-
-The distance from the left, bottom, right and top edges of the anchor. For example if we are
-using a split anchor like [0,0,1,1] and the margin is [0,0,0,0] then the component will be
-the same width and height as its parent.
 
 #### Returns
 
@@ -1897,10 +1639,6 @@ the same width and height as its parent.
 #### Inherited from
 
 pc.ElementComponent.margin
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14751
 
 • `set` **margin**(`arg`): `void`
 
@@ -1922,10 +1660,6 @@ the same width and height as its parent.
 
 pc.ElementComponent.margin
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14750
-
 ___
 
 ### mask
@@ -1939,10 +1673,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.mask
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14529
 
 • `set` **mask**(`arg`): `void`
 
@@ -1960,10 +1690,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14529
 
 pc.ElementComponent.mask
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14528
-
 ___
 
 ### material
@@ -1977,10 +1703,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.material
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14532
 
 • `set` **material**(`arg`): `void`
 
@@ -1998,10 +1720,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14532
 
 pc.ElementComponent.material
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14531
-
 ___
 
 ### materialAsset
@@ -2015,10 +1733,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.materialAsset
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14535
 
 • `set` **materialAsset**(`arg`): `void`
 
@@ -2036,10 +1750,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14535
 
 pc.ElementComponent.materialAsset
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14534
-
 ___
 
 ### maxFontSize
@@ -2053,10 +1763,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.maxFontSize
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14538
 
 • `set` **maxFontSize**(`arg`): `void`
 
@@ -2074,10 +1780,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14538
 
 pc.ElementComponent.maxFontSize
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14537
-
 ___
 
 ### maxLines
@@ -2091,10 +1793,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.maxLines
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14541
 
 • `set` **maxLines**(`arg`): `void`
 
@@ -2112,10 +1810,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14541
 
 pc.ElementComponent.maxLines
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14540
-
 ___
 
 ### minFontSize
@@ -2129,10 +1823,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.minFontSize
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14544
 
 • `set` **minFontSize**(`arg`): `void`
 
@@ -2150,10 +1840,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14544
 
 pc.ElementComponent.minFontSize
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14543
-
 ___
 
 ### opacity
@@ -2167,10 +1853,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.opacity
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14547
 
 • `set` **opacity**(`arg`): `void`
 
@@ -2188,10 +1870,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14547
 
 pc.ElementComponent.opacity
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14546
-
 ___
 
 ### outlineColor
@@ -2205,10 +1883,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.outlineColor
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14550
 
 • `set` **outlineColor**(`arg`): `void`
 
@@ -2226,10 +1900,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14550
 
 pc.ElementComponent.outlineColor
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14549
-
 ___
 
 ### outlineThickness
@@ -2243,10 +1913,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.outlineThickness
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14553
 
 • `set` **outlineThickness**(`arg`): `void`
 
@@ -2264,18 +1930,11 @@ node_modules/playcanvas/build/playcanvas.d.ts:14553
 
 pc.ElementComponent.outlineThickness
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14552
-
 ___
 
 ### pivot
 
 • `get` **pivot**(): `Vec2`
-
-The position of the pivot of the component relative to its anchor. Each value ranges from 0
-to 1 where [0,0] is the bottom left and [1,1] is the top right.
 
 #### Returns
 
@@ -2284,10 +1943,6 @@ to 1 where [0,0] is the bottom left and [1,1] is the top right.
 #### Inherited from
 
 pc.ElementComponent.pivot
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14766
 
 • `set` **pivot**(`arg`): `void`
 
@@ -2308,10 +1963,6 @@ to 1 where [0,0] is the bottom left and [1,1] is the top right.
 
 pc.ElementComponent.pivot
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14765
-
 ___
 
 ### pixelsPerUnit
@@ -2325,10 +1976,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.pixelsPerUnit
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14556
 
 • `set` **pixelsPerUnit**(`arg`): `void`
 
@@ -2346,10 +1993,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14556
 
 pc.ElementComponent.pixelsPerUnit
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14555
-
 ___
 
 ### rangeEnd
@@ -2363,10 +2006,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.rangeEnd
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14559
 
 • `set` **rangeEnd**(`arg`): `void`
 
@@ -2384,10 +2023,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14559
 
 pc.ElementComponent.rangeEnd
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14558
-
 ___
 
 ### rangeStart
@@ -2401,10 +2036,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.rangeStart
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14562
 
 • `set` **rangeStart**(`arg`): `void`
 
@@ -2422,10 +2053,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14562
 
 pc.ElementComponent.rangeStart
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14561
-
 ___
 
 ### rect
@@ -2439,10 +2066,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.rect
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14565
 
 • `set` **rect**(`arg`): `void`
 
@@ -2460,18 +2083,11 @@ node_modules/playcanvas/build/playcanvas.d.ts:14565
 
 pc.ElementComponent.rect
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14564
-
 ___
 
 ### right
 
 • `get` **right**(): `number`
-
-The distance from the right edge of the anchor. Can be used in combination with a split
-anchor to make the component's right edge always be 'right' units away from the right.
 
 #### Returns
 
@@ -2480,10 +2096,6 @@ anchor to make the component's right edge always be 'right' units away from the 
 #### Inherited from
 
 pc.ElementComponent.right
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14774
 
 • `set` **right**(`arg`): `void`
 
@@ -2504,10 +2116,6 @@ anchor to make the component's right edge always be 'right' units away from the 
 
 pc.ElementComponent.right
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14773
-
 ___
 
 ### rtlReorder
@@ -2521,10 +2129,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.rtlReorder
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14568
 
 • `set` **rtlReorder**(`arg`): `void`
 
@@ -2542,18 +2146,14 @@ node_modules/playcanvas/build/playcanvas.d.ts:14568
 
 pc.ElementComponent.rtlReorder
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14567
-
 ___
 
 ### screenCorners
 
 • `get` **screenCorners**(): `Vec3`[]
 
-An array of 4 {@link Vec3}s that represent the bottom left, bottom right, top right and top
-left corners of the component relative to its parent {@link ScreenComponent}.
+An array of 4 Vec3s that represent the bottom left, bottom right, top right and top
+left corners of the component relative to its parent ScreenComponent.
 
 #### Returns
 
@@ -2562,10 +2162,6 @@ left corners of the component relative to its parent {@link ScreenComponent}.
 #### Inherited from
 
 pc.ElementComponent.screenCorners
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14781
 
 ___
 
@@ -2580,10 +2176,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.shadowColor
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14571
 
 • `set` **shadowColor**(`arg`): `void`
 
@@ -2601,10 +2193,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14571
 
 pc.ElementComponent.shadowColor
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14570
-
 ___
 
 ### shadowOffset
@@ -2618,10 +2206,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.shadowOffset
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14574
 
 • `set` **shadowOffset**(`arg`): `void`
 
@@ -2639,10 +2223,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14574
 
 pc.ElementComponent.shadowOffset
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14573
-
 ___
 
 ### spacing
@@ -2656,10 +2236,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.spacing
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14577
 
 • `set` **spacing**(`arg`): `void`
 
@@ -2677,10 +2253,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14577
 
 pc.ElementComponent.spacing
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14576
-
 ___
 
 ### sprite
@@ -2694,10 +2266,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.sprite
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14580
 
 • `set` **sprite**(`arg`): `void`
 
@@ -2715,10 +2283,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14580
 
 pc.ElementComponent.sprite
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14579
-
 ___
 
 ### spriteAsset
@@ -2732,10 +2296,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.spriteAsset
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14583
 
 • `set` **spriteAsset**(`arg`): `void`
 
@@ -2753,10 +2313,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14583
 
 pc.ElementComponent.spriteAsset
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14582
-
 ___
 
 ### spriteFrame
@@ -2770,10 +2326,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.spriteFrame
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14586
 
 • `set` **spriteFrame**(`arg`): `void`
 
@@ -2791,10 +2343,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14586
 
 pc.ElementComponent.spriteFrame
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14585
-
 ___
 
 ### text
@@ -2808,10 +2356,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.text
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14589
 
 • `set` **text**(`arg`): `void`
 
@@ -2829,17 +2373,13 @@ node_modules/playcanvas/build/playcanvas.d.ts:14589
 
 pc.ElementComponent.text
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14588
-
 ___
 
 ### textHeight
 
 • `get` **textHeight**(): `number`
 
-The height of the text rendered by the component. Only works for {@link ELEMENTTYPE_TEXT} types.
+The height of the text rendered by the component. Only works for ELEMENTTYPE_TEXT types.
 
 #### Returns
 
@@ -2849,17 +2389,13 @@ The height of the text rendered by the component. Only works for {@link ELEMENTT
 
 pc.ElementComponent.textHeight
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14793
-
 ___
 
 ### textWidth
 
 • `get` **textWidth**(): `number`
 
-The width of the text rendered by the component. Only works for {@link ELEMENTTYPE_TEXT} types.
+The width of the text rendered by the component. Only works for ELEMENTTYPE_TEXT types.
 
 #### Returns
 
@@ -2868,10 +2404,6 @@ The width of the text rendered by the component. Only works for {@link ELEMENTTY
 #### Inherited from
 
 pc.ElementComponent.textWidth
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14787
 
 ___
 
@@ -2886,10 +2418,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.texture
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14592
 
 • `set` **texture**(`arg`): `void`
 
@@ -2907,10 +2435,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14592
 
 pc.ElementComponent.texture
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14591
-
 ___
 
 ### textureAsset
@@ -2924,10 +2448,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.textureAsset
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14595
 
 • `set` **textureAsset**(`arg`): `void`
 
@@ -2945,18 +2465,11 @@ node_modules/playcanvas/build/playcanvas.d.ts:14595
 
 pc.ElementComponent.textureAsset
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14594
-
 ___
 
 ### top
 
 • `get` **top**(): `number`
-
-The distance from the top edge of the anchor. Can be used in combination with a split anchor
-to make the component's bottom edge always be 'bottom' units away from the bottom.
 
 #### Returns
 
@@ -2965,10 +2478,6 @@ to make the component's bottom edge always be 'bottom' units away from the botto
 #### Inherited from
 
 pc.ElementComponent.top
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14801
 
 • `set` **top**(`arg`): `void`
 
@@ -2989,22 +2498,11 @@ to make the component's bottom edge always be 'bottom' units away from the botto
 
 pc.ElementComponent.top
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14800
-
 ___
 
 ### type
 
 • `get` **type**(): `string`
-
-The type of the ElementComponent. Can be:
-
-- {@link ELEMENTTYPE_GROUP}: The component can be used as a layout mechanism to create groups of
-ElementComponents e.g. panels.
-- {@link ELEMENTTYPE_IMAGE}: The component will render an image
-- {@link ELEMENTTYPE_TEXT}: The component will render text
 
 #### Returns
 
@@ -3014,18 +2512,14 @@ ElementComponents e.g. panels.
 
 pc.ElementComponent.type
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14813
-
 • `set` **type**(`arg`): `void`
 
 The type of the ElementComponent. Can be:
 
-- {@link ELEMENTTYPE_GROUP}: The component can be used as a layout mechanism to create groups of
+- ELEMENTTYPE_GROUP: The component can be used as a layout mechanism to create groups of
 ElementComponents e.g. panels.
-- {@link ELEMENTTYPE_IMAGE}: The component will render an image
-- {@link ELEMENTTYPE_TEXT}: The component will render text
+- ELEMENTTYPE_IMAGE: The component will render an image
+- ELEMENTTYPE_TEXT: The component will render text
 
 #### Parameters
 
@@ -3041,10 +2535,6 @@ ElementComponents e.g. panels.
 
 pc.ElementComponent.type
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14812
-
 ___
 
 ### unicodeConverter
@@ -3058,10 +2548,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.unicodeConverter
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14598
 
 • `set` **unicodeConverter**(`arg`): `void`
 
@@ -3079,17 +2565,11 @@ node_modules/playcanvas/build/playcanvas.d.ts:14598
 
 pc.ElementComponent.unicodeConverter
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14597
-
 ___
 
 ### useInput
 
 • `get` **useInput**(): `boolean`
-
-If true then the component will receive Mouse or Touch input events.
 
 #### Returns
 
@@ -3098,10 +2578,6 @@ If true then the component will receive Mouse or Touch input events.
 #### Inherited from
 
 pc.ElementComponent.useInput
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14820
 
 • `set` **useInput**(`arg`): `void`
 
@@ -3121,20 +2597,11 @@ If true then the component will receive Mouse or Touch input events.
 
 pc.ElementComponent.useInput
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14819
-
 ___
 
 ### width
 
 • `get` **width**(): `number`
-
-The width of the element as set in the editor. Note that in some cases this may not reflect
-the true width at which the element is rendered, such as when the element is under the
-control of a {@link LayoutGroupComponent}. See `calculatedWidth` in order to ensure you are
-reading the true width at which the element will be rendered.
 
 #### Returns
 
@@ -3144,15 +2611,11 @@ reading the true width at which the element will be rendered.
 
 pc.ElementComponent.width
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14842
-
 • `set` **width**(`arg`): `void`
 
 The width of the element as set in the editor. Note that in some cases this may not reflect
 the true width at which the element is rendered, such as when the element is under the
-control of a {@link LayoutGroupComponent}. See `calculatedWidth` in order to ensure you are
+control of a LayoutGroupComponent. See `calculatedWidth` in order to ensure you are
 reading the true width at which the element will be rendered.
 
 #### Parameters
@@ -3169,17 +2632,13 @@ reading the true width at which the element will be rendered.
 
 pc.ElementComponent.width
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14841
-
 ___
 
 ### worldCorners
 
 • `get` **worldCorners**(): `Vec3`[]
 
-An array of 4 {@link Vec3}s that represent the bottom left, bottom right, top right and top
+An array of 4 Vec3s that represent the bottom left, bottom right, top right and top
 left corners of the component in world space. Only works for 3D element components.
 
 #### Returns
@@ -3189,10 +2648,6 @@ left corners of the component in world space. Only works for 3D element componen
 #### Inherited from
 
 pc.ElementComponent.worldCorners
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14849
 
 ___
 
@@ -3207,10 +2662,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.wrapLines
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14601
 
 • `set` **wrapLines**(`arg`): `void`
 
@@ -3227,10 +2678,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14601
 #### Inherited from
 
 pc.ElementComponent.wrapLines
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14600
 
 ## Methods
 
@@ -3252,10 +2699,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:14600
 
 pc.ElementComponent.\_bindScreen
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14860
-
 ___
 
 ### \_calculateLocalAnchors
@@ -3269,10 +2712,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.\_calculateLocalAnchors
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14873
 
 ___
 
@@ -3295,10 +2734,6 @@ ___
 
 pc.ElementComponent.\_calculateSize
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14879
-
 ___
 
 ### \_dirtifyMask
@@ -3312,10 +2747,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.\_dirtifyMask
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14858
 
 ___
 
@@ -3331,10 +2762,6 @@ ___
 
 pc.ElementComponent.\_dirtyBatch
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14892
-
 ___
 
 ### \_flagChildrenAsDirty
@@ -3348,10 +2775,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.\_flagChildrenAsDirty
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14885
 
 ___
 
@@ -3367,10 +2790,6 @@ ___
 
 pc.ElementComponent.\_isScreenCulled
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14891
-
 ___
 
 ### \_isScreenSpace
@@ -3384,10 +2803,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.\_isScreenSpace
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14890
 
 ___
 
@@ -3409,10 +2824,6 @@ ___
 
 pc.ElementComponent.\_onInsert
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14857
-
 ___
 
 ### \_onPrerender
@@ -3427,10 +2838,6 @@ ___
 
 pc.ElementComponent.\_onPrerender
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14859
-
 ___
 
 ### \_onScreenRemove
@@ -3444,10 +2851,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.\_onScreenRemove
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14872
 
 ___
 
@@ -3469,10 +2872,6 @@ ___
 
 pc.ElementComponent.\_onScreenResize
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14870
-
 ___
 
 ### \_onScreenSpaceChange
@@ -3486,10 +2885,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.\_onScreenSpaceChange
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14871
 
 ___
 
@@ -3510,10 +2905,6 @@ ___
 
 pc.ElementComponent.\_parseUpToScreen
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14866
-
 ___
 
 ### \_patch
@@ -3527,10 +2918,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.\_patch
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14850
 
 ___
 
@@ -3553,10 +2940,6 @@ ___
 
 pc.ElementComponent.\_setCalculatedHeight
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14884
-
 ___
 
 ### \_setCalculatedWidth
@@ -3578,10 +2961,6 @@ ___
 
 pc.ElementComponent.\_setCalculatedWidth
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14883
-
 ___
 
 ### \_setHeight
@@ -3601,10 +2980,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.\_setHeight
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14882
 
 ___
 
@@ -3628,10 +3003,6 @@ ___
 
 pc.ElementComponent.\_setLocalPosition
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14853
-
 ___
 
 ### \_setMaskedBy
@@ -3651,10 +3022,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.\_setMaskedBy
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14864
 
 ___
 
@@ -3678,10 +3045,6 @@ ___
 
 pc.ElementComponent.\_setPosition
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14852
-
 ___
 
 ### \_setWidth
@@ -3702,10 +3065,6 @@ ___
 
 pc.ElementComponent.\_setWidth
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14881
-
 ___
 
 ### \_sync
@@ -3719,10 +3078,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.\_sync
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14854
 
 ___
 
@@ -3744,10 +3099,6 @@ ___
 
 pc.ElementComponent.\_unbindScreen
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14861
-
 ___
 
 ### \_unpatch
@@ -3761,10 +3112,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.\_unpatch
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14851
 
 ___
 
@@ -3787,10 +3134,6 @@ ___
 
 pc.ElementComponent.\_updateMask
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14865
-
 ___
 
 ### \_updateScreen
@@ -3810,10 +3153,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.\_updateScreen
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14862
 
 ___
 
@@ -3835,10 +3174,6 @@ ___
 
 pc.ElementComponent.addModelToLayers
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14886
-
 ___
 
 ### buildAccessors
@@ -3859,10 +3194,6 @@ ___
 
 pc.ElementComponent.buildAccessors
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:7561
-
 ___
 
 ### fire
@@ -3871,22 +3202,25 @@ ___
 
 Fire an event, all additional arguments are passed on to the event listener.
 
-**`example`**
+**`Example`**
+
+```ts
 obj.fire('test', 'This is the message');
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `name` | `string` | Name of event to fire. |
-| `arg1?` | `any` | - |
-| `arg2?` | `any` | - |
-| `arg3?` | `any` | - |
-| `arg4?` | `any` | - |
-| `arg5?` | `any` | - |
-| `arg6?` | `any` | - |
-| `arg7?` | `any` | - |
-| `arg8?` | `any` | - |
+| `arg1?` | `any` | First argument that is passed to the event handler. |
+| `arg2?` | `any` | Second argument that is passed to the event handler. |
+| `arg3?` | `any` | Third argument that is passed to the event handler. |
+| `arg4?` | `any` | Fourth argument that is passed to the event handler. |
+| `arg5?` | `any` | Fifth argument that is passed to the event handler. |
+| `arg6?` | `any` | Sixth argument that is passed to the event handler. |
+| `arg7?` | `any` | Seventh argument that is passed to the event handler. |
+| `arg8?` | `any` | Eighth argument that is passed to the event handler. |
 
 #### Returns
 
@@ -3897,10 +3231,6 @@ Self for chaining.
 #### Inherited from
 
 pc.ElementComponent.fire
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:102
 
 ___
 
@@ -3915,10 +3245,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.getMaskOffset
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14888
 
 ___
 
@@ -3940,10 +3266,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.getOffsetPosition
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14874
 
 ___
 
@@ -3969,10 +3291,6 @@ ___
 
 element在此屏幕坐标的像素值
 
-#### Defined in
-
-src/extensions/extendClasses/elementComponent.ts:126
-
 ___
 
 ### hasEvent
@@ -3981,10 +3299,13 @@ ___
 
 Test if there are any handlers bound to an event name.
 
-**`example`**
+**`Example`**
+
+```ts
 obj.on('test', function () { }); // bind an event to 'test'
 obj.hasEvent('test'); // returns true
 obj.hasEvent('hello'); // returns false
+```
 
 #### Parameters
 
@@ -4001,10 +3322,6 @@ True if the object has handlers bound to the specified event name.
 #### Inherited from
 
 pc.ElementComponent.hasEvent
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:130
 
 ___
 
@@ -4026,10 +3343,6 @@ ___
 
 pc.ElementComponent.isVisibleForCamera
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14889
-
 ___
 
 ### off
@@ -4040,7 +3353,9 @@ Detach an event handler from an event. If callback is not provided then all call
 unbound from the event, if scope is not provided then all events with the callback will be
 unbound.
 
-**`example`**
+**`Example`**
+
+```ts
 var handler = function () {
 };
 obj.on('test', handler);
@@ -4049,14 +3364,15 @@ obj.off(); // Removes all events
 obj.off('test'); // Removes all events called 'test'
 obj.off('test', handler); // Removes all handler functions, called 'test'
 obj.off('test', handler, this); // Removes all handler functions, called 'test' with scope this
+```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name?` | `string` |
-| `callback?` | `HandleEventCallback` |
-| `scope?` | `object` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name?` | `string` | Name of the event to unbind. |
+| `callback?` | `HandleEventCallback` | Function to be unbound. |
+| `scope?` | `object` | Scope that was used as the this when the event is fired. |
 
 #### Returns
 
@@ -4068,10 +3384,6 @@ Self for chaining.
 
 pc.ElementComponent.off
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:85
-
 ___
 
 ### on
@@ -4080,11 +3392,14 @@ ___
 
 Attach an event handler to an event.
 
-**`example`**
+**`Example`**
+
+```ts
 obj.on('test', function (a, b) {
     console.log(a + b);
 });
 obj.fire('test', 1, 2); // prints 3 to the console
+```
 
 #### Parameters
 
@@ -4092,7 +3407,7 @@ obj.fire('test', 1, 2); // prints 3 to the console
 | :------ | :------ | :------ |
 | `name` | `string` | Name of the event to bind the callback to. |
 | `callback` | `HandleEventCallback` | Function that is called when event is fired. Note the callback is limited to 8 arguments. |
-| `scope?` | `object` | - |
+| `scope?` | `object` | Object to use as 'this' when the event is fired, defaults to current this. |
 
 #### Returns
 
@@ -4103,10 +3418,6 @@ Self for chaining.
 #### Inherited from
 
 pc.ElementComponent.on
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:65
 
 ___
 
@@ -4122,10 +3433,6 @@ ___
 
 pc.ElementComponent.onDisable
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:7564
-
 ___
 
 ### onEnable
@@ -4139,10 +3446,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.onEnable
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:7563
 
 ___
 
@@ -4164,10 +3467,6 @@ ___
 
 pc.ElementComponent.onLayerAdded
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14876
-
 ___
 
 ### onLayerRemoved
@@ -4187,10 +3486,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.onLayerRemoved
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14877
 
 ___
 
@@ -4213,10 +3508,6 @@ ___
 
 pc.ElementComponent.onLayersChanged
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14875
-
 ___
 
 ### onPostStateChange
@@ -4231,10 +3522,6 @@ ___
 
 pc.ElementComponent.onPostStateChange
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:7565
-
 ___
 
 ### onRemove
@@ -4248,10 +3535,6 @@ ___
 #### Inherited from
 
 pc.ElementComponent.onRemove
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14878
 
 ___
 
@@ -4275,10 +3558,6 @@ ___
 
 pc.ElementComponent.onSetEnabled
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:7562
-
 ___
 
 ### once
@@ -4287,12 +3566,15 @@ ___
 
 Attach an event handler to an event. This handler will be removed after being fired once.
 
-**`example`**
+**`Example`**
+
+```ts
 obj.once('test', function (a, b) {
     console.log(a + b);
 });
 obj.fire('test', 1, 2); // prints 3 to the console
 obj.fire('test', 1, 2); // not going to get handled
+```
 
 #### Parameters
 
@@ -4300,7 +3582,7 @@ obj.fire('test', 1, 2); // not going to get handled
 | :------ | :------ | :------ |
 | `name` | `string` | Name of the event to bind the callback to. |
 | `callback` | `HandleEventCallback` | Function that is called when event is fired. Note the callback is limited to 8 arguments. |
-| `scope?` | `object` | - |
+| `scope?` | `object` | Object to use as 'this' when the event is fired, defaults to current this. |
 
 #### Returns
 
@@ -4311,10 +3593,6 @@ Self for chaining.
 #### Inherited from
 
 pc.ElementComponent.once
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:119
 
 ___
 
@@ -4336,10 +3614,6 @@ ___
 
 pc.ElementComponent.removeModelFromLayers
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14887
-
 ___
 
 ### setPosFromWorld
@@ -4358,10 +3632,6 @@ ___
 #### Returns
 
 `void`
-
-#### Defined in
-
-src/extensions/extendClasses/elementComponent.ts:145
 
 ___
 
@@ -4383,10 +3653,6 @@ ___
 
 pc.ElementComponent.syncMask
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:14863
-
 ___
 
 ### \_buildAccessors
@@ -4407,7 +3673,3 @@ ___
 #### Inherited from
 
 pc.ElementComponent.\_buildAccessors
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:7535

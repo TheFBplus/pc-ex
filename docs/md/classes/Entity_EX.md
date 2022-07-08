@@ -109,7 +109,9 @@
 
 Create a new Entity.
 
-**`example`**
+**`Example`**
+
+```ts
 var entity = new pc.Entity();
 
 // Add a Component to the Entity
@@ -135,21 +137,18 @@ entity.setLocalEulerAngles(e.x, e.y + 90, e.z);
 
 // Or use rotateLocal
 entity.rotateLocal(0, 90, 0);
+```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name?` | `string` |
-| `app?` | `AppBase` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name?` | `string` | The non-unique name of the entity, default is "Untitled". |
+| `app?` | `AppBase` | The application the entity belongs to, default is the current application. |
 
 #### Inherited from
 
 pc.Entity.constructor
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:21791
 
 ## Properties
 
@@ -157,9 +156,7 @@ node_modules/playcanvas/build/playcanvas.d.ts:21791
 
 • `Readonly` **anim**: `AnimComponent`
 
-Gets the {@link AnimComponent} attached to this entity.
-
-**`readonly`**
+Gets the AnimComponent attached to this entity.
 
 #### Inherited from
 
@@ -175,9 +172,7 @@ ___
 
 • `Readonly` **animation**: `AnimationComponent`
 
-Gets the {@link AnimationComponent} attached to this entity.
-
-**`readonly`**
+Gets the AnimationComponent attached to this entity.
 
 #### Inherited from
 
@@ -193,9 +188,7 @@ ___
 
 • `Readonly` **audiolistener**: `AudioListenerComponent`
 
-Gets the {@link AudioListenerComponent} attached to this entity.
-
-**`readonly`**
+Gets the AudioListenerComponent attached to this entity.
 
 #### Inherited from
 
@@ -211,9 +204,7 @@ ___
 
 • `Readonly` **button**: `ButtonComponent`
 
-Gets the {@link ButtonComponent} attached to this entity.
-
-**`readonly`**
+Gets the ButtonComponent attached to this entity.
 
 #### Inherited from
 
@@ -229,9 +220,7 @@ ___
 
 • `Readonly` **camera**: `CameraComponent`
 
-Gets the {@link CameraComponent} attached to this entity.
-
-**`readonly`**
+Gets the CameraComponent attached to this entity.
 
 #### Inherited from
 
@@ -247,9 +236,7 @@ ___
 
 • `Readonly` **collision**: `CollisionComponent`
 
-Gets the {@link CollisionComponent} attached to this entity.
-
-**`readonly`**
+Gets the CollisionComponent attached to this entity.
 
 #### Inherited from
 
@@ -265,9 +252,7 @@ ___
 
 • `Readonly` **element**: `ElementComponent`
 
-Gets the {@link ElementComponent} attached to this entity.
-
-**`readonly`**
+Gets the ElementComponent attached to this entity.
 
 #### Inherited from
 
@@ -283,9 +268,7 @@ ___
 
 • `Readonly` **layoutchild**: `LayoutChildComponent`
 
-Gets the {@link LayoutChildComponent} attached to this entity.
-
-**`readonly`**
+Gets the LayoutChildComponent attached to this entity.
 
 #### Inherited from
 
@@ -301,9 +284,7 @@ ___
 
 • `Readonly` **layoutgroup**: `LayoutGroupComponent`
 
-Gets the {@link LayoutGroupComponent} attached to this entity.
-
-**`readonly`**
+Gets the LayoutGroupComponent attached to this entity.
 
 #### Inherited from
 
@@ -319,9 +300,7 @@ ___
 
 • `Readonly` **light**: `LightComponent`
 
-Gets the {@link LightComponent} attached to this entity.
-
-**`readonly`**
+Gets the LightComponent attached to this entity.
 
 #### Inherited from
 
@@ -337,9 +316,7 @@ ___
 
 • `Readonly` **model**: `ModelComponent`
 
-Gets the {@link ModelComponent} attached to this entity.
-
-**`readonly`**
+Gets the ModelComponent attached to this entity.
 
 #### Inherited from
 
@@ -371,9 +348,7 @@ ___
 
 • `Readonly` **particlesystem**: `ParticleSystemComponent`
 
-Gets the {@link ParticleSystemComponent} attached to this entity.
-
-**`readonly`**
+Gets the ParticleSystemComponent attached to this entity.
 
 #### Inherited from
 
@@ -389,9 +364,7 @@ ___
 
 • `Readonly` **render**: `RenderComponent`
 
-Gets the {@link RenderComponent} attached to this entity.
-
-**`readonly`**
+Gets the RenderComponent attached to this entity.
 
 #### Inherited from
 
@@ -407,9 +380,7 @@ ___
 
 • `Readonly` **rigidbody**: `RigidBodyComponent`
 
-Gets the {@link RigidBodyComponent} attached to this entity.
-
-**`readonly`**
+Gets the RigidBodyComponent attached to this entity.
 
 #### Inherited from
 
@@ -425,9 +396,7 @@ ___
 
 • `Readonly` **screen**: `ScreenComponent`
 
-Gets the {@link ScreenComponent} attached to this entity.
-
-**`readonly`**
+Gets the ScreenComponent attached to this entity.
 
 #### Inherited from
 
@@ -443,9 +412,7 @@ ___
 
 • `Readonly` **script**: `ScriptComponent`
 
-Gets the {@link ScriptComponent} attached to this entity.
-
-**`readonly`**
+Gets the ScriptComponent attached to this entity.
 
 #### Inherited from
 
@@ -461,9 +428,7 @@ ___
 
 • `Readonly` **scrollbar**: `ScrollbarComponent`
 
-Gets the {@link ScrollbarComponent} attached to this entity.
-
-**`readonly`**
+Gets the ScrollbarComponent attached to this entity.
 
 #### Inherited from
 
@@ -479,9 +444,7 @@ ___
 
 • `Readonly` **scrollview**: `ScrollViewComponent`
 
-Gets the {@link ScrollViewComponent} attached to this entity.
-
-**`readonly`**
+Gets the ScrollViewComponent attached to this entity.
 
 #### Inherited from
 
@@ -497,9 +460,7 @@ ___
 
 • `Readonly` **sound**: `SoundComponent`
 
-Gets the {@link SoundComponent} attached to this entity.
-
-**`readonly`**
+Gets the SoundComponent attached to this entity.
 
 #### Inherited from
 
@@ -515,9 +476,7 @@ ___
 
 • `Readonly` **sprite**: `SpriteComponent`
 
-Gets the {@link SpriteComponent} attached to this entity.
-
-**`readonly`**
+Gets the SpriteComponent attached to this entity.
 
 #### Inherited from
 
@@ -534,7 +493,7 @@ ___
 • **tags**: `Tags`
 
 Interface for tagging graph nodes. Tag based searches can be performed using the
-{@link GraphNode#findByTag} function.
+GraphNode#findByTag function.
 
 #### Inherited from
 
@@ -560,19 +519,11 @@ A read-only property to get the children of this graph node.
 
 pc.Entity.children
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9404
-
 ___
 
 ### enabled
 
 • `get` **enabled**(): `boolean`
-
-Enable or disable a GraphNode. If one of the GraphNode's parents is disabled there will be
-no other side effects. If all the parents are enabled then the new value will activate or
-deactivate all the enabled children of the GraphNode.
 
 #### Returns
 
@@ -581,10 +532,6 @@ deactivate all the enabled children of the GraphNode.
 #### Inherited from
 
 pc.Entity.enabled
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9380
 
 • `set` **enabled**(`arg`): `void`
 
@@ -606,10 +553,6 @@ deactivate all the enabled children of the GraphNode.
 
 pc.Entity.enabled
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9379
-
 ___
 
 ### forward
@@ -625,10 +568,6 @@ The normalized local space negative Z-axis vector of the graph node in world spa
 #### Inherited from
 
 pc.Entity.forward
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9371
 
 ___
 
@@ -648,10 +587,6 @@ is not recalculated when a node is simply removed from the graph.
 
 pc.Entity.graphDepth
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9412
-
 ___
 
 ### parent
@@ -667,10 +602,6 @@ A read-only property to get a parent graph node.
 #### Inherited from
 
 pc.Entity.parent
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9386
 
 ___
 
@@ -688,10 +619,6 @@ A read-only property to get the path of the graph node relative to the root of t
 
 pc.Entity.path
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9392
-
 ___
 
 ### right
@@ -707,10 +634,6 @@ The normalized local space X-axis vector of the graph node in world space.
 #### Inherited from
 
 pc.Entity.right
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9359
 
 ___
 
@@ -728,10 +651,6 @@ A read-only property to get highest graph node from current node.
 
 pc.Entity.root
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9398
-
 ___
 
 ### up
@@ -748,10 +667,6 @@ The normalized local space Y-axis vector of the graph node in world space.
 
 pc.Entity.up
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9365
-
 ## Methods
 
 ### \_sync
@@ -766,10 +681,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:9365
 
 pc.Entity.\_sync
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9899
-
 ___
 
 ### addChild
@@ -778,9 +689,12 @@ ___
 
 Add a new child to the child list and update the parent value of the child node.
 
-**`example`**
+**`Example`**
+
+```ts
 var e = new pc.Entity(app);
 this.entity.addChild(e);
+```
 
 #### Parameters
 
@@ -796,10 +710,6 @@ this.entity.addChild(e);
 
 pc.Entity.addChild
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9839
-
 ___
 
 ### addComponent
@@ -809,7 +719,9 @@ ___
 Create a new component and add it to the entity. Use this to add functionality to the entity
 like rendering a model, playing sounds and so on.
 
-**`example`**
+**`Example`**
+
+```ts
 var entity = new pc.Entity();
 
 // Add a light component with default properties
@@ -820,13 +732,14 @@ entity.addComponent("camera", {
     fov: 45,
     clearColor: new pc.Color(1, 0, 0)
 });
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `type` | `string` | The name of the component to add. Valid strings are:  - "anim" - see {@link AnimComponent} - "animation" - see {@link AnimationComponent} - "audiolistener" - see {@link AudioListenerComponent} - "button" - see {@link ButtonComponent} - "camera" - see {@link CameraComponent} - "collision" - see {@link CollisionComponent} - "element" - see {@link ElementComponent} - "layoutchild" - see {@link LayoutChildComponent} - "layoutgroup" - see {@link LayoutGroupComponent} - "light" - see {@link LightComponent} - "model" - see {@link ModelComponent} - "particlesystem" - see {@link ParticleSystemComponent} - "render" - see {@link RenderComponent} - "rigidbody" - see {@link RigidBodyComponent} - "screen" - see {@link ScreenComponent} - "script" - see {@link ScriptComponent} - "scrollbar" - see {@link ScrollbarComponent} - "scrollview" - see {@link ScrollViewComponent} - "sound" - see {@link SoundComponent} - "sprite" - see {@link SpriteComponent} |
-| `data?` | `object` | - |
+| `type` | `string` | The name of the component to add. Valid strings are:  - "anim" - see AnimComponent - "animation" - see AnimationComponent - "audiolistener" - see AudioListenerComponent - "button" - see ButtonComponent - "camera" - see CameraComponent - "collision" - see CollisionComponent - "element" - see ElementComponent - "layoutchild" - see LayoutChildComponent - "layoutgroup" - see LayoutGroupComponent - "light" - see LightComponent - "model" - see ModelComponent - "particlesystem" - see ParticleSystemComponent - "render" - see RenderComponent - "rigidbody" - see RigidBodyComponent - "screen" - see ScreenComponent - "script" - see ScriptComponent - "scrollbar" - see ScrollbarComponent - "scrollview" - see ScrollViewComponent - "sound" - see SoundComponent - "sprite" - see SpriteComponent |
+| `data?` | `object` | The initialization data for the specific component type. Refer to each specific component's API reference page for details on valid values for this parameter. |
 
 #### Returns
 
@@ -838,10 +751,6 @@ was an error.
 #### Inherited from
 
 pc.Entity.addComponent
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:22009
 
 ___
 
@@ -861,10 +770,6 @@ A clone of the specified graph node.
 
 pc.Entity.clone
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9436
-
 ___
 
 ### destroy
@@ -874,9 +779,12 @@ ___
 Remove all components from the Entity and detach it from the Entity hierarchy. Then
 recursively destroy all ancestor Entities.
 
-**`example`**
+**`Example`**
+
+```ts
 var firstChild = this.entity.children[0];
 firstChild.destroy(); // delete child, all components and remove from hierarchy
+```
 
 #### Returns
 
@@ -885,10 +793,6 @@ firstChild.destroy(); // delete child, all components and remove from hierarchy
 #### Inherited from
 
 pc.Entity.destroy
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:22075
 
 ___
 
@@ -899,22 +803,26 @@ ___
 Search the graph node and all of its descendants for the nodes that satisfy some search
 criteria.
 
-**`example`**
+**`Example`**
+
 // Finds all nodes that have a model component and have `door` in their lower-cased name
 var doors = house.find(function (node) {
     return node.model && node.name.toLowerCase().indexOf('door') !== -1;
 });
 
-**`example`**
+**`Example`**
+
+```ts
 // Finds all nodes that have the name property set to 'Test'
 var entities = parent.find('name', 'Test');
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `attr` | `string` \| `FindNodeCallback` | This can either be a function or a string. If it's a function, it is executed for each descendant node to test if node satisfies the search logic. Returning true from the function will include the node into the results. If it's a string then it represents the name of a field or a method of the node. If this is the name of a field then the value passed as the second argument will be checked for equality. If this is the name of a function then the return value of the function will be checked for equality against the valued passed as the second argument to this function. |
-| `value?` | `object` | - |
+| `value?` | `object` | If the first argument (attr) is a property name then this value will be checked against the value of the property. |
 
 #### Returns
 
@@ -925,10 +833,6 @@ The array of graph nodes that match the search criteria.
 #### Inherited from
 
 pc.Entity.find
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9468
 
 ___
 
@@ -953,10 +857,6 @@ The entity with the matching GUID or null if no entity is found.
 #### Inherited from
 
 pc.Entity.findByGuid
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:22066
 
 ___
 
@@ -983,10 +883,6 @@ null if no node is found.
 
 pc.Entity.findByName
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9523
-
 ___
 
 ### findByPath
@@ -996,19 +892,25 @@ ___
 Get the first node found in the graph by its full path in the graph. The full path has this
 form 'parent/child/sub-child'. The search is depth first.
 
-**`example`**
+**`Example`**
+
+```ts
 // String form
 var grandchild = this.entity.findByPath('child/grandchild');
+```
 
-**`example`**
+**`Example`**
+
+```ts
 // Array form
 var grandchild = this.entity.findByPath(['child', 'grandchild']);
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `path` | `string` \| `string`[] | The full path of the {@link GraphNode} as either a string or array of {@link GraphNode} names. |
+| `path` | `string` \| `string`[] | The full path of the GraphNode as either a string or array of GraphNode names. |
 
 #### Returns
 
@@ -1021,10 +923,6 @@ null if no node is found.
 
 pc.Entity.findByPath
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9539
-
 ___
 
 ### findByTag
@@ -1036,19 +934,23 @@ separated strings, to have inclusive results of assets that match at least one q
 query that consists of an array of tags can be used to match graph nodes that have each tag
 of array.
 
-**`example`**
+**`Example`**
+
 // Return all graph nodes that tagged by `animal`
 var animals = node.findByTag("animal");
 
-**`example`**
+**`Example`**
+
 // Return all graph nodes that tagged by `bird` OR `mammal`
 var birdsAndMammals = node.findByTag("bird", "mammal");
 
-**`example`**
+**`Example`**
+
 // Return all assets that tagged by `carnivore` AND `mammal`
 var meatEatingMammals = node.findByTag(["carnivore", "mammal"]);
 
-**`example`**
+**`Example`**
+
 // Return all assets that tagged by (`carnivore` AND `mammal`) OR (`carnivore` AND `reptile`)
 var meatEatingMammalsAndReptiles = node.findByTag(["carnivore", "mammal"], ["carnivore", "reptile"]);
 
@@ -1068,10 +970,6 @@ A list of all graph nodes that match the query.
 
 pc.Entity.findByTag
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9515
-
 ___
 
 ### findComponent
@@ -1080,9 +978,12 @@ ___
 
 Search the entity and all of its descendants for the first component of specified type.
 
-**`example`**
+**`Example`**
+
+```ts
 // Get the first found light component in the hierarchy tree that starts with this entity
 var light = entity.findComponent("light");
+```
 
 #### Parameters
 
@@ -1101,10 +1002,6 @@ has one. Returns undefined otherwise.
 
 pc.Entity.findComponent
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:22031
-
 ___
 
 ### findComponents
@@ -1113,9 +1010,12 @@ ___
 
 Search the entity and all of its descendants for all components of specified type.
 
-**`example`**
+**`Example`**
+
+```ts
 // Get all light components in the hierarchy tree that starts with this entity
 var lights = entity.findComponents("light");
+```
 
 #### Parameters
 
@@ -1134,10 +1034,6 @@ descendants. Returns empty array if none found.
 
 pc.Entity.findComponents
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:22042
-
 ___
 
 ### findOne
@@ -1147,22 +1043,26 @@ ___
 Search the graph node and all of its descendants for the first node that satisfies some
 search criteria.
 
-**`example`**
+**`Example`**
+
 // Find the first node that is called `head` and has a model component
 var head = player.findOne(function (node) {
     return node.model && node.name === 'head';
 });
 
-**`example`**
+**`Example`**
+
+```ts
 // Finds the first node that has the name property set to 'Test'
 var node = parent.findOne('name', 'Test');
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `attr` | `string` \| `FindNodeCallback` | This can either be a function or a string. If it's a function, it is executed for each descendant node to test if node satisfies the search logic. Returning true from the function will result in that node being returned from findOne. If it's a string then it represents the name of a field or a method of the node. If this is the name of a field then the value passed as the second argument will be checked for equality. If this is the name of a function then the return value of the function will be checked for equality against the valued passed as the second argument to this function. |
-| `value?` | `object` | - |
+| `value?` | `object` | If the first argument (attr) is a property name then this value will be checked against the value of the property. |
 
 #### Returns
 
@@ -1175,10 +1075,6 @@ node is found.
 
 pc.Entity.findOne
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9493
-
 ___
 
 ### fire
@@ -1187,22 +1083,25 @@ ___
 
 Fire an event, all additional arguments are passed on to the event listener.
 
-**`example`**
+**`Example`**
+
+```ts
 obj.fire('test', 'This is the message');
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `name` | `string` | Name of event to fire. |
-| `arg1?` | `any` | - |
-| `arg2?` | `any` | - |
-| `arg3?` | `any` | - |
-| `arg4?` | `any` | - |
-| `arg5?` | `any` | - |
-| `arg6?` | `any` | - |
-| `arg7?` | `any` | - |
-| `arg8?` | `any` | - |
+| `arg1?` | `any` | First argument that is passed to the event handler. |
+| `arg2?` | `any` | Second argument that is passed to the event handler. |
+| `arg3?` | `any` | Third argument that is passed to the event handler. |
+| `arg4?` | `any` | Fourth argument that is passed to the event handler. |
+| `arg5?` | `any` | Fifth argument that is passed to the event handler. |
+| `arg6?` | `any` | Sixth argument that is passed to the event handler. |
+| `arg7?` | `any` | Seventh argument that is passed to the event handler. |
+| `arg8?` | `any` | Eighth argument that is passed to the event handler. |
 
 #### Returns
 
@@ -1214,10 +1113,6 @@ Self for chaining.
 
 pc.Entity.fire
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:102
-
 ___
 
 ### forEach
@@ -1226,18 +1121,21 @@ ___
 
 Executes a provided function once on this graph node and all of its descendants.
 
-**`example`**
+**`Example`**
+
+```ts
 // Log the path and name of each node in descendant tree starting with "parent"
 parent.forEach(function (node) {
     console.log(node.path + "/" + node.name);
 });
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `callback` | `ForEachNodeCallback` | The function to execute on the graph node and each descendant. |
-| `thisArg?` | `object` | - |
+| `thisArg?` | `object` | Optional value to use as this when executing callback function. |
 
 #### Returns
 
@@ -1247,10 +1145,6 @@ parent.forEach(function (node) {
 
 pc.Entity.forEach
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9552
-
 ___
 
 ### getEulerAngles
@@ -1258,14 +1152,17 @@ ___
 ▸ **getEulerAngles**(): `Vec3`
 
 Get the world space rotation for the specified GraphNode in Euler angle form. The rotation
-is returned as euler angles in a {@link Vec3}. The value returned by this function should be
+is returned as euler angles in a Vec3. The value returned by this function should be
 considered read-only. In order to set the world-space rotation of the graph node, use
-{@link GraphNode#setEulerAngles}.
+GraphNode#setEulerAngles.
 
-**`example`**
+**`Example`**
+
+```ts
 var angles = this.entity.getEulerAngles();
 angles.y = 180; // rotate the entity around Y by 180 degrees
 this.entity.setEulerAngles(angles);
+```
 
 #### Returns
 
@@ -1277,10 +1174,6 @@ The world space rotation of the graph node in Euler angle form.
 
 pc.Entity.getEulerAngles
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9587
-
 ___
 
 ### getLocalEulerAngles
@@ -1288,13 +1181,16 @@ ___
 ▸ **getLocalEulerAngles**(): `Vec3`
 
 Get the rotation in local space for the specified GraphNode. The rotation is returned as
-euler angles in a {@link Vec3}. The returned vector should be considered read-only. To
-update the local rotation, use {@link GraphNode#setLocalEulerAngles}.
+euler angles in a Vec3. The returned vector should be considered read-only. To
+update the local rotation, use GraphNode#setLocalEulerAngles.
 
-**`example`**
+**`Example`**
+
+```ts
 var angles = this.entity.getLocalEulerAngles();
 angles.y = 180;
 this.entity.setLocalEulerAngles(angles);
+```
 
 #### Returns
 
@@ -1306,10 +1202,6 @@ The local space rotation of the graph node as euler angles in XYZ order.
 
 pc.Entity.getLocalEulerAngles
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9599
-
 ___
 
 ### getLocalPosition
@@ -1317,13 +1209,16 @@ ___
 ▸ **getLocalPosition**(): `Vec3`
 
 Get the position in local space for the specified GraphNode. The position is returned as a
-{@link Vec3}. The returned vector should be considered read-only. To update the local
-position, use {@link GraphNode#setLocalPosition}.
+Vec3. The returned vector should be considered read-only. To update the local
+position, use GraphNode#setLocalPosition.
 
-**`example`**
+**`Example`**
+
+```ts
 var position = this.entity.getLocalPosition();
 position.x += 1; // move the entity 1 unit along x.
 this.entity.setLocalPosition(position);
+```
 
 #### Returns
 
@@ -1335,10 +1230,6 @@ The local space position of the graph node.
 
 pc.Entity.getLocalPosition
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9611
-
 ___
 
 ### getLocalRotation
@@ -1346,11 +1237,14 @@ ___
 ▸ **getLocalRotation**(): `Quat`
 
 Get the rotation in local space for the specified GraphNode. The rotation is returned as a
-{@link Quat}. The returned quaternion should be considered read-only. To update the local
-rotation, use {@link GraphNode#setLocalRotation}.
+Quat. The returned quaternion should be considered read-only. To update the local
+rotation, use GraphNode#setLocalRotation.
 
-**`example`**
+**`Example`**
+
+```ts
 var rotation = this.entity.getLocalRotation();
+```
 
 #### Returns
 
@@ -1362,10 +1256,6 @@ The local space rotation of the graph node as a quaternion.
 
 pc.Entity.getLocalRotation
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9621
-
 ___
 
 ### getLocalScale
@@ -1373,13 +1263,16 @@ ___
 ▸ **getLocalScale**(): `Vec3`
 
 Get the scale in local space for the specified GraphNode. The scale is returned as a
-{@link Vec3}. The returned vector should be considered read-only. To update the local scale,
-use {@link GraphNode#setLocalScale}.
+Vec3. The returned vector should be considered read-only. To update the local scale,
+use GraphNode#setLocalScale.
 
-**`example`**
+**`Example`**
+
+```ts
 var scale = this.entity.getLocalScale();
 scale.x = 100;
 this.entity.setLocalScale(scale);
+```
 
 #### Returns
 
@@ -1391,10 +1284,6 @@ The local space scale of the graph node.
 
 pc.Entity.getLocalScale
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9633
-
 ___
 
 ### getLocalTransform
@@ -1404,8 +1293,11 @@ ___
 Get the local transform matrix for this graph node. This matrix is the transform relative to
 the node's parent's world transformation matrix.
 
-**`example`**
+**`Example`**
+
+```ts
 var transform = this.entity.getLocalTransform();
+```
 
 #### Returns
 
@@ -1417,10 +1309,6 @@ The node's local transformation matrix.
 
 pc.Entity.getLocalTransform
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9642
-
 ___
 
 ### getPosition
@@ -1428,13 +1316,16 @@ ___
 ▸ **getPosition**(): `Vec3`
 
 Get the world space position for the specified GraphNode. The position is returned as a
-{@link Vec3}. The value returned by this function should be considered read-only. In order
-to set the world-space position of the graph node, use {@link GraphNode#setPosition}.
+Vec3. The value returned by this function should be considered read-only. In order
+to set the world-space position of the graph node, use GraphNode#setPosition.
 
-**`example`**
+**`Example`**
+
+```ts
 var position = this.entity.getPosition();
 position.x = 10;
 this.entity.setPosition(position);
+```
 
 #### Returns
 
@@ -1446,10 +1337,6 @@ The world space position of the graph node.
 
 pc.Entity.getPosition
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9654
-
 ___
 
 ### getRotation
@@ -1457,11 +1344,14 @@ ___
 ▸ **getRotation**(): `Quat`
 
 Get the world space rotation for the specified GraphNode. The rotation is returned as a
-{@link Quat}. The value returned by this function should be considered read-only. In order
-to set the world-space rotation of the graph node, use {@link GraphNode#setRotation}.
+Quat. The value returned by this function should be considered read-only. In order
+to set the world-space rotation of the graph node, use GraphNode#setRotation.
 
-**`example`**
+**`Example`**
+
+```ts
 var rotation = this.entity.getRotation();
+```
 
 #### Returns
 
@@ -1473,10 +1363,6 @@ The world space rotation of the graph node as a quaternion.
 
 pc.Entity.getRotation
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9664
-
 ___
 
 ### getWorldTransform
@@ -1485,8 +1371,11 @@ ___
 
 Get the world transformation matrix for this graph node.
 
-**`example`**
+**`Example`**
+
+```ts
 var transform = this.entity.getWorldTransform();
+```
 
 #### Returns
 
@@ -1498,10 +1387,6 @@ The node's world transformation matrix.
 
 pc.Entity.getWorldTransform
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9686
-
 ___
 
 ### hasEvent
@@ -1510,10 +1395,13 @@ ___
 
 Test if there are any handlers bound to an event name.
 
-**`example`**
+**`Example`**
+
+```ts
 obj.on('test', function () { }); // bind an event to 'test'
 obj.hasEvent('test'); // returns true
 obj.hasEvent('hello'); // returns false
+```
 
 #### Parameters
 
@@ -1531,10 +1419,6 @@ True if the object has handlers bound to the specified event name.
 
 pc.Entity.hasEvent
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:130
-
 ___
 
 ### insertChild
@@ -1544,9 +1428,12 @@ ___
 Insert a new child to the child list at the specified index and update the parent value of
 the child node.
 
-**`example`**
+**`Example`**
+
+```ts
 var e = new pc.Entity(app);
 this.entity.insertChild(e, 1);
+```
 
 #### Parameters
 
@@ -1563,10 +1450,6 @@ this.entity.insertChild(e, 1);
 
 pc.Entity.insertChild
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9861
-
 ___
 
 ### isAncestorOf
@@ -1575,10 +1458,13 @@ ___
 
 Check if node is ancestor for another node.
 
-**`example`**
+**`Example`**
+
+```ts
 if (body.isAncestorOf(foot)) {
     // foot is within body's hierarchy
 }
+```
 
 #### Parameters
 
@@ -1596,10 +1482,6 @@ If node is ancestor for another node.
 
 pc.Entity.isAncestorOf
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9574
-
 ___
 
 ### isDescendantOf
@@ -1608,10 +1490,13 @@ ___
 
 Check if node is descendant of another node.
 
-**`example`**
+**`Example`**
+
+```ts
 if (roof.isDescendantOf(house)) {
     // roof is descendant of house entity
 }
+```
 
 #### Parameters
 
@@ -1629,10 +1514,6 @@ If node is descendant of another node.
 
 pc.Entity.isDescendantOf
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9563
-
 ___
 
 ### lookAt
@@ -1643,34 +1524,46 @@ Reorients the graph node so that the negative z-axis points towards the target. 
 function has two valid signatures. Either pass 3D vectors for the look at coordinate and up
 vector, or pass numbers to represent the vectors.
 
-**`example`**
+**`Example`**
+
+```ts
 // Look at another entity, using the (default) positive y-axis for up
 var position = otherEntity.getPosition();
 this.entity.lookAt(position);
+```
 
-**`example`**
+**`Example`**
+
+```ts
 // Look at another entity, using the negative world y-axis for up
 var position = otherEntity.getPosition();
 this.entity.lookAt(position, pc.Vec3.DOWN);
+```
 
-**`example`**
+**`Example`**
+
+```ts
 // Look at the world space origin, using the (default) positive y-axis for up
 this.entity.lookAt(0, 0, 0);
+```
 
-**`example`**
+**`Example`**
+
+```ts
 // Look at world-space coordinate [10, 10, 10], using the negative world y-axis for up
 this.entity.lookAt(10, 10, 10, 0, -1, 0);
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `x` | `number` \| `Vec3` | If passing a 3D vector, this is the world-space coordinate to look at. Otherwise, it is the x-component of the world-space coordinate to look at. |
-| `y?` | `number` \| `Vec3` | - |
-| `z?` | `number` | - |
-| `ux?` | `number` | - |
-| `uy?` | `number` | - |
-| `uz?` | `number` | - |
+| `y?` | `number` \| `Vec3` | If passing a 3D vector, this is the world-space up vector for look at transform. Otherwise, it is the y-component of the world-space coordinate to look at. |
+| `z?` | `number` | Z-component of the world-space coordinate to look at. |
+| `ux?` | `number` | X-component of the up vector for the look at transform. |
+| `uy?` | `number` | Y-component of the up vector for the look at transform. |
+| `uz?` | `number` | Z-component of the up vector for the look at transform. |
 
 #### Returns
 
@@ -1679,10 +1572,6 @@ this.entity.lookAt(10, 10, 10, 0, -1, 0);
 #### Inherited from
 
 pc.Entity.lookAt
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9934
 
 ___
 
@@ -1694,7 +1583,9 @@ Detach an event handler from an event. If callback is not provided then all call
 unbound from the event, if scope is not provided then all events with the callback will be
 unbound.
 
-**`example`**
+**`Example`**
+
+```ts
 var handler = function () {
 };
 obj.on('test', handler);
@@ -1703,14 +1594,15 @@ obj.off(); // Removes all events
 obj.off('test'); // Removes all events called 'test'
 obj.off('test', handler); // Removes all handler functions, called 'test'
 obj.off('test', handler, this); // Removes all handler functions, called 'test' with scope this
+```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name?` | `string` |
-| `callback?` | `HandleEventCallback` |
-| `scope?` | `object` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name?` | `string` | Name of the event to unbind. |
+| `callback?` | `HandleEventCallback` | Function to be unbound. |
+| `scope?` | `object` | Scope that was used as the this when the event is fired. |
 
 #### Returns
 
@@ -1722,10 +1614,6 @@ Self for chaining.
 
 pc.Entity.off
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:85
-
 ___
 
 ### on
@@ -1734,11 +1622,14 @@ ___
 
 Attach an event handler to an event.
 
-**`example`**
+**`Example`**
+
+```ts
 obj.on('test', function (a, b) {
     console.log(a + b);
 });
 obj.fire('test', 1, 2); // prints 3 to the console
+```
 
 #### Parameters
 
@@ -1746,7 +1637,7 @@ obj.fire('test', 1, 2); // prints 3 to the console
 | :------ | :------ | :------ |
 | `name` | `string` | Name of the event to bind the callback to. |
 | `callback` | `HandleEventCallback` | Function that is called when event is fired. Note the callback is limited to 8 arguments. |
-| `scope?` | `object` | - |
+| `scope?` | `object` | Object to use as 'this' when the event is fired, defaults to current this. |
 
 #### Returns
 
@@ -1758,10 +1649,6 @@ Self for chaining.
 
 pc.Entity.on
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:65
-
 ___
 
 ### once
@@ -1770,12 +1657,15 @@ ___
 
 Attach an event handler to an event. This handler will be removed after being fired once.
 
-**`example`**
+**`Example`**
+
+```ts
 obj.once('test', function (a, b) {
     console.log(a + b);
 });
 obj.fire('test', 1, 2); // prints 3 to the console
 obj.fire('test', 1, 2); // not going to get handled
+```
 
 #### Parameters
 
@@ -1783,7 +1673,7 @@ obj.fire('test', 1, 2); // not going to get handled
 | :------ | :------ | :------ |
 | `name` | `string` | Name of the event to bind the callback to. |
 | `callback` | `HandleEventCallback` | Function that is called when event is fired. Note the callback is limited to 8 arguments. |
-| `scope?` | `object` | - |
+| `scope?` | `object` | Object to use as 'this' when the event is fired, defaults to current this. |
 
 #### Returns
 
@@ -1795,10 +1685,6 @@ Self for chaining.
 
 pc.Entity.once
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:119
-
 ___
 
 ### removeChild
@@ -1807,9 +1693,12 @@ ___
 
 Remove the node from the child list and update the parent value of the child.
 
-**`example`**
+**`Example`**
+
+```ts
 var child = this.entity.children[0];
 this.entity.removeChild(child);
+```
 
 #### Parameters
 
@@ -1825,10 +1714,6 @@ this.entity.removeChild(child);
 
 pc.Entity.removeChild
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9898
-
 ___
 
 ### removeComponent
@@ -1837,11 +1722,14 @@ ___
 
 Remove a component from the Entity.
 
-**`example`**
+**`Example`**
+
+```ts
 var entity = new pc.Entity();
 entity.addComponent("light"); // add new light component
 
 entity.removeComponent("light"); // remove light component
+```
 
 #### Parameters
 
@@ -1857,10 +1745,6 @@ entity.removeComponent("light"); // remove light component
 
 pc.Entity.removeComponent
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:22020
-
 ___
 
 ### reparent
@@ -1874,7 +1758,7 @@ Remove graph node from current parent and add as child to new parent.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `parent` | `GraphNode` | New parent to attach graph node to. |
-| `index?` | `number` | - |
+| `index?` | `number` | The child index where the child node should be placed. |
 
 #### Returns
 
@@ -1883,10 +1767,6 @@ Remove graph node from current parent and add as child to new parent.
 #### Inherited from
 
 pc.Entity.reparent
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9693
 
 ___
 
@@ -1906,10 +1786,6 @@ ___
 
 `void`
 
-#### Defined in
-
-src/extensions/extendClasses/entity.ts:22
-
 ___
 
 ### rotate
@@ -1920,22 +1796,28 @@ Rotates the graph node in world-space by the specified Euler angles. Eulers are 
 degrees in XYZ order. This function has two valid signatures: you can either pass a 3D
 vector or 3 numbers to specify the world-space rotation.
 
-**`example`**
+**`Example`**
+
+```ts
 // Rotate via 3 numbers
 this.entity.rotate(0, 90, 0);
+```
 
-**`example`**
+**`Example`**
+
+```ts
 // Rotate via vector
 var r = new pc.Vec3(0, 90, 0);
 this.entity.rotate(r);
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `x` | `number` \| `Vec3` | 3-dimensional vector holding world-space rotation or rotation around world-space x-axis in degrees. |
-| `y?` | `number` | - |
-| `z?` | `number` | - |
+| `y?` | `number` | Rotation around world-space y-axis in degrees. |
+| `z?` | `number` | Rotation around world-space z-axis in degrees. |
 
 #### Returns
 
@@ -1944,10 +1826,6 @@ this.entity.rotate(r);
 #### Inherited from
 
 pc.Entity.rotate
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9988
 
 ___
 
@@ -1959,22 +1837,28 @@ Rotates the graph node in local-space by the specified Euler angles. Eulers are 
 degrees in XYZ order. This function has two valid signatures: you can either pass a 3D
 vector or 3 numbers to specify the local-space rotation.
 
-**`example`**
+**`Example`**
+
+```ts
 // Rotate via 3 numbers
 this.entity.rotateLocal(0, 90, 0);
+```
 
-**`example`**
+**`Example`**
+
+```ts
 // Rotate via vector
 var r = new pc.Vec3(0, 90, 0);
 this.entity.rotateLocal(r);
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `x` | `number` \| `Vec3` | 3-dimensional vector holding local-space rotation or rotation around local-space x-axis in degrees. |
-| `y?` | `number` | - |
-| `z?` | `number` | - |
+| `y?` | `number` | Rotation around local-space y-axis in degrees. |
+| `z?` | `number` | Rotation around local-space z-axis in degrees. |
 
 #### Returns
 
@@ -1983,10 +1867,6 @@ this.entity.rotateLocal(r);
 #### Inherited from
 
 pc.Entity.rotateLocal
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:10006
 
 ___
 
@@ -1999,22 +1879,28 @@ interpreted in XYZ order. Eulers must be specified in degrees. This function has
 signatures: you can either pass a 3D vector or 3 numbers to specify the world-space euler
 rotation.
 
-**`example`**
+**`Example`**
+
+```ts
 // Set rotation of 90 degrees around world-space y-axis via 3 numbers
 this.entity.setEulerAngles(0, 90, 0);
+```
 
-**`example`**
+**`Example`**
+
+```ts
 // Set rotation of 90 degrees around world-space y-axis via a vector
 var angles = new pc.Vec3(0, 90, 0);
 this.entity.setEulerAngles(angles);
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `x` | `number` \| `Vec3` | 3-dimensional vector holding eulers or rotation around world-space x-axis in degrees. |
-| `y?` | `number` | - |
-| `z?` | `number` | - |
+| `y?` | `number` | Rotation around world-space y-axis in degrees. |
+| `z?` | `number` | Rotation around world-space z-axis in degrees. |
 
 #### Returns
 
@@ -2023,10 +1909,6 @@ this.entity.setEulerAngles(angles);
 #### Inherited from
 
 pc.Entity.setEulerAngles
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9830
 
 ___
 
@@ -2039,22 +1921,28 @@ interpreted in XYZ order. Eulers must be specified in degrees. This function has
 signatures: you can either pass a 3D vector or 3 numbers to specify the local-space euler
 rotation.
 
-**`example`**
+**`Example`**
+
+```ts
 // Set rotation of 90 degrees around y-axis via 3 numbers
 this.entity.setLocalEulerAngles(0, 90, 0);
+```
 
-**`example`**
+**`Example`**
+
+```ts
 // Set rotation of 90 degrees around y-axis via a vector
 var angles = new pc.Vec3(0, 90, 0);
 this.entity.setLocalEulerAngles(angles);
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `x` | `number` \| `Vec3` | 3-dimensional vector holding eulers or rotation around local-space x-axis in degrees. |
-| `y?` | `number` | - |
-| `z?` | `number` | - |
+| `y?` | `number` | Rotation around local-space y-axis in degrees. |
+| `z?` | `number` | Rotation around local-space z-axis in degrees. |
 
 #### Returns
 
@@ -2063,10 +1951,6 @@ this.entity.setLocalEulerAngles(angles);
 #### Inherited from
 
 pc.Entity.setLocalEulerAngles
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9712
 
 ___
 
@@ -2078,22 +1962,28 @@ Sets the local-space position of the specified graph node. This function has two
 signatures: you can either pass a 3D vector or 3 numbers to specify the local-space
 position.
 
-**`example`**
+**`Example`**
+
+```ts
 // Set via 3 numbers
 this.entity.setLocalPosition(0, 10, 0);
+```
 
-**`example`**
+**`Example`**
+
+```ts
 // Set via vector
 var pos = new pc.Vec3(0, 10, 0);
 this.entity.setLocalPosition(pos);
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `x` | `number` \| `Vec3` | 3-dimensional vector holding local-space position or x-coordinate of local-space position. |
-| `y?` | `number` | - |
-| `z?` | `number` | - |
+| `y?` | `number` | Y-coordinate of local-space position. |
+| `z?` | `number` | Z-coordinate of local-space position. |
 
 #### Returns
 
@@ -2102,10 +1992,6 @@ this.entity.setLocalPosition(pos);
 #### Inherited from
 
 pc.Entity.setLocalPosition
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9730
 
 ___
 
@@ -2117,23 +2003,29 @@ Sets the local-space rotation of the specified graph node. This function has two
 signatures: you can either pass a quaternion or 3 numbers to specify the local-space
 rotation.
 
-**`example`**
+**`Example`**
+
+```ts
 // Set via 4 numbers
 this.entity.setLocalRotation(0, 0, 0, 1);
+```
 
-**`example`**
+**`Example`**
+
+```ts
 // Set via quaternion
 var q = pc.Quat();
 this.entity.setLocalRotation(q);
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `x` | `number` \| `Quat` | Quaternion holding local-space rotation or x-component of local-space quaternion rotation. |
-| `y?` | `number` | - |
-| `z?` | `number` | - |
-| `w?` | `number` | - |
+| `y?` | `number` | Y-component of local-space quaternion rotation. |
+| `z?` | `number` | Z-component of local-space quaternion rotation. |
+| `w?` | `number` | W-component of local-space quaternion rotation. |
 
 #### Returns
 
@@ -2142,10 +2034,6 @@ this.entity.setLocalRotation(q);
 #### Inherited from
 
 pc.Entity.setLocalRotation
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9749
 
 ___
 
@@ -2156,22 +2044,28 @@ ___
 Sets the local-space scale factor of the specified graph node. This function has two valid
 signatures: you can either pass a 3D vector or 3 numbers to specify the local-space scale.
 
-**`example`**
+**`Example`**
+
+```ts
 // Set via 3 numbers
 this.entity.setLocalScale(10, 10, 10);
+```
 
-**`example`**
+**`Example`**
+
+```ts
 // Set via vector
 var scale = new pc.Vec3(10, 10, 10);
 this.entity.setLocalScale(scale);
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `x` | `number` \| `Vec3` | 3-dimensional vector holding local-space scale or x-coordinate of local-space scale. |
-| `y?` | `number` | - |
-| `z?` | `number` | - |
+| `y?` | `number` | Y-coordinate of local-space scale. |
+| `z?` | `number` | Z-coordinate of local-space scale. |
 
 #### Returns
 
@@ -2180,10 +2074,6 @@ this.entity.setLocalScale(scale);
 #### Inherited from
 
 pc.Entity.setLocalScale
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9766
 
 ___
 
@@ -2195,22 +2085,28 @@ Sets the world-space position of the specified graph node. This function has two
 signatures: you can either pass a 3D vector or 3 numbers to specify the world-space
 position.
 
-**`example`**
+**`Example`**
+
+```ts
 // Set via 3 numbers
 this.entity.setPosition(0, 10, 0);
+```
 
-**`example`**
+**`Example`**
+
+```ts
 // Set via vector
 var position = new pc.Vec3(0, 10, 0);
 this.entity.setPosition(position);
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `x` | `number` \| `Vec3` | 3-dimensional vector holding world-space position or x-coordinate of world-space position. |
-| `y?` | `number` | - |
-| `z?` | `number` | - |
+| `y?` | `number` | Y-coordinate of world-space position. |
+| `z?` | `number` | Z-coordinate of world-space position. |
 
 #### Returns
 
@@ -2219,10 +2115,6 @@ this.entity.setPosition(position);
 #### Inherited from
 
 pc.Entity.setPosition
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9792
 
 ___
 
@@ -2234,23 +2126,29 @@ Sets the world-space rotation of the specified graph node. This function has two
 signatures: you can either pass a quaternion or 3 numbers to specify the world-space
 rotation.
 
-**`example`**
+**`Example`**
+
+```ts
 // Set via 4 numbers
 this.entity.setRotation(0, 0, 0, 1);
+```
 
-**`example`**
+**`Example`**
+
+```ts
 // Set via quaternion
 var q = pc.Quat();
 this.entity.setRotation(q);
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `x` | `number` \| `Quat` | Quaternion holding world-space rotation or x-component of world-space quaternion rotation. |
-| `y?` | `number` | - |
-| `z?` | `number` | - |
-| `w?` | `number` | - |
+| `y?` | `number` | Y-component of world-space quaternion rotation. |
+| `z?` | `number` | Z-component of world-space quaternion rotation. |
+| `w?` | `number` | W-component of world-space quaternion rotation. |
 
 #### Returns
 
@@ -2259,10 +2157,6 @@ this.entity.setRotation(q);
 #### Inherited from
 
 pc.Entity.setRotation
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9811
 
 ___
 
@@ -2274,22 +2168,28 @@ Translates the graph node in world-space by the specified translation vector. Th
 has two valid signatures: you can either pass a 3D vector or 3 numbers to specify the
 world-space translation.
 
-**`example`**
+**`Example`**
+
+```ts
 // Translate via 3 numbers
 this.entity.translate(10, 0, 0);
+```
 
-**`example`**
+**`Example`**
+
+```ts
 // Translate via vector
 var t = new pc.Vec3(10, 0, 0);
 this.entity.translate(t);
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `x` | `number` \| `Vec3` | 3-dimensional vector holding world-space translation or x-coordinate of world-space translation. |
-| `y?` | `number` | - |
-| `z?` | `number` | - |
+| `y?` | `number` | Y-coordinate of world-space translation. |
+| `z?` | `number` | Z-coordinate of world-space translation. |
 
 #### Returns
 
@@ -2298,10 +2198,6 @@ this.entity.translate(t);
 #### Inherited from
 
 pc.Entity.translate
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9952
 
 ___
 
@@ -2313,22 +2209,28 @@ Translates the graph node in local-space by the specified translation vector. Th
 has two valid signatures: you can either pass a 3D vector or 3 numbers to specify the
 local-space translation.
 
-**`example`**
+**`Example`**
+
+```ts
 // Translate via 3 numbers
 this.entity.translateLocal(10, 0, 0);
+```
 
-**`example`**
+**`Example`**
+
+```ts
 // Translate via vector
 var t = new pc.Vec3(10, 0, 0);
 this.entity.translateLocal(t);
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `x` | `number` \| `Vec3` | 3-dimensional vector holding local-space translation or x-coordinate of local-space translation. |
-| `y?` | `number` | - |
-| `z?` | `number` | - |
+| `y?` | `number` | Y-coordinate of local-space translation. |
+| `z?` | `number` | Z-coordinate of local-space translation. |
 
 #### Returns
 
@@ -2337,7 +2239,3 @@ this.entity.translateLocal(t);
 #### Inherited from
 
 pc.Entity.translateLocal
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9970

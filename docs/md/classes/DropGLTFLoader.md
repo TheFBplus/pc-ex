@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- [`Tool`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md)<`unknown`, `DropGLTFLoaderEvents`\>
+- [`Tool`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md)<`unknown`, `DropGLTFLoaderEventsMap`\>
 
   ↳ **`DropGLTFLoader`**
 
@@ -16,7 +16,10 @@
 
 ### Properties
 
+- [app](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md#app)
 - [eventHandler](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md#eventhandler)
+- [toolOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md#tooloptions)
+- [toolOptionsDefault](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md#tooloptionsdefault)
 
 ### Accessors
 
@@ -28,7 +31,8 @@
 - [onDisable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md#ondisable)
 - [onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md#onenable)
 - [removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md#removelistener)
-- [setOption](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md#setoption)
+- [setOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md#setoptions)
+- [updateOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md#updateoptions)
 
 ## Constructors
 
@@ -36,21 +40,29 @@
 
 • **new DropGLTFLoader**()
 
-创建新的工具实例
-
 #### Overrides
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#constructor)
 
+## Properties
+
+### app
+
+• **app**: `AppBase`
+
+#### Inherited from
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[app](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#app)
+
 #### Defined in
 
-src/tools/loaders/dropGLTFLoader.ts:31
+src/utils/helpers/toolBase.ts:22
 
-## Properties
+___
 
 ### eventHandler
 
-• **eventHandler**: `ExEventHandler`<``"modelLoaded"``\>
+• **eventHandler**: `ExEventHandler`<`DropGLTFLoaderEventsMap`\>
 
 #### Inherited from
 
@@ -58,7 +70,35 @@ src/tools/loaders/dropGLTFLoader.ts:31
 
 #### Defined in
 
-src/libs/libs/toolHelper.ts:60
+src/utils/helpers/toolBase.ts:23
+
+___
+
+### toolOptions
+
+• **toolOptions**: `unknown`
+
+#### Inherited from
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[toolOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#tooloptions)
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:26
+
+___
+
+### toolOptionsDefault
+
+• `Protected` **toolOptionsDefault**: `unknown`
+
+#### Inherited from
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[toolOptionsDefault](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#tooloptionsdefault)
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:25
 
 ## Accessors
 
@@ -75,10 +115,6 @@ src/libs/libs/toolHelper.ts:60
 #### Inherited from
 
 Tool.enabled
-
-#### Defined in
-
-src/libs/libs/toolHelper.ts:85
 
 • `set` **enabled**(`value`): `void`
 
@@ -98,24 +134,26 @@ src/libs/libs/toolHelper.ts:85
 
 Tool.enabled
 
-#### Defined in
-
-src/libs/libs/toolHelper.ts:76
-
 ## Methods
 
 ### addListener
 
-▸ **addListener**(`eventName`, `callback`, `scope?`): `void`
+▸ **addListener**<`K`\>(`eventName`, `callback`, `scope?`): `void`
 
 添加事件监听
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | extends ``"modelLoaded"`` |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `eventName` | ``"modelLoaded"`` | 监听事件名称 |
-| `callback` | `Function` | 回调 |
+| `eventName` | `K` | 监听事件名称 |
+| `callback` | `DropGLTFLoaderEventsMap`[`K`] | 回调 |
 | `scope?` | `any` | 范围 |
 
 #### Returns
@@ -125,10 +163,6 @@ src/libs/libs/toolHelper.ts:76
 #### Inherited from
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[addListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#addlistener)
-
-#### Defined in
-
-src/libs/libs/toolHelper.ts:96
 
 ___
 
@@ -140,13 +174,9 @@ ___
 
 `void`
 
-#### Overrides
+#### Inherited from
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[onDisable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#ondisable)
-
-#### Defined in
-
-src/tools/loaders/dropGLTFLoader.ts:45
 
 ___
 
@@ -158,28 +188,30 @@ ___
 
 `void`
 
-#### Overrides
+#### Inherited from
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#onenable)
-
-#### Defined in
-
-src/tools/loaders/dropGLTFLoader.ts:43
 
 ___
 
 ### removeListener
 
-▸ **removeListener**(`eventName`, `callback`, `scope?`): `void`
+▸ **removeListener**<`K`\>(`eventName`, `callback`, `scope?`): `void`
 
 移除事件监听
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | extends ``"modelLoaded"`` |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `eventName` | ``"modelLoaded"`` | 监听事件名称 |
-| `callback` | `Function` | 回调 |
+| `eventName` | `K` | 监听事件名称 |
+| `callback` | `DropGLTFLoaderEventsMap`[`K`] | 回调 |
 | `scope?` | `any` | 范围 |
 
 #### Returns
@@ -190,26 +222,46 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#removelistener)
 
-#### Defined in
-
-src/libs/libs/toolHelper.ts:107
-
 ___
 
-### setOption
+### setOptions
 
-▸ **setOption**(): `void`
+▸ **setOptions**(`options`): `void`
 
 设置选项
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `options` | `unknown` | 选项 |
 
 #### Returns
 
 `void`
 
-#### Overrides
+#### Inherited from
 
-[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[setOption](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#setoption)
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[setOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#setoptions)
 
-#### Defined in
+___
 
-src/tools/loaders/dropGLTFLoader.ts:41
+### updateOptions
+
+▸ **updateOptions**(`options`): `void`
+
+更新选项
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `options` | `Object` | 选项 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[updateOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#updateoptions)

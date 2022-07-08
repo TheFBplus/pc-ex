@@ -69,23 +69,22 @@
 
 Create a new Vec2 instance.
 
-**`example`**
+**`Example`**
+
+```ts
 var v = new pc.Vec2(1, 2);
+```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `x?` | `number` \| `number`[] |
-| `y?` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `x?` | `number` \| `number`[] | The x value. Defaults to 0. If x is an array of length 2, the array will be used to populate all components. |
+| `y?` | `number` | The y value. Defaults to 0. |
 
 #### Inherited from
 
 pc.Vec2.constructor
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8781
 
 ## Properties
 
@@ -127,8 +126,6 @@ ___
 
 A constant vector set to [0, -1].
 
-**`readonly`**
-
 #### Inherited from
 
 pc.Vec2.DOWN
@@ -144,8 +141,6 @@ ___
 ▪ `Static` `Readonly` **LEFT**: `Vec2`
 
 A constant vector set to [-1, 0].
-
-**`readonly`**
 
 #### Inherited from
 
@@ -163,8 +158,6 @@ ___
 
 A constant vector set to [1, 1].
 
-**`readonly`**
-
 #### Inherited from
 
 pc.Vec2.ONE
@@ -180,8 +173,6 @@ ___
 ▪ `Static` `Readonly` **RIGHT**: `Vec2`
 
 A constant vector set to [1, 0].
-
-**`readonly`**
 
 #### Inherited from
 
@@ -199,8 +190,6 @@ ___
 
 A constant vector set to [0, 1].
 
-**`readonly`**
-
 #### Inherited from
 
 pc.Vec2.UP
@@ -216,8 +205,6 @@ ___
 ▪ `Static` `Readonly` **ZERO**: `Vec2`
 
 A constant vector set to [0, 0].
-
-**`readonly`**
 
 #### Inherited from
 
@@ -239,10 +226,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:8736
 
 `Float32Array`
 
-#### Defined in
-
-src/extensions/extendClasses/vec2.ts:21
-
 ## Methods
 
 ### add
@@ -251,7 +234,9 @@ src/extensions/extendClasses/vec2.ts:21
 
 Adds a 2-dimensional vector to another in place.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec2(10, 10);
 var b = new pc.Vec2(20, 20);
 
@@ -259,6 +244,7 @@ a.add(b);
 
 // Outputs [30, 30]
 console.log("The result of the addition is: " + a.toString());
+```
 
 #### Parameters
 
@@ -276,10 +262,6 @@ Self for chaining.
 
 pc.Vec2.add
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8808
-
 ___
 
 ### add2
@@ -288,7 +270,9 @@ ___
 
 Adds two 2-dimensional vectors together and returns the result.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec2(10, 10);
 var b = new pc.Vec2(20, 20);
 var r = new pc.Vec2();
@@ -297,6 +281,7 @@ r.add2(a, b);
 // Outputs [30, 30]
 
 console.log("The result of the addition is: " + r.toString());
+```
 
 #### Parameters
 
@@ -315,10 +300,6 @@ Self for chaining.
 
 pc.Vec2.add2
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8825
-
 ___
 
 ### addScalar
@@ -327,13 +308,16 @@ ___
 
 Adds a number to each element of a vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var vec = new pc.Vec2(3, 4);
 
 vec.addScalar(2);
 
 // Outputs [5, 6]
 console.log("The result of the addition is: " + vec.toString());
+```
 
 #### Parameters
 
@@ -350,10 +334,6 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec2.addScalar
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8839
 
 ___
 
@@ -373,10 +353,6 @@ Self for chaining.
 
 pc.Vec2.ceil
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9073
-
 ___
 
 ### clone
@@ -385,10 +361,13 @@ ___
 
 Returns an identical copy of the specified 2-dimensional vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var v = new pc.Vec2(10, 20);
 var vclone = v.clone();
 console.log("The result of the cloning is: " + vclone.toString());
+```
 
 #### Returns
 
@@ -400,10 +379,6 @@ A 2-dimensional vector containing the result of the cloning.
 
 pc.Vec2.clone
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8849
-
 ___
 
 ### copy
@@ -412,13 +387,16 @@ ___
 
 Copies the contents of a source 2-dimensional vector to a destination 2-dimensional vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var src = new pc.Vec2(10, 20);
 var dst = new pc.Vec2();
 
 dst.copy(src);
 
 console.log("The two vectors are " + (dst.equals(src) ? "equal" : "different"));
+```
 
 #### Parameters
 
@@ -436,10 +414,6 @@ Self for chaining.
 
 pc.Vec2.copy
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8863
-
 ___
 
 ### cross
@@ -449,13 +423,16 @@ ___
 Returns the result of a cross product operation performed on the two specified 2-dimensional
 vectors.
 
-**`example`**
+**`Example`**
+
+```ts
 var right = new pc.Vec2(1, 0);
 var up = new pc.Vec2(0, 1);
 var crossProduct = right.cross(up);
 
 // Prints 1
 console.log("The result of the cross product is: " + crossProduct);
+```
 
 #### Parameters
 
@@ -473,10 +450,6 @@ The cross product of the two vectors.
 
 pc.Vec2.cross
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8878
-
 ___
 
 ### distance
@@ -485,11 +458,14 @@ ___
 
 Returns the distance between the two specified 2-dimensional vectors.
 
-**`example`**
+**`Example`**
+
+```ts
 var v1 = new pc.Vec2(5, 10);
 var v2 = new pc.Vec2(10, 20);
 var d = v1.distance(v2);
 console.log("The distance between v1 and v2 is: " + d);
+```
 
 #### Parameters
 
@@ -507,10 +483,6 @@ The distance between the two vectors.
 
 pc.Vec2.distance
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8890
-
 ___
 
 ### div
@@ -519,7 +491,9 @@ ___
 
 Divides a 2-dimensional vector by another in place.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec2(4, 9);
 var b = new pc.Vec2(2, 3);
 
@@ -527,6 +501,7 @@ a.div(b);
 
 // Outputs [2, 3]
 console.log("The result of the division is: " + a.toString());
+```
 
 #### Parameters
 
@@ -544,10 +519,6 @@ Self for chaining.
 
 pc.Vec2.div
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8905
-
 ___
 
 ### div2
@@ -556,7 +527,9 @@ ___
 
 Divides one 2-dimensional vector by another and writes the result to the specified vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec2(4, 9);
 var b = new pc.Vec2(2, 3);
 var r = new pc.Vec2();
@@ -565,6 +538,7 @@ r.div2(a, b);
 // Outputs [2, 3]
 
 console.log("The result of the division is: " + r.toString());
+```
 
 #### Parameters
 
@@ -583,10 +557,6 @@ Self for chaining.
 
 pc.Vec2.div2
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8922
-
 ___
 
 ### divScalar
@@ -595,13 +565,16 @@ ___
 
 Divides each element of a vector by a number.
 
-**`example`**
+**`Example`**
+
+```ts
 var vec = new pc.Vec2(3, 6);
 
 vec.divScalar(3);
 
 // Outputs [1, 2]
 console.log("The result of the division is: " + vec.toString());
+```
 
 #### Parameters
 
@@ -619,10 +592,6 @@ Self for chaining.
 
 pc.Vec2.divScalar
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8936
-
 ___
 
 ### dot
@@ -632,11 +601,14 @@ ___
 Returns the result of a dot product operation performed on the two specified 2-dimensional
 vectors.
 
-**`example`**
+**`Example`**
+
+```ts
 var v1 = new pc.Vec2(5, 10);
 var v2 = new pc.Vec2(10, 20);
 var v1dotv2 = v1.dot(v2);
 console.log("The result of the dot product is: " + v1dotv2);
+```
 
 #### Parameters
 
@@ -654,10 +626,6 @@ The result of the dot product operation.
 
 pc.Vec2.dot
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8949
-
 ___
 
 ### equals
@@ -666,10 +634,13 @@ ___
 
 Reports whether two vectors are equal.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec2(1, 2);
 var b = new pc.Vec2(4, 5);
 console.log("The two vectors are " + (a.equals(b) ? "equal" : "different"));
+```
 
 #### Parameters
 
@@ -686,10 +657,6 @@ True if the vectors are equal and false otherwise.
 #### Inherited from
 
 pc.Vec2.equals
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8960
 
 ___
 
@@ -709,10 +676,6 @@ Self for chaining.
 
 pc.Vec2.floor
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9067
-
 ___
 
 ### length
@@ -721,11 +684,14 @@ ___
 
 Returns the magnitude of the specified 2-dimensional vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var vec = new pc.Vec2(3, 4);
 var len = vec.length();
 // Outputs 5
 console.log("The length of the vector is: " + len);
+```
 
 #### Returns
 
@@ -737,10 +703,6 @@ The magnitude of the specified 2-dimensional vector.
 
 pc.Vec2.length
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8971
-
 ___
 
 ### lengthSq
@@ -749,11 +711,14 @@ ___
 
 Returns the magnitude squared of the specified 2-dimensional vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var vec = new pc.Vec2(3, 4);
 var len = vec.lengthSq();
 // Outputs 25
 console.log("The length squared of the vector is: " + len);
+```
 
 #### Returns
 
@@ -765,10 +730,6 @@ The magnitude of the specified 2-dimensional vector.
 
 pc.Vec2.lengthSq
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8982
-
 ___
 
 ### lerp
@@ -777,7 +738,9 @@ ___
 
 Returns the result of a linear interpolation between two specified 2-dimensional vectors.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec2(0, 0);
 var b = new pc.Vec2(10, 10);
 var r = new pc.Vec2();
@@ -785,6 +748,7 @@ var r = new pc.Vec2();
 r.lerp(a, b, 0);   // r is equal to a
 r.lerp(a, b, 0.5); // r is 5, 5
 r.lerp(a, b, 1);   // r is equal to b
+```
 
 #### Parameters
 
@@ -803,10 +767,6 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec2.lerp
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9001
 
 ___
 
@@ -832,10 +792,6 @@ Self for chaining.
 
 pc.Vec2.max
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9093
-
 ___
 
 ### min
@@ -860,10 +816,6 @@ Self for chaining.
 
 pc.Vec2.min
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9086
-
 ___
 
 ### mul
@@ -872,7 +824,9 @@ ___
 
 Multiplies a 2-dimensional vector to another in place.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec2(2, 3);
 var b = new pc.Vec2(4, 5);
 
@@ -880,6 +834,7 @@ a.mul(b);
 
 // Outputs 8, 15
 console.log("The result of the multiplication is: " + a.toString());
+```
 
 #### Parameters
 
@@ -897,10 +852,6 @@ Self for chaining.
 
 pc.Vec2.mul
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9016
-
 ___
 
 ### mul2
@@ -909,7 +860,9 @@ ___
 
 Returns the result of multiplying the specified 2-dimensional vectors together.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec2(2, 3);
 var b = new pc.Vec2(4, 5);
 var r = new pc.Vec2();
@@ -918,6 +871,7 @@ r.mul2(a, b);
 
 // Outputs 8, 15
 console.log("The result of the multiplication is: " + r.toString());
+```
 
 #### Parameters
 
@@ -936,10 +890,6 @@ Self for chaining.
 
 pc.Vec2.mul2
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9033
-
 ___
 
 ### mulScalar
@@ -948,13 +898,16 @@ ___
 
 Multiplies each element of a vector by a number.
 
-**`example`**
+**`Example`**
+
+```ts
 var vec = new pc.Vec2(3, 6);
 
 vec.mulScalar(3);
 
 // Outputs [9, 18]
 console.log("The result of the multiplication is: " + vec.toString());
+```
 
 #### Parameters
 
@@ -972,10 +925,6 @@ Self for chaining.
 
 pc.Vec2.mulScalar
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9047
-
 ___
 
 ### normalize
@@ -985,13 +934,16 @@ ___
 Returns this 2-dimensional vector converted to a unit vector in place. If the vector has a
 length of zero, the vector's elements will be set to zero.
 
-**`example`**
+**`Example`**
+
+```ts
 var v = new pc.Vec2(25, 0);
 
 v.normalize();
 
 // Outputs 1, 0
 console.log("The result of the vector normalization is: " + v.toString());
+```
 
 #### Returns
 
@@ -1002,10 +954,6 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec2.normalize
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9061
 
 ___
 
@@ -1025,10 +973,6 @@ Self for chaining.
 
 pc.Vec2.round
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9079
-
 ___
 
 ### set
@@ -1037,12 +981,15 @@ ___
 
 Sets the specified 2-dimensional vector to the supplied numerical values.
 
-**`example`**
+**`Example`**
+
+```ts
 var v = new pc.Vec2();
 v.set(5, 10);
 
 // Outputs 5, 10
 console.log("The result of the vector set is: " + v.toString());
+```
 
 #### Parameters
 
@@ -1061,10 +1008,6 @@ Self for chaining.
 
 pc.Vec2.set
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9107
-
 ___
 
 ### sub
@@ -1073,7 +1016,9 @@ ___
 
 Subtracts a 2-dimensional vector from another in place.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec2(10, 10);
 var b = new pc.Vec2(20, 20);
 
@@ -1081,6 +1026,7 @@ a.sub(b);
 
 // Outputs [-10, -10]
 console.log("The result of the subtraction is: " + a.toString());
+```
 
 #### Parameters
 
@@ -1098,10 +1044,6 @@ Self for chaining.
 
 pc.Vec2.sub
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9122
-
 ___
 
 ### sub2
@@ -1110,7 +1052,9 @@ ___
 
 Subtracts two 2-dimensional vectors from one another and returns the result.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec2(10, 10);
 var b = new pc.Vec2(20, 20);
 var r = new pc.Vec2();
@@ -1119,6 +1063,7 @@ r.sub2(a, b);
 
 // Outputs [-10, -10]
 console.log("The result of the subtraction is: " + r.toString());
+```
 
 #### Parameters
 
@@ -1137,10 +1082,6 @@ Self for chaining.
 
 pc.Vec2.sub2
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9139
-
 ___
 
 ### subScalar
@@ -1149,13 +1090,16 @@ ___
 
 Subtracts a number from each element of a vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var vec = new pc.Vec2(3, 4);
 
 vec.subScalar(2);
 
 // Outputs [1, 2]
 console.log("The result of the subtraction is: " + vec.toString());
+```
 
 #### Parameters
 
@@ -1173,10 +1117,6 @@ Self for chaining.
 
 pc.Vec2.subScalar
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9153
-
 ___
 
 ### toString
@@ -1185,10 +1125,13 @@ ___
 
 Converts the vector to string form.
 
-**`example`**
+**`Example`**
+
+```ts
 var v = new pc.Vec2(20, 10);
 // Outputs [20, 10]
 console.log(v.toString());
+```
 
 #### Returns
 
@@ -1199,7 +1142,3 @@ The vector in string form.
 #### Inherited from
 
 pc.Vec2.toString
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:9163

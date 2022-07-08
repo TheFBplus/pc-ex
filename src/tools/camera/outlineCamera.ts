@@ -2,58 +2,79 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-05-18 15:35:26
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-29 09:51:21
+ * @ 修改时间: 2022-07-08 17:43:15
  * @ 详情: 描边相机
  */
 
 import * as pc from "playcanvas";
 
-import { CameraComponent_EX } from "../../extensions/extendClasses/cameraComponent";
-import { tool } from "../../libs/libs";
-import { cast } from "../../libs/libs/cast";
-import { Tool } from "../../libs/libs/toolHelper";
-import { PostEffectOutline } from "../../resources/postEffects/posteffectOutline";
-import { PCNode } from "../../resources/types/common";
-import { MaterialController } from "../../utils/utils/materialController";
+import { CameraComponent_EX } from "@/extensions/cameraComponent";
+import { MaterialController } from "@/utils/func/materialController";
+import { cast } from "@/utils/helpers/extend-decorator";
+import { Tool } from "@/utils/helpers/toolBase";
+import { tool } from "@/utils/helpers/useToolHelper";
+import { PostEffectOutline } from "@/utils/postEffects/posteffectOutline";
 
+/**
+ * LayerId
+ */
 type LayerId = number;
-const layerMap: Map<pc.RenderComponent, LayerId[]> = new Map<pc.RenderComponent, LayerId[]>();
-
-type outlineCameraOptions = {
+/**
+ * 外边框相机选项
+ */
+export interface outlineCameraOptions
+{
     mainCamra?: pc.CameraComponent;
     outlineLayerName?: string;
     outlineColor?: pc.Color;
     outlineThickness?: number;
 }
+/**
+ * 存储每个render对应的layer组
+ */
+const layerMap: Map<pc.RenderComponent | pc.ModelComponent, LayerId[]> = new Map<pc.RenderComponent, LayerId[]>();
 
-@tool
+@tool("OutlineCamera")
 export class OutlineCamera extends Tool<outlineCameraOptions, unknown>
 {
-    private mainCamera: pc.CameraComponent;
-    private outlineLayerName: string;
-    private outlineColor: pc.Color;
-    private outlineThickness: number;
-
+    // 默认选项
+    protected toolOptionsDefault: outlineCameraOptions = {
+        mainCamra: this.app.systems.camera.cameras[0],
+        outlineLayerName: "OutlineLayer",
+        outlineColor: pc.Color.WHITE,
+        outlineThickness: 2
+    };
     private outlineLayer: pc.Layer;
     private outlineEffect: PostEffectOutline;
     private outlineCamera: pc.CameraComponent;
 
-    constructor(options: outlineCameraOptions)
+    constructor(options?: outlineCameraOptions)
     {
         super();
 
-        this.setOption(options);
+        this.setOptions(options);
     }
 
-    public setOption(options?: outlineCameraOptions): void
+    /**
+     * 设置外边框相机选项
+     * @param options 外边框相机选项
+     */
+    public override setOptions(options: outlineCameraOptions): void
     {
-        this.mainCamera = options?.mainCamra ?? pc.app.context.systems.camera.cameras[0];
-        this.outlineLayerName = options?.outlineLayerName ?? "OutlineLayer";
-        this.outlineColor = options?.outlineColor ?? pc.Color.RED;
-        this.outlineThickness = options?.outlineThickness ?? 2;
-
+        super.setOptions(options);
         // 重置特效
-        this.initEffect({ color: this.outlineColor, thickness: this.outlineThickness });
+        this.initEffect({ color: this.toolOptions.outlineColor, thickness: this.toolOptions.outlineThickness });
+    }
+
+    /**
+    * 更新外边框相机选项
+    * @param options 外边框相机选项
+    */
+    public override updateOptions(options: outlineCameraOptions): void
+    {
+        super.updateOptions(options);
+        // 重置特效
+        this.initEffect({ color: this.toolOptions.outlineColor, thickness: this.toolOptions.outlineThickness });
     }
 
     /**
@@ -61,17 +82,22 @@ export class OutlineCamera extends Tool<outlineCameraOptions, unknown>
     * @param entity 节点
     * @param state 开关状态
     */
-    public toggleOutLine(entity: PCNode, isOn: boolean): void
+    public toggleOutLine(entity: pc.Entity, isOn: boolean): void
     {
-        const app = pc.Application.getApplication();
-        const outLineLayerId = app.scene.layers.getLayerByName(this.outlineLayerName).id;
+        const outLineLayerId = this.app.scene.layers.getLayerByName(this.toolOptions.outlineLayerName).id;
         MaterialController.processNodeDeep(entity, null, model =>
         {
-            const render = model as pc.RenderComponent;
-            if (render.layers) {
-                !layerMap.get(render) && layerMap.set(render, [...render.layers]);
-                const preLayers = layerMap.get(render);
-                render.layers = isOn ? [...preLayers, outLineLayerId] : preLayers;
+            const renderComponent = model as pc.RenderComponent;
+            if (renderComponent.layers) {
+                !layerMap.get(renderComponent) && layerMap.set(renderComponent, [...renderComponent.layers]);
+                const preLayers = layerMap.get(renderComponent);
+                renderComponent.layers = isOn ? [...preLayers, outLineLayerId] : preLayers;
+            }
+            const modelComponent = model as pc.ModelComponent;
+            if (modelComponent.layers) {
+                !layerMap.get(modelComponent) && layerMap.set(modelComponent, [...modelComponent.layers]);
+                const preLayers = layerMap.get(modelComponent);
+                modelComponent.layers = isOn ? [...preLayers, outLineLayerId] : preLayers;
             }
         });
     }
@@ -86,8 +112,8 @@ export class OutlineCamera extends Tool<outlineCameraOptions, unknown>
     {
         // 创建并添加描边layer
         if (this.outlineLayer == undefined) {
-            let outlineLayer = new pc.Layer({ name: this.outlineLayerName });
-            pc.app.scene.layers.insert(outlineLayer, 0); // 将outlineLayer最先渲染
+            let outlineLayer = new pc.Layer({ name: this.toolOptions.outlineLayerName });
+            this.app.scene.layers.insert(outlineLayer, 0); // 将outlineLayer最先渲染
             this.outlineLayer = outlineLayer;
         }
         this.outlineLayer.renderTarget = this.createRenderTarget(); // 给layer添加renderTarget;
@@ -99,15 +125,15 @@ export class OutlineCamera extends Tool<outlineCameraOptions, unknown>
                 clearColor: new pc.Color(0.0, 0.0, 0.0, 0.0), // 透明背景色
                 layers: [this.outlineLayer.id] // 只渲染outlineLayer
             }) as pc.CameraComponent;
-            pc.app.root.addChild(outlineCameraEntity);
+            this.app.root.addChild(outlineCameraEntity);
             this.outlineCamera = outlineCamera;
         }
 
         // 创建描边特效并添加至相机
-        this.outlineEffect && this.mainCamera.postEffects.removeEffect(this.outlineEffect as any); // 先清空特效
+        this.outlineEffect && this.toolOptions.mainCamra.postEffects.removeEffect(this.outlineEffect as any); // 先清空特效
         // 若传入了设置，则重新生成特效；若不传入设置，不重新生成，仅重置特效
         if (option) {
-            this.outlineEffect = new PostEffectOutline(pc.app.graphicsDevice, {
+            this.outlineEffect = new PostEffectOutline(this.app.graphicsDevice, {
                 outlineLayer: this.outlineLayer,
                 color: option.color,
                 thickness: option.thickness
@@ -116,8 +142,8 @@ export class OutlineCamera extends Tool<outlineCameraOptions, unknown>
         else {
             this.outlineEffect.refresh();
         }
-        this.mainCamera.postEffects.addEffect(this.outlineEffect as any); // 添加特效至相机
-        cast<CameraComponent_EX>(this.outlineCamera).followCamera(this.mainCamera); // 同步相机
+        this.toolOptions.mainCamra.postEffects.addEffect(this.outlineEffect as any); // 添加特效至相机
+        cast<CameraComponent_EX>(this.outlineCamera).follow(this.toolOptions.mainCamra); // 同步相机
     }
 
     /**
@@ -127,9 +153,9 @@ export class OutlineCamera extends Tool<outlineCameraOptions, unknown>
     private createRenderTarget(): pc.RenderTarget
     {
         // 创建贴图
-        const texture = new pc.Texture(pc.app.graphicsDevice, {
-            width: pc.app.graphicsDevice.width,
-            height: pc.app.graphicsDevice.height,
+        const texture = new pc.Texture(this.app.graphicsDevice, {
+            width: this.app.graphicsDevice.width,
+            height: this.app.graphicsDevice.height,
             format: pc.PIXELFORMAT_R8_G8_B8_A8,
             mipmaps: false,
             minFilter: pc.FILTER_LINEAR,
@@ -162,11 +188,11 @@ export class OutlineCamera extends Tool<outlineCameraOptions, unknown>
 
     protected override onEnable(): void
     {
-        window.addEventListener('resize', this.onResize.bind(this));
+        this.app.graphicsDevice.on("resizecanvas", this.onResize, this);
     }
 
     protected override onDisable(): void
     {
-        window.removeEventListener('resize', this.onResize.bind(this));
+        this.app.graphicsDevice.off("resizecanvas", this.onResize, this);
     }
 }

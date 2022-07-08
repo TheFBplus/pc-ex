@@ -56,20 +56,16 @@ Create a new Quat instance.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `x?` | `number` \| `number`[] |
-| `y?` | `number` |
-| `z?` | `number` |
-| `w?` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `x?` | `number` \| `number`[] | The quaternion's x component. Defaults to 0. If x is an array of length 4, the array will be used to populate all components. |
+| `y?` | `number` | The quaternion's y component. Defaults to 0. |
+| `z?` | `number` | The quaternion's z component. Defaults to 0. |
+| `w?` | `number` | The quaternion's w component. Defaults to 1. |
 
 #### Inherited from
 
 pc.Quat.constructor
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4189
 
 ## Properties
 
@@ -143,8 +139,6 @@ ___
 
 A constant quaternion set to [0, 0, 0, 1] (the identity).
 
-**`readonly`**
-
 #### Inherited from
 
 pc.Quat.IDENTITY
@@ -160,8 +154,6 @@ ___
 ▪ `Static` `Readonly` **ZERO**: `Quat`
 
 A constant quaternion set to [0, 0, 0, 0].
-
-**`readonly`**
 
 #### Inherited from
 
@@ -179,11 +171,14 @@ node_modules/playcanvas/build/playcanvas.d.ts:4179
 
 Returns an identical copy of the specified quaternion.
 
-**`example`**
+**`Example`**
+
+```ts
 var q = new pc.Quat(-0.11, -0.15, -0.46, 0.87);
 var qclone = q.clone();
 
 console.log("The result of the cloning is: " + q.toString());
+```
 
 #### Returns
 
@@ -194,10 +189,6 @@ A quaternion containing the result of the cloning.
 #### Inherited from
 
 pc.Quat.clone
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4224
 
 ___
 
@@ -213,10 +204,6 @@ ___
 
 pc.Quat.conjugate
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4225
-
 ___
 
 ### copy
@@ -225,11 +212,14 @@ ___
 
 Copies the contents of a source quaternion to a destination quaternion.
 
-**`example`**
+**`Example`**
+
+```ts
 var src = new pc.Quat();
 var dst = new pc.Quat();
 dst.copy(src, src);
 console.log("The two quaternions are " + (src.equals(dst) ? "equal" : "different"));
+```
 
 #### Parameters
 
@@ -247,10 +237,6 @@ Self for chaining.
 
 pc.Quat.copy
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4237
-
 ___
 
 ### equals
@@ -259,10 +245,13 @@ ___
 
 Reports whether two quaternions are equal.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Quat();
 var b = new pc.Quat();
 console.log("The two quaternions are " + (a.equals(b) ? "equal" : "different"));
+```
 
 #### Parameters
 
@@ -280,10 +269,6 @@ True if the quaternions are equal and false otherwise.
 
 pc.Quat.equals
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4248
-
 ___
 
 ### getAxisAngle
@@ -294,7 +279,9 @@ Gets the rotation axis and angle for a given quaternion. If a quaternion is crea
 `setFromAxisAngle`, this method will return the same values as provided in the original
 parameter list OR functionally equivalent values.
 
-**`example`**
+**`Example`**
+
+```ts
 var q = new pc.Quat();
 q.setFromAxisAngle(new pc.Vec3(0, 1, 0), 90);
 var v = new pc.Vec3();
@@ -303,6 +290,7 @@ var angle = q.getAxisAngle(v);
 console.log(angle);
 // Outputs [0, 1, 0]
 console.log(v.toString());
+```
 
 #### Parameters
 
@@ -320,10 +308,6 @@ Angle, in degrees, of the rotation.
 
 pc.Quat.getAxisAngle
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4266
-
 ___
 
 ### getEulerAngles
@@ -334,9 +318,9 @@ Converts the supplied quaternion to Euler angles.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `eulers?` | `Vec3` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `eulers?` | `Vec3` | The 3-dimensional vector to receive the Euler angles. |
 
 #### Returns
 
@@ -349,10 +333,6 @@ correspond to the supplied quaternion.
 
 pc.Quat.getEulerAngles
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4274
-
 ___
 
 ### invert
@@ -361,12 +341,15 @@ ___
 
 Generates the inverse of the specified quaternion.
 
-**`example`**
+**`Example`**
+
+```ts
 // Create a quaternion rotated 180 degrees around the y-axis
 var rot = new pc.Quat().setFromEulerAngles(0, 180, 0);
 
 // Invert in place
 rot.invert();
+```
 
 #### Returns
 
@@ -378,10 +361,6 @@ Self for chaining.
 
 pc.Quat.invert
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4286
-
 ___
 
 ### length
@@ -390,11 +369,14 @@ ___
 
 Returns the magnitude of the specified quaternion.
 
-**`example`**
+**`Example`**
+
+```ts
 var q = new pc.Quat(0, 0, 0, 5);
 var len = q.length();
 // Outputs 5
 console.log("The length of the quaternion is: " + len);
+```
 
 #### Returns
 
@@ -406,10 +388,6 @@ The magnitude of the specified quaternion.
 
 pc.Quat.length
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4297
-
 ___
 
 ### lengthSq
@@ -418,11 +396,14 @@ ___
 
 Returns the magnitude squared of the specified quaternion.
 
-**`example`**
+**`Example`**
+
+```ts
 var q = new pc.Quat(3, 4, 0);
 var lenSq = q.lengthSq();
 // Outputs 25
 console.log("The length squared of the quaternion is: " + lenSq);
+```
 
 #### Returns
 
@@ -434,10 +415,6 @@ The magnitude of the specified quaternion.
 
 pc.Quat.lengthSq
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4308
-
 ___
 
 ### mul
@@ -446,7 +423,9 @@ ___
 
 Returns the result of multiplying the specified quaternions together.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Quat().setFromEulerAngles(0, 30, 0);
 var b = new pc.Quat().setFromEulerAngles(0, 60, 0);
 
@@ -455,6 +434,7 @@ var b = new pc.Quat().setFromEulerAngles(0, 60, 0);
 a.mul(b);
 
 console.log("The result of the multiplication is: " + a.toString());
+```
 
 #### Parameters
 
@@ -472,10 +452,6 @@ Self for chaining.
 
 pc.Quat.mul
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4324
-
 ___
 
 ### mul2
@@ -484,7 +460,9 @@ ___
 
 Returns the result of multiplying the specified quaternions together.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Quat().setFromEulerAngles(0, 30, 0);
 var b = new pc.Quat().setFromEulerAngles(0, 60, 0);
 var r = new pc.Quat();
@@ -494,6 +472,7 @@ var r = new pc.Quat();
 r.mul2(a, b);
 
 console.log("The result of the multiplication is: " + r.toString());
+```
 
 #### Parameters
 
@@ -512,10 +491,6 @@ Self for chaining.
 
 pc.Quat.mul2
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4342
-
 ___
 
 ### normalize
@@ -524,13 +499,16 @@ ___
 
 Returns the specified quaternion converted in place to a unit quaternion.
 
-**`example`**
+**`Example`**
+
+```ts
 var v = new pc.Quat(0, 0, 0, 5);
 
 v.normalize();
 
 // Outputs 0, 0, 0, 1
 console.log("The result of the vector normalization is: " + v.toString());
+```
 
 #### Returns
 
@@ -542,10 +520,6 @@ The result of the normalization.
 
 pc.Quat.normalize
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4355
-
 ___
 
 ### set
@@ -554,12 +528,15 @@ ___
 
 Sets the specified quaternion to the supplied numerical values.
 
-**`example`**
+**`Example`**
+
+```ts
 var q = new pc.Quat();
 q.set(1, 0, 0, 0);
 
 // Outputs 1, 0, 0, 0
 console.log("The result of the vector set is: " + q.toString());
+```
 
 #### Parameters
 
@@ -580,10 +557,6 @@ Self for chaining.
 
 pc.Quat.set
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4371
-
 ___
 
 ### setFromAxisAngle
@@ -592,9 +565,12 @@ ___
 
 Sets a quaternion from an angular rotation around an axis.
 
-**`example`**
+**`Example`**
+
+```ts
 var q = new pc.Quat();
 q.setFromAxisAngle(pc.Vec3.UP, 90);
+```
 
 #### Parameters
 
@@ -613,10 +589,6 @@ Self for chaining.
 
 pc.Quat.setFromAxisAngle
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4382
-
 ___
 
 ### setFromEulerAngles
@@ -625,7 +597,9 @@ ___
 
 Sets a quaternion from Euler angles specified in XYZ order.
 
-**`example`**
+**`Example`**
+
+```ts
 // Create a quaternion from 3 euler angles
 var q = new pc.Quat();
 q.setFromEulerAngles(45, 90, 180);
@@ -634,14 +608,15 @@ q.setFromEulerAngles(45, 90, 180);
 var v = new pc.Vec3(45, 90, 180);
 var r = new pc.Quat();
 r.setFromEulerAngles(v);
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `ex` | `number` \| `Vec3` | Angle to rotate around X axis in degrees. If ex is a Vec3, the three angles will be read from it instead. |
-| `ey?` | `number` | - |
-| `ez?` | `number` | - |
+| `ey?` | `number` | Angle to rotate around Y axis in degrees. |
+| `ez?` | `number` | Angle to rotate around Z axis in degrees. |
 
 #### Returns
 
@@ -653,10 +628,6 @@ Self for chaining.
 
 pc.Quat.setFromEulerAngles
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4401
-
 ___
 
 ### setFromMat4
@@ -666,12 +637,15 @@ ___
 Converts the specified 4x4 matrix to a quaternion. Note that since a quaternion is purely a
 representation for orientation, only the translational part of the matrix is lost.
 
-**`example`**
+**`Example`**
+
+```ts
 // Create a 4x4 rotation matrix of 180 degrees around the y-axis
 var rot = new pc.Mat4().setFromAxisAngle(pc.Vec3.UP, 180);
 
 // Convert to a quaternion
 var q = new pc.Quat().setFromMat4(rot);
+```
 
 #### Parameters
 
@@ -688,10 +662,6 @@ Self for chaining.
 #### Inherited from
 
 pc.Quat.setFromMat4
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4415
 
 ___
 
@@ -715,10 +685,6 @@ ___
 
 朝向rotation
 
-#### Defined in
-
-src/extensions/extendClasses/quat.ts:25
-
 ___
 
 ### slerp
@@ -728,7 +694,9 @@ ___
 Performs a spherical interpolation between two quaternions. The result of the interpolation
 is written to the quaternion calling the function.
 
-**`example`**
+**`Example`**
+
+```ts
 var q1 = new pc.Quat(-0.11, -0.15, -0.46, 0.87);
 var q2 = new pc.Quat(-0.21, -0.21, -0.67, 0.68);
 
@@ -736,6 +704,7 @@ var result;
 result = new pc.Quat().slerp(q1, q2, 0);   // Return q1
 result = new pc.Quat().slerp(q1, q2, 0.5); // Return the midpoint interpolant
 result = new pc.Quat().slerp(q1, q2, 1);   // Return q2
+```
 
 #### Parameters
 
@@ -755,10 +724,6 @@ Self for chaining.
 
 pc.Quat.slerp
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4435
-
 ___
 
 ### toString
@@ -767,10 +732,13 @@ ___
 
 Converts the quaternion to string form.
 
-**`example`**
+**`Example`**
+
+```ts
 var v = new pc.Quat(0, 0, 0, 1);
 // Outputs [0, 0, 0, 1]
 console.log(v.toString());
+```
 
 #### Returns
 
@@ -782,10 +750,6 @@ The quaternion in string form.
 
 pc.Quat.toString
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4461
-
 ___
 
 ### transformVector
@@ -794,7 +758,9 @@ ___
 
 Transforms a 3-dimensional vector by the specified quaternion.
 
-**`example`**
+**`Example`**
+
+```ts
 // Create a 3-dimensional vector
 var v = new pc.Vec3(1, 2, 3);
 
@@ -802,13 +768,14 @@ var v = new pc.Vec3(1, 2, 3);
 var q = new pc.Quat().setFromEulerAngles(10, 20, 30);
 
 var tv = q.transformVector(v);
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `vec` | `Vec3` | The 3-dimensional vector to be transformed. |
-| `res?` | `Vec3` | - |
+| `res?` | `Vec3` | An optional 3-dimensional vector to receive the result of the transformation. |
 
 #### Returns
 
@@ -819,7 +786,3 @@ The input vector v transformed by the current instance.
 #### Inherited from
 
 pc.Quat.transformVector
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4451

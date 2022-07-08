@@ -31,10 +31,6 @@
 
 `void`
 
-#### Defined in
-
-src/extensions/newClasses/utils/debugLine.ts:38
-
 ___
 
 ### drawLine
@@ -54,7 +50,3 @@ ___
 #### Returns
 
 `void`
-
-#### Defined in
-
-src/extensions/newClasses/utils/debugLine.ts:24

@@ -54,20 +54,16 @@ Create a new Color object.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `r?` | `number` \| `number`[] |
-| `g?` | `number` |
-| `b?` | `number` |
-| `a?` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `r?` | `number` \| `number`[] | The value of the red component (0-1). Defaults to 0. If r is an array of length 3 or 4, the array will be used to populate all components. |
+| `g?` | `number` | The value of the green component (0-1). Defaults to 0. |
+| `b?` | `number` | The value of the blue component (0-1). Defaults to 0. |
+| `a?` | `number` | The value of the alpha component (0-1). Defaults to 1. |
 
 #### Inherited from
 
 pc.Color.constructor
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8608
 
 ## Properties
 
@@ -141,8 +137,6 @@ ___
 
 A constant color set to black [0, 0, 0, 1].
 
-**`readonly`**
-
 #### Inherited from
 
 pc.Color.BLACK
@@ -158,8 +152,6 @@ ___
 ▪ `Static` `Readonly` **BLUE**: `Color`
 
 A constant color set to blue [0, 0, 1, 1].
-
-**`readonly`**
 
 #### Inherited from
 
@@ -177,8 +169,6 @@ ___
 
 A constant color set to cyan [0, 1, 1, 1].
 
-**`readonly`**
-
 #### Inherited from
 
 pc.Color.CYAN
@@ -194,8 +184,6 @@ ___
 ▪ `Static` `Readonly` **GRAY**: `Color`
 
 A constant color set to gray [0.5, 0.5, 0.5, 1].
-
-**`readonly`**
 
 #### Inherited from
 
@@ -213,8 +201,6 @@ ___
 
 A constant color set to green [0, 1, 0, 1].
 
-**`readonly`**
-
 #### Inherited from
 
 pc.Color.GREEN
@@ -230,8 +216,6 @@ ___
 ▪ `Static` `Readonly` **MAGENTA**: `Color`
 
 A constant color set to magenta [1, 0, 1, 1].
-
-**`readonly`**
 
 #### Inherited from
 
@@ -249,8 +233,6 @@ ___
 
 A constant color set to red [1, 0, 0, 1].
 
-**`readonly`**
-
 #### Inherited from
 
 pc.Color.RED
@@ -267,8 +249,6 @@ ___
 
 A constant color set to white [1, 1, 1, 1].
 
-**`readonly`**
-
 #### Inherited from
 
 pc.Color.WHITE
@@ -284,8 +264,6 @@ ___
 ▪ `Static` `Readonly` **YELLOW**: `Color`
 
 A constant color set to yellow [1, 1, 0, 1].
-
-**`readonly`**
 
 #### Inherited from
 
@@ -307,10 +285,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:8598
 
 `Float32Array`
 
-#### Defined in
-
-src/extensions/extendClasses/color.ts:21
-
 ## Methods
 
 ### clone
@@ -329,10 +303,6 @@ A duplicate color object.
 
 pc.Color.clone
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8638
-
 ___
 
 ### copy
@@ -341,13 +311,16 @@ ___
 
 Copies the contents of a source color to a destination color.
 
-**`example`**
+**`Example`**
+
+```ts
 var src = new pc.Color(1, 0, 0, 1);
 var dst = new pc.Color();
 
 dst.copy(src);
 
 console.log("The two colors are " + (dst.equals(src) ? "equal" : "different"));
+```
 
 #### Parameters
 
@@ -365,10 +338,6 @@ Self for chaining.
 
 pc.Color.copy
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8652
-
 ___
 
 ### equals
@@ -377,10 +346,13 @@ ___
 
 Reports whether two colors are equal.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Color(1, 0, 0, 1);
 var b = new pc.Color(1, 1, 0, 1);
 console.log("The two colors are " + (a.equals(b) ? "equal" : "different"));
+```
 
 #### Parameters
 
@@ -397,10 +369,6 @@ True if the colors are equal and false otherwise.
 #### Inherited from
 
 pc.Color.equals
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8663
 
 ___
 
@@ -426,10 +394,6 @@ Self for chaining.
 
 pc.Color.fromString
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8701
-
 ___
 
 ### lerp
@@ -438,7 +402,9 @@ ___
 
 Returns the result of a linear interpolation between two specified colors.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Color(0, 0, 0);
 var b = new pc.Color(1, 1, 0.5);
 var r = new pc.Color();
@@ -446,6 +412,7 @@ var r = new pc.Color();
 r.lerp(a, b, 0);   // r is equal to a
 r.lerp(a, b, 0.5); // r is 0.5, 0.5, 0.25
 r.lerp(a, b, 1);   // r is equal to b
+```
 
 #### Parameters
 
@@ -465,10 +432,6 @@ Self for chaining.
 
 pc.Color.lerp
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8692
-
 ___
 
 ### set
@@ -484,7 +447,7 @@ Assign values to the color components, including alpha.
 | `r` | `number` | The value for red (0-1). |
 | `g` | `number` | The value for blue (0-1). |
 | `b` | `number` | The value for green (0-1). |
-| `a?` | `number` | - |
+| `a?` | `number` | The value for the alpha (0-1), defaults to 1. |
 
 #### Returns
 
@@ -496,10 +459,6 @@ Self for chaining.
 
 pc.Color.set
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8673
-
 ___
 
 ### toString
@@ -510,10 +469,13 @@ Converts the color to string form. The format is '#RRGGBBAA', where RR, GG, BB, 
 red, green, blue and alpha values. When the alpha value is not included (the default), this
 is the same format as used in HTML/CSS.
 
-**`example`**
+**`Example`**
+
+```ts
 var c = new pc.Color(1, 1, 1);
 // Outputs #ffffffff
 console.log(c.toString());
+```
 
 #### Parameters
 
@@ -530,7 +492,3 @@ The color in string form.
 #### Inherited from
 
 pc.Color.toString
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:8714

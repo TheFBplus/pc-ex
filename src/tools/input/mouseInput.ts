@@ -2,26 +2,43 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 17:01:01
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-20 11:10:04
+ * @ 修改时间: 2022-07-08 18:30:05
  * @ 详情: 鼠标操作
  */
 
 import * as pc from "playcanvas";
 
-import { tool } from "../../libs/libs";
-import { Tool } from "../../libs/libs/toolHelper";
+import { Tool } from "@/utils/helpers/toolBase";
+import { tool } from "@/utils/helpers/useToolHelper";
 
-type InputEvents = "down" | "move" | "click" | "up" | "pinch" | "dragging" | "dragEnd";
-type MouseInputOptions = { clickError: number };
-
-@tool
-export class MouseInputer extends Tool<MouseInputOptions, InputEvents>
+/**
+ * 输入事件-回调表
+ */
+export interface InputEventsMap
 {
+    down: (event: { x: number, y: number }) => any;
+    move: (evemt: { x: number, y: number, dx: number, dy: number }) => any;
+    click: (event: { x: number, y: number }) => any;
+    up: (event: { x: number, y: number }) => any;
+    pinch: (event: { delta: number, event: MouseEvent }) => any;
+    dragging: (event: { x: number, y: number, dx: number, dy: number, ox: number, oy: number }) => any;
+    dragEnd: (event: { x: number, y: number }) => any;
+}
+/**
+ * 鼠标输入选项
+ */
+export interface MouseInputOptions { clickError: number };
+@tool("MouseInputer")
+export class MouseInputer extends Tool<MouseInputOptions, InputEventsMap>
+{
+    // 默认选项
+    protected toolOptionsDefault: MouseInputOptions = {
+        clickError: 1
+    };
+
     private mouseDownVec: pc.Vec2;
     private mouseMoveVec: pc.Vec2;
     private mouseUpVec: pc.Vec2;
-
-    private clickError: number;
 
     private isDragging: boolean;
 
@@ -29,13 +46,14 @@ export class MouseInputer extends Tool<MouseInputOptions, InputEvents>
     {
         super();
 
+        this.setOptions(option);
+
         this.mouseDownVec = new pc.Vec2();
         this.mouseMoveVec = new pc.Vec2();
         this.mouseUpVec = new pc.Vec2();
-        this.clickError = option?.clickError ?? 1;
     }
 
-    private onMouseDown(event: any): void
+    private onMouseDown(event: pc.MouseEvent): void
     {
         this.isDragging = true;
 
@@ -47,7 +65,7 @@ export class MouseInputer extends Tool<MouseInputOptions, InputEvents>
         });
     }
 
-    private onMouseMove(event: any): void
+    private onMouseMove(event: pc.MouseEvent): void
     {
         const dx = event.x - this.mouseMoveVec.x;
         const dy = event.y - this.mouseMoveVec.y;
@@ -71,11 +89,11 @@ export class MouseInputer extends Tool<MouseInputOptions, InputEvents>
         }
     }
 
-    private onMouseUp(event: any): void
+    private onMouseUp(event: pc.MouseEvent): void
     {
         this.mouseUpVec.set(event.x, event.y);
 
-        if (this.mouseUpVec.distance(this.mouseDownVec) < this.clickError) {
+        if (this.mouseUpVec.distance(this.mouseDownVec) < this.toolOptions.clickError) {
             this.eventHandler.fire("click", {
                 x: this.mouseUpVec.x,
                 y: this.mouseUpVec.y
@@ -97,29 +115,24 @@ export class MouseInputer extends Tool<MouseInputOptions, InputEvents>
         this.isDragging = false;
     }
 
-    private onMouseWheel(event: any): void
+    private onMouseWheel(event: pc.MouseEvent): void
     {
-        this.eventHandler.fire("pinch", { delta: event.wheel, event: event.event });
-    }
-
-    public override setOption(option: MouseInputOptions): void
-    {
-        this.clickError = option.clickError;
+        this.eventHandler.fire("pinch", { delta: event.wheelDelta, event: event.event });
     }
 
     protected override onEnable(): void
     {
-        pc.app.mouse.on(pc.EVENT_MOUSEDOWN, this.onMouseDown, this);
-        pc.app.mouse.on(pc.EVENT_MOUSEWHEEL, this.onMouseWheel, this);
-        window.addEventListener("mousemove", this.onMouseMove.bind(this));
-        window.addEventListener("mouseup", this.onMouseUp.bind(this));
+        this.app.mouse.on(pc.EVENT_MOUSEDOWN, this.onMouseDown, this);
+        this.app.mouse.on(pc.EVENT_MOUSEWHEEL, this.onMouseWheel, this);
+        this.app.mouse.on(pc.EVENT_MOUSEMOVE, this.onMouseMove, this);
+        this.app.mouse.on(pc.EVENT_MOUSEUP, this.onMouseUp, this);
     }
 
     protected override onDisable(): void
     {
-        pc.app.mouse.off(pc.EVENT_MOUSEDOWN, this.onMouseDown, this);
-        pc.app.mouse.off(pc.EVENT_MOUSEWHEEL, this.onMouseWheel, this);
-        window.removeEventListener("mousemove", this.onMouseMove.bind(this));
-        window.removeEventListener("mouseup", this.onMouseUp.bind(this));
+        this.app.mouse.off(pc.EVENT_MOUSEDOWN, this.onMouseDown, this);
+        this.app.mouse.off(pc.EVENT_MOUSEWHEEL, this.onMouseWheel, this);
+        this.app.mouse.off(pc.EVENT_MOUSEMOVE, this.onMouseMove, this);
+        this.app.mouse.off(pc.EVENT_MOUSEUP, this.onMouseUp, this);
     }
 }

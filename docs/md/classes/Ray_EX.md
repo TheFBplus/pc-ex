@@ -33,25 +33,24 @@
 Creates a new Ray instance. The ray is infinite, starting at a given origin and pointing in
 a given direction.
 
-**`example`**
+**`Example`**
+
+```ts
 // Create a new ray starting at the position of this entity and pointing down
 // the entity's negative Z axis
 var ray = new pc.Ray(this.entity.getPosition(), this.entity.forward);
+```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `origin?` | `Vec3` |
-| `direction?` | `Vec3` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `origin?` | `Vec3` | The starting point of the ray. The constructor takes a reference of this parameter. Defaults to the origin (0, 0, 0). |
+| `direction?` | `Vec3` | The direction of the ray. The constructor takes a reference of this parameter. Defaults to a direction down the world negative Z axis (0, 0, -1). |
 
 #### Inherited from
 
 pc.Ray.constructor
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4090
 
 ## Properties
 
@@ -109,10 +108,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:4096
 
 射线和三角形的交点
 
-#### Defined in
-
-src/extensions/extendClasses/ray.ts:30
-
 ___
 
 ### set
@@ -137,7 +132,3 @@ Self for chaining.
 #### Inherited from
 
 pc.Ray.set
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4110

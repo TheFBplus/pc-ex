@@ -27,7 +27,7 @@
 
 ### processNodeDeep
 
-▸ `Static` **processNodeDeep**(`entity`, `childEntityCallback?`, `modelCallback?`, `meshInstanceCallback?`): `void`
+▸ `Static` **processNodeDeep**(`node`, `childNodeCallback?`, `modelCallback?`, `meshInstanceCallback?`): `void`
 
 递归处理实例上的所有模型和meshInstance
 
@@ -35,24 +35,20 @@
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `entity` | `PCNode` | 物体实例 |
-| `childEntityCallback?` | `NodeCallback` | - |
-| `modelCallback?` | `ModelCallback` | - |
-| `meshInstanceCallback?` | `MeshInstanceCallback` | - |
+| `node` | `Entity` \| `GraphNode` | 物体实例 |
+| `childNodeCallback?` | (`childNode`: `Entity` \| `GraphNode`) => `void` | 节点回调 |
+| `modelCallback?` | (`model`: `RenderComponent` \| `ModelComponent`) => `void` | 模型回调 |
+| `meshInstanceCallback?` | (`meshInstance`: `MeshInstance`, `index`: `number`) => `void` | meshInstance回调 |
 
 #### Returns
 
 `void`
 
-#### Defined in
-
-src/utils/utils/materialController.ts:51
-
 ___
 
 ### recoverAllMats
 
-▸ `Static` **recoverAllMats**(`entity`): `void`
+▸ `Static` **recoverAllMats**(`node`): `void`
 
 尝试恢复所有材质
 
@@ -60,21 +56,17 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `entity` | `PCNode` | 节点 |
+| `node` | `Entity` \| `GraphNode` | 节点 |
 
 #### Returns
 
 `void`
 
-#### Defined in
-
-src/utils/utils/materialController.ts:167
-
 ___
 
 ### saveAllMats
 
-▸ `Static` **saveAllMats**(`entity`): `void`
+▸ `Static` **saveAllMats**(`node`): `void`
 
 保存所有原有材质
 
@@ -82,21 +74,17 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `entity` | `PCNode` | 节点 |
+| `node` | `Entity` \| `GraphNode` | 节点 |
 
 #### Returns
 
 `void`
 
-#### Defined in
-
-src/utils/utils/materialController.ts:154
-
 ___
 
 ### setChunksDeep
 
-▸ `Static` **setChunksDeep**(`entity`, `chunks`, `batchGroupId?`): `void`
+▸ `Static` **setChunksDeep**(`node`, `chunks`, `batchGroupId?`): `void`
 
 递归改变材质chunks或设置batchGroupId
 
@@ -104,23 +92,19 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `entity` | `PCNode` | 节点 |
-| `chunks` | `any` | chunk描述 |
-| `batchGroupId?` | `string` | - |
+| `node` | `Entity` \| `GraphNode` | 节点 |
+| `chunks` | `Object` | chunk描述 |
+| `batchGroupId?` | `string` | batchGroup的Id |
 
 #### Returns
 
 `void`
 
-#### Defined in
-
-src/utils/utils/materialController.ts:106
-
 ___
 
 ### setMatsDeep
 
-▸ `Static` **setMatsDeep**(`entity`, `mat`, `batchGroupId?`): `void`
+▸ `Static` **setMatsDeep**(`node`, `mat`, `batchGroupId?`): `void`
 
 递归设置所有节点的材质或添加batchGroup
 
@@ -128,23 +112,19 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `entity` | `PCNode` | 节点 |
+| `node` | `Entity` \| `GraphNode` | 节点 |
 | `mat` | `Material` | 材质 |
-| `batchGroupId?` | `string` | - |
+| `batchGroupId?` | `string` | batchGroup的Id |
 
 #### Returns
 
 `void`
 
-#### Defined in
-
-src/utils/utils/materialController.ts:85
-
 ___
 
 ### toggleWireFrame
 
-▸ `Static` **toggleWireFrame**(`entity`, `state`): `void`
+▸ `Static` **toggleWireFrame**(`node`, `state`): `void`
 
 开关模型网格显示模式
 
@@ -152,13 +132,9 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `entity` | `PCNode` | 节点 |
+| `node` | `Entity` \| `GraphNode` | 节点 |
 | `state` | `boolean` | 启用状态 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-src/utils/utils/materialController.ts:131

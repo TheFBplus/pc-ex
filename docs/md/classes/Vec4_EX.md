@@ -65,25 +65,24 @@
 
 Creates a new Vec4 object.
 
-**`example`**
+**`Example`**
+
+```ts
 var v = new pc.Vec4(1, 2, 3, 4);
+```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `x?` | `number` \| `number`[] |
-| `y?` | `number` |
-| `z?` | `number` |
-| `w?` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `x?` | `number` \| `number`[] | The x value. Defaults to 0. If x is an array of length 4, the array will be used to populate all components. |
+| `y?` | `number` | The y value. Defaults to 0. |
+| `z?` | `number` | The z value. Defaults to 0. |
+| `w?` | `number` | The w value. Defaults to 0. |
 
 #### Inherited from
 
 pc.Vec4.constructor
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4493
 
 ## Properties
 
@@ -157,8 +156,6 @@ ___
 
 A constant vector set to [1, 1, 1, 1].
 
-**`readonly`**
-
 #### Inherited from
 
 pc.Vec4.ONE
@@ -174,8 +171,6 @@ ___
 ▪ `Static` `Readonly` **ZERO**: `Vec4`
 
 A constant vector set to [0, 0, 0, 0].
-
-**`readonly`**
 
 #### Inherited from
 
@@ -197,10 +192,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:4474
 
 `Float32Array`
 
-#### Defined in
-
-src/extensions/extendClasses/vec4.ts:21
-
 ## Methods
 
 ### add
@@ -209,7 +200,9 @@ src/extensions/extendClasses/vec4.ts:21
 
 Adds a 4-dimensional vector to another in place.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec4(10, 10, 10, 10);
 var b = new pc.Vec4(20, 20, 20, 20);
 
@@ -217,6 +210,7 @@ a.add(b);
 
 // Outputs [30, 30, 30]
 console.log("The result of the addition is: " + a.toString());
+```
 
 #### Parameters
 
@@ -234,10 +228,6 @@ Self for chaining.
 
 pc.Vec4.add
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4532
-
 ___
 
 ### add2
@@ -246,7 +236,9 @@ ___
 
 Adds two 4-dimensional vectors together and returns the result.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec4(10, 10, 10, 10);
 var b = new pc.Vec4(20, 20, 20, 20);
 var r = new pc.Vec4();
@@ -255,6 +247,7 @@ r.add2(a, b);
 // Outputs [30, 30, 30]
 
 console.log("The result of the addition is: " + r.toString());
+```
 
 #### Parameters
 
@@ -273,10 +266,6 @@ Self for chaining.
 
 pc.Vec4.add2
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4549
-
 ___
 
 ### addScalar
@@ -285,13 +274,16 @@ ___
 
 Adds a number to each element of a vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var vec = new pc.Vec4(3, 4, 5, 6);
 
 vec.addScalar(2);
 
 // Outputs [5, 6, 7, 8]
 console.log("The result of the addition is: " + vec.toString());
+```
 
 #### Parameters
 
@@ -308,10 +300,6 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec4.addScalar
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4563
 
 ___
 
@@ -331,10 +319,6 @@ Self for chaining.
 
 pc.Vec4.ceil
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4770
-
 ___
 
 ### clone
@@ -343,10 +327,13 @@ ___
 
 Returns an identical copy of the specified 4-dimensional vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var v = new pc.Vec4(10, 20, 30, 40);
 var vclone = v.clone();
 console.log("The result of the cloning is: " + vclone.toString());
+```
 
 #### Returns
 
@@ -358,10 +345,6 @@ A 4-dimensional vector containing the result of the cloning.
 
 pc.Vec4.clone
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4573
-
 ___
 
 ### copy
@@ -370,13 +353,16 @@ ___
 
 Copies the contents of a source 4-dimensional vector to a destination 4-dimensional vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var src = new pc.Vec4(10, 20, 30, 40);
 var dst = new pc.Vec4();
 
 dst.copy(src);
 
 console.log("The two vectors are " + (dst.equals(src) ? "equal" : "different"));
+```
 
 #### Parameters
 
@@ -394,10 +380,6 @@ Self for chaining.
 
 pc.Vec4.copy
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4587
-
 ___
 
 ### div
@@ -406,7 +388,9 @@ ___
 
 Divides a 4-dimensional vector by another in place.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec4(4, 9, 16, 25);
 var b = new pc.Vec4(2, 3, 4, 5);
 
@@ -414,6 +398,7 @@ a.div(b);
 
 // Outputs [2, 3, 4, 5]
 console.log("The result of the division is: " + a.toString());
+```
 
 #### Parameters
 
@@ -431,10 +416,6 @@ Self for chaining.
 
 pc.Vec4.div
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4602
-
 ___
 
 ### div2
@@ -443,7 +424,9 @@ ___
 
 Divides one 4-dimensional vector by another and writes the result to the specified vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec4(4, 9, 16, 25);
 var b = new pc.Vec4(2, 3, 4, 5);
 var r = new pc.Vec4();
@@ -452,6 +435,7 @@ r.div2(a, b);
 // Outputs [2, 3, 4, 5]
 
 console.log("The result of the division is: " + r.toString());
+```
 
 #### Parameters
 
@@ -470,10 +454,6 @@ Self for chaining.
 
 pc.Vec4.div2
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4619
-
 ___
 
 ### divScalar
@@ -482,13 +462,16 @@ ___
 
 Divides each element of a vector by a number.
 
-**`example`**
+**`Example`**
+
+```ts
 var vec = new pc.Vec4(3, 6, 9, 12);
 
 vec.divScalar(3);
 
 // Outputs [1, 2, 3, 4]
 console.log("The result of the division is: " + vec.toString());
+```
 
 #### Parameters
 
@@ -506,10 +489,6 @@ Self for chaining.
 
 pc.Vec4.divScalar
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4633
-
 ___
 
 ### dot
@@ -519,11 +498,14 @@ ___
 Returns the result of a dot product operation performed on the two specified 4-dimensional
 vectors.
 
-**`example`**
+**`Example`**
+
+```ts
 var v1 = new pc.Vec4(5, 10, 20, 40);
 var v2 = new pc.Vec4(10, 20, 40, 80);
 var v1dotv2 = v1.dot(v2);
 console.log("The result of the dot product is: " + v1dotv2);
+```
 
 #### Parameters
 
@@ -541,10 +523,6 @@ The result of the dot product operation.
 
 pc.Vec4.dot
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4646
-
 ___
 
 ### equals
@@ -553,10 +531,13 @@ ___
 
 Reports whether two vectors are equal.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec4(1, 2, 3, 4);
 var b = new pc.Vec4(5, 6, 7, 8);
 console.log("The two vectors are " + (a.equals(b) ? "equal" : "different"));
+```
 
 #### Parameters
 
@@ -573,10 +554,6 @@ True if the vectors are equal and false otherwise.
 #### Inherited from
 
 pc.Vec4.equals
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4657
 
 ___
 
@@ -596,10 +573,6 @@ Self for chaining.
 
 pc.Vec4.floor
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4764
-
 ___
 
 ### length
@@ -608,11 +581,14 @@ ___
 
 Returns the magnitude of the specified 4-dimensional vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var vec = new pc.Vec4(3, 4, 0, 0);
 var len = vec.length();
 // Outputs 5
 console.log("The length of the vector is: " + len);
+```
 
 #### Returns
 
@@ -624,10 +600,6 @@ The magnitude of the specified 4-dimensional vector.
 
 pc.Vec4.length
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4668
-
 ___
 
 ### lengthSq
@@ -636,11 +608,14 @@ ___
 
 Returns the magnitude squared of the specified 4-dimensional vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var vec = new pc.Vec4(3, 4, 0);
 var len = vec.lengthSq();
 // Outputs 25
 console.log("The length squared of the vector is: " + len);
+```
 
 #### Returns
 
@@ -652,10 +627,6 @@ The magnitude of the specified 4-dimensional vector.
 
 pc.Vec4.lengthSq
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4679
-
 ___
 
 ### lerp
@@ -664,7 +635,9 @@ ___
 
 Returns the result of a linear interpolation between two specified 4-dimensional vectors.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec4(0, 0, 0, 0);
 var b = new pc.Vec4(10, 10, 10, 10);
 var r = new pc.Vec4();
@@ -672,6 +645,7 @@ var r = new pc.Vec4();
 r.lerp(a, b, 0);   // r is equal to a
 r.lerp(a, b, 0.5); // r is 5, 5, 5, 5
 r.lerp(a, b, 1);   // r is equal to b
+```
 
 #### Parameters
 
@@ -690,10 +664,6 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec4.lerp
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4698
 
 ___
 
@@ -719,10 +689,6 @@ Self for chaining.
 
 pc.Vec4.max
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4790
-
 ___
 
 ### min
@@ -747,10 +713,6 @@ Self for chaining.
 
 pc.Vec4.min
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4783
-
 ___
 
 ### mul
@@ -759,7 +721,9 @@ ___
 
 Multiplies a 4-dimensional vector to another in place.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec4(2, 3, 4, 5);
 var b = new pc.Vec4(4, 5, 6, 7);
 
@@ -767,6 +731,7 @@ a.mul(b);
 
 // Outputs 8, 15, 24, 35
 console.log("The result of the multiplication is: " + a.toString());
+```
 
 #### Parameters
 
@@ -784,10 +749,6 @@ Self for chaining.
 
 pc.Vec4.mul
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4713
-
 ___
 
 ### mul2
@@ -796,7 +757,9 @@ ___
 
 Returns the result of multiplying the specified 4-dimensional vectors together.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec4(2, 3, 4, 5);
 var b = new pc.Vec4(4, 5, 6, 7);
 var r = new pc.Vec4();
@@ -805,6 +768,7 @@ r.mul2(a, b);
 
 // Outputs 8, 15, 24, 35
 console.log("The result of the multiplication is: " + r.toString());
+```
 
 #### Parameters
 
@@ -823,10 +787,6 @@ Self for chaining.
 
 pc.Vec4.mul2
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4730
-
 ___
 
 ### mulScalar
@@ -835,13 +795,16 @@ ___
 
 Multiplies each element of a vector by a number.
 
-**`example`**
+**`Example`**
+
+```ts
 var vec = new pc.Vec4(3, 6, 9, 12);
 
 vec.mulScalar(3);
 
 // Outputs [9, 18, 27, 36]
 console.log("The result of the multiplication is: " + vec.toString());
+```
 
 #### Parameters
 
@@ -859,10 +822,6 @@ Self for chaining.
 
 pc.Vec4.mulScalar
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4744
-
 ___
 
 ### normalize
@@ -872,13 +831,16 @@ ___
 Returns this 4-dimensional vector converted to a unit vector in place. If the vector has a
 length of zero, the vector's elements will be set to zero.
 
-**`example`**
+**`Example`**
+
+```ts
 var v = new pc.Vec4(25, 0, 0, 0);
 
 v.normalize();
 
 // Outputs 1, 0, 0, 0
 console.log("The result of the vector normalization is: " + v.toString());
+```
 
 #### Returns
 
@@ -889,10 +851,6 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec4.normalize
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4758
 
 ___
 
@@ -912,10 +870,6 @@ Self for chaining.
 
 pc.Vec4.round
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4776
-
 ___
 
 ### set
@@ -924,12 +878,15 @@ ___
 
 Sets the specified 4-dimensional vector to the supplied numerical values.
 
-**`example`**
+**`Example`**
+
+```ts
 var v = new pc.Vec4();
 v.set(5, 10, 20, 40);
 
 // Outputs 5, 10, 20, 40
 console.log("The result of the vector set is: " + v.toString());
+```
 
 #### Parameters
 
@@ -950,10 +907,6 @@ Self for chaining.
 
 pc.Vec4.set
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4806
-
 ___
 
 ### sub
@@ -962,7 +915,9 @@ ___
 
 Subtracts a 4-dimensional vector from another in place.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec4(10, 10, 10, 10);
 var b = new pc.Vec4(20, 20, 20, 20);
 
@@ -970,6 +925,7 @@ a.sub(b);
 
 // Outputs [-10, -10, -10, -10]
 console.log("The result of the subtraction is: " + a.toString());
+```
 
 #### Parameters
 
@@ -987,10 +943,6 @@ Self for chaining.
 
 pc.Vec4.sub
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4821
-
 ___
 
 ### sub2
@@ -999,7 +951,9 @@ ___
 
 Subtracts two 4-dimensional vectors from one another and returns the result.
 
-**`example`**
+**`Example`**
+
+```ts
 var a = new pc.Vec4(10, 10, 10, 10);
 var b = new pc.Vec4(20, 20, 20, 20);
 var r = new pc.Vec4();
@@ -1008,6 +962,7 @@ r.sub2(a, b);
 
 // Outputs [-10, -10, -10, -10]
 console.log("The result of the subtraction is: " + r.toString());
+```
 
 #### Parameters
 
@@ -1026,10 +981,6 @@ Self for chaining.
 
 pc.Vec4.sub2
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4838
-
 ___
 
 ### subScalar
@@ -1038,13 +989,16 @@ ___
 
 Subtracts a number from each element of a vector.
 
-**`example`**
+**`Example`**
+
+```ts
 var vec = new pc.Vec4(3, 4, 5, 6);
 
 vec.subScalar(2);
 
 // Outputs [1, 2, 3, 4]
 console.log("The result of the subtraction is: " + vec.toString());
+```
 
 #### Parameters
 
@@ -1062,10 +1016,6 @@ Self for chaining.
 
 pc.Vec4.subScalar
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4852
-
 ___
 
 ### toString
@@ -1074,10 +1024,13 @@ ___
 
 Converts the vector to string form.
 
-**`example`**
+**`Example`**
+
+```ts
 var v = new pc.Vec4(20, 10, 5, 0);
 // Outputs [20, 10, 5, 0]
 console.log(v.toString());
+```
 
 #### Returns
 
@@ -1088,7 +1041,3 @@ The vector in string form.
 #### Inherited from
 
 pc.Vec4.toString
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:4862

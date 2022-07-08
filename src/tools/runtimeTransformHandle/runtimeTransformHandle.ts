@@ -8,7 +8,6 @@
 
 import * as pc from "playcanvas";
 
-import { tool } from "../../libs/libs";
 import { Tool, use } from "../../libs/libs/toolHelper";
 import { OrbitCamera } from "../camera/orbitCamera";
 import { OutlineCamera } from "../camera/outlineCamera";
@@ -45,7 +44,6 @@ type RTHOptions = {
 // 回调事件
 type RTHEvents = "select" | "focus";
 
-@tool
 export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
 {
     public camera: pc.CameraComponent;

@@ -90,7 +90,9 @@
 
 Create a new MeshInstance instance.
 
-**`example`**
+**`Example`**
+
+```ts
 // Create a mesh instance pointing to a 1x1x1 'cube' mesh
 var mesh = pc.createBox(graphicsDevice);
 var material = new pc.StandardMaterial();
@@ -104,6 +106,7 @@ entity.addComponent('render', {
 
 // Add the entity to the scene hierarchy
 this.app.scene.root.addChild(entity);
+```
 
 #### Parameters
 
@@ -111,15 +114,11 @@ this.app.scene.root.addChild(entity);
 | :------ | :------ | :------ |
 | `mesh` | `Mesh` | The graphics mesh to instance. |
 | `material` | `Material` | The material to use for this mesh instance. |
-| `node?` | `GraphNode` | - |
+| `node?` | `GraphNode` | The graph node defining the transform for this instance. This parameter is optional when used with RenderComponent and will use the node the component is attached to. |
 
 #### Inherited from
 
 pc.MeshInstance.constructor
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:10918
 
 ## Properties
 
@@ -366,7 +365,7 @@ ___
 • **cull**: `boolean`
 
 Controls whether the mesh instance can be culled by frustum culling
-({@link CameraComponent#frustumCulling}).
+(CameraComponent#frustumCulling).
 
 #### Inherited from
 
@@ -383,9 +382,9 @@ ___
 • **drawOrder**: `number`
 
 Use this value to affect rendering order of mesh instances. Only used when mesh
-instances are added to a {@link Layer} with {@link Layer#opaqueSortMode} or
-{@link Layer#transparentSortMode} (depending on the material) set to
-{@link SORTMODE_MANUAL}.
+instances are added to a Layer with Layer#opaqueSortMode or
+Layer#transparentSortMode (depending on the material) set to
+SORTMODE_MANUAL.
 
 #### Inherited from
 
@@ -533,7 +532,7 @@ ___
 
 • **visibleThisFrame**: `boolean`
 
-Read this value in {@link Layer#onPostCull} to determine if the object is actually going
+Read this value in Layer#onPostCull to determine if the object is actually going
 to be rendered.
 
 #### Inherited from
@@ -564,8 +563,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:10893
 
 • `get` **aabb**(): `any`
 
-The world space axis-aligned bounding box for this mesh instance.
-
 #### Returns
 
 `any`
@@ -573,10 +570,6 @@ The world space axis-aligned bounding box for this mesh instance.
 #### Inherited from
 
 pc.MeshInstance.aabb
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11000
 
 • `set` **aabb**(`arg`): `void`
 
@@ -596,21 +589,11 @@ The world space axis-aligned bounding box for this mesh instance.
 
 pc.MeshInstance.aabb
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:10999
-
 ___
 
 ### calculateSortDistance
 
 • `get` **calculateSortDistance**(): `any`
-
-In some circumstances mesh instances are sorted by a distance calculation to determine their
-rendering order. Set this callback to override the default distance calculation, which gives
-the dot product of the camera forward vector and the vector between the camera position and
-the center of the mesh instance's axis-aligned bounding box. This option can be particularly
-useful for rendering transparent meshes in a better order than default.
 
 #### Returns
 
@@ -619,10 +602,6 @@ useful for rendering transparent meshes in a better order than default.
 #### Inherited from
 
 pc.MeshInstance.calculateSortDistance
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11055
 
 • `set` **calculateSortDistance**(`arg`): `void`
 
@@ -646,17 +625,11 @@ useful for rendering transparent meshes in a better order than default.
 
 pc.MeshInstance.calculateSortDistance
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11054
-
 ___
 
 ### instancingCount
 
 • `get` **instancingCount**(): `number`
-
-Number of instances when using hardware instancing to render the mesh.
 
 #### Returns
 
@@ -665,10 +638,6 @@ Number of instances when using hardware instancing to render the mesh.
 #### Inherited from
 
 pc.MeshInstance.instancingCount
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11090
 
 • `set` **instancingCount**(`arg`): `void`
 
@@ -688,10 +657,6 @@ Number of instances when using hardware instancing to render the mesh.
 
 pc.MeshInstance.instancingCount
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11089
-
 ___
 
 ### key
@@ -705,10 +670,6 @@ ___
 #### Inherited from
 
 pc.MeshInstance.key
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11075
 
 • `set` **key**(`arg`): `void`
 
@@ -726,10 +687,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:11075
 
 pc.MeshInstance.key
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11074
-
 ___
 
 ### layer
@@ -743,10 +700,6 @@ ___
 #### Inherited from
 
 pc.MeshInstance.layer
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:10954
 
 • `set` **layer**(`arg`): `void`
 
@@ -764,18 +717,11 @@ node_modules/playcanvas/build/playcanvas.d.ts:10954
 
 pc.MeshInstance.layer
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:10953
-
 ___
 
 ### mask
 
 • `get` **mask**(): `number`
-
-Mask controlling which {@link LightComponent}s light this mesh instance, which
-{@link CameraComponent} sees it and in which {@link Layer} it is rendered. Defaults to 1.
 
 #### Returns
 
@@ -785,14 +731,10 @@ Mask controlling which {@link LightComponent}s light this mesh instance, which
 
 pc.MeshInstance.mask
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11083
-
 • `set` **mask**(`arg`): `void`
 
-Mask controlling which {@link LightComponent}s light this mesh instance, which
-{@link CameraComponent} sees it and in which {@link Layer} it is rendered. Defaults to 1.
+Mask controlling which LightComponents light this mesh instance, which
+CameraComponent sees it and in which Layer it is rendered. Defaults to 1.
 
 #### Parameters
 
@@ -808,17 +750,11 @@ Mask controlling which {@link LightComponent}s light this mesh instance, which
 
 pc.MeshInstance.mask
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11082
-
 ___
 
 ### material
 
 • `get` **material**(): `Material`
-
-The material used by this mesh instance.
 
 #### Returns
 
@@ -827,10 +763,6 @@ The material used by this mesh instance.
 #### Inherited from
 
 pc.MeshInstance.material
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:10942
 
 • `set` **material**(`arg`): `void`
 
@@ -850,17 +782,11 @@ The material used by this mesh instance.
 
 pc.MeshInstance.material
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:10941
-
 ___
 
 ### mesh
 
 • `get` **mesh**(): `Mesh`
-
-The graphics mesh being instanced.
 
 #### Returns
 
@@ -869,10 +795,6 @@ The graphics mesh being instanced.
 #### Inherited from
 
 pc.MeshInstance.mesh
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11042
 
 • `set` **mesh**(`arg`): `void`
 
@@ -892,17 +814,11 @@ The graphics mesh being instanced.
 
 pc.MeshInstance.mesh
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11041
-
 ___
 
 ### morphInstance
 
 • `get` **morphInstance**(): `MorphInstance`
-
-The morph instance managing morphing of this mesh instance, or null if morphing is not used.
 
 #### Returns
 
@@ -911,10 +827,6 @@ The morph instance managing morphing of this mesh instance, or null if morphing 
 #### Inherited from
 
 pc.MeshInstance.morphInstance
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11071
 
 • `set` **morphInstance**(`arg`): `void`
 
@@ -934,10 +846,6 @@ The morph instance managing morphing of this mesh instance, or null if morphing 
 
 pc.MeshInstance.morphInstance
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11070
-
 ___
 
 ### receiveShadow
@@ -951,10 +859,6 @@ ___
 #### Inherited from
 
 pc.MeshInstance.receiveShadow
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11057
 
 • `set` **receiveShadow**(`arg`): `void`
 
@@ -972,23 +876,11 @@ node_modules/playcanvas/build/playcanvas.d.ts:11057
 
 pc.MeshInstance.receiveShadow
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11056
-
 ___
 
 ### renderStyle
 
 • `get` **renderStyle**(): `number`
-
-The render style of the mesh instance. Can be:
-
-- {@link RENDERSTYLE_SOLID}
-- {@link RENDERSTYLE_WIREFRAME}
-- {@link RENDERSTYLE_POINTS}
-
-Defaults to {@link RENDERSTYLE_SOLID}.
 
 #### Returns
 
@@ -998,19 +890,15 @@ Defaults to {@link RENDERSTYLE_SOLID}.
 
 pc.MeshInstance.renderStyle
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11035
-
 • `set` **renderStyle**(`arg`): `void`
 
 The render style of the mesh instance. Can be:
 
-- {@link RENDERSTYLE_SOLID}
-- {@link RENDERSTYLE_WIREFRAME}
-- {@link RENDERSTYLE_POINTS}
+- RENDERSTYLE_SOLID
+- RENDERSTYLE_WIREFRAME
+- RENDERSTYLE_POINTS
 
-Defaults to {@link RENDERSTYLE_SOLID}.
+Defaults to RENDERSTYLE_SOLID.
 
 #### Parameters
 
@@ -1026,10 +914,6 @@ Defaults to {@link RENDERSTYLE_SOLID}.
 
 pc.MeshInstance.renderStyle
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11034
-
 ___
 
 ### screenSpace
@@ -1043,10 +927,6 @@ ___
 #### Inherited from
 
 pc.MeshInstance.screenSpace
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11073
 
 • `set` **screenSpace**(`arg`): `void`
 
@@ -1064,17 +944,11 @@ node_modules/playcanvas/build/playcanvas.d.ts:11073
 
 pc.MeshInstance.screenSpace
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11072
-
 ___
 
 ### skinInstance
 
 • `get` **skinInstance**(): `SkinInstance`
-
-The skin instance managing skinning of this mesh instance, or null if skinning is not used.
 
 #### Returns
 
@@ -1083,10 +957,6 @@ The skin instance managing skinning of this mesh instance, or null if skinning i
 #### Inherited from
 
 pc.MeshInstance.skinInstance
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11064
 
 • `set` **skinInstance**(`arg`): `void`
 
@@ -1105,10 +975,6 @@ The skin instance managing skinning of this mesh instance, or null if skinning i
 #### Inherited from
 
 pc.MeshInstance.skinInstance
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11063
 
 ## Methods
 
@@ -1130,10 +996,6 @@ node_modules/playcanvas/build/playcanvas.d.ts:11063
 
 pc.MeshInstance.\_isVisible
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11092
-
 ___
 
 ### \_setupSkinUpdate
@@ -1148,10 +1010,6 @@ ___
 
 pc.MeshInstance.\_setupSkinUpdate
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11130
-
 ___
 
 ### clearParameters
@@ -1165,10 +1023,6 @@ ___
 #### Inherited from
 
 pc.MeshInstance.clearParameters
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11101
 
 ___
 
@@ -1192,10 +1046,6 @@ Deletes a shader parameter on a mesh instance.
 
 pc.MeshInstance.deleteParameter
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11126
-
 ___
 
 ### destroy
@@ -1209,10 +1059,6 @@ ___
 #### Inherited from
 
 pc.MeshInstance.destroy
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11091
 
 ___
 
@@ -1238,10 +1084,6 @@ The named parameter.
 
 pc.MeshInstance.getParameter
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11109
-
 ___
 
 ### getParameters
@@ -1256,15 +1098,11 @@ ___
 
 pc.MeshInstance.getParameters
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11102
-
 ___
 
 ### intersectsRay
 
-▸ **intersectsRay**(`worldRay`, `intersects?`): [`intersect`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/intersect.md)[]
+▸ **intersectsRay**(`worldRay`, `intersects?`): `intersect`[]
 
 检测射线与此meshInstance的交点
 
@@ -1273,17 +1111,13 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `worldRay` | `Ray` | 要求交的射线 |
-| `intersects?` | [`intersect`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/intersect.md)[] | 交点集合（不传则创建新的数组） |
+| `intersects?` | `intersect`[] | 交点集合（不传则创建新的数组） |
 
 #### Returns
 
-[`intersect`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/intersect.md)[]
+`intersect`[]
 
 交点集合
-
-#### Defined in
-
-src/extensions/extendClasses/meshInstance.ts:112
 
 ___
 
@@ -1305,17 +1139,13 @@ ___
 
 pc.MeshInstance.setCustomAabb
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11129
-
 ___
 
 ### setInstancing
 
 ▸ **setInstancing**(`vertexBuffer`): `void`
 
-Sets up {@link MeshInstance} to be rendered using Hardware Instancing.
+Sets up MeshInstance to be rendered using Hardware Instancing.
 
 #### Parameters
 
@@ -1330,10 +1160,6 @@ Sets up {@link MeshInstance} to be rendered using Hardware Instancing.
 #### Inherited from
 
 pc.MeshInstance.setInstancing
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11100
 
 ___
 
@@ -1355,10 +1181,6 @@ ___
 
 pc.MeshInstance.setLightmapped
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11128
-
 ___
 
 ### setParameter
@@ -1374,7 +1196,7 @@ over parameter of the same name if set on Material this mesh instance uses for r
 | :------ | :------ | :------ |
 | `name` | `string` | The name of the parameter to set. |
 | `data` | `number` \| `number`[] \| `Texture` | The value for the specified parameter. |
-| `passFlags?` | `number` | - |
+| `passFlags?` | `number` | Mask describing which passes the material should be included in. |
 
 #### Returns
 
@@ -1383,10 +1205,6 @@ over parameter of the same name if set on Material this mesh instance uses for r
 #### Inherited from
 
 pc.MeshInstance.setParameter
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11119
 
 ___
 
@@ -1409,10 +1227,6 @@ ___
 
 pc.MeshInstance.setParameters
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11127
-
 ___
 
 ### setRealtimeLightmap
@@ -1434,10 +1248,6 @@ ___
 
 pc.MeshInstance.setRealtimeLightmap
 
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11120
-
 ___
 
 ### updateKey
@@ -1451,10 +1261,6 @@ ___
 #### Inherited from
 
 pc.MeshInstance.updateKey
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:11093
 
 ___
 
@@ -1476,7 +1282,3 @@ ___
 #### Inherited from
 
 pc.MeshInstance.\_prepareRenderStyleForArray
-
-#### Defined in
-
-node_modules/playcanvas/build/playcanvas.d.ts:10894

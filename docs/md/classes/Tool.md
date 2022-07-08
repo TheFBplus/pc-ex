@@ -1,13 +1,13 @@
 [pc-ex](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md) / Tool
 
-# Class: Tool<Options, EventsType\>
+# Class: Tool<Options, EventsMap\>
 
 ## Type parameters
 
-| Name |
-| :------ |
-| `Options` |
-| `EventsType` |
+| Name | Type |
+| :------ | :------ |
+| `Options` | extends `Object` |
+| `EventsMap` | extends `Object` |
 
 ## Hierarchy
 
@@ -15,15 +15,15 @@
 
   ↳ [`OrbitCamera`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md)
 
+  ↳ [`OrbitCameraInput_Mouse`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCameraInput_Mouse.md)
+
+  ↳ [`OrbitCameraInput_TouchScreen`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCameraInput_TouchScreen.md)
+
   ↳ [`OutlineCamera`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OutlineCamera.md)
 
   ↳ [`MouseInputer`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md)
 
   ↳ [`DropGLTFLoader`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md)
-
-  ↳ [`RuntimeTransformHandle`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/RuntimeTransformHandle.md)
-
-  ↳ [`MultiSelector`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MultiSelector.md)
 
   ↳ [`Selector`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Selector.md)
 
@@ -35,7 +35,10 @@
 
 ### Properties
 
+- [app](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#app)
 - [eventHandler](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#eventhandler)
+- [toolOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#tooloptions)
+- [toolOptionsDefault](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#tooloptionsdefault)
 
 ### Accessors
 
@@ -47,36 +50,63 @@
 - [onDisable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#ondisable)
 - [onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#onenable)
 - [removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#removelistener)
-- [setOption](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#setoption)
+- [setOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#setoptions)
+- [updateOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#updateoptions)
 
 ## Constructors
 
 ### constructor
 
-• **new Tool**<`Options`, `EventsType`\>()
+• **new Tool**<`Options`, `EventsMap`\>()
 
 创建新的工具实例
 
 #### Type parameters
 
-| Name |
-| :------ |
-| `Options` |
-| `EventsType` |
-
-#### Defined in
-
-src/libs/libs/toolHelper.ts:67
+| Name | Type |
+| :------ | :------ |
+| `Options` | extends `Object` |
+| `EventsMap` | extends `Object` |
 
 ## Properties
 
-### eventHandler
+### app
 
-• **eventHandler**: `ExEventHandler`<`EventsType`\>
+• **app**: `AppBase`
 
 #### Defined in
 
-src/libs/libs/toolHelper.ts:60
+src/utils/helpers/toolBase.ts:22
+
+___
+
+### eventHandler
+
+• **eventHandler**: `ExEventHandler`<`EventsMap`\>
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:23
+
+___
+
+### toolOptions
+
+• **toolOptions**: `Options`
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:26
+
+___
+
+### toolOptionsDefault
+
+• `Protected` **toolOptionsDefault**: `Options`
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:25
 
 ## Accessors
 
@@ -89,10 +119,6 @@ src/libs/libs/toolHelper.ts:60
 #### Returns
 
 `boolean`
-
-#### Defined in
-
-src/libs/libs/toolHelper.ts:85
 
 • `set` **enabled**(`value`): `void`
 
@@ -108,91 +134,83 @@ src/libs/libs/toolHelper.ts:85
 
 `void`
 
-#### Defined in
-
-src/libs/libs/toolHelper.ts:76
-
 ## Methods
 
 ### addListener
 
-▸ **addListener**(`eventName`, `callback`, `scope?`): `void`
+▸ **addListener**<`K`\>(`eventName`, `callback`, `scope?`): `void`
 
 添加事件监听
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | extends `string` \| `number` \| `symbol` |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `eventName` | `EventsType` | 监听事件名称 |
-| `callback` | `Function` | 回调 |
+| `eventName` | `K` | 监听事件名称 |
+| `callback` | `EventsMap`[`K`] | 回调 |
 | `scope?` | `any` | 范围 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-src/libs/libs/toolHelper.ts:96
 
 ___
 
 ### onDisable
 
-▸ `Protected` `Abstract` **onDisable**(): `void`
+▸ `Protected` **onDisable**(): `void`
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-src/libs/libs/toolHelper.ts:119
 
 ___
 
 ### onEnable
 
-▸ `Protected` `Abstract` **onEnable**(): `void`
+▸ `Protected` **onEnable**(): `void`
 
 #### Returns
 
 `void`
 
-#### Defined in
-
-src/libs/libs/toolHelper.ts:118
-
 ___
 
 ### removeListener
 
-▸ **removeListener**(`eventName`, `callback`, `scope?`): `void`
+▸ **removeListener**<`K`\>(`eventName`, `callback`, `scope?`): `void`
 
 移除事件监听
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | extends `string` \| `number` \| `symbol` |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `eventName` | `EventsType` | 监听事件名称 |
-| `callback` | `Function` | 回调 |
+| `eventName` | `K` | 监听事件名称 |
+| `callback` | `EventsMap`[`K`] | 回调 |
 | `scope?` | `any` | 范围 |
 
 #### Returns
 
 `void`
 
-#### Defined in
-
-src/libs/libs/toolHelper.ts:107
-
 ___
 
-### setOption
+### setOptions
 
-▸ `Abstract` **setOption**(`options`): `void`
+▸ **setOptions**(`options`): `void`
 
 设置选项
 
@@ -206,6 +224,20 @@ ___
 
 `void`
 
-#### Defined in
+___
 
-src/libs/libs/toolHelper.ts:116
+### updateOptions
+
+▸ **updateOptions**(`options`): `void`
+
+更新选项
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `options` | { [P in string \| number \| symbol]?: Options[P] } | 选项 |
+
+#### Returns
+
+`void`

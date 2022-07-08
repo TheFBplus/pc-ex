@@ -6,7 +6,7 @@ Base dummy duplicated pc.ScriptType class to be extended when defining.
 All parameters and useful event-based methods made optional to avoid inadvertedly extending them or having to define them.
 Caveat is: tsconfig.json needs to be set to: "strictNullChecks": false
 
-**`export`**
+**`Export`**
 
 ## Table of contents
 
@@ -47,12 +47,12 @@ Caveat is: tsconfig.json needs to be set to: "strictNullChecks": false
 
 • **app**: `Application`
 
-The {@link pc.Application} that the instance of this type
+The pc.Application that the instance of this type
 belongs to.
 
 #### Defined in
 
-src/libs/libs/create-script-decorator.ts:238
+src/utils/helpers/create-script-decorator.ts:238
 
 ___
 
@@ -60,29 +60,40 @@ ___
 
 • `Readonly` **attributes**: `ScriptAttributes`
 
-**`function`**
+**`Function`**
 
-**`name`** pc.EventHandler#on
+**`Name`**
 
-**`description`** Attach an event handler to an event.
+pc.EventHandler#on
 
-**`param`** Name of the event to bind the callback to.
+**`Description`**
 
-**`param`** Function that is called when event is fired. Note the callback is limited to 8 arguments.
+Attach an event handler to an event.
 
-**`param`** Object to use as 'this' when the event is fired, defaults to current this.
+**`Param`**
 
-**`returns`** Self for chaining.
+Name of the event to bind the callback to.
 
-**`example`**
+**`Param`**
+
+Function that is called when event is fired. Note the callback is limited to 8 arguments.
+
+**`Param`**
+
+Object to use as 'this' when the event is fired, defaults to current this.
+
+**`Example`**
+
+```ts
 obj.on('test', function (a, b) {
     console.log(a + b);
 });
 obj.fire('test', 1, 2); // prints 3 to the console
+```
 
 #### Defined in
 
-src/libs/libs/create-script-decorator.ts:139
+src/utils/helpers/create-script-decorator.ts:139
 
 ___
 
@@ -96,7 +107,7 @@ ___
 
 #### Defined in
 
-src/libs/libs/create-script-decorator.ts:84
+src/utils/helpers/create-script-decorator.ts:84
 
 ___
 
@@ -112,7 +123,7 @@ when the script instance is in `enabled` state during app tick.
 
 #### Defined in
 
-src/libs/libs/create-script-decorator.ts:250
+src/utils/helpers/create-script-decorator.ts:250
 
 ___
 
@@ -120,11 +131,11 @@ ___
 
 • **entity**: `Entity`
 
-The {@link pc.Entity} that the instance of this type belongs to.
+The pc.Entity that the instance of this type belongs to.
 
 #### Defined in
 
-src/libs/libs/create-script-decorator.ts:242
+src/utils/helpers/create-script-decorator.ts:242
 
 ## Methods
 
@@ -132,28 +143,35 @@ src/libs/libs/create-script-decorator.ts:242
 
 ▸ `Optional` **fire**(`name`, `arg1?`, `arg2?`, `arg3?`, `arg4?`, `arg5?`, `arg6?`, `arg7?`, `arg8?`): `EventHandler`
 
-**`function`**
+**`Function`**
 
-**`name`** pc.EventHandler#fire
+**`Name`**
 
-**`description`** Fire an event, all additional arguments are passed on to the event listener.
+pc.EventHandler#fire
 
-**`example`**
+**`Description`**
+
+Fire an event, all additional arguments are passed on to the event listener.
+
+**`Example`**
+
+```ts
 obj.fire('test', 'This is the message');
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `name` | `any` | Name of event to fire. |
-| `arg1?` | `any` | - |
-| `arg2?` | `any` | - |
-| `arg3?` | `any` | - |
-| `arg4?` | `any` | - |
-| `arg5?` | `any` | - |
-| `arg6?` | `any` | - |
-| `arg7?` | `any` | - |
-| `arg8?` | `any` | - |
+| `arg1?` | `any` | First argument that is passed to the event handler. |
+| `arg2?` | `any` | Second argument that is passed to the event handler. |
+| `arg3?` | `any` | Third argument that is passed to the event handler. |
+| `arg4?` | `any` | Fourth argument that is passed to the event handler. |
+| `arg5?` | `any` | Fifth argument that is passed to the event handler. |
+| `arg6?` | `any` | Sixth argument that is passed to the event handler. |
+| `arg7?` | `any` | Seventh argument that is passed to the event handler. |
+| `arg8?` | `any` | Eighth argument that is passed to the event handler. |
 
 #### Returns
 
@@ -161,26 +179,29 @@ obj.fire('test', 'This is the message');
 
 Self for chaining.
 
-#### Defined in
-
-src/libs/libs/create-script-decorator.ts:204
-
 ___
 
 ### hasEvent
 
 ▸ `Optional` **hasEvent**(`name`): `boolean`
 
-**`function`**
+**`Function`**
 
-**`name`** pc.EventHandler#hasEvent
+**`Name`**
 
-**`description`** Test if there are any handlers bound to an event name.
+pc.EventHandler#hasEvent
 
-**`example`**
+**`Description`**
+
+Test if there are any handlers bound to an event name.
+
+**`Example`**
+
+```ts
 obj.on('test', function () { }); // bind an event to 'test'
 obj.hasEvent('test'); // returns true
 obj.hasEvent('hello'); // returns false
+```
 
 #### Parameters
 
@@ -194,29 +215,25 @@ obj.hasEvent('hello'); // returns false
 
 True if the object has handlers bound to the specified event name.
 
-#### Defined in
-
-src/libs/libs/create-script-decorator.ts:232
-
 ___
 
 ### initialize
 
 ▸ `Optional` **initialize**(): `void`
 
-**`function`**
+**`Function`**
 
-**`name`** pc.ScriptType#[initialize]
+**`Name`**
 
-**`description`** Called when script is about to run for the first time.
+pc.ScriptType#[initialize]
+
+**`Description`**
+
+Called when script is about to run for the first time.
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-src/libs/libs/create-script-decorator.ts:94
 
 ___
 
@@ -224,14 +241,20 @@ ___
 
 ▸ `Optional` **off**(`name?`, `callback?`, `scope?`): `EventHandler`
 
-**`function`**
+**`Function`**
 
-**`name`** pc.EventHandler#off
+**`Name`**
 
-**`description`** Detach an event handler from an event. If callback is not provided then all callbacks are unbound from the event,
+pc.EventHandler#off
+
+**`Description`**
+
+Detach an event handler from an event. If callback is not provided then all callbacks are unbound from the event,
 if scope is not provided then all events with the callback will be unbound.
 
-**`example`**
+**`Example`**
+
+```ts
 var handler = function () {
 };
 obj.on('test', handler);
@@ -240,14 +263,15 @@ obj.off(); // Removes all events
 obj.off('test'); // Removes all events called 'test'
 obj.off('test', handler); // Removes all handler functions, called 'test'
 obj.off('test', handler, this); // Removes all hander functions, called 'test' with scope this
+```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name?` | `string` |
-| `callback?` | `HandleEventCallback` |
-| `scope?` | `any` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name?` | `string` | Name of the event to unbind. |
+| `callback?` | `HandleEventCallback` | Function to be unbound. |
+| `scope?` | `any` | Scope that was used as the this when the event is fired. |
 
 #### Returns
 
@@ -255,21 +279,21 @@ obj.off('test', handler, this); // Removes all hander functions, called 'test' w
 
 Self for chaining.
 
-#### Defined in
-
-src/libs/libs/create-script-decorator.ts:186
-
 ___
 
 ### on
 
 ▸ `Optional` **on**(`name`, `callback`, `scope?`): `EventHandler`
 
-**`function`**
+**`Function`**
 
-**`name`** pc.ScriptType#[initialize]
+**`Name`**
 
-**`description`** Called when script is about to run for the first time.
+pc.ScriptType#[initialize]
+
+**`Description`**
+
+Called when script is about to run for the first time.
 
 #### Parameters
 
@@ -283,28 +307,31 @@ ___
 
 `EventHandler`
 
-#### Defined in
-
-src/libs/libs/create-script-decorator.ts:166
-
 ___
 
 ### once
 
 ▸ `Optional` **once**(`name`, `callback`, `scope?`): `EventHandler`
 
-**`function`**
+**`Function`**
 
-**`name`** pc.EventHandler#once
+**`Name`**
 
-**`description`** Attach an event handler to an event. This handler will be removed after being fired once.
+pc.EventHandler#once
 
-**`example`**
+**`Description`**
+
+Attach an event handler to an event. This handler will be removed after being fired once.
+
+**`Example`**
+
+```ts
 obj.once('test', function (a, b) {
     console.log(a + b);
 });
 obj.fire('test', 1, 2); // prints 3 to the console
 obj.fire('test', 1, 2); // not going to get handled
+```
 
 #### Parameters
 
@@ -312,7 +339,7 @@ obj.fire('test', 1, 2); // not going to get handled
 | :------ | :------ | :------ |
 | `name` | `string` | Name of the event to bind the callback to. |
 | `callback` | `HandleEventCallback` | Function that is called when event is fired. Note the callback is limited to 8 arguments. |
-| `scope?` | `any` | - |
+| `scope?` | `any` | Object to use as 'this' when the event is fired, defaults to current this. |
 
 #### Returns
 
@@ -320,29 +347,25 @@ obj.fire('test', 1, 2); // not going to get handled
 
 Self for chaining.
 
-#### Defined in
-
-src/libs/libs/create-script-decorator.ts:220
-
 ___
 
 ### postInitialize
 
 ▸ `Optional` **postInitialize**(): `void`
 
-**`function`**
+**`Function`**
 
-**`name`** pc.ScriptType#[postInitialize]
+**`Name`**
 
-**`description`** Called after all initialize methods are executed in the same tick or enabling chain of actions.
+pc.ScriptType#[postInitialize]
+
+**`Description`**
+
+Called after all initialize methods are executed in the same tick or enabling chain of actions.
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-src/libs/libs/create-script-decorator.ts:100
 
 ___
 
@@ -350,11 +373,15 @@ ___
 
 ▸ `Optional` **postUpdate**(`dt`): `void`
 
-**`function`**
+**`Function`**
 
-**`name`** pc.ScriptType#[postUpdate]
+**`Name`**
 
-**`description`** Called for enabled (running state) scripts on each tick, after update.
+pc.ScriptType#[postUpdate]
+
+**`Description`**
+
+Called for enabled (running state) scripts on each tick, after update.
 
 #### Parameters
 
@@ -365,10 +392,6 @@ ___
 #### Returns
 
 `void`
-
-#### Defined in
-
-src/libs/libs/create-script-decorator.ts:114
 
 ___
 
@@ -376,11 +399,15 @@ ___
 
 ▸ `Optional` **swap**(): `void`
 
-**`function`**
+**`Function`**
 
-**`name`** pc.ScriptType#[swap]
+**`Name`**
 
-**`description`** Called when a ScriptType that already exists in the registry
+pc.ScriptType#[swap]
+
+**`Description`**
+
+Called when a ScriptType that already exists in the registry
 gets redefined. If the new ScriptType has a `swap` method in its prototype,
 then it will be executed to perform hot-reload at runtime.
 
@@ -388,21 +415,21 @@ then it will be executed to perform hot-reload at runtime.
 
 `void`
 
-#### Defined in
-
-src/libs/libs/create-script-decorator.ts:122
-
 ___
 
 ### update
 
 ▸ `Optional` **update**(`dt`): `void`
 
-**`function`**
+**`Function`**
 
-**`name`** pc.ScriptType#[update]
+**`Name`**
 
-**`description`** Called for enabled (running state) scripts on each tick.
+pc.ScriptType#[update]
+
+**`Description`**
+
+Called for enabled (running state) scripts on each tick.
 
 #### Parameters
 
@@ -413,7 +440,3 @@ ___
 #### Returns
 
 `void`
-
-#### Defined in
-
-src/libs/libs/create-script-decorator.ts:107

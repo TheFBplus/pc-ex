@@ -2,29 +2,37 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-20 10:49:14
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-20 11:09:51
+ * @ 修改时间: 2022-07-08 18:17:30
  * @ 详情: 拖拽gltf到窗口加载模型
  */
 
 import * as pc from "playcanvas";
 
-import { tool, Tool } from "../../libs/libs";
-import * as MeshoptDecoder from "../../resources/libs/meshopt_decoder";
+import { Tool } from "@/utils/helpers/toolBase";
+import { tool } from "@/utils/helpers/useToolHelper";
 
+import * as MeshoptDecoder from "../../utils/libs/meshopt_decoder";
+
+// 文件类型
 interface File
 {
     url: string,
     filename?: string
 }
-
+// 拖放事件
 type DropHandlerFunc = (files: Array<File>, resetScene: boolean) => void;
-
+// 模型后缀
 const modelExtensions = ['.gltf', '.glb', '.vox'];
 
-type DropGLTFLoaderEvents = "modelLoaded";
-
-@tool
-export class DropGLTFLoader extends Tool<unknown, DropGLTFLoaderEvents>
+/**
+ * 加载器事件-回调表
+ */
+interface DropGLTFLoaderEventsMap
+{
+    modelLoaded: (entity: pc.Entity) => any
+}
+@tool("DropGLTFLoader")
+export class DropGLTFLoader extends Tool<unknown, DropGLTFLoaderEventsMap>
 {
     private dropHandler: DropHandler;
 
@@ -37,12 +45,6 @@ export class DropGLTFLoader extends Tool<unknown, DropGLTFLoaderEvents>
             this.loadFiles(files);
         });
     }
-
-    public override  setOption() { }
-
-    protected override onEnable() { }
-
-    protected override onDisable() { }
 
     private isModelFilename(filename: string): boolean
     {

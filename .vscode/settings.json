@@ -11,7 +11,7 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
-        "node_modules": true,
+        "node_modules": false,
         "package-lock.json": true,
         ".gitignore": true,
         "LICENSE": true,
@@ -20,5 +20,6 @@
         "bin": true,
         ".vscode": true
     },
-    "explorerExclude.backup": null
+    "explorerExclude.backup": null,
+    "npm-scripts.showStartNotification": false
 }

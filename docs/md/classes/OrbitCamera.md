@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- [`Tool`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md)<`OrbitCameraOptions`, `unknown`\>
+- [`Tool`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md)<[`OrbitCameraOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/OrbitCameraOptions.md), `unknown`\>
 
   ↳ **`OrbitCamera`**
 
@@ -16,15 +16,13 @@
 
 ### Properties
 
-- [distanceCondition](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#distancecondition)
+- [app](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#app)
 - [eventHandler](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#eventhandler)
 - [isLooking](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#islooking)
 - [isPaning](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#ispaning)
 - [isRotating](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#isrotating)
-- [lookCondition](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#lookcondition)
-- [mainCamra](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#maincamra)
-- [panCondition](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#pancondition)
-- [rotateCondition](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#rotatecondition)
+- [toolOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#tooloptions)
+- [toolOptionsDefault](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#tooloptionsdefault)
 
 ### Accessors
 
@@ -42,14 +40,15 @@
 - [onDisable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#ondisable)
 - [onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#onenable)
 - [removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#removelistener)
-- [setOption](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#setoption)
+- [setOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#setoptions)
 - [stopInertia](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#stopinertia)
+- [updateOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#updateoptions)
 
 ## Constructors
 
 ### constructor
 
-• **new OrbitCamera**(`option`)
+• **new OrbitCamera**(`options?`)
 
 创建观测相机
 
@@ -57,33 +56,25 @@
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `option` | `OrbitCameraOptions` | 观测相机选项 |
+| `options?` | [`OrbitCameraOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/OrbitCameraOptions.md) | 观测相机选项 |
 
 #### Overrides
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#constructor)
 
-#### Defined in
-
-src/tools/camera/orbitCamera.ts:76
-
 ## Properties
 
-### distanceCondition
+### app
 
-• **distanceCondition**: () => `boolean`
+• **app**: `AppBase`
 
-#### Type declaration
+#### Inherited from
 
-▸ (): `boolean`
-
-##### Returns
-
-`boolean`
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[app](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#app)
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:44
+src/utils/helpers/toolBase.ts:22
 
 ___
 
@@ -97,7 +88,7 @@ ___
 
 #### Defined in
 
-src/libs/libs/toolHelper.ts:60
+src/utils/helpers/toolBase.ts:23
 
 ___
 
@@ -107,7 +98,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:41
+src/tools/camera/orbitCamera.ts:73
 
 ___
 
@@ -117,7 +108,7 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:40
+src/tools/camera/orbitCamera.ts:72
 
 ___
 
@@ -127,71 +118,35 @@ ___
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:39
+src/tools/camera/orbitCamera.ts:71
 
 ___
 
-### lookCondition
+### toolOptions
 
-• **lookCondition**: () => `boolean`
+• **toolOptions**: [`OrbitCameraOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/OrbitCameraOptions.md)
 
-#### Type declaration
+#### Inherited from
 
-▸ (): `boolean`
-
-##### Returns
-
-`boolean`
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[toolOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#tooloptions)
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:46
+src/utils/helpers/toolBase.ts:26
 
 ___
 
-### mainCamra
+### toolOptionsDefault
 
-• **mainCamra**: `CameraComponent`
+• `Protected` **toolOptionsDefault**: [`OrbitCameraOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/OrbitCameraOptions.md)
 
-#### Defined in
+#### Overrides
 
-src/tools/camera/orbitCamera.ts:37
-
-___
-
-### panCondition
-
-• **panCondition**: () => `boolean`
-
-#### Type declaration
-
-▸ (): `boolean`
-
-##### Returns
-
-`boolean`
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[toolOptionsDefault](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#tooloptionsdefault)
 
 #### Defined in
 
-src/tools/camera/orbitCamera.ts:45
-
-___
-
-### rotateCondition
-
-• **rotateCondition**: () => `boolean`
-
-#### Type declaration
-
-▸ (): `boolean`
-
-##### Returns
-
-`boolean`
-
-#### Defined in
-
-src/tools/camera/orbitCamera.ts:43
+src/tools/camera/orbitCamera.ts:55
 
 ## Accessors
 
@@ -205,13 +160,7 @@ src/tools/camera/orbitCamera.ts:43
 
 `AvailableDevices`
 
-#### Defined in
-
-src/tools/camera/orbitCamera.ts:183
-
 • `set` **device**(`value`): `void`
-
-输入设备
 
 #### Parameters
 
@@ -222,10 +171,6 @@ src/tools/camera/orbitCamera.ts:183
 #### Returns
 
 `void`
-
-#### Defined in
-
-src/tools/camera/orbitCamera.ts:187
 
 ___
 
@@ -239,13 +184,7 @@ ___
 
 `number`
 
-#### Defined in
-
-src/tools/camera/orbitCamera.ts:159
-
 • `set` **distance**(`value`): `void`
-
-离焦点的距离
 
 #### Parameters
 
@@ -256,10 +195,6 @@ src/tools/camera/orbitCamera.ts:159
 #### Returns
 
 `void`
-
-#### Defined in
-
-src/tools/camera/orbitCamera.ts:163
 
 ___
 
@@ -276,10 +211,6 @@ ___
 #### Inherited from
 
 Tool.enabled
-
-#### Defined in
-
-src/libs/libs/toolHelper.ts:85
 
 • `set` **enabled**(`value`): `void`
 
@@ -299,10 +230,6 @@ src/libs/libs/toolHelper.ts:85
 
 Tool.enabled
 
-#### Defined in
-
-src/libs/libs/toolHelper.ts:76
-
 ___
 
 ### pitch
@@ -315,13 +242,7 @@ ___
 
 `number`
 
-#### Defined in
-
-src/tools/camera/orbitCamera.ts:147
-
 • `set` **pitch**(`value`): `void`
-
-俯视角
 
 #### Parameters
 
@@ -332,10 +253,6 @@ src/tools/camera/orbitCamera.ts:147
 #### Returns
 
 `void`
-
-#### Defined in
-
-src/tools/camera/orbitCamera.ts:151
 
 ___
 
@@ -349,13 +266,7 @@ ___
 
 `Vec3`
 
-#### Defined in
-
-src/tools/camera/orbitCamera.ts:171
-
 • `set` **pivotPoint**(`value`): `void`
-
-焦点坐标
 
 #### Parameters
 
@@ -366,10 +277,6 @@ src/tools/camera/orbitCamera.ts:171
 #### Returns
 
 `void`
-
-#### Defined in
-
-src/tools/camera/orbitCamera.ts:175
 
 ___
 
@@ -383,13 +290,7 @@ ___
 
 `number`
 
-#### Defined in
-
-src/tools/camera/orbitCamera.ts:125
-
 • `set` **yaw**(`value`): `void`
-
-航向角
 
 #### Parameters
 
@@ -401,24 +302,26 @@ src/tools/camera/orbitCamera.ts:125
 
 `void`
 
-#### Defined in
-
-src/tools/camera/orbitCamera.ts:129
-
 ## Methods
 
 ### addListener
 
-▸ **addListener**(`eventName`, `callback`, `scope?`): `void`
+▸ **addListener**<`K`\>(`eventName`, `callback`, `scope?`): `void`
 
 添加事件监听
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | extends `never` |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `eventName` | `unknown` | 监听事件名称 |
-| `callback` | `Function` | 回调 |
+| `eventName` | `K` | 监听事件名称 |
+| `callback` | `unknown` | 回调 |
 | `scope?` | `any` | 范围 |
 
 #### Returns
@@ -428,10 +331,6 @@ src/tools/camera/orbitCamera.ts:129
 #### Inherited from
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[addListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#addlistener)
-
-#### Defined in
-
-src/libs/libs/toolHelper.ts:96
 
 ___
 
@@ -451,10 +350,6 @@ ___
 
 `void`
 
-#### Defined in
-
-src/tools/camera/orbitCamera.ts:211
-
 ___
 
 ### onDisable
@@ -468,10 +363,6 @@ ___
 #### Overrides
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[onDisable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#ondisable)
-
-#### Defined in
-
-src/tools/camera/orbitCamera.ts:395
 
 ___
 
@@ -487,24 +378,26 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#onenable)
 
-#### Defined in
-
-src/tools/camera/orbitCamera.ts:381
-
 ___
 
 ### removeListener
 
-▸ **removeListener**(`eventName`, `callback`, `scope?`): `void`
+▸ **removeListener**<`K`\>(`eventName`, `callback`, `scope?`): `void`
 
 移除事件监听
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | extends `never` |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `eventName` | `unknown` | 监听事件名称 |
-| `callback` | `Function` | 回调 |
+| `eventName` | `K` | 监听事件名称 |
+| `callback` | `unknown` | 回调 |
 | `scope?` | `any` | 范围 |
 
 #### Returns
@@ -515,35 +408,27 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#removelistener)
 
-#### Defined in
-
-src/libs/libs/toolHelper.ts:107
-
 ___
 
-### setOption
+### setOptions
 
-▸ **setOption**(`option`): `void`
+▸ **setOptions**(`options`): `void`
 
-设置观测相机选项
+设置选项
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `option` | `OrbitCameraOptions` | 观测相机选项 |
+| `options` | [`OrbitCameraOptions`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/OrbitCameraOptions.md) | 选项 |
 
 #### Returns
 
 `void`
 
-#### Overrides
+#### Inherited from
 
-[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[setOption](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#setoption)
-
-#### Defined in
-
-src/tools/camera/orbitCamera.ts:104
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[setOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#setoptions)
 
 ___
 
@@ -557,6 +442,37 @@ ___
 
 `void`
 
-#### Defined in
+___
 
-src/tools/camera/orbitCamera.ts:231
+### updateOptions
+
+▸ **updateOptions**(`options`): `void`
+
+更新选项
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `options` | `Object` | 选项 |
+| `options.device?` | `AvailableDevices` | - |
+| `options.distanceCondition?` | () => `boolean` | - |
+| `options.distanceMax?` | `number` | - |
+| `options.distanceMin?` | `number` | - |
+| `options.distanceSensitivity?` | `number` | - |
+| `options.inertiaFactor?` | `number` | - |
+| `options.lookCondition?` | () => `boolean` | - |
+| `options.mainCamra?` | `CameraComponent` | - |
+| `options.orbitSensitivity?` | `number` | - |
+| `options.panCondition?` | () => `boolean` | - |
+| `options.pitchMax?` | `number` | - |
+| `options.pitchMin?` | `number` | - |
+| `options.rotateCondition?` | () => `boolean` | - |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[updateOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#updateoptions)

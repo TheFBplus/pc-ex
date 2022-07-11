@@ -2,15 +2,15 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 15:36:25
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-08 17:36:41
+ * @ 修改时间: 2022-07-10 15:07:46
  * @ 详情: 每帧绘制直线
  */
 
 import * as pc from "playcanvas";
 
-let lines = new Array<pc.HandleEventCallback>();
+import GlobalVariables from "@/utils/common/GlobalVariables";
 
-const app = pc.Application.getApplication();
+let lines = new Array<pc.HandleEventCallback>();
 
 export class DebugLine
 {
@@ -24,10 +24,10 @@ export class DebugLine
     {
         let renderLine = function ()
         {
-            app.drawLine(start, end, color || pc.Color.WHITE);
+            GlobalVariables.app.drawLine(start, end, color || pc.Color.WHITE);
         }
 
-        app.on("update", renderLine);
+        GlobalVariables.app.on("update", renderLine);
         lines.push(renderLine);
     }
 
@@ -38,7 +38,7 @@ export class DebugLine
     {
         lines.forEach(line =>
         {
-            app.off("update", line);
+            GlobalVariables.app.off("update", line);
         });
         lines = [];
     }

@@ -14,10 +14,17 @@ export { Vec4_EX } from "./extensions/vec4";
 // tools
 export { OrbitCamera, OrbitCameraInputOption, OrbitCameraInput_Mouse, OrbitCameraInput_TouchScreen, OrbitCameraOptions } from "./tools/camera/orbitCamera";
 export { OutlineCamera, outlineCameraOptions } from "./tools/camera/outlineCamera";
-export { InputEventsMap, MouseInputer, MouseInputOptions } from "./tools/input/mouseInput";
+export { MouseInputer, MouseInputOptions } from "./tools/input/mouseInput";
 export { DropGLTFLoader } from "./tools/loaders/dropGLTFLoader";
+export { PathCurve, PathCurveOptions } from "./tools/pathCurve";
+export { HandleType, PivotType } from "./tools/runtimeTransformHandle/common/enum";
+export { RTH_RuntimeGrid, RuntimeGridOptions } from "./tools/runtimeTransformHandle/features/runtimeGrid";
+export { KeyboardInputOptions, RTH_KeyboardInputer } from "./tools/runtimeTransformHandle/input/keyboardInput";
+export { RTHOptions, RuntimeTransformHandle } from "./tools/runtimeTransformHandle/runtimeTransformHandle";
+export { MultiSelector, MultiSelectorOptions } from "./tools/selector/multiSelector";
 export { Selector, SelectorOptions } from "./tools/selector/selector";
 // utils
+export { InputEventsMap } from "./utils/common/InputEventsMap";
 export { DebugLine } from "./utils/func/debugLine";
 export { drawScreenQuad } from "./utils/func/drawSelectionBox/drawScreenQuad";
 export { drawScreenRect } from "./utils/func/drawSelectionBox/drawScreenRect";

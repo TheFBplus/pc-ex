@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 17:03:58
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-08 17:43:08
+ * @ 修改时间: 2022-07-11 21:11:49
  * @ 详情: 观测相机
  */
 
@@ -49,7 +49,7 @@ export interface OrbitCameraInputOption
 };
 
 @tool("OrbitCamera")
-export class OrbitCamera extends Tool<OrbitCameraOptions, unknown>
+export class OrbitCamera extends Tool<OrbitCameraOptions, any>
 {
     // 默认选项
     protected toolOptionsDefault: OrbitCameraOptions = {
@@ -421,7 +421,7 @@ export class OrbitCamera extends Tool<OrbitCameraOptions, unknown>
  * 观测相机鼠标输入
  */
 @tool("OrbitCameraInput_Mouse")
-export class OrbitCameraInput_Mouse extends Tool<OrbitCameraInputOption, unknown>
+export class OrbitCameraInput_Mouse extends Tool<OrbitCameraInputOption, any>
 {
     // 默认选项
     protected toolOptionsDefault: OrbitCameraInputOption = {
@@ -577,7 +577,7 @@ export class OrbitCameraInput_Mouse extends Tool<OrbitCameraInputOption, unknown
  * 观测相机触摸屏输入
  */
 @tool("OrbitCameraInput_TouchScreen")
-export class OrbitCameraInput_TouchScreen extends Tool<OrbitCameraInputOption, unknown>
+export class OrbitCameraInput_TouchScreen extends Tool<OrbitCameraInputOption, any>
 {
     // 默认选项
     protected toolOptionsDefault: OrbitCameraInputOption = {

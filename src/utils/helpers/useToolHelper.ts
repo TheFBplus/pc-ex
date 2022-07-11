@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 16:09:29
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-08 18:44:09
+ * @ 修改时间: 2022-07-11 21:12:26
  * @ 详情: 工具类扩展辅助
  */
 
@@ -13,6 +13,17 @@ import {
 import { OutlineCamera, outlineCameraOptions } from "@/tools/camera/outlineCamera";
 import { MouseInputer, MouseInputOptions } from "@/tools/input/mouseInput";
 import { DropGLTFLoader } from "@/tools/loaders/dropGLTFLoader";
+import { PathCurve, PathCurveOptions } from "@/tools/pathCurve";
+import {
+    RTH_RuntimeGrid, RuntimeGridOptions
+} from "@/tools/runtimeTransformHandle/features/runtimeGrid";
+import {
+    KeyboardInputOptions, RTH_KeyboardInputer
+} from "@/tools/runtimeTransformHandle/input/keyboardInput";
+import {
+    RTHOptions, RuntimeTransformHandle
+} from "@/tools/runtimeTransformHandle/runtimeTransformHandle";
+import { MultiSelector, MultiSelectorOptions } from "@/tools/selector/multiSelector";
 import { Selector, SelectorOptions } from "@/tools/selector/selector";
 
 import { Tool } from "./toolBase";
@@ -26,7 +37,12 @@ interface ToolName
     OutlineCamera: OutlineCamera;
     MouseInputer: MouseInputer;
     DropGLTFLoader: DropGLTFLoader;
-    Selector: Selector
+    Selector: Selector;
+    MultiSelector: MultiSelector;
+    PathCurve: PathCurve;
+    RTH_RuntimeGrid: RTH_RuntimeGrid;
+    RTH_KeyboardInputer: RTH_KeyboardInputer;
+    RuntimeTransformHandle: RuntimeTransformHandle;
 }
 
 // 工具选项
@@ -39,13 +55,18 @@ interface ToolOptions
     MouseInputer: MouseInputOptions;
     DropGLTFLoader: null;
     Selector: SelectorOptions;
+    MultiSelector: MultiSelectorOptions;
+    PathCurve: PathCurveOptions;
+    RTH_RuntimeGrid: RuntimeGridOptions;
+    RTH_KeyboardInputer: KeyboardInputOptions;
+    RuntimeTransformHandle: RTHOptions;
 }
 
 // 保存tool名-构造函数图
 const toolNameMap: Map<string, new (options: any) => any> = new Map<string, new (options: any) => any>();
 
 // 保存全局tool
-const toolMap: Map<string, Tool<unknown, unknown>> = new Map<string, Tool<unknown, unknown>>();
+const toolMap: Map<string, Tool<any, any>> = new Map<string, Tool<any, any>>();
 
 /**
  * 工具装饰器，用于将工具添加至工具表中方便调用

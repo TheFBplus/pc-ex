@@ -1,201 +1,228 @@
-// /**
-//  * @ 创建者: FBplus
-//  * @ 创建时间: 2022-05-16 14:30:00
-//  * @ 修改者: FBplus
-//  * @ 修改时间: 2022-06-20 11:10:47
-//  * @ 详情: 多选模型
-//  */
+/**
+ * @ 创建者: FBplus
+ * @ 创建时间: 2022-05-16 14:30:00
+ * @ 修改者: FBplus
+ * @ 修改时间: 2022-07-11 21:12:07
+ * @ 详情: 多选模型
+ */
 
-// import * as pc from "playcanvas";
+import * as pc from "playcanvas";
 
-// import { Tool } from "../../libs/libs/toolHelper";
-// import { PCNode } from "../../resources/types/common";
-// import {
-//     clearSelectionBox, drawSelectionBox
-// } from "../../utils/utils/drawSelectionBox/drawSelectionBox";
+import {
+    clearSelectionBox, drawSelectionBox
+} from "@/utils/func/drawSelectionBox/drawSelectionBox";
+import { Tool } from "@/utils/helpers/toolBase";
+import { tool, use } from "@/utils/helpers/useToolHelper";
 
-// type InputEvents = "down" | "move" | "click" | "up" | "pinch" | "dragging" | "dragEnd";
-// type MultiSelectorEventType = "selectStart" | "selecting" | "selectEnd";
-// type SelectorOptions = {
-//     inputHandler: Tool<unknown, InputEvents>;
-//     pickCamera?: pc.CameraComponent;
-//     pickAreaScale?: number;
-//     boxLayer?: pc.Layer;
-//     excludeLayers?: pc.Layer[];
-//     expectCondition?: () => boolean
-// };
+import { InputEventsMap } from "../../utils/common/InputEventsMap";
 
-// export class MultiSelector extends Tool<SelectorOptions, MultiSelectorEventType>
-// {
-//     private picker: pc.Picker;
-//     private pickAreaScale: number;
-//     private boxLayer: pc.Layer;
-//     private pickLayers: pc.Layer[];
-//     private expectCondition: () => boolean;
-//     private pickCamera: pc.CameraComponent;
+/**
+ * 模型多选事件-回调表
+ */
+interface MultiSelectorEventType
+{
+    selectStart: () => any;
+    selecting: (selectedNodes: pc.GraphNode[], preSelectedNodes: pc.GraphNode[]) => any;
+    selectEnd: () => any;
+};
 
-//     private pickRect: pc.Vec4;
-//     private inputHander: Tool<unknown, InputEvents>;
+/**
+ * 模型多选选项
+ */
+export interface MultiSelectorOptions
+{
+    inputHandler?: Tool<any, InputEventsMap>;
+    pickCamera?: pc.CameraComponent;
+    pickAreaScale?: number;
+    boxLayer?: pc.Layer;
+    excludeLayers?: pc.Layer[];
+    expectCondition?: () => boolean
+};
 
-//     private isSelecting: boolean = false;
-//     private pickNodes: PCNode[] = [];
+@tool("MultiSelector")
+export class MultiSelector extends Tool<MultiSelectorOptions, MultiSelectorEventType>
+{
+    // 默认选项
+    protected toolOptionsDefault: MultiSelectorOptions = {
+        inputHandler: use("MouseInputer"),
+        pickCamera: this.app.systems.camera.cameras[0],
+        pickAreaScale: 0.25,
+        boxLayer: this.app.scene.layers.getLayerByName("UI"),
+        excludeLayers: [this.app.scene.layers.getLayerByName("UI")],
+        expectCondition: null
+    };
 
-//     constructor(option: SelectorOptions)
-//     {
-//         super();
+    private picker: pc.Picker;
+    private pickLayers: pc.Layer[];
+    private pickRect: pc.Vec4;
+    private isSelecting: boolean = false;
+    private pickNodes: pc.GraphNode[] = [];
 
-//         this.picker = new pc.Picker(pc.app, 0, 0);
-//         this.pickRect = new pc.Vec4();
+    constructor(options: MultiSelectorOptions)
+    {
+        super();
 
-//         this.setOption(option);
-//     }
+        this.picker = new pc.Picker(this.app, 0, 0);
+        this.pickRect = new pc.Vec4();
 
-//     /**
-//      * 设置多选模型选项
-//      * @param option 多选模型选项
-//      */
-//     public override setOption(option: SelectorOptions): void
-//     {
-//         this.inputHander = option.inputHandler;
-//         this.pickCamera = option?.pickCamera ?? pc.app.context.systems.camera.cameras[0];
-//         this.pickAreaScale = option?.pickAreaScale ?? 0.25;
-//         this.boxLayer = option?.boxLayer ?? pc.app.scene.layers.getLayerByName("UI");
-//         this.pickLayers = option?.excludeLayers ? pc.app.scene.layers.layerList.filter((layer: pc.Layer) => !option.excludeLayers.includes(layer)) : pc.app.scene.layers.layerList;
-//         this.expectCondition = option?.expectCondition;
-//     }
+        this.setOptions(options);
+    }
 
-//     /**
-//      * 根据框选区域选择模型
-//      * @param rect 框选区域
-//      */
-//     private pick(rect: pc.Vec4): void
-//     {
-//         const canvas = pc.app.graphicsDevice.canvas;
-//         const canvasWidth = canvas.clientWidth;
-//         const canvasHeight = canvas.clientHeight;
+    /**
+     * 设置多选模型选项
+     * @param option 多选模型选项
+     */
+    public override setOptions(options: MultiSelectorOptions): void
+    {
+        super.setOptions(options);
 
-//         this.picker.resize(canvasWidth * this.pickAreaScale, canvasHeight * this.pickAreaScale);
-//         this.picker.prepare(this.pickCamera, pc.app.scene, this.pickLayers);
-//         const error = 3; // TODO:查看引擎源码，找到此处判断存在误差的原因
-//         const selected = this.picker.getSelection(pc.math.clamp(rect.x, 0, canvasWidth) * this.pickAreaScale, pc.math.clamp(rect.y, 0, canvasHeight) * this.pickAreaScale, Math.min(canvasWidth - rect.x - error, rect.z) * this.pickAreaScale, Math.min(canvasHeight - rect.y - error, rect.w) * this.pickAreaScale);
+        this.pickLayers = this.toolOptions.excludeLayers
+            ? this.app.scene.layers.layerList.filter((layer: pc.Layer) => !this.toolOptions.excludeLayers.includes(layer))
+            : this.app.scene.layers.layerList;
+    }
 
-//         if (selected.length > 0) {
-//             const pickNodes: PCNode[] = [];
-//             selected.forEach(meshInstance =>
-//             {
-//                 if (meshInstance && meshInstance.node) {
-//                     pickNodes.push(meshInstance.node);
-//                 }
-//             });
-//             if (!this.isNodesEqual(this.pickNodes, pickNodes)) {
-//                 const prePickNodes = [...this.pickNodes];
-//                 this.eventHandler.fire("selecting", this.updatePickNodes(pickNodes), prePickNodes);
-//             }
-//         }
-//         else {
-//             this.eventHandler.fire("selecting", [], this.pickNodes);
-//             this.pickNodes = [];
-//         }
-//     }
+    /**
+     * 根据框选区域选择模型
+     * @param rect 框选区域
+     */
+    private pick(rect: pc.Vec4): void
+    {
+        const options = this.toolOptions;
+        const canvas = pc.app.graphicsDevice.canvas;
+        const canvasWidth = canvas.clientWidth;
+        const canvasHeight = canvas.clientHeight;
 
-//     /**
-//      * 框选时使用增量更新
-//      * @param nodes 框选node集合
-//      * @returns 增量更新后的node集合
-//      */
-//     private updatePickNodes(nodes: PCNode[]): PCNode[]
-//     {
-//         const oriLength = this.pickNodes.length;
-//         const newLength = nodes.length;
-//         if (newLength > oriLength) {
-//             for (let i = 0; i < newLength; i++) {
-//                 const e = nodes[i];
-//                 if (!this.pickNodes.includes(e)) {
-//                     this.pickNodes.push(e);
-//                 }
-//             }
-//         }
-//         else {
-//             for (let i = oriLength - 1; i >= 0; i--) {
-//                 const e = this.pickNodes[i];
-//                 if (!nodes.includes(e)) {
-//                     this.pickNodes.pop();
-//                 }
-//             }
-//         }
-//         return [...this.pickNodes];
-//     }
+        this.picker.resize(canvasWidth * options.pickAreaScale, canvasHeight * options.pickAreaScale);
+        this.picker.prepare(options.pickCamera, pc.app.scene, this.pickLayers);
+        const error = 3; // TODO:查看引擎源码，找到此处判断存在误差的原因
+        const selected = this.picker.getSelection(
+            pc.math.clamp(rect.x, 0, canvasWidth) * options.pickAreaScale,
+            pc.math.clamp(rect.y, 0, canvasHeight) * options.pickAreaScale,
+            Math.min(canvasWidth - rect.x - error, rect.z) * options.pickAreaScale,
+            Math.min(canvasHeight - rect.y - error, rect.w) * options.pickAreaScale
+        );
 
-//     /**
-//      * 判断两个节点数组是否无序相等
-//      * @param arr1 数组1
-//      * @param arr2 数组2
-//      * @returns 两数组是否无序相等
-//      */
-//     private isNodesEqual(arr1: Array<PCNode>, arr2: Array<PCNode>): boolean
-//     {
-//         if (arr1.length != arr2.length) {
-//             return false;
-//         }
+        if (selected.length > 0) {
+            const pickNodes: pc.GraphNode[] = [];
+            selected.forEach(meshInstance =>
+            {
+                if (meshInstance && meshInstance.node) {
+                    pickNodes.push(meshInstance.node);
+                }
+            });
+            if (!this.isNodesEqual(this.pickNodes, pickNodes)) {
+                const prePickNodes = [...this.pickNodes];
+                this.eventHandler.fire("selecting", this.updatePickNodes(pickNodes), prePickNodes);
+            }
+        }
+        else {
+            this.eventHandler.fire("selecting", [], this.pickNodes);
+            this.pickNodes = [];
+        }
+    }
 
-//         let isEqual = true;
-//         arr1.forEach(e1 =>
-//         {
-//             if (!arr2.includes(e1)) {
-//                 isEqual = false;
-//             }
-//         });
+    /**
+     * 框选时使用增量更新
+     * @param nodes 框选node集合
+     * @returns 增量更新后的node集合
+     */
+    private updatePickNodes(nodes: pc.GraphNode[]): pc.GraphNode[]
+    {
+        const oriLength = this.pickNodes.length;
+        const newLength = nodes.length;
+        if (newLength > oriLength) {
+            for (let i = 0; i < newLength; i++) {
+                const e = nodes[i];
+                if (!this.pickNodes.includes(e)) {
+                    this.pickNodes.push(e);
+                }
+            }
+        }
+        else {
+            for (let i = oriLength - 1; i >= 0; i--) {
+                const e = this.pickNodes[i];
+                if (!nodes.includes(e)) {
+                    this.pickNodes.pop();
+                }
+            }
+        }
+        return [...this.pickNodes];
+    }
 
-//         return isEqual;
-//     }
+    /**
+     * 判断两个节点数组是否无序相等
+     * @param arr1 数组1
+     * @param arr2 数组2
+     * @returns 两数组是否无序相等
+     */
+    private isNodesEqual(arr1: Array<pc.GraphNode>, arr2: Array<pc.GraphNode>): boolean
+    {
+        if (arr1.length != arr2.length) {
+            return false;
+        }
 
-//     /**
-//      * 按键按下事件回调
-//      * @param event 按键按下事件
-//      */
-//     private onControlDown(event: { x: number, y: number }): void
-//     {
-//         if (!this.expectCondition || !this.expectCondition()) {
-//             this.isSelecting = true;
-//             this.eventHandler.fire("selectStart");
-//         }
-//     }
+        let isEqual = true;
+        arr1.forEach(e1 =>
+        {
+            if (!arr2.includes(e1)) {
+                isEqual = false;
+            }
+        });
 
-//     /**
-//      * 拖拽中调用
-//      * @param event 拖拽中事件
-//      * @returns 
-//      */
-//     private onDragging(event: { x: number, y: number, ox: number, oy: number }): void
-//     {
-//         if (!this.isSelecting || this.expectCondition && this.expectCondition()) { return; }
+        return isEqual;
+    }
 
-//         this.pickRect.copy(drawSelectionBox({ x: event.ox, y: event.oy }, { x: event.x, y: event.y }, this.boxLayer));
-//         this.pick(this.pickRect);
-//     }
+    /**
+     * 按键按下事件回调
+     * @param event 按键按下事件
+     */
+    private onControlDown(event: { x: number, y: number }): void
+    {
+        const options = this.toolOptions;
+        if (!options.expectCondition || !options.expectCondition()) {
+            this.isSelecting = true;
+            this.eventHandler.fire("selectStart");
+        }
+    }
 
-//     /**
-//      * 拖拽结束时调用
-//      * @param event 拖拽结束事件
-//      */
-//     private onDragEnd(event: { x: number, y: number }): void
-//     {
-//         clearSelectionBox();
-//         this.isSelecting = false;
-//         this.eventHandler.fire("selectEnd");
-//     }
+    /**
+     * 拖拽中调用
+     * @param event 拖拽中事件
+     * @returns 
+     */
+    private onDragging(event: { x: number, y: number, ox: number, oy: number }): void
+    {
+        const options = this.toolOptions;
+        if (!this.isSelecting || options.expectCondition && options.expectCondition()) { return; }
 
-//     protected override onEnable(): void
-//     {
-//         this.inputHander.addListener("down", this.onControlDown, this);
-//         this.inputHander.addListener("dragging", this.onDragging, this);
-//         this.inputHander.addListener("dragEnd", this.onDragEnd, this);
-//     }
+        this.pickRect.copy(drawSelectionBox({ x: event.ox, y: event.oy }, { x: event.x, y: event.y }, options.boxLayer));
+        this.pick(this.pickRect);
+    }
 
-//     protected override onDisable(): void
-//     {
-//         this.inputHander.removeListener("down", this.onControlDown, this);
-//         this.inputHander.removeListener("dragging", this.onDragging, this);
-//         this.inputHander.removeListener("dragEnd", this.onDragEnd, this);
-//     }
-// }
+    /**
+     * 拖拽结束时调用
+     * @param event 拖拽结束事件
+     */
+    private onDragEnd(event: { x: number, y: number }): void
+    {
+        clearSelectionBox();
+        this.isSelecting = false;
+        this.eventHandler.fire("selectEnd");
+    }
+
+    protected override onEnable(): void
+    {
+        const inputHandler = this.toolOptions.inputHandler;
+        inputHandler.addListener("down", this.onControlDown, this);
+        inputHandler.addListener("dragging", this.onDragging, this);
+        inputHandler.addListener("dragEnd", this.onDragEnd, this);
+    }
+
+    protected override onDisable(): void
+    {
+        const inputHandler = this.toolOptions.inputHandler;
+        inputHandler.removeListener("down", this.onControlDown, this);
+        inputHandler.removeListener("dragging", this.onDragging, this);
+        inputHandler.removeListener("dragEnd", this.onDragEnd, this);
+    }
+}

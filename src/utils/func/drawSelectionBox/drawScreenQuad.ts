@@ -2,20 +2,20 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-05-16 09:46:02
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-08 17:19:54
+ * @ 修改时间: 2022-07-10 15:09:10
  * @ 详情: 在屏幕空间绘制方片
  */
 
 import * as pc from "playcanvas";
 
 import { Color_EX } from "@/extensions/color";
+import GlobalVariables from "@/utils/common/GlobalVariables";
 import { cast } from "@/utils/helpers/extend-decorator";
 import fs from "@/utils/shaders/screenQuad/ScreenQuadPS.frag";
 import vs from "@/utils/shaders/screenQuad/ScreenQuadVS.vert";
 
 const defaultRect = new pc.Vec4(0, 0, 1, 1);
 const defaultColor = pc.Color.WHITE.clone();
-const app = pc.Application.getApplication();
 
 let quadShader: pc.Shader;
 let quadMesh: pc.Mesh;
@@ -97,7 +97,7 @@ function createQuadEntity(rect: pc.Vec4, color: pc.Color, layer?: pc.Layer): pc.
         entity.render.layers = [quadLayer.id];
     }
 
-    app.root.addChild(entity);
+    GlobalVariables.app.root.addChild(entity);
 
     return entity;
 }
@@ -117,7 +117,7 @@ function createQuadShader(): pc.Shader
         fshader: fs
     };
 
-    quadShader = new pc.Shader(app.graphicsDevice, shaderDefinition);
+    quadShader = new pc.Shader(GlobalVariables.app.graphicsDevice, shaderDefinition);
 
     return quadShader;
 }
@@ -139,7 +139,7 @@ function updateQuadMesh(rect: pc.Vec4 = new pc.Vec4(0, 0, 1, 1)): pc.Mesh
     const normals = pc.calculateNormals(positions, indices);
 
     if (!quadMesh) {
-        quadMesh = new pc.Mesh(app.graphicsDevice);
+        quadMesh = new pc.Mesh(GlobalVariables.app.graphicsDevice);
         quadMesh.clear(true, false);
     }
 

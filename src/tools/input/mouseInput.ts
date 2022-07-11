@@ -2,28 +2,16 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 17:01:01
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-08 18:30:05
+ * @ 修改时间: 2022-07-09 10:37:51
  * @ 详情: 鼠标操作
  */
 
 import * as pc from "playcanvas";
 
+import { InputEventsMap } from "@/utils/common/InputEventsMap";
 import { Tool } from "@/utils/helpers/toolBase";
 import { tool } from "@/utils/helpers/useToolHelper";
 
-/**
- * 输入事件-回调表
- */
-export interface InputEventsMap
-{
-    down: (event: { x: number, y: number }) => any;
-    move: (evemt: { x: number, y: number, dx: number, dy: number }) => any;
-    click: (event: { x: number, y: number }) => any;
-    up: (event: { x: number, y: number }) => any;
-    pinch: (event: { delta: number, event: MouseEvent }) => any;
-    dragging: (event: { x: number, y: number, dx: number, dy: number, ox: number, oy: number }) => any;
-    dragEnd: (event: { x: number, y: number }) => any;
-}
 /**
  * 鼠标输入选项
  */

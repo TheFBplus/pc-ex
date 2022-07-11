@@ -2,21 +2,19 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2021-12-01 10:08:17
  * @ 修改者: FBplus
- * @ 修改时间: 2022-06-29 09:44:48
+ * @ 修改时间: 2022-07-10 22:03:27
  * @ 详情: Runtime Transform Handle
  */
 
 import * as pc from "playcanvas";
 
-import { Tool, use } from "../../libs/libs/toolHelper";
+import { Tool } from "@/utils/helpers/toolBase";
+import { tool, use } from "@/utils/helpers/useToolHelper";
+
 import { OrbitCamera } from "../camera/orbitCamera";
 import { OutlineCamera } from "../camera/outlineCamera";
-import { MouseInputer } from "../input/mouseInput";
-import { MultiSelector } from "../selector/multiSelector";
-import { Selector } from "../selector/selector";
 import { HandleType, PivotType } from "./common/enum";
-import RTH_RuntimeGrid, { GridLayer } from "./features/runtimeGrid";
-import RTH_KeyboardInputer from "./input/keyboardInput";
+import { GridLayer } from "./features/runtimeGrid";
 import {
     Axis, generateRotatioHandle, generateScaleHandle, generateTranslationHandle, HandleMap,
     RTHLayer, SelectType
@@ -29,7 +27,8 @@ import MeshRaycaster from "./utils/meshRaycaster";
 import Recorder, { Record } from "./utils/recorder";
 
 // RTH选项
-type RTHOptions = {
+export interface RTHOptions
+{
     mainCamera: pc.CameraComponent;
     selectTags?: string;
     selectNull?: boolean;
@@ -41,21 +40,30 @@ type RTHOptions = {
     showGrid?: boolean;
     multiSelect?: boolean;
 };
-// 回调事件
-type RTHEvents = "select" | "focus";
 
-export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
+// RTH-回调表
+interface RTHEventsMap
 {
-    public camera: pc.CameraComponent;
-    private selectTags: string;
-    private selectNull: boolean;
-    private selectCondition: () => boolean;
-    private enableHotKey: boolean;
-    private enableUndoRedo: boolean;
-    private showHandle: boolean;
-    private showOutline: boolean;
-    private showGrid: boolean;
-    private multiSelect: boolean;
+    select: (selectedNodes: pc.Entity[]) => any;
+    focus: (selectedNodes: pc.Entity[]) => any;
+}
+
+@tool("RuntimeTransformHandle")
+export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEventsMap>
+{
+    // 默认选项
+    protected toolOptionsDefault: RTHOptions = {
+        mainCamera: this.app.systems.camera.cameras[0],
+        selectTags: null,
+        selectNull: true,
+        selectCondition: null,
+        enableHotKey: true,
+        enableUndoRedo: true,
+        showHandle: true,
+        showOutline: true,
+        showGrid: true,
+        multiSelect: true
+    };
 
     // 物体实例
     private transformHandle: pc.Entity;
@@ -158,7 +166,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
     {
         super();
 
-        this.setOption(options);
+        this.setOptions(options);
 
         // 创建handle
         this.transformHandle = new pc.Entity("transformHandle");
@@ -217,38 +225,39 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
         Recorder.init(this.record); // 初始化操作记录
         MeshRaycaster.generateTriangles(); // 生成用于射线检测的三角形
 
+        const toolOptions = this.toolOptions;
         // 使用描边相机，用于选中模型时的高亮显示
-        this.outLineCamera = use(OutlineCamera, { mainCamra: this.camera, outlineColor: this.outLineColor });
+        this.outLineCamera = use("OutlineCamera", { mainCamra: toolOptions.mainCamera, outlineColor: this.outLineColor });
 
         // 使用grid
-        this.showGrid && use(RTH_RuntimeGrid, { mainCamera: this.camera });
+        toolOptions.showGrid && use("RTH_RuntimeGrid", { mainCamera: toolOptions.mainCamera });
         // // 使用gizmo
         // const gizmo = use(RTH_RuntimeGizmo);
 
         // 获取UILayer
-        const UILayer = pc.app.scene.layers.getLayerByName("UI");
+        const UILayer = this.app.scene.layers.getLayerByName("UI");
         // 监听鼠标
-        if (pc.app.mouse) {
+        if (this.app.mouse) {
             // 使用鼠标输入监听器，监听鼠标
-            const mouseInputer = use(MouseInputer);
+            const mouseInputer = use("MouseInputer");
 
             // 使用观测相机，实现基本视角操作
-            this.orbitCamera = use(OrbitCamera, { mainCamra: this.camera, device: pc.app.touch ? "touchScreen" : "mouse", rotateCondition: () => (!this.multiSelect || pc.app.keyboard.isPressed(pc.KEY_ALT)) && !this.isDragging });
+            this.orbitCamera = use("OrbitCamera", { mainCamra: toolOptions.mainCamera, device: this.app.touch ? "touchScreen" : "mouse", rotateCondition: () => (!toolOptions.multiSelect || this.app.keyboard.isPressed(pc.KEY_ALT)) && !this.isDragging });
 
             // 使用模型点选器，实现模型点击检测
-            const selector = use(Selector, { inputHandler: mouseInputer, pickCamera: this.camera, excludeLayers: [RTHLayer, GridLayer, UILayer], pickNull: this.selectNull, pickTag: this.selectTags, pickCondition: this.selectCondition, pickSame: true });
-            selector.addListener("select", (selectedNode: pc.Entity) => this.select(selectedNode), this);
+            const selector = use("Selector", { inputHandler: mouseInputer, pickCamera: toolOptions.mainCamera, excludeLayers: [RTHLayer, GridLayer, UILayer], pickNull: toolOptions.selectNull, pickTag: toolOptions.selectTags, pickCondition: toolOptions.selectCondition, pickSame: true });
+            selector.addListener("select", selectedNode => this.select(selectedNode as pc.Entity), this);
 
-            if (this.multiSelect) {
+            if (toolOptions.multiSelect) {
                 // 模型多选器
-                const multiSelector = use(MultiSelector, {
-                    inputHandler: mouseInputer, pickCamera: this.camera, excludeLayers: [RTHLayer, GridLayer, UILayer],
+                const multiSelector = use("MultiSelector", {
+                    inputHandler: mouseInputer, pickCamera: toolOptions.mainCamera, excludeLayers: [RTHLayer, GridLayer, UILayer],
                     expectCondition: () => this.isDragging ||
                         this.orbitCamera.isRotating ||
                         this.orbitCamera.isPaning ||
                         this.orbitCamera.isLooking
                 });
-                multiSelector.addListener("selecting", (selectedNodes: pc.Entity[]) => this.select(selectedNodes), this);
+                multiSelector.addListener("selecting", selectedNodes => this.select(selectedNodes as pc.Entity[]), this);
             }
 
             // 监听鼠标事件
@@ -257,12 +266,12 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
             mouseInputer.addListener("up", this.onControlUp, this);
         }
         // 监听触屏
-        if (pc.app.touch) {
+        if (this.app.touch) {
             console.log("暂不支持触屏输入！");
         }
         // 监听键盘
-        if (pc.app.keyboard && this.enableHotKey) {
-            const keyboardInputer = use(RTH_KeyboardInputer, {
+        if (this.app.keyboard && toolOptions.enableHotKey) {
+            const keyboardInputer = use("RTH_KeyboardInputer", {
                 translateKey: pc.KEY_W,
                 rotateKey: pc.KEY_E,
                 scaleKey: pc.KEY_R,
@@ -280,29 +289,11 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
         }
 
         // 相机添加layer
-        !pc.app.scene.layers.getLayerById(RTHLayer.id) && pc.app.scene.layers.push(RTHLayer);
-        this.camera.layers = this.camera.layers.concat(RTHLayer.id);
+        !this.app.scene.layers.getLayerById(RTHLayer.id) && this.app.scene.layers.push(RTHLayer);
+        toolOptions.mainCamera.layers = toolOptions.mainCamera.layers.concat(RTHLayer.id);
 
         // 添加handle到场景
-        pc.app.root.addChild(this.transformHandle);
-    }
-
-    /**
-     * 设置RTH
-     * @param option RTH选项
-     */
-    public override setOption(options: RTHOptions)
-    {
-        this.camera = options?.mainCamera ?? pc.app.context.systems.camera.cameras[0];
-        this.selectTags = options?.selectTags;
-        this.selectNull = options?.selectNull ?? true;
-        this.selectCondition = options?.selectCondition;
-        this.enableHotKey = options?.enableHotKey ?? true;
-        this.enableUndoRedo = options?.enableUndoRedo ?? true;
-        this.showHandle = options?.showHandle ?? true;
-        this.showOutline = options?.showOutline ?? true;
-        this.showGrid = options?.showGrid ?? true;
-        this.multiSelect = options?.multiSelect ?? true;
+        this.app.root.addChild(this.transformHandle);
     }
 
     /**
@@ -341,20 +332,21 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
 
         if (this.isDragging) { return; }
 
+        const toolOptions = this.toolOptions;
         // 关闭先前选中模型的描边特效
-        this.trackEntities.forEach(entity => { this.showOutline && this.outLineCamera.toggleOutLine(entity, false); });
+        this.trackEntities.forEach(entity => { toolOptions.showOutline && this.outLineCamera.toggleOutLine(entity, false); });
 
         if (target == null || (Array.isArray(target) && target.length <= 0)) {
             this.trackEntities = [];
             this.transformHandle.enabled = false;
-            pc.app.off("update", this.update, this);
+            this.app.off("update", this.update, this);
             this.eventHandler.fire("select", this.trackEntities);
             return;
         }
-        if (this.trackEntities.length <= 0 && this.showHandle) { pc.app.on("update", this.update, this); }
+        if (this.trackEntities.length <= 0 && toolOptions.showHandle) { this.app.on("update", this.update, this); }
         this.trackEntities = Array.isArray(target) ? target : [target];
-        this.trackEntities.forEach(entity => { this.showOutline && this.outLineCamera.toggleOutLine(entity, true); });  // 开启选中模型的描边特效
-        this.transformHandle.enabled = true && this.showHandle;
+        this.trackEntities.forEach(entity => { toolOptions.showOutline && this.outLineCamera.toggleOutLine(entity, true); });  // 开启选中模型的描边特效
+        this.transformHandle.enabled = true && toolOptions.showHandle;
         this.eventHandler.fire("select", this.trackEntities);
 
         saveRecord && this.updateRecord();
@@ -397,7 +389,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
      */
     public undo(): void
     {
-        if (this.isDragging || !this.enableUndoRedo) { return; }
+        if (this.isDragging || !this.toolOptions.enableUndoRedo) { return; }
         const preRecord = Recorder.undo();
         this.resetTransforms(preRecord.selections, preRecord.transforms);
     }
@@ -407,7 +399,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
      */
     public redo(): void
     {
-        if (this.isDragging || !this.enableUndoRedo) { return; }
+        if (this.isDragging || !this.toolOptions.enableUndoRedo) { return; }
         const nextRecord = Recorder.redo();
         this.resetTransforms(nextRecord.selections, nextRecord.transforms);
     }
@@ -445,9 +437,10 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
         // 没有选中模型时不更新
         if (this.trackEntities.length <= 0) { return; }
 
-        this.updateTransform(this.camera);
-        this.updateDisplay(this.camera);
-        this.updateHandle(this.camera);
+        const toolOptions = this.toolOptions;
+        this.updateTransform(toolOptions.mainCamera);
+        this.updateDisplay(toolOptions.mainCamera);
+        this.updateHandle(toolOptions.mainCamera);
     }
 
     /**
@@ -743,7 +736,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
     {
         if (this.isDragging || this.trackEntities.length <= 0) { return; }
 
-        const mouse = pc.app.mouse;
+        const mouse = this.app.mouse;
         const resMI = MeshRaycaster.rayCast(camera, { x: mouse._lastX, y: mouse._lastY });
 
         if (resMI) {
@@ -770,7 +763,8 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
         const cameraPos = currentCamera.entity.getPosition();
         let intersected = false;
 
-        this.camera.screenToWorld(x, y, this.camera.farClip, this.screenVec);
+        const camera = this.toolOptions.mainCamera;
+        camera.screenToWorld(x, y, camera.farClip, this.screenVec);
         intersected = this.planeToMove.intersectsLine(cameraPos, this.screenVec, this.planeIntersectPoint);
         if (!intersected) { return; }
         this.planeToFollow.point.copy(this.planeIntersectPoint);
@@ -780,8 +774,8 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
         {
             if (this.selectedType == SelectType.AxisX || this.selectedType == SelectType.AxisY || this.selectedType == SelectType.AxisZ) {
                 const entityPos = entity.getPosition();
-                intersected = this.planeToFollow.intersectsLine(entityPos, this.screenVec.copy(entityPos).add(this.planeHitVec.copy(this.planeFollowNormal).mulScalar(this.camera.farClip)), this.planesIntersectPoint) ||
-                    this.planeToFollow.intersectsLine(entityPos, this.screenVec.copy(entityPos).add(this.planeHitVec.copy(this.planeFollowNormal).mulScalar(-this.camera.farClip)), this.planesIntersectPoint);
+                intersected = this.planeToFollow.intersectsLine(entityPos, this.screenVec.copy(entityPos).add(this.planeHitVec.copy(this.planeFollowNormal).mulScalar(camera.farClip)), this.planesIntersectPoint) ||
+                    this.planeToFollow.intersectsLine(entityPos, this.screenVec.copy(entityPos).add(this.planeHitVec.copy(this.planeFollowNormal).mulScalar(-camera.farClip)), this.planesIntersectPoint);
                 if (!intersected) { return; }
 
                 this.planesIntersectPoint.add(this.planeHitVec.copy(this.planeFollowNormal).mulScalar(-this.planesOffset[index]));
@@ -795,8 +789,8 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
 
         // 设置handle的位置
         if (this.selectedType == SelectType.AxisX || this.selectedType == SelectType.AxisY || this.selectedType == SelectType.AxisZ) {
-            intersected = this.planeToFollow.intersectsLine(handlePos, this.screenVec.copy(handlePos).add(this.planeHitVec.copy(this.planeFollowNormal).mulScalar(this.camera.farClip)), this.planeIntersectPoint) ||
-                this.planeToFollow.intersectsLine(handlePos, this.screenVec.copy(handlePos).add(this.planeHitVec.copy(this.planeFollowNormal).mulScalar(-this.camera.farClip)), this.planeIntersectPoint);
+            intersected = this.planeToFollow.intersectsLine(handlePos, this.screenVec.copy(handlePos).add(this.planeHitVec.copy(this.planeFollowNormal).mulScalar(camera.farClip)), this.planeIntersectPoint) ||
+                this.planeToFollow.intersectsLine(handlePos, this.screenVec.copy(handlePos).add(this.planeHitVec.copy(this.planeFollowNormal).mulScalar(-camera.farClip)), this.planeIntersectPoint);
             if (!intersected) { return; }
 
             this.planeIntersectPoint.add(this.planeHitVec.copy(this.planeFollowNormal).mulScalar(-this.planeOffset));
@@ -921,8 +915,9 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
     {
         if (this.selectedType == null) { return; }
 
+        const camera = this.toolOptions.mainCamera;
         const handlePos = this.transformHandle.getPosition();
-        const cameraPos = this.camera.entity.getPosition();
+        const cameraPos = camera.entity.getPosition();
 
         // 针对位移坐标轴设置平移平面及计算初始偏移
         if (this.handleType === HandleType.Translation) {
@@ -952,7 +947,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
 
             this.planeToMove.normal.copy(this.planeMoveNormal);
             this.planeToFollow.normal.copy(this.planeFollowNormal);
-            this.camera.screenToWorld(event.x, event.y, this.camera.farClip, this.screenVec);
+            camera.screenToWorld(event.x, event.y, camera.farClip, this.screenVec);
 
             this.planeToMove.intersectsLine(cameraPos, this.screenVec, this.planeIntersectPoint);
             this.planeOffsetVec.sub2(this.planeIntersectPoint, handlePos);
@@ -982,7 +977,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
             }
 
             this.planeToMove.normal.copy(this.planeMoveNormal);
-            this.camera.screenToWorld(event.x, event.y, this.camera.farClip, this.screenVec);
+            camera.screenToWorld(event.x, event.y, camera.farClip, this.screenVec);
             this.planeToMove.intersectsLine(cameraPos, this.screenVec, this.planeIntersectPoint);
 
             this.startRotateVec.sub2(this.planeIntersectPoint, handlePos);
@@ -1030,7 +1025,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
 
         this.isDragging = true;
 
-        this.outLineCamera.setOption({ mainCamra: this.camera, outlineColor: pc.Color.WHITE });
+        this.outLineCamera.updateOptions({ mainCamra: camera, outlineColor: pc.Color.WHITE });
     }
 
     /**
@@ -1041,7 +1036,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
     {
         if (!this.isDragging || this.trackEntities.length <= 0) { return; }
 
-        const currentCamera = this.camera;
+        const currentCamera = this.toolOptions.mainCamera;
         if (this.handleType === HandleType.Translation) {
             this.onTranslationHandleMove(currentCamera, event.x, event.y);
         }
@@ -1064,7 +1059,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
 
         if (!this.isDragging) { return; }
 
-        this.outLineCamera.setOption({ mainCamra: this.camera, outlineColor: this.outLineColor });
+        this.outLineCamera.updateOptions({ mainCamra: this.toolOptions.mainCamera, outlineColor: this.outLineColor });
 
         this.isDragging = false;
         this.selectedType = null;
@@ -1073,7 +1068,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEvents>
     // 更新记录数据
     private updateRecord(): void
     {
-        if (!this.enableUndoRedo) { return; }
+        if (!this.toolOptions.enableUndoRedo) { return; }
 
         // 保存记录
         if (this.trackEntities.length == 0) {

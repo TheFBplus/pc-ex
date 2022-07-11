@@ -2,20 +2,20 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-05-16 13:41:42
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-08 17:20:22
+ * @ 修改时间: 2022-07-10 15:09:41
  * @ 详情: 在屏幕空间绘制矩形
  */
 
 import * as pc from "playcanvas";
 
 import { Color_EX } from "@/extensions/color";
+import GlobalVariables from "@/utils/common/GlobalVariables";
 import { cast } from "@/utils/helpers/extend-decorator";
 import fs from "@/utils/shaders/screenQuad/ScreenQuadPS.frag";
 import vs from "@/utils/shaders/screenQuad/ScreenQuadVS.vert";
 
 const defaultRect = new pc.Vec4(0, 0, 1, 1);
 const defaultColor = pc.Color.WHITE.clone();
-const app = pc.Application.getApplication();
 
 let rectShader: pc.Shader;
 let rectMesh: pc.Mesh;
@@ -97,7 +97,7 @@ function createRectEntity(rect: pc.Vec4, color: pc.Color, layer?: pc.Layer): pc.
         entity.render.layers = [rectLayer.id];
     }
 
-    app.root.addChild(entity);
+    GlobalVariables.app.root.addChild(entity);
 
     return entity;
 }
@@ -117,7 +117,7 @@ function createRectShader(): pc.Shader
         fshader: fs
     };
 
-    rectShader = new pc.Shader(app.graphicsDevice, shaderDefinition);
+    rectShader = new pc.Shader(GlobalVariables.app.graphicsDevice, shaderDefinition);
 
     return rectShader;
 }
@@ -137,7 +137,7 @@ function updateRectMesh(rect: pc.Vec4 = new pc.Vec4(0, 0, 1, 1)): pc.Mesh
     ];
 
     if (!rectMesh) {
-        rectMesh = new pc.Mesh(app.graphicsDevice);
+        rectMesh = new pc.Mesh(GlobalVariables.app.graphicsDevice);
         rectMesh.clear(true, false);
     }
 

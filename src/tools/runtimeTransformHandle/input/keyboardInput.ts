@@ -1,107 +1,109 @@
-// /**
-//  * @ 创建者: FBplus
-//  * @ 创建时间: 2022-05-16 14:40:16
-//  * @ 修改者: FBplus
-//  * @ 修改时间: 2022-06-22 17:01:12
-//  * @ 详情: 键盘快捷键
-//  */
+/**
+ * @ 创建者: FBplus
+ * @ 创建时间: 2022-05-16 14:40:16
+ * @ 修改者: FBplus
+ * @ 修改时间: 2022-07-10 21:45:30
+ * @ 详情: 键盘快捷键
+ */
 
-// import * as pc from "playcanvas";
+import * as pc from "playcanvas";
 
-// import { Tool } from "../../../libs/libs/toolHelper";
-// import { HandleType } from "../common/enum";
+import { Tool } from "@/utils/helpers/toolBase";
+import { tool } from "@/utils/helpers/useToolHelper";
 
-// type KeyCode = number;
+import { HandleType } from "../common/enum";
 
-// type ShortcutTypes = "setHandleType" | "focus" | "switchPivot" | "undo" | "redo";
-// type KeyboardInputOptions = {
-//     translateKey: KeyCode;
-//     rotateKey: KeyCode;
-//     scaleKey: KeyCode;
-//     focusKey: KeyCode;
-//     pivotKey: KeyCode;
-//     comboKey: KeyCode;
-//     undoKey: KeyCode;
-//     redoKey: KeyCode;
-// };
+type KeyCode = number;
+/**
+ * 键盘快捷键选项
+ */
+export interface KeyboardInputOptions
+{
+    translateKey: KeyCode;
+    rotateKey: KeyCode;
+    scaleKey: KeyCode;
+    focusKey: KeyCode;
+    pivotKey: KeyCode;
+    comboKey: KeyCode;
+    undoKey: KeyCode;
+    redoKey: KeyCode;
+};
 
-// export default class RTH_KeyboardInputer extends Tool<KeyboardInputOptions, ShortcutTypes>
-// {
-//     private translateKey: KeyCode;
-//     private rotateKey: KeyCode;
-//     private scaleKey: KeyCode;
-//     private focusKey: KeyCode;
-//     private pivotKey: KeyCode;
-//     private comboKey: KeyCode;
-//     private undoKey: KeyCode;
-//     private redoKey: KeyCode;
+/**
+ * 键盘快捷键-回调表
+ */
+interface ShortcutEventsMap
+{
+    setHandleType: (handleType: HandleType) => any;
+    focus: () => any;
+    switchPivot: () => any;
+    undo: () => any;
+    redo: () => any;
+}
 
-//     constructor(option?: KeyboardInputOptions)
-//     {
-//         super();
+@tool("RTH_KeyboardInputer")
+export class RTH_KeyboardInputer extends Tool<KeyboardInputOptions, ShortcutEventsMap>
+{
+    // 默认选项
+    protected toolOptionsDefault: KeyboardInputOptions = {
+        translateKey: pc.KEY_W,
+        rotateKey: pc.KEY_E,
+        scaleKey: pc.KEY_R,
+        focusKey: pc.KEY_F,
+        pivotKey: pc.KEY_X,
+        comboKey: pc.KEY_CONTROL,
+        undoKey: pc.KEY_Z,
+        redoKey: pc.KEY_Y
+    };
 
-//         this.translateKey = option.translateKey;
-//         this.rotateKey = option.rotateKey;
-//         this.scaleKey = option.scaleKey;
-//         this.focusKey = option.focusKey;
-//         this.pivotKey = option.pivotKey;
-//         this.comboKey = option.comboKey;
-//         this.undoKey = option.undoKey;
-//         this.redoKey = option.redoKey;
-//     }
+    constructor(options?: KeyboardInputOptions)
+    {
+        super();
 
-//     private onKeyDown(event: any): void
-//     {
-//         switch (event.key) {
-//             case this.translateKey:
-//                 this.eventHandler.fire("setHandleType", HandleType.Translation);
-//                 break;
-//             case this.rotateKey:
-//                 this.eventHandler.fire("setHandleType", HandleType.Rotation);
-//                 break;
-//             case this.scaleKey:
-//                 this.eventHandler.fire("setHandleType", HandleType.Scale);
-//                 break;
-//             case this.focusKey:
-//                 this.eventHandler.fire("focus");
-//                 break;
-//             case this.pivotKey:
-//                 this.eventHandler.fire("switchPivot");
-//                 break;
-//             case this.undoKey:
-//                 if (!pc.app.keyboard.isPressed(this.comboKey)) { break; }
-//                 this.eventHandler.fire("undo");
-//                 break;
-//             case this.redoKey:
-//                 if (!pc.app.keyboard.isPressed(this.comboKey)) { break; }
-//                 this.eventHandler.fire("redo");
-//                 break;
-//             default:
-//                 break;
-//         }
+        this.setOptions(options);
+    }
 
-//         event.event.preventDefault();
-//     }
+    private onKeyDown(event: any): void
+    {
+        const toolOptions = this.toolOptions;
+        switch (event.key) {
+            case toolOptions.translateKey:
+                this.eventHandler.fire("setHandleType", HandleType.Translation);
+                break;
+            case toolOptions.rotateKey:
+                this.eventHandler.fire("setHandleType", HandleType.Rotation);
+                break;
+            case toolOptions.scaleKey:
+                this.eventHandler.fire("setHandleType", HandleType.Scale);
+                break;
+            case toolOptions.focusKey:
+                this.eventHandler.fire("focus");
+                break;
+            case toolOptions.pivotKey:
+                this.eventHandler.fire("switchPivot");
+                break;
+            case toolOptions.undoKey:
+                if (!pc.app.keyboard.isPressed(toolOptions.comboKey)) { break; }
+                this.eventHandler.fire("undo");
+                break;
+            case toolOptions.redoKey:
+                if (!pc.app.keyboard.isPressed(toolOptions.comboKey)) { break; }
+                this.eventHandler.fire("redo");
+                break;
+            default:
+                break;
+        }
 
-//     public override setOption(option: KeyboardInputOptions): void
-//     {
-//         this.translateKey = option.translateKey;
-//         this.rotateKey = option.rotateKey;
-//         this.scaleKey = option.scaleKey;
-//         this.focusKey = option.focusKey;
-//         this.pivotKey = option.pivotKey;
-//         this.comboKey = option.comboKey;
-//         this.undoKey = option.undoKey;
-//         this.redoKey = option.redoKey;
-//     }
+        event.event.preventDefault();
+    }
 
-//     protected override onEnable(): void
-//     {
-//         pc.app.keyboard.on(pc.EVENT_KEYDOWN, this.onKeyDown, this);
-//     }
+    protected override onEnable(): void
+    {
+        this.app.keyboard.on(pc.EVENT_KEYDOWN, this.onKeyDown, this);
+    }
 
-//     protected override onDisable(): void
-//     {
-//         pc.app.keyboard.off(pc.EVENT_KEYDOWN, this.onKeyDown, this);
-//     }
-// }
+    protected override onDisable(): void
+    {
+        this.app.keyboard.off(pc.EVENT_KEYDOWN, this.onKeyDown, this);
+    }
+}

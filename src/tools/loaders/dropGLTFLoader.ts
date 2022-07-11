@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-20 10:49:14
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-08 18:17:30
+ * @ 修改时间: 2022-07-11 21:12:00
  * @ 详情: 拖拽gltf到窗口加载模型
  */
 
@@ -32,7 +32,7 @@ interface DropGLTFLoaderEventsMap
     modelLoaded: (entity: pc.Entity) => any
 }
 @tool("DropGLTFLoader")
-export class DropGLTFLoader extends Tool<unknown, DropGLTFLoaderEventsMap>
+export class DropGLTFLoader extends Tool<any, DropGLTFLoaderEventsMap>
 {
     private dropHandler: DropHandler;
 

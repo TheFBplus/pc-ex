@@ -2,14 +2,14 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 16:09:29
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-08 18:12:02
+ * @ 修改时间: 2022-07-11 21:12:18
  * @ 详情: 工具类扩展辅助
  */
 
 import * as pc from "playcanvas";
 
 // 包含事件监听的新类型
-interface ExEventHandler<EventsMap> extends Tool<unknown, EventsMap>
+interface ExEventHandler<EventsMap> extends Tool<any, EventsMap>
 {
     on<K extends keyof EventsMap>(eventName: K, linstener: EventsMap[K], scope?: any): void;
     off<K extends keyof EventsMap>(eventName: K, linstener: EventsMap[K], scope?: any): void;
@@ -34,7 +34,7 @@ export abstract class Tool<Options extends { [index: string]: any }, EventsMap e
     {
         pc.events.attach(this);
         this.app = pc.Application.getApplication();
-        this.eventHandler = this as unknown as ExEventHandler<EventsMap>;
+        this.eventHandler = this as any as ExEventHandler<EventsMap>;
     }
 
     /**

@@ -2,16 +2,15 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-08 15:04:27
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-08 18:44:30
+ * @ 修改时间: 2022-07-11 21:12:11
  * @ 详情: 点选模型
  */
 
 import * as pc from "playcanvas";
 
+import { InputEventsMap } from "@/utils/common/InputEventsMap";
 import { Tool } from "@/utils/helpers/toolBase";
 import { tool, use } from "@/utils/helpers/useToolHelper";
-
-import { InputEventsMap } from "../input/mouseInput";
 
 /**
  * 模型点选事件-回调表
@@ -26,7 +25,7 @@ interface SelectorEventsMap
  */
 export interface SelectorOptions
 {
-    inputHandler: Tool<unknown, InputEventsMap>;
+    inputHandler?: Tool<any, InputEventsMap>;
     pickCamera?: pc.CameraComponent;
     pickAreaScale?: number;
     pickTag?: string;
@@ -39,8 +38,9 @@ export interface SelectorOptions
 @tool("Selector")
 export class Selector extends Tool<SelectorOptions, SelectorEventsMap>
 {
+    // 默认选项
     protected toolOptionsDefault: SelectorOptions = {
-        inputHandler: null,
+        inputHandler: use("MouseInputer"),
         pickCamera: this.app.systems.camera.cameras[0],
         pickAreaScale: 0.25,
         pickTag: null,
@@ -73,9 +73,9 @@ export class Selector extends Tool<SelectorOptions, SelectorEventsMap>
     public override setOptions(options: SelectorOptions): void
     {
         super.setOptions(options);
-        this.toolOptions.inputHandler = this.toolOptions.inputHandler || use("MouseInputer");
-        this.pickLayers = options.excludeLayers
-            ? this.app.scene.layers.layerList.filter((layer: pc.Layer) => !options.excludeLayers.includes(layer))
+        // this.toolOptions.inputHandler = this.toolOptions.inputHandler || use("MouseInputer");
+        this.pickLayers = this.toolOptions.excludeLayers
+            ? this.app.scene.layers.layerList.filter((layer: pc.Layer) => !this.toolOptions.excludeLayers.includes(layer))
             : this.app.scene.layers.layerList;
     }
 

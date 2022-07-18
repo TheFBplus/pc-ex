@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-05-18 15:35:26
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-11 21:11:55
+ * @ 修改时间: 2022-07-13 14:36:51
  * @ 详情: 描边相机
  */
 
@@ -14,7 +14,6 @@ import { cast } from "@/utils/helpers/extend-decorator";
 import { Tool } from "@/utils/helpers/toolBase";
 import { tool } from "@/utils/helpers/useToolHelper";
 import { PostEffectOutline } from "@/utils/postEffects/posteffectOutline";
-import ScreenQuadPS from "@/utils/shaders/screenQuad/ScreenQuadPS.frag";
 
 /**
  * LayerId
@@ -52,7 +51,6 @@ export class OutlineCamera extends Tool<outlineCameraOptions, any>
     constructor(options?: outlineCameraOptions)
     {
         super();
-        console.log(ScreenQuadPS);
         this.setOptions(options);
     }
 

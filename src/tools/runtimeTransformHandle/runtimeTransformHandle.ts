@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2021-12-01 10:08:17
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-10 22:03:27
+ * @ 修改时间: 2022-07-13 15:11:30
  * @ 详情: Runtime Transform Handle
  */
 
@@ -14,7 +14,7 @@ import { tool, use } from "@/utils/helpers/useToolHelper";
 import { OrbitCamera } from "../camera/orbitCamera";
 import { OutlineCamera } from "../camera/outlineCamera";
 import { HandleType, PivotType } from "./common/enum";
-import { GridLayer } from "./features/runtimeGrid";
+import { RTH_RuntimeGrid } from "./features/runtimeGrid";
 import {
     Axis, generateRotatioHandle, generateScaleHandle, generateTranslationHandle, HandleMap,
     RTHLayer, SelectType
@@ -245,13 +245,13 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEventsMap>
             this.orbitCamera = use("OrbitCamera", { mainCamra: toolOptions.mainCamera, device: this.app.touch ? "touchScreen" : "mouse", rotateCondition: () => (!toolOptions.multiSelect || this.app.keyboard.isPressed(pc.KEY_ALT)) && !this.isDragging });
 
             // 使用模型点选器，实现模型点击检测
-            const selector = use("Selector", { inputHandler: mouseInputer, pickCamera: toolOptions.mainCamera, excludeLayers: [RTHLayer, GridLayer, UILayer], pickNull: toolOptions.selectNull, pickTag: toolOptions.selectTags, pickCondition: toolOptions.selectCondition, pickSame: true });
+            const selector = use("Selector", { inputHandler: mouseInputer, pickCamera: toolOptions.mainCamera, excludeLayers: [RTHLayer(), RTH_RuntimeGrid.layer, UILayer], pickNull: toolOptions.selectNull, pickTag: toolOptions.selectTags, pickCondition: toolOptions.selectCondition, pickSame: true });
             selector.addListener("select", selectedNode => this.select(selectedNode as pc.Entity), this);
 
             if (toolOptions.multiSelect) {
                 // 模型多选器
                 const multiSelector = use("MultiSelector", {
-                    inputHandler: mouseInputer, pickCamera: toolOptions.mainCamera, excludeLayers: [RTHLayer, GridLayer, UILayer],
+                    inputHandler: mouseInputer, pickCamera: toolOptions.mainCamera, excludeLayers: [RTHLayer(), RTH_RuntimeGrid.layer, UILayer],
                     expectCondition: () => this.isDragging ||
                         this.orbitCamera.isRotating ||
                         this.orbitCamera.isPaning ||
@@ -289,8 +289,8 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEventsMap>
         }
 
         // 相机添加layer
-        !this.app.scene.layers.getLayerById(RTHLayer.id) && this.app.scene.layers.push(RTHLayer);
-        toolOptions.mainCamera.layers = toolOptions.mainCamera.layers.concat(RTHLayer.id);
+        !this.app.scene.layers.getLayerById(RTHLayer().id) && this.app.scene.layers.push(RTHLayer());
+        toolOptions.mainCamera.layers = toolOptions.mainCamera.layers.concat(RTHLayer().id);
 
         // 添加handle到场景
         this.app.root.addChild(this.transformHandle);

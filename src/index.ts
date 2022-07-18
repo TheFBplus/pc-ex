@@ -4,6 +4,7 @@ export { Color_EX } from "./extensions/color";
 export { Curve_EX } from "./extensions/curve";
 export { ElementComponent_EX } from "./extensions/elementComponent";
 export { Entity_EX } from "./extensions/entity";
+export { GraphNode_EX } from "./extensions/graphNode";
 export { MeshInstance_EX } from "./extensions/meshInstance";
 export { Quat_EX } from "./extensions/quat";
 export { Ray_EX } from "./extensions/ray";
@@ -34,6 +35,6 @@ export { attr, AttributeParams, createScript, ScriptTypeBase } from "./utils/hel
 export { cast, extendClass, ExtendClassName } from "./utils/helpers/extend-decorator";
 export { frag, glsl, glslify, vert } from "./utils/helpers/shaderHelper";
 export { Tool } from "./utils/helpers/toolBase";
-export { use, useGlobal } from "./utils/helpers/useToolHelper";
+export { getGlobal, use, useGlobal } from "./utils/helpers/useToolHelper";
 export { PostEffectOutline } from "./utils/postEffects/posteffectOutline";
 

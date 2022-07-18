@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-05-18 17:27:16
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-11 21:12:03
+ * @ 修改时间: 2022-07-13 15:16:28
  * @ 详情: 观测相机
  */
 
@@ -12,10 +12,6 @@ import { Tool } from "@/utils/helpers/toolBase";
 import { tool } from "@/utils/helpers/useToolHelper";
 
 import { noAmbientEndPS } from "../utils/handleShader";
-
-// 添加layer
-export const GridLayerName = "RTH_Grid"; // grid的layer名称
-export const GridLayer = new pc.Layer({ name: GridLayerName }); // grid layer
 
 /**
  * RuntimeGrid选项
@@ -29,6 +25,12 @@ export interface RuntimeGridOptions
 @tool("RTH_RuntimeGrid")
 export class RTH_RuntimeGrid extends Tool<RuntimeGridOptions, any>
 {
+    private static _layer: pc.Layer;
+    public static get layer()
+    {
+        return this._layer || (this._layer = new pc.Layer({ name: "RTH_Grid" })); // grid layer
+    }
+
     // 默认选项
     protected toolOptionsDefault: RuntimeGridOptions = {
         mainCamera: this.app.systems.camera.cameras[0],
@@ -44,9 +46,9 @@ export class RTH_RuntimeGrid extends Tool<RuntimeGridOptions, any>
         this.setOptions(options);
 
         // 添加layer到场景
-        if (!this.app.scene.layers.getLayerById(GridLayer.id)) {
+        if (!this.app.scene.layers.getLayerById(RTH_RuntimeGrid.layer.id)) {
             const worldLayerIndex = this.app.scene.layers.getOpaqueIndex(this.app.scene.layers.getLayerByName("World"));
-            this.app.scene.layers.insert(GridLayer, worldLayerIndex);
+            this.app.scene.layers.insert(RTH_RuntimeGrid.layer, worldLayerIndex);
         }
     }
 
@@ -59,7 +61,7 @@ export class RTH_RuntimeGrid extends Tool<RuntimeGridOptions, any>
         super.setOptions(options);
 
         const toolOptions = this.toolOptions;
-        toolOptions.mainCamera.layers = toolOptions.mainCamera.layers.concat(GridLayer.id); // 相机添加layer
+        toolOptions.mainCamera.layers = toolOptions.mainCamera.layers.concat(RTH_RuntimeGrid.layer.id); // 相机添加layer
         this.grid && this.grid.destroy();
         this.grid = new pc.Entity("RTH_Grid");
         const range = toolOptions.range;
@@ -122,7 +124,7 @@ export class RTH_RuntimeGrid extends Tool<RuntimeGridOptions, any>
         grid.addComponent("render", {
             meshInstances: [mi],
         });
-        grid.render.layers = [GridLayer.id];
+        grid.render.layers = [RTH_RuntimeGrid.layer.id];
 
         return grid;
     }

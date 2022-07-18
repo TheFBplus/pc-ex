@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-04-21 16:10:55
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-06 16:49:30
+ * @ 修改时间: 2022-07-13 16:45:13
  * @ 详情: 用于扩展pc类的装饰器
  */
 
@@ -34,6 +34,7 @@ export interface ExtendClassName
     Curve: pc.Curve,
     ElementComponent: pc.ElementComponent,
     Entity: pc.Entity,
+    GraphNode: pc.GraphNode
     MeshInstance: pc.MeshInstance,
     Quat: pc.Quat,
     Ray: pc.Ray,

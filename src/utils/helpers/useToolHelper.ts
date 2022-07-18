@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 16:09:29
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-11 21:12:26
+ * @ 修改时间: 2022-07-13 13:52:43
  * @ 详情: 工具类扩展辅助
  */
 
@@ -125,4 +125,14 @@ export function useGlobal<K extends keyof ToolOptions>(toolName: K, options?: To
     toolMap.set(toolName, ex);
 
     return ex;
+}
+
+/**
+ * 获得全局工具
+ * @param toolName 工具名称
+ * @returns 工具实例
+ */
+export function getGlobal<K extends keyof ToolOptions>(toolName: K): ToolName[K]
+{
+    return toolMap.get(toolName) as ToolName[K];
 }

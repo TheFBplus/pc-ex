@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-04-22 10:00:25
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-10 21:41:44
+ * @ 修改时间: 2022-07-13 15:16:48
  * @ 详情: runtime transform handle的mesh生成
  */
 
@@ -29,8 +29,8 @@ export enum SelectType
 }
 
 // 添加layer
-export const RTHLayerName = "RuntimeTransformHandle"; // 选择器的layer名称
-export const RTHLayer = new pc.Layer({ name: RTHLayerName });
+let _RTHLayer: pc.Layer;
+export const RTHLayer = () => { return _RTHLayer || (_RTHLayer = new pc.Layer({ name: "RuntimeTransformHandle" })) };
 
 // handle对应的选中类别
 export let HandleMap: { [index: string]: SelectType } = {};
@@ -176,7 +176,7 @@ function generateTranslationAxis(axis: Axis): pc.Entity
         meshInstances: [mi]
     });
     mi.cull = false;
-    axisEntity.render.layers = [RTHLayer.id];
+    axisEntity.render.layers = [RTHLayer().id];
 
     const collisionMesh = pc.createBox(device, { halfExtents: new pc.Vec3(0.6, 3.5, 0.6) });
     transformMeshPoint(collisionMesh, [new pc.Vec3(0, 6.5, 0), transformMat]);
@@ -187,7 +187,7 @@ function generateTranslationAxis(axis: Axis): pc.Entity
         meshInstances: [collisionMI]
     });
     collisionMI.cull = false;
-    collisionEntity.render.layers = [RTHLayer.id];
+    collisionEntity.render.layers = [RTHLayer().id];
     HandleMap[(collisionEntity as any)._guid] = getSelectAxis(axis);
     MeshRaycaster.addMeshInstances(collisionMI);
 
@@ -216,9 +216,9 @@ function generateTranslationAxis(axis: Axis): pc.Entity
     planeMI.cull = false;
     edge1MI.cull = false;
     edge2MI.cull = false;
-    planeEntity.render.layers = [RTHLayer.id];
-    edge1Entity.render.layers = [RTHLayer.id];
-    edge2Entity.render.layers = [RTHLayer.id];
+    planeEntity.render.layers = [RTHLayer().id];
+    edge1Entity.render.layers = [RTHLayer().id];
+    edge2Entity.render.layers = [RTHLayer().id];
     HandleMap[(planeEntity as any)._guid] = getSelectPlane(axis);
     MeshRaycaster.addMeshInstances(planeMI);
 
@@ -256,7 +256,7 @@ function generateRotationAxis(axis: Axis): pc.Entity
         meshInstances: [handleMeshInstance]
     });
     handleMeshInstance.cull = false;
-    handleEntity.render.layers = [RTHLayer.id];
+    handleEntity.render.layers = [RTHLayer().id];
 
     const collisionMesh = pc.createTorus(device, { tubeRadius: 0.6, ringRadius: 10 });
     transformMeshPoint(collisionMesh, [transformMat]);
@@ -267,7 +267,7 @@ function generateRotationAxis(axis: Axis): pc.Entity
         meshInstances: [collisionMI]
     });
     collisionMI.cull = false;
-    collisionEntity.render.layers = [RTHLayer.id];
+    collisionEntity.render.layers = [RTHLayer().id];
     HandleMap[(collisionEntity as any)._guid] = getSelectAxis(axis);
     MeshRaycaster.addMeshInstances(collisionMI);
 
@@ -301,7 +301,7 @@ function generateScaleAxis(axis: Axis): pc.Entity
         meshInstances: [mi]
     });
     mi.cull = false;
-    axisEntity.render.layers = [RTHLayer.id];
+    axisEntity.render.layers = [RTHLayer().id];
 
     const collisionMesh = pc.createBox(device, { halfExtents: new pc.Vec3(0.6, 4.6, 0.6) });
     transformMeshPoint(collisionMesh, [new pc.Vec3(0, 5.4, 0), transformMat]);
@@ -312,7 +312,7 @@ function generateScaleAxis(axis: Axis): pc.Entity
         meshInstances: [collisionMI]
     });
     collisionMI.cull = false;
-    collisionEntity.render.layers = [RTHLayer.id];
+    collisionEntity.render.layers = [RTHLayer().id];
     HandleMap[(collisionEntity as any)._guid] = getSelectAxis(axis);
     MeshRaycaster.addMeshInstances(collisionMI);
 
@@ -335,7 +335,7 @@ function generateScaleCenter(): pc.Entity
         meshInstances: [mi]
     });
     mi.cull = false;
-    entity.render.layers = [RTHLayer.id];
+    entity.render.layers = [RTHLayer().id];
     HandleMap[(entity as any)._guid] = getSelectAxis(Axis.All);
     MeshRaycaster.addMeshInstances(mi);
 

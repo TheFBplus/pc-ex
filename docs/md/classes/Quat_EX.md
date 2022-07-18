@@ -67,6 +67,10 @@ Create a new Quat instance.
 
 pc.Quat.constructor
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4189
+
 ## Properties
 
 ### w
@@ -190,6 +194,10 @@ A quaternion containing the result of the cloning.
 
 pc.Quat.clone
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4224
+
 ___
 
 ### conjugate
@@ -203,6 +211,10 @@ ___
 #### Inherited from
 
 pc.Quat.conjugate
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4225
 
 ___
 
@@ -237,6 +249,10 @@ Self for chaining.
 
 pc.Quat.copy
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4237
+
 ___
 
 ### equals
@@ -268,6 +284,10 @@ True if the quaternions are equal and false otherwise.
 #### Inherited from
 
 pc.Quat.equals
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4248
 
 ___
 
@@ -308,6 +328,10 @@ Angle, in degrees, of the rotation.
 
 pc.Quat.getAxisAngle
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4266
+
 ___
 
 ### getEulerAngles
@@ -332,6 +356,10 @@ correspond to the supplied quaternion.
 #### Inherited from
 
 pc.Quat.getEulerAngles
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4274
 
 ___
 
@@ -361,6 +389,10 @@ Self for chaining.
 
 pc.Quat.invert
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4286
+
 ___
 
 ### length
@@ -388,6 +420,10 @@ The magnitude of the specified quaternion.
 
 pc.Quat.length
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4297
+
 ___
 
 ### lengthSq
@@ -414,6 +450,10 @@ The magnitude of the specified quaternion.
 #### Inherited from
 
 pc.Quat.lengthSq
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4308
 
 ___
 
@@ -451,6 +491,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Quat.mul
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4324
 
 ___
 
@@ -491,6 +535,10 @@ Self for chaining.
 
 pc.Quat.mul2
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4342
+
 ___
 
 ### normalize
@@ -519,6 +567,10 @@ The result of the normalization.
 #### Inherited from
 
 pc.Quat.normalize
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4355
 
 ___
 
@@ -557,6 +609,10 @@ Self for chaining.
 
 pc.Quat.set
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4371
+
 ___
 
 ### setFromAxisAngle
@@ -588,6 +644,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Quat.setFromAxisAngle
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4382
 
 ___
 
@@ -628,6 +688,10 @@ Self for chaining.
 
 pc.Quat.setFromEulerAngles
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4401
+
 ___
 
 ### setFromMat4
@@ -663,6 +727,10 @@ Self for chaining.
 
 pc.Quat.setFromMat4
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4415
+
 ___
 
 ### setLookRotation
@@ -684,6 +752,10 @@ ___
 `Quat`
 
 朝向rotation
+
+#### Defined in
+
+src/extensions/quat.ts:25
 
 ___
 
@@ -724,6 +796,10 @@ Self for chaining.
 
 pc.Quat.slerp
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4435
+
 ___
 
 ### toString
@@ -749,6 +825,10 @@ The quaternion in string form.
 #### Inherited from
 
 pc.Quat.toString
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4461
 
 ___
 
@@ -786,3 +866,7 @@ The input vector v transformed by the current instance.
 #### Inherited from
 
 pc.Quat.transformVector
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4451

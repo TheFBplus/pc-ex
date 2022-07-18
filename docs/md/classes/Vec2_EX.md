@@ -86,6 +86,10 @@ var v = new pc.Vec2(1, 2);
 
 pc.Vec2.constructor
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8781
+
 ## Properties
 
 ### x
@@ -226,6 +230,10 @@ node_modules/playcanvas/build/playcanvas.d.ts:8736
 
 `Float32Array`
 
+#### Defined in
+
+src/extensions/vec2.ts:21
+
 ## Methods
 
 ### add
@@ -261,6 +269,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec2.add
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8808
 
 ___
 
@@ -300,6 +312,10 @@ Self for chaining.
 
 pc.Vec2.add2
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8825
+
 ___
 
 ### addScalar
@@ -335,6 +351,10 @@ Self for chaining.
 
 pc.Vec2.addScalar
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8839
+
 ___
 
 ### ceil
@@ -352,6 +372,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec2.ceil
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9073
 
 ___
 
@@ -378,6 +402,10 @@ A 2-dimensional vector containing the result of the cloning.
 #### Inherited from
 
 pc.Vec2.clone
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8849
 
 ___
 
@@ -413,6 +441,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec2.copy
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8863
 
 ___
 
@@ -450,6 +482,10 @@ The cross product of the two vectors.
 
 pc.Vec2.cross
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8878
+
 ___
 
 ### distance
@@ -482,6 +518,10 @@ The distance between the two vectors.
 #### Inherited from
 
 pc.Vec2.distance
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8890
 
 ___
 
@@ -518,6 +558,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec2.div
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8905
 
 ___
 
@@ -557,6 +601,10 @@ Self for chaining.
 
 pc.Vec2.div2
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8922
+
 ___
 
 ### divScalar
@@ -592,6 +640,10 @@ Self for chaining.
 
 pc.Vec2.divScalar
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8936
+
 ___
 
 ### dot
@@ -626,6 +678,10 @@ The result of the dot product operation.
 
 pc.Vec2.dot
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8949
+
 ___
 
 ### equals
@@ -658,6 +714,10 @@ True if the vectors are equal and false otherwise.
 
 pc.Vec2.equals
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8960
+
 ___
 
 ### floor
@@ -675,6 +735,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec2.floor
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9067
 
 ___
 
@@ -703,6 +767,10 @@ The magnitude of the specified 2-dimensional vector.
 
 pc.Vec2.length
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8971
+
 ___
 
 ### lengthSq
@@ -729,6 +797,10 @@ The magnitude of the specified 2-dimensional vector.
 #### Inherited from
 
 pc.Vec2.lengthSq
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8982
 
 ___
 
@@ -768,6 +840,10 @@ Self for chaining.
 
 pc.Vec2.lerp
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9001
+
 ___
 
 ### max
@@ -792,6 +868,10 @@ Self for chaining.
 
 pc.Vec2.max
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9093
+
 ___
 
 ### min
@@ -815,6 +895,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec2.min
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9086
 
 ___
 
@@ -851,6 +935,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec2.mul
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9016
 
 ___
 
@@ -890,6 +978,10 @@ Self for chaining.
 
 pc.Vec2.mul2
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9033
+
 ___
 
 ### mulScalar
@@ -925,6 +1017,10 @@ Self for chaining.
 
 pc.Vec2.mulScalar
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9047
+
 ___
 
 ### normalize
@@ -955,6 +1051,10 @@ Self for chaining.
 
 pc.Vec2.normalize
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9061
+
 ___
 
 ### round
@@ -972,6 +1072,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec2.round
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9079
 
 ___
 
@@ -1008,6 +1112,10 @@ Self for chaining.
 
 pc.Vec2.set
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9107
+
 ___
 
 ### sub
@@ -1043,6 +1151,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec2.sub
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9122
 
 ___
 
@@ -1082,6 +1194,10 @@ Self for chaining.
 
 pc.Vec2.sub2
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9139
+
 ___
 
 ### subScalar
@@ -1117,6 +1233,10 @@ Self for chaining.
 
 pc.Vec2.subScalar
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9153
+
 ___
 
 ### toString
@@ -1142,3 +1262,7 @@ The vector in string form.
 #### Inherited from
 
 pc.Vec2.toString
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9163

@@ -64,6 +64,10 @@ var curve = new pc.Curve([
 
 pc.Curve.constructor
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:17003
+
 ## Properties
 
 ### keys
@@ -135,6 +139,10 @@ Get the number of keys in the curve.
 
 pc.Curve.length
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:17036
+
 ## Methods
 
 ### add
@@ -160,6 +168,10 @@ Add a new key to the curve.
 
 pc.Curve.add
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:17044
+
 ___
 
 ### clone
@@ -177,6 +189,10 @@ A clone of the specified curve.
 #### Inherited from
 
 pc.Curve.clone
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:17069
 
 ___
 
@@ -197,6 +213,10 @@ ___
 #### Inherited from
 
 pc.Curve.closest
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:17063
 
 ___
 
@@ -222,6 +242,10 @@ The key at the specified index.
 
 pc.Curve.get
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:17051
+
 ___
 
 ### getNormal
@@ -241,6 +265,10 @@ ___
 `number`
 
 法线斜率
+
+#### Defined in
+
+src/extensions/curve.ts:36
 
 ___
 
@@ -262,6 +290,10 @@ ___
 
 切线斜率
 
+#### Defined in
+
+src/extensions/curve.ts:23
+
 ___
 
 ### sort
@@ -277,6 +309,10 @@ Sort keys by time.
 #### Inherited from
 
 pc.Curve.sort
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:17055
 
 ___
 
@@ -301,3 +337,7 @@ The interpolated value.
 #### Inherited from
 
 pc.Curve.value
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:17062

@@ -46,6 +46,10 @@
 
 pc.PostEffect.constructor
 
+#### Defined in
+
+src/utils/postEffects/posteffectOutline.ts:34
+
 ## Properties
 
 ### depthMap
@@ -138,6 +142,10 @@ node_modules/playcanvas/build/playcanvas.d.ts:7320
 
 `void`
 
+#### Defined in
+
+src/utils/postEffects/posteffectOutline.ts:116
+
 ___
 
 ### render
@@ -161,3 +169,7 @@ ___
 #### Overrides
 
 pc.PostEffect.render
+
+#### Defined in
+
+src/utils/postEffects/posteffectOutline.ts:100

@@ -52,6 +52,10 @@ var ray = new pc.Ray(this.entity.getPosition(), this.entity.forward);
 
 pc.Ray.constructor
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4090
+
 ## Properties
 
 ### direction
@@ -108,6 +112,10 @@ node_modules/playcanvas/build/playcanvas.d.ts:4096
 
 射线和三角形的交点
 
+#### Defined in
+
+src/extensions/ray.ts:30
+
 ___
 
 ### set
@@ -132,3 +140,7 @@ Self for chaining.
 #### Inherited from
 
 pc.Ray.set
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4110

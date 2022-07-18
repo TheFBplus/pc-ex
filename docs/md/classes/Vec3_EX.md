@@ -97,6 +97,10 @@ var v = new pc.Vec3(1, 2, 3);
 
 pc.Vec3.constructor
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3667
+
 ## Properties
 
 ### x
@@ -285,6 +289,10 @@ node_modules/playcanvas/build/playcanvas.d.ts:3607
 
 `Quat`
 
+#### Defined in
+
+src/extensions/vec3.ts:32
+
 ___
 
 ### shaderData
@@ -296,6 +304,10 @@ ___
 #### Returns
 
 `Float32Array`
+
+#### Defined in
+
+src/extensions/vec3.ts:41
 
 ## Methods
 
@@ -332,6 +344,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec3.add
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3700
 
 ___
 
@@ -371,6 +387,10 @@ Self for chaining.
 
 pc.Vec3.add2
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3717
+
 ___
 
 ### addScalar
@@ -406,6 +426,10 @@ Self for chaining.
 
 pc.Vec3.addScalar
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3731
+
 ___
 
 ### ceil
@@ -423,6 +447,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec3.ceil
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3964
 
 ___
 
@@ -449,6 +477,10 @@ A 3-dimensional vector containing the result of the cloning.
 #### Inherited from
 
 pc.Vec3.clone
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3741
 
 ___
 
@@ -485,6 +517,10 @@ Self for chaining.
 
 pc.Vec3.copy
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3755
+
 ___
 
 ### cross
@@ -520,6 +556,10 @@ Self for chaining.
 
 pc.Vec3.cross
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3769
+
 ___
 
 ### distance
@@ -552,6 +592,10 @@ The distance between the two vectors.
 #### Inherited from
 
 pc.Vec3.distance
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3781
 
 ___
 
@@ -588,6 +632,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec3.div
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3796
 
 ___
 
@@ -627,6 +675,10 @@ Self for chaining.
 
 pc.Vec3.div2
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3813
+
 ___
 
 ### divScalar
@@ -662,6 +714,10 @@ Self for chaining.
 
 pc.Vec3.divScalar
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3827
+
 ___
 
 ### dot
@@ -696,6 +752,10 @@ The result of the dot product operation.
 
 pc.Vec3.dot
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3840
+
 ___
 
 ### equals
@@ -728,6 +788,10 @@ True if the vectors are equal and false otherwise.
 
 pc.Vec3.equals
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3851
+
 ___
 
 ### floor
@@ -745,6 +809,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec3.floor
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3958
 
 ___
 
@@ -766,6 +834,10 @@ ___
 `Vec4`
 
 标准化gl坐标（w为1）
+
+#### Defined in
+
+src/extensions/vec3.ts:57
 
 ___
 
@@ -794,6 +866,10 @@ The magnitude of the specified 3-dimensional vector.
 
 pc.Vec3.length
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3862
+
 ___
 
 ### lengthSq
@@ -820,6 +896,10 @@ The magnitude of the specified 3-dimensional vector.
 #### Inherited from
 
 pc.Vec3.lengthSq
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3873
 
 ___
 
@@ -859,6 +939,10 @@ Self for chaining.
 
 pc.Vec3.lerp
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3892
+
 ___
 
 ### max
@@ -883,6 +967,10 @@ Self for chaining.
 
 pc.Vec3.max
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3984
+
 ___
 
 ### min
@@ -906,6 +994,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec3.min
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3977
 
 ___
 
@@ -942,6 +1034,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec3.mul
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3907
 
 ___
 
@@ -981,6 +1077,10 @@ Self for chaining.
 
 pc.Vec3.mul2
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3924
+
 ___
 
 ### mulScalar
@@ -1016,6 +1116,10 @@ Self for chaining.
 
 pc.Vec3.mulScalar
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3938
+
 ___
 
 ### normalize
@@ -1045,6 +1149,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec3.normalize
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3952
 
 ___
 
@@ -1082,6 +1190,10 @@ Self for chaining.
 
 pc.Vec3.project
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3999
+
 ___
 
 ### rotateAxisAngle
@@ -1107,6 +1219,10 @@ https://www.cheapface.top/index.php/archives/57/ 绕任意轴旋转3维向量（
 
 旋转后的向量
 
+#### Defined in
+
+src/extensions/vec3.ts:124
+
 ___
 
 ### rotateX
@@ -1130,6 +1246,10 @@ https://www.cheapface.top/index.php/archives/19/ 二维向量的旋转
 `Vec3`
 
 旋转后的向量
+
+#### Defined in
+
+src/extensions/vec3.ts:78
 
 ___
 
@@ -1155,6 +1275,10 @@ https://www.cheapface.top/index.php/archives/19/ 二维向量的旋转
 
 旋转后的向量
 
+#### Defined in
+
+src/extensions/vec3.ts:93
+
 ___
 
 ### rotateZ
@@ -1179,6 +1303,10 @@ https://www.cheapface.top/index.php/archives/19/ 二维向量的旋转
 
 旋转后的向量
 
+#### Defined in
+
+src/extensions/vec3.ts:108
+
 ___
 
 ### round
@@ -1196,6 +1324,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec3.round
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:3970
 
 ___
 
@@ -1233,6 +1365,10 @@ Self for chaining.
 
 pc.Vec3.set
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4014
+
 ___
 
 ### sub
@@ -1268,6 +1404,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec3.sub
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4029
 
 ___
 
@@ -1307,6 +1447,10 @@ Self for chaining.
 
 pc.Vec3.sub2
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4046
+
 ___
 
 ### subScalar
@@ -1342,6 +1486,10 @@ Self for chaining.
 
 pc.Vec3.subScalar
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4060
+
 ___
 
 ### toString
@@ -1367,3 +1515,7 @@ The vector in string form.
 #### Inherited from
 
 pc.Vec3.toString
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4070

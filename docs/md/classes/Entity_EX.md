@@ -150,6 +150,10 @@ entity.rotateLocal(0, 90, 0);
 
 pc.Entity.constructor
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:21791
+
 ## Properties
 
 ### anim
@@ -519,6 +523,10 @@ A read-only property to get the children of this graph node.
 
 pc.Entity.children
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9404
+
 ___
 
 ### enabled
@@ -532,6 +540,10 @@ ___
 #### Inherited from
 
 pc.Entity.enabled
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9380
 
 • `set` **enabled**(`arg`): `void`
 
@@ -553,6 +565,10 @@ deactivate all the enabled children of the GraphNode.
 
 pc.Entity.enabled
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9379
+
 ___
 
 ### forward
@@ -568,6 +584,10 @@ The normalized local space negative Z-axis vector of the graph node in world spa
 #### Inherited from
 
 pc.Entity.forward
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9371
 
 ___
 
@@ -587,6 +607,10 @@ is not recalculated when a node is simply removed from the graph.
 
 pc.Entity.graphDepth
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9412
+
 ___
 
 ### parent
@@ -602,6 +626,10 @@ A read-only property to get a parent graph node.
 #### Inherited from
 
 pc.Entity.parent
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9386
 
 ___
 
@@ -619,6 +647,10 @@ A read-only property to get the path of the graph node relative to the root of t
 
 pc.Entity.path
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9392
+
 ___
 
 ### right
@@ -634,6 +666,10 @@ The normalized local space X-axis vector of the graph node in world space.
 #### Inherited from
 
 pc.Entity.right
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9359
 
 ___
 
@@ -651,6 +687,10 @@ A read-only property to get highest graph node from current node.
 
 pc.Entity.root
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9398
+
 ___
 
 ### up
@@ -667,6 +707,10 @@ The normalized local space Y-axis vector of the graph node in world space.
 
 pc.Entity.up
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9365
+
 ## Methods
 
 ### \_sync
@@ -680,6 +724,10 @@ pc.Entity.up
 #### Inherited from
 
 pc.Entity.\_sync
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9899
 
 ___
 
@@ -709,6 +757,10 @@ this.entity.addChild(e);
 #### Inherited from
 
 pc.Entity.addChild
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9839
 
 ___
 
@@ -752,6 +804,10 @@ was an error.
 
 pc.Entity.addComponent
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:22009
+
 ___
 
 ### clone
@@ -769,6 +825,10 @@ A clone of the specified graph node.
 #### Inherited from
 
 pc.Entity.clone
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9436
 
 ___
 
@@ -793,6 +853,10 @@ firstChild.destroy(); // delete child, all components and remove from hierarchy
 #### Inherited from
 
 pc.Entity.destroy
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:22075
 
 ___
 
@@ -834,6 +898,10 @@ The array of graph nodes that match the search criteria.
 
 pc.Entity.find
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9468
+
 ___
 
 ### findByGuid
@@ -857,6 +925,10 @@ The entity with the matching GUID or null if no entity is found.
 #### Inherited from
 
 pc.Entity.findByGuid
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:22066
 
 ___
 
@@ -882,6 +954,10 @@ null if no node is found.
 #### Inherited from
 
 pc.Entity.findByName
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9523
 
 ___
 
@@ -922,6 +998,10 @@ null if no node is found.
 #### Inherited from
 
 pc.Entity.findByPath
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9539
 
 ___
 
@@ -970,6 +1050,10 @@ A list of all graph nodes that match the query.
 
 pc.Entity.findByTag
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9515
+
 ___
 
 ### findComponent
@@ -1002,6 +1086,10 @@ has one. Returns undefined otherwise.
 
 pc.Entity.findComponent
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:22031
+
 ___
 
 ### findComponents
@@ -1033,6 +1121,10 @@ descendants. Returns empty array if none found.
 #### Inherited from
 
 pc.Entity.findComponents
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:22042
 
 ___
 
@@ -1075,6 +1167,10 @@ node is found.
 
 pc.Entity.findOne
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9493
+
 ___
 
 ### fire
@@ -1113,6 +1209,10 @@ Self for chaining.
 
 pc.Entity.fire
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:102
+
 ___
 
 ### forEach
@@ -1145,6 +1245,10 @@ parent.forEach(function (node) {
 
 pc.Entity.forEach
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9552
+
 ___
 
 ### getEulerAngles
@@ -1174,6 +1278,10 @@ The world space rotation of the graph node in Euler angle form.
 
 pc.Entity.getEulerAngles
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9587
+
 ___
 
 ### getLocalEulerAngles
@@ -1201,6 +1309,10 @@ The local space rotation of the graph node as euler angles in XYZ order.
 #### Inherited from
 
 pc.Entity.getLocalEulerAngles
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9599
 
 ___
 
@@ -1230,6 +1342,10 @@ The local space position of the graph node.
 
 pc.Entity.getLocalPosition
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9611
+
 ___
 
 ### getLocalRotation
@@ -1255,6 +1371,10 @@ The local space rotation of the graph node as a quaternion.
 #### Inherited from
 
 pc.Entity.getLocalRotation
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9621
 
 ___
 
@@ -1284,6 +1404,10 @@ The local space scale of the graph node.
 
 pc.Entity.getLocalScale
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9633
+
 ___
 
 ### getLocalTransform
@@ -1308,6 +1432,10 @@ The node's local transformation matrix.
 #### Inherited from
 
 pc.Entity.getLocalTransform
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9642
 
 ___
 
@@ -1337,6 +1465,10 @@ The world space position of the graph node.
 
 pc.Entity.getPosition
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9654
+
 ___
 
 ### getRotation
@@ -1363,6 +1495,10 @@ The world space rotation of the graph node as a quaternion.
 
 pc.Entity.getRotation
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9664
+
 ___
 
 ### getWorldTransform
@@ -1386,6 +1522,10 @@ The node's world transformation matrix.
 #### Inherited from
 
 pc.Entity.getWorldTransform
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9686
 
 ___
 
@@ -1419,6 +1559,10 @@ True if the object has handlers bound to the specified event name.
 
 pc.Entity.hasEvent
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:130
+
 ___
 
 ### insertChild
@@ -1449,6 +1593,10 @@ this.entity.insertChild(e, 1);
 #### Inherited from
 
 pc.Entity.insertChild
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9861
 
 ___
 
@@ -1482,6 +1630,10 @@ If node is ancestor for another node.
 
 pc.Entity.isAncestorOf
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9574
+
 ___
 
 ### isDescendantOf
@@ -1513,6 +1665,10 @@ If node is descendant of another node.
 #### Inherited from
 
 pc.Entity.isDescendantOf
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9563
 
 ___
 
@@ -1573,6 +1729,10 @@ this.entity.lookAt(10, 10, 10, 0, -1, 0);
 
 pc.Entity.lookAt
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9934
+
 ___
 
 ### off
@@ -1614,6 +1774,10 @@ Self for chaining.
 
 pc.Entity.off
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:85
+
 ___
 
 ### on
@@ -1648,6 +1812,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Entity.on
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:65
 
 ___
 
@@ -1685,6 +1853,10 @@ Self for chaining.
 
 pc.Entity.once
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:119
+
 ___
 
 ### removeChild
@@ -1713,6 +1885,10 @@ this.entity.removeChild(child);
 #### Inherited from
 
 pc.Entity.removeChild
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9898
 
 ___
 
@@ -1745,6 +1921,10 @@ entity.removeComponent("light"); // remove light component
 
 pc.Entity.removeComponent
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:22020
+
 ___
 
 ### reparent
@@ -1768,6 +1948,10 @@ Remove graph node from current parent and add as child to new parent.
 
 pc.Entity.reparent
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9693
+
 ___
 
 ### reparentAndKeepTransform
@@ -1785,6 +1969,10 @@ ___
 #### Returns
 
 `void`
+
+#### Defined in
+
+src/extensions/entity.ts:22
 
 ___
 
@@ -1827,6 +2015,10 @@ this.entity.rotate(r);
 
 pc.Entity.rotate
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9988
+
 ___
 
 ### rotateLocal
@@ -1867,6 +2059,10 @@ this.entity.rotateLocal(r);
 #### Inherited from
 
 pc.Entity.rotateLocal
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:10006
 
 ___
 
@@ -1910,6 +2106,10 @@ this.entity.setEulerAngles(angles);
 
 pc.Entity.setEulerAngles
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9830
+
 ___
 
 ### setLocalEulerAngles
@@ -1952,6 +2152,10 @@ this.entity.setLocalEulerAngles(angles);
 
 pc.Entity.setLocalEulerAngles
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9712
+
 ___
 
 ### setLocalPosition
@@ -1992,6 +2196,10 @@ this.entity.setLocalPosition(pos);
 #### Inherited from
 
 pc.Entity.setLocalPosition
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9730
 
 ___
 
@@ -2035,6 +2243,10 @@ this.entity.setLocalRotation(q);
 
 pc.Entity.setLocalRotation
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9749
+
 ___
 
 ### setLocalScale
@@ -2074,6 +2286,10 @@ this.entity.setLocalScale(scale);
 #### Inherited from
 
 pc.Entity.setLocalScale
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9766
 
 ___
 
@@ -2115,6 +2331,10 @@ this.entity.setPosition(position);
 #### Inherited from
 
 pc.Entity.setPosition
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9792
 
 ___
 
@@ -2158,6 +2378,10 @@ this.entity.setRotation(q);
 
 pc.Entity.setRotation
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9811
+
 ___
 
 ### translate
@@ -2199,6 +2423,10 @@ this.entity.translate(t);
 
 pc.Entity.translate
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9952
+
 ___
 
 ### translateLocal
@@ -2239,3 +2467,7 @@ this.entity.translateLocal(t);
 #### Inherited from
 
 pc.Entity.translateLocal
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:9970

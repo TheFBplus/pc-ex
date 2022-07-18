@@ -29,13 +29,11 @@
 - [aspectRatioMode](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#aspectratiomode)
 - [calculateProjection](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#calculateprojection)
 - [calculateTransform](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#calculatetransform)
-- [camera](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#camera)
 - [clearColor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#clearcolor)
 - [clearColorBuffer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#clearcolorbuffer)
 - [clearDepthBuffer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#cleardepthbuffer)
 - [clearStencilBuffer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#clearstencilbuffer)
 - [cullFaces](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#cullfaces)
-- [data](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#data)
 - [disablePostEffectsLayer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#disableposteffectslayer)
 - [enabled](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#enabled)
 - [farClip](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/CameraComponent_EX.md#farclip)
@@ -110,6 +108,10 @@ Create a new CameraComponent instance.
 #### Inherited from
 
 pc.CameraComponent.constructor
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29216
 
 ## Properties
 
@@ -227,6 +229,10 @@ node_modules/playcanvas/build/playcanvas.d.ts:29272
 
 pc.CameraComponent.aspectRatioMode
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29219
+
 • `set` **aspectRatioMode**(`arg`): `void`
 
 #### Parameters
@@ -243,6 +249,10 @@ pc.CameraComponent.aspectRatioMode
 
 pc.CameraComponent.aspectRatioMode
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29218
+
 ___
 
 ### calculateProjection
@@ -256,6 +266,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.calculateProjection
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29222
 
 • `set` **calculateProjection**(`arg`): `void`
 
@@ -273,6 +287,10 @@ pc.CameraComponent.calculateProjection
 
 pc.CameraComponent.calculateProjection
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29221
+
 ___
 
 ### calculateTransform
@@ -286,6 +304,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.calculateTransform
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29225
 
 • `set` **calculateTransform**(`arg`): `void`
 
@@ -303,19 +325,9 @@ pc.CameraComponent.calculateTransform
 
 pc.CameraComponent.calculateTransform
 
-___
-
-### camera
-
-• **camera**: `Object`
-
-#### Inherited from
-
-pc.CameraComponent.camera
-
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:29303
+node_modules/playcanvas/build/playcanvas.d.ts:29224
 
 ___
 
@@ -330,6 +342,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.clearColor
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29228
 
 • `set` **clearColor**(`arg`): `void`
 
@@ -347,6 +363,10 @@ pc.CameraComponent.clearColor
 
 pc.CameraComponent.clearColor
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29227
+
 ___
 
 ### clearColorBuffer
@@ -360,6 +380,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.clearColorBuffer
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29310
 
 • `set` **clearColorBuffer**(`arg`): `void`
 
@@ -379,6 +403,10 @@ If true the camera will clear the color buffer to the color set in clearColor. D
 
 pc.CameraComponent.clearColorBuffer
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29309
+
 ___
 
 ### clearDepthBuffer
@@ -392,6 +420,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.clearDepthBuffer
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29317
 
 • `set` **clearDepthBuffer**(`arg`): `void`
 
@@ -411,6 +443,10 @@ If true the camera will clear the depth buffer. Defaults to true.
 
 pc.CameraComponent.clearDepthBuffer
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29316
+
 ___
 
 ### clearStencilBuffer
@@ -424,6 +460,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.clearStencilBuffer
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29324
 
 • `set` **clearStencilBuffer**(`arg`): `void`
 
@@ -443,6 +483,10 @@ If true the camera will clear the stencil buffer. Defaults to true.
 
 pc.CameraComponent.clearStencilBuffer
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29323
+
 ___
 
 ### cullFaces
@@ -456,6 +500,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.cullFaces
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29231
 
 • `set` **cullFaces**(`arg`): `void`
 
@@ -473,19 +521,9 @@ pc.CameraComponent.cullFaces
 
 pc.CameraComponent.cullFaces
 
-___
-
-### data
-
-• **data**: `Object`
-
-#### Inherited from
-
-pc.CameraComponent.data
-
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:7573
+node_modules/playcanvas/build/playcanvas.d.ts:29230
 
 ___
 
@@ -500,6 +538,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.disablePostEffectsLayer
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29334
 
 • `set` **disablePostEffectsLayer**(`arg`): `void`
 
@@ -522,6 +564,10 @@ layers of the camera.
 
 pc.CameraComponent.disablePostEffectsLayer
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29333
+
 ___
 
 ### enabled
@@ -535,6 +581,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.enabled
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:7545
 
 • `set` **enabled**(`arg`): `void`
 
@@ -552,6 +602,10 @@ pc.CameraComponent.enabled
 
 pc.CameraComponent.enabled
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:7544
+
 ___
 
 ### farClip
@@ -565,6 +619,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.farClip
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29234
 
 • `set` **farClip**(`arg`): `void`
 
@@ -582,6 +640,10 @@ pc.CameraComponent.farClip
 
 pc.CameraComponent.farClip
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29233
+
 ___
 
 ### flipFaces
@@ -595,6 +657,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.flipFaces
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29237
 
 • `set` **flipFaces**(`arg`): `void`
 
@@ -612,6 +678,10 @@ pc.CameraComponent.flipFaces
 
 pc.CameraComponent.flipFaces
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29236
+
 ___
 
 ### fov
@@ -625,6 +695,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.fov
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29240
 
 • `set` **fov**(`arg`): `void`
 
@@ -642,6 +716,10 @@ pc.CameraComponent.fov
 
 pc.CameraComponent.fov
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29239
+
 ___
 
 ### frustum
@@ -658,6 +736,10 @@ Queries the camera's frustum shape.
 
 pc.CameraComponent.frustum
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29357
+
 ___
 
 ### frustumCulling
@@ -671,6 +753,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.frustumCulling
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29243
 
 • `set` **frustumCulling**(`arg`): `void`
 
@@ -688,6 +774,10 @@ pc.CameraComponent.frustumCulling
 
 pc.CameraComponent.frustumCulling
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29242
+
 ___
 
 ### horizontalFov
@@ -701,6 +791,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.horizontalFov
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29246
 
 • `set` **horizontalFov**(`arg`): `void`
 
@@ -718,6 +812,10 @@ pc.CameraComponent.horizontalFov
 
 pc.CameraComponent.horizontalFov
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29245
+
 ___
 
 ### layers
@@ -731,6 +829,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.layers
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29366
 
 • `set` **layers**(`arg`): `void`
 
@@ -752,6 +854,10 @@ to [LAYERID_WORLD, LAYERID_DEPTH, LAYERID_SKYBOX, LAYERID_UI, LAYERID_IMMEDIATE]
 
 pc.CameraComponent.layers
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29365
+
 ___
 
 ### nearClip
@@ -765,6 +871,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.nearClip
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29249
 
 • `set` **nearClip**(`arg`): `void`
 
@@ -782,6 +892,10 @@ pc.CameraComponent.nearClip
 
 pc.CameraComponent.nearClip
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29248
+
 ___
 
 ### orthoHeight
@@ -795,6 +909,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.orthoHeight
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29252
 
 • `set` **orthoHeight**(`arg`): `void`
 
@@ -812,6 +930,10 @@ pc.CameraComponent.orthoHeight
 
 pc.CameraComponent.orthoHeight
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29251
+
 ___
 
 ### postEffects
@@ -825,6 +947,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.postEffects
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29373
 
 ___
 
@@ -842,6 +968,10 @@ The post effects queue for this camera. Use this to add or remove post effects f
 
 pc.CameraComponent.postEffectsEnabled
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29372
+
 ___
 
 ### priority
@@ -855,6 +985,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.priority
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29381
 
 • `set` **priority**(`arg`): `void`
 
@@ -875,6 +1009,10 @@ are rendered first. Defaults to 0.
 
 pc.CameraComponent.priority
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29380
+
 ___
 
 ### projection
@@ -888,6 +1026,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.projection
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29255
 
 • `set` **projection**(`arg`): `void`
 
@@ -905,6 +1047,10 @@ pc.CameraComponent.projection
 
 pc.CameraComponent.projection
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29254
+
 ___
 
 ### projectionMatrix
@@ -921,6 +1067,10 @@ Queries the camera's projection matrix.
 
 pc.CameraComponent.projectionMatrix
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29387
+
 ___
 
 ### rect
@@ -934,6 +1084,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.rect
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29395
 
 • `set` **rect**(`arg`): `void`
 
@@ -954,6 +1108,10 @@ Defaults to [0, 0, 1, 1].
 
 pc.CameraComponent.rect
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29394
+
 ___
 
 ### renderSceneColorMap
@@ -967,6 +1125,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.renderSceneColorMap
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29343
 
 ___
 
@@ -982,6 +1144,10 @@ ___
 
 pc.CameraComponent.renderSceneDepthMap
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29351
+
 ___
 
 ### renderTarget
@@ -995,6 +1161,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.renderTarget
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29403
 
 • `set` **renderTarget**(`arg`): `void`
 
@@ -1015,6 +1185,10 @@ simply to the screen.
 
 pc.CameraComponent.renderTarget
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29402
+
 ___
 
 ### scissorRect
@@ -1028,6 +1202,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.scissorRect
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29258
 
 • `set` **scissorRect**(`arg`): `void`
 
@@ -1045,6 +1223,10 @@ pc.CameraComponent.scissorRect
 
 pc.CameraComponent.scissorRect
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29257
+
 ___
 
 ### viewMatrix
@@ -1060,6 +1242,10 @@ Queries the camera's view matrix.
 #### Inherited from
 
 pc.CameraComponent.viewMatrix
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29409
 
 ## Methods
 
@@ -1081,6 +1267,10 @@ pc.CameraComponent.viewMatrix
 
 pc.CameraComponent.\_enableDepthLayer
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29335
+
 ___
 
 ### addCameraToLayers
@@ -1094,6 +1284,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.addCameraToLayers
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29442
 
 ___
 
@@ -1114,6 +1308,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.buildAccessors
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:7561
 
 ___
 
@@ -1139,6 +1337,10 @@ The aspect ratio of the render target (or backbuffer).
 
 pc.CameraComponent.calculateAspectRatio
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29454
+
 ___
 
 ### copy
@@ -1159,6 +1361,10 @@ ___
 
 pc.CameraComponent.copy
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29544
+
 ___
 
 ### dirtyLayerCompositionCameras
@@ -1172,6 +1378,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.dirtyLayerCompositionCameras
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29410
 
 ___
 
@@ -1203,6 +1413,10 @@ this.entity.camera.endXr(function (err) {
 #### Inherited from
 
 pc.CameraComponent.endXr
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29543
 
 ___
 
@@ -1242,6 +1456,10 @@ Self for chaining.
 
 pc.CameraComponent.fire
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:102
+
 ___
 
 ### follow
@@ -1259,6 +1477,10 @@ ___
 #### Returns
 
 `void`
+
+#### Defined in
+
+src/extensions/cameraComponent.ts:23
 
 ___
 
@@ -1291,6 +1513,10 @@ True if the object has handlers bound to the specified event name.
 #### Inherited from
 
 pc.CameraComponent.hasEvent
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:130
 
 ___
 
@@ -1333,6 +1559,10 @@ Self for chaining.
 
 pc.CameraComponent.off
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:85
+
 ___
 
 ### on
@@ -1368,6 +1598,10 @@ Self for chaining.
 
 pc.CameraComponent.on
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:65
+
 ___
 
 ### onAppPrerender
@@ -1381,6 +1615,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.onAppPrerender
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29441
 
 ___
 
@@ -1396,6 +1634,10 @@ ___
 
 pc.CameraComponent.onDisable
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:7564
+
 ___
 
 ### onEnable
@@ -1409,6 +1651,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.onEnable
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:7563
 
 ___
 
@@ -1430,6 +1676,10 @@ ___
 
 pc.CameraComponent.onLayerAdded
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29445
+
 ___
 
 ### onLayerRemoved
@@ -1449,6 +1699,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.onLayerRemoved
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29446
 
 ___
 
@@ -1471,6 +1725,10 @@ ___
 
 pc.CameraComponent.onLayersChanged
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29444
+
 ___
 
 ### onPostStateChange
@@ -1485,6 +1743,10 @@ ___
 
 pc.CameraComponent.onPostStateChange
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:7565
+
 ___
 
 ### onRemove
@@ -1498,6 +1760,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.onRemove
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29447
 
 ___
 
@@ -1520,6 +1786,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.onSetEnabled
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:7562
 
 ___
 
@@ -1557,6 +1827,10 @@ Self for chaining.
 
 pc.CameraComponent.once
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:119
+
 ___
 
 ### raycastMeshInstances
@@ -1578,6 +1852,10 @@ ___
 
 交点集合
 
+#### Defined in
+
+src/extensions/cameraComponent.ts:46
+
 ___
 
 ### removeCameraFromLayers
@@ -1591,6 +1869,10 @@ ___
 #### Inherited from
 
 pc.CameraComponent.removeCameraFromLayers
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29443
 
 ___
 
@@ -1615,6 +1897,10 @@ is accummulative, and for each enable request, a disable request need to be call
 
 pc.CameraComponent.requestSceneColorMap
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29342
+
 ___
 
 ### requestSceneDepthMap
@@ -1637,6 +1923,10 @@ is accummulative, and for each enable request, a disable request need to be call
 #### Inherited from
 
 pc.CameraComponent.requestSceneDepthMap
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29350
 
 ___
 
@@ -1677,6 +1967,10 @@ The world space coordinate.
 #### Inherited from
 
 pc.CameraComponent.screenToWorld
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29432
 
 ___
 
@@ -1724,6 +2018,10 @@ this.entity.camera.startXr(pc.XRTYPE_VR, pc.XRSPACE_LOCAL, {
 
 pc.CameraComponent.startXr
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29522
+
 ___
 
 ### worldToScreen
@@ -1749,6 +2047,10 @@ The screen space coordinate.
 
 pc.CameraComponent.worldToScreen
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:29440
+
 ___
 
 ### \_buildAccessors
@@ -1769,3 +2071,7 @@ ___
 #### Inherited from
 
 pc.CameraComponent.\_buildAccessors
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:7535

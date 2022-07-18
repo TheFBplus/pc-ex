@@ -6,7 +6,7 @@
     ],
     "moduleResolution": "Node",
     "target": "ES5",
-    "module": "CommonJS",
+    "module": "ESNext",
     "outDir": "dist",
     "rootDir": "./src",
     "sourceMap": true,

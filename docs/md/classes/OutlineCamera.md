@@ -51,6 +51,10 @@
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#constructor)
 
+#### Defined in
+
+src/tools/camera/outlineCamera.ts:51
+
 ## Properties
 
 ### app
@@ -123,6 +127,10 @@ src/tools/camera/outlineCamera.ts:41
 
 Tool.enabled
 
+#### Defined in
+
+src/utils/helpers/toolBase.ts:52
+
 • `set` **enabled**(`value`): `void`
 
 设置工具启用状态（触发启用和禁用时的额外操作）
@@ -140,6 +148,10 @@ Tool.enabled
 #### Inherited from
 
 Tool.enabled
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:43
 
 ## Methods
 
@@ -171,6 +183,10 @@ Tool.enabled
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[addListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#addlistener)
 
+#### Defined in
+
+src/utils/helpers/toolBase.ts:63
+
 ___
 
 ### onDisable
@@ -185,6 +201,10 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[onDisable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#ondisable)
 
+#### Defined in
+
+src/tools/camera/outlineCamera.ts:193
+
 ___
 
 ### onEnable
@@ -198,6 +218,10 @@ ___
 #### Overrides
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#onenable)
+
+#### Defined in
+
+src/tools/camera/outlineCamera.ts:188
 
 ___
 
@@ -229,6 +253,10 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#removelistener)
 
+#### Defined in
+
+src/utils/helpers/toolBase.ts:74
+
 ___
 
 ### setOptions
@@ -251,6 +279,10 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[setOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#setoptions)
 
+#### Defined in
+
+src/tools/camera/outlineCamera.ts:61
+
 ___
 
 ### toggleOutLine
@@ -269,6 +301,10 @@ ___
 #### Returns
 
 `void`
+
+#### Defined in
+
+src/tools/camera/outlineCamera.ts:84
 
 ___
 
@@ -291,3 +327,7 @@ ___
 #### Overrides
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[updateOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#updateoptions)
+
+#### Defined in
+
+src/tools/camera/outlineCamera.ts:72

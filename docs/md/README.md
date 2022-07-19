@@ -34,7 +34,6 @@ pc-ex
 - [RTH\_RuntimeGrid](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/RTH_RuntimeGrid.md)
 - [Ray\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Ray_EX.md)
 - [RuntimeTransformHandle](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/RuntimeTransformHandle.md)
-- [ScriptTypeBase](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md)
 - [Selector](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Selector.md)
 - [Texture\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Texture_EX.md)
 - [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md)
@@ -84,6 +83,8 @@ pc-ex
 
 Ƭ **AttributeParams**: `Object`
 
+脚本属性数据模板
+
 #### Type declaration
 
 | Name | Type |
@@ -99,6 +100,7 @@ pc-ex
 | `min?` | `number` |
 | `placeholder?` | `string` \| `string`[] |
 | `precision?` | `number` |
+| `schema?` | `object`[] |
 | `size?` | `number` |
 | `step?` | `number` |
 | `title?` | `string` |
@@ -106,13 +108,15 @@ pc-ex
 
 #### Defined in
 
-src/utils/helpers/create-script-decorator.ts:56
+src/utils/helpers/create-script-decorator.ts:14
 
 ## Functions
 
 ### attr
 
 ▸ **attr**<`T`\>(`params`): `any`
+
+便捷添加脚本属性数据
 
 #### Type parameters
 
@@ -122,13 +126,17 @@ src/utils/helpers/create-script-decorator.ts:56
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `params` | [`AttributeParams`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attributeparams) |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `params` | [`AttributeParams`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attributeparams) | 脚本属性对应数据 |
 
 #### Returns
 
 `any`
+
+#### Defined in
+
+src/utils/helpers/create-script-decorator.ts:58
 
 ___
 
@@ -156,39 +164,43 @@ ___
 
 转换类型后的对象
 
+#### Defined in
+
+src/utils/helpers/extend-decorator.ts:52
+
 ___
 
 ### createScript
 
-▸ **createScript**(`name`): (`obj`: `any`) => `void`
+▸ **createScript**(`name`): (`target`: typeof `ScriptType`) => `void`
 
-Class decorator allowing the use of ES6 classes
-to define and create PlayCanvas script types.
-Caveat is: There is a slight iterative runtime overhead to this. (unlike Haxe which can utilize precompiled-macros)
-The cool thing is that your script (if it uses properties) has an additional property called `attributesData` that can facilitate offboard property reflection/runtime-component
-property GUI creation.
+便捷添加脚本
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name` | `string` | 脚本名称 |
 
 #### Returns
 
 `fn`
 
-▸ (`obj`): `void`
+▸ (`target`): `void`
 
 ##### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `obj` | `any` |
+| `target` | typeof `ScriptType` |
 
 ##### Returns
 
 `void`
+
+#### Defined in
+
+src/utils/helpers/create-script-decorator.ts:37
 
 ___
 
@@ -210,6 +222,10 @@ ___
 
 `void`
 
+#### Defined in
+
+src/utils/func/drawSelectionBox/drawScreenQuad.ts:34
+
 ___
 
 ### drawScreenRect
@@ -229,6 +245,10 @@ ___
 #### Returns
 
 `void`
+
+#### Defined in
+
+src/utils/func/drawSelectionBox/drawScreenRect.ts:34
 
 ___
 
@@ -255,6 +275,10 @@ ___
 `pc.Vec4`
 
 框选矩形范围
+
+#### Defined in
+
+src/utils/func/drawSelectionBox/drawSelectionBox.ts:27
 
 ___
 
@@ -288,6 +312,10 @@ ___
 
 `void`
 
+#### Defined in
+
+src/utils/helpers/extend-decorator.ts:62
+
 ___
 
 ### frag
@@ -303,6 +331,10 @@ ___
 #### Returns
 
 `string`
+
+#### Defined in
+
+src/utils/helpers/shaderHelper.ts:11
 
 ___
 
@@ -330,6 +362,10 @@ ___
 
 工具实例
 
+#### Defined in
+
+src/utils/helpers/useToolHelper.ts:135
+
 ___
 
 ### glsl
@@ -352,6 +388,10 @@ ___
 
 `string`
 
+#### Defined in
+
+src/utils/helpers/shaderHelper.ts:9
+
 ___
 
 ### glslify
@@ -367,6 +407,10 @@ ___
 #### Returns
 
 `string`
+
+#### Defined in
+
+src/utils/helpers/shaderHelper.ts:10
 
 ___
 
@@ -395,6 +439,10 @@ ___
 
 工具实例
 
+#### Defined in
+
+src/utils/helpers/useToolHelper.ts:89
+
 ___
 
 ### useGlobal
@@ -422,6 +470,10 @@ ___
 
 工具实例
 
+#### Defined in
+
+src/utils/helpers/useToolHelper.ts:108
+
 ___
 
 ### vert
@@ -437,3 +489,7 @@ ___
 #### Returns
 
 `string`
+
+#### Defined in
+
+src/utils/helpers/shaderHelper.ts:12

@@ -62,6 +62,10 @@
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#constructor)
 
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:94
+
 ## Properties
 
 ### app
@@ -160,6 +164,10 @@ src/tools/camera/orbitCamera.ts:55
 
 `AvailableDevices`
 
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:179
+
 • `set` **device**(`value`): `void`
 
 #### Parameters
@@ -171,6 +179,10 @@ src/tools/camera/orbitCamera.ts:55
 #### Returns
 
 `void`
+
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:183
 
 ___
 
@@ -184,6 +196,10 @@ ___
 
 `number`
 
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:155
+
 • `set` **distance**(`value`): `void`
 
 #### Parameters
@@ -195,6 +211,10 @@ ___
 #### Returns
 
 `void`
+
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:159
 
 ___
 
@@ -211,6 +231,10 @@ ___
 #### Inherited from
 
 Tool.enabled
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:52
 
 • `set` **enabled**(`value`): `void`
 
@@ -230,6 +254,10 @@ Tool.enabled
 
 Tool.enabled
 
+#### Defined in
+
+src/utils/helpers/toolBase.ts:43
+
 ___
 
 ### pitch
@@ -241,6 +269,10 @@ ___
 #### Returns
 
 `number`
+
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:143
 
 • `set` **pitch**(`value`): `void`
 
@@ -254,6 +286,10 @@ ___
 
 `void`
 
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:147
+
 ___
 
 ### pivotPoint
@@ -265,6 +301,10 @@ ___
 #### Returns
 
 `Vec3`
+
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:167
 
 • `set` **pivotPoint**(`value`): `void`
 
@@ -278,6 +318,10 @@ ___
 
 `void`
 
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:171
+
 ___
 
 ### yaw
@@ -290,6 +334,10 @@ ___
 
 `number`
 
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:121
+
 • `set` **yaw**(`value`): `void`
 
 #### Parameters
@@ -301,6 +349,10 @@ ___
 #### Returns
 
 `void`
+
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:125
 
 ## Methods
 
@@ -332,6 +384,10 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[addListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#addlistener)
 
+#### Defined in
+
+src/utils/helpers/toolBase.ts:63
+
 ___
 
 ### focus
@@ -350,6 +406,10 @@ ___
 
 `void`
 
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:215
+
 ___
 
 ### onDisable
@@ -364,6 +424,10 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[onDisable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#ondisable)
 
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:407
+
 ___
 
 ### onEnable
@@ -377,6 +441,10 @@ ___
 #### Overrides
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#onenable)
+
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:385
 
 ___
 
@@ -408,6 +476,10 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#removelistener)
 
+#### Defined in
+
+src/utils/helpers/toolBase.ts:74
+
 ___
 
 ### setOptions
@@ -430,6 +502,10 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[setOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#setoptions)
 
+#### Defined in
+
+src/utils/helpers/toolBase.ts:83
+
 ___
 
 ### stopInertia
@@ -441,6 +517,10 @@ ___
 #### Returns
 
 `void`
+
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:235
 
 ___
 
@@ -476,3 +556,7 @@ ___
 #### Inherited from
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[updateOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#updateoptions)
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:96

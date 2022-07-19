@@ -52,6 +52,10 @@
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#constructor)
 
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:597
+
 ## Properties
 
 ### app
@@ -124,6 +128,10 @@ src/tools/camera/orbitCamera.ts:583
 
 Tool.enabled
 
+#### Defined in
+
+src/utils/helpers/toolBase.ts:52
+
 • `set` **enabled**(`value`): `void`
 
 设置工具启用状态（触发启用和禁用时的额外操作）
@@ -141,6 +149,10 @@ Tool.enabled
 #### Inherited from
 
 Tool.enabled
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:43
 
 ## Methods
 
@@ -172,6 +184,10 @@ Tool.enabled
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[addListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#addlistener)
 
+#### Defined in
+
+src/utils/helpers/toolBase.ts:63
+
 ___
 
 ### onDisable
@@ -186,6 +202,10 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[onDisable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#ondisable)
 
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:731
+
 ___
 
 ### onEnable
@@ -199,6 +219,10 @@ ___
 #### Overrides
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#onenable)
+
+#### Defined in
+
+src/tools/camera/orbitCamera.ts:723
 
 ___
 
@@ -230,6 +254,10 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#removelistener)
 
+#### Defined in
+
+src/utils/helpers/toolBase.ts:74
+
 ___
 
 ### setOptions
@@ -251,6 +279,10 @@ ___
 #### Inherited from
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[setOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#setoptions)
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:83
 
 ___
 
@@ -276,3 +308,7 @@ ___
 #### Inherited from
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[updateOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#updateoptions)
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:96

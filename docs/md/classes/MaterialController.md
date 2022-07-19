@@ -44,6 +44,10 @@
 
 `void`
 
+#### Defined in
+
+src/utils/func/materialController.ts:47
+
 ___
 
 ### recoverAllMats
@@ -62,6 +66,10 @@ ___
 
 `void`
 
+#### Defined in
+
+src/utils/func/materialController.ts:168
+
 ___
 
 ### saveAllMats
@@ -79,6 +87,10 @@ ___
 #### Returns
 
 `void`
+
+#### Defined in
+
+src/utils/func/materialController.ts:155
 
 ___
 
@@ -100,6 +112,10 @@ ___
 
 `void`
 
+#### Defined in
+
+src/utils/func/materialController.ts:107
+
 ___
 
 ### setMatsDeep
@@ -120,6 +136,10 @@ ___
 
 `void`
 
+#### Defined in
+
+src/utils/func/materialController.ts:86
+
 ___
 
 ### toggleWireFrame
@@ -138,3 +158,7 @@ ___
 #### Returns
 
 `void`
+
+#### Defined in
+
+src/utils/func/materialController.ts:132

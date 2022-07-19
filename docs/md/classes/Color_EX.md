@@ -65,6 +65,10 @@ Create a new Color object.
 
 pc.Color.constructor
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8608
+
 ## Properties
 
 ### a
@@ -285,6 +289,10 @@ node_modules/playcanvas/build/playcanvas.d.ts:8598
 
 `Float32Array`
 
+#### Defined in
+
+src/extensions/color.ts:21
+
 ## Methods
 
 ### clone
@@ -302,6 +310,10 @@ A duplicate color object.
 #### Inherited from
 
 pc.Color.clone
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8638
 
 ___
 
@@ -338,6 +350,10 @@ Self for chaining.
 
 pc.Color.copy
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8652
+
 ___
 
 ### equals
@@ -370,6 +386,10 @@ True if the colors are equal and false otherwise.
 
 pc.Color.equals
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8663
+
 ___
 
 ### fromString
@@ -393,6 +413,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Color.fromString
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8701
 
 ___
 
@@ -432,6 +456,10 @@ Self for chaining.
 
 pc.Color.lerp
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8692
+
 ___
 
 ### set
@@ -458,6 +486,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Color.set
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8673
 
 ___
 
@@ -492,3 +524,7 @@ The color in string form.
 #### Inherited from
 
 pc.Color.toString
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:8714

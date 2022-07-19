@@ -120,6 +120,10 @@ this.app.scene.root.addChild(entity);
 
 pc.MeshInstance.constructor
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:10918
+
 ## Properties
 
 ### \_aabb
@@ -571,6 +575,10 @@ node_modules/playcanvas/build/playcanvas.d.ts:10893
 
 pc.MeshInstance.aabb
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11000
+
 • `set` **aabb**(`arg`): `void`
 
 The world space axis-aligned bounding box for this mesh instance.
@@ -589,6 +597,10 @@ The world space axis-aligned bounding box for this mesh instance.
 
 pc.MeshInstance.aabb
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:10999
+
 ___
 
 ### calculateSortDistance
@@ -602,6 +614,10 @@ ___
 #### Inherited from
 
 pc.MeshInstance.calculateSortDistance
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11055
 
 • `set` **calculateSortDistance**(`arg`): `void`
 
@@ -625,6 +641,10 @@ useful for rendering transparent meshes in a better order than default.
 
 pc.MeshInstance.calculateSortDistance
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11054
+
 ___
 
 ### instancingCount
@@ -638,6 +658,10 @@ ___
 #### Inherited from
 
 pc.MeshInstance.instancingCount
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11090
 
 • `set` **instancingCount**(`arg`): `void`
 
@@ -657,6 +681,10 @@ Number of instances when using hardware instancing to render the mesh.
 
 pc.MeshInstance.instancingCount
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11089
+
 ___
 
 ### key
@@ -670,6 +698,10 @@ ___
 #### Inherited from
 
 pc.MeshInstance.key
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11075
 
 • `set` **key**(`arg`): `void`
 
@@ -687,6 +719,10 @@ pc.MeshInstance.key
 
 pc.MeshInstance.key
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11074
+
 ___
 
 ### layer
@@ -700,6 +736,10 @@ ___
 #### Inherited from
 
 pc.MeshInstance.layer
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:10954
 
 • `set` **layer**(`arg`): `void`
 
@@ -717,6 +757,10 @@ pc.MeshInstance.layer
 
 pc.MeshInstance.layer
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:10953
+
 ___
 
 ### mask
@@ -730,6 +774,10 @@ ___
 #### Inherited from
 
 pc.MeshInstance.mask
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11083
 
 • `set` **mask**(`arg`): `void`
 
@@ -750,6 +798,10 @@ CameraComponent sees it and in which Layer it is rendered. Defaults to 1.
 
 pc.MeshInstance.mask
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11082
+
 ___
 
 ### material
@@ -763,6 +815,10 @@ ___
 #### Inherited from
 
 pc.MeshInstance.material
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:10942
 
 • `set` **material**(`arg`): `void`
 
@@ -782,6 +838,10 @@ The material used by this mesh instance.
 
 pc.MeshInstance.material
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:10941
+
 ___
 
 ### mesh
@@ -795,6 +855,10 @@ ___
 #### Inherited from
 
 pc.MeshInstance.mesh
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11042
 
 • `set` **mesh**(`arg`): `void`
 
@@ -814,6 +878,10 @@ The graphics mesh being instanced.
 
 pc.MeshInstance.mesh
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11041
+
 ___
 
 ### morphInstance
@@ -827,6 +895,10 @@ ___
 #### Inherited from
 
 pc.MeshInstance.morphInstance
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11071
 
 • `set` **morphInstance**(`arg`): `void`
 
@@ -846,6 +918,10 @@ The morph instance managing morphing of this mesh instance, or null if morphing 
 
 pc.MeshInstance.morphInstance
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11070
+
 ___
 
 ### receiveShadow
@@ -859,6 +935,10 @@ ___
 #### Inherited from
 
 pc.MeshInstance.receiveShadow
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11057
 
 • `set` **receiveShadow**(`arg`): `void`
 
@@ -876,6 +956,10 @@ pc.MeshInstance.receiveShadow
 
 pc.MeshInstance.receiveShadow
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11056
+
 ___
 
 ### renderStyle
@@ -889,6 +973,10 @@ ___
 #### Inherited from
 
 pc.MeshInstance.renderStyle
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11035
 
 • `set` **renderStyle**(`arg`): `void`
 
@@ -914,6 +1002,10 @@ Defaults to RENDERSTYLE_SOLID.
 
 pc.MeshInstance.renderStyle
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11034
+
 ___
 
 ### screenSpace
@@ -927,6 +1019,10 @@ ___
 #### Inherited from
 
 pc.MeshInstance.screenSpace
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11073
 
 • `set` **screenSpace**(`arg`): `void`
 
@@ -944,6 +1040,10 @@ pc.MeshInstance.screenSpace
 
 pc.MeshInstance.screenSpace
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11072
+
 ___
 
 ### skinInstance
@@ -957,6 +1057,10 @@ ___
 #### Inherited from
 
 pc.MeshInstance.skinInstance
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11064
 
 • `set` **skinInstance**(`arg`): `void`
 
@@ -975,6 +1079,10 @@ The skin instance managing skinning of this mesh instance, or null if skinning i
 #### Inherited from
 
 pc.MeshInstance.skinInstance
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11063
 
 ## Methods
 
@@ -996,6 +1104,10 @@ pc.MeshInstance.skinInstance
 
 pc.MeshInstance.\_isVisible
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11092
+
 ___
 
 ### \_setupSkinUpdate
@@ -1010,6 +1122,10 @@ ___
 
 pc.MeshInstance.\_setupSkinUpdate
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11130
+
 ___
 
 ### clearParameters
@@ -1023,6 +1139,10 @@ ___
 #### Inherited from
 
 pc.MeshInstance.clearParameters
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11101
 
 ___
 
@@ -1046,6 +1166,10 @@ Deletes a shader parameter on a mesh instance.
 
 pc.MeshInstance.deleteParameter
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11126
+
 ___
 
 ### destroy
@@ -1059,6 +1183,10 @@ ___
 #### Inherited from
 
 pc.MeshInstance.destroy
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11091
 
 ___
 
@@ -1084,6 +1212,10 @@ The named parameter.
 
 pc.MeshInstance.getParameter
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11109
+
 ___
 
 ### getParameters
@@ -1097,6 +1229,10 @@ ___
 #### Inherited from
 
 pc.MeshInstance.getParameters
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11102
 
 ___
 
@@ -1119,6 +1255,10 @@ ___
 
 交点集合
 
+#### Defined in
+
+src/extensions/meshInstance.ts:112
+
 ___
 
 ### setCustomAabb
@@ -1138,6 +1278,10 @@ ___
 #### Inherited from
 
 pc.MeshInstance.setCustomAabb
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11129
 
 ___
 
@@ -1161,6 +1305,10 @@ Sets up MeshInstance to be rendered using Hardware Instancing.
 
 pc.MeshInstance.setInstancing
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11100
+
 ___
 
 ### setLightmapped
@@ -1180,6 +1328,10 @@ ___
 #### Inherited from
 
 pc.MeshInstance.setLightmapped
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11128
 
 ___
 
@@ -1206,6 +1358,10 @@ over parameter of the same name if set on Material this mesh instance uses for r
 
 pc.MeshInstance.setParameter
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11119
+
 ___
 
 ### setParameters
@@ -1226,6 +1382,10 @@ ___
 #### Inherited from
 
 pc.MeshInstance.setParameters
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11127
 
 ___
 
@@ -1248,6 +1408,10 @@ ___
 
 pc.MeshInstance.setRealtimeLightmap
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11120
+
 ___
 
 ### updateKey
@@ -1261,6 +1425,10 @@ ___
 #### Inherited from
 
 pc.MeshInstance.updateKey
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:11093
 
 ___
 
@@ -1282,3 +1450,7 @@ ___
 #### Inherited from
 
 pc.MeshInstance.\_prepareRenderStyleForArray
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:10894

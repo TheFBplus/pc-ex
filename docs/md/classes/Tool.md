@@ -78,6 +78,10 @@
 | `Options` | extends `Object` |
 | `EventsMap` | extends `Object` |
 
+#### Defined in
+
+src/utils/helpers/toolBase.ts:33
+
 ## Properties
 
 ### app
@@ -130,6 +134,10 @@ src/utils/helpers/toolBase.ts:25
 
 `boolean`
 
+#### Defined in
+
+src/utils/helpers/toolBase.ts:52
+
 • `set` **enabled**(`value`): `void`
 
 设置工具启用状态（触发启用和禁用时的额外操作）
@@ -143,6 +151,10 @@ src/utils/helpers/toolBase.ts:25
 #### Returns
 
 `void`
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:43
 
 ## Methods
 
@@ -170,6 +182,10 @@ src/utils/helpers/toolBase.ts:25
 
 `void`
 
+#### Defined in
+
+src/utils/helpers/toolBase.ts:63
+
 ___
 
 ### onDisable
@@ -180,6 +196,10 @@ ___
 
 `void`
 
+#### Defined in
+
+src/utils/helpers/toolBase.ts:105
+
 ___
 
 ### onEnable
@@ -189,6 +209,10 @@ ___
 #### Returns
 
 `void`
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:104
 
 ___
 
@@ -216,6 +240,10 @@ ___
 
 `void`
 
+#### Defined in
+
+src/utils/helpers/toolBase.ts:74
+
 ___
 
 ### setOptions
@@ -234,6 +262,10 @@ ___
 
 `void`
 
+#### Defined in
+
+src/utils/helpers/toolBase.ts:83
+
 ___
 
 ### updateOptions
@@ -251,3 +283,7 @@ ___
 #### Returns
 
 `void`
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:96

@@ -152,6 +152,10 @@ texture.unlock();
 
 pc.Texture.constructor
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6236
+
 ## Properties
 
 ### \_addressU
@@ -658,6 +662,10 @@ node_modules/playcanvas/build/playcanvas.d.ts:6270
 
 pc.Texture.addressU
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6344
+
 • `set` **addressU**(`arg`): `void`
 
 The addressing mode to be applied to the texture horizontally. Can be:
@@ -680,6 +688,10 @@ The addressing mode to be applied to the texture horizontally. Can be:
 
 pc.Texture.addressU
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6343
+
 ___
 
 ### addressV
@@ -693,6 +705,10 @@ ___
 #### Inherited from
 
 pc.Texture.addressV
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6355
 
 • `set` **addressV**(`arg`): `void`
 
@@ -716,6 +732,10 @@ The addressing mode to be applied to the texture vertically. Can be:
 
 pc.Texture.addressV
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6354
+
 ___
 
 ### addressW
@@ -729,6 +749,10 @@ ___
 #### Inherited from
 
 pc.Texture.addressW
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6366
 
 • `set` **addressW**(`arg`): `void`
 
@@ -752,6 +776,10 @@ The addressing mode to be applied to the 3D texture depth (WebGL2 only). Can be:
 
 pc.Texture.addressW
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6365
+
 ___
 
 ### anisotropy
@@ -765,6 +793,10 @@ ___
 #### Inherited from
 
 pc.Texture.anisotropy
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6397
 
 • `set` **anisotropy**(`arg`): `void`
 
@@ -785,6 +817,10 @@ anisotropic filtering) to the GraphicsDevice property maxAnisotropy.
 
 pc.Texture.anisotropy
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6396
+
 ___
 
 ### autoMipmap
@@ -799,6 +835,10 @@ ___
 
 pc.Texture.autoMipmap
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6406
+
 ___
 
 ### compareFunc
@@ -812,6 +852,10 @@ ___
 #### Inherited from
 
 pc.Texture.compareFunc
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6389
 
 • `set` **compareFunc**(`arg`): `void`
 
@@ -838,6 +882,10 @@ Comparison function when compareOnRead is enabled (WebGL2 only). Possible values
 
 pc.Texture.compareFunc
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6388
+
 ___
 
 ### compareOnRead
@@ -851,6 +899,10 @@ ___
 #### Inherited from
 
 pc.Texture.compareOnRead
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6375
 
 • `set` **compareOnRead**(`arg`): `void`
 
@@ -872,6 +924,10 @@ filtered results of comparison using texture() in your shader (WebGL2 only).
 
 pc.Texture.compareOnRead
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6374
+
 ___
 
 ### cubemap
@@ -887,6 +943,10 @@ Returns true if this texture is a cube map and false otherwise.
 #### Inherited from
 
 pc.Texture.cubemap
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6469
 
 ___
 
@@ -904,6 +964,10 @@ The number of depth slices in a 3D texture (WebGL2 only).
 
 pc.Texture.depth
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6432
+
 ___
 
 ### encoding
@@ -918,6 +982,10 @@ ___
 
 pc.Texture.encoding
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6495
+
 ___
 
 ### flipY
@@ -931,6 +999,10 @@ ___
 #### Inherited from
 
 pc.Texture.flipY
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6485
 
 • `set` **flipY**(`arg`): `void`
 
@@ -951,6 +1023,10 @@ compressed textures or textures set from raw pixel data. Defaults to true.
 #### Inherited from
 
 pc.Texture.flipY
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6484
 
 ___
 
@@ -993,6 +1069,10 @@ The pixel format of the texture. Can be:
 
 pc.Texture.format
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6463
+
 ___
 
 ### gpuSize
@@ -1006,6 +1086,10 @@ ___
 #### Inherited from
 
 pc.Texture.gpuSize
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6470
 
 ___
 
@@ -1023,6 +1107,10 @@ The height of the texture in pixels.
 
 pc.Texture.height
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6426
+
 ___
 
 ### magFilter
@@ -1036,6 +1124,10 @@ ___
 #### Inherited from
 
 pc.Texture.magFilter
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6333
 
 • `set` **magFilter**(`arg`): `void`
 
@@ -1058,6 +1150,10 @@ The magnification filter to be applied to the texture. Can be:
 
 pc.Texture.magFilter
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6332
+
 ___
 
 ### minFilter
@@ -1071,6 +1167,10 @@ ___
 #### Inherited from
 
 pc.Texture.minFilter
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6323
 
 • `set` **minFilter**(`arg`): `void`
 
@@ -1097,6 +1197,10 @@ The minification filter to be applied to the texture. Can be:
 
 pc.Texture.minFilter
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6322
+
 ___
 
 ### mipmaps
@@ -1110,6 +1214,10 @@ ___
 #### Inherited from
 
 pc.Texture.mipmaps
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6413
 
 • `set` **mipmaps**(`arg`): `void`
 
@@ -1129,6 +1237,10 @@ Defines if texture should generate/upload mipmaps if possible.
 
 pc.Texture.mipmaps
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6412
+
 ___
 
 ### pixelData
@@ -1140,6 +1252,10 @@ ___
 #### Returns
 
 `Uint8ClampedArray`
+
+#### Defined in
+
+src/extensions/texture.ts:41
 
 ___
 
@@ -1157,6 +1273,10 @@ Returns true if all dimensions of the texture are power of two, and false otherw
 
 pc.Texture.pot
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6494
+
 ___
 
 ### premultiplyAlpha
@@ -1170,6 +1290,10 @@ ___
 #### Inherited from
 
 pc.Texture.premultiplyAlpha
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6488
 
 • `set` **premultiplyAlpha**(`arg`): `void`
 
@@ -1187,6 +1311,10 @@ pc.Texture.premultiplyAlpha
 
 pc.Texture.premultiplyAlpha
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6487
+
 ___
 
 ### volume
@@ -1202,6 +1330,10 @@ Returns true if this texture is a 3D volume and false otherwise.
 #### Inherited from
 
 pc.Texture.volume
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6476
 
 ___
 
@@ -1219,6 +1351,10 @@ The width of the texture in pixels.
 
 pc.Texture.width
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6420
+
 ## Methods
 
 ### destroy
@@ -1235,6 +1371,10 @@ Frees resources associated with this texture.
 
 pc.Texture.destroy
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6297
+
 ___
 
 ### dirtyAll
@@ -1249,6 +1389,10 @@ ___
 
 pc.Texture.dirtyAll
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6496
+
 ___
 
 ### getPixelData
@@ -1262,6 +1406,10 @@ ___
 `Uint8ClampedArray`
 
 贴图的像素数据
+
+#### Defined in
+
+src/extensions/texture.ts:51
 
 ___
 
@@ -1288,6 +1436,10 @@ assigned for specific image level.
 #### Inherited from
 
 pc.Texture.getSource
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6541
 
 ___
 
@@ -1317,6 +1469,10 @@ the locked mip level.
 
 pc.Texture.lock
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6515
+
 ___
 
 ### setSource
@@ -1341,6 +1497,10 @@ a cubemap, the supplied source must be an array of 6 canvases, images or videos.
 
 pc.Texture.setSource
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6530
+
 ___
 
 ### texture2D
@@ -1362,6 +1522,10 @@ ___
 
 `Color`
 
+#### Defined in
+
+src/extensions/texture.ts:75
+
 ___
 
 ### unlock
@@ -1377,6 +1541,10 @@ Unlocks the currently locked mip level and uploads it to VRAM.
 #### Inherited from
 
 pc.Texture.unlock
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6545
 
 ___
 
@@ -1397,3 +1565,7 @@ geometry is rendered.
 #### Inherited from
 
 pc.Texture.upload
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:6553

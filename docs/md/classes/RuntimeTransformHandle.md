@@ -58,6 +58,10 @@
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#constructor)
 
+#### Defined in
+
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:165
+
 ## Properties
 
 ### app
@@ -130,6 +134,10 @@ src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:55
 
 Tool.enabled
 
+#### Defined in
+
+src/utils/helpers/toolBase.ts:52
+
 • `set` **enabled**(`value`): `void`
 
 设置工具启用状态（触发启用和禁用时的额外操作）
@@ -147,6 +155,10 @@ Tool.enabled
 #### Inherited from
 
 Tool.enabled
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:43
 
 ## Methods
 
@@ -178,6 +190,10 @@ Tool.enabled
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[addListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#addlistener)
 
+#### Defined in
+
+src/utils/helpers/toolBase.ts:63
+
 ___
 
 ### focus
@@ -189,6 +205,10 @@ ___
 #### Returns
 
 `void`
+
+#### Defined in
+
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:358
 
 ___
 
@@ -208,6 +228,10 @@ ___
 
 `void`
 
+#### Defined in
+
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:411
+
 ___
 
 ### onDisable
@@ -221,6 +245,10 @@ ___
 #### Overrides
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[onDisable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#ondisable)
+
+#### Defined in
+
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:1086
 
 ___
 
@@ -236,6 +264,10 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#onenable)
 
+#### Defined in
+
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:1084
+
 ___
 
 ### redo
@@ -247,6 +279,10 @@ ___
 #### Returns
 
 `void`
+
+#### Defined in
+
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:400
 
 ___
 
@@ -278,6 +314,10 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#removelistener)
 
+#### Defined in
+
+src/utils/helpers/toolBase.ts:74
+
 ___
 
 ### select
@@ -297,6 +337,10 @@ ___
 
 `void`
 
+#### Defined in
+
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:328
+
 ___
 
 ### setHandleType
@@ -314,6 +358,10 @@ ___
 #### Returns
 
 `void`
+
+#### Defined in
+
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:303
 
 ___
 
@@ -337,6 +385,10 @@ ___
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[setOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#setoptions)
 
+#### Defined in
+
+src/utils/helpers/toolBase.ts:83
+
 ___
 
 ### setPivotType
@@ -354,6 +406,10 @@ ___
 #### Returns
 
 `void`
+
+#### Defined in
+
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:317
 
 ___
 
@@ -373,6 +429,10 @@ ___
 
 `void`
 
+#### Defined in
+
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:370
+
 ___
 
 ### undo
@@ -384,6 +444,10 @@ ___
 #### Returns
 
 `void`
+
+#### Defined in
+
+src/tools/runtimeTransformHandle/runtimeTransformHandle.ts:390
 
 ___
 
@@ -416,3 +480,7 @@ ___
 #### Inherited from
 
 [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[updateOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#updateoptions)
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:96

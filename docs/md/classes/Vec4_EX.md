@@ -84,6 +84,10 @@ var v = new pc.Vec4(1, 2, 3, 4);
 
 pc.Vec4.constructor
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4493
+
 ## Properties
 
 ### w
@@ -192,6 +196,10 @@ node_modules/playcanvas/build/playcanvas.d.ts:4474
 
 `Float32Array`
 
+#### Defined in
+
+src/extensions/vec4.ts:21
+
 ## Methods
 
 ### add
@@ -227,6 +235,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec4.add
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4532
 
 ___
 
@@ -266,6 +278,10 @@ Self for chaining.
 
 pc.Vec4.add2
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4549
+
 ___
 
 ### addScalar
@@ -301,6 +317,10 @@ Self for chaining.
 
 pc.Vec4.addScalar
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4563
+
 ___
 
 ### ceil
@@ -318,6 +338,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec4.ceil
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4770
 
 ___
 
@@ -344,6 +368,10 @@ A 4-dimensional vector containing the result of the cloning.
 #### Inherited from
 
 pc.Vec4.clone
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4573
 
 ___
 
@@ -380,6 +408,10 @@ Self for chaining.
 
 pc.Vec4.copy
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4587
+
 ___
 
 ### div
@@ -415,6 +447,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec4.div
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4602
 
 ___
 
@@ -454,6 +490,10 @@ Self for chaining.
 
 pc.Vec4.div2
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4619
+
 ___
 
 ### divScalar
@@ -489,6 +529,10 @@ Self for chaining.
 
 pc.Vec4.divScalar
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4633
+
 ___
 
 ### dot
@@ -523,6 +567,10 @@ The result of the dot product operation.
 
 pc.Vec4.dot
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4646
+
 ___
 
 ### equals
@@ -555,6 +603,10 @@ True if the vectors are equal and false otherwise.
 
 pc.Vec4.equals
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4657
+
 ___
 
 ### floor
@@ -572,6 +624,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec4.floor
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4764
 
 ___
 
@@ -600,6 +656,10 @@ The magnitude of the specified 4-dimensional vector.
 
 pc.Vec4.length
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4668
+
 ___
 
 ### lengthSq
@@ -626,6 +686,10 @@ The magnitude of the specified 4-dimensional vector.
 #### Inherited from
 
 pc.Vec4.lengthSq
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4679
 
 ___
 
@@ -665,6 +729,10 @@ Self for chaining.
 
 pc.Vec4.lerp
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4698
+
 ___
 
 ### max
@@ -689,6 +757,10 @@ Self for chaining.
 
 pc.Vec4.max
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4790
+
 ___
 
 ### min
@@ -712,6 +784,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec4.min
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4783
 
 ___
 
@@ -748,6 +824,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec4.mul
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4713
 
 ___
 
@@ -787,6 +867,10 @@ Self for chaining.
 
 pc.Vec4.mul2
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4730
+
 ___
 
 ### mulScalar
@@ -822,6 +906,10 @@ Self for chaining.
 
 pc.Vec4.mulScalar
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4744
+
 ___
 
 ### normalize
@@ -852,6 +940,10 @@ Self for chaining.
 
 pc.Vec4.normalize
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4758
+
 ___
 
 ### round
@@ -869,6 +961,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec4.round
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4776
 
 ___
 
@@ -907,6 +1003,10 @@ Self for chaining.
 
 pc.Vec4.set
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4806
+
 ___
 
 ### sub
@@ -942,6 +1042,10 @@ Self for chaining.
 #### Inherited from
 
 pc.Vec4.sub
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4821
 
 ___
 
@@ -981,6 +1085,10 @@ Self for chaining.
 
 pc.Vec4.sub2
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4838
+
 ___
 
 ### subScalar
@@ -1016,6 +1124,10 @@ Self for chaining.
 
 pc.Vec4.subScalar
 
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4852
+
 ___
 
 ### toString
@@ -1041,3 +1153,7 @@ The vector in string form.
 #### Inherited from
 
 pc.Vec4.toString
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:4862

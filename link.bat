@@ -1,5 +1,5 @@
 call npm link
 call cd..
-call cd pc-editor
+call cd ceremony-demo
 call npm link pc-ex
 pause

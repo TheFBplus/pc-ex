@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-05-16 14:30:00
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-11 21:12:07
+ * @ 修改时间: 2022-07-20 09:43:16
  * @ 详情: 多选模型
  */
 
@@ -19,7 +19,7 @@ import { InputEventsMap } from "../../utils/common/InputEventsMap";
 /**
  * 模型多选事件-回调表
  */
-interface MultiSelectorEventType
+interface MultiSelectorEventMap
 {
     selectStart: () => any;
     selecting: (selectedNodes: pc.GraphNode[], preSelectedNodes: pc.GraphNode[]) => any;
@@ -40,7 +40,7 @@ export interface MultiSelectorOptions
 };
 
 @tool("MultiSelector")
-export class MultiSelector extends Tool<MultiSelectorOptions, MultiSelectorEventType>
+export class MultiSelector extends Tool<MultiSelectorOptions, MultiSelectorEventMap>
 {
     // 默认选项
     protected toolOptionsDefault: MultiSelectorOptions = {

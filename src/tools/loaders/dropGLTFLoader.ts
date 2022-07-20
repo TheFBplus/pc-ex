@@ -2,12 +2,13 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-20 10:49:14
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-11 21:12:00
+ * @ 修改时间: 2022-07-20 09:31:13
  * @ 详情: 拖拽gltf到窗口加载模型
  */
 
 import * as pc from "playcanvas";
 
+import GlobalVariables from "@/utils/common/GlobalVariables";
 import { Tool } from "@/utils/helpers/toolBase";
 import { tool } from "@/utils/helpers/useToolHelper";
 
@@ -55,7 +56,7 @@ export class DropGLTFLoader extends Tool<any, DropGLTFLoaderEventsMap>
     // load gltf model given its url and list of external urls
     private loadGltf(gltfUrl: File, externalUrls: Array<File>, finishedCallback: (err: string | null, asset: pc.Asset) => void)
     {
-        const app = pc.Application.getApplication();
+        const app = GlobalVariables.app;
         // provide buffer view callback so we can handle models compressed with MeshOptimizer
         // https://github.com/zeux/meshoptimizer
         const processBufferView = function (gltfBuffer: any, buffers: Array<any>, continuation: (err: string, result: any) => void)

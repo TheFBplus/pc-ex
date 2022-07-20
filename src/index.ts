@@ -24,6 +24,8 @@ export { KeyboardInputOptions, RTH_KeyboardInputer } from "./tools/runtimeTransf
 export { RTHOptions, RuntimeTransformHandle } from "./tools/runtimeTransformHandle/runtimeTransformHandle";
 export { MultiSelector, MultiSelectorOptions } from "./tools/selector/multiSelector";
 export { Selector, SelectorOptions } from "./tools/selector/selector";
+export { Toggle } from "./tools/ui/toggle/toggle";
+export { ToggleGroup, ToggleGroupOptions } from "./tools/ui/toggle/toggleGroup";
 // utils
 export { InputEventsMap } from "./utils/common/InputEventsMap";
 export { DebugLine } from "./utils/func/debugLine";

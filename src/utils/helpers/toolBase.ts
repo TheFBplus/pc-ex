@@ -2,11 +2,13 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 16:09:29
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-11 21:12:18
+ * @ 修改时间: 2022-07-20 09:35:29
  * @ 详情: 工具类扩展辅助
  */
 
 import * as pc from "playcanvas";
+
+import GlobalVariables from "../common/GlobalVariables";
 
 // 包含事件监听的新类型
 interface ExEventHandler<EventsMap> extends Tool<any, EventsMap>
@@ -33,8 +35,10 @@ export abstract class Tool<Options extends { [index: string]: any }, EventsMap e
     constructor()
     {
         pc.events.attach(this);
-        this.app = pc.Application.getApplication();
+        this.app = GlobalVariables.app;
         this.eventHandler = this as any as ExEventHandler<EventsMap>;
+
+        this.enabled = true;
     }
 
     /**

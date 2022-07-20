@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 16:09:29
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-13 13:52:43
+ * @ 修改时间: 2022-07-20 14:22:56
  * @ 详情: 工具类扩展辅助
  */
 
@@ -25,6 +25,8 @@ import {
 } from "@/tools/runtimeTransformHandle/runtimeTransformHandle";
 import { MultiSelector, MultiSelectorOptions } from "@/tools/selector/multiSelector";
 import { Selector, SelectorOptions } from "@/tools/selector/selector";
+import { Toggle } from "@/tools/ui/toggle/toggle";
+import { ToggleGroup, ToggleGroupOptions } from "@/tools/ui/toggle/toggleGroup";
 
 import { Tool } from "./toolBase";
 
@@ -39,6 +41,8 @@ interface ToolName
     DropGLTFLoader: DropGLTFLoader;
     Selector: Selector;
     MultiSelector: MultiSelector;
+    Toggle: Toggle;
+    ToggleGroup: ToggleGroup
     PathCurve: PathCurve;
     RTH_RuntimeGrid: RTH_RuntimeGrid;
     RTH_KeyboardInputer: RTH_KeyboardInputer;
@@ -55,6 +59,7 @@ interface ToolOptions
     MouseInputer: MouseInputOptions;
     DropGLTFLoader: null;
     Selector: SelectorOptions;
+    ToggleGroup: ToggleGroupOptions
     MultiSelector: MultiSelectorOptions;
     PathCurve: PathCurveOptions;
     RTH_RuntimeGrid: RuntimeGridOptions;
@@ -95,7 +100,6 @@ export function use<K extends keyof ToolOptions>(toolName: K, options?: ToolOpti
     }
 
     const ex = new constructor(options) as ToolName[K];
-    ex.enabled = true;
     return ex;
 }
 
@@ -121,7 +125,6 @@ export function useGlobal<K extends keyof ToolOptions>(toolName: K, options?: To
     }
 
     const ex = new constructor(options) as ToolName[K];
-    ex.enabled = true;
     toolMap.set(toolName, ex);
 
     return ex;

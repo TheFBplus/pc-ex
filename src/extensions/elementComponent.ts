@@ -2,12 +2,13 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 10:35:07
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-08 17:18:25
+ * @ 修改时间: 2022-07-20 09:31:40
  * @ 详情: 扩展ElementComponent类
  */
 
 import * as pc from "playcanvas";
 
+import GlobalVariables from "@/utils/common/GlobalVariables";
 import { cast, extendClass } from "@/utils/helpers/extend-decorator";
 
 import { Ray_EX } from "./ray";
@@ -104,7 +105,7 @@ export class ElementComponent_EX extends pc.ElementComponent
         }
 
         // 转换世界坐标为屏幕坐标
-        const app = pc.Application.getApplication();
+        const app = GlobalVariables.app;
         const deviceWidth = app.graphicsDevice.canvas.clientWidth;
         const deviceHeight = app.graphicsDevice.canvas.clientHeight;
         for (let i = 0; i < 4; i++) {
@@ -126,7 +127,7 @@ export class ElementComponent_EX extends pc.ElementComponent
      */
     getPixelAt(screenPoint: { x: number, y: number }, camera?: pc.CameraComponent, color?: pc.Color): pc.Color
     {
-        const app = pc.Application.getApplication();
+        const app = GlobalVariables.app;
         const pixelColor = color ?? new pc.Color();
         const currentCamera = camera ?? app.systems.camera.cameras[0];
 
@@ -151,7 +152,7 @@ export class ElementComponent_EX extends pc.ElementComponent
             return;
 
         // 设置当前相机
-        const app = pc.Application.getApplication();
+        const app = GlobalVariables.app;
         const currentCamera = camera ?? app.systems.camera.cameras[0];;
 
         // 计算屏幕坐标

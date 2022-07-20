@@ -2,12 +2,13 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-06 23:25:04
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-08 17:18:46
+ * @ 修改时间: 2022-07-20 09:31:21
  * @ 详情: 扩展Vec3类
  */
 
 import * as pc from "playcanvas";
 
+import GlobalVariables from "@/utils/common/GlobalVariables";
 import { cast, extendClass } from "@/utils/helpers/extend-decorator";
 
 import { Quat_EX } from "./quat";
@@ -56,7 +57,7 @@ export class Vec3_EX extends pc.Vec3
      */
     public getGLPos(glPos?: pc.Vec4, camera?: pc.CameraComponent): pc.Vec4
     {
-        const app = pc.Application.getApplication();
+        const app = GlobalVariables.app;
         const currentCamera = camera ?? app.systems.camera.cameras[0];
 
         // 根据相机参数计算试图投影矩阵

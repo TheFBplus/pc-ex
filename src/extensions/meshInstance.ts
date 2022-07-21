@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 14:40:45
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-05 16:48:28
+ * @ 修改时间: 2022-07-21 16:48:33
  * @ 详情: 扩展MeshInstance类
  */
 
@@ -100,7 +100,7 @@ function checkIntersection(meshInstance: pc.MeshInstance, i: number, worldRay: p
     };
 }
 
-@extendClass("MeshInstance")
+@extendClass(pc.MeshInstance)
 export class MeshInstance_EX extends pc.MeshInstance
 {
     /**

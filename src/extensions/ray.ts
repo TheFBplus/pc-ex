@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 11:26:17
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-05 16:48:43
+ * @ 修改时间: 2022-07-21 16:48:46
  * @ 详情: 扩展Ray类
  */
 
@@ -15,7 +15,7 @@ const edge1 = new pc.Vec3();
 const edge2 = new pc.Vec3();
 const normal = new pc.Vec3();
 
-@extendClass("Ray")
+@extendClass(pc.Ray)
 export class Ray_EX extends pc.Ray
 {
     /**

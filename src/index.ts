@@ -33,10 +33,11 @@ export { drawScreenQuad } from "./utils/func/drawSelectionBox/drawScreenQuad";
 export { drawScreenRect } from "./utils/func/drawSelectionBox/drawScreenRect";
 export { drawSelectionBox } from "./utils/func/drawSelectionBox/drawSelectionBox";
 export { MaterialController } from "./utils/func/materialController";
-export { attr, AttributeParams, createScript } from "./utils/helpers/create-script-decorator";
+export { attr, AttributeParams, createScript, ScriptTypeBase } from "./utils/helpers/create-script-decorator";
 export { cast, extendClass, ExtendClassName } from "./utils/helpers/extend-decorator";
 export { frag, glsl, glslify, vert } from "./utils/helpers/shaderHelper";
 export { Tool } from "./utils/helpers/toolBase";
+export { InstanceType } from "./utils/helpers/typeGetter";
 export { getGlobal, use, useGlobal } from "./utils/helpers/useToolHelper";
 export { PostEffectOutline } from "./utils/postEffects/posteffectOutline";
 

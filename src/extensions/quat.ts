@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-04-22 09:33:08
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-05 16:48:35
+ * @ 修改时间: 2022-07-21 16:48:40
  * @ 详情: 扩展Quat类
  */
 
@@ -12,7 +12,7 @@ import { extendClass } from "@/utils/helpers/extend-decorator";
 
 const _lookMat = new pc.Mat4();
 
-@extendClass("Quat")
+@extendClass(pc.Quat)
 export class Quat_EX extends pc.Quat
 {
     /**

@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 10:31:59
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-05 16:47:59
+ * @ 修改时间: 2022-07-21 16:47:52
  * @ 详情: 扩展Curve类
  */
 
@@ -12,7 +12,7 @@ import { extendClass } from "@/utils/helpers/extend-decorator";
 
 const epsilon = 1e-10;
 
-@extendClass("Curve")
+@extendClass(pc.Curve)
 export class Curve_EX extends pc.Curve
 {
     /**

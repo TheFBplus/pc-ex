@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-07-18 15:30:31
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-18 17:52:40
+ * @ 修改时间: 2022-07-21 13:53:54
  * @ 详情: 通过装饰器便捷创建脚本
  */
 
@@ -36,7 +36,7 @@ export type AttributeParams = {
  */
 export function createScript(name: string)
 {
-    return function (target: typeof pc.ScriptType)
+    return function (target: typeof pc.ScriptType | typeof ScriptTypeBase)
     {
         // 注册脚本
         pc.registerScript(target, name);
@@ -57,7 +57,7 @@ export function createScript(name: string)
  */
 export function attr<T>(params: AttributeParams): any
 {
-    return function (target: pc.ScriptType, propertyKey: string, descriptor: TypedPropertyDescriptor<T>): any
+    return function (target: pc.ScriptType | ScriptTypeBase, propertyKey: string, descriptor: TypedPropertyDescriptor<T>): any
     {
         if (!(target as any).constructor.attributesData) {
             (target as any).constructor.attributesData = {};
@@ -65,3 +65,20 @@ export function attr<T>(params: AttributeParams): any
         (target as any).constructor.attributesData[propertyKey] = params;
     }
 };
+
+/**
+ * 扩展脚本类
+ */
+export class ScriptTypeBase extends pc.ScriptType
+{
+    /**
+     * 添加脚本属性监听
+     * @param propertyName 脚本属性名称
+     * @param callback 属性变化回调函数
+     * @param scope 回调函数this指向
+     */
+    public addPropertyListener<K extends keyof this>(propertyName: K, callback: (value: this[K], preValue: this[K]) => any, scope?: object): void
+    {
+        this.on(`attr:${propertyName.toString()}`, callback, scope);
+    }
+}

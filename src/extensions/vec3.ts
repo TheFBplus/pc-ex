@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-06 23:25:04
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-20 09:31:21
+ * @ 修改时间: 2022-07-21 16:49:08
  * @ 详情: 扩展Vec3类
  */
 
@@ -21,7 +21,7 @@ const _vH = new pc.Vec3();
 const _vV = new pc.Vec3();
 const _vV2 = new pc.Vec3();
 
-@extendClass("Vec3")
+@extendClass(pc.Vec3)
 export class Vec3_EX extends pc.Vec3
 {
     private _rotation: pc.Quat;

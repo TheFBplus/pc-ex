@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 14:55:21
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-13 16:46:31
+ * @ 修改时间: 2022-07-21 16:48:23
  * @ 详情: 扩展Entity类
  */
 
@@ -12,7 +12,7 @@ import { extendClass } from "@/utils/helpers/extend-decorator";
 
 const _parentMat = new pc.Mat4();
 
-@extendClass("GraphNode")
+@extendClass(pc.GraphNode)
 export class GraphNode_EX extends pc.GraphNode
 {
     /**

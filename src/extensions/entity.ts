@@ -2,17 +2,18 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 14:55:21
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-05 16:48:16
+ * @ 修改时间: 2022-07-21 17:40:06
  * @ 详情: 扩展Entity类
  */
 
 import * as pc from "playcanvas";
 
 import { extendClass } from "@/utils/helpers/extend-decorator";
+import { InstanceType } from "@/utils/helpers/typeGetter";
 
 const _parentMat = new pc.Mat4();
 
-@extendClass("Entity")
+@extendClass(pc.Entity)
 export class Entity_EX extends pc.Entity
 {
     /**
@@ -32,4 +33,14 @@ export class Entity_EX extends pc.Entity
         this.getRotation().setFromMat4(_parentMat);
         this.setLocalScale(_parentMat.getScale());
     }
-}
+
+    /**
+     * 根据脚本类型获取挂载在entity上的脚本
+     * @param scriptType 脚本类型
+     * @returns 脚本实例
+     */
+    getScript<T extends typeof pc.ScriptType>(scriptType: T): InstanceType<T> 
+    {
+        return this?.script.get(scriptType) as InstanceType<T>;
+    }
+}   

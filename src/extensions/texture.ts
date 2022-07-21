@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 14:14:05
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-05 16:48:51
+ * @ 修改时间: 2022-07-21 16:48:54
  * @ 详情: 扩展texture类
  */
 
@@ -31,7 +31,7 @@ function flipY(data: Uint8ClampedArray, width: number, height: number): void
     }
 }
 
-@extendClass("Texture")
+@extendClass(pc.Texture)
 export class Texture_EX extends pc.Texture
 {
     private _pixelData: Uint8ClampedArray;

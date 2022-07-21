@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 10:19:52
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-06 15:42:49
+ * @ 修改时间: 2022-07-21 18:13:03
  * @ 详情: 扩展CameraComponent类
  */
 
@@ -13,7 +13,7 @@ import { cast, extendClass } from "@/utils/helpers/extend-decorator";
 
 import { intersect } from "./meshInstance";
 
-@extendClass("CameraComponent")
+@extendClass(pc.CameraComponent)
 export class CameraComponent_EX extends pc.CameraComponent
 {
     /**

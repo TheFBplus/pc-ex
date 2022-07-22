@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-08 15:04:27
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-11 21:12:11
+ * @ 修改时间: 2022-07-22 10:50:13
  * @ 详情: 点选模型
  */
 
@@ -62,7 +62,7 @@ export class Selector extends Tool<SelectorOptions, SelectorEventsMap>
     {
         super();
 
-        this.picker = new pc.Picker(pc.app, 0, 0);
+        this.picker = new pc.Picker(this.app, 0, 0);
         this.setOptions(options);
     }
 
@@ -90,29 +90,29 @@ export class Selector extends Tool<SelectorOptions, SelectorEventsMap>
         const options = this.toolOptions;
         if (options.pickCondition && !options.pickCondition()) { return; }
 
-        const canvas = pc.app.graphicsDevice.canvas;
+        const canvas = this.app.graphicsDevice.canvas;
         const canvasWidth = canvas.clientWidth;
         const canvasHeight = canvas.clientHeight;
 
         this.picker.resize(canvasWidth * options.pickAreaScale, canvasHeight * options.pickAreaScale);
-        this.picker.prepare(options.pickCamera, pc.app.scene, this.pickLayers);
+        this.picker.prepare(options.pickCamera, this.app.scene, this.pickLayers);
         const selected = this.picker.getSelection(event.x * options.pickAreaScale, event.y * options.pickAreaScale);
 
         if (selected.length > 0 && selected[0]?.node) {
             if (!options.pickTag || options.pickTag.length <= 0) {
                 if (!options.pickSame && this.preSelectedNode == selected[0].node) { return; }
-                this.eventHandler.fire("select", selected[0].node, this.preSelectedNode);
+                this.fire("select", selected[0].node, this.preSelectedNode);
                 this.preSelectedNode = selected[0].node;
             }
             else {
                 const selectedNode = this.getModelHasTag(selected[0].node, options.pickTag);
                 if (!options.pickSame && this.preSelectedNode == selectedNode) { return; }
-                this.eventHandler.fire("select", selectedNode, this.preSelectedNode);
+                this.fire("select", selectedNode, this.preSelectedNode);
                 this.preSelectedNode = selectedNode;
             }
         }
         else if (options.pickNull) {
-            this.eventHandler.fire("select", null, this.preSelectedNode);
+            this.fire("select", null, this.preSelectedNode);
             this.preSelectedNode = null;
         }
     }
@@ -134,11 +134,11 @@ export class Selector extends Tool<SelectorOptions, SelectorEventsMap>
 
     protected override onEnable(): void
     {
-        this.toolOptions.inputHandler.addListener("click", this.pick, this);
+        this.toolOptions.inputHandler.on("click", this.pick, this);
     }
 
     protected override onDisable(): void
     {
-        this.toolOptions.inputHandler.removeListener("click", this.pick, this);
+        this.toolOptions.inputHandler.off("click", this.pick, this);
     }
 }

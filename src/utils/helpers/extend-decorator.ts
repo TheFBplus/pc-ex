@@ -2,12 +2,13 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-04-21 16:10:55
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-21 18:13:01
+ * @ 修改时间: 2022-07-22 09:40:40
  * @ 详情: 用于扩展pc类的装饰器
  */
 
-import * as pc from "playcanvas";
-
+/**
+ * 带有构造函数的类型
+ */
 interface Type<T> extends Function
 {
     new(...args: any[]): T;
@@ -24,28 +25,7 @@ function cls<T>(value: Type<T>)
 }
 
 /**
- * 可扩展类型
- */
-export interface ExtendClassName
-{
-    Application: pc.Application,
-    CameraComponent: pc.CameraComponent,
-    Color: pc.Color,
-    Curve: pc.Curve,
-    ElementComponent: pc.ElementComponent,
-    Entity: pc.Entity,
-    GraphNode: pc.GraphNode
-    MeshInstance: pc.MeshInstance,
-    Quat: pc.Quat,
-    Ray: pc.Ray,
-    Texture: pc.Texture,
-    Vec2: pc.Vec2,
-    Vec3: pc.Vec3,
-    Vec4: pc.Vec4
-};
-
-/**
- * 转换类型
+ * 转换类型 //TODO: 实现对输入参数的类型限制
  * @param obj 待转换对象
  * @returns 转换类型后的对象
  */
@@ -58,12 +38,11 @@ export function cast<T>(obj: any): T
  * 扩展pc类 //TODO: 实现实例属性和静态成员扩展
  * @param extendClassName 扩展类名称
  * @returns 扩展类
- *
  */
-export function extendClass(extendClass: new (...args: any) => any): (target: any) => void
+export function extendClass(extendClass: Type<any>): (target: any) => void
 {
     // 扩展已有类
-    return function (target: any)
+    return function (target: any): void
     {
         // 找到要扩展的类型原型链
         if (!extendClass.prototype) {

@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-05-16 14:40:16
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-10 21:45:30
+ * @ 修改时间: 2022-07-22 10:49:42
  * @ 详情: 键盘快捷键
  */
 
@@ -68,27 +68,27 @@ export class RTH_KeyboardInputer extends Tool<KeyboardInputOptions, ShortcutEven
         const toolOptions = this.toolOptions;
         switch (event.key) {
             case toolOptions.translateKey:
-                this.eventHandler.fire("setHandleType", HandleType.Translation);
+                this.fire("setHandleType", HandleType.Translation);
                 break;
             case toolOptions.rotateKey:
-                this.eventHandler.fire("setHandleType", HandleType.Rotation);
+                this.fire("setHandleType", HandleType.Rotation);
                 break;
             case toolOptions.scaleKey:
-                this.eventHandler.fire("setHandleType", HandleType.Scale);
+                this.fire("setHandleType", HandleType.Scale);
                 break;
             case toolOptions.focusKey:
-                this.eventHandler.fire("focus");
+                this.fire("focus");
                 break;
             case toolOptions.pivotKey:
-                this.eventHandler.fire("switchPivot");
+                this.fire("switchPivot");
                 break;
             case toolOptions.undoKey:
-                if (!pc.app.keyboard.isPressed(toolOptions.comboKey)) { break; }
-                this.eventHandler.fire("undo");
+                if (!this.app.keyboard.isPressed(toolOptions.comboKey)) { break; }
+                this.fire("undo");
                 break;
             case toolOptions.redoKey:
-                if (!pc.app.keyboard.isPressed(toolOptions.comboKey)) { break; }
-                this.eventHandler.fire("redo");
+                if (!this.app.keyboard.isPressed(toolOptions.comboKey)) { break; }
+                this.fire("redo");
                 break;
             default:
                 break;

@@ -2,27 +2,17 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 16:09:29
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-21 18:16:27
+ * @ 修改时间: 2022-07-22 14:00:44
  * @ 详情: 工具类扩展辅助
  */
 
 import * as pc from "playcanvas";
 
-import GlobalVariables from "../common/GlobalVariables";
+import { cast } from "./extend-decorator";
 
-// 包含事件监听的新类型
-interface ExEventHandler<EventsMap> extends Tool<any, EventsMap>
-{
-    on<K extends keyof EventsMap>(eventName: K, linstener: EventsMap[K], scope?: any): void;
-    off<K extends keyof EventsMap>(eventName: K, linstener: EventsMap[K], scope?: any): void;
-    fire<K extends keyof EventsMap>(eventName: K, ...args: any): void;
-    has<K extends keyof EventsMap>(eventName: K): boolean;
-}
-
-export abstract class Tool<Options extends { [index: string]: any }, EventsMap extends { [index: string]: any }>
+export abstract class Tool<Options extends { [optionName: string]: any }, EventsMap extends { [callbackName: string]: any }>
 {
     public app: pc.AppBase;
-    public eventHandler: ExEventHandler<EventsMap>;
 
     protected toolOptionsDefault: Options;
     public toolOptions: Options;
@@ -34,11 +24,8 @@ export abstract class Tool<Options extends { [index: string]: any }, EventsMap e
      */
     constructor()
     {
+        this.app = pc.AppBase.getApplication();
         pc.events.attach(this);
-        this.app = GlobalVariables.app;
-        this.eventHandler = this as any as ExEventHandler<EventsMap>;
-
-        this.enabled = true;
     }
 
     /**
@@ -57,28 +44,6 @@ export abstract class Tool<Options extends { [index: string]: any }, EventsMap e
     {
         return this._enabled;
     }
-
-    /**
-     * 添加事件监听
-     * @param eventName 监听事件名称
-     * @param callback 回调
-     * @param scope 范围
-     */
-    public addListener<K extends keyof EventsMap>(eventName: K, callback: EventsMap[K], scope?: any): void
-    {
-        this.eventHandler.on(eventName, callback, scope);
-    };
-
-    /**
-     * 移除事件监听
-     * @param eventName 监听事件名称
-     * @param callback 回调
-     * @param scope 范围
-     */
-    public removeListener<K extends keyof EventsMap>(eventName: K, callback: EventsMap[K], scope?: any): void
-    {
-        this.eventHandler.off(eventName, callback, scope);
-    };
 
     /**
      * 设置选项
@@ -104,6 +69,66 @@ export abstract class Tool<Options extends { [index: string]: any }, EventsMap e
             (this.toolOptions as any)[key] = options[key];
         });
     };
+
+    /**
+     * 注册事件监听
+     * @param eventName 事件名称
+     * @param linstener 监听回调
+     * @param scope 回调函数this指向
+     * @returns EventHandler
+     */
+    public on<EventName extends keyof EventsMap>(eventName: EventName, linstener: EventsMap[EventName], scope?: object): pc.EventHandler
+    {
+        return cast<pc.EventHandler>(this).on(eventName as string, linstener, scope);
+    }
+    /**
+     * 注册单次事件监听
+     * @param eventName 事件名称
+     * @param linstener 监听回调
+     * @param scope 回调函数this指向
+     * @returns EventHandler
+     */
+    public once<EventName extends keyof EventsMap>(eventName: EventName, linstener: EventsMap[EventName], scope?: object): pc.EventHandler
+    {
+        return cast<pc.EventHandler>(this).once(eventName as string, linstener, scope);
+    }
+    /**
+     * 注销事件监听
+     * @param eventName 事件名称
+     * @param linstener 监听回调
+     * @param scope 回调函数this指向
+     * @returns EventHandler
+     */
+    public off<EventName extends keyof EventsMap>(eventName: EventName, linstener: EventsMap[EventName], scope?: object): pc.EventHandler
+    {
+        return cast<pc.EventHandler>(this).off(eventName as string, linstener, scope);
+    }
+    /**
+     * 检测是否监听此事件
+     * @param eventName 事件名称 
+     * @returns 是否监听此事件
+     */
+    public hasEvent<EventName extends keyof EventsMap>(eventName: EventName): boolean
+    {
+        return cast<pc.EventHandler>(this).hasEvent(eventName as string);
+    }
+    /**
+     * 手动触发事件
+     * @param eventName 事件名称
+     * @param arg1 参数1
+     * @param arg2 参数2
+     * @param arg3 参数3
+     * @param arg4 参数4
+     * @param arg5 参数5
+     * @param arg6 参数6
+     * @param arg7 参数7
+     * @param arg8 参数8
+     * @returns EventHandler
+     */
+    protected fire<EventName extends keyof EventsMap>(eventName: EventName, arg1?: any, arg2?: any, arg3?: any, arg4?: any, arg5?: any, arg6?: any, arg7?: any, arg8?: any): pc.EventHandler
+    {
+        return cast<pc.EventHandler>(this).fire(eventName as string, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+    }
 
     protected onEnable(): void { };
     protected onDisable(): void { };

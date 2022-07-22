@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-05-16 14:30:00
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-20 09:43:16
+ * @ 修改时间: 2022-07-22 10:49:53
  * @ 详情: 多选模型
  */
 
@@ -88,12 +88,12 @@ export class MultiSelector extends Tool<MultiSelectorOptions, MultiSelectorEvent
     private pick(rect: pc.Vec4): void
     {
         const options = this.toolOptions;
-        const canvas = pc.app.graphicsDevice.canvas;
+        const canvas = this.app.graphicsDevice.canvas;
         const canvasWidth = canvas.clientWidth;
         const canvasHeight = canvas.clientHeight;
 
         this.picker.resize(canvasWidth * options.pickAreaScale, canvasHeight * options.pickAreaScale);
-        this.picker.prepare(options.pickCamera, pc.app.scene, this.pickLayers);
+        this.picker.prepare(options.pickCamera, this.app.scene, this.pickLayers);
         const error = 3; // TODO:查看引擎源码，找到此处判断存在误差的原因
         const selected = this.picker.getSelection(
             pc.math.clamp(rect.x, 0, canvasWidth) * options.pickAreaScale,
@@ -112,11 +112,11 @@ export class MultiSelector extends Tool<MultiSelectorOptions, MultiSelectorEvent
             });
             if (!this.isNodesEqual(this.pickNodes, pickNodes)) {
                 const prePickNodes = [...this.pickNodes];
-                this.eventHandler.fire("selecting", this.updatePickNodes(pickNodes), prePickNodes);
+                this.fire("selecting", this.updatePickNodes(pickNodes), prePickNodes);
             }
         }
         else {
-            this.eventHandler.fire("selecting", [], this.pickNodes);
+            this.fire("selecting", [], this.pickNodes);
             this.pickNodes = [];
         }
     }
@@ -181,7 +181,7 @@ export class MultiSelector extends Tool<MultiSelectorOptions, MultiSelectorEvent
         const options = this.toolOptions;
         if (!options.expectCondition || !options.expectCondition()) {
             this.isSelecting = true;
-            this.eventHandler.fire("selectStart");
+            this.fire("selectStart");
         }
     }
 
@@ -207,22 +207,22 @@ export class MultiSelector extends Tool<MultiSelectorOptions, MultiSelectorEvent
     {
         clearSelectionBox();
         this.isSelecting = false;
-        this.eventHandler.fire("selectEnd");
+        this.fire("selectEnd");
     }
 
     protected override onEnable(): void
     {
         const inputHandler = this.toolOptions.inputHandler;
-        inputHandler.addListener("down", this.onControlDown, this);
-        inputHandler.addListener("dragging", this.onDragging, this);
-        inputHandler.addListener("dragEnd", this.onDragEnd, this);
+        inputHandler.on("down", this.onControlDown, this);
+        inputHandler.on("dragging", this.onDragging, this);
+        inputHandler.on("dragEnd", this.onDragEnd, this);
     }
 
     protected override onDisable(): void
     {
         const inputHandler = this.toolOptions.inputHandler;
-        inputHandler.removeListener("down", this.onControlDown, this);
-        inputHandler.removeListener("dragging", this.onDragging, this);
-        inputHandler.removeListener("dragEnd", this.onDragEnd, this);
+        inputHandler.off("down", this.onControlDown, this);
+        inputHandler.off("dragging", this.onDragging, this);
+        inputHandler.off("dragEnd", this.onDragEnd, this);
     }
 }

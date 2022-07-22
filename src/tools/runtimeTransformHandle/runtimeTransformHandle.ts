@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2021-12-01 10:08:17
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-13 15:11:30
+ * @ 修改时间: 2022-07-22 10:47:16
  * @ 详情: Runtime Transform Handle
  */
 
@@ -246,7 +246,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEventsMap>
 
             // 使用模型点选器，实现模型点击检测
             const selector = use("Selector", { inputHandler: mouseInputer, pickCamera: toolOptions.mainCamera, excludeLayers: [RTHLayer(), RTH_RuntimeGrid.layer, UILayer], pickNull: toolOptions.selectNull, pickTag: toolOptions.selectTags, pickCondition: toolOptions.selectCondition, pickSame: true });
-            selector.addListener("select", selectedNode => this.select(selectedNode as pc.Entity), this);
+            selector.on("select", selectedNode => this.select(selectedNode as pc.Entity), this);
 
             if (toolOptions.multiSelect) {
                 // 模型多选器
@@ -257,13 +257,13 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEventsMap>
                         this.orbitCamera.isPaning ||
                         this.orbitCamera.isLooking
                 });
-                multiSelector.addListener("selecting", selectedNodes => this.select(selectedNodes as pc.Entity[]), this);
+                multiSelector.on("selecting", selectedNodes => this.select(selectedNodes as pc.Entity[]), this);
             }
 
             // 监听鼠标事件
-            mouseInputer.addListener("down", this.onControlDown, this);
-            mouseInputer.addListener("move", this.onControlMove, this);
-            mouseInputer.addListener("up", this.onControlUp, this);
+            mouseInputer.on("down", this.onControlDown, this);
+            mouseInputer.on("move", this.onControlMove, this);
+            mouseInputer.on("up", this.onControlUp, this);
         }
         // 监听触屏
         if (this.app.touch) {
@@ -281,11 +281,11 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEventsMap>
                 undoKey: pc.KEY_Z,
                 redoKey: pc.KEY_Y
             });
-            keyboardInputer.addListener("setHandleType", this.setHandleType, this);
-            keyboardInputer.addListener("focus", this.focus, this);
-            keyboardInputer.addListener("switchPivot", this.switchPivot, this);
-            keyboardInputer.addListener("undo", this.undo, this);
-            keyboardInputer.addListener("redo", this.redo, this);
+            keyboardInputer.on("setHandleType", this.setHandleType, this);
+            keyboardInputer.on("focus", this.focus, this);
+            keyboardInputer.on("switchPivot", this.switchPivot, this);
+            keyboardInputer.on("undo", this.undo, this);
+            keyboardInputer.on("redo", this.redo, this);
         }
 
         // 相机添加layer
@@ -340,14 +340,14 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEventsMap>
             this.trackEntities = [];
             this.transformHandle.enabled = false;
             this.app.off("update", this.update, this);
-            this.eventHandler.fire("select", this.trackEntities);
+            this.fire("select", this.trackEntities);
             return;
         }
         if (this.trackEntities.length <= 0 && toolOptions.showHandle) { this.app.on("update", this.update, this); }
         this.trackEntities = Array.isArray(target) ? target : [target];
         this.trackEntities.forEach(entity => { toolOptions.showOutline && this.outLineCamera.toggleOutLine(entity, true); });  // 开启选中模型的描边特效
         this.transformHandle.enabled = true && toolOptions.showHandle;
-        this.eventHandler.fire("select", this.trackEntities);
+        this.fire("select", this.trackEntities);
 
         saveRecord && this.updateRecord();
     }
@@ -360,7 +360,7 @@ export class RuntimeTransformHandle extends Tool<RTHOptions, RTHEventsMap>
         if (this.isDragging) { return; }
         if (this.trackEntities.length > 0) {
             this.orbitCamera.focus(this.trackEntities);
-            this.eventHandler.fire("focus", this.trackEntities);
+            this.fire("focus", this.trackEntities);
         }
     }
 

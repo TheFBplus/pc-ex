@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-07-20 09:27:43
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-20 16:56:43
+ * @ 修改时间: 2022-07-22 10:45:17
  * @ 详情: 开关
  */
 
@@ -30,11 +30,11 @@ export class Toggle extends Tool<any, ToggleEventMap>
         // toggle group判断开关状态是否应发生变化
         if (this._toggleGroup) {
             if (this._toggleGroup.toggle(this, state)) {
-                this.eventHandler.fire("onValueChange", this._isOn = state);
+                this.fire("onValueChange", this._isOn = state);
             }
         }
         else {
-            this.eventHandler.fire("onValueChange", this._isOn = state);
+            this.fire("onValueChange", this._isOn = state);
         }
     }
     /**

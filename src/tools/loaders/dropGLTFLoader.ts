@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-20 10:49:14
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-20 09:31:13
+ * @ 修改时间: 2022-07-22 10:44:59
  * @ 详情: 拖拽gltf到窗口加载模型
  */
 
@@ -170,7 +170,7 @@ export class DropGLTFLoader extends Tool<any, DropGLTFLoaderEventsMap>
     {
         const entity = asset.resource.instantiateRenderEntity();
 
-        this.eventHandler.fire("modelLoaded", entity);
+        this.fire("modelLoaded", entity);
     }
 
     private loadFiles(files: Array<File>)

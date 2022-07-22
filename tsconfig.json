@@ -26,6 +26,7 @@
   },
   "include": [
     "src/index.ts",
-    "src/typings.d.ts"
+    "src/typings.d.ts",
+    "src/scripts/**/*"
   ]
 }

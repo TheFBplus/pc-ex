@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 17:01:01
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-09 10:37:51
+ * @ 修改时间: 2022-07-22 10:44:09
  * @ 详情: 鼠标操作
  */
 
@@ -47,7 +47,7 @@ export class MouseInputer extends Tool<MouseInputOptions, InputEventsMap>
 
         this.mouseDownVec.set(event.x, event.y);
         this.mouseMoveVec.set(event.x, event.y);
-        this.eventHandler.fire("down", {
+        this.fire("down", {
             x: this.mouseDownVec.x,
             y: this.mouseDownVec.y
         });
@@ -58,7 +58,7 @@ export class MouseInputer extends Tool<MouseInputOptions, InputEventsMap>
         const dx = event.x - this.mouseMoveVec.x;
         const dy = event.y - this.mouseMoveVec.y;
         this.mouseMoveVec.set(event.x, event.y);
-        this.eventHandler.fire("move", {
+        this.fire("move", {
             x: this.mouseMoveVec.x,
             y: this.mouseMoveVec.y,
             dx: dx,
@@ -66,7 +66,7 @@ export class MouseInputer extends Tool<MouseInputOptions, InputEventsMap>
         });
 
         if (this.isDragging) {
-            this.eventHandler.fire("dragging", {
+            this.fire("dragging", {
                 x: this.mouseMoveVec.x,
                 y: this.mouseMoveVec.y,
                 dx: dx,
@@ -82,19 +82,19 @@ export class MouseInputer extends Tool<MouseInputOptions, InputEventsMap>
         this.mouseUpVec.set(event.x, event.y);
 
         if (this.mouseUpVec.distance(this.mouseDownVec) < this.toolOptions.clickError) {
-            this.eventHandler.fire("click", {
+            this.fire("click", {
                 x: this.mouseUpVec.x,
                 y: this.mouseUpVec.y
             });
         }
 
-        this.eventHandler.fire("up", {
+        this.fire("up", {
             x: this.mouseUpVec.x,
             y: this.mouseUpVec.y
         });
 
         if (this.isDragging) {
-            this.eventHandler.fire("dragEnd", {
+            this.fire("dragEnd", {
                 x: this.mouseUpVec.x,
                 y: this.mouseUpVec.y
             });
@@ -105,7 +105,7 @@ export class MouseInputer extends Tool<MouseInputOptions, InputEventsMap>
 
     private onMouseWheel(event: pc.MouseEvent): void
     {
-        this.eventHandler.fire("pinch", { delta: event.wheelDelta, event: event.event });
+        this.fire("pinch", { delta: event.wheelDelta, event: event.event });
     }
 
     protected override onEnable(): void

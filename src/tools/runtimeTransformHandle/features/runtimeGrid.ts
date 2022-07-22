@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-05-18 17:27:16
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-13 15:16:28
+ * @ 修改时间: 2022-07-22 10:49:33
  * @ 详情: 观测相机
  */
 
@@ -109,7 +109,7 @@ export class RTH_RuntimeGrid extends Tool<RuntimeGridOptions, any>
             index++;
         }
 
-        const mesh = new pc.Mesh(pc.app.graphicsDevice);
+        const mesh = new pc.Mesh(this.app.graphicsDevice);
         mesh.clear(false, false);
         mesh.setPositions(points);
         mesh.update(pc.PRIMITIVE_LINES);

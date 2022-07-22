@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 15:07:20
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-10 21:16:22
+ * @ 修改时间: 2022-07-22 10:44:48
  * @ 详情: 路径曲线
  */
 
@@ -191,7 +191,8 @@ export class PathCurve extends Tool<PathCurveOptions, any>
         renderCurve();
         // 每帧渲染曲线
         this.app.on("update", renderCurve);
-        this.eventHandler.on("cancelRender", () => { this.app.off("update", renderCurve); }, this);
+        this.on("cancelRender", () => { this.app.off("update", renderCurve); }, this);
+        this.on
     }
 
     /**
@@ -199,7 +200,7 @@ export class PathCurve extends Tool<PathCurveOptions, any>
      */
     public cancelDraw(): void
     {
-        this.eventHandler.fire("cancelRender");
+        this.fire("cancelRender");
     }
 
     /**

@@ -5,7 +5,7 @@ echo 请输入要关联的工程地址:
 goto setProjectPath
 
 :setProjectPath:
-	set /p projectPath=输入工程地址:
+	set /p projectPath=工程地址:
 	if "%projectPath%" == "" goto setProjectPath
 
 call npm link

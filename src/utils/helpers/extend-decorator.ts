@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-04-21 16:10:55
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-22 09:40:40
+ * @ 修改时间: 2022-07-26 17:29:42
  * @ 详情: 用于扩展pc类的装饰器
  */
 
@@ -29,9 +29,20 @@ function cls<T>(value: Type<T>)
  * @param obj 待转换对象
  * @returns 转换类型后的对象
  */
-export function cast<T>(obj: any): T
+export function cast<T>(obj: any, type?: T): T
 {
     return obj as T;
+}
+
+/**
+ * 转换类型
+ * @param obj 待转换对象
+ * @param newType 要转换类型
+ * @returns 转换类型后的对象
+ */
+export function castEX<T extends new (...args: any) => any>(newType: T, obj: any): InstanceType<T>
+{
+    return obj as InstanceType<T>;
 }
 
 /**

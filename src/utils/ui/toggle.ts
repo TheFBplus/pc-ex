@@ -1,29 +1,23 @@
 /**
  * @ 创建者: FBplus
- * @ 创建时间: 2022-07-20 09:27:43
+ * @ 创建时间: 2022-07-25 10:05:18
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-22 10:45:17
- * @ 详情: 开关
+ * @ 修改时间: 2022-07-25 15:55:43
+ * @ 详情: 开关逻辑
  */
-
-import { Tool } from "@/utils/helpers/toolBase";
+import * as pc from "playcanvas";
 
 import { ToggleGroup } from "./toggleGroup";
 
 /**
- * 开关事件-回调表
+ * 开关逻辑类
  */
-interface ToggleEventMap
+export class Toggle extends pc.EventHandler
 {
-    onValueChange: (isOn: boolean) => any
-}
-
-export class Toggle extends Tool<any, ToggleEventMap>
-{
-    private _isOn: boolean = false;
     /**
-     * 设置开关状态
+     * 开关状态
      */
+    private _isOn: boolean = false;
     public set isOn(state: boolean)
     {
         if (this._isOn == state) { return; }
@@ -37,18 +31,15 @@ export class Toggle extends Tool<any, ToggleEventMap>
             this.fire("onValueChange", this._isOn = state);
         }
     }
-    /**
-     * 获得按钮状态
-     */
     public get isOn(): boolean
     {
         return this._isOn;
     }
 
-    private _toggleGroup: ToggleGroup;
     /**
-     * 设置按钮组
+     * 开关组
      */
+    private _toggleGroup: ToggleGroup;
     public set ToggleGroup(value: ToggleGroup)
     {
         if (this._toggleGroup == value) { return; }
@@ -62,9 +53,6 @@ export class Toggle extends Tool<any, ToggleEventMap>
 
         this._toggleGroup = value;
     }
-    /**
-     * 获得按钮组
-     */
     public get ToggleGroup(): ToggleGroup
     {
         return this._toggleGroup;
@@ -77,4 +65,4 @@ export class Toggle extends Tool<any, ToggleEventMap>
     {
         this.isOn = !this.isOn;
     }
-} 
+}

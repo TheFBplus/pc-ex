@@ -1,51 +1,40 @@
 /**
  * @ 创建者: FBplus
- * @ 创建时间: 2022-07-20 09:36:41
+ * @ 创建时间: 2022-07-25 10:08:31
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-20 14:35:59
- * @ 详情: 开关组
+ * @ 修改时间: 2022-07-25 10:49:52
+ * @ 详情: 开关组逻辑
  */
 
-import { Tool } from "@/utils/helpers/toolBase";
+import * as pc from "playcanvas";
 
 import { Toggle } from "./toggle";
 
 /**
- * 按钮组选项
+ * 开关组逻辑类
  */
-export interface ToggleGroupOptions
+export class ToggleGroup extends pc.EventHandler
 {
-    allowSwitchOff?: boolean;
-}
-
-export class ToggleGroup extends Tool<ToggleGroupOptions, any>
-{
+    public allowSwitchOff: boolean;
     private toggles: Set<Toggle>;
+    private closeAllToggleFlag: boolean = false;
+
     private _currentToggle: Toggle;
     public get currentToggle(): Toggle
     {
         return this._currentToggle;
     }
 
-    private closeAllToggleFlag: boolean = false;
-
-    // 默认选项
-    protected toolOptionsDefault: ToggleGroupOptions = {
-        allowSwitchOff: false
-    }
-
-    constructor(options: ToggleGroupOptions)
+    constructor(allowSwitchOff: boolean)
     {
         super();
-
-        this.setOptions(options);
-
+        this.allowSwitchOff = allowSwitchOff;
         this.toggles = new Set<Toggle>();
     }
 
     /**
-     * 添加按钮到按钮组
-     * @param toggle 按钮
+     * 添加开关到开关组
+     * @param toggle 开关
      */
     public addToggle(toggle: Toggle): void
     {
@@ -56,8 +45,8 @@ export class ToggleGroup extends Tool<ToggleGroupOptions, any>
     }
 
     /**
-     * 从按钮组移除按钮
-     * @param toggle 按钮
+     * 从开关组移除开关
+     * @param toggle 开关
      */
     public removeToggle(toggle: Toggle): void
     {
@@ -90,7 +79,7 @@ export class ToggleGroup extends Tool<ToggleGroupOptions, any>
         }
         else {
             if (this._currentToggle == toggle) {
-                if (this.toolOptions.allowSwitchOff) {
+                if (this.allowSwitchOff) {
                     this._currentToggle = undefined;
                     return true;
                 }
@@ -105,7 +94,7 @@ export class ToggleGroup extends Tool<ToggleGroupOptions, any>
     }
 
     /**
-     * 关闭所有按钮
+     * 关闭所有开关
      */
     public closeAllToggles(): void
     {

@@ -24,8 +24,6 @@ export { KeyboardInputOptions, RTH_KeyboardInputer } from "./tools/runtimeTransf
 export { RTHOptions, RuntimeTransformHandle } from "./tools/runtimeTransformHandle/runtimeTransformHandle";
 export { MultiSelector, MultiSelectorOptions } from "./tools/selector/multiSelector";
 export { Selector, SelectorOptions } from "./tools/selector/selector";
-export { Toggle } from "./tools/ui/toggle/toggle";
-export { ToggleGroup, ToggleGroupOptions } from "./tools/ui/toggle/toggleGroup";
 // utils
 export { InputEventsMap } from "./utils/common/InputEventsMap";
 export { DebugLine } from "./utils/func/debugLine";
@@ -33,11 +31,15 @@ export { drawScreenQuad } from "./utils/func/drawSelectionBox/drawScreenQuad";
 export { drawScreenRect } from "./utils/func/drawSelectionBox/drawScreenRect";
 export { drawSelectionBox } from "./utils/func/drawSelectionBox/drawSelectionBox";
 export { MaterialController } from "./utils/func/materialController";
-export { attr, AttributeParams, createScript, ScriptTypeBase } from "./utils/helpers/create-script-decorator";
+export { attr, createScript, ScriptTypeBase } from "./utils/helpers/create-script-decorator";
+export { attrEX, createScriptEX, ScriptTypeEX } from "./utils/helpers/create-script-decorator_ex";
 export { cast, extendClass } from "./utils/helpers/extend-decorator";
 export { frag, glsl, glslify, vert } from "./utils/helpers/shaderHelper";
 export { Tool } from "./utils/helpers/toolBase";
 export { InstanceType } from "./utils/helpers/typeGetter";
 export { getGlobal, use, useGlobal } from "./utils/helpers/useToolHelper";
 export { PostEffectOutline } from "./utils/postEffects/posteffectOutline";
+// ui
+export { Toggle } from "./utils/ui/toggle";
+export { ToggleGroup } from "./utils/ui/toggleGroup";
 

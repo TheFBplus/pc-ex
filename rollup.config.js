@@ -10,7 +10,7 @@ export default {
 			declarationDir: undefined,
 			outDir: undefined,
 			declaration: false,
-			module: "ESNext",
+			module: "ES6",
 			target: "ES5",
 		}),
 		terser()

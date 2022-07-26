@@ -2,12 +2,13 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 14:55:21
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-21 17:40:06
+ * @ 修改时间: 2022-07-26 17:01:28
  * @ 详情: 扩展Entity类
  */
 
 import * as pc from "playcanvas";
 
+import { ScriptTypeBase } from "@/utils/helpers/create-script-decorator";
 import { extendClass } from "@/utils/helpers/extend-decorator";
 import { InstanceType } from "@/utils/helpers/typeGetter";
 
@@ -39,8 +40,15 @@ export class Entity_EX extends pc.Entity
      * @param scriptType 脚本类型
      * @returns 脚本实例
      */
-    getScript<T extends typeof pc.ScriptType>(scriptType: T): InstanceType<T> 
+    getScript<T extends typeof pc.ScriptType | typeof ScriptTypeBase>(scriptType: T): InstanceType<T>
     {
-        return this?.script.get(scriptType) as InstanceType<T>;
+        if ((scriptType as typeof ScriptTypeBase).scriptName) {
+            // 脚本是scriptTypeBase
+            return this?.script.get((scriptType as typeof ScriptTypeBase).scriptName) as InstanceType<T>;
+        }
+        else {
+            // 脚本是pc.scriptType
+            return this?.script.get(scriptType as typeof pc.ScriptType) as InstanceType<T>;
+        }
     }
 }   

@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-07-25 10:08:31
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-25 10:49:52
+ * @ 修改时间: 2022-07-27 16:49:03
  * @ 详情: 开关组逻辑
  */
 
@@ -62,7 +62,7 @@ export class ToggleGroup extends pc.EventHandler
      * @param targetState 开关的目标状态
      * @returns 开关状态是否改变
      */
-    public toggle(toggle: Toggle, targetState: boolean): boolean
+    public shouldToggleSwitch(toggle: Toggle, targetState: boolean): boolean
     {
         // 通过变量控制不进行开关检测
         if (this.closeAllToggleFlag) {

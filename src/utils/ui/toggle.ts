@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-07-25 10:05:18
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-25 15:55:43
+ * @ 修改时间: 2022-07-27 16:49:07
  * @ 详情: 开关逻辑
  */
 import * as pc from "playcanvas";
@@ -23,7 +23,7 @@ export class Toggle extends pc.EventHandler
         if (this._isOn == state) { return; }
         // toggle group判断开关状态是否应发生变化
         if (this._toggleGroup) {
-            if (this._toggleGroup.toggle(this, state)) {
+            if (this._toggleGroup.shouldToggleSwitch(this, state)) {
                 this.fire("onValueChange", this._isOn = state);
             }
         }

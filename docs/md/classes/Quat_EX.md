@@ -69,7 +69,7 @@ pc.Quat.constructor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4189
+node_modules/playcanvas/build/playcanvas.d.ts:3705
 
 ## Properties
 
@@ -85,7 +85,7 @@ pc.Quat.w
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4213
+node_modules/playcanvas/build/playcanvas.d.ts:3729
 
 ___
 
@@ -101,7 +101,7 @@ pc.Quat.x
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4195
+node_modules/playcanvas/build/playcanvas.d.ts:3711
 
 ___
 
@@ -117,7 +117,7 @@ pc.Quat.y
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4201
+node_modules/playcanvas/build/playcanvas.d.ts:3717
 
 ___
 
@@ -133,7 +133,7 @@ pc.Quat.z
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4207
+node_modules/playcanvas/build/playcanvas.d.ts:3723
 
 ___
 
@@ -149,7 +149,7 @@ pc.Quat.IDENTITY
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4172
+node_modules/playcanvas/build/playcanvas.d.ts:3688
 
 ___
 
@@ -165,13 +165,13 @@ pc.Quat.ZERO
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4179
+node_modules/playcanvas/build/playcanvas.d.ts:3695
 
 ## Methods
 
 ### clone
 
-▸ **clone**(): `Quat`
+▸ **clone**(): [`Quat_EX`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Quat_EX.md)
 
 Returns an identical copy of the specified quaternion.
 
@@ -186,7 +186,7 @@ console.log("The result of the cloning is: " + q.toString());
 
 #### Returns
 
-`Quat`
+[`Quat_EX`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Quat_EX.md)
 
 A quaternion containing the result of the cloning.
 
@@ -196,7 +196,7 @@ pc.Quat.clone
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4224
+node_modules/playcanvas/build/playcanvas.d.ts:3740
 
 ___
 
@@ -214,7 +214,7 @@ pc.Quat.conjugate
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4225
+node_modules/playcanvas/build/playcanvas.d.ts:3741
 
 ___
 
@@ -251,7 +251,7 @@ pc.Quat.copy
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4237
+node_modules/playcanvas/build/playcanvas.d.ts:3753
 
 ___
 
@@ -287,7 +287,7 @@ pc.Quat.equals
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4248
+node_modules/playcanvas/build/playcanvas.d.ts:3764
 
 ___
 
@@ -330,7 +330,7 @@ pc.Quat.getAxisAngle
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4266
+node_modules/playcanvas/build/playcanvas.d.ts:3782
 
 ___
 
@@ -359,7 +359,7 @@ pc.Quat.getEulerAngles
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4274
+node_modules/playcanvas/build/playcanvas.d.ts:3790
 
 ___
 
@@ -391,7 +391,7 @@ pc.Quat.invert
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4286
+node_modules/playcanvas/build/playcanvas.d.ts:3802
 
 ___
 
@@ -422,7 +422,7 @@ pc.Quat.length
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4297
+node_modules/playcanvas/build/playcanvas.d.ts:3813
 
 ___
 
@@ -453,7 +453,7 @@ pc.Quat.lengthSq
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4308
+node_modules/playcanvas/build/playcanvas.d.ts:3824
 
 ___
 
@@ -494,7 +494,7 @@ pc.Quat.mul
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4324
+node_modules/playcanvas/build/playcanvas.d.ts:3840
 
 ___
 
@@ -537,7 +537,7 @@ pc.Quat.mul2
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4342
+node_modules/playcanvas/build/playcanvas.d.ts:3858
 
 ___
 
@@ -570,7 +570,7 @@ pc.Quat.normalize
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4355
+node_modules/playcanvas/build/playcanvas.d.ts:3871
 
 ___
 
@@ -611,7 +611,7 @@ pc.Quat.set
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4371
+node_modules/playcanvas/build/playcanvas.d.ts:3887
 
 ___
 
@@ -647,7 +647,7 @@ pc.Quat.setFromAxisAngle
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4382
+node_modules/playcanvas/build/playcanvas.d.ts:3898
 
 ___
 
@@ -690,7 +690,7 @@ pc.Quat.setFromEulerAngles
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4401
+node_modules/playcanvas/build/playcanvas.d.ts:3917
 
 ___
 
@@ -729,7 +729,7 @@ pc.Quat.setFromMat4
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4415
+node_modules/playcanvas/build/playcanvas.d.ts:3931
 
 ___
 
@@ -798,7 +798,7 @@ pc.Quat.slerp
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4435
+node_modules/playcanvas/build/playcanvas.d.ts:3951
 
 ___
 
@@ -828,7 +828,7 @@ pc.Quat.toString
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4461
+node_modules/playcanvas/build/playcanvas.d.ts:3977
 
 ___
 
@@ -869,4 +869,4 @@ pc.Quat.transformVector
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4451
+node_modules/playcanvas/build/playcanvas.d.ts:3967

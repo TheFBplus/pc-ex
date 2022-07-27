@@ -46,6 +46,7 @@
 - [\_width](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Texture_EX.md#_width)
 - [device](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Texture_EX.md#device)
 - [fixCubemapSeams](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Texture_EX.md#fixcubemapseams)
+- [id](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Texture_EX.md#id)
 - [impl](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Texture_EX.md#impl)
 - [name](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Texture_EX.md#name)
 - [profilerHint](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Texture_EX.md#profilerhint)
@@ -138,6 +139,7 @@ texture.unlock();
 | `options.flipY?` | `boolean` | Specifies whether the texture should be flipped in the Y-direction. Only affects textures with a source that is an image, canvas or video element. Does not affect cubemaps, compressed textures or textures set from raw pixel data. Defaults to false. |
 | `options.format?` | `number` | The pixel format of the texture. Can be:  - PIXELFORMAT_A8 - PIXELFORMAT_L8 - PIXELFORMAT_L8_A8 - PIXELFORMAT_R5_G6_B5 - PIXELFORMAT_R5_G5_B5_A1 - PIXELFORMAT_R4_G4_B4_A4 - PIXELFORMAT_R8_G8_B8 - PIXELFORMAT_R8_G8_B8_A8 - PIXELFORMAT_DXT1 - PIXELFORMAT_DXT3 - PIXELFORMAT_DXT5 - PIXELFORMAT_RGB16F - PIXELFORMAT_RGBA16F - PIXELFORMAT_RGB32F - PIXELFORMAT_RGBA32F - PIXELFORMAT_ETC1 - PIXELFORMAT_PVRTC_2BPP_RGB_1 - PIXELFORMAT_PVRTC_2BPP_RGBA_1 - PIXELFORMAT_PVRTC_4BPP_RGB_1 - PIXELFORMAT_PVRTC_4BPP_RGBA_1 - PIXELFORMAT_111110F - PIXELFORMAT_ASTC_4x4>/li> - PIXELFORMAT_ATC_RGB - PIXELFORMAT_ATC_RGBA  Defaults to PIXELFORMAT_R8_G8_B8_A8. |
 | `options.height?` | `number` | The height of the texture in pixels. Defaults to 4. |
+| `options.levels?` | `Uint8Array`[] | Array of Uint8Array. |
 | `options.magFilter?` | `number` | The magnification filter type to use. Defaults to FILTER_LINEAR. |
 | `options.minFilter?` | `number` | The minification filter type to use. Defaults to FILTER_LINEAR_MIPMAP_LINEAR. |
 | `options.mipmaps?` | `boolean` | When enabled try to generate or use mipmaps for this texture. Default is true. |
@@ -154,7 +156,7 @@ pc.Texture.constructor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6236
+node_modules/playcanvas/build/playcanvas.d.ts:5952
 
 ## Properties
 
@@ -168,7 +170,7 @@ pc.Texture.\_addressU
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6282
+node_modules/playcanvas/build/playcanvas.d.ts:6000
 
 ___
 
@@ -182,7 +184,7 @@ pc.Texture.\_addressV
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6283
+node_modules/playcanvas/build/playcanvas.d.ts:6001
 
 ___
 
@@ -196,7 +198,7 @@ pc.Texture.\_addressW
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6284
+node_modules/playcanvas/build/playcanvas.d.ts:6002
 
 ___
 
@@ -210,7 +212,7 @@ pc.Texture.\_anisotropy
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6281
+node_modules/playcanvas/build/playcanvas.d.ts:5999
 
 ___
 
@@ -224,7 +226,7 @@ pc.Texture.\_compareFunc
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6286
+node_modules/playcanvas/build/playcanvas.d.ts:6004
 
 ___
 
@@ -238,7 +240,7 @@ pc.Texture.\_compareOnRead
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6285
+node_modules/playcanvas/build/playcanvas.d.ts:6003
 
 ___
 
@@ -252,7 +254,7 @@ pc.Texture.\_compressed
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6289
+node_modules/playcanvas/build/playcanvas.d.ts:6007
 
 ___
 
@@ -266,7 +268,7 @@ pc.Texture.\_cubemap
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6272
+node_modules/playcanvas/build/playcanvas.d.ts:5990
 
 ___
 
@@ -280,7 +282,7 @@ pc.Texture.\_depth
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6268
+node_modules/playcanvas/build/playcanvas.d.ts:5986
 
 ___
 
@@ -294,7 +296,7 @@ pc.Texture.\_flipY
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6275
+node_modules/playcanvas/build/playcanvas.d.ts:5993
 
 ___
 
@@ -308,7 +310,7 @@ pc.Texture.\_format
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6269
+node_modules/playcanvas/build/playcanvas.d.ts:5987
 
 ___
 
@@ -322,7 +324,7 @@ pc.Texture.\_gpuSize
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6292
+node_modules/playcanvas/build/playcanvas.d.ts:6010
 
 ___
 
@@ -336,7 +338,7 @@ pc.Texture.\_height
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6267
+node_modules/playcanvas/build/playcanvas.d.ts:5985
 
 ___
 
@@ -350,7 +352,7 @@ pc.Texture.\_invalid
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6290
+node_modules/playcanvas/build/playcanvas.d.ts:6008
 
 ___
 
@@ -364,13 +366,13 @@ pc.Texture.\_isRenderTarget
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6277
+node_modules/playcanvas/build/playcanvas.d.ts:5995
 
 ___
 
 ### \_levels
 
-• **\_levels**: `any`
+• **\_levels**: `Uint8Array`[] \| `any`[][]
 
 #### Inherited from
 
@@ -378,7 +380,7 @@ pc.Texture.\_levels
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6288
+node_modules/playcanvas/build/playcanvas.d.ts:6006
 
 ___
 
@@ -392,7 +394,7 @@ pc.Texture.\_levelsUpdated
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6497
+node_modules/playcanvas/build/playcanvas.d.ts:6215
 
 ___
 
@@ -406,7 +408,7 @@ pc.Texture.\_lockedLevel
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6291
+node_modules/playcanvas/build/playcanvas.d.ts:6009
 
 ___
 
@@ -420,7 +422,7 @@ pc.Texture.\_magFilter
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6280
+node_modules/playcanvas/build/playcanvas.d.ts:5998
 
 ___
 
@@ -434,7 +436,7 @@ pc.Texture.\_minFilter
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6279
+node_modules/playcanvas/build/playcanvas.d.ts:5997
 
 ___
 
@@ -448,7 +450,7 @@ pc.Texture.\_mipmaps
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6278
+node_modules/playcanvas/build/playcanvas.d.ts:5996
 
 ___
 
@@ -462,7 +464,7 @@ pc.Texture.\_mipmapsUploaded
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6498
+node_modules/playcanvas/build/playcanvas.d.ts:6216
 
 ___
 
@@ -476,7 +478,7 @@ pc.Texture.\_needsMipmapsUpload
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6414
+node_modules/playcanvas/build/playcanvas.d.ts:6132
 
 ___
 
@@ -490,7 +492,7 @@ pc.Texture.\_needsUpload
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6486
+node_modules/playcanvas/build/playcanvas.d.ts:6204
 
 ___
 
@@ -504,7 +506,7 @@ pc.Texture.\_parameterFlags
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6499
+node_modules/playcanvas/build/playcanvas.d.ts:6217
 
 ___
 
@@ -518,7 +520,7 @@ pc.Texture.\_premultiplyAlpha
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6276
+node_modules/playcanvas/build/playcanvas.d.ts:5994
 
 ___
 
@@ -532,7 +534,7 @@ pc.Texture.\_volume
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6273
+node_modules/playcanvas/build/playcanvas.d.ts:5991
 
 ___
 
@@ -546,7 +548,7 @@ pc.Texture.\_width
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6266
+node_modules/playcanvas/build/playcanvas.d.ts:5984
 
 ___
 
@@ -560,7 +562,7 @@ pc.Texture.device
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6259
+node_modules/playcanvas/build/playcanvas.d.ts:5977
 
 ___
 
@@ -574,7 +576,21 @@ pc.Texture.fixCubemapSeams
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6274
+node_modules/playcanvas/build/playcanvas.d.ts:5992
+
+___
+
+### id
+
+• **id**: `number`
+
+#### Inherited from
+
+pc.Texture.id
+
+#### Defined in
+
+node_modules/playcanvas/build/playcanvas.d.ts:5976
 
 ___
 
@@ -588,7 +604,7 @@ pc.Texture.impl
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6293
+node_modules/playcanvas/build/playcanvas.d.ts:6011
 
 ___
 
@@ -604,7 +620,7 @@ pc.Texture.name
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6265
+node_modules/playcanvas/build/playcanvas.d.ts:5983
 
 ___
 
@@ -618,7 +634,7 @@ pc.Texture.profilerHint
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6287
+node_modules/playcanvas/build/playcanvas.d.ts:6005
 
 ___
 
@@ -632,7 +648,7 @@ pc.Texture.projection
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6271
+node_modules/playcanvas/build/playcanvas.d.ts:5989
 
 ___
 
@@ -646,7 +662,7 @@ pc.Texture.type
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6270
+node_modules/playcanvas/build/playcanvas.d.ts:5988
 
 ## Accessors
 
@@ -664,7 +680,7 @@ pc.Texture.addressU
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6344
+node_modules/playcanvas/build/playcanvas.d.ts:6062
 
 • `set` **addressU**(`arg`): `void`
 
@@ -690,7 +706,7 @@ pc.Texture.addressU
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6343
+node_modules/playcanvas/build/playcanvas.d.ts:6061
 
 ___
 
@@ -708,7 +724,7 @@ pc.Texture.addressV
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6355
+node_modules/playcanvas/build/playcanvas.d.ts:6073
 
 • `set` **addressV**(`arg`): `void`
 
@@ -734,7 +750,7 @@ pc.Texture.addressV
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6354
+node_modules/playcanvas/build/playcanvas.d.ts:6072
 
 ___
 
@@ -752,7 +768,7 @@ pc.Texture.addressW
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6366
+node_modules/playcanvas/build/playcanvas.d.ts:6084
 
 • `set` **addressW**(`arg`): `void`
 
@@ -778,7 +794,7 @@ pc.Texture.addressW
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6365
+node_modules/playcanvas/build/playcanvas.d.ts:6083
 
 ___
 
@@ -796,7 +812,7 @@ pc.Texture.anisotropy
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6397
+node_modules/playcanvas/build/playcanvas.d.ts:6115
 
 • `set` **anisotropy**(`arg`): `void`
 
@@ -819,7 +835,7 @@ pc.Texture.anisotropy
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6396
+node_modules/playcanvas/build/playcanvas.d.ts:6114
 
 ___
 
@@ -837,7 +853,7 @@ pc.Texture.autoMipmap
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6406
+node_modules/playcanvas/build/playcanvas.d.ts:6124
 
 ___
 
@@ -855,7 +871,7 @@ pc.Texture.compareFunc
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6389
+node_modules/playcanvas/build/playcanvas.d.ts:6107
 
 • `set` **compareFunc**(`arg`): `void`
 
@@ -884,7 +900,7 @@ pc.Texture.compareFunc
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6388
+node_modules/playcanvas/build/playcanvas.d.ts:6106
 
 ___
 
@@ -902,7 +918,7 @@ pc.Texture.compareOnRead
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6375
+node_modules/playcanvas/build/playcanvas.d.ts:6093
 
 • `set` **compareOnRead**(`arg`): `void`
 
@@ -926,7 +942,7 @@ pc.Texture.compareOnRead
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6374
+node_modules/playcanvas/build/playcanvas.d.ts:6092
 
 ___
 
@@ -946,7 +962,7 @@ pc.Texture.cubemap
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6469
+node_modules/playcanvas/build/playcanvas.d.ts:6187
 
 ___
 
@@ -966,7 +982,7 @@ pc.Texture.depth
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6432
+node_modules/playcanvas/build/playcanvas.d.ts:6150
 
 ___
 
@@ -984,7 +1000,7 @@ pc.Texture.encoding
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6495
+node_modules/playcanvas/build/playcanvas.d.ts:6213
 
 ___
 
@@ -1002,7 +1018,7 @@ pc.Texture.flipY
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6485
+node_modules/playcanvas/build/playcanvas.d.ts:6203
 
 • `set` **flipY**(`arg`): `void`
 
@@ -1026,7 +1042,7 @@ pc.Texture.flipY
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6484
+node_modules/playcanvas/build/playcanvas.d.ts:6202
 
 ___
 
@@ -1071,7 +1087,7 @@ pc.Texture.format
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6463
+node_modules/playcanvas/build/playcanvas.d.ts:6181
 
 ___
 
@@ -1089,7 +1105,7 @@ pc.Texture.gpuSize
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6470
+node_modules/playcanvas/build/playcanvas.d.ts:6188
 
 ___
 
@@ -1109,7 +1125,7 @@ pc.Texture.height
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6426
+node_modules/playcanvas/build/playcanvas.d.ts:6144
 
 ___
 
@@ -1127,7 +1143,7 @@ pc.Texture.magFilter
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6333
+node_modules/playcanvas/build/playcanvas.d.ts:6051
 
 • `set` **magFilter**(`arg`): `void`
 
@@ -1152,7 +1168,7 @@ pc.Texture.magFilter
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6332
+node_modules/playcanvas/build/playcanvas.d.ts:6050
 
 ___
 
@@ -1170,7 +1186,7 @@ pc.Texture.minFilter
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6323
+node_modules/playcanvas/build/playcanvas.d.ts:6041
 
 • `set` **minFilter**(`arg`): `void`
 
@@ -1199,7 +1215,7 @@ pc.Texture.minFilter
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6322
+node_modules/playcanvas/build/playcanvas.d.ts:6040
 
 ___
 
@@ -1217,7 +1233,7 @@ pc.Texture.mipmaps
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6413
+node_modules/playcanvas/build/playcanvas.d.ts:6131
 
 • `set` **mipmaps**(`arg`): `void`
 
@@ -1239,7 +1255,7 @@ pc.Texture.mipmaps
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6412
+node_modules/playcanvas/build/playcanvas.d.ts:6130
 
 ___
 
@@ -1275,7 +1291,7 @@ pc.Texture.pot
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6494
+node_modules/playcanvas/build/playcanvas.d.ts:6212
 
 ___
 
@@ -1293,7 +1309,7 @@ pc.Texture.premultiplyAlpha
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6488
+node_modules/playcanvas/build/playcanvas.d.ts:6206
 
 • `set` **premultiplyAlpha**(`arg`): `void`
 
@@ -1313,7 +1329,7 @@ pc.Texture.premultiplyAlpha
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6487
+node_modules/playcanvas/build/playcanvas.d.ts:6205
 
 ___
 
@@ -1333,7 +1349,7 @@ pc.Texture.volume
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6476
+node_modules/playcanvas/build/playcanvas.d.ts:6194
 
 ___
 
@@ -1353,7 +1369,7 @@ pc.Texture.width
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6420
+node_modules/playcanvas/build/playcanvas.d.ts:6138
 
 ## Methods
 
@@ -1373,7 +1389,7 @@ pc.Texture.destroy
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6297
+node_modules/playcanvas/build/playcanvas.d.ts:6015
 
 ___
 
@@ -1391,7 +1407,7 @@ pc.Texture.dirtyAll
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6496
+node_modules/playcanvas/build/playcanvas.d.ts:6214
 
 ___
 
@@ -1439,7 +1455,7 @@ pc.Texture.getSource
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6541
+node_modules/playcanvas/build/playcanvas.d.ts:6259
 
 ___
 
@@ -1471,7 +1487,7 @@ pc.Texture.lock
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6515
+node_modules/playcanvas/build/playcanvas.d.ts:6233
 
 ___
 
@@ -1499,7 +1515,7 @@ pc.Texture.setSource
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6530
+node_modules/playcanvas/build/playcanvas.d.ts:6248
 
 ___
 
@@ -1544,7 +1560,7 @@ pc.Texture.unlock
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6545
+node_modules/playcanvas/build/playcanvas.d.ts:6263
 
 ___
 
@@ -1568,4 +1584,4 @@ pc.Texture.upload
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:6553
+node_modules/playcanvas/build/playcanvas.d.ts:6271

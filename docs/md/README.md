@@ -34,8 +34,12 @@ pc-ex
 - [RTH\_RuntimeGrid](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/RTH_RuntimeGrid.md)
 - [Ray\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Ray_EX.md)
 - [RuntimeTransformHandle](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/RuntimeTransformHandle.md)
+- [ScriptTypeBase](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md)
+- [ScriptTypeEX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeEX.md)
 - [Selector](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Selector.md)
 - [Texture\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Texture_EX.md)
+- [Toggle](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Toggle.md)
+- [ToggleGroup](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ToggleGroup.md)
 - [Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md)
 - [Vec2\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Vec2_EX.md)
 - [Vec3\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Vec3_EX.md)
@@ -43,7 +47,7 @@ pc-ex
 
 ### Interfaces
 
-- [ExtendClassName](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/ExtendClassName.md)
+- [Constructable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/Constructable.md)
 - [InputEventsMap](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md)
 - [KeyboardInputOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/KeyboardInputOptions.md)
 - [MouseInputOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/MouseInputOptions.md)
@@ -58,13 +62,15 @@ pc-ex
 
 ### Type Aliases
 
-- [AttributeParams](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attributeparams)
+- [Constructor](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#constructor)
 
 ### Functions
 
 - [attr](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attr)
+- [attrEX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attrex)
 - [cast](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#cast)
 - [createScript](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#createscript)
+- [createScriptEX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#createscriptex)
 - [drawScreenQuad](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#drawscreenquad)
 - [drawScreenRect](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#drawscreenrect)
 - [drawSelectionBox](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#drawselectionbox)
@@ -79,36 +85,31 @@ pc-ex
 
 ## Type Aliases
 
-### AttributeParams
+### Constructor
 
-Ƭ **AttributeParams**: `Object`
+Ƭ **Constructor**<`T`\>: (...`args`: `any`) => `T`
 
-脚本属性数据模板
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
 
 #### Type declaration
 
+• (...`args`)
+
+根据实例类型获取类类型
+
+##### Parameters
+
 | Name | Type |
 | :------ | :------ |
-| `array?` | `boolean` |
-| `assetType?` | `string` |
-| `color?` | `string` |
-| `curves?` | `string`[] |
-| `default?` | `any` |
-| `description?` | `string` |
-| `enum?` | `object`[] |
-| `max?` | `number` |
-| `min?` | `number` |
-| `placeholder?` | `string` \| `string`[] |
-| `precision?` | `number` |
-| `schema?` | `object`[] |
-| `size?` | `number` |
-| `step?` | `number` |
-| `title?` | `string` |
-| `type` | ``"boolean"`` \| ``"number"`` \| ``"string"`` \| ``"json"`` \| ``"asset"`` \| ``"entity"`` \| ``"rgb"`` \| ``"rgba"`` \| ``"vec2"`` \| ``"vec3"`` \| ``"vec4"`` \| ``"curve"`` |
+| `...args` | `any` |
 
 #### Defined in
 
-src/utils/helpers/create-script-decorator.ts:14
+src/utils/common/TypesAndInterfaces.ts:12
 
 ## Functions
 
@@ -128,7 +129,7 @@ src/utils/helpers/create-script-decorator.ts:14
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `params` | [`AttributeParams`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#attributeparams) | 脚本属性对应数据 |
+| `params` | `AttributeParams` | 脚本属性对应数据 |
 
 #### Returns
 
@@ -136,15 +137,15 @@ src/utils/helpers/create-script-decorator.ts:14
 
 #### Defined in
 
-src/utils/helpers/create-script-decorator.ts:58
+src/utils/helpers/create-script-decorator.ts:173
 
 ___
 
-### cast
+### attrEX
 
-▸ **cast**<`T`\>(`obj`): `T`
+▸ **attrEX**<`T`\>(`params`): `any`
 
-转换类型
+便捷添加脚本属性数据
 
 #### Type parameters
 
@@ -156,25 +157,53 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
+| `params` | `AttributeParams` | 脚本属性对应数据 |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+src/utils/helpers/create-script-decorator_ex.ts:61
+
+___
+
+### cast
+
+▸ **cast**<`NewType`\>(`obj`): `NewType`
+
+转换类型
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `NewType` |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `obj` | `any` | 待转换对象 |
 
 #### Returns
 
-`T`
+`NewType`
 
 转换类型后的对象
 
 #### Defined in
 
-src/utils/helpers/extend-decorator.ts:52
+src/utils/helpers/extend-decorator.ts:46
 
 ___
 
 ### createScript
 
-▸ **createScript**(`name`): (`target`: typeof `ScriptType`) => `void`
+▸ **createScript**(`name`): (`target`: typeof [`ScriptTypeBase`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md)) => `void`
 
-便捷添加脚本
+创建脚本装饰器
 
 #### Parameters
 
@@ -192,7 +221,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `target` | typeof `ScriptType` |
+| `target` | typeof [`ScriptTypeBase`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md) |
 
 ##### Returns
 
@@ -200,7 +229,48 @@ ___
 
 #### Defined in
 
-src/utils/helpers/create-script-decorator.ts:37
+src/utils/helpers/create-script-decorator.ts:84
+
+___
+
+### createScriptEX
+
+▸ **createScriptEX**<`Attrs`\>(`name`, `attrs`): (`target`: `Object`) => `void`
+
+便捷添加脚本
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `Attrs` |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name` | `string` | 脚本名称 |
+| `attrs` | `AttributeParamsType`<`Attrs`\> | 脚本属性定义 |
+
+#### Returns
+
+`fn`
+
+▸ (`target`): `void`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `target` | `Object` |
+
+##### Returns
+
+`void`
+
+#### Defined in
+
+src/utils/helpers/create-script-decorator_ex.ts:43
 
 ___
 
@@ -284,15 +354,21 @@ ___
 
 ### extendClass
 
-▸ **extendClass**(`extendClassName`): (`target`: `any`) => `void`
+▸ **extendClass**<`T`\>(`extendClass`): (`target`: `T`) => `void`
 
-扩展pc类
+扩展pc类 //TODO: 实现实例属性扩展
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`Constructable`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/Constructable.md)<`T`, `T`\> |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `extendClassName` | keyof [`ExtendClassName`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/ExtendClassName.md) | 扩展类名称 |
+| Name | Type |
+| :------ | :------ |
+| `extendClass` | `T` |
 
 #### Returns
 
@@ -306,7 +382,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `target` | `any` |
+| `target` | `T` |
 
 ##### Returns
 
@@ -314,7 +390,7 @@ ___
 
 #### Defined in
 
-src/utils/helpers/extend-decorator.ts:62
+src/utils/helpers/extend-decorator.ts:67
 
 ___
 

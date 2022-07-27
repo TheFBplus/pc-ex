@@ -95,7 +95,7 @@ pc.GraphNode.constructor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9203
+node_modules/playcanvas/build/playcanvas.d.ts:8950
 
 ## Properties
 
@@ -111,7 +111,7 @@ pc.GraphNode.name
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9209
+node_modules/playcanvas/build/playcanvas.d.ts:8956
 
 ___
 
@@ -128,7 +128,7 @@ pc.GraphNode.tags
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9216
+node_modules/playcanvas/build/playcanvas.d.ts:8963
 
 ## Accessors
 
@@ -148,7 +148,7 @@ pc.GraphNode.children
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9404
+node_modules/playcanvas/build/playcanvas.d.ts:9151
 
 ___
 
@@ -166,7 +166,7 @@ pc.GraphNode.enabled
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9380
+node_modules/playcanvas/build/playcanvas.d.ts:9127
 
 • `set` **enabled**(`arg`): `void`
 
@@ -190,7 +190,7 @@ pc.GraphNode.enabled
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9379
+node_modules/playcanvas/build/playcanvas.d.ts:9126
 
 ___
 
@@ -210,7 +210,7 @@ pc.GraphNode.forward
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9371
+node_modules/playcanvas/build/playcanvas.d.ts:9118
 
 ___
 
@@ -232,7 +232,7 @@ pc.GraphNode.graphDepth
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9412
+node_modules/playcanvas/build/playcanvas.d.ts:9159
 
 ___
 
@@ -252,7 +252,7 @@ pc.GraphNode.parent
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9386
+node_modules/playcanvas/build/playcanvas.d.ts:9133
 
 ___
 
@@ -272,7 +272,7 @@ pc.GraphNode.path
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9392
+node_modules/playcanvas/build/playcanvas.d.ts:9139
 
 ___
 
@@ -292,7 +292,7 @@ pc.GraphNode.right
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9359
+node_modules/playcanvas/build/playcanvas.d.ts:9106
 
 ___
 
@@ -312,7 +312,7 @@ pc.GraphNode.root
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9398
+node_modules/playcanvas/build/playcanvas.d.ts:9145
 
 ___
 
@@ -332,7 +332,7 @@ pc.GraphNode.up
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9365
+node_modules/playcanvas/build/playcanvas.d.ts:9112
 
 ## Methods
 
@@ -350,7 +350,7 @@ pc.GraphNode.\_sync
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9899
+node_modules/playcanvas/build/playcanvas.d.ts:9650
 
 ___
 
@@ -359,6 +359,7 @@ ___
 ▸ **addChild**(`node`): `void`
 
 Add a new child to the child list and update the parent value of the child node.
+If the node already had a parent, it is removed from its child list.
 
 **`Example`**
 
@@ -383,19 +384,19 @@ pc.GraphNode.addChild
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9839
+node_modules/playcanvas/build/playcanvas.d.ts:9587
 
 ___
 
 ### clone
 
-▸ **clone**(): `GraphNode`
+▸ **clone**(): [`GraphNode_EX`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/GraphNode_EX.md)
 
 Clone a graph node.
 
 #### Returns
 
-`GraphNode`
+[`GraphNode_EX`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/GraphNode_EX.md)
 
 A clone of the specified graph node.
 
@@ -405,7 +406,7 @@ pc.GraphNode.clone
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9436
+node_modules/playcanvas/build/playcanvas.d.ts:9183
 
 ___
 
@@ -449,7 +450,7 @@ pc.GraphNode.find
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9468
+node_modules/playcanvas/build/playcanvas.d.ts:9215
 
 ___
 
@@ -478,7 +479,7 @@ pc.GraphNode.findByName
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9523
+node_modules/playcanvas/build/playcanvas.d.ts:9270
 
 ___
 
@@ -522,7 +523,7 @@ pc.GraphNode.findByPath
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9539
+node_modules/playcanvas/build/playcanvas.d.ts:9286
 
 ___
 
@@ -573,7 +574,7 @@ pc.GraphNode.findByTag
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9515
+node_modules/playcanvas/build/playcanvas.d.ts:9262
 
 ___
 
@@ -618,7 +619,7 @@ pc.GraphNode.findOne
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9493
+node_modules/playcanvas/build/playcanvas.d.ts:9240
 
 ___
 
@@ -660,7 +661,7 @@ pc.GraphNode.fire
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:102
+node_modules/playcanvas/build/playcanvas.d.ts:5437
 
 ___
 
@@ -696,7 +697,7 @@ pc.GraphNode.forEach
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9552
+node_modules/playcanvas/build/playcanvas.d.ts:9299
 
 ___
 
@@ -729,7 +730,7 @@ pc.GraphNode.getEulerAngles
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9587
+node_modules/playcanvas/build/playcanvas.d.ts:9334
 
 ___
 
@@ -761,7 +762,7 @@ pc.GraphNode.getLocalEulerAngles
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9599
+node_modules/playcanvas/build/playcanvas.d.ts:9346
 
 ___
 
@@ -793,7 +794,7 @@ pc.GraphNode.getLocalPosition
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9611
+node_modules/playcanvas/build/playcanvas.d.ts:9358
 
 ___
 
@@ -823,7 +824,7 @@ pc.GraphNode.getLocalRotation
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9621
+node_modules/playcanvas/build/playcanvas.d.ts:9368
 
 ___
 
@@ -855,7 +856,7 @@ pc.GraphNode.getLocalScale
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9633
+node_modules/playcanvas/build/playcanvas.d.ts:9380
 
 ___
 
@@ -884,7 +885,7 @@ pc.GraphNode.getLocalTransform
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9642
+node_modules/playcanvas/build/playcanvas.d.ts:9389
 
 ___
 
@@ -916,7 +917,7 @@ pc.GraphNode.getPosition
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9654
+node_modules/playcanvas/build/playcanvas.d.ts:9401
 
 ___
 
@@ -946,7 +947,7 @@ pc.GraphNode.getRotation
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9664
+node_modules/playcanvas/build/playcanvas.d.ts:9411
 
 ___
 
@@ -974,7 +975,7 @@ pc.GraphNode.getWorldTransform
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9686
+node_modules/playcanvas/build/playcanvas.d.ts:9433
 
 ___
 
@@ -1010,7 +1011,7 @@ pc.GraphNode.hasEvent
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:130
+node_modules/playcanvas/build/playcanvas.d.ts:5465
 
 ___
 
@@ -1019,7 +1020,7 @@ ___
 ▸ **insertChild**(`node`, `index`): `void`
 
 Insert a new child to the child list at the specified index and update the parent value of
-the child node.
+the child node. If the node already had a parent, it is removed from its child list.
 
 **`Example`**
 
@@ -1045,7 +1046,7 @@ pc.GraphNode.insertChild
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9861
+node_modules/playcanvas/build/playcanvas.d.ts:9610
 
 ___
 
@@ -1081,7 +1082,7 @@ pc.GraphNode.isAncestorOf
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9574
+node_modules/playcanvas/build/playcanvas.d.ts:9321
 
 ___
 
@@ -1117,7 +1118,7 @@ pc.GraphNode.isDescendantOf
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9563
+node_modules/playcanvas/build/playcanvas.d.ts:9310
 
 ___
 
@@ -1180,7 +1181,7 @@ pc.GraphNode.lookAt
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9934
+node_modules/playcanvas/build/playcanvas.d.ts:9685
 
 ___
 
@@ -1225,7 +1226,7 @@ pc.GraphNode.off
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:85
+node_modules/playcanvas/build/playcanvas.d.ts:5420
 
 ___
 
@@ -1264,7 +1265,7 @@ pc.GraphNode.on
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:65
+node_modules/playcanvas/build/playcanvas.d.ts:5400
 
 ___
 
@@ -1304,7 +1305,7 @@ pc.GraphNode.once
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:119
+node_modules/playcanvas/build/playcanvas.d.ts:5454
 
 ___
 
@@ -1337,7 +1338,7 @@ pc.GraphNode.removeChild
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9898
+node_modules/playcanvas/build/playcanvas.d.ts:9649
 
 ___
 
@@ -1364,7 +1365,7 @@ pc.GraphNode.reparent
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9693
+node_modules/playcanvas/build/playcanvas.d.ts:9440
 
 ___
 
@@ -1431,7 +1432,7 @@ pc.GraphNode.rotate
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9988
+node_modules/playcanvas/build/playcanvas.d.ts:9739
 
 ___
 
@@ -1476,7 +1477,7 @@ pc.GraphNode.rotateLocal
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:10006
+node_modules/playcanvas/build/playcanvas.d.ts:9757
 
 ___
 
@@ -1522,7 +1523,7 @@ pc.GraphNode.setEulerAngles
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9830
+node_modules/playcanvas/build/playcanvas.d.ts:9577
 
 ___
 
@@ -1568,7 +1569,7 @@ pc.GraphNode.setLocalEulerAngles
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9712
+node_modules/playcanvas/build/playcanvas.d.ts:9459
 
 ___
 
@@ -1613,7 +1614,7 @@ pc.GraphNode.setLocalPosition
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9730
+node_modules/playcanvas/build/playcanvas.d.ts:9477
 
 ___
 
@@ -1659,7 +1660,7 @@ pc.GraphNode.setLocalRotation
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9749
+node_modules/playcanvas/build/playcanvas.d.ts:9496
 
 ___
 
@@ -1703,7 +1704,7 @@ pc.GraphNode.setLocalScale
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9766
+node_modules/playcanvas/build/playcanvas.d.ts:9513
 
 ___
 
@@ -1748,7 +1749,7 @@ pc.GraphNode.setPosition
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9792
+node_modules/playcanvas/build/playcanvas.d.ts:9539
 
 ___
 
@@ -1794,7 +1795,7 @@ pc.GraphNode.setRotation
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9811
+node_modules/playcanvas/build/playcanvas.d.ts:9558
 
 ___
 
@@ -1839,7 +1840,7 @@ pc.GraphNode.translate
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9952
+node_modules/playcanvas/build/playcanvas.d.ts:9703
 
 ___
 
@@ -1884,4 +1885,4 @@ pc.GraphNode.translateLocal
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:9970
+node_modules/playcanvas/build/playcanvas.d.ts:9721

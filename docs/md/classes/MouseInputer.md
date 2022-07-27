@@ -17,7 +17,6 @@
 ### Properties
 
 - [app](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#app)
-- [eventHandler](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#eventhandler)
 - [toolOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#tooloptions)
 - [toolOptionsDefault](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#tooloptionsdefault)
 
@@ -27,10 +26,13 @@
 
 ### Methods
 
-- [addListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#addlistener)
+- [fire](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#fire)
+- [hasEvent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#hasevent)
+- [off](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#off)
+- [on](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#on)
 - [onDisable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#ondisable)
 - [onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#onenable)
-- [removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#removelistener)
+- [once](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#once)
 - [setOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#setoptions)
 - [updateOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md#updateoptions)
 
@@ -66,21 +68,7 @@ src/tools/input/mouseInput.ts:33
 
 #### Defined in
 
-src/utils/helpers/toolBase.ts:22
-
-___
-
-### eventHandler
-
-• **eventHandler**: `ExEventHandler`<[`InputEventsMap`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md)\>
-
-#### Inherited from
-
-[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[eventHandler](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#eventhandler)
-
-#### Defined in
-
-src/utils/helpers/toolBase.ts:23
+src/utils/helpers/toolBase.ts:15
 
 ___
 
@@ -94,7 +82,7 @@ ___
 
 #### Defined in
 
-src/utils/helpers/toolBase.ts:26
+src/utils/helpers/toolBase.ts:18
 
 ___
 
@@ -128,7 +116,7 @@ Tool.enabled
 
 #### Defined in
 
-src/utils/helpers/toolBase.ts:52
+src/utils/helpers/toolBase.ts:43
 
 • `set` **enabled**(`value`): `void`
 
@@ -150,41 +138,155 @@ Tool.enabled
 
 #### Defined in
 
-src/utils/helpers/toolBase.ts:43
+src/utils/helpers/toolBase.ts:34
 
 ## Methods
 
-### addListener
+### fire
 
-▸ **addListener**<`K`\>(`eventName`, `callback`, `scope?`): `void`
+▸ `Protected` **fire**<`EventName`\>(`eventName`, `arg1?`, `arg2?`, `arg3?`, `arg4?`, `arg5?`, `arg6?`, `arg7?`, `arg8?`): `EventHandler`
 
-添加事件监听
+手动触发事件
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `K` | extends keyof [`InputEventsMap`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md) |
+| `EventName` | extends keyof [`InputEventsMap`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `eventName` | `K` | 监听事件名称 |
-| `callback` | [`InputEventsMap`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md)[`K`] | 回调 |
-| `scope?` | `any` | 范围 |
+| `eventName` | `EventName` | 事件名称 |
+| `arg1?` | `any` | 参数1 |
+| `arg2?` | `any` | 参数2 |
+| `arg3?` | `any` | 参数3 |
+| `arg4?` | `any` | 参数4 |
+| `arg5?` | `any` | 参数5 |
+| `arg6?` | `any` | 参数6 |
+| `arg7?` | `any` | 参数7 |
+| `arg8?` | `any` | 参数8 |
 
 #### Returns
 
-`void`
+`EventHandler`
+
+EventHandler
 
 #### Inherited from
 
-[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[addListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#addlistener)
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[fire](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#fire)
 
 #### Defined in
 
-src/utils/helpers/toolBase.ts:63
+src/utils/helpers/toolBase.ts:128
+
+___
+
+### hasEvent
+
+▸ **hasEvent**<`EventName`\>(`eventName`): `boolean`
+
+检测是否监听此事件
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `EventName` | extends keyof [`InputEventsMap`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md) |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `eventName` | `EventName` | 事件名称 |
+
+#### Returns
+
+`boolean`
+
+是否监听此事件
+
+#### Inherited from
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[hasEvent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#hasevent)
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:111
+
+___
+
+### off
+
+▸ **off**<`EventName`\>(`eventName`, `linstener`, `scope?`): `EventHandler`
+
+注销事件监听
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `EventName` | extends keyof [`InputEventsMap`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md) |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `eventName` | `EventName` | 事件名称 |
+| `linstener` | [`InputEventsMap`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md)[`EventName`] | 监听回调 |
+| `scope?` | `object` | 回调函数this指向 |
+
+#### Returns
+
+`EventHandler`
+
+EventHandler
+
+#### Inherited from
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[off](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#off)
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:102
+
+___
+
+### on
+
+▸ **on**<`EventName`\>(`eventName`, `linstener`, `scope?`): `EventHandler`
+
+注册事件监听
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `EventName` | extends keyof [`InputEventsMap`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md) |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `eventName` | `EventName` | 事件名称 |
+| `linstener` | [`InputEventsMap`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md)[`EventName`] | 监听回调 |
+| `scope?` | `object` | 回调函数this指向 |
+
+#### Returns
+
+`EventHandler`
+
+EventHandler
+
+#### Inherited from
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[on](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#on)
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:80
 
 ___
 
@@ -224,37 +326,39 @@ src/tools/input/mouseInput.ts:111
 
 ___
 
-### removeListener
+### once
 
-▸ **removeListener**<`K`\>(`eventName`, `callback`, `scope?`): `void`
+▸ **once**<`EventName`\>(`eventName`, `linstener`, `scope?`): `EventHandler`
 
-移除事件监听
+注册单次事件监听
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `K` | extends keyof [`InputEventsMap`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md) |
+| `EventName` | extends keyof [`InputEventsMap`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `eventName` | `K` | 监听事件名称 |
-| `callback` | [`InputEventsMap`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md)[`K`] | 回调 |
-| `scope?` | `any` | 范围 |
+| `eventName` | `EventName` | 事件名称 |
+| `linstener` | [`InputEventsMap`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md)[`EventName`] | 监听回调 |
+| `scope?` | `object` | 回调函数this指向 |
 
 #### Returns
 
-`void`
+`EventHandler`
+
+EventHandler
 
 #### Inherited from
 
-[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#removelistener)
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[once](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#once)
 
 #### Defined in
 
-src/utils/helpers/toolBase.ts:74
+src/utils/helpers/toolBase.ts:91
 
 ___
 
@@ -280,7 +384,7 @@ ___
 
 #### Defined in
 
-src/utils/helpers/toolBase.ts:83
+src/utils/helpers/toolBase.ts:52
 
 ___
 
@@ -307,4 +411,4 @@ ___
 
 #### Defined in
 
-src/utils/helpers/toolBase.ts:96
+src/utils/helpers/toolBase.ts:65

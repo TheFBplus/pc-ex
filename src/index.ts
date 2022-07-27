@@ -26,6 +26,7 @@ export { MultiSelector, MultiSelectorOptions } from "./tools/selector/multiSelec
 export { Selector, SelectorOptions } from "./tools/selector/selector";
 // utils
 export { InputEventsMap } from "./utils/common/InputEventsMap";
+export { Constructable, Constructor } from "./utils/common/TypesAndInterfaces";
 export { DebugLine } from "./utils/func/debugLine";
 export { drawScreenQuad } from "./utils/func/drawSelectionBox/drawScreenQuad";
 export { drawScreenRect } from "./utils/func/drawSelectionBox/drawScreenRect";
@@ -36,7 +37,6 @@ export { attrEX, createScriptEX, ScriptTypeEX } from "./utils/helpers/create-scr
 export { cast, extendClass } from "./utils/helpers/extend-decorator";
 export { frag, glsl, glslify, vert } from "./utils/helpers/shaderHelper";
 export { Tool } from "./utils/helpers/toolBase";
-export { InstanceType } from "./utils/helpers/typeGetter";
 export { getGlobal, use, useGlobal } from "./utils/helpers/useToolHelper";
 export { PostEffectOutline } from "./utils/postEffects/posteffectOutline";
 // ui

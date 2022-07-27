@@ -86,7 +86,7 @@ pc.Vec4.constructor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4493
+node_modules/playcanvas/build/playcanvas.d.ts:4009
 
 ## Properties
 
@@ -102,7 +102,7 @@ pc.Vec4.w
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4517
+node_modules/playcanvas/build/playcanvas.d.ts:4033
 
 ___
 
@@ -118,7 +118,7 @@ pc.Vec4.x
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4499
+node_modules/playcanvas/build/playcanvas.d.ts:4015
 
 ___
 
@@ -134,7 +134,7 @@ pc.Vec4.y
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4505
+node_modules/playcanvas/build/playcanvas.d.ts:4021
 
 ___
 
@@ -150,7 +150,7 @@ pc.Vec4.z
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4511
+node_modules/playcanvas/build/playcanvas.d.ts:4027
 
 ___
 
@@ -166,7 +166,7 @@ pc.Vec4.ONE
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4481
+node_modules/playcanvas/build/playcanvas.d.ts:3997
 
 ___
 
@@ -182,7 +182,7 @@ pc.Vec4.ZERO
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4474
+node_modules/playcanvas/build/playcanvas.d.ts:3990
 
 ## Accessors
 
@@ -238,7 +238,7 @@ pc.Vec4.add
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4532
+node_modules/playcanvas/build/playcanvas.d.ts:4048
 
 ___
 
@@ -280,7 +280,7 @@ pc.Vec4.add2
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4549
+node_modules/playcanvas/build/playcanvas.d.ts:4065
 
 ___
 
@@ -319,7 +319,7 @@ pc.Vec4.addScalar
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4563
+node_modules/playcanvas/build/playcanvas.d.ts:4079
 
 ___
 
@@ -341,13 +341,13 @@ pc.Vec4.ceil
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4770
+node_modules/playcanvas/build/playcanvas.d.ts:4286
 
 ___
 
 ### clone
 
-▸ **clone**(): `Vec4`
+▸ **clone**(): [`Vec4_EX`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Vec4_EX.md)
 
 Returns an identical copy of the specified 4-dimensional vector.
 
@@ -361,7 +361,7 @@ console.log("The result of the cloning is: " + vclone.toString());
 
 #### Returns
 
-`Vec4`
+[`Vec4_EX`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Vec4_EX.md)
 
 A 4-dimensional vector containing the result of the cloning.
 
@@ -371,7 +371,7 @@ pc.Vec4.clone
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4573
+node_modules/playcanvas/build/playcanvas.d.ts:4089
 
 ___
 
@@ -410,7 +410,7 @@ pc.Vec4.copy
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4587
+node_modules/playcanvas/build/playcanvas.d.ts:4103
 
 ___
 
@@ -450,7 +450,7 @@ pc.Vec4.div
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4602
+node_modules/playcanvas/build/playcanvas.d.ts:4118
 
 ___
 
@@ -492,7 +492,7 @@ pc.Vec4.div2
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4619
+node_modules/playcanvas/build/playcanvas.d.ts:4135
 
 ___
 
@@ -531,7 +531,7 @@ pc.Vec4.divScalar
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4633
+node_modules/playcanvas/build/playcanvas.d.ts:4149
 
 ___
 
@@ -569,7 +569,7 @@ pc.Vec4.dot
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4646
+node_modules/playcanvas/build/playcanvas.d.ts:4162
 
 ___
 
@@ -605,7 +605,7 @@ pc.Vec4.equals
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4657
+node_modules/playcanvas/build/playcanvas.d.ts:4173
 
 ___
 
@@ -627,7 +627,7 @@ pc.Vec4.floor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4764
+node_modules/playcanvas/build/playcanvas.d.ts:4280
 
 ___
 
@@ -658,7 +658,7 @@ pc.Vec4.length
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4668
+node_modules/playcanvas/build/playcanvas.d.ts:4184
 
 ___
 
@@ -689,7 +689,7 @@ pc.Vec4.lengthSq
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4679
+node_modules/playcanvas/build/playcanvas.d.ts:4195
 
 ___
 
@@ -731,7 +731,7 @@ pc.Vec4.lerp
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4698
+node_modules/playcanvas/build/playcanvas.d.ts:4214
 
 ___
 
@@ -759,7 +759,7 @@ pc.Vec4.max
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4790
+node_modules/playcanvas/build/playcanvas.d.ts:4306
 
 ___
 
@@ -787,7 +787,7 @@ pc.Vec4.min
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4783
+node_modules/playcanvas/build/playcanvas.d.ts:4299
 
 ___
 
@@ -827,7 +827,7 @@ pc.Vec4.mul
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4713
+node_modules/playcanvas/build/playcanvas.d.ts:4229
 
 ___
 
@@ -869,7 +869,7 @@ pc.Vec4.mul2
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4730
+node_modules/playcanvas/build/playcanvas.d.ts:4246
 
 ___
 
@@ -908,7 +908,7 @@ pc.Vec4.mulScalar
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4744
+node_modules/playcanvas/build/playcanvas.d.ts:4260
 
 ___
 
@@ -942,7 +942,7 @@ pc.Vec4.normalize
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4758
+node_modules/playcanvas/build/playcanvas.d.ts:4274
 
 ___
 
@@ -964,7 +964,7 @@ pc.Vec4.round
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4776
+node_modules/playcanvas/build/playcanvas.d.ts:4292
 
 ___
 
@@ -1005,7 +1005,7 @@ pc.Vec4.set
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4806
+node_modules/playcanvas/build/playcanvas.d.ts:4322
 
 ___
 
@@ -1045,7 +1045,7 @@ pc.Vec4.sub
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4821
+node_modules/playcanvas/build/playcanvas.d.ts:4337
 
 ___
 
@@ -1087,7 +1087,7 @@ pc.Vec4.sub2
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4838
+node_modules/playcanvas/build/playcanvas.d.ts:4354
 
 ___
 
@@ -1126,7 +1126,7 @@ pc.Vec4.subScalar
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4852
+node_modules/playcanvas/build/playcanvas.d.ts:4368
 
 ___
 
@@ -1156,4 +1156,4 @@ pc.Vec4.toString
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:4862
+node_modules/playcanvas/build/playcanvas.d.ts:4378

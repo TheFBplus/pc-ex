@@ -2,11 +2,13 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-07-25 17:58:39
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-26 17:34:07
+ * @ 修改时间: 2022-07-27 11:21:35
  * @ 详情: 脚本创建装饰器
  */
 
 import * as pc from "playcanvas";
+
+import { Constructor } from "../common/TypesAndInterfaces";
 
 // 排除的实例成员名称
 const exceptInstanceMemberNames = [
@@ -46,19 +48,11 @@ type AttributeParams = {
 };
 
 /**
- * 带有构造函数的类型
- */
-interface Type<T> extends Function
-{
-    new(...args: any[]): T;
-}
-
-/**
  * 获得该类所有原型成员的名称数组
  * @param value 类型
  * @returns 该类所有原型成员的名称数组
  */
-function getPrototypeMemberNames<T>(value: Type<T>)
+function getPrototypeMemberNames<T>(value: Constructor<T>)
 {
     return Reflect.ownKeys(value.prototype);
 }
@@ -68,7 +62,7 @@ function getPrototypeMemberNames<T>(value: Type<T>)
  * @param value 类型
  * @returns 该类所有静态成员的名称数组
  */
-function getStaticMemberNames<T>(value: Type<T>)
+function getStaticMemberNames<T>(value: Constructor<T>)
 {
     return Reflect.ownKeys(value);
 }

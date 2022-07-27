@@ -66,7 +66,7 @@ pc.Curve.constructor
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17003
+node_modules/playcanvas/build/playcanvas.d.ts:19621
 
 ## Properties
 
@@ -80,7 +80,7 @@ pc.Curve.keys
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17004
+node_modules/playcanvas/build/playcanvas.d.ts:19622
 
 ___
 
@@ -98,7 +98,7 @@ pc.Curve.tension
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17025
+node_modules/playcanvas/build/playcanvas.d.ts:19643
 
 ___
 
@@ -121,7 +121,7 @@ pc.Curve.type
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17017
+node_modules/playcanvas/build/playcanvas.d.ts:19635
 
 ## Accessors
 
@@ -141,7 +141,7 @@ pc.Curve.length
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17036
+node_modules/playcanvas/build/playcanvas.d.ts:19654
 
 ## Methods
 
@@ -170,19 +170,19 @@ pc.Curve.add
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17044
+node_modules/playcanvas/build/playcanvas.d.ts:19662
 
 ___
 
 ### clone
 
-▸ **clone**(): `Curve`
+▸ **clone**(): [`Curve_EX`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Curve_EX.md)
 
 Returns a clone of the specified curve object.
 
 #### Returns
 
-`Curve`
+[`Curve_EX`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Curve_EX.md)
 
 A clone of the specified curve.
 
@@ -192,7 +192,7 @@ pc.Curve.clone
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17069
+node_modules/playcanvas/build/playcanvas.d.ts:19687
 
 ___
 
@@ -216,7 +216,7 @@ pc.Curve.closest
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17063
+node_modules/playcanvas/build/playcanvas.d.ts:19681
 
 ___
 
@@ -244,7 +244,7 @@ pc.Curve.get
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17051
+node_modules/playcanvas/build/playcanvas.d.ts:19669
 
 ___
 
@@ -312,7 +312,7 @@ pc.Curve.sort
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17055
+node_modules/playcanvas/build/playcanvas.d.ts:19673
 
 ___
 
@@ -340,4 +340,4 @@ pc.Curve.value
 
 #### Defined in
 
-node_modules/playcanvas/build/playcanvas.d.ts:17062
+node_modules/playcanvas/build/playcanvas.d.ts:19680

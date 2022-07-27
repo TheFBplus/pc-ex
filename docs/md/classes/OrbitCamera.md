@@ -17,7 +17,6 @@
 ### Properties
 
 - [app](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#app)
-- [eventHandler](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#eventhandler)
 - [isLooking](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#islooking)
 - [isPaning](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#ispaning)
 - [isRotating](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#isrotating)
@@ -35,11 +34,14 @@
 
 ### Methods
 
-- [addListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#addlistener)
+- [fire](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#fire)
 - [focus](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#focus)
+- [hasEvent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#hasevent)
+- [off](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#off)
+- [on](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#on)
 - [onDisable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#ondisable)
 - [onEnable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#onenable)
-- [removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#removelistener)
+- [once](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#once)
 - [setOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#setoptions)
 - [stopInertia](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#stopinertia)
 - [updateOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md#updateoptions)
@@ -78,21 +80,7 @@ src/tools/camera/orbitCamera.ts:94
 
 #### Defined in
 
-src/utils/helpers/toolBase.ts:22
-
-___
-
-### eventHandler
-
-• **eventHandler**: `ExEventHandler`<`any`\>
-
-#### Inherited from
-
-[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[eventHandler](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#eventhandler)
-
-#### Defined in
-
-src/utils/helpers/toolBase.ts:23
+src/utils/helpers/toolBase.ts:15
 
 ___
 
@@ -136,7 +124,7 @@ ___
 
 #### Defined in
 
-src/utils/helpers/toolBase.ts:26
+src/utils/helpers/toolBase.ts:18
 
 ___
 
@@ -234,7 +222,7 @@ Tool.enabled
 
 #### Defined in
 
-src/utils/helpers/toolBase.ts:52
+src/utils/helpers/toolBase.ts:43
 
 • `set` **enabled**(`value`): `void`
 
@@ -256,7 +244,7 @@ Tool.enabled
 
 #### Defined in
 
-src/utils/helpers/toolBase.ts:43
+src/utils/helpers/toolBase.ts:34
 
 ___
 
@@ -356,37 +344,45 @@ src/tools/camera/orbitCamera.ts:125
 
 ## Methods
 
-### addListener
+### fire
 
-▸ **addListener**<`K`\>(`eventName`, `callback`, `scope?`): `void`
+▸ `Protected` **fire**<`EventName`\>(`eventName`, `arg1?`, `arg2?`, `arg3?`, `arg4?`, `arg5?`, `arg6?`, `arg7?`, `arg8?`): `EventHandler`
 
-添加事件监听
+手动触发事件
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `K` | extends `string` \| `number` \| `symbol` |
+| `EventName` | extends `string` \| `number` \| `symbol` |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `eventName` | `K` | 监听事件名称 |
-| `callback` | `any` | 回调 |
-| `scope?` | `any` | 范围 |
+| `eventName` | `EventName` | 事件名称 |
+| `arg1?` | `any` | 参数1 |
+| `arg2?` | `any` | 参数2 |
+| `arg3?` | `any` | 参数3 |
+| `arg4?` | `any` | 参数4 |
+| `arg5?` | `any` | 参数5 |
+| `arg6?` | `any` | 参数6 |
+| `arg7?` | `any` | 参数7 |
+| `arg8?` | `any` | 参数8 |
 
 #### Returns
 
-`void`
+`EventHandler`
+
+EventHandler
 
 #### Inherited from
 
-[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[addListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#addlistener)
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[fire](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#fire)
 
 #### Defined in
 
-src/utils/helpers/toolBase.ts:63
+src/utils/helpers/toolBase.ts:128
 
 ___
 
@@ -409,6 +405,112 @@ ___
 #### Defined in
 
 src/tools/camera/orbitCamera.ts:215
+
+___
+
+### hasEvent
+
+▸ **hasEvent**<`EventName`\>(`eventName`): `boolean`
+
+检测是否监听此事件
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `EventName` | extends `string` \| `number` \| `symbol` |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `eventName` | `EventName` | 事件名称 |
+
+#### Returns
+
+`boolean`
+
+是否监听此事件
+
+#### Inherited from
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[hasEvent](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#hasevent)
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:111
+
+___
+
+### off
+
+▸ **off**<`EventName`\>(`eventName`, `linstener`, `scope?`): `EventHandler`
+
+注销事件监听
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `EventName` | extends `string` \| `number` \| `symbol` |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `eventName` | `EventName` | 事件名称 |
+| `linstener` | `any` | 监听回调 |
+| `scope?` | `object` | 回调函数this指向 |
+
+#### Returns
+
+`EventHandler`
+
+EventHandler
+
+#### Inherited from
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[off](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#off)
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:102
+
+___
+
+### on
+
+▸ **on**<`EventName`\>(`eventName`, `linstener`, `scope?`): `EventHandler`
+
+注册事件监听
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `EventName` | extends `string` \| `number` \| `symbol` |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `eventName` | `EventName` | 事件名称 |
+| `linstener` | `any` | 监听回调 |
+| `scope?` | `object` | 回调函数this指向 |
+
+#### Returns
+
+`EventHandler`
+
+EventHandler
+
+#### Inherited from
+
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[on](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#on)
+
+#### Defined in
+
+src/utils/helpers/toolBase.ts:80
 
 ___
 
@@ -448,37 +550,39 @@ src/tools/camera/orbitCamera.ts:385
 
 ___
 
-### removeListener
+### once
 
-▸ **removeListener**<`K`\>(`eventName`, `callback`, `scope?`): `void`
+▸ **once**<`EventName`\>(`eventName`, `linstener`, `scope?`): `EventHandler`
 
-移除事件监听
+注册单次事件监听
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `K` | extends `string` \| `number` \| `symbol` |
+| `EventName` | extends `string` \| `number` \| `symbol` |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `eventName` | `K` | 监听事件名称 |
-| `callback` | `any` | 回调 |
-| `scope?` | `any` | 范围 |
+| `eventName` | `EventName` | 事件名称 |
+| `linstener` | `any` | 监听回调 |
+| `scope?` | `object` | 回调函数this指向 |
 
 #### Returns
 
-`void`
+`EventHandler`
+
+EventHandler
 
 #### Inherited from
 
-[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[removeListener](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#removelistener)
+[Tool](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md).[once](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tool.md#once)
 
 #### Defined in
 
-src/utils/helpers/toolBase.ts:74
+src/utils/helpers/toolBase.ts:91
 
 ___
 
@@ -504,7 +608,7 @@ ___
 
 #### Defined in
 
-src/utils/helpers/toolBase.ts:83
+src/utils/helpers/toolBase.ts:52
 
 ___
 
@@ -559,4 +663,4 @@ ___
 
 #### Defined in
 
-src/utils/helpers/toolBase.ts:96
+src/utils/helpers/toolBase.ts:65

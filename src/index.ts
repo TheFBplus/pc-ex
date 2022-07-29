@@ -13,7 +13,7 @@ export { Vec2_EX } from "./extensions/vec2";
 export { Vec3_EX } from "./extensions/vec3";
 export { Vec4_EX } from "./extensions/vec4";
 // tools
-export * as Tools from "./tools/tools";
+export * as Tools from "./tools";
 // utils
 export { InputEventsMap } from "./utils/common/InputEventsMap";
 export { Constructable, Constructor } from "./utils/common/TypesAndInterfaces";

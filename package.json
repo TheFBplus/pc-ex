@@ -5,10 +5,6 @@
 	"main": "bin/cjs/index.js",
 	"module": "bin/es/index.js",
 	"types": "bin/dts/index.d.ts",
-	"exports": {
-		".": "./bin/cjs/index.js",
-		"./scripts/*": "./bin/es/scripts/*"
-	},
 	"scripts": {
 		"init": "start init",
 		"build": "npx --no-install rimraf bin && npm run _build-es && npm run _build-cjs && npm run _build-iife && tsc-alias --dir bin/dts && node ./build-scripts/post-build.js",
@@ -38,7 +34,8 @@
 		"typescript": "^4.7.4"
 	},
 	"files": [
-		"bin/*"
+		"bin/*",
+		"scripts/*"
 	],
 	"repository": {
 		"type": "git",

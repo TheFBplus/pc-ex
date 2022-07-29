@@ -6,7 +6,8 @@
 	"module": "bin/es/index.js",
 	"types": "bin/dts/index.d.ts",
 	"exports": {
-		".": "./bin/cjs/index.js"
+		".": "./bin/cjs/index.js",
+		"./scripts/*": "./bin/es/scripts/*"
 	},
 	"scripts": {
 		"init": "start init",

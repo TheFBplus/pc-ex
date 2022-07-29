@@ -13,29 +13,29 @@
 
 - **`Tool`**
 
-  ↳ [`OrbitCamera`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md)
+  ↳ [`OrbitCamera`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tools.OrbitCamera.md)
 
-  ↳ [`OrbitCameraInput_Mouse`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCameraInput_Mouse.md)
+  ↳ [`OrbitCameraInput_Mouse`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tools.OrbitCameraInput_Mouse.md)
 
-  ↳ [`OrbitCameraInput_TouchScreen`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCameraInput_TouchScreen.md)
+  ↳ [`OrbitCameraInput_TouchScreen`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tools.OrbitCameraInput_TouchScreen.md)
 
-  ↳ [`OutlineCamera`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OutlineCamera.md)
+  ↳ [`OutlineCamera`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tools.OutlineCamera.md)
 
-  ↳ [`MouseInputer`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md)
+  ↳ [`PathCurve`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tools.PathCurve.md)
 
-  ↳ [`DropGLTFLoader`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md)
+  ↳ [`MouseInputer`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tools.MouseInputer.md)
 
-  ↳ [`PathCurve`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md)
+  ↳ [`DropGLTFLoader`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tools.DropGLTFLoader.md)
 
-  ↳ [`RTH_RuntimeGrid`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/RTH_RuntimeGrid.md)
+  ↳ [`RTH_RuntimeGrid`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tools.RTH_RuntimeGrid.md)
 
-  ↳ [`RTH_KeyboardInputer`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/RTH_KeyboardInputer.md)
+  ↳ [`RTH_KeyboardInputer`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tools.RTH_KeyboardInputer.md)
 
-  ↳ [`RuntimeTransformHandle`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/RuntimeTransformHandle.md)
+  ↳ [`RuntimeTransformHandle`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tools.RuntimeTransformHandle.md)
 
-  ↳ [`MultiSelector`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MultiSelector.md)
+  ↳ [`MultiSelector`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tools.MultiSelector.md)
 
-  ↳ [`Selector`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Selector.md)
+  ↳ [`Selector`](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Tools.Selector.md)
 
 ## Table of contents
 

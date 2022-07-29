@@ -34,7 +34,7 @@
 - [on](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ToggleGroup.md#on)
 - [once](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ToggleGroup.md#once)
 - [removeToggle](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ToggleGroup.md#removetoggle)
-- [toggle](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ToggleGroup.md#toggle)
+- [shouldToggleSwitch](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ToggleGroup.md#shouldtoggleswitch)
 
 ## Constructors
 
@@ -344,9 +344,9 @@ src/utils/ui/toggleGroup.ts:51
 
 ___
 
-### toggle
+### shouldToggleSwitch
 
-▸ **toggle**(`toggle`, `targetState`): `boolean`
+▸ **shouldToggleSwitch**(`toggle`, `targetState`): `boolean`
 
 开关组限制开关的行为
 

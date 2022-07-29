@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 17:01:01
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-22 10:44:09
+ * @ 修改时间: 2022-07-28 17:49:21
  * @ 详情: 鼠标操作
  */
 
@@ -10,13 +10,14 @@ import * as pc from "playcanvas";
 
 import { InputEventsMap } from "@/utils/common/InputEventsMap";
 import { Tool } from "@/utils/helpers/toolBase";
-import { tool } from "@/utils/helpers/useToolHelper";
+
+// import { tool } from "@/utils/helpers/useToolHelper";
 
 /**
  * 鼠标输入选项
  */
 export interface MouseInputOptions { clickError: number };
-@tool("MouseInputer")
+// @tool("MouseInputer")
 export class MouseInputer extends Tool<MouseInputOptions, InputEventsMap>
 {
     // 默认选项

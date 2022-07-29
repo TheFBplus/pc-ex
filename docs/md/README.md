@@ -4,10 +4,9 @@ pc-ex
 
 ## Table of contents
 
-### Enumerations
+### Namespaces
 
-- [HandleType](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/enums/HandleType.md)
-- [PivotType](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/enums/PivotType.md)
+- [Tools](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/modules/Tools.md)
 
 ### Classes
 
@@ -15,28 +14,16 @@ pc-ex
 - [Color\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Color_EX.md)
 - [Curve\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Curve_EX.md)
 - [DebugLine](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DebugLine.md)
-- [DropGLTFLoader](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/DropGLTFLoader.md)
 - [ElementComponent\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ElementComponent_EX.md)
 - [Entity\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Entity_EX.md)
 - [GraphNode\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/GraphNode_EX.md)
 - [MaterialController](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MaterialController.md)
 - [MeshInstance\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MeshInstance_EX.md)
-- [MouseInputer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MouseInputer.md)
-- [MultiSelector](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/MultiSelector.md)
-- [OrbitCamera](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCamera.md)
-- [OrbitCameraInput\_Mouse](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCameraInput_Mouse.md)
-- [OrbitCameraInput\_TouchScreen](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OrbitCameraInput_TouchScreen.md)
-- [OutlineCamera](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/OutlineCamera.md)
-- [PathCurve](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PathCurve.md)
 - [PostEffectOutline](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/PostEffectOutline.md)
 - [Quat\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Quat_EX.md)
-- [RTH\_KeyboardInputer](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/RTH_KeyboardInputer.md)
-- [RTH\_RuntimeGrid](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/RTH_RuntimeGrid.md)
 - [Ray\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Ray_EX.md)
-- [RuntimeTransformHandle](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/RuntimeTransformHandle.md)
 - [ScriptTypeBase](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeBase.md)
 - [ScriptTypeEX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ScriptTypeEX.md)
-- [Selector](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Selector.md)
 - [Texture\_EX](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Texture_EX.md)
 - [Toggle](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/Toggle.md)
 - [ToggleGroup](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/classes/ToggleGroup.md)
@@ -49,16 +36,6 @@ pc-ex
 
 - [Constructable](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/Constructable.md)
 - [InputEventsMap](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/InputEventsMap.md)
-- [KeyboardInputOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/KeyboardInputOptions.md)
-- [MouseInputOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/MouseInputOptions.md)
-- [MultiSelectorOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/MultiSelectorOptions.md)
-- [OrbitCameraInputOption](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/OrbitCameraInputOption.md)
-- [OrbitCameraOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/OrbitCameraOptions.md)
-- [PathCurveOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/PathCurveOptions.md)
-- [RTHOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/RTHOptions.md)
-- [RuntimeGridOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/RuntimeGridOptions.md)
-- [SelectorOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/SelectorOptions.md)
-- [outlineCameraOptions](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/interfaces/outlineCameraOptions.md)
 
 ### Type Aliases
 
@@ -76,11 +53,8 @@ pc-ex
 - [drawSelectionBox](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#drawselectionbox)
 - [extendClass](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#extendclass)
 - [frag](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#frag)
-- [getGlobal](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#getglobal)
 - [glsl](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#glsl)
 - [glslify](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#glslify)
-- [use](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#use)
-- [useGlobal](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#useglobal)
 - [vert](https://github.com/TheFBplus/pc-ex/blob/master/docs/md/README.md#vert)
 
 ## Type Aliases
@@ -414,36 +388,6 @@ src/utils/helpers/shaderHelper.ts:11
 
 ___
 
-### getGlobal
-
-▸ **getGlobal**<`K`\>(`toolName`): `ToolName`[`K`]
-
-获得全局工具
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `K` | extends keyof `ToolOptions` |
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `toolName` | `K` | 工具名称 |
-
-#### Returns
-
-`ToolName`[`K`]
-
-工具实例
-
-#### Defined in
-
-src/utils/helpers/useToolHelper.ts:135
-
-___
-
 ### glsl
 
 ▸ **glsl**(`x`): `string`
@@ -487,68 +431,6 @@ ___
 #### Defined in
 
 src/utils/helpers/shaderHelper.ts:10
-
-___
-
-### use
-
-▸ **use**<`K`\>(`toolName`, `options?`): `ToolName`[`K`]
-
-使用工具
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `K` | extends keyof `ToolOptions` |
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `toolName` | `K` | 工具名称 |
-| `options?` | `ToolOptions`[`K`] | 工具设置 |
-
-#### Returns
-
-`ToolName`[`K`]
-
-工具实例
-
-#### Defined in
-
-src/utils/helpers/useToolHelper.ts:89
-
-___
-
-### useGlobal
-
-▸ **useGlobal**<`K`\>(`toolName`, `options?`): `ToolName`[`K`]
-
-全局使用工具
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `K` | extends keyof `ToolOptions` |
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `toolName` | `K` | 工具名称 |
-| `options?` | `ToolOptions`[`K`] | 工具设置 |
-
-#### Returns
-
-`ToolName`[`K`]
-
-工具实例
-
-#### Defined in
-
-src/utils/helpers/useToolHelper.ts:108
 
 ___
 

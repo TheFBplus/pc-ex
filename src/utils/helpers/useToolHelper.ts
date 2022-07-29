@@ -1,8 +1,10 @@
+/* ----------------------------------------- 已弃用，采用更合理的Tools.@toolName获取工具类 ----------------------------------------- */
+
 /**
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 16:09:29
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-25 10:41:27
+ * @ 修改时间: 2022-07-28 17:55:32
  * @ 详情: 工具类扩展辅助
  */
 
@@ -11,9 +13,9 @@ import {
     OrbitCameraOptions
 } from "@/tools/camera/orbitCamera";
 import { OutlineCamera, outlineCameraOptions } from "@/tools/camera/outlineCamera";
+import { PathCurve, PathCurveOptions } from "@/tools/curve/pathCurve";
 import { MouseInputer, MouseInputOptions } from "@/tools/input/mouseInput";
 import { DropGLTFLoader } from "@/tools/loaders/dropGLTFLoader";
-import { PathCurve, PathCurveOptions } from "@/tools/pathCurve";
 import {
     RTH_RuntimeGrid, RuntimeGridOptions
 } from "@/tools/runtimeTransformHandle/features/runtimeGrid";
@@ -70,7 +72,7 @@ const toolMap: Map<string, Tool<any, any>> = new Map<string, Tool<any, any>>();
 
 /**
  * 工具装饰器，用于将工具添加至工具表中方便调用
- * @param toolName 工具名称 
+ * @param toolName 工具名称
  */
 export function tool(toolName: keyof ToolName): (target: any) => void
 {

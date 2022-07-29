@@ -13,17 +13,7 @@ export { Vec2_EX } from "./extensions/vec2";
 export { Vec3_EX } from "./extensions/vec3";
 export { Vec4_EX } from "./extensions/vec4";
 // tools
-export { OrbitCamera, OrbitCameraInputOption, OrbitCameraInput_Mouse, OrbitCameraInput_TouchScreen, OrbitCameraOptions } from "./tools/camera/orbitCamera";
-export { OutlineCamera, outlineCameraOptions } from "./tools/camera/outlineCamera";
-export { MouseInputer, MouseInputOptions } from "./tools/input/mouseInput";
-export { DropGLTFLoader } from "./tools/loaders/dropGLTFLoader";
-export { PathCurve, PathCurveOptions } from "./tools/pathCurve";
-export { HandleType, PivotType } from "./tools/runtimeTransformHandle/common/enum";
-export { RTH_RuntimeGrid, RuntimeGridOptions } from "./tools/runtimeTransformHandle/features/runtimeGrid";
-export { KeyboardInputOptions, RTH_KeyboardInputer } from "./tools/runtimeTransformHandle/input/keyboardInput";
-export { RTHOptions, RuntimeTransformHandle } from "./tools/runtimeTransformHandle/runtimeTransformHandle";
-export { MultiSelector, MultiSelectorOptions } from "./tools/selector/multiSelector";
-export { Selector, SelectorOptions } from "./tools/selector/selector";
+export * as Tools from "./tools/tools";
 // utils
 export { InputEventsMap } from "./utils/common/InputEventsMap";
 export { Constructable, Constructor } from "./utils/common/TypesAndInterfaces";
@@ -37,7 +27,6 @@ export { attrEX, createScriptEX, ScriptTypeEX } from "./utils/helpers/create-scr
 export { cast, extendClass } from "./utils/helpers/extend-decorator";
 export { frag, glsl, glslify, vert } from "./utils/helpers/shaderHelper";
 export { Tool } from "./utils/helpers/toolBase";
-export { getGlobal, use, useGlobal } from "./utils/helpers/useToolHelper";
 export { PostEffectOutline } from "./utils/postEffects/posteffectOutline";
 // ui
 export { Toggle } from "./utils/ui/toggle";

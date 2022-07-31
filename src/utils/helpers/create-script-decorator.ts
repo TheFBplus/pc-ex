@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-07-25 17:58:39
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-27 11:21:35
+ * @ 修改时间: 2022-07-30 21:34:36
  * @ 详情: 脚本创建装饰器
  */
 
@@ -12,7 +12,7 @@ import { Constructor } from "../common/TypesAndInterfaces";
 
 // 排除的实例成员名称
 const exceptInstanceMemberNames = [
-    "_attributesData", "attributes", "app", "entity", "enabled"
+    "_attributesData", "attributes", "_exProperties", "app", "entity", "enabled"
 ];
 
 // 排除的原型成员名称
@@ -78,7 +78,7 @@ function getInstanceMemberNames(value: object)
 }
 
 /**
- * 创建脚本装饰器
+ * 创建脚本装饰器 //TODO: 实现添加实例成员并设置默认值
  * @param name 脚本名称
  */
 export function createScript(name: string): (target: typeof ScriptTypeBase) => void
@@ -108,8 +108,19 @@ export function createScript(name: string): (target: typeof ScriptTypeBase) => v
 
             const descriptor = Object.getOwnPropertyDescriptor(instance, instanceMemberName);
             if (descriptor?.value) {
-                // console.log("添加实例成员", instanceMemberName, descriptor.value);
-                script.prototype[instanceMemberName] = descriptor.value;
+                // console.log("添加实例属性", instanceMemberName, descriptor.value);
+                Object.defineProperty(script.prototype, instanceMemberName, {
+                    get: function ()
+                    {
+                        this["_exProperties"] = this["_exProperties"] ?? {};
+                        return this["_exProperties"][instanceMemberName.toString()] = this["_exProperties"][instanceMemberName.toString()] ?? (this["_exProperties"][instanceMemberName.toString()] = descriptor.value instanceof Object ? JSON.parse(JSON.stringify(descriptor.value)) : descriptor.value);
+                    },
+                    set: function (value: any)
+                    {
+                        this["_exProperties"] = this["_exProperties"] ?? {};
+                        this["_exProperties"][instanceMemberName.toString()] = value;
+                    }
+                });
             }
         });
 

@@ -6,7 +6,7 @@
 	"module": "bin/es/index.js",
 	"types": "bin/dts/index.d.ts",
 	"scripts": {
-		"init": "start init",
+		"init": "cmd /k init",
 		"build": "npx --no-install rimraf bin && npm run _build-es && npm run _build-cjs && npm run _build-iife && tsc-alias --dir bin/dts && node ./build-scripts/post-build.js",
 		"docs": "npx --no-install rimraf docs && npm run _docs-html && npm run _docs-md && npm run _docs-json && npm run _docs-readme",
 		"*push": "npm i && npm run build && npm run docs && git add . -A && git commit -a && git push origin master",
@@ -20,12 +20,12 @@
 		"_docs-readme": "node ./build-scripts/build-readme.js"
 	},
 	"devDependencies": {
-		"@rollup/plugin-typescript": "^8.3.3",
+		"@rollup/plugin-typescript": "^8.3.4",
 		"playcanvas": "^1.55.0",
 		"raw-loader": "^4.0.2",
 		"release-it": "^15.2.0",
 		"rimraf": "^3.0.2",
-		"rollup": "^2.77.1",
+		"rollup": "^2.77.2",
 		"rollup-plugin-terser": "^7.0.2",
 		"tsc-alias": "^1.7.0",
 		"tslib": "^2.4.0",

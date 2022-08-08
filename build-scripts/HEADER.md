@@ -1,23 +1,22 @@
-### 安装方式
+### Install
 
 ```bash
 npm i pc-ex
 ```
 
-### ES模块用法:
+### ES usage:
 
 ```ts
-
-// 将原始对象转换为扩展对象即可使用扩展属性和方法
+// Import all to use extend functions
 import * as pc from "playcanvas";
-import { cast, Quat_EX } from "pc-ex";
+import * as pcEX from "pc-ex";
 
-let rotation = new pc.Quat(); // 创建原始Quat对象
-let rotation_ex = cast<Quat_EX>(rotation); // 转换为扩展的Quat_EX对象
-rotation_ex.setLookRotation(position, target, up); // 使用扩展对象上的方法
+let rotation = new pc.Quat();
+rotation.setLookRotation(position, target, up);
 
-// 使用新添加的方法
-import { DebugLine } from "pc-ex";
+
+// Import named
+import { DebugLine } from"pc-ex";
 
 DebugLine.drawLine(start, end, color);
 

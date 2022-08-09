@@ -4,7 +4,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 16:09:29
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-28 17:55:32
+ * @ 修改时间: 2022-08-09 14:47:45
  * @ 详情: 工具类扩展辅助
  */
 
@@ -15,6 +15,7 @@ import {
 import { OutlineCamera, outlineCameraOptions } from "@/tools/camera/outlineCamera";
 import { PathCurve, PathCurveOptions } from "@/tools/curve/pathCurve";
 import { MouseInputer, MouseInputOptions } from "@/tools/input/mouseInput";
+import { TouchInputer, TouchInputOptions } from "@/tools/input/touchInput";
 import { DropGLTFLoader } from "@/tools/loaders/dropGLTFLoader";
 import {
     RTH_RuntimeGrid, RuntimeGridOptions
@@ -38,6 +39,7 @@ interface ToolName
     OrbitCameraInput_TouchScreen: OrbitCameraInput_TouchScreen;
     OutlineCamera: OutlineCamera;
     MouseInputer: MouseInputer;
+    TouchInputer: TouchInputer;
     DropGLTFLoader: DropGLTFLoader;
     Selector: Selector;
     MultiSelector: MultiSelector;
@@ -55,6 +57,7 @@ interface ToolOptions
     OrbitCameraInput_TouchScreen: OrbitCameraInputOption;
     OutlineCamera: outlineCameraOptions;
     MouseInputer: MouseInputOptions;
+    TouchInputer: TouchInputOptions;
     DropGLTFLoader: null;
     Selector: SelectorOptions;
     MultiSelector: MultiSelectorOptions;

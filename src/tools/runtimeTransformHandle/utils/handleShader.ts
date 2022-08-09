@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-04-22 10:00:25
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-10 21:23:02
+ * @ 修改时间: 2022-08-09 14:12:33
  * @ 详情: runtime transform handle的相关材质
  */
 
@@ -28,7 +28,7 @@ export const noAmbientEndPS = frag`
 
 // x轴材质
 const axisXMat = new pc.StandardMaterial();
-axisXMat.chunks.endPS = noAmbientEndPS;
+// axisXMat.chunks.endPS = noAmbientEndPS;
 axisXMat.blendType = pc.BLEND_NORMAL;
 axisXMat.opacity = 1;
 axisXMat.emissive.set(1, 0, 0);
@@ -39,7 +39,7 @@ axisXMat.update();
 
 // y轴材质
 const axisYMat = new pc.StandardMaterial();
-axisYMat.chunks.endPS = noAmbientEndPS;
+// axisYMat.chunks.endPS = noAmbientEndPS;
 axisYMat.blendType = pc.BLEND_NORMAL;
 axisYMat.opacity = 1;
 axisYMat.emissive.set(0, 1, 0);
@@ -50,7 +50,7 @@ axisYMat.update();
 
 // z轴材质
 const axisZMat = new pc.StandardMaterial();
-axisZMat.chunks.endPS = noAmbientEndPS;
+// axisZMat.chunks.endPS = noAmbientEndPS;
 axisZMat.blendType = pc.BLEND_NORMAL;
 axisZMat.opacity = 1;
 axisZMat.emissive.set(0, 0, 1);
@@ -61,7 +61,7 @@ axisZMat.update();
 
 // x平面材质
 const planXMat = new pc.StandardMaterial();
-planXMat.chunks.endPS = noAmbientEndPS;
+// planXMat.chunks.endPS = noAmbientEndPS;
 planXMat.emissive.set(1, 0, 0);
 planXMat.blendType = pc.BLEND_NORMAL;
 planXMat.opacity = 0.3;
@@ -73,7 +73,7 @@ planXMat.update();
 
 // y平面材质
 const planYMat = new pc.StandardMaterial();
-planYMat.chunks.endPS = noAmbientEndPS;
+// planYMat.chunks.endPS = noAmbientEndPS;
 planYMat.emissive.set(0, 1, 0);
 planYMat.blendType = pc.BLEND_NORMAL;
 planYMat.opacity = 0.3;
@@ -85,7 +85,7 @@ planYMat.update();
 
 // z平面材质
 const planZMat = new pc.StandardMaterial();
-planZMat.chunks.endPS = noAmbientEndPS;
+// planZMat.chunks.endPS = noAmbientEndPS;
 planZMat.emissive.set(0, 0, 1);
 planZMat.blendType = pc.BLEND_NORMAL;
 planZMat.opacity = 0.3;
@@ -97,7 +97,7 @@ planZMat.update();
 
 // x平面边框材质
 const planeEdgeXMat = new pc.StandardMaterial();
-planeEdgeXMat.chunks.endPS = noAmbientEndPS;
+// planeEdgeXMat.chunks.endPS = noAmbientEndPS;
 planeEdgeXMat.blendType = pc.BLEND_NORMAL;
 planeEdgeXMat.opacity = 1;
 planeEdgeXMat.emissive.set(1, 0, 0);
@@ -108,7 +108,7 @@ planeEdgeXMat.update();
 
 // y平面边框材质
 const planeEdgeYMat = new pc.StandardMaterial();
-planeEdgeYMat.chunks.endPS = noAmbientEndPS;
+// planeEdgeYMat.chunks.endPS = noAmbientEndPS;
 planeEdgeYMat.blendType = pc.BLEND_NORMAL;
 planeEdgeYMat.opacity = 1;
 planeEdgeYMat.emissive.set(0, 1, 0);
@@ -119,7 +119,7 @@ planeEdgeYMat.update();
 
 // z平面边框材质
 const planeEdgeZMat = new pc.StandardMaterial();
-planeEdgeZMat.chunks.endPS = noAmbientEndPS;
+// planeEdgeZMat.chunks.endPS = noAmbientEndPS;
 planeEdgeZMat.blendType = pc.BLEND_NORMAL;
 planeEdgeZMat.opacity = 1;
 planeEdgeZMat.emissive.set(0, 0, 1);
@@ -130,7 +130,7 @@ planeEdgeZMat.update();
 
 // 全透明材质
 const transparentMat = new pc.StandardMaterial();
-transparentMat.chunks.endPS = noAmbientEndPS;
+// transparentMat.chunks.endPS = noAmbientEndPS;
 transparentMat.blendType = pc.BLEND_NORMAL;
 transparentMat.opacity = 0;
 transparentMat.useLighting = false;
@@ -140,7 +140,7 @@ transparentMat.update();
 
 // 半透明材质
 const halfTransMat = new pc.StandardMaterial();
-halfTransMat.chunks.endPS = noAmbientEndPS;
+// halfTransMat.chunks.endPS = noAmbientEndPS;
 halfTransMat.emissive.set(1, 1, 1, 1);
 halfTransMat.blendType = pc.BLEND_NORMAL;
 halfTransMat.opacity = 0.5;

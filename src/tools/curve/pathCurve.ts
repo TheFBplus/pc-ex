@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-07 15:07:20
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-28 09:31:37
+ * @ 修改时间: 2022-08-09 14:02:27
  * @ 详情: 路径曲线
  */
 
@@ -12,6 +12,7 @@ import { Curve_EX } from "@/extensions/curve";
 import { Quat_EX } from "@/extensions/quat";
 import { cast } from "@/utils/helpers/extend-decorator";
 import { Tool } from "@/utils/helpers/toolBase";
+import { tool } from "@/utils/helpers/useToolHelper";
 
 /**
  * 路径曲线选项
@@ -22,6 +23,7 @@ export interface PathCurveOptions
     curveMode: number;
 }
 
+@tool("PathCurve")
 export class PathCurve extends Tool<PathCurveOptions, any>
 {
     // 默认选项

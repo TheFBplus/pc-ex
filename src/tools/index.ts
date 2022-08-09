@@ -10,6 +10,7 @@ export { OrbitCamera, OrbitCameraInputOption, OrbitCameraInput_Mouse, OrbitCamer
 export { OutlineCamera, outlineCameraOptions } from "./camera/outlineCamera";
 export { PathCurve, PathCurveOptions } from "./curve/pathCurve";
 export { MouseInputer, MouseInputOptions } from "./input/mouseInput";
+export { TouchInputer, TouchInputOptions } from "./input/touchInput";
 export { DropGLTFLoader } from "./loaders/dropGLTFLoader";
 export { HandleType, PivotType } from "./runtimeTransformHandle/common/enum";
 export { RTH_RuntimeGrid, RuntimeGridOptions } from "./runtimeTransformHandle/features/runtimeGrid";

@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-05-16 14:30:00
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-22 10:49:53
+ * @ 修改时间: 2022-08-09 16:48:56
  * @ 详情: 多选模型
  */
 
@@ -44,7 +44,7 @@ export class MultiSelector extends Tool<MultiSelectorOptions, MultiSelectorEvent
 {
     // 默认选项
     protected toolOptionsDefault: MultiSelectorOptions = {
-        inputHandler: use("MouseInputer"),
+        inputHandler: this.app.touch ? use("TouchInputer") : use("MouseInputer"),
         pickCamera: this.app.systems.camera.cameras[0],
         pickAreaScale: 0.25,
         boxLayer: this.app.scene.layers.getLayerByName("UI"),

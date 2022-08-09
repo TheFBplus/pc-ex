@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-06-08 15:04:27
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-22 10:50:13
+ * @ 修改时间: 2022-08-09 16:48:24
  * @ 详情: 点选模型
  */
 
@@ -31,6 +31,7 @@ export interface SelectorOptions
     pickTag?: string;
     pickNull?: boolean;
     pickSame?: boolean;
+    downSelect?: boolean;
     pickCondition?: () => boolean;
     excludeLayers?: pc.Layer[];
 };
@@ -40,12 +41,13 @@ export class Selector extends Tool<SelectorOptions, SelectorEventsMap>
 {
     // 默认选项
     protected toolOptionsDefault: SelectorOptions = {
-        inputHandler: use("MouseInputer"),
+        inputHandler: this.app.touch ? use("TouchInputer") : use("MouseInputer"),
         pickCamera: this.app.systems.camera.cameras[0],
         pickAreaScale: 0.25,
         pickTag: null,
         pickNull: true,
         pickSame: true,
+        downSelect: false,
         pickCondition: null,
         excludeLayers: null,
     };
@@ -134,11 +136,17 @@ export class Selector extends Tool<SelectorOptions, SelectorEventsMap>
 
     protected override onEnable(): void
     {
-        this.toolOptions.inputHandler.on("click", this.pick, this);
+        if (this.toolOptions.downSelect) {
+            this.toolOptions.inputHandler.on("down", this.pick, this);
+        }
+        else {
+            this.toolOptions.inputHandler.on("click", this.pick, this);
+        }
     }
 
     protected override onDisable(): void
     {
+        this.toolOptions.inputHandler.off("down", this.pick, this);
         this.toolOptions.inputHandler.off("click", this.pick, this);
     }
 }

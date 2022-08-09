@@ -27,6 +27,7 @@ export { attrEX, createScriptEX, ScriptTypeEX } from "./utils/helpers/create-scr
 export { cast, extendClass } from "./utils/helpers/extend-decorator";
 export { frag, glsl, glslify, vert } from "./utils/helpers/shaderHelper";
 export { Tool } from "./utils/helpers/toolBase";
+export { use, useGlobal } from "./utils/helpers/useToolHelper";
 export { PostEffectOutline } from "./utils/postEffects/posteffectOutline";
 // ui
 export { Toggle } from "./utils/ui/toggle";

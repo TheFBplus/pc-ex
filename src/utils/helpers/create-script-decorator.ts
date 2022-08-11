@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-07-25 17:58:39
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-30 21:34:36
+ * @ 修改时间: 2022-08-10 09:49:37
  * @ 详情: 脚本创建装饰器
  */
 
@@ -107,7 +107,7 @@ export function createScript(name: string): (target: typeof ScriptTypeBase) => v
             if (exceptInstanceMemberNames.includes(instanceMemberName as string) || instance.attributesData[instanceMemberName as string]) { return; }
 
             const descriptor = Object.getOwnPropertyDescriptor(instance, instanceMemberName);
-            if (descriptor?.value) {
+            if (descriptor?.value != undefined) {
                 // console.log("添加实例属性", instanceMemberName, descriptor.value);
                 Object.defineProperty(script.prototype, instanceMemberName, {
                     get: function ()

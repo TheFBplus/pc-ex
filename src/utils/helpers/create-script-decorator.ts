@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-07-25 17:58:39
  * @ 修改者: FBplus
- * @ 修改时间: 2022-08-10 09:49:37
+ * @ 修改时间: 2022-08-11 23:46:54
  * @ 详情: 脚本创建装饰器
  */
 
@@ -112,8 +112,8 @@ export function createScript(name: string): (target: typeof ScriptTypeBase) => v
                 Object.defineProperty(script.prototype, instanceMemberName, {
                     get: function ()
                     {
-                        this["_exProperties"] = this["_exProperties"] ?? {};
-                        return this["_exProperties"][instanceMemberName.toString()] = this["_exProperties"][instanceMemberName.toString()] ?? (this["_exProperties"][instanceMemberName.toString()] = descriptor.value instanceof Object ? JSON.parse(JSON.stringify(descriptor.value)) : descriptor.value);
+                        this["_exProperties"] = this["_exProperties"] ?? {}; //TODO:实现对象的深拷贝（JSON方法无法拷贝函数）
+                        return this["_exProperties"][instanceMemberName.toString()] = this["_exProperties"][instanceMemberName.toString()] ?? (this["_exProperties"][instanceMemberName.toString()] = typeof (descriptor.value) == "object" ? JSON.parse(JSON.stringify(descriptor.value)) : descriptor.value);
                     },
                     set: function (value: any)
                     {

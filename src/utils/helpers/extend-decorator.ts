@@ -2,7 +2,7 @@
  * @ 创建者: FBplus
  * @ 创建时间: 2022-04-21 16:10:55
  * @ 修改者: FBplus
- * @ 修改时间: 2022-07-27 16:49:33
+ * @ 修改时间: 2022-09-06 16:05:36
  * @ 详情: 用于扩展pc类的装饰器
  */
 
@@ -60,7 +60,7 @@ export function castEX<EXType extends Constructor<OriginalInstance>, OriginalIns
 }
 
 /**
- * 扩展pc类 //TODO: 实现实例属性扩展
+ * 扩展pc类 //TODO: 实现实例属性扩展（当前无法对基类的实例属性进行扩展!!!）
  * @param extendClassName 扩展类名称
  * @returns 扩展类
  */

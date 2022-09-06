@@ -9,6 +9,5 @@ goto setProjectPath
 	if "%projectPath%" == "" goto setProjectPath
 
 call npm link
-call cd %projectPath%
+call cd "..\..\%projectPath%"
 call npm link pc-ex
-pause
